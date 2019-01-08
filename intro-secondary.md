@@ -1,7 +1,7 @@
 # Protocol Documentation
 
-Issue, Manage and Trade Tokens on the Bitcoin (SV) Network
+Issue, Manage and Trade Tokens
 
-Tokenized is a comprehensive platform that makes it easy for users to issue, manage and trade security and utility tokens controlled by low-cost and secure smart contracts.
+Tokenized is the easiest and safest way to issue, manage and trade security and utility tokens on the Bitcoin network (BSV).
 
-Compliant with all laws and regulations!
+No technical expertise required.
