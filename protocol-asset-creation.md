@@ -1,6 +1,7 @@
 # Asset Creation Action
 
-Asset Creation Action -  This action creates an Asset in response to the Issuer's instructions in the Definition Action.<br><br>
+This action creates an Asset in response to the Issuer's instructions in the Definition Action.
+
 The following breaks down the construction of a Asset Creation Action. The action is constructed by building a single string from each of the elements in order.
 
 <div class="ritz grid-container" dir="ltr">
