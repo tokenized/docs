@@ -1,46 +1,40 @@
 
-<html>
-    <head>
-        <link rel="stylesheet" href="css/style.css">
-        <H1>Ballot Counted Action</H1>
-        <p>
-        Ballot Counted Action -  The smart contract will respond to a Ballot Cast action with a Ballot Counted action if the Ballot Cast is valid.  If the Ballot Cast is not valid, then the smart contract will respond with a Rejection Action.<br><br>
-        The following breaks down the construction of a Ballot Counted Action. The action is constructed by building a single string from each of the elements in order.
-        </p>
-    </head>
-    <div class="ritz grid-container" dir="ltr">
-        <body>
-            <table class="waffle" cellspacing="0" cellpadding="0" table-layout=fixed width=100%>
-                 <tr style='height:19px;'>
-                    <th style="width:6%" class="s0">Field</th>
-                       <th style="width:9%" class="s1">Label</th>
-                    <th style="width:9%" class="s1">Name</th>
-                    <th style="width:2%" class="s1">Bytes</th>
-                    <th style="width:29%" class="s1">Example Values</th>
-                    <th style="width:26%" class="s1">Comments</th>
-                    <th style="width:5%" class="s1">Data Type</th>
-                    <th style="width:14%" class="s2">Amendment Restrictions</th>
-                </tr>
+#Ballot Counted Action
+
+Ballot Counted Action -  The smart contract will respond to a Ballot Cast action with a Ballot Counted action if the Ballot Cast is valid.  If the Ballot Cast is not valid, then the smart contract will respond with a Rejection Action.
+
+The following breaks down the construction of a Ballot Counted Action. The action is constructed by building a single string from each of the elements in order.
+
+<div class="ritz grid-container" dir="ltr">
+    <table class="waffle" cellspacing="0" cellpadding="0" table-layout=fixed width=100%>
+         <tr style='height:19px;'>
+            <th style="width:6%" class="s0">Field</th>
+               <th style="width:9%" class="s1">Label</th>
+            <th style="width:9%" class="s1">Name</th>
+            <th style="width:2%" class="s1">Bytes</th>
+            <th style="width:29%" class="s1">Example Values</th>
+            <th style="width:26%" class="s1">Comments</th>
+            <th style="width:5%" class="s1">Data Type</th>
+            <th style="width:14%" class="s2">Amendment Restrictions</th>
+        </tr>
+        <tr>
+            <td class="s5" rowspan="2">Metadata (OP_RETURN Payload)</td>
+            <td class="g6">Header[]</td>
+            <td class="g6">Header Array</td>
+            <td class="g6">-</td>
+            <td class="g6">-</td>
+            <td class="g6">Common header data for all messages</td>
+            <td class="g6">Header</td>
+            <td class="g7"></td>
+        </tr>
                 <tr>
-                    <td class="s5" rowspan="2">Metadata (OP_RETURN Payload)</td>
-                    <td class="g6">Header[]</td>
-                    <td class="g6">Header Array</td>
-                    <td class="g6">-</td>
-                    <td class="g6">-</td>
-                    <td class="g6">Common header data for all messages</td>
-                    <td class="g6">Header</td>
-                    <td class="g7"></td>
-                </tr>
-                    <tr>
-                    <td class="g10">Timestamp</td>
-                    <td class="g10">Timestamp</td>
-                    <td class="g10">8</td>
-                    <td class="g10" style="word-break:break-all">1551767413250187179</td>
-                    <td class="g10">Timestamp in nanoseconds of when the smart contract created the action.</td>
-                    <td class="g10">timestamp</td>
-                    <td class="g11">Cannot be changed by issuer, operator. Smart contract controls.</td>
-                </tr>
-            </table>
-        </body>
-    </div>
-</html>
+            <td class="g10">Timestamp</td>
+            <td class="g10">Timestamp</td>
+            <td class="g10">8</td>
+            <td class="g10" style="word-break:break-all">1551767413250187179</td>
+            <td class="g10">Timestamp in nanoseconds of when the smart contract created the action.</td>
+            <td class="g10">timestamp</td>
+            <td class="g11">Cannot be changed by issuer, operator. Smart contract controls.</td>
+        </tr>
+    </table>
+</div>
