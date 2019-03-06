@@ -2,10 +2,10 @@
 <html>
 	<head>
 		<link rel="stylesheet" href="css/style.css">
-		<H1>Asset Creation Action</H1>
+		<H1>Asset Definition Action</H1>
 		<p>
-		Asset Creation Action -  This action creates an Asset in response to the Issuer's instructions in the Definition Action.<br><br>
-		The following breaks down the construction of a Asset Creation Action. The action is constructed by building a single string from each of the elements in order.
+		Asset Definition Action -  This action is used by the issuer to define the properties/characteristics of the Asset (token) that it wants to create.<br><br>
+		The following breaks down the construction of a Asset Definition Action. The action is constructed by building a single string from each of the elements in order.
 		</p>
 	</head>
 	<div class="ritz grid-container" dir="ltr">
@@ -22,7 +22,7 @@
 				    <th style="width:14%" class="s2">Amendment Restrictions</th>
 				</tr>
 				<tr>
-					<td class="s5" rowspan="20">Metadata (OP_RETURN Payload)</td>
+					<td class="s5" rowspan="18">Metadata (OP_RETURN Payload)</td>
 			    	<td class="a6">Header[]</td>
 			    	<td class="a6">Header Array</td>
 			    	<td class="a6">-</td>
@@ -38,23 +38,23 @@
 			    	<td class="a10" style="word-break:break-all">0</td>
 			    	<td class="a10"> 0 = ASCII, 1 = UTF-8, 2 = UTF-16, 3 = Unicode.  Encoding applies to all 'text' data types. All 'string' types will always be encoded with ASCII.  Where string is selected, all fields will be ASCII.</td>
 			    	<td class="a10">uint8</td>
-			    	<td class="a11">Can be changed by Issuer or Operator at their discretion.</td>
+			    	<td class="a11">Can be changed by issuer or operator at their discretion.</td>
 				</tr>				<tr>
 			    	<td class="a10">Asset Type</td>
 			    	<td class="a10">AssetType</td>
 			    	<td class="a10">3</td>
-			    	<td class="a10" style="word-break:break-all">SHC</td>
+			    	<td class="a10" style="word-break:break-all">COU</td>
 			    	<td class="a10">eg. Share - Common</td>
 			    	<td class="a10">string</td>
-			    	<td class="a11"></td>
+			    	<td class="a11">Cannot be changed by issuer, operator or smart contract.</td>
 				</tr>				<tr>
 			    	<td class="a10">Asset ID</td>
-			    	<td class="a10">Asset ID</td>
+			    	<td class="a10">AssetID</td>
 			    	<td class="a10">32</td>
 			    	<td class="a10" style="word-break:break-all">apm2qsznhks23z8d83u41s8019hyri3i</td>
-			    	<td class="a10">Randomly generated base58 string.  Each Asset ID should be unique.  However, a Asset ID is always linked to a Contract that is identified by the public address of the Contract wallet. The Asset Type + Asset ID = Asset Code.  An Asset Code is a human readable idenitfier that can be used in a similar way to a Bitcoin (BSV) address, a vanity identifying label.</td>
+			    	<td class="a10">Randomly generated base58 string.  Each Asset ID should be unique.  However, an Asset ID is always linked to a Contract that is identified by the public address of the Contract wallet. The Asset Type + Asset ID = Asset Code.  An Asset Code is a human readable idenitfier that can be used in a similar way to a Bitcoin (BSV) address, a vanity identifying label.</td>
 			    	<td class="a10">string</td>
-			    	<td class="a11"></td>
+			    	<td class="a11">Cannot be changed by issuer, operator or smart contract.</td>
 				</tr>				<tr>
 			    	<td class="a10">Asset Authorization Flags</td>
 			    	<td class="a10">AssetAuthFlags</td>
@@ -116,7 +116,7 @@
 			    	<td class="a10">AssetModificationGovernance</td>
 			    	<td class="a10">1</td>
 			    	<td class="a10" style="word-break:break-all">1</td>
-			    	<td class="a10">1 - Contract-wide Asset Governance.  0 - Asset-wide Asset Governance.  If a referendum or initiative is used to propose a modification to a subfield controlled by the asset auth flags, then the vote will either be a contract-wide vote (all assets vote on the referendum/initiative) or an asset-wide vote (all assets vote on the referendum/initiative).  The voting system specifies the voting rules.</td>
+			    	<td class="a10">1 - Contract-wide Asset Governance.  0 - Asset-wide Asset Governance.  If a referendum or initiative is used to propose a modification to a subfield controlled by the asset auth flags, then the vote will either be a contract-wide vote (all assets vote on the referendum/initiative) or an asset-wide vote (all assets vote on the referendum/initiative) depending on the value in this subfield.  The voting system specifies the voting rules.</td>
 			    	<td class="a10">bool</td>
 			    	<td class="a11"></td>
 				</tr>				<tr>
@@ -167,22 +167,6 @@
 			    	<td class="a10">Payload length is dependent on the asset type. Each asset is made up of a defined set of information pertaining to the specific asset type, and may contain fields of variable length type (nvarchar8, 16, 32)</td>
 			    	<td class="a10">byte[]</td>
 			    	<td class="a11"></td>
-				</tr>				<tr>
-			    	<td class="a10">Asset Revision</td>
-			    	<td class="a10">Asset Revision</td>
-			    	<td class="a10">8</td>
-			    	<td class="a10" style="word-break:break-all">0000000000000000000000000000000000000000000000000001000110111111</td>
-			    	<td class="a10">Counter 0 - 65,535</td>
-			    	<td class="a10">uint64</td>
-			    	<td class="a11"></td>
-				</tr>				<tr>
-			    	<td class="a10">Timestamp</td>
-			    	<td class="a10">Timestamp</td>
-			    	<td class="a10">8</td>
-			    	<td class="a10" style="word-break:break-all">1551767413250187179</td>
-			    	<td class="a10">Timestamp in nanoseconds of when the smart contract created the action.</td>
-			    	<td class="a10">timestamp</td>
-			    	<td class="a11">Cannot be changed by issuer, operator. Smart contract controls.</td>
 				</tr>
 			</table>
 		</body>
