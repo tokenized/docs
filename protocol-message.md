@@ -27,7 +27,7 @@ The following breaks down the construction of a Message Action. The action is co
             <td class="m6">Header</td>
             <td class="m7"></td>
         </tr>
-                <tr>
+        <tr>
             <td class="m10">Text Encoding</td>
             <td class="m10">TextEncoding</td>
             <td class="m10">1</td>
@@ -35,7 +35,8 @@ The following breaks down the construction of a Message Action. The action is co
             <td class="m10"> 0 = ASCII, 1 = UTF-8, 2 = UTF-16, 3 = Unicode.  Encoding applies to all 'text' data types. All 'string' types will always be encoded with ASCII.  Where string is selected, all fields will be ASCII.</td>
             <td class="m10">uint8</td>
             <td class="m11">Can be changed by Issuer or Operator at their discretion.</td>
-        </tr>                <tr>
+        </tr>
+        <tr>
             <td class="m10">Qty Receiving Addresses</td>
             <td class="m10">QtyReceivingAddresses</td>
             <td class="m10">1</td>
@@ -43,7 +44,8 @@ The following breaks down the construction of a Message Action. The action is co
             <td class="m10">0-255 Message Receiving Addresses</td>
             <td class="m10">uint8</td>
             <td class="m11"></td>
-        </tr>                <tr>
+        </tr>
+        <tr>
             <td class="m10">Address X Index</td>
             <td class="m10">AddressXIndex</td>
             <td class="m10">1</td>
@@ -51,7 +53,8 @@ The following breaks down the construction of a Message Action. The action is co
             <td class="m10">Associates the message to a particular output by the index.</td>
             <td class="m10">uint16</td>
             <td class="m11"></td>
-        </tr>                <tr>
+        </tr>
+        <tr>
             <td class="m10">Message Type</td>
             <td class="m10">MessageType</td>
             <td class="m10">2</td>
@@ -59,7 +62,8 @@ The following breaks down the construction of a Message Action. The action is co
             <td class="m10">Potential for up to 65,535 different message types</td>
             <td class="m10">string</td>
             <td class="m11"></td>
-        </tr>                <tr>
+        </tr>
+        <tr>
             <td class="m10">Message Payload</td>
             <td class="m10">MessagePayload</td>
             <td class="m10">0</td>
@@ -67,7 +71,8 @@ The following breaks down the construction of a Message Action. The action is co
             <td class="m10">Length 0-65,535 bytes. Public or private (RSA public key, Diffie-Hellman).  Issuers/Contracts can send the signifying amount of satoshis to themselves for public announcements or private 'notes' if encrypted.  See Message Types for a full list of potential use cases.</td>
             <td class="m10">nvarchar16</td>
             <td class="m11"></td>
-        </tr>                <tr>
+        </tr>
+        <tr>
             <td class="m10">Timestamp</td>
             <td class="m10">Timestamp</td>
             <td class="m10">8</td>

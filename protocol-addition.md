@@ -27,7 +27,7 @@ The following breaks down the construction of a Addition Action. The action is c
             <td class="r6">Header</td>
             <td class="r7"></td>
         </tr>
-                <tr>
+        <tr>
             <td class="r10">Text Encoding</td>
             <td class="r10">TextEncoding</td>
             <td class="r10">1</td>
@@ -35,7 +35,8 @@ The following breaks down the construction of a Addition Action. The action is c
             <td class="r10"> 0 = ASCII, 1 = UTF-8, 2 = UTF-16, 3 = Unicode.  Encoding applies to all 'text' data types. All 'string' types will always be encoded with ASCII.  Where string is selected, all fields will be ASCII.</td>
             <td class="r10">uint8</td>
             <td class="r11">Can be changed by Issuer or Operator at their discretion.</td>
-        </tr>                <tr>
+        </tr>
+        <tr>
             <td class="r10">Sublist</td>
             <td class="r10">Sublist</td>
             <td class="r10">4</td>
@@ -43,7 +44,8 @@ The following breaks down the construction of a Addition Action. The action is c
             <td class="r10">Null value = Global KYC compliance. eg. Organizations can define their own pseudo-anonymous and publicly available membership lists.</td>
             <td class="r10">string</td>
             <td class="r11"></td>
-        </tr>                <tr>
+        </tr>
+        <tr>
             <td class="r10">KYC</td>
             <td class="r10">KYC</td>
             <td class="r10">1</td>
@@ -51,7 +53,8 @@ The following breaks down the construction of a Addition Action. The action is c
             <td class="r10">Y/N</td>
             <td class="r10">string</td>
             <td class="r11"></td>
-        </tr>                <tr>
+        </tr>
+        <tr>
             <td class="r10">Jurisdiction</td>
             <td class="r10">Jurisdiction</td>
             <td class="r10">5</td>
@@ -59,7 +62,8 @@ The following breaks down the construction of a Addition Action. The action is c
             <td class="r10"></td>
             <td class="r10">string</td>
             <td class="r11"></td>
-        </tr>                <tr>
+        </tr>
+        <tr>
             <td class="r10">DOB</td>
             <td class="r10">DOB</td>
             <td class="r10">8</td>
@@ -67,7 +71,8 @@ The following breaks down the construction of a Addition Action. The action is c
             <td class="r10">Date of Birth : DD/MM/YYYY</td>
             <td class="r10">time</td>
             <td class="r11"></td>
-        </tr>                <tr>
+        </tr>
+        <tr>
             <td class="r10">Country of Residence</td>
             <td class="r10">CountryofResidence</td>
             <td class="r10">3</td>
@@ -75,7 +80,8 @@ The following breaks down the construction of a Addition Action. The action is c
             <td class="r10"></td>
             <td class="r10">string</td>
             <td class="r11"></td>
-        </tr>                <tr>
+        </tr>
+        <tr>
             <td class="r10">Supporting Documentation Hash</td>
             <td class="r10">SupportingDocumentationHash</td>
             <td class="r10">32</td>
@@ -83,7 +89,8 @@ The following breaks down the construction of a Addition Action. The action is c
             <td class="r10"></td>
             <td class="r10">sha256</td>
             <td class="r11"></td>
-        </tr>                <tr>
+        </tr>
+        <tr>
             <td class="r10">Message</td>
             <td class="r10">Message</td>
             <td class="r10">0</td>

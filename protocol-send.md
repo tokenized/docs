@@ -27,7 +27,7 @@ The following breaks down the construction of a Send Action. The action is const
             <td class="t6">Header</td>
             <td class="t7"></td>
         </tr>
-                <tr>
+        <tr>
             <td class="t10">Text Encoding</td>
             <td class="t10">TextEncoding</td>
             <td class="t10">1</td>
@@ -35,7 +35,8 @@ The following breaks down the construction of a Send Action. The action is const
             <td class="t10"> 0 = ASCII, 1 = UTF-8, 2 = UTF-16, 3 = Unicode.  Encoding applies to all 'text' data types. All 'string' types will always be encoded with ASCII.  Where string is selected, all fields will be ASCII.</td>
             <td class="t10">uint8</td>
             <td class="t11">Can be changed by Issuer or Operator at their discretion.</td>
-        </tr>                <tr>
+        </tr>
+        <tr>
             <td class="t10">Asset Type</td>
             <td class="t10">AssetType</td>
             <td class="t10">3</td>
@@ -43,7 +44,8 @@ The following breaks down the construction of a Send Action. The action is const
             <td class="t10">eg. Share, Bond, Ticket. All characters must be capitalised.</td>
             <td class="t10">string</td>
             <td class="t11"></td>
-        </tr>                <tr>
+        </tr>
+        <tr>
             <td class="t10">Asset ID</td>
             <td class="t10">AssetID</td>
             <td class="t10">32</td>
@@ -51,7 +53,8 @@ The following breaks down the construction of a Send Action. The action is const
             <td class="t10">Randomly generated base58 string.  Each Asset ID should be unique.  However, a Asset ID is always linked to a Contract that is identified by the public address of the Contract wallet. The Asset Type can be the leading bytes - a convention - to make it easy to identify that it is a token by humans.</td>
             <td class="t10">string</td>
             <td class="t11"></td>
-        </tr>                <tr>
+        </tr>
+        <tr>
             <td class="t10">Quantity of Token Sending Addresses</td>
             <td class="t10">QtyOfTokenSendingAddresses</td>
             <td class="t10">1</td>
@@ -59,7 +62,8 @@ The following breaks down the construction of a Send Action. The action is const
             <td class="t10">Number inputs sending tokens. Number equates to the number of inputs starting with index 0. 1-255, 0 is not valid.</td>
             <td class="t10">uint8</td>
             <td class="t11"></td>
-        </tr>                <tr>
+        </tr>
+        <tr>
             <td class="t10">Token Sending Address X</td>
             <td class="t10">TokenSendingAddressX</td>
             <td class="t10">8</td>
@@ -67,7 +71,8 @@ The following breaks down the construction of a Send Action. The action is const
             <td class="t10">Value of tokens to be spent from the address at Input Index X</td>
             <td class="t10">uint64</td>
             <td class="t11"></td>
-        </tr>                <tr>
+        </tr>
+        <tr>
             <td class="t10">Quantity of Token Receiving Addresses</td>
             <td class="t10">QtyOfTokenReceivingAddresses</td>
             <td class="t10">1</td>
@@ -75,7 +80,8 @@ The following breaks down the construction of a Send Action. The action is const
             <td class="t10">Number outputs receiving tokens. Number equates to the number of outputs starting with index 1 (Contract Address is Index 0). 1-255. 0 is not valid.</td>
             <td class="t10">uint8</td>
             <td class="t11"></td>
-        </tr>                <tr>
+        </tr>
+        <tr>
             <td class="t10">Token Receiving Address X</td>
             <td class="t10">TokenReceivingAddressX</td>
             <td class="t10">8</td>
@@ -83,7 +89,8 @@ The following breaks down the construction of a Send Action. The action is const
             <td class="t10">Value of tokens to be received by the address at OutputX</td>
             <td class="t10">uint64</td>
             <td class="t11"></td>
-        </tr>                <tr>
+        </tr>
+        <tr>
             <td class="t10">Registry Signature Algorithm</td>
             <td class="t10">RegistrySigAlgoReceivingAddressX</td>
             <td class="t10">1</td>
@@ -91,7 +98,8 @@ The following breaks down the construction of a Send Action. The action is const
             <td class="t10">0 = No Registry-signed Message, 1 = ECDSA+secp256k1</td>
             <td class="t10">uint8</td>
             <td class="t11"></td>
-        </tr>                <tr>
+        </tr>
+        <tr>
             <td class="t10">Registry Confirmation Signature for Token Receiving X</td>
             <td class="t10">RegistryConfirmationSigTokenReceivingAddressX</td>
             <td class="t10">0</td>

@@ -27,7 +27,7 @@ The following breaks down the construction of a Settlement Action. The action is
             <td class="t6">Header</td>
             <td class="t7"></td>
         </tr>
-                <tr>
+        <tr>
             <td class="t10">Text Encoding</td>
             <td class="t10">TextEncoding</td>
             <td class="t10">1</td>
@@ -35,7 +35,8 @@ The following breaks down the construction of a Settlement Action. The action is
             <td class="t10"> 0 = ASCII, 1 = UTF-8, 2 = UTF-16, 3 = Unicode.  Encoding applies to all 'text' data types. All 'string' types will always be encoded with ASCII.  Where string is selected, all fields will be ASCII.</td>
             <td class="t10">uint8</td>
             <td class="t11">Can be changed by Issuer or Operator at their discretion.</td>
-        </tr>                <tr>
+        </tr>
+        <tr>
             <td class="t10">Transfer Type</td>
             <td class="t10">TransferType</td>
             <td class="t10">1</td>
@@ -43,7 +44,8 @@ The following breaks down the construction of a Settlement Action. The action is
             <td class="t10">S - Send, E - Exchange, X - Swap</td>
             <td class="t10">string</td>
             <td class="t11"></td>
-        </tr>                <tr>
+        </tr>
+        <tr>
             <td class="t10">Asset Type 1</td>
             <td class="t10">AssetType1</td>
             <td class="t10">3</td>
@@ -51,7 +53,8 @@ The following breaks down the construction of a Settlement Action. The action is
             <td class="t10">eg. Share, Bond, Ticket</td>
             <td class="t10">string</td>
             <td class="t11"></td>
-        </tr>                <tr>
+        </tr>
+        <tr>
             <td class="t10">Asset ID 1</td>
             <td class="t10">AssetID1</td>
             <td class="t10">32</td>
@@ -59,7 +62,8 @@ The following breaks down the construction of a Settlement Action. The action is
             <td class="t10">Randomly generated base58 string.  Each Asset ID should be unique.  However, a Asset ID is always linked to a Contract that is identified by the public address of the Contract wallet. The Asset Type can be the leading bytes - a convention - to make it easy to identify that it is a token by humans. </td>
             <td class="t10">string</td>
             <td class="t11"></td>
-        </tr>                <tr>
+        </tr>
+        <tr>
             <td class="t10">Asset Type 2</td>
             <td class="t10">AssetType2</td>
             <td class="t10">3</td>
@@ -67,7 +71,8 @@ The following breaks down the construction of a Settlement Action. The action is
             <td class="t10">eg. Share, Bond, Ticket. NULL for Send and Exchange Response Type.</td>
             <td class="t10">string</td>
             <td class="t11"></td>
-        </tr>                <tr>
+        </tr>
+        <tr>
             <td class="t10">Asset ID 2</td>
             <td class="t10">AssetID2</td>
             <td class="t10">32</td>
@@ -75,7 +80,8 @@ The following breaks down the construction of a Settlement Action. The action is
             <td class="t10">Randomly generated base58 string.  Each Asset ID should be unique.  However, a Asset ID is always linked to a Contract that is identified by the public address of the Contract wallet. The Asset Type can be the leading bytes - a convention - to make it easy to identify that it is a token by humans.  NULL for Send and Exchange Response Type.</td>
             <td class="t10">string</td>
             <td class="t11"></td>
-        </tr>                <tr>
+        </tr>
+        <tr>
             <td class="t10">Qty Asset 1 Settlements</td>
             <td class="t10">QtyAsset1Settlements</td>
             <td class="t10">1</td>
@@ -83,7 +89,8 @@ The following breaks down the construction of a Settlement Action. The action is
             <td class="t10">Number of settlements for Asset 1.</td>
             <td class="t10">uint8</td>
             <td class="t11"></td>
-        </tr>                <tr>
+        </tr>
+        <tr>
             <td class="t10">Asset 1 Address X Qty</td>
             <td class="t10">Asset1AddressXQty</td>
             <td class="t10">8</td>
@@ -91,7 +98,8 @@ The following breaks down the construction of a Settlement Action. The action is
             <td class="t10">The resulting token balance of Asset 1 for Address X. (X = Output Index)</td>
             <td class="t10">uint64</td>
             <td class="t11"></td>
-        </tr>                <tr>
+        </tr>
+        <tr>
             <td class="t10">Qty Asset 2 Addresses</td>
             <td class="t10">QtyAsset2Addresses</td>
             <td class="t10">1</td>
@@ -99,7 +107,8 @@ The following breaks down the construction of a Settlement Action. The action is
             <td class="t10">Number of settlements for Asset 1. NULL for Send and Exchange Response Type.</td>
             <td class="t10">uint8</td>
             <td class="t11"></td>
-        </tr>                <tr>
+        </tr>
+        <tr>
             <td class="t10">Asset 2 Address X Qty</td>
             <td class="t10">Asset2AddressXQty</td>
             <td class="t10">8</td>
@@ -107,7 +116,8 @@ The following breaks down the construction of a Settlement Action. The action is
             <td class="t10">The resulting token balance of Asset 2 for Address X. (X = Output Index) NULL for Send and Exchange Response Type.</td>
             <td class="t10">uint64</td>
             <td class="t11"></td>
-        </tr>                <tr>
+        </tr>
+        <tr>
             <td class="t10">Timestamp</td>
             <td class="t10">Timestamp</td>
             <td class="t10">8</td>

@@ -27,7 +27,7 @@ The following breaks down the construction of a Reconciliation Action. The actio
             <td class="e6">Header</td>
             <td class="e7"></td>
         </tr>
-                <tr>
+        <tr>
             <td class="e10">Number of Addresses</td>
             <td class="e10">AddressCount</td>
             <td class="e10">2</td>
@@ -35,7 +35,8 @@ The following breaks down the construction of a Reconciliation Action. The actio
             <td class="e10">0 - 65,535</td>
             <td class="e10">uint16</td>
             <td class="e11"></td>
-        </tr>                <tr>
+        </tr>
+        <tr>
             <td class="e10">Addresses</td>
             <td class="e10">Addresses</td>
             <td class="e10">0</td>
@@ -43,7 +44,8 @@ The following breaks down the construction of a Reconciliation Action. The actio
             <td class="e10">Addresses holding tokens to be reconciled.</td>
             <td class="e10">Address[]</td>
             <td class="e11"></td>
-        </tr>                <tr>
+        </tr>
+        <tr>
             <td class="e10">Timestamp</td>
             <td class="e10">Timestamp</td>
             <td class="e10">8</td>

@@ -27,7 +27,7 @@ The following breaks down the construction of a Ballot Cast Action. The action i
             <td class="g6">Header</td>
             <td class="g7"></td>
         </tr>
-                <tr>
+        <tr>
             <td class="g10">Asset Type</td>
             <td class="g10">AssetType</td>
             <td class="g10">3</td>
@@ -35,7 +35,8 @@ The following breaks down the construction of a Ballot Cast Action. The action i
             <td class="g10">eg. Share, Bond, Ticket</td>
             <td class="g10">string</td>
             <td class="g11"></td>
-        </tr>                <tr>
+        </tr>
+        <tr>
             <td class="g10">Asset ID</td>
             <td class="g10">AssetID</td>
             <td class="g10">32</td>
@@ -43,7 +44,8 @@ The following breaks down the construction of a Ballot Cast Action. The action i
             <td class="g10">Randomly generated base58 string.  Each Asset ID should be unique.  However, a Asset ID is always linked to a Contract that is identified by the public address of the Contract wallet. The Asset Type can be the leading bytes - a convention - to make it easy to identify that it is a token by humans.</td>
             <td class="g10">string</td>
             <td class="g11"></td>
-        </tr>                <tr>
+        </tr>
+        <tr>
             <td class="g10">Vote Txn ID</td>
             <td class="g10">VoteTxnID</td>
             <td class="g10">32</td>
@@ -51,7 +53,8 @@ The following breaks down the construction of a Ballot Cast Action. The action i
             <td class="g10">Tx-ID of the Vote the Ballot Cast is being made for.</td>
             <td class="g10">sha256</td>
             <td class="g11"></td>
-        </tr>                <tr>
+        </tr>
+        <tr>
             <td class="g10">Vote</td>
             <td class="g10">Vote</td>
             <td class="g10">0</td>

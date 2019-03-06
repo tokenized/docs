@@ -27,7 +27,7 @@ The following breaks down the construction of a Removal Action. The action is co
             <td class="r6">Header</td>
             <td class="r7"></td>
         </tr>
-                <tr>
+        <tr>
             <td class="r10">Text Encoding</td>
             <td class="r10">TextEncoding</td>
             <td class="r10">1</td>
@@ -35,7 +35,8 @@ The following breaks down the construction of a Removal Action. The action is co
             <td class="r10"> 0 = ASCII, 1 = UTF-8, 2 = UTF-16, 3 = Unicode.  Encoding applies to all 'text' data types. All 'string' types will always be encoded with ASCII.  Where string is selected, all fields will be ASCII.</td>
             <td class="r10">uint8</td>
             <td class="r11">Can be changed by Issuer or Operator at their discretion.</td>
-        </tr>                <tr>
+        </tr>
+        <tr>
             <td class="r10">Supporting Documentation Hash</td>
             <td class="r10">SupportingDocumentationHash</td>
             <td class="r10">32</td>
@@ -43,7 +44,8 @@ The following breaks down the construction of a Removal Action. The action is co
             <td class="r10">Document explaining the removal.  Might be at the user's request, or it might be due a to a </td>
             <td class="r10">sha256</td>
             <td class="r11"></td>
-        </tr>                <tr>
+        </tr>
+        <tr>
             <td class="r10">Message</td>
             <td class="r10">Message</td>
             <td class="r10">0</td>

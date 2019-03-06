@@ -27,7 +27,7 @@ The following breaks down the construction of a Rejection Action. The action is 
             <td class="m6">Header</td>
             <td class="m7"></td>
         </tr>
-                <tr>
+        <tr>
             <td class="m10">Text Encoding</td>
             <td class="m10">TextEncoding</td>
             <td class="m10">1</td>
@@ -35,7 +35,8 @@ The following breaks down the construction of a Rejection Action. The action is 
             <td class="m10"> 0 = ASCII, 1 = UTF-8, 2 = UTF-16, 3 = Unicode.  Encoding applies to all 'text' data types. All 'string' types will always be encoded with ASCII.  Where string is selected, all fields will be ASCII.</td>
             <td class="m10">uint8</td>
             <td class="m11">Can be changed by Issuer or Operator at their discretion.</td>
-        </tr>                <tr>
+        </tr>
+        <tr>
             <td class="m10">Qty Receiving Addresses</td>
             <td class="m10">QtyReceivingAddresses</td>
             <td class="m10">1</td>
@@ -43,7 +44,8 @@ The following breaks down the construction of a Rejection Action. The action is 
             <td class="m10">0-255 Message Receiving Addresses</td>
             <td class="m10">uint8</td>
             <td class="m11"></td>
-        </tr>                <tr>
+        </tr>
+        <tr>
             <td class="m10">Address X Index</td>
             <td class="m10">AddressXIndex</td>
             <td class="m10">1</td>
@@ -51,7 +53,8 @@ The following breaks down the construction of a Rejection Action. The action is 
             <td class="m10">Associates the message to a particular output by the index.</td>
             <td class="m10">uint16</td>
             <td class="m11"></td>
-        </tr>                <tr>
+        </tr>
+        <tr>
             <td class="m10">Rejection Type</td>
             <td class="m10">RejectionType</td>
             <td class="m10">1</td>
@@ -59,7 +62,8 @@ The following breaks down the construction of a Rejection Action. The action is 
             <td class="m10">Classifies the rejection by a type.</td>
             <td class="m10">uint8</td>
             <td class="m11"></td>
-        </tr>                <tr>
+        </tr>
+        <tr>
             <td class="m10">Message Payload</td>
             <td class="m10">MessagePayload</td>
             <td class="m10">0</td>
@@ -67,7 +71,8 @@ The following breaks down the construction of a Rejection Action. The action is 
             <td class="m10">Length 0-65,535 bytes. Message that explains the reasoning for a rejection, if needed.  Most rejection types will be captured by the Rejection Type Subfield.</td>
             <td class="m10">nvarchar16</td>
             <td class="m11"></td>
-        </tr>                <tr>
+        </tr>
+        <tr>
             <td class="m10">Timestamp</td>
             <td class="m10">Timestamp</td>
             <td class="m10">8</td>

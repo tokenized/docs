@@ -27,7 +27,7 @@ The following breaks down the construction of a Referendum Action. The action is
             <td class="g6">Header</td>
             <td class="g7"></td>
         </tr>
-                <tr>
+        <tr>
             <td class="g10">Text Encoding</td>
             <td class="g10">TextEncoding</td>
             <td class="g10">1</td>
@@ -35,7 +35,8 @@ The following breaks down the construction of a Referendum Action. The action is
             <td class="g10"> 0 = ASCII, 1 = UTF-8, 2 = UTF-16, 3 = Unicode.  Encoding applies to all 'text' data types. All 'string' types will always be encoded with ASCII.  Where string is selected, all fields will be ASCII.</td>
             <td class="g10">uint8</td>
             <td class="g11">Can be changed by Issuer or Operator at their discretion.</td>
-        </tr>                <tr>
+        </tr>
+        <tr>
             <td class="g10">Asset Specific Vote</td>
             <td class="g10">AssetSpecificVote</td>
             <td class="g10">1</td>
@@ -43,7 +44,8 @@ The following breaks down the construction of a Referendum Action. The action is
             <td class="g10">1 - Yes, 0 - No.  No Asset Type/AssetID subfields for N - No.</td>
             <td class="g10">bool</td>
             <td class="g11"></td>
-        </tr>                <tr>
+        </tr>
+        <tr>
             <td class="g10">Asset Type</td>
             <td class="g10">AssetType</td>
             <td class="g10">3</td>
@@ -51,7 +53,8 @@ The following breaks down the construction of a Referendum Action. The action is
             <td class="g10">eg. Share, Bond, Ticket</td>
             <td class="g10">string</td>
             <td class="g11"></td>
-        </tr>                <tr>
+        </tr>
+        <tr>
             <td class="g10">Asset ID</td>
             <td class="g10">AssetID</td>
             <td class="g10">32</td>
@@ -59,7 +62,8 @@ The following breaks down the construction of a Referendum Action. The action is
             <td class="g10">Randomly generated base58 string.  Each Asset ID should be unique.  However, an Asset ID is always linked to a Contract that is identified by the public address of the Contract wallet. The Asset Type can be the leading bytes - a convention - to make it easy to identify that it is a token by humans.</td>
             <td class="g10">string</td>
             <td class="g11"></td>
-        </tr>                <tr>
+        </tr>
+        <tr>
             <td class="g10">Vote System</td>
             <td class="g10">VoteSystem</td>
             <td class="g10">1</td>
@@ -67,7 +71,8 @@ The following breaks down the construction of a Referendum Action. The action is
             <td class="g10">X for Vote System X. (1-255, 0 is not valid.)</td>
             <td class="g10">uint8</td>
             <td class="g11"></td>
-        </tr>                <tr>
+        </tr>
+        <tr>
             <td class="g10">Proposal Type</td>
             <td class="g10">ProposalType</td>
             <td class="g10">0</td>
@@ -75,7 +80,8 @@ The following breaks down the construction of a Referendum Action. The action is
             <td class="g10">Length 1-255 bytes. Name of the subfield.  P - (Proposal) for general proposal. Otherwise the subfield name is chosen for votes on amendments/modificaitons of contracts/assets.</td>
             <td class="g10">nvarchar8</td>
             <td class="g11"></td>
-        </tr>                <tr>
+        </tr>
+        <tr>
             <td class="g10">Vote Options</td>
             <td class="g10">VoteOptions</td>
             <td class="g10">0</td>
@@ -83,7 +89,8 @@ The following breaks down the construction of a Referendum Action. The action is
             <td class="g10">Length 1-255 bytes. 0 is not valid. Each byte allows for a different vote option.  Typical votes will likely be multiple choice or Y/N. Vote instances are identified by the Tx-ID. AB000000000 would be chosen for Y/N (binary) type votes. Only applicable if Proposal Type is set to P for Proposal.  All other Proposal Types will be binary.  Pass/Fail.</td>
             <td class="g10">nvarchar8</td>
             <td class="g11"></td>
-        </tr>                <tr>
+        </tr>
+        <tr>
             <td class="g10">Vote Max</td>
             <td class="g10">VoteMax</td>
             <td class="g10">1</td>
@@ -91,7 +98,8 @@ The following breaks down the construction of a Referendum Action. The action is
             <td class="g10">Range: 1-15. How many selections can a voter make in a Ballot Cast.  1 is selected for Y/N (binary)</td>
             <td class="g10">uint8</td>
             <td class="g11"></td>
-        </tr>                <tr>
+        </tr>
+        <tr>
             <td class="g10">Proposal Description</td>
             <td class="g10">ProposalDescription</td>
             <td class="g10">0</td>
@@ -99,7 +107,8 @@ The following breaks down the construction of a Referendum Action. The action is
             <td class="g10">Length 0 to 65,535 bytes. 0 is valid. If 0, Proposal Document Hash is also 0. Description of the vote</td>
             <td class="g10">nvarchar16</td>
             <td class="g11"></td>
-        </tr>                <tr>
+        </tr>
+        <tr>
             <td class="g10">Proposal Document Hash</td>
             <td class="g10">ProposalDocumentHash</td>
             <td class="g10">32</td>
@@ -107,7 +116,8 @@ The following breaks down the construction of a Referendum Action. The action is
             <td class="g10">Hash of the proposal document to be distributed to voters</td>
             <td class="g10">sha256</td>
             <td class="g11"></td>
-        </tr>                <tr>
+        </tr>
+        <tr>
             <td class="g10">Vote Cut-Off Timestamp</td>
             <td class="g10">VoteCutOffTimestamp</td>
             <td class="g10">8</td>

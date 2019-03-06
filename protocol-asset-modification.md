@@ -27,7 +27,7 @@ The following breaks down the construction of a Asset Modification Action. The a
             <td class="a6">Header</td>
             <td class="a7"></td>
         </tr>
-                <tr>
+        <tr>
             <td class="a10">Text Encoding</td>
             <td class="a10">TextEncoding</td>
             <td class="a10">1</td>
@@ -35,7 +35,8 @@ The following breaks down the construction of a Asset Modification Action. The a
             <td class="a10"> 0 = ASCII, 1 = UTF-8, 2 = UTF-16, 3 = Unicode.  Encoding applies to all 'text' data types. All 'string' types will always be encoded with ASCII.  Where string is selected, all fields will be ASCII.</td>
             <td class="a10">uint8</td>
             <td class="a11">Can be changed by Issuer or Operator at their discretion.</td>
-        </tr>                <tr>
+        </tr>
+        <tr>
             <td class="a10">Asset Revision</td>
             <td class="a10">AssetRevision</td>
             <td class="a10">8</td>
@@ -43,7 +44,8 @@ The following breaks down the construction of a Asset Modification Action. The a
             <td class="a10">Counter. (Subfield cannot be manually changed by Asset Modification Action.  Only SC can increment by 1 with each AC action. SC will reject AM actions where the wrong asset revision has been selected. </td>
             <td class="a10">uint64</td>
             <td class="a11">Cannot be Amended</td>
-        </tr>                <tr>
+        </tr>
+        <tr>
             <td class="a10">ModificationCount</td>
             <td class="a10">ModificationCount</td>
             <td class="a10">1</td>
@@ -51,7 +53,8 @@ The following breaks down the construction of a Asset Modification Action. The a
             <td class="a10">Number of Modifications. Must be less than the max Subfield Index of CF.</td>
             <td class="a10">uint8</td>
             <td class="a11"></td>
-        </tr>                <tr>
+        </tr>
+        <tr>
             <td class="a10">Modifications</td>
             <td class="a10">Modifications</td>
             <td class="a10">0</td>
@@ -59,7 +62,8 @@ The following breaks down the construction of a Asset Modification Action. The a
             <td class="a10"></td>
             <td class="a10">Amendment[]</td>
             <td class="a11"></td>
-        </tr>                <tr>
+        </tr>
+        <tr>
             <td class="a10">Ref Tx-ID</td>
             <td class="a10">RefTxID</td>
             <td class="a10">32</td>

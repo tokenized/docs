@@ -27,7 +27,7 @@ The following breaks down the construction of a Ballot Counted Action. The actio
             <td class="g6">Header</td>
             <td class="g7"></td>
         </tr>
-                <tr>
+        <tr>
             <td class="g10">Timestamp</td>
             <td class="g10">Timestamp</td>
             <td class="g10">8</td>

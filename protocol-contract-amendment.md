@@ -27,7 +27,7 @@ The following breaks down the construction of a Contract Amendment Action. The a
             <td class="c6">Header</td>
             <td class="c7"></td>
         </tr>
-                <tr>
+        <tr>
             <td class="c10">Text Encoding</td>
             <td class="c10">TextEncoding</td>
             <td class="c10">1</td>
@@ -35,7 +35,8 @@ The following breaks down the construction of a Contract Amendment Action. The a
             <td class="c10"> 0 = ASCII, 1 = UTF-8, 2 = UTF-16, 3 = Unicode.  Encoding applies to all 'text' data types. All 'string' types will always be encoded with ASCII.  Where string is selected, all fields will be ASCII.</td>
             <td class="c10">uint8</td>
             <td class="c11">Can be changed by Issuer or Operator at their discretion.</td>
-        </tr>                <tr>
+        </tr>
+        <tr>
             <td class="c10">Change Issuer Address</td>
             <td class="c10">ChangeIssuerAddress</td>
             <td class="c10">1</td>
@@ -43,7 +44,8 @@ The following breaks down the construction of a Contract Amendment Action. The a
             <td class="c10">1 - Yes, 0 - No.  Used to change the issuer address.  The new issuer address must be in the input[1] position.</td>
             <td class="c10">bool</td>
             <td class="c11"></td>
-        </tr>                <tr>
+        </tr>
+        <tr>
             <td class="c10">Change Operator Address</td>
             <td class="c10">ChangeOperatorAddress</td>
             <td class="c10">1</td>
@@ -51,7 +53,8 @@ The following breaks down the construction of a Contract Amendment Action. The a
             <td class="c10">1 - Yes, 0 - No.  Used to change the smart contract operator address.  The new operator address must be in the input[1] position.</td>
             <td class="c10">bool</td>
             <td class="c11"></td>
-        </tr>                <tr>
+        </tr>
+        <tr>
             <td class="c10">Contract Revision</td>
             <td class="c10">ContractRevision</td>
             <td class="c10">2</td>
@@ -59,7 +62,8 @@ The following breaks down the construction of a Contract Amendment Action. The a
             <td class="c10">Counter 0 - 65,535</td>
             <td class="c10">uint16</td>
             <td class="c11"></td>
-        </tr>                <tr>
+        </tr>
+        <tr>
             <td class="c10">AmendmentsCount</td>
             <td class="c10">AmendmentsCount</td>
             <td class="c10">1</td>
@@ -67,7 +71,8 @@ The following breaks down the construction of a Contract Amendment Action. The a
             <td class="c10">Number of Amendments. Must be less than the max Subfield Index of CF.</td>
             <td class="c10">uint8</td>
             <td class="c11"></td>
-        </tr>                <tr>
+        </tr>
+        <tr>
             <td class="c10">Amendments</td>
             <td class="c10">Amendments</td>
             <td class="c10">0</td>
@@ -75,7 +80,8 @@ The following breaks down the construction of a Contract Amendment Action. The a
             <td class="c10"></td>
             <td class="c10">Amendment[]</td>
             <td class="c11"></td>
-        </tr>                <tr>
+        </tr>
+        <tr>
             <td class="c10">Ref Tx-ID</td>
             <td class="c10">RefTxID</td>
             <td class="c10">32</td>

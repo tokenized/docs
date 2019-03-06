@@ -27,7 +27,7 @@ The following breaks down the construction of a Confiscation Action. The action 
             <td class="e6">Header</td>
             <td class="e7"></td>
         </tr>
-                <tr>
+        <tr>
             <td class="e10">Number of Addresses</td>
             <td class="e10">AddressCount</td>
             <td class="e10">2</td>
@@ -35,7 +35,8 @@ The following breaks down the construction of a Confiscation Action. The action 
             <td class="e10">0 - 65,535</td>
             <td class="e10">uint16</td>
             <td class="e11"></td>
-        </tr>                <tr>
+        </tr>
+        <tr>
             <td class="e10">Addresses</td>
             <td class="e10">Addresses</td>
             <td class="e10">0</td>
@@ -43,7 +44,8 @@ The following breaks down the construction of a Confiscation Action. The action 
             <td class="e10">Addresses holding tokens to be confiscated.</td>
             <td class="e10">Address[]</td>
             <td class="e11"></td>
-        </tr>                <tr>
+        </tr>
+        <tr>
             <td class="e10">Deposit Qty</td>
             <td class="e10">DepositQty</td>
             <td class="e10">8</td>
@@ -51,7 +53,8 @@ The following breaks down the construction of a Confiscation Action. The action 
             <td class="e10">Custodian's token balance after confiscation.</td>
             <td class="e10">uint64</td>
             <td class="e11"></td>
-        </tr>                <tr>
+        </tr>
+        <tr>
             <td class="e10">Timestamp</td>
             <td class="e10">Timestamp</td>
             <td class="e10">8</td>
