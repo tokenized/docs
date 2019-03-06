@@ -16,7 +16,7 @@ Protocol:
     protocol/swap: "Swap"
     protocol/settlement: "Settlement"
     protocol/initiative: "Initiative"
-    protocol/referenmdum: "Referendum"
+    protocol/referendum: "Referendum"
     protocol/vote: "Vote"
     protocol/ballot-cast: "Ballot Cast"
     protocol/ballot-counted: "Ballot Counted"
