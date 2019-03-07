@@ -1,28 +1,32 @@
 
-<div style="display:none" id="header">
-	<table>
-		<tr>
-            <td class="t6">Header[]</td>
-            <td class="t6">Header Array</td>
-            <td class="t6">-</td>
-            <td class="t6">-</td>
-            <td class="t6">Common header data for all messages</td>
-            <td class="t6">Header</td>
-            <td class="t7"></td>
-        </tr>
-    </table>
-</div>
 #Swap Action
 
-Swap Action -  Two parties want to swap a token (Atomic Swap) directly for another token.  BSV is used in the txn other than for paying the necessary network/transaction fees.
+<div class="ui modal" id="header">
+    <i class="close icon"></i>
+    <div class="content docs-content">
+        <table class="ui table">
+            <tr>
+                <td class="t6">Header[]</td>
+                <td class="t6">Header Array</td>
+                <td class="t6">-</td>
+                <td class="t6">-</td>
+                <td class="t6">Common header data for all messages</td>
+                <td class="t6">Header</td>
+                <td class="t7"></td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+Swap Action -  Two parties want to swap a token(s) (Atomic Swap) directly for another token(s).  Only two asset types per swap action. BSV is used in the txn other than for paying the necessary network/transaction fees.
 
 The following breaks down the construction of a Swap Action. The action is constructed by building a single string from each of the elements in order.
 
-<div class="ritz grid-container" dir="ltr">
+<div class="ritz grid-container" dir="ltr"> 
     <table class="waffle" cellspacing="0" cellpadding="0" table-layout=fixed width=100%>
          <tr style='height:19px;'>
             <th style="width:6%" class="s0">Field</th>
-               <th style="width:9%" class="s1">Label</th>
+            <th style="width:9%" class="s1">Label</th>
             <th style="width:9%" class="s1">Name</th>
             <th style="width:2%" class="s1">Bytes</th>
             <th style="width:29%" class="s1">Example Values</th>
@@ -30,9 +34,8 @@ The following breaks down the construction of a Swap Action. The action is const
             <th style="width:5%" class="s1">Data Type</th>
             <th style="width:14%" class="s2">Amendment Restrictions</th>
         </tr>
-
         <tr>
-            <td class="s5" rowspan="23">Metadata (OP_RETURN Payload)</td>
+            <td class="s5" rowspan="20">Metadata (OP_RETURN Payload)</td>
             <td class="t6" colspan="7"><a href="#" data-popover="header">Header[] - Click to show content</a></td>
         </tr>
         <tr>
@@ -49,7 +52,7 @@ The following breaks down the construction of a Swap Action. The action is const
             <td class="t10">AssetType1</td>
             <td class="t10">3</td>
             <td class="t10" style="word-break:break-all">RRE</td>
-            <td class="t10">The Asset Type and Asset ID are used by wallets/Contracts/users to link the Action to the Asset Creation Action. All Actions reference the Asset Creation Action.  The Asset Creation Txn-ID is not used because Asset Amendments would result in all Token Owners would need to have their tokens 'updated'.</td>
+            <td class="t10"></td>
             <td class="t10">string</td>
             <td class="t11"></td>
         </tr>
@@ -67,7 +70,7 @@ The following breaks down the construction of a Swap Action. The action is const
             <td class="t10">AssetType2</td>
             <td class="t10">3</td>
             <td class="t10" style="word-break:break-all">SHC</td>
-            <td class="t10">In an Atomic Swap the Party2Asset(Type/ID/TokenQty) is what the Contracting Party 2 is putting up for exchange in the swap.  That is they own the Party2Asset before the exchange and will own Party1Asset after the exchange, if approved by the smart contract.</td>
+            <td class="t10"></td>
             <td class="t10">string</td>
             <td class="t11"></td>
         </tr>
@@ -127,25 +130,25 @@ The following breaks down the construction of a Swap Action. The action is const
         </tr>
         <tr>
             <td class="t10">Qty of Asset 1 Sending Addresses</td>
-            <td class="t10">QtyOfAsset1SendingAddresses</td>
+            <td class="t10">Asset1SenderCount</td>
             <td class="t10">1</td>
-            <td class="t10" style="word-break:break-all">1</td>
+            <td class="t10" style="word-break:break-all">0</td>
             <td class="t10">Asset 1 Sending Addresses</td>
             <td class="t10">uint8</td>
             <td class="t11"></td>
         </tr>
         <tr>
-            <td class="t10">Address X Asset 1 Sending Qty</td>
-            <td class="t10">AddressXAsset1SendingQty</td>
-            <td class="t10">8</td>
-            <td class="t10" style="word-break:break-all">200</td>
-            <td class="t10">Qty of Asset1 tokens to be sent by the address at Index X (Address X) position of the inputs</td>
-            <td class="t10">uint64</td>
+            <td class="t10">Asset 1 Senders</td>
+            <td class="t10">Asset1Senders</td>
+            <td class="t10">0</td>
+            <td class="t10" style="word-break:break-all"></td>
+            <td class="t10">Each element has the quantity of Asset1 tokens to be sent by the input address, which is referred to by the index.</td>
+            <td class="t10">QuantityIndex[]</td>
             <td class="t11"></td>
         </tr>
         <tr>
             <td class="t10">Qty of Asset 1 Receiving Addresses</td>
-            <td class="t10">QtyOfAsset1ReceivingAddresses</td>
+            <td class="t10">Asset1ReceiverCount</td>
             <td class="t10">1</td>
             <td class="t10" style="word-break:break-all">0</td>
             <td class="t10"></td>
@@ -153,53 +156,35 @@ The following breaks down the construction of a Swap Action. The action is const
             <td class="t11"></td>
         </tr>
         <tr>
-            <td class="t10">Address X Asset 1 Receiving Qty</td>
-            <td class="t10">AddressXAsset1ReceivingQty</td>
-            <td class="t10">8</td>
-            <td class="t10" style="word-break:break-all">200</td>
-            <td class="t10">Qty of Asset 1 tokens to be received by the address at Index X (Address X) position of the outputs.</td>
-            <td class="t10">uint64</td>
-            <td class="t11"></td>
-        </tr>
-        <tr>
-            <td class="t10">Registry Signature Algorithm for Asset 1 Receiving Address X</td>
-            <td class="t10">RegistrySigAlgoAsset1ReceivingAddressX</td>
-            <td class="t10">1</td>
-            <td class="t10" style="word-break:break-all">1</td>
-            <td class="t10">0 = No Registry-signed Message, 1 = ECDSA+secp256k1</td>
-            <td class="t10">uint8</td>
-            <td class="t11"></td>
-        </tr>
-        <tr>
-            <td class="t10">Registry Confirmation Signature for Address X Asset 1 Receiving</td>
-            <td class="t10">RegistryConfirmationSigAddressXAsset1Receiving</td>
-            <td class="t10">89</td>
-            <td class="t10" style="word-break:break-all">IEwzJB23sFryKMzx5MfBwnt1GMUKNTQnqF8WhsSD1wwtKKg7BoA/5GLeu5Unwar7ZhtR18tdzuIfdXDtU+zMHL8=</td>
-            <td class="t10">Length 0-255 bytes. IF restricted to a registry (whitelist) or has transfer restrictions (age, location, investor status): ECDSA+secp256k1 (or the like) signed message provided by an approved/trusted registry through an API signature of [Contract Address + Asset Code + Public Address + Blockhash of the Latest Block + Block Height + Confirmed/Rejected Bool]. If no transfer restrictions(trade restriction/age restriction fields in the Asset Type payload. or restricted to a whitelist by the Contract Auth Flags, it is a NULL field.</td>
-            <td class="t10">nvarchar8</td>
+            <td class="t10">Asset 1 Receivers</td>
+            <td class="t10">Asset1Receivers</td>
+            <td class="t10">0</td>
+            <td class="t10" style="word-break:break-all"></td>
+            <td class="t10">Each element has the quantity of Asset 1 tokens to be received by the output address, which is referred to by the index.</td>
+            <td class="t10">TokenReceiver[]</td>
             <td class="t11"></td>
         </tr>
         <tr>
             <td class="t10">Qty of Asset 2 Sending Addresses</td>
-            <td class="t10">QtyOfAsset2SendingAddresses</td>
+            <td class="t10">Asset2SenderCount</td>
             <td class="t10">1</td>
-            <td class="t10" style="word-break:break-all">1</td>
+            <td class="t10" style="word-break:break-all">0</td>
             <td class="t10">Asset 2 Sending Addresses</td>
             <td class="t10">uint8</td>
             <td class="t11"></td>
         </tr>
         <tr>
-            <td class="t10">Address X Asset 2 Sending Qty</td>
-            <td class="t10">AddressXAsset2SendingQty</td>
-            <td class="t10">8</td>
-            <td class="t10" style="word-break:break-all">200</td>
-            <td class="t10">Qty of Asset2 tokens to be sent by the address at Index X (Address X) position of the inputs</td>
-            <td class="t10">uint64</td>
+            <td class="t10">Asset 2 Senders</td>
+            <td class="t10">Asset2Senders</td>
+            <td class="t10">0</td>
+            <td class="t10" style="word-break:break-all"></td>
+            <td class="t10">Each element has the quantity of Asset2 tokens to be sent by the input address, which is referred to by the index.</td>
+            <td class="t10">QuantityIndex[]</td>
             <td class="t11"></td>
         </tr>
         <tr>
             <td class="t10">Qty of Asset 2 Receiving Addresses</td>
-            <td class="t10">QtyOfAsset2ReceivingAddresses</td>
+            <td class="t10">Asset2ReceiverCount</td>
             <td class="t10">1</td>
             <td class="t10" style="word-break:break-all">0</td>
             <td class="t10"></td>
@@ -207,30 +192,12 @@ The following breaks down the construction of a Swap Action. The action is const
             <td class="t11"></td>
         </tr>
         <tr>
-            <td class="t10">Address X Asset 2 Receiving Qty</td>
-            <td class="t10">AddressXAsset2ReceivingQty</td>
-            <td class="t10">8</td>
-            <td class="t10" style="word-break:break-all">200</td>
-            <td class="t10">Qty of Asset 2 tokens to be received by the address at Index X (Address X) position of the outputs.</td>
-            <td class="t10">uint64</td>
-            <td class="t11"></td>
-        </tr>
-        <tr>
-            <td class="t10">Registry Signature Algorithm for Asset 2 Receiving Address X</td>
-            <td class="t10">RegistrySigAlgoAsset2ReceivingAddressX</td>
-            <td class="t10">1</td>
-            <td class="t10" style="word-break:break-all">1</td>
-            <td class="t10">0 = No Registry-signed Message, 1 = ECDSA+secp256k1</td>
-            <td class="t10">uint8</td>
-            <td class="t11"></td>
-        </tr>
-        <tr>
-            <td class="t10">Registry Confirmation Signature for Token Receiving X</td>
-            <td class="t10">RegistryConfirmationSigTokenReceivingAddressX</td>
+            <td class="t10">Asset 2 Receivers</td>
+            <td class="t10">Asset2Receivers</td>
             <td class="t10">0</td>
-            <td class="t10" style="word-break:break-all">IEwzJB23sFryKMzx5MfBwnt1GMUKNTQnqF8WhsSD1wwtKKg7BoA/5GLeu5Unwar7ZhtR18tdzuIfdXDtU+zMHL8=</td>
-            <td class="t10">Length 0-255 bytes. IF restricted to a registry (whitelist) or has transfer restrictions (age, location, investor status): ECDSA+secp256k1 (or the like) signed message provided by an approved/trusted registry through an API signature of [Contract Address + Asset Code + Public Address + Blockhash of the Latest Block + Block Height + Confirmed/Rejected Bool]. If no transfer restrictions(trade restriction/age restriction fields in the Asset Type payload. or restricted to a whitelist by the Contract Auth Flags, it is a NULL field.</td>
-            <td class="t10">nvarchar8</td>
+            <td class="t10" style="word-break:break-all"></td>
+            <td class="t10">Each element contains the quantity of Asset 2 tokens to be received by the output address, which is referred to by the index.</td>
+            <td class="t10">TokenReceiver[]</td>
             <td class="t11"></td>
         </tr>
     </table>

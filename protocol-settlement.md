@@ -1,28 +1,32 @@
 
-<div style="display:none" id="header">
-	<table>
-		<tr>
-            <td class="t6">Header[]</td>
-            <td class="t6">Header Array</td>
-            <td class="t6">-</td>
-            <td class="t6">-</td>
-            <td class="t6">Common header data for all messages</td>
-            <td class="t6">Header</td>
-            <td class="t7"></td>
-        </tr>
-    </table>
-</div>
 #Settlement Action
 
-Settlement Action -  (to be used for finalizing the transfer of bitcoins and tokens from exchange, issuance, swap actions)
+<div class="ui modal" id="header">
+    <i class="close icon"></i>
+    <div class="content docs-content">
+        <table class="ui table">
+            <tr>
+                <td class="t6">Header[]</td>
+                <td class="t6">Header Array</td>
+                <td class="t6">-</td>
+                <td class="t6">-</td>
+                <td class="t6">Common header data for all messages</td>
+                <td class="t6">Header</td>
+                <td class="t7"></td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+Settlement Action -  Finalizes the transfer of bitcoins and tokens from send, exchange, and swap actions.
 
 The following breaks down the construction of a Settlement Action. The action is constructed by building a single string from each of the elements in order.
 
-<div class="ritz grid-container" dir="ltr">
+<div class="ritz grid-container" dir="ltr"> 
     <table class="waffle" cellspacing="0" cellpadding="0" table-layout=fixed width=100%>
          <tr style='height:19px;'>
             <th style="width:6%" class="s0">Field</th>
-               <th style="width:9%" class="s1">Label</th>
+            <th style="width:9%" class="s1">Label</th>
             <th style="width:9%" class="s1">Name</th>
             <th style="width:2%" class="s1">Bytes</th>
             <th style="width:29%" class="s1">Example Values</th>
@@ -30,9 +34,8 @@ The following breaks down the construction of a Settlement Action. The action is
             <th style="width:5%" class="s1">Data Type</th>
             <th style="width:14%" class="s2">Amendment Restrictions</th>
         </tr>
-
         <tr>
-            <td class="s5" rowspan="12">Metadata (OP_RETURN Payload)</td>
+            <td class="s5" rowspan="20">Metadata (OP_RETURN Payload)</td>
             <td class="t6" colspan="7"><a href="#" data-popover="header">Header[] - Click to show content</a></td>
         </tr>
         <tr>
@@ -90,39 +93,39 @@ The following breaks down the construction of a Settlement Action. The action is
             <td class="t11"></td>
         </tr>
         <tr>
-            <td class="t10">Qty Asset 1 Settlements</td>
-            <td class="t10">QtyAsset1Settlements</td>
+            <td class="t10">Asset 1 Settlements Count</td>
+            <td class="t10">Asset1SettlementsCount</td>
             <td class="t10">1</td>
-            <td class="t10" style="word-break:break-all">1</td>
+            <td class="t10" style="word-break:break-all">0</td>
             <td class="t10">Number of settlements for Asset 1.</td>
             <td class="t10">uint8</td>
             <td class="t11"></td>
         </tr>
         <tr>
             <td class="t10">Asset 1 Address X Qty</td>
-            <td class="t10">Asset1AddressXQty</td>
-            <td class="t10">8</td>
-            <td class="t10" style="word-break:break-all">21000</td>
-            <td class="t10">The resulting token balance of Asset 1 for Address X. (X = Output Index)</td>
-            <td class="t10">uint64</td>
+            <td class="t10">Asset1AddressesXQty</td>
+            <td class="t10">0</td>
+            <td class="t10" style="word-break:break-all"></td>
+            <td class="t10">Each element contains the resulting token balance of Asset 1 for the output Address, which is referred to by the index.</td>
+            <td class="t10">QuantityIndex[]</td>
             <td class="t11"></td>
         </tr>
         <tr>
-            <td class="t10">Qty Asset 2 Addresses</td>
-            <td class="t10">QtyAsset2Addresses</td>
+            <td class="t10">Asset 2 Settlements Count</td>
+            <td class="t10">Asset2SettlementsCount</td>
             <td class="t10">1</td>
-            <td class="t10" style="word-break:break-all">1</td>
-            <td class="t10">Number of settlements for Asset 1. NULL for Send and Exchange Response Type.</td>
+            <td class="t10" style="word-break:break-all">0</td>
+            <td class="t10">Number of settlements for Asset 2. 0 for Send and Exchange Response Type.</td>
             <td class="t10">uint8</td>
             <td class="t11"></td>
         </tr>
         <tr>
             <td class="t10">Asset 2 Address X Qty</td>
             <td class="t10">Asset2AddressXQty</td>
-            <td class="t10">8</td>
-            <td class="t10" style="word-break:break-all">1,000,000</td>
-            <td class="t10">The resulting token balance of Asset 2 for Address X. (X = Output Index) NULL for Send and Exchange Response Type.</td>
-            <td class="t10">uint64</td>
+            <td class="t10">0</td>
+            <td class="t10" style="word-break:break-all"></td>
+            <td class="t10">Each element contains the resulting token balance of Asset 2 for the output address, which is referred to by the index. Will not be present for Send and Exchange Response Type.</td>
+            <td class="t10">QuantityIndex[]</td>
             <td class="t11"></td>
         </tr>
         <tr>

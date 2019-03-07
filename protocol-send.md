@@ -1,28 +1,32 @@
 
-<div style="display:none" id="header">
-	<table>
-		<tr>
-            <td class="t6">Header[]</td>
-            <td class="t6">Header Array</td>
-            <td class="t6">-</td>
-            <td class="t6">-</td>
-            <td class="t6">Common header data for all messages</td>
-            <td class="t6">Header</td>
-            <td class="t7"></td>
-        </tr>
-    </table>
-</div>
 #Send Action
 
-Send Action -  A Token Owner Sends a Token to a Receiver. The Send Action requires no sign-off by the Token Receiving Party and does not provide any on-chain consideration to the Token Sending Party.  Can be used for User Revocation (remove tokens from wallet by sending back to Issuer).  Can be used for redeeming a ticket, coupon, points, etc.
+<div class="ui modal" id="header">
+    <i class="close icon"></i>
+    <div class="content docs-content">
+        <table class="ui table">
+            <tr>
+                <td class="t6">Header[]</td>
+                <td class="t6">Header Array</td>
+                <td class="t6">-</td>
+                <td class="t6">-</td>
+                <td class="t6">Common header data for all messages</td>
+                <td class="t6">Header</td>
+                <td class="t7"></td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+Send Action -  A Token Owner Sends a Token to a Receiver. The Send Action requires no sign-off by the Token Receiving Party and does not provide any on-chain consideration to the Token Sending Party.  Can be used for redeeming a ticket, coupon, points, etc.
 
 The following breaks down the construction of a Send Action. The action is constructed by building a single string from each of the elements in order.
 
-<div class="ritz grid-container" dir="ltr">
+<div class="ritz grid-container" dir="ltr"> 
     <table class="waffle" cellspacing="0" cellpadding="0" table-layout=fixed width=100%>
          <tr style='height:19px;'>
             <th style="width:6%" class="s0">Field</th>
-               <th style="width:9%" class="s1">Label</th>
+            <th style="width:9%" class="s1">Label</th>
             <th style="width:9%" class="s1">Name</th>
             <th style="width:2%" class="s1">Bytes</th>
             <th style="width:29%" class="s1">Example Values</th>
@@ -30,9 +34,8 @@ The following breaks down the construction of a Send Action. The action is const
             <th style="width:5%" class="s1">Data Type</th>
             <th style="width:14%" class="s2">Amendment Restrictions</th>
         </tr>
-
         <tr>
-            <td class="s5" rowspan="10">Metadata (OP_RETURN Payload)</td>
+            <td class="s5" rowspan="20">Metadata (OP_RETURN Payload)</td>
             <td class="t6" colspan="7"><a href="#" data-popover="header">Header[] - Click to show content</a></td>
         </tr>
         <tr>
@@ -63,57 +66,39 @@ The following breaks down the construction of a Send Action. The action is const
             <td class="t11"></td>
         </tr>
         <tr>
-            <td class="t10">Quantity of Token Sending Addresses</td>
-            <td class="t10">QtyOfTokenSendingAddresses</td>
+            <td class="t10">Token Sender Count</td>
+            <td class="t10">TokenSenderCount</td>
             <td class="t10">1</td>
-            <td class="t10" style="word-break:break-all">2</td>
-            <td class="t10">Number inputs sending tokens. Number equates to the number of inputs starting with index 0. 1-255, 0 is not valid.</td>
+            <td class="t10" style="word-break:break-all">0</td>
+            <td class="t10">Number inputs sending tokens. 1-255, 0 is not valid.</td>
             <td class="t10">uint8</td>
             <td class="t11"></td>
         </tr>
         <tr>
-            <td class="t10">Token Sending Address X</td>
-            <td class="t10">TokenSendingAddressX</td>
-            <td class="t10">8</td>
-            <td class="t10" style="word-break:break-all">100</td>
-            <td class="t10">Value of tokens to be spent from the address at Input Index X</td>
-            <td class="t10">uint64</td>
-            <td class="t11"></td>
-        </tr>
-        <tr>
-            <td class="t10">Quantity of Token Receiving Addresses</td>
-            <td class="t10">QtyOfTokenReceivingAddresses</td>
-            <td class="t10">1</td>
-            <td class="t10" style="word-break:break-all">1</td>
-            <td class="t10">Number outputs receiving tokens. Number equates to the number of outputs starting with index 1 (Contract Address is Index 0). 1-255. 0 is not valid.</td>
-            <td class="t10">uint8</td>
-            <td class="t11"></td>
-        </tr>
-        <tr>
-            <td class="t10">Token Receiving Address X</td>
-            <td class="t10">TokenReceivingAddressX</td>
-            <td class="t10">8</td>
-            <td class="t10" style="word-break:break-all">100</td>
-            <td class="t10">Value of tokens to be received by the address at OutputX</td>
-            <td class="t10">uint64</td>
-            <td class="t11"></td>
-        </tr>
-        <tr>
-            <td class="t10">Registry Signature Algorithm</td>
-            <td class="t10">RegistrySigAlgoReceivingAddressX</td>
-            <td class="t10">1</td>
-            <td class="t10" style="word-break:break-all">1</td>
-            <td class="t10">0 = No Registry-signed Message, 1 = ECDSA+secp256k1</td>
-            <td class="t10">uint8</td>
-            <td class="t11"></td>
-        </tr>
-        <tr>
-            <td class="t10">Registry Confirmation Signature for Token Receiving X</td>
-            <td class="t10">RegistryConfirmationSigTokenReceivingAddressX</td>
+            <td class="t10">Token Senders</td>
+            <td class="t10">TokenSenders</td>
             <td class="t10">0</td>
-            <td class="t10" style="word-break:break-all">IEwzJB23sFryKMzx5MfBwnt1GMUKNTQnqF8WhsSD1wwtKKg7BoA/5GLeu5Unwar7ZhtR18tdzuIfdXDtU+zMHL8=</td>
-            <td class="t10">Length 0-255 bytes. IF restricted to a registry (whitelist) or has transfer restrictions (age, location, investor status): ECDSA+secp256k1 (or the like) signed message provided by an approved/trusted registry through an API signature of [Contract Address + Asset Code + Public Address + Blockhash of the Latest Block + Block Height + Confirmed/Rejected Bool]. If no transfer restrictions(trade restriction/age restriction fields in the Asset Type payload. or restricted to a whitelist by the Contract Auth Flags, it is a NULL field.</td>
-            <td class="t10">nvarchar8</td>
+            <td class="t10" style="word-break:break-all"></td>
+            <td class="t10">Each element has the value of tokens to be spent from the input address, which is referred to by the index.</td>
+            <td class="t10">QuantityIndex[]</td>
+            <td class="t11"></td>
+        </tr>
+        <tr>
+            <td class="t10">The number of token receivers</td>
+            <td class="t10">TokenReceiverCount</td>
+            <td class="t10">1</td>
+            <td class="t10" style="word-break:break-all">0</td>
+            <td class="t10">Number of outputs receiving tokens. 1-255. 0 is not valid.</td>
+            <td class="t10">uint8</td>
+            <td class="t11"></td>
+        </tr>
+        <tr>
+            <td class="t10">Token Receivers</td>
+            <td class="t10">TokenReceivers</td>
+            <td class="t10">0</td>
+            <td class="t10" style="word-break:break-all"></td>
+            <td class="t10">Each element has the value of tokens to be received by the output address, which is referred to by the index.</td>
+            <td class="t10">TokenReceiver[]</td>
             <td class="t11"></td>
         </tr>
     </table>

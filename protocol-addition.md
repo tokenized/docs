@@ -1,28 +1,32 @@
 
-<div style="display:none" id="header">
-	<table>
-		<tr>
-            <td class="r6">Header[]</td>
-            <td class="r6">Header Array</td>
-            <td class="r6">-</td>
-            <td class="r6">-</td>
-            <td class="r6">Common header data for all messages</td>
-            <td class="r6">Header</td>
-            <td class="r7"></td>
-        </tr>
-    </table>
-</div>
 #Addition Action
+
+<div class="ui modal" id="header">
+    <i class="close icon"></i>
+    <div class="content docs-content">
+        <table class="ui table">
+            <tr>
+                <td class="r6">Header[]</td>
+                <td class="r6">Header Array</td>
+                <td class="r6">-</td>
+                <td class="r6">-</td>
+                <td class="r6">Common header data for all messages</td>
+                <td class="r6">Header</td>
+                <td class="r7"></td>
+            </tr>
+        </table>
+    </div>
+</div>
 
 Addition Action -  Adds a User's public address to a global distributed whitelist. Entities (eg. Issuer) can filter by the public address of known and trusted entities (eg. KYC Databases such as coinbase) and therefore are able to create sublists - or subsets - of the main global whitelist. 
 
 The following breaks down the construction of a Addition Action. The action is constructed by building a single string from each of the elements in order.
 
-<div class="ritz grid-container" dir="ltr">
+<div class="ritz grid-container" dir="ltr"> 
     <table class="waffle" cellspacing="0" cellpadding="0" table-layout=fixed width=100%>
          <tr style='height:19px;'>
             <th style="width:6%" class="s0">Field</th>
-               <th style="width:9%" class="s1">Label</th>
+            <th style="width:9%" class="s1">Label</th>
             <th style="width:9%" class="s1">Name</th>
             <th style="width:2%" class="s1">Bytes</th>
             <th style="width:29%" class="s1">Example Values</th>
@@ -30,9 +34,8 @@ The following breaks down the construction of a Addition Action. The action is c
             <th style="width:5%" class="s1">Data Type</th>
             <th style="width:14%" class="s2">Amendment Restrictions</th>
         </tr>
-
         <tr>
-            <td class="s5" rowspan="9">Metadata (OP_RETURN Payload)</td>
+            <td class="s5" rowspan="20">Metadata (OP_RETURN Payload)</td>
             <td class="r6" colspan="7"><a href="#" data-popover="header">Header[] - Click to show content</a></td>
         </tr>
         <tr>
