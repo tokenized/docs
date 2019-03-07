@@ -1,4 +1,17 @@
 
+<div style="display:none" id="header">
+	<table>
+		<tr>
+            <td class="c6">Header[]</td>
+            <td class="c6">Header Array</td>
+            <td class="c6">-</td>
+            <td class="c6">-</td>
+            <td class="c6">Common header data for all messages</td>
+            <td class="c6">Header</td>
+            <td class="c7"></td>
+        </tr>
+    </table>
+</div>
 #Contract Amendment Action
 
 Contract Amendment Action -  the issuer can initiate an amendment to the contract establishment metadata.  This can be due to a change of name, change of contract terms, change of authorizations, or change of the URI.  The ability to make an amendment to the contract is limited by the Authorization Flag set on the previous Contract Formation action.  The Authorization Flags can be set to allow Contract Amendments, but only if a Token Owner vote has passed in favour of making the Amendment. Contract revision/protocol identifier and action prefix can't be amended.  The rest of the fields are open to change.  However, the Issuer is responsible for acting lawfully (in their jurisdiction) and in accordance with the terms of the Investment Contract.
@@ -17,15 +30,10 @@ The following breaks down the construction of a Contract Amendment Action. The a
             <th style="width:5%" class="s1">Data Type</th>
             <th style="width:14%" class="s2">Amendment Restrictions</th>
         </tr>
+
         <tr>
             <td class="s5" rowspan="8">Metadata (OP_RETURN Payload)</td>
-            <td class="c6">Header[]</td>
-            <td class="c6">Header Array</td>
-            <td class="c6">-</td>
-            <td class="c6">-</td>
-            <td class="c6">Common header data for all messages</td>
-            <td class="c6">Header</td>
-            <td class="c7"></td>
+            <td class="c6" colspan="7"><a href="#" data-popover="header">Header[] - Click to show content</a></td>
         </tr>
         <tr>
             <td class="c10">Text Encoding</td>

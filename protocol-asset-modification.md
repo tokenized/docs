@@ -1,4 +1,17 @@
 
+<div style="display:none" id="header">
+	<table>
+		<tr>
+            <td class="a6">Header[]</td>
+            <td class="a6">Header Array</td>
+            <td class="a6">-</td>
+            <td class="a6">-</td>
+            <td class="a6">Common header data for all messages</td>
+            <td class="a6">Header</td>
+            <td class="a7"></td>
+        </tr>
+    </table>
+</div>
 #Asset Modification Action
 
 Asset Modification Action -  Token Dilutions, Call Backs/Revocations, burning etc. Any field can be amended except for the Asset Revision field (incremental counter based on the previous Asset Creation Txn) and the Action Prefix. Asset Types specific payloads are locked to the Asset Type.  Asset Type specific payload amendments must be done as a protocol Version upgrade.  Authorization flags can restrict some fields or all fields from being amended. Some amendments require a Token Owner vote for the smart contract to permit.
@@ -17,15 +30,10 @@ The following breaks down the construction of a Asset Modification Action. The a
             <th style="width:5%" class="s1">Data Type</th>
             <th style="width:14%" class="s2">Amendment Restrictions</th>
         </tr>
+
         <tr>
             <td class="s5" rowspan="6">Metadata (OP_RETURN Payload)</td>
-            <td class="a6">Header[]</td>
-            <td class="a6">Header Array</td>
-            <td class="a6">-</td>
-            <td class="a6">-</td>
-            <td class="a6">Common header data for all messages</td>
-            <td class="a6">Header</td>
-            <td class="a7"></td>
+            <td class="a6" colspan="7"><a href="#" data-popover="header">Header[] - Click to show content</a></td>
         </tr>
         <tr>
             <td class="a10">Text Encoding</td>

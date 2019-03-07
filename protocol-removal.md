@@ -1,4 +1,17 @@
 
+<div style="display:none" id="header">
+	<table>
+		<tr>
+            <td class="r6">Header[]</td>
+            <td class="r6">Header Array</td>
+            <td class="r6">-</td>
+            <td class="r6">-</td>
+            <td class="r6">Common header data for all messages</td>
+            <td class="r6">Header</td>
+            <td class="r7"></td>
+        </tr>
+    </table>
+</div>
 #Removal Action
 
 Removal Action -  Removes a User's public address from the global distributed whitelist.
@@ -17,15 +30,10 @@ The following breaks down the construction of a Removal Action. The action is co
             <th style="width:5%" class="s1">Data Type</th>
             <th style="width:14%" class="s2">Amendment Restrictions</th>
         </tr>
+
         <tr>
             <td class="s5" rowspan="4">Metadata (OP_RETURN Payload)</td>
-            <td class="r6">Header[]</td>
-            <td class="r6">Header Array</td>
-            <td class="r6">-</td>
-            <td class="r6">-</td>
-            <td class="r6">Common header data for all messages</td>
-            <td class="r6">Header</td>
-            <td class="r7"></td>
+            <td class="r6" colspan="7"><a href="#" data-popover="header">Header[] - Click to show content</a></td>
         </tr>
         <tr>
             <td class="r10">Text Encoding</td>

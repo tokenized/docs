@@ -1,4 +1,17 @@
 
+<div style="display:none" id="header">
+	<table>
+		<tr>
+            <td class="m6">Header[]</td>
+            <td class="m6">Header Array</td>
+            <td class="m6">-</td>
+            <td class="m6">-</td>
+            <td class="m6">Common header data for all messages</td>
+            <td class="m6">Header</td>
+            <td class="m7"></td>
+        </tr>
+    </table>
+</div>
 #Message Action
 
 Message Action -  the message action is a general purpose communication action. 'Twitter/sms' for Issuers/Investors/Users. The message txn can also be used for passing partially signed txns on-chain, establishing private communication channels including receipting, invoices, PO, and private offers/bids.  The messages are broken down by type for easy filtering in the a user’s wallet.  The Message Types are listed in the Message Types table.
@@ -17,15 +30,10 @@ The following breaks down the construction of a Message Action. The action is co
             <th style="width:5%" class="s1">Data Type</th>
             <th style="width:14%" class="s2">Amendment Restrictions</th>
         </tr>
+
         <tr>
             <td class="s5" rowspan="7">Metadata (OP_RETURN Payload)</td>
-            <td class="m6">Header[]</td>
-            <td class="m6">Header Array</td>
-            <td class="m6">-</td>
-            <td class="m6">-</td>
-            <td class="m6">Common header data for all messages</td>
-            <td class="m6">Header</td>
-            <td class="m7"></td>
+            <td class="m6" colspan="7"><a href="#" data-popover="header">Header[] - Click to show content</a></td>
         </tr>
         <tr>
             <td class="m10">Text Encoding</td>

@@ -1,4 +1,17 @@
 
+<div style="display:none" id="header">
+	<table>
+		<tr>
+            <td class="m6">Header[]</td>
+            <td class="m6">Header Array</td>
+            <td class="m6">-</td>
+            <td class="m6">-</td>
+            <td class="m6">Common header data for all messages</td>
+            <td class="m6">Header</td>
+            <td class="m7"></td>
+        </tr>
+    </table>
+</div>
 #Rejection Action
 
 Rejection Action -  used to reject Exchange, Send, Initiative, Referendum, Order, and Ballot Cast actions that do not comply with the Contract. If money is to be returned to a User then it is used in lieu of the Settlement Action to properly account for token balances. All Issuer/User Actions must be responded to by the Contract with an Action.  The only exception to this rule is when there is not enough fees in the first Action for the Contract response action to remain revenue neutral.  If not enough fees are attached to pay for the Contract response then the Contract will not respond. For example: Send and Exchange Actions must be responded to by the Contract with either a Settlement Action or a Rejection Action.
@@ -17,15 +30,10 @@ The following breaks down the construction of a Rejection Action. The action is 
             <th style="width:5%" class="s1">Data Type</th>
             <th style="width:14%" class="s2">Amendment Restrictions</th>
         </tr>
+
         <tr>
             <td class="s5" rowspan="7">Metadata (OP_RETURN Payload)</td>
-            <td class="m6">Header[]</td>
-            <td class="m6">Header Array</td>
-            <td class="m6">-</td>
-            <td class="m6">-</td>
-            <td class="m6">Common header data for all messages</td>
-            <td class="m6">Header</td>
-            <td class="m7"></td>
+            <td class="m6" colspan="7"><a href="#" data-popover="header">Header[] - Click to show content</a></td>
         </tr>
         <tr>
             <td class="m10">Text Encoding</td>

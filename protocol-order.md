@@ -1,4 +1,17 @@
 
+<div style="display:none" id="header">
+	<table>
+		<tr>
+            <td class="e6">Header[]</td>
+            <td class="e6">Header Array</td>
+            <td class="e6">-</td>
+            <td class="e6">-</td>
+            <td class="e6">Common header data for all messages</td>
+            <td class="e6">Header</td>
+            <td class="e7"></td>
+        </tr>
+    </table>
+</div>
 #Order Action
 
 Order Action -  Issuer to signal to the smart contract that the tokens that a particular PKH owns are to be confiscated, frozen or thawed.
@@ -17,15 +30,10 @@ The following breaks down the construction of a Order Action. The action is cons
             <th style="width:5%" class="s1">Data Type</th>
             <th style="width:14%" class="s2">Amendment Restrictions</th>
         </tr>
+
         <tr>
             <td class="s5" rowspan="16">Metadata (OP_RETURN Payload)</td>
-            <td class="e6">Header[]</td>
-            <td class="e6">Header Array</td>
-            <td class="e6">-</td>
-            <td class="e6">-</td>
-            <td class="e6">Common header data for all messages</td>
-            <td class="e6">Header</td>
-            <td class="e7"></td>
+            <td class="e6" colspan="7"><a href="#" data-popover="header">Header[] - Click to show content</a></td>
         </tr>
         <tr>
             <td class="e10">Text Encoding</td>

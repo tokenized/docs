@@ -1,4 +1,17 @@
 
+<div style="display:none" id="header">
+	<table>
+		<tr>
+            <td class="g6">Header[]</td>
+            <td class="g6">Header Array</td>
+            <td class="g6">-</td>
+            <td class="g6">-</td>
+            <td class="g6">Common header data for all messages</td>
+            <td class="g6">Header</td>
+            <td class="g7"></td>
+        </tr>
+    </table>
+</div>
 #Ballot Cast Action
 
 Ballot Cast Action -  Used to allow Token Owners to cast their ballot (vote) on proposals raised by the Issuer or other token holders. 1 Vote per token unless a vote multiplier is specified in the relevant Asset Definition action.
@@ -17,15 +30,10 @@ The following breaks down the construction of a Ballot Cast Action. The action i
             <th style="width:5%" class="s1">Data Type</th>
             <th style="width:14%" class="s2">Amendment Restrictions</th>
         </tr>
+
         <tr>
             <td class="s5" rowspan="5">Metadata (OP_RETURN Payload)</td>
-            <td class="g6">Header[]</td>
-            <td class="g6">Header Array</td>
-            <td class="g6">-</td>
-            <td class="g6">-</td>
-            <td class="g6">Common header data for all messages</td>
-            <td class="g6">Header</td>
-            <td class="g7"></td>
+            <td class="g6" colspan="7"><a href="#" data-popover="header">Header[] - Click to show content</a></td>
         </tr>
         <tr>
             <td class="g10">Asset Type</td>

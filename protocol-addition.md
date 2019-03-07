@@ -1,4 +1,17 @@
 
+<div style="display:none" id="header">
+	<table>
+		<tr>
+            <td class="r6">Header[]</td>
+            <td class="r6">Header Array</td>
+            <td class="r6">-</td>
+            <td class="r6">-</td>
+            <td class="r6">Common header data for all messages</td>
+            <td class="r6">Header</td>
+            <td class="r7"></td>
+        </tr>
+    </table>
+</div>
 #Addition Action
 
 Addition Action -  Adds a User's public address to a global distributed whitelist. Entities (eg. Issuer) can filter by the public address of known and trusted entities (eg. KYC Databases such as coinbase) and therefore are able to create sublists - or subsets - of the main global whitelist. 
@@ -17,15 +30,10 @@ The following breaks down the construction of a Addition Action. The action is c
             <th style="width:5%" class="s1">Data Type</th>
             <th style="width:14%" class="s2">Amendment Restrictions</th>
         </tr>
+
         <tr>
             <td class="s5" rowspan="9">Metadata (OP_RETURN Payload)</td>
-            <td class="r6">Header[]</td>
-            <td class="r6">Header Array</td>
-            <td class="r6">-</td>
-            <td class="r6">-</td>
-            <td class="r6">Common header data for all messages</td>
-            <td class="r6">Header</td>
-            <td class="r7"></td>
+            <td class="r6" colspan="7"><a href="#" data-popover="header">Header[] - Click to show content</a></td>
         </tr>
         <tr>
             <td class="r10">Text Encoding</td>

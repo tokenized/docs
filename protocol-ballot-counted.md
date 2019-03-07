@@ -1,4 +1,17 @@
 
+<div style="display:none" id="header">
+	<table>
+		<tr>
+            <td class="g6">Header[]</td>
+            <td class="g6">Header Array</td>
+            <td class="g6">-</td>
+            <td class="g6">-</td>
+            <td class="g6">Common header data for all messages</td>
+            <td class="g6">Header</td>
+            <td class="g7"></td>
+        </tr>
+    </table>
+</div>
 #Ballot Counted Action
 
 Ballot Counted Action -  The smart contract will respond to a Ballot Cast action with a Ballot Counted action if the Ballot Cast is valid.  If the Ballot Cast is not valid, then the smart contract will respond with a Rejection Action.
@@ -17,15 +30,10 @@ The following breaks down the construction of a Ballot Counted Action. The actio
             <th style="width:5%" class="s1">Data Type</th>
             <th style="width:14%" class="s2">Amendment Restrictions</th>
         </tr>
+
         <tr>
             <td class="s5" rowspan="2">Metadata (OP_RETURN Payload)</td>
-            <td class="g6">Header[]</td>
-            <td class="g6">Header Array</td>
-            <td class="g6">-</td>
-            <td class="g6">-</td>
-            <td class="g6">Common header data for all messages</td>
-            <td class="g6">Header</td>
-            <td class="g7"></td>
+            <td class="g6" colspan="7"><a href="#" data-popover="header">Header[] - Click to show content</a></td>
         </tr>
         <tr>
             <td class="g10">Timestamp</td>

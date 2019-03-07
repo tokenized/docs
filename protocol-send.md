@@ -1,4 +1,17 @@
 
+<div style="display:none" id="header">
+	<table>
+		<tr>
+            <td class="t6">Header[]</td>
+            <td class="t6">Header Array</td>
+            <td class="t6">-</td>
+            <td class="t6">-</td>
+            <td class="t6">Common header data for all messages</td>
+            <td class="t6">Header</td>
+            <td class="t7"></td>
+        </tr>
+    </table>
+</div>
 #Send Action
 
 Send Action -  A Token Owner Sends a Token to a Receiver. The Send Action requires no sign-off by the Token Receiving Party and does not provide any on-chain consideration to the Token Sending Party.  Can be used for User Revocation (remove tokens from wallet by sending back to Issuer).  Can be used for redeeming a ticket, coupon, points, etc.
@@ -17,15 +30,10 @@ The following breaks down the construction of a Send Action. The action is const
             <th style="width:5%" class="s1">Data Type</th>
             <th style="width:14%" class="s2">Amendment Restrictions</th>
         </tr>
+
         <tr>
             <td class="s5" rowspan="10">Metadata (OP_RETURN Payload)</td>
-            <td class="t6">Header[]</td>
-            <td class="t6">Header Array</td>
-            <td class="t6">-</td>
-            <td class="t6">-</td>
-            <td class="t6">Common header data for all messages</td>
-            <td class="t6">Header</td>
-            <td class="t7"></td>
+            <td class="t6" colspan="7"><a href="#" data-popover="header">Header[] - Click to show content</a></td>
         </tr>
         <tr>
             <td class="t10">Text Encoding</td>

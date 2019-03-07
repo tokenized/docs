@@ -1,4 +1,17 @@
 
+<div style="display:none" id="header">
+	<table>
+		<tr>
+            <td class="e6">Header[]</td>
+            <td class="e6">Header Array</td>
+            <td class="e6">-</td>
+            <td class="e6">-</td>
+            <td class="e6">Common header data for all messages</td>
+            <td class="e6">Header</td>
+            <td class="e7"></td>
+        </tr>
+    </table>
+</div>
 #Confiscation Action
 
 Confiscation Action -  to be used to comply with contractual obligations and/or legal requirements.
@@ -17,15 +30,10 @@ The following breaks down the construction of a Confiscation Action. The action 
             <th style="width:5%" class="s1">Data Type</th>
             <th style="width:14%" class="s2">Amendment Restrictions</th>
         </tr>
+
         <tr>
             <td class="s5" rowspan="5">Metadata (OP_RETURN Payload)</td>
-            <td class="e6">Header[]</td>
-            <td class="e6">Header Array</td>
-            <td class="e6">-</td>
-            <td class="e6">-</td>
-            <td class="e6">Common header data for all messages</td>
-            <td class="e6">Header</td>
-            <td class="e7"></td>
+            <td class="e6" colspan="7"><a href="#" data-popover="header">Header[] - Click to show content</a></td>
         </tr>
         <tr>
             <td class="e10">Number of Addresses</td>

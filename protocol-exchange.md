@@ -1,4 +1,17 @@
 
+<div style="display:none" id="header">
+	<table>
+		<tr>
+            <td class="t6">Header[]</td>
+            <td class="t6">Header Array</td>
+            <td class="t6">-</td>
+            <td class="t6">-</td>
+            <td class="t6">Common header data for all messages</td>
+            <td class="t6">Header</td>
+            <td class="t7"></td>
+        </tr>
+    </table>
+</div>
 #Exchange Action
 
 Exchange Action -  Example: Bob (Token Sender) to sell 21,000 tokens to Alice (Token Receiver) for 7 BSV.  Both parties must sign the transaction for it to be valid.
@@ -17,15 +30,10 @@ The following breaks down the construction of a Exchange Action. The action is c
             <th style="width:5%" class="s1">Data Type</th>
             <th style="width:14%" class="s2">Amendment Restrictions</th>
         </tr>
+
         <tr>
             <td class="s5" rowspan="15">Metadata (OP_RETURN Payload)</td>
-            <td class="t6">Header[]</td>
-            <td class="t6">Header Array</td>
-            <td class="t6">-</td>
-            <td class="t6">-</td>
-            <td class="t6">Common header data for all messages</td>
-            <td class="t6">Header</td>
-            <td class="t7"></td>
+            <td class="t6" colspan="7"><a href="#" data-popover="header">Header[] - Click to show content</a></td>
         </tr>
         <tr>
             <td class="t10">Text Encoding</td>

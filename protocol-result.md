@@ -1,4 +1,17 @@
 
+<div style="display:none" id="header">
+	<table>
+		<tr>
+            <td class="g6">Header[]</td>
+            <td class="g6">Header Array</td>
+            <td class="g6">-</td>
+            <td class="g6">-</td>
+            <td class="g6">Common header data for all messages</td>
+            <td class="g6">Header</td>
+            <td class="g7"></td>
+        </tr>
+    </table>
+</div>
 #Result Action
 
 Result Action -  Once a vote has been completed the results are published.
@@ -17,15 +30,10 @@ The following breaks down the construction of a Result Action. The action is con
             <th style="width:5%" class="s1">Data Type</th>
             <th style="width:14%" class="s2">Amendment Restrictions</th>
         </tr>
+
         <tr>
             <td class="s5" rowspan="10">Metadata (OP_RETURN Payload)</td>
-            <td class="g6">Header[]</td>
-            <td class="g6">Header Array</td>
-            <td class="g6">-</td>
-            <td class="g6">-</td>
-            <td class="g6">Common header data for all messages</td>
-            <td class="g6">Header</td>
-            <td class="g7"></td>
+            <td class="g6" colspan="7"><a href="#" data-popover="header">Header[] - Click to show content</a></td>
         </tr>
         <tr>
             <td class="g10">Text Encoding</td>

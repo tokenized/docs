@@ -1,4 +1,17 @@
 
+<div style="display:none" id="header">
+	<table>
+		<tr>
+            <td class="c6">Header[]</td>
+            <td class="c6">Header Array</td>
+            <td class="c6">-</td>
+            <td class="c6">-</td>
+            <td class="c6">Common header data for all messages</td>
+            <td class="c6">Header</td>
+            <td class="c7"></td>
+        </tr>
+    </table>
+</div>
 #Static Contract Formation Action
 
 Static Contract Formation Action - 
@@ -17,15 +30,10 @@ The following breaks down the construction of a Static Contract Formation Action
             <th style="width:5%" class="s1">Data Type</th>
             <th style="width:14%" class="s2">Amendment Restrictions</th>
         </tr>
+
         <tr>
             <td class="s5" rowspan="15">Metadata (OP_RETURN Payload)</td>
-            <td class="c6">Header[]</td>
-            <td class="c6">Header Array</td>
-            <td class="c6">-</td>
-            <td class="c6">-</td>
-            <td class="c6">Common header data for all messages</td>
-            <td class="c6">Header</td>
-            <td class="c7"></td>
+            <td class="c6" colspan="7"><a href="#" data-popover="header">Header[] - Click to show content</a></td>
         </tr>
         <tr>
             <td class="c10">Text Encoding</td>

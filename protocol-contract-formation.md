@@ -1,4 +1,17 @@
 
+<div style="display:none" id="header">
+	<table>
+		<tr>
+            <td class="c6">Header[]</td>
+            <td class="c6">Header Array</td>
+            <td class="c6">-</td>
+            <td class="c6">-</td>
+            <td class="c6">Common header data for all messages</td>
+            <td class="c6">Header</td>
+            <td class="c7"></td>
+        </tr>
+    </table>
+</div>
 #Contract Formation Action
 
 This txn is created by the Contract (smart contract/off-chain agent/token contract) upon receipt of a valid Contract Offer Action from the issuer.  The Smart Contract will execute on a server controlled by the Issuer. or a Smart Contract Operator on their behalf .
@@ -17,15 +30,10 @@ The following breaks down the construction of a Contract Formation Action. The a
             <th style="width:5%" class="s1">Data Type</th>
             <th style="width:14%" class="s2">Amendment Restrictions</th>
         </tr>
+
         <tr>
             <td class="s5" rowspan="38">Metadata (OP_RETURN Payload)</td>
-            <td class="c6">Header[]</td>
-            <td class="c6">Header Array</td>
-            <td class="c6">-</td>
-            <td class="c6">-</td>
-            <td class="c6">Common header data for all messages</td>
-            <td class="c6">Header</td>
-            <td class="c7"></td>
+            <td class="c6" colspan="7"><a href="#" data-popover="header">Header[] - Click to show content</a></td>
         </tr>
         <tr>
             <td class="c10">Text Encoding</td>

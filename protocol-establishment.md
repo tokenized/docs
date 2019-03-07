@@ -1,4 +1,17 @@
 
+<div style="display:none" id="header">
+	<table>
+		<tr>
+            <td class="r6">Header[]</td>
+            <td class="r6">Header Array</td>
+            <td class="r6">-</td>
+            <td class="r6">-</td>
+            <td class="r6">Common header data for all messages</td>
+            <td class="r6">Header</td>
+            <td class="r7"></td>
+        </tr>
+    </table>
+</div>
 #Establishment Action
 
 Establishment Action -  Establishes a register. The register is intended to be used primarily for whitelisting.  However, other types of registers can be used.
@@ -17,15 +30,10 @@ The following breaks down the construction of a Establishment Action. The action
             <th style="width:5%" class="s1">Data Type</th>
             <th style="width:14%" class="s2">Amendment Restrictions</th>
         </tr>
+
         <tr>
             <td class="s5" rowspan="7">Metadata (OP_RETURN Payload)</td>
-            <td class="r6">Header[]</td>
-            <td class="r6">Header Array</td>
-            <td class="r6">-</td>
-            <td class="r6">-</td>
-            <td class="r6">Common header data for all messages</td>
-            <td class="r6">Header</td>
-            <td class="r7"></td>
+            <td class="r6" colspan="7"><a href="#" data-popover="header">Header[] - Click to show content</a></td>
         </tr>
         <tr>
             <td class="r10">Text Encoding</td>

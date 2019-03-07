@@ -1,4 +1,17 @@
 
+<div style="display:none" id="header">
+	<table>
+		<tr>
+            <td class="a6">Header[]</td>
+            <td class="a6">Header Array</td>
+            <td class="a6">-</td>
+            <td class="a6">-</td>
+            <td class="a6">Common header data for all messages</td>
+            <td class="a6">Header</td>
+            <td class="a7"></td>
+        </tr>
+    </table>
+</div>
 #Asset Definition Action
 
 Asset Definition Action -  This action is used by the issuer to define the properties/characteristics of the Asset (token) that it wants to create.
@@ -17,15 +30,10 @@ The following breaks down the construction of a Asset Definition Action. The act
             <th style="width:5%" class="s1">Data Type</th>
             <th style="width:14%" class="s2">Amendment Restrictions</th>
         </tr>
+
         <tr>
             <td class="s5" rowspan="18">Metadata (OP_RETURN Payload)</td>
-            <td class="a6">Header[]</td>
-            <td class="a6">Header Array</td>
-            <td class="a6">-</td>
-            <td class="a6">-</td>
-            <td class="a6">Common header data for all messages</td>
-            <td class="a6">Header</td>
-            <td class="a7"></td>
+            <td class="a6" colspan="7"><a href="#" data-popover="header">Header[] - Click to show content</a></td>
         </tr>
         <tr>
             <td class="a10">Text Encoding</td>
