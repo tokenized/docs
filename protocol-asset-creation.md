@@ -1,18 +1,21 @@
+# Asset Creation Action
 
-<div style="display:none" id="header">
-	<table>
-		<tr>
-            <td class="a6">Header[]</td>
-            <td class="a6">Header Array</td>
-            <td class="a6">-</td>
-            <td class="a6">-</td>
-            <td class="a6">Common header data for all messages</td>
-            <td class="a6">Header</td>
-            <td class="a7"></td>
-        </tr>
-    </table>
+<div class="ui modal" id="header">
+    <i class="close icon"></i>
+    <div class="content">
+        <table class="ui table">
+            <tr>
+                <td class="a6">Header[]</td>
+                <td class="a6">Header Array</td>
+                <td class="a6">-</td>
+                <td class="a6">-</td>
+                <td class="a6">Common header data for all messages</td>
+                <td class="a6">Header</td>
+                <td class="a7"></td>
+            </tr>
+        </table>
+    </div>
 </div>
-#Asset Creation Action
 
 Asset Creation Action -  This action creates an Asset in response to the Issuer's instructions in the Definition Action.
 
