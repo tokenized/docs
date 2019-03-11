@@ -2,13 +2,13 @@
 
 #Freeze Action
 
-Freeze Action -  To be used to comply with contractual/legal requirements.  The whitelist public address will be marked as frozen.  However the Freeze action publishes this fact to the public blockchain for transparency. The Contract (referencing the whitelist) will not settle any exchange that involves the frozen Token Owner's public address.
+Freeze Action -  To be used to comply with contractual/legal/issuer requirements.  The target public address(es) will be marked as frozen.  However the Freeze action publishes this fact to the public blockchain for transparency. The Contract will not respond to any actions requested by the frozen address.
 
 The following breaks down the construction of a Freeze Action. The action is constructed by building a single string from each of the elements in order.
 
-<div class="ritz grid-container" dir="ltr"> 
+<div class="ritz grid-container" dir="ltr">
     <table class="waffle" cellspacing="0" cellpadding="0" table-layout=fixed width=100%>
-         <tr style="height:19px">
+         <tr style='height:19px;'>
             <th style="width:6%" class="s0">Field</th>
             <th style="width:9%" class="s1">Label</th>
             <th style="width:9%" class="s1">Name</th>
@@ -20,8 +20,11 @@ The following breaks down the construction of a Freeze Action. The action is con
         </tr>
         <tr>
             <td class="s5" rowspan="4">Metadata (OP_RETURN Payload)</td>
-            <td class="e7" colspan="7"><a href="javascript" data-popover="header">Header - Click to show content</a></td>
+            <td class="e6" colspan="7"><a href="javascript:;" data-popover="type-Header">Header - Click to show content</a></td>
         </tr>
+
+
+
         <tr><td class="e10">Number of Addresses</td>
             <td class="e10">AddressCount</td>
             <td class="e10">2</td>
@@ -30,6 +33,7 @@ The following breaks down the construction of a Freeze Action. The action is con
             <td class="e10">uint16</td>
             <td class="e11"></td>
         </tr>
+
         <tr><td class="e10">Addresses</td>
             <td class="e10">Addresses</td>
             <td class="e10">0</td>
@@ -38,6 +42,7 @@ The following breaks down the construction of a Freeze Action. The action is con
             <td class="e10">Address[]</td>
             <td class="e11"></td>
         </tr>
+
         <tr><td class="e10">Timestamp</td>
             <td class="e10">Timestamp</td>
             <td class="e10">8</td>
@@ -46,91 +51,70 @@ The following breaks down the construction of a Freeze Action. The action is con
             <td class="e10">timestamp</td>
             <td class="e11">Cannot be changed by issuer, operator. Smart contract controls.</td>
         </tr>
-        <tr>                <td class="s15" colspan="8"></td>
-        </tr>
+
     </table>
 </div>
 
-<div class="ui modal" id="header">
+
+<div class="ui modal" id="type-Header">
     <i class="close icon"></i>
     <div class="content docs-content">
         <table class="ui table">
-        	<tr style='height:19px;'>
-	            <th style="width:9%" class="s0">Label</th>
-	            <th style="width:9%" class="s1">Name</th>
-	            <th style="width:2%" class="s1">Bytes</th>
-	            <th style="width:29%" class="s1">Example Values</th>
-	            <th style="width:26%" class="s1">Comments</th>
-	            <th style="width:5%" class="s1">Data Type</th>
-	        </tr>
-            <tr>
-                <td class="e5">ProtocolID</td>
-                <td class="e6">Protocol Identifier</td>
-                <td class="e6">13</td>
-                <td class="e6">tokenized.com</td>
-                <td class="e6">Tokenized Protocol Identifier</td>
-                <td class="e6">string</td>
+            <tr style='height:19px;'>
+                <th style="width:9%" class="s1">Label</th>
+                <th style="width:9%" class="s1">Name</th>
+                <th style="width:2%" class="s1">Bytes</th>
+                <th style="width:29%" class="s1">Example Values</th>
+                <th style="width:26%" class="s1">Comments</th>
+                <th style="width:5%" class="s1">Data Type</th>
+                <th style="width:14%" class="s2">Amendment Restrictions</th>
             </tr>
             <tr>
-                <td class="e5">OpPushdata</td>
-                <td class="e6">Pushdata Instruction</td>
-                <td class="e6">1</td>
-                <td class="e6">Varies</td>
-                <td class="e6">PACKET LENGTH, PUSHDATA1 (76), PUSHDATA2 (77), or PUSHDATA4 (78) depending on total size of action payload. May be followed by a secondary 1, 2 or 4 byte data element depending on the size of the tokenized data packet</td>
-                <td class="e6">opcode</td>
+                <td class="e10">Protocol Identifier</td>
+                <td class="e10">ProtocolID</td>
+                <td class="e10">13</td>
+                <td class="e10" style="word-break:break-all">tokenized.com</td>
+                <td class="e10">Tokenized ID Prefix.  tokenized.com</td>
+                <td class="e10">string</td>
+                <td class="e11"></td>
             </tr>
             <tr>
-                <td class="e5">LenActionPayload</td>
-                <td class="e6">Length of Action Payload</td>
-                <td class="e6">0, 1, 2 or 4 bytes</td>
-                <td class="e6">0x199</td>
-                <td class="e6">Length of the action message (0 - 4,294,967,296‬ bytes), and dependent on the 'OP_PUSHDATA instruction used in the preceding byte. Field is omitted if pushdata is less than 76, 1 byte if OP_PUSHDATA1 is used, 2 bytes if OP_PUSHDATA2 and 4 bytes if OP_PUSHDATA4 is used."</td>
-                <td class="e6">pushdata_length</td>
+                <td class="e10">Push Data</td>
+                <td class="e10">OpPushdata</td>
+                <td class="e10">1</td>
+                <td class="e10" style="word-break:break-all">77</td>
+                <td class="e10">PACKET LENGTH, PUSHDATA1 (76), PUSHDATA2 (77), or PUSHDATA4 (78) depending on total size of action payload.</td>
+                <td class="e10">opcode</td>
+                <td class="e11">Cannot be changed by issuer, operator or smart contract.</td>
             </tr>
             <tr>
-                <td class="e5">Version</td>
-                <td class="e6">Version</td>
-                <td class="e6">1</td>
-                <td class="e6">0</td>
-                <td class="e6">255 reserved for additional versions. Tokenized protocol versioning.</td>
-                <td class="e6">uint8</td>
+                <td class="e10">Length of Action Payload</td>
+                <td class="e10">LenActionPayload</td>
+                <td class="e10">2</td>
+                <td class="e10" style="word-break:break-all">409</td>
+                <td class="e10">Length of the action message (0 - 65,535 bytes). 0 if pushdata length <76B, 1 byte if PUSHDATA1 is used, 2 bytes if PUSHDATA2 and 4 bytes if PUSHDATA4.</td>
+                <td class="e10">pushdata_length</td>
+                <td class="e11">Depends on Action Payload</td>
             </tr>
             <tr>
-                <td class="e5">ActionPrefix</td>
-                <td class="e6">Action Prefix</td>
-                <td class="e6">2</td>
-                <td class="e6">E2</td>
-                <td class="e6">The action prefix is what determines the action type.</td>
-                <td class="e6">string</td>
+                <td class="e10">Version</td>
+                <td class="e10">Version</td>
+                <td class="e10">1</td>
+                <td class="e10" style="word-break:break-all">0</td>
+                <td class="e10">255 reserved for additional versions. Tokenized protocol versioning.</td>
+                <td class="e10">uint8</td>
+                <td class="e11">Can be changed by Issuer or Operator at their discretion.  Smart Contract will reject if it hasn't been updated to interpret the specified version.</td>
+            </tr>
+            <tr>
+                <td class="e10">Action Prefix</td>
+                <td class="e10">ActionPrefix</td>
+                <td class="e10">2</td>
+                <td class="e10" style="word-break:break-all">C1</td>
+                <td class="e10">Contract Offer: The Contract Offer Action allows the Issuer to initialize a smart contract by providing all the necessary information, including T&C's.  The Contract Offer Action can also be used to signal to a market actor that they want to buy/form a contract.</td>
+                <td class="e10">string</td>
+                <td class="e11">Cannot be changed by issuer, operator or smart contract.</td>
             </tr>
         </table>
     </div>
 </div>
 
-<div class="ui modal" id="Freeze">
-    <i class="close icon"></i>
-    <table class="ui table">
-        <tr style='height:19px;'>
-            <th style="width:6%" class="s0">Field</th>
-            <th style="width:9%" class="s1">Label</th>
-            <th style="width:9%" class="s1">Name</th>
-            <th style="width:2%" class="s1">Bytes</th>
-            <th style="width:29%" class="s1">Example Values</th>
-            <th style="width:26%" class="s1">Comments</th>
-            <th style="width:5%" class="s1">Data Type</th>
-            <th style="width:14%" class="s2">Amendment Restrictions</th>
-        </tr>
-        <tr>
-            <td class="e10">Header</td>
-            <td class="e10">Header</td>
-            <td class="e10">0</td>
-            <td class="e10" style="word-break:break-all"></td>
-            <td class="e10">Common header data for all messages</td>
-            <td class="e10">Header</td>
-            <td class="e11">Common header data for all messages.</td>
-        </tr>
-        <tr>
-            <td class="s15" colspan="8"></td>
-        </tr>
-    </table>
-</div>
