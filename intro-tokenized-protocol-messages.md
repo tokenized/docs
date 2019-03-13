@@ -1,12 +1,13 @@
-# Tokenized Protocol Documentation
+# Tokenized Protocol Messages
 The tokenized protocol builds upon the original Tokeda Token management system defined by Joannes Vermorel. It is what is called a fire and forget protocol where each token operation is sent onto the blockchain and must be subsequently confirmed as valid by a Tokenized smart contract agent. Confirmation is a 3 step process which is as folows:
 1. Receive and unpack message
 2. Evaluate message instruction in terms of contract rules
 3. Create and send response
+
 Responses to messages are also sent on-chain. A response is either a confirmation of the action requested, or a rejection message. Any confirmations that make material changes to the contract which need to be evaluated in-order for the contract state to be recalculated also contain embedded timestamps such that the true state of the contract can be truthfully established in the event of a blockchain re-organisation.
 
 ##Messages
-The protocol is comprised of 29 separate action messages which are broken up into 7 groups as defined below.
+The protocol is comprised of 29 separate action messages which are broken up into 7 groups as defined below. With these actions, Tokenized provides a complete platform for the issuance, management and use of any type of digitized asset that can be created. 
 ###1. Contract actions
 Contract actions are used to establish and modify smart contracts that are operated by a smart contract agent. The contract actions are as follows:
 * <a href="../protocol/contract-offer">Contract Offer</a>
@@ -54,5 +55,3 @@ Registry actions allow a contract issuer to set up and manage whitelists for con
 The "Message" action allow users of a smart contract to exchange messages between themselves or the asset issuer. The "Rejection" action is used by the smart contract to reject any actions that do not comply with the rule set in place for the asset the request relates to. 
 * <a href="../protocol/message">Message</a>
 * <a href="../protocol/rejection">Rejection</a>
-
-With these actions, Tokenized provides a complete platform for the issuance, management and use of any type of digitized asset that can be created. 

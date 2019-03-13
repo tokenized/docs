@@ -2,7 +2,16 @@ Intro:
   pages:
     intro/preface: "Preface"
     intro/tokenized-protocol-messages: "Protocol Overview - Messages"
-Messages:
+    intro/tokenized-protocol-asset-types: "Protocol Overview - Asset Types"
+Main Concepts:
+  pages:
+    main-concepts/tokens: "Tokens"
+    main-concepts/smart-contracts: "Smart Contracts"
+    main-concepts/action-mechanism: "Action Mechanism"
+    main-concepts/rules: "Rules"
+    main-concepts/transactions: "Transactions"
+    main-concepts/order-of-operations: "Order of Operations"
+Actions:
   pages:
     protocol/contract-offer: "Contract offer"
     protocol/contract-formation: "Contract Formation"
@@ -30,3 +39,13 @@ Messages:
     protocol/removal: "Removal"
     protocol/message: "Message"
     protocol/rejection: "Rejection"
+Asset Types:
+  pages:
+    assets/cou: "Coupons"
+    assets/loy: "Loyalty Points"
+    assets/mem: "Membership"
+    assets/shc: "Common Share"
+    assets/tic: "Admission Ticket"
+    assets/cur: "Currency"
+Examples:
+  pages:
