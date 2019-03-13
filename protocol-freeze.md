@@ -20,7 +20,7 @@ The following breaks down the construction of a Freeze Action. The action is con
         </tr>
         <tr>
             <td class="s5" rowspan="4">Metadata (OP_RETURN Payload)</td>
-            <td class="e6" colspan="7"><a href="javascript:;" data-popover="type-Header">Header - Click to show content</a></td>
+            <td class="e7" colspan="7"><a href="javascript:;" data-popover="type-Header">Header - Click to show content</a></td>
         </tr>
 
 

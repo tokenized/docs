@@ -20,7 +20,7 @@ The following breaks down the construction of a Exchange Action. The action is c
         </tr>
         <tr>
             <td class="s5" rowspan="13">Metadata (OP_RETURN Payload)</td>
-            <td class="t6" colspan="7"><a href="javascript:;" data-popover="type-Header">Header - Click to show content</a></td>
+            <td class="t7" colspan="7"><a href="javascript:;" data-popover="type-Header">Header - Click to show content</a></td>
         </tr>
 
 

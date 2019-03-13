@@ -20,7 +20,7 @@ The following breaks down the construction of a Static Contract Formation Action
         </tr>
         <tr>
             <td class="s5" rowspan="16">Metadata (OP_RETURN Payload)</td>
-            <td class="c6" colspan="7"><a href="javascript:;" data-popover="type-Header">Header - Click to show content</a></td>
+            <td class="c7" colspan="7"><a href="javascript:;" data-popover="type-Header">Header - Click to show content</a></td>
         </tr>
 
 

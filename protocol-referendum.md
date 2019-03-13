@@ -20,7 +20,7 @@ The following breaks down the construction of a Referendum Action. The action is
         </tr>
         <tr>
             <td class="s5" rowspan="14">Metadata (OP_RETURN Payload)</td>
-            <td class="g6" colspan="7"><a href="javascript:;" data-popover="type-Header">Header - Click to show content</a></td>
+            <td class="g7" colspan="7"><a href="javascript:;" data-popover="type-Header">Header - Click to show content</a></td>
         </tr>
 
 

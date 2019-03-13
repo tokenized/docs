@@ -20,7 +20,7 @@ The following breaks down the construction of a Rejection Action. The action is 
         </tr>
         <tr>
             <td class="s5" rowspan="7">Metadata (OP_RETURN Payload)</td>
-            <td class="m6" colspan="7"><a href="javascript:;" data-popover="type-Header">Header - Click to show content</a></td>
+            <td class="m7" colspan="7"><a href="javascript:;" data-popover="type-Header">Header - Click to show content</a></td>
         </tr>
 
 

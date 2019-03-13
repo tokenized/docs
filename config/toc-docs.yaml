@@ -1,8 +1,8 @@
 Intro:
   pages:
     intro/preface: "Preface"
-    intro/secondary: "Protocol Documentation"
-Protocol:
+    intro/tokenized-protocol-messages: "Protocol Overview - Messages"
+Messages:
   pages:
     protocol/contract-offer: "Contract offer"
     protocol/contract-formation: "Contract Formation"
@@ -11,9 +11,7 @@ Protocol:
     protocol/asset-definition: "Asset Definition"
     protocol/asset-creation: "Asset Creation"
     protocol/asset-modification: "Asset Modification"
-    protocol/send: "Send"
-    protocol/exchange: "Exchange"
-    protocol/swap: "Swap"
+    protocol/transfer: "transfer"
     protocol/settlement: "Settlement"
     protocol/initiative: "Initiative"
     protocol/referendum: "Referendum"
@@ -26,5 +24,9 @@ Protocol:
     protocol/thaw: "Thaw"
     protocol/confiscation: "Confiscation"
     protocol/reconciliation: "Reconciliation"
+    protocol/establishment: "Establishment"
+    protocol/addition: "Addition"
+    protocol/alteration: "Alteration"
+    protocol/removal: "Removal"
     protocol/message: "Message"
     protocol/rejection: "Rejection"

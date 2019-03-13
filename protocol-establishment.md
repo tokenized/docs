@@ -20,7 +20,7 @@ The following breaks down the construction of a Establishment Action. The action
         </tr>
         <tr>
             <td class="s5" rowspan="3">Metadata (OP_RETURN Payload)</td>
-            <td class="r6" colspan="7"><a href="javascript:;" data-popover="type-Header">Header - Click to show content</a></td>
+            <td class="r7" colspan="7"><a href="javascript:;" data-popover="type-Header">Header - Click to show content</a></td>
         </tr>
 
 

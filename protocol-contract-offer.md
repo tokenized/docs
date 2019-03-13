@@ -20,7 +20,7 @@ The following breaks down the construction of a Contract Offer Action. The actio
         </tr>
         <tr>
             <td class="s5" rowspan="36">Metadata (OP_RETURN Payload)</td>
-            <td class="c6" colspan="7"><a href="javascript:;" data-popover="type-Header">Header - Click to show content</a></td>
+            <td class="c7" colspan="7"><a href="javascript:;" data-popover="type-Header">Header - Click to show content</a></td>
         </tr>
 
 
@@ -160,7 +160,7 @@ The following breaks down the construction of a Contract Offer Action. The actio
             <td class="c11">Voting - Amendments can be restricted to a vote.</td>
         </tr>
 
-        <tr><td class="c6" colspan="7"><a href="javascript:;" data-popover="type-VotingSystem">Voting Systems - Click to show content</a></td>
+        <tr><td class="c7" colspan="7"><a href="javascript:;" data-popover="type-VotingSystem">Voting Systems - Click to show content</a></td>
         </tr>
 
         <tr><td class="c10">Restricted Qty of Assets</td>
@@ -199,7 +199,7 @@ The following breaks down the construction of a Contract Offer Action. The actio
             <td class="c11">Qty of Assets - Amendments can be restricted to a vote.</td>
         </tr>
 
-        <tr><td class="c6" colspan="7"><a href="javascript:;" data-popover="type-Registry">Registries - Click to show content</a></td>
+        <tr><td class="c7" colspan="7"><a href="javascript:;" data-popover="type-Registry">Registries - Click to show content</a></td>
         </tr>
 
         <tr><td class="c10">Issuer Address</td>
@@ -301,7 +301,7 @@ The following breaks down the construction of a Contract Offer Action. The actio
             <td class="c11"></td>
         </tr>
 
-        <tr><td class="c6" colspan="7"><a href="javascript:;" data-popover="type-KeyRole">Key Roles - Click to show content</a></td>
+        <tr><td class="c7" colspan="7"><a href="javascript:;" data-popover="type-KeyRole">Key Roles - Click to show content</a></td>
         </tr>
 
         <tr><td class="c10">Notable Roles Count</td>
@@ -313,7 +313,7 @@ The following breaks down the construction of a Contract Offer Action. The actio
             <td class="c11"></td>
         </tr>
 
-        <tr><td class="c6" colspan="7"><a href="javascript:;" data-popover="type-NotableRole">Notable Roles - Click to show content</a></td>
+        <tr><td class="c7" colspan="7"><a href="javascript:;" data-popover="type-NotableRole">Notable Roles - Click to show content</a></td>
         </tr>
 
     </table>
