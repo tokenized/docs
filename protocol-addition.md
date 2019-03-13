@@ -23,7 +23,6 @@ The following breaks down the construction of a Addition Action. The action is c
                 </a>
              </td>
         </tr>
-
         <tr>
             <td class="r9">Message</td>
             <td class="r10">Message</td>
@@ -33,7 +32,6 @@ The following breaks down the construction of a Addition Action. The action is c
             <td class="r10">nvarchar32</td>
             <td class="r10"></td>
         </tr>
-
     </table>
 </div>
 
@@ -53,7 +51,7 @@ The following breaks down the construction of a Addition Action. The action is c
             <th class="s1">Comments</th>
        </tr>
        <tr>
-            <td class="r5">.</td>
+            <td class="r5">[{Register Register's Public Address }]</td>
             <td class="r6">.</td>
             <td class="r6">.</td>
             <td class="r10">.</td>

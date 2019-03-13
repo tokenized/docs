@@ -23,7 +23,6 @@ The following breaks down the construction of a Order Action. The action is cons
                 </a>
              </td>
         </tr>
-
         <tr>
             <td class="e9">Asset Type</td>
             <td class="e10">AssetType</td>
@@ -33,17 +32,15 @@ The following breaks down the construction of a Order Action. The action is cons
             <td class="e10">string</td>
             <td class="e10"></td>
         </tr>
-
         <tr>
             <td class="e9">Asset ID</td>
             <td class="e10">AssetID</td>
             <td class="e10">32</td>
             <td class="e10">apm2qsznhks23z8d83u41s8019hyri3i</td>
-            <td class="e10">Randomly generated base58 string.  Each Asset ID should be unique.  However, a Asset ID is always linked to a Contract that is identified by the public address of the Contract wallet. The Asset Type can be the leading bytes - a convention - to make it easy to identify that it is a token by humans.</td>
+            <td class="e10"><abbr title="Randomly generated base58 string.  Each Asset ID should be unique.  However, a Asset ID is always linked to a Contract that is identified by the public address of the Contract wallet. The Asset Type can be the leading bytes - a convention - to make it easy to identify that it is a token by humans.">Randomly generated base58 string.  Each Asset ID should be unique.  Ho ... Hover for more</abbr></td>
             <td class="e10">string</td>
             <td class="e10"></td>
         </tr>
-
         <tr>
             <td class="e9">Compliance Action</td>
             <td class="e10">ComplianceAction</td>
@@ -53,7 +50,6 @@ The following breaks down the construction of a Order Action. The action is cons
             <td class="e10">string</td>
             <td class="e10"></td>
         </tr>
-
         <tr>
             <td class="e9">Number of Target Addresses</td>
             <td class="e10">TargetAddressCount</td>
@@ -63,7 +59,6 @@ The following breaks down the construction of a Order Action. The action is cons
             <td class="e10">uint16</td>
             <td class="e10"></td>
         </tr>
-
         <tr>
             <td class="e5" colspan="7">
                 <a href="javascript:;" data-popover="type-TargetAddress">
@@ -71,27 +66,24 @@ The following breaks down the construction of a Order Action. The action is cons
                 </a>
             </td>
         </tr>
-
         <tr>
             <td class="e9">Deposit Address</td>
             <td class="e10">DepositAddress</td>
             <td class="e10">0</td>
             <td class="e10"><abbr title="17zAWabipcUHn5XP9w8GEc3PKvG5bYGBMe">Hover for example</abbr></td>
-            <td class="e10">Length 1-255 bytes. The public address for confiscated tokens to be deposited in.  Null for Freeze, Thaw, actions. For Reconciliation actions the deposit address is who receives bitcoin.</td>
+            <td class="e10"><abbr title="Length 1-255 bytes. The public address for confiscated tokens to be deposited in.  Null for Freeze, Thaw, actions. For Reconciliation actions the deposit address is who receives bitcoin.">Length 1-255 bytes. The public address for confiscated tokens to be de ... Hover for more</abbr></td>
             <td class="e10">nvarchar8</td>
             <td class="e10">Eventually the supporting evidence/explanation can be supported by a Subfield that has the public address (and a signed message) owned by a legal authority for ID verification/certification purposes.</td>
         </tr>
-
         <tr>
             <td class="e9">Authority Name</td>
             <td class="e10">AuthorityName</td>
             <td class="e10">0</td>
             <td class="e10"><abbr title="Supreme and District Courts Brisbane">Hover for example</abbr></td>
-            <td class="e10">Length 0-255 bytes. Enforcement Authority Name (eg. Issuer, Queensland Police Service, Tokenized, etc.)</td>
+            <td class="e10"><abbr title="Length 0-255 bytes. Enforcement Authority Name (eg. Issuer, Queensland Police Service, Tokenized, etc.)">Length 0-255 bytes. Enforcement Authority Name (eg. Issuer, Queensland ... Hover for more</abbr></td>
             <td class="e10">nvarchar8</td>
             <td class="e10"></td>
         </tr>
-
         <tr>
             <td class="e9">Signature Algorithm for Address List</td>
             <td class="e10">SigAlgoAddressList</td>
@@ -101,7 +93,6 @@ The following breaks down the construction of a Order Action. The action is cons
             <td class="e10">uint8</td>
             <td class="e10"></td>
         </tr>
-
         <tr>
             <td class="e9">Authority Public Key</td>
             <td class="e10">AuthorityPublicKey</td>
@@ -111,17 +102,15 @@ The following breaks down the construction of a Order Action. The action is cons
             <td class="e10">nvarchar8</td>
             <td class="e10"></td>
         </tr>
-
         <tr>
             <td class="e9">Authority Order Signature</td>
             <td class="e10">OrderSignature</td>
             <td class="e10">0</td>
             <td class="e10"></td>
-            <td class="e10">Length 0-255 bytes. Signature for a message that lists out the target addresses and deposit address. Signature of (Contract Address, Asset Code, Compliance Action, Supporting Evidence Hash, Time Out Expiration, TargetAddress1, TargetAddress1Qty, TargetAddressX, TargetAddressXQty,...,DepositAddress)</td>
+            <td class="e10"><abbr title="Length 0-255 bytes. Signature for a message that lists out the target addresses and deposit address. Signature of (Contract Address, Asset Code, Compliance Action, Supporting Evidence Hash, Time Out Expiration, TargetAddress1, TargetAddress1Qty, TargetAddressX, TargetAddressXQty,...,DepositAddress)">Length 0-255 bytes. Signature for a message that lists out the target  ... Hover for more</abbr></td>
             <td class="e10">nvarchar8</td>
             <td class="e10"></td>
         </tr>
-
         <tr>
             <td class="e9">Supporting Evidence Hash</td>
             <td class="e10">SupportingEvidenceHash</td>
@@ -131,27 +120,24 @@ The following breaks down the construction of a Order Action. The action is cons
             <td class="e10">sha256</td>
             <td class="e10"></td>
         </tr>
-
         <tr>
             <td class="e9">Ref Txn ID</td>
             <td class="e10">RefTxnID</td>
             <td class="e10">32</td>
             <td class="e10"><abbr title="f3318be9fb3f73e53b29868beae46b42911c2116f979a5d3284face90746cb37">Hover for example</abbr></td>
-            <td class="e10">The settlement action that was dropped from the network.  Not applicable for Freeze, Thaw, and Confiscation orders.  Only applicable for reconcilliation actions.  No subfield when F, T, R is selected as the Compliance Action subfield.</td>
+            <td class="e10"><abbr title="The settlement action that was dropped from the network.  Not applicable for Freeze, Thaw, and Confiscation orders.  Only applicable for reconcilliation actions.  No subfield when F, T, R is selected as the Compliance Action subfield.">The settlement action that was dropped from the network.  Not applicab ... Hover for more</abbr></td>
             <td class="e10">sha256</td>
             <td class="e10"></td>
         </tr>
-
         <tr>
             <td class="e9">Freeze Period</td>
             <td class="e10">FreezePeriod</td>
             <td class="e10">8</td>
             <td class="e10"><abbr title="Tue Oct 09 2018 05:00:00 GMT+1000 (AEST)">Hover for example</abbr></td>
-            <td class="e10">Used for a 'time out'.  Tokens are automatically unfrozen after the expiration timestamp without requiring a Thaw Action. Null value for Thaw, Confiscation and Reconciallitaion orders.</td>
+            <td class="e10"><abbr title="Used for a 'time out'.  Tokens are automatically unfrozen after the expiration timestamp without requiring a Thaw Action. Null value for Thaw, Confiscation and Reconciallitaion orders.">Used for a 'time out'.  Tokens are automatically unfrozen after the ex ... Hover for more</abbr></td>
             <td class="e10">time</td>
             <td class="e10"></td>
         </tr>
-
         <tr>
             <td class="e9">Message Period</td>
             <td class="e10">Message</td>
@@ -161,7 +147,6 @@ The following breaks down the construction of a Order Action. The action is cons
             <td class="e10">nvarchar32</td>
             <td class="e10"></td>
         </tr>
-
     </table>
 </div>
 
@@ -181,7 +166,7 @@ The following breaks down the construction of a Order Action. The action is cons
             <th class="s1">Comments</th>
        </tr>
        <tr>
-            <td class="e5">.</td>
+            <td class="e5">[{Issuer Issuer's Public Address }]</td>
             <td class="e6">.</td>
             <td class="e6">.</td>
             <td class="e10">.</td>

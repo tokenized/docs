@@ -23,7 +23,6 @@ The following breaks down the construction of a Result Action. The action is con
                 </a>
              </td>
         </tr>
-
         <tr>
             <td class="g9">Asset Type</td>
             <td class="g10">AssetType</td>
@@ -33,27 +32,24 @@ The following breaks down the construction of a Result Action. The action is con
             <td class="g10">string</td>
             <td class="g10"></td>
         </tr>
-
         <tr>
             <td class="g9">Asset ID</td>
             <td class="g10">AssetID</td>
             <td class="g10">32</td>
             <td class="g10">apm2qsznhks23z8d83u41s8019hyri3i</td>
-            <td class="g10">Randomly generated base58 string.  Each Asset ID should be unique.  However, a Asset ID is always linked to a Contract that is identified by the public address of the Contract wallet. The Asset Type can be the leading bytes - a convention - to make it easy to identify that it is a token by humans. If its a Contract vote then can be null.</td>
+            <td class="g10"><abbr title="Randomly generated base58 string.  Each Asset ID should be unique.  However, a Asset ID is always linked to a Contract that is identified by the public address of the Contract wallet. The Asset Type can be the leading bytes - a convention - to make it easy to identify that it is a token by humans. If its a Contract vote then can be null.">Randomly generated base58 string.  Each Asset ID should be unique.  Ho ... Hover for more</abbr></td>
             <td class="g10">string</td>
             <td class="g10"></td>
         </tr>
-
         <tr>
             <td class="g9">Proposal</td>
             <td class="g10">Proposal</td>
             <td class="g10">1</td>
             <td class="g10">0</td>
-            <td class="g10">1 for a Proposal, 0 for an initiative that is requesting changes to specific subfields for modification. If this field is true, the subfields should be empty.  The smart contract cannot interpret the results of a vote when Proposal = 1.  All meaning is interpreted by the token owners and smart contract simply facilates the record keeping.  When Proposal = 0, the smart contract always assumes the first choice is a 'yes', or 'pass', if the threshold is met, and will process the proposed changes accordingly.</td>
+            <td class="g10"><abbr title="1 for a Proposal, 0 for an initiative that is requesting changes to specific subfields for modification. If this field is true, the subfields should be empty.  The smart contract cannot interpret the results of a vote when Proposal = 1.  All meaning is interpreted by the token owners and smart contract simply facilates the record keeping.  When Proposal = 0, the smart contract always assumes the first choice is a 'yes', or 'pass', if the threshold is met, and will process the proposed changes accordingly.">1 for a Proposal, 0 for an initiative that is requesting changes to sp ... Hover for more</abbr></td>
             <td class="g10">bool</td>
             <td class="g10"></td>
         </tr>
-
         <tr>
             <td class="g9"></td>
             <td class="g10">ProposedChangesCount</td>
@@ -63,7 +59,6 @@ The following breaks down the construction of a Result Action. The action is con
             <td class="g10">uint8</td>
             <td class="g10"></td>
         </tr>
-
         <tr>
             <td class="g5" colspan="7">
                 <a href="javascript:;" data-popover="type-Amendment">
@@ -71,7 +66,6 @@ The following breaks down the construction of a Result Action. The action is con
                 </a>
             </td>
         </tr>
-
         <tr>
             <td class="g9">Vote Txn ID</td>
             <td class="g10">VoteTxnID</td>
@@ -81,7 +75,6 @@ The following breaks down the construction of a Result Action. The action is con
             <td class="g10">sha256</td>
             <td class="g10"></td>
         </tr>
-
         <tr>
             <td class="g9">VoteOptionsCount</td>
             <td class="g10">VoteOptionsCount</td>
@@ -91,7 +84,6 @@ The following breaks down the construction of a Result Action. The action is con
             <td class="g10">uint8</td>
             <td class="g10"></td>
         </tr>
-
         <tr>
             <td class="g9">Option X Tally</td>
             <td class="g10">OptionXTally</td>
@@ -101,17 +93,15 @@ The following breaks down the construction of a Result Action. The action is con
             <td class="g10">uint64</td>
             <td class="g10"></td>
         </tr>
-
         <tr>
             <td class="g9">Result</td>
             <td class="g10">Result</td>
             <td class="g10">0</td>
             <td class="g10">2</td>
-            <td class="g10">Length 1-255 bytes. 0 is not valid. The Option with the most votes. In the event of a draw for 1st place, all winning options are listed. </td>
+            <td class="g10"><abbr title="Length 1-255 bytes. 0 is not valid. The Option with the most votes. In the event of a draw for 1st place, all winning options are listed. ">Length 1-255 bytes. 0 is not valid. The Option with the most votes. In ... Hover for more</abbr></td>
             <td class="g10">nvarchar8</td>
             <td class="g10"></td>
         </tr>
-
         <tr>
             <td class="g9">Timestamp</td>
             <td class="g10">Timestamp</td>
@@ -121,7 +111,6 @@ The following breaks down the construction of a Result Action. The action is con
             <td class="g10">timestamp</td>
             <td class="g10">Cannot be changed by issuer, operator. Smart contract controls.</td>
         </tr>
-
     </table>
 </div>
 
@@ -141,7 +130,7 @@ The following breaks down the construction of a Result Action. The action is con
             <th class="s1">Comments</th>
        </tr>
        <tr>
-            <td class="g5">.</td>
+            <td class="g5">[{Contract Contract Public Address }]</td>
             <td class="g6">.</td>
             <td class="g6">.</td>
             <td class="g10">.</td>

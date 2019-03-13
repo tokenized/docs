@@ -23,17 +23,15 @@ The following breaks down the construction of a Contract Offer Action. The actio
                 </a>
              </td>
         </tr>
-
         <tr>
             <td class="c9"></td>
             <td class="c10">ContractName</td>
             <td class="c10">0</td>
             <td class="c10">Tesla - Shareholder Agreement</td>
-            <td class="c10">Can be any unique identifying string, including human readable names for branding/vanity purposes.   [Contract identifier (instance) is the bitcoin public key hash address. If the Public Address is lost, then the issuer will have to reissue the entire contract, Asset definition and tokens with the new public address.]. Smart contracts can be branded and specialized to suit any terms and conditions.</td>
+            <td class="c10"><abbr title="Can be any unique identifying string, including human readable names for branding/vanity purposes.   [Contract identifier (instance) is the bitcoin public key hash address. If the Public Address is lost, then the issuer will have to reissue the entire contract, Asset definition and tokens with the new public address.]. Smart contracts can be branded and specialized to suit any terms and conditions.">Can be any unique identifying string, including human readable names f ... Hover for more</abbr></td>
             <td class="c10">nvarchar8</td>
             <td class="c10"></td>
         </tr>
-
         <tr>
             <td class="c9">Contract File Type</td>
             <td class="c10">ContractFileType</td>
@@ -43,7 +41,6 @@ The following breaks down the construction of a Contract Offer Action. The actio
             <td class="c10">uint8</td>
             <td class="c10">Contract File - Amendments can be restricted to a vote.</td>
         </tr>
-
         <tr>
             <td class="c9">Length of Contract File</td>
             <td class="c10">LenContractFile</td>
@@ -53,77 +50,69 @@ The following breaks down the construction of a Contract Offer Action. The actio
             <td class="c10">uint32</td>
             <td class="c10"></td>
         </tr>
-
         <tr>
             <td class="c9">Contract File</td>
             <td class="c10">ContractFile</td>
             <td class="c10">32</td>
             <td class="c10"><abbr title="c236f77c7abd7249489e7d2bb6c7e46ba3f4095956e78a584af753ece56cf6d1">Hover for example</abbr></td>
-            <td class="c10">SHA-256 hash of the Contract file specific to the smart contract and relevant Assets.  Legal and technical information. (eg. pdf)</td>
+            <td class="c10"><abbr title="SHA-256 hash of the Contract file specific to the smart contract and relevant Assets.  Legal and technical information. (eg. pdf)">SHA-256 hash of the Contract file specific to the smart contract and r ... Hover for more</abbr></td>
             <td class="c10">string</td>
             <td class="c10"></td>
         </tr>
-
         <tr>
             <td class="c9">Governing Law</td>
             <td class="c10">GoverningLaw</td>
             <td class="c10">5</td>
             <td class="c10">USA</td>
-            <td class="c10">5 Letter Code to Identify which governing law the contract will adhere to.  Disputes are to be settled by this law in the jurisdiction specified below. Private dispute resolution organizations can be used as well.  A custom code just needs to be defined.</td>
+            <td class="c10"><abbr title="5 Letter Code to Identify which governing law the contract will adhere to.  Disputes are to be settled by this law in the jurisdiction specified below. Private dispute resolution organizations can be used as well.  A custom code just needs to be defined.">5 Letter Code to Identify which governing law the contract will adhere ... Hover for more</abbr></td>
             <td class="c10">string</td>
             <td class="c10">Governing Law - Amendments can be restricted to a vote.</td>
         </tr>
-
         <tr>
             <td class="c9">Jurisdiction</td>
             <td class="c10">Jurisdiction</td>
             <td class="c10">5</td>
             <td class="c10">US-CA</td>
-            <td class="c10">Legal proceedings/arbitration will take place using the specified Governing Law in this location.</td>
+            <td class="c10"><abbr title="Legal proceedings/arbitration will take place using the specified Governing Law in this location.">Legal proceedings/arbitration will take place using the specified Gove ... Hover for more</abbr></td>
             <td class="c10">string</td>
             <td class="c10">Jurisdiction - Amendments can be restricted to a vote.</td>
         </tr>
-
         <tr>
             <td class="c9">Contract Expiration</td>
             <td class="c10">ContractExpiration</td>
             <td class="c10">8</td>
             <td class="c10"><abbr title="Wed May 09 2018 00:00:00 GMT+1000 (AEST)">Hover for example</abbr></td>
-            <td class="c10">All actions related to the contract will cease to work after this timestamp. The smart contract will stop running.  This will allow many token use cases to be able to calculate total smart contract running costs for the entire life of the contract. Eg. an issuer is creating tickets for an event on the 5th of June 2018.  The smart contract will facilitate exchange and send transactions up until the 6th of June.  Wallets can use this to forget tokens that are no longer valid - or at least store them in an 'Expired' folder.</td>
+            <td class="c10"><abbr title="All actions related to the contract will cease to work after this timestamp. The smart contract will stop running.  This will allow many token use cases to be able to calculate total smart contract running costs for the entire life of the contract. Eg. an issuer is creating tickets for an event on the 5th of June 2018.  The smart contract will facilitate exchange and send transactions up until the 6th of June.  Wallets can use this to forget tokens that are no longer valid - or at least store them in an 'Expired' folder.">All actions related to the contract will cease to work after this time ... Hover for more</abbr></td>
             <td class="c10">time</td>
             <td class="c10">Contract Expiration - Amendments can be restricted to a vote.</td>
         </tr>
-
         <tr>
             <td class="c9">Contract URI</td>
             <td class="c10">ContractURI</td>
             <td class="c10">0</td>
             <td class="c10"><abbr title="https://tokenized.com/Contract/3qeoSCg7JmfSnJesJFojj">Hover for example</abbr></td>
-            <td class="c10">Points to an information page that also has a copy of the Contract.  Anyone can go to the website to have a look at the price/token, information about the Issuer (company), information about the Asset, legal information, etc.  There will also be a way for Token Owners to vote on this page and contact details with the Issuer/tokenized companies. Could be a IPv6/IPv4, an IPFS address (hash) or txn-id for on-chain information or even a public address (DNS).</td>
+            <td class="c10"><abbr title="Points to an information page that also has a copy of the Contract.  Anyone can go to the website to have a look at the price/token, information about the Issuer (company), information about the Asset, legal information, etc.  There will also be a way for Token Owners to vote on this page and contact details with the Issuer/tokenized companies. Could be a IPv6/IPv4, an IPFS address (hash) or txn-id for on-chain information or even a public address (DNS).">Points to an information page that also has a copy of the Contract.  A ... Hover for more</abbr></td>
             <td class="c10">nvarchar8</td>
             <td class="c10"></td>
         </tr>
-
         <tr>
             <td class="c9">Issuer Name</td>
             <td class="c10">IssuerName</td>
             <td class="c10">0</td>
             <td class="c10">Tesla Inc.</td>
-            <td class="c10">Length 0-255 bytes. 0 is not valid.Issuing entity (company, organization, individual).  Can be any unique identifying string, including human readable names for branding/vanity purposes. </td>
+            <td class="c10"><abbr title="Length 0-255 bytes. 0 is not valid.Issuing entity (company, organization, individual).  Can be any unique identifying string, including human readable names for branding/vanity purposes. ">Length 0-255 bytes. 0 is not valid.Issuing entity (company, organizati ... Hover for more</abbr></td>
             <td class="c10">nvarchar8</td>
             <td class="c10"></td>
         </tr>
-
         <tr>
             <td class="c9">Issuer Type</td>
             <td class="c10">IssuerType</td>
             <td class="c10">1</td>
             <td class="c10">P</td>
-            <td class="c10">P - Public Company Limited by Shares, C - Private Company Limited by Shares, I - Individual, L - Limited Partnership, U -Unlimited Partnership, T - Sole Proprietorship, S - Statutory Company, O - Non-Profit Organization, N - Nation State, G - Government Agency, U - Unit Trust, D - Discretionary Trust.  Found in 'Entities' (Specification/Resources).</td>
+            <td class="c10"><abbr title="P - Public Company Limited by Shares, C - Private Company Limited by Shares, I - Individual, L - Limited Partnership, U -Unlimited Partnership, T - Sole Proprietorship, S - Statutory Company, O - Non-Profit Organization, N - Nation State, G - Government Agency, U - Unit Trust, D - Discretionary Trust.  Found in 'Entities' (Specification/Resources).">P - Public Company Limited by Shares, C - Private Company Limited by S ... Hover for more</abbr></td>
             <td class="c10">string</td>
             <td class="c10">Issuer Type - Amendments can be restricted to a vote.</td>
         </tr>
-
         <tr>
             <td class="c9">Issuer Logo URL</td>
             <td class="c10">IssuerLogoURL</td>
@@ -133,37 +122,33 @@ The following breaks down the construction of a Contract Offer Action. The actio
             <td class="c10">nvarchar8</td>
             <td class="c10"></td>
         </tr>
-
         <tr>
             <td class="c9">Contract Operator ID</td>
             <td class="c10">ContractOperatorID</td>
             <td class="c10">0</td>
             <td class="c10">Tokenized</td>
-            <td class="c10">Length 0-255 bytes. 0 is valid. Smart Contract Operator identifier. Can be any unique identifying string, including human readable names for branding/vanity purposes. Can also be null or the Issuer.</td>
+            <td class="c10"><abbr title="Length 0-255 bytes. 0 is valid. Smart Contract Operator identifier. Can be any unique identifying string, including human readable names for branding/vanity purposes. Can also be null or the Issuer.">Length 0-255 bytes. 0 is valid. Smart Contract Operator identifier. Ca ... Hover for more</abbr></td>
             <td class="c10">nvarchar8</td>
             <td class="c10"></td>
         </tr>
-
         <tr>
             <td class="c9">Contract Authorization Flags</td>
             <td class="c10">ContractAuthFlags</td>
             <td class="c10">16</td>
             <td class="c10"><abbr title="010010010010010010010010010010010110110110110110110110110110110100100100100110110110110110110110110110110110110110110110110000000">Hover for example</abbr></td>
-            <td class="c10">Authorization Flags aka Terms and Conditions that the smart contract can enforce.  Other terms and conditions that are out of the smart contract's control are listed in the actual Contract File.</td>
+            <td class="c10"><abbr title="Authorization Flags aka Terms and Conditions that the smart contract can enforce.  Other terms and conditions that are out of the smart contract's control are listed in the actual Contract File.">Authorization Flags aka Terms and Conditions that the smart contract c ... Hover for more</abbr></td>
             <td class="c10">bin</td>
             <td class="c10">Contract Flags - Amendments can be restricted to a vote.  Specified in the Voting System.</td>
         </tr>
-
         <tr>
             <td class="c9">Number of Voting Systems</td>
             <td class="c10">VotingSystemCount</td>
             <td class="c10">1</td>
             <td class="c10">0</td>
-            <td class="c10">0-255 voting systems. If 0, Voting System and associated subfields (InitiativeThreshold, InitiativeThresholdCurrency) will be null.</td>
+            <td class="c10"><abbr title="0-255 voting systems. If 0, Voting System and associated subfields (InitiativeThreshold, InitiativeThresholdCurrency) will be null.">0-255 voting systems. If 0, Voting System and associated subfields (In ... Hover for more</abbr></td>
             <td class="c10">uint8</td>
             <td class="c10">Voting - Amendments can be restricted to a vote.</td>
         </tr>
-
         <tr>
             <td class="c5" colspan="7">
                 <a href="javascript:;" data-popover="type-VotingSystem">
@@ -171,17 +156,15 @@ The following breaks down the construction of a Contract Offer Action. The actio
                 </a>
             </td>
         </tr>
-
         <tr>
             <td class="c9">Restricted Qty of Assets</td>
             <td class="c10">RestrictedQtyAssets</td>
             <td class="c10">8</td>
             <td class="c10">1</td>
-            <td class="c10">Number of Assets (non-fungible) permitted on this contract. 0 if unlimited which will display an infinity symbol in UI</td>
+            <td class="c10"><abbr title="Number of Assets (non-fungible) permitted on this contract. 0 if unlimited which will display an infinity symbol in UI">Number of Assets (non-fungible) permitted on this contract. 0 if unlim ... Hover for more</abbr></td>
             <td class="c10">uint64</td>
             <td class="c10">Qty of Assets - Amendments can be restricted to a vote.</td>
         </tr>
-
         <tr>
             <td class="c9">Referendum Proposal</td>
             <td class="c10">ReferendumProposal</td>
@@ -191,7 +174,6 @@ The following breaks down the construction of a Contract Offer Action. The actio
             <td class="c10">bool</td>
             <td class="c10">General Governance</td>
         </tr>
-
         <tr>
             <td class="c9">Initiative Proposal</td>
             <td class="c10">InitiativeProposal</td>
@@ -201,17 +183,15 @@ The following breaks down the construction of a Contract Offer Action. The actio
             <td class="c10">bool</td>
             <td class="c10"></td>
         </tr>
-
         <tr>
             <td class="c9">Registry Count</td>
             <td class="c10">RegistryCount</td>
             <td class="c10">1</td>
             <td class="c10">0</td>
-            <td class="c10">Number of registries (eg. KYC registry/database/whitelist/identity database/etc - managed by a Registrar (oracle)) the smart contract is permitted to interact with. 0-255. 0 is valid (no registry subfields).</td>
+            <td class="c10"><abbr title="Number of registries (eg. KYC registry/database/whitelist/identity database/etc - managed by a Registrar (oracle)) the smart contract is permitted to interact with. 0-255. 0 is valid (no registry subfields).">Number of registries (eg. KYC registry/database/whitelist/identity dat ... Hover for more</abbr></td>
             <td class="c10">uint8</td>
             <td class="c10">Qty of Assets - Amendments can be restricted to a vote.</td>
         </tr>
-
         <tr>
             <td class="c5" colspan="7">
                 <a href="javascript:;" data-popover="type-Registry">
@@ -219,7 +199,6 @@ The following breaks down the construction of a Contract Offer Action. The actio
                 </a>
             </td>
         </tr>
-
         <tr>
             <td class="c9">Issuer Address</td>
             <td class="c10">IssuerAddress</td>
@@ -229,7 +208,6 @@ The following breaks down the construction of a Contract Offer Action. The actio
             <td class="c10">bool</td>
             <td class="c10">Issuer Details - Can always be amended by issuer/smart contract operator.</td>
         </tr>
-
         <tr>
             <td class="c9">Unit Number</td>
             <td class="c10">UnitNumber</td>
@@ -239,7 +217,6 @@ The following breaks down the construction of a Contract Offer Action. The actio
             <td class="c10">nvarchar8</td>
             <td class="c10"></td>
         </tr>
-
         <tr>
             <td class="c9">Building Number</td>
             <td class="c10">BuildingNumber</td>
@@ -249,7 +226,6 @@ The following breaks down the construction of a Contract Offer Action. The actio
             <td class="c10">nvarchar8</td>
             <td class="c10"></td>
         </tr>
-
         <tr>
             <td class="c9">Street</td>
             <td class="c10">Street</td>
@@ -259,7 +235,6 @@ The following breaks down the construction of a Contract Offer Action. The actio
             <td class="c10">nvarchar16</td>
             <td class="c10"></td>
         </tr>
-
         <tr>
             <td class="c9">Suburb/City</td>
             <td class="c10">SuburbCity</td>
@@ -269,7 +244,6 @@ The following breaks down the construction of a Contract Offer Action. The actio
             <td class="c10">nvarchar8</td>
             <td class="c10"></td>
         </tr>
-
         <tr>
             <td class="c9">Territory/State/Province Code</td>
             <td class="c10">TerritoryStateProvinceCode</td>
@@ -279,7 +253,6 @@ The following breaks down the construction of a Contract Offer Action. The actio
             <td class="c10">string</td>
             <td class="c10"></td>
         </tr>
-
         <tr>
             <td class="c9">Country Code</td>
             <td class="c10">CountryCode</td>
@@ -289,7 +262,6 @@ The following breaks down the construction of a Contract Offer Action. The actio
             <td class="c10">string</td>
             <td class="c10"></td>
         </tr>
-
         <tr>
             <td class="c9">Postal/ZIP Code</td>
             <td class="c10">PostalZIPCode</td>
@@ -299,17 +271,15 @@ The following breaks down the construction of a Contract Offer Action. The actio
             <td class="c10">nvarchar8</td>
             <td class="c10"></td>
         </tr>
-
         <tr>
             <td class="c9">Email Address</td>
             <td class="c10">EmailAddress</td>
             <td class="c10">0</td>
             <td class="c10">james@tokenized.com</td>
-            <td class="c10">Length 0-255 bytes. 0 is valid (no ContactAddress). Address for text-based communication: eg. email address, Bitcoin address</td>
+            <td class="c10"><abbr title="Length 0-255 bytes. 0 is valid (no ContactAddress). Address for text-based communication: eg. email address, Bitcoin address">Length 0-255 bytes. 0 is valid (no ContactAddress). Address for text-b ... Hover for more</abbr></td>
             <td class="c10">nvarchar8</td>
             <td class="c10"></td>
         </tr>
-
         <tr>
             <td class="c9">Phone Number</td>
             <td class="c10">PhoneNumber</td>
@@ -319,17 +289,15 @@ The following breaks down the construction of a Contract Offer Action. The actio
             <td class="c10">nvarchar8</td>
             <td class="c10"></td>
         </tr>
-
         <tr>
             <td class="c9">KeyRoles Count</td>
             <td class="c10">KeyRolesCount</td>
             <td class="c10">1</td>
             <td class="c10">0</td>
-            <td class="c10">Number of key roles associated with the issuing entity.  (eg. Directors, etc.) 0-255. 0 is valid.</td>
+            <td class="c10"><abbr title="Number of key roles associated with the issuing entity.  (eg. Directors, etc.) 0-255. 0 is valid.">Number of key roles associated with the issuing entity.  (eg. Director ... Hover for more</abbr></td>
             <td class="c10">uint8</td>
             <td class="c10"></td>
         </tr>
-
         <tr>
             <td class="c5" colspan="7">
                 <a href="javascript:;" data-popover="type-KeyRole">
@@ -337,17 +305,15 @@ The following breaks down the construction of a Contract Offer Action. The actio
                 </a>
             </td>
         </tr>
-
         <tr>
             <td class="c9">Notable Roles Count</td>
             <td class="c10">NotableRolesCount</td>
             <td class="c10">1</td>
             <td class="c10">0</td>
-            <td class="c10">Number of notable roles associated with the issuing entity.  (eg. Corporate Officers, Managers, etc.) 0-255. 0 is valid.</td>
+            <td class="c10"><abbr title="Number of notable roles associated with the issuing entity.  (eg. Corporate Officers, Managers, etc.) 0-255. 0 is valid.">Number of notable roles associated with the issuing entity.  (eg. Corp ... Hover for more</abbr></td>
             <td class="c10">uint8</td>
             <td class="c10"></td>
         </tr>
-
         <tr>
             <td class="c5" colspan="7">
                 <a href="javascript:;" data-popover="type-NotableRole">
@@ -355,7 +321,6 @@ The following breaks down the construction of a Contract Offer Action. The actio
                 </a>
             </td>
         </tr>
-
     </table>
 </div>
 
@@ -375,7 +340,7 @@ The following breaks down the construction of a Contract Offer Action. The actio
             <th class="s1">Comments</th>
        </tr>
        <tr>
-            <td class="c5">.</td>
+            <td class="c5">[{Issuer Issuer's Public Address } {ContractOperator Contract Operator's Public Address (Optional) }]</td>
             <td class="c6">.</td>
             <td class="c6">.</td>
             <td class="c10">.</td>

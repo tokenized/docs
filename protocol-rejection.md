@@ -23,7 +23,6 @@ The following breaks down the construction of a Rejection Action. The action is 
                 </a>
              </td>
         </tr>
-
         <tr>
             <td class="m9">Qty Receiving Addresses</td>
             <td class="m10">QtyReceivingAddresses</td>
@@ -33,7 +32,6 @@ The following breaks down the construction of a Rejection Action. The action is 
             <td class="m10">uint8</td>
             <td class="m10"></td>
         </tr>
-
         <tr>
             <td class="m9">Address Indexes</td>
             <td class="m10">AddressIndexes</td>
@@ -43,7 +41,6 @@ The following breaks down the construction of a Rejection Action. The action is 
             <td class="m10">uint16[]</td>
             <td class="m10"></td>
         </tr>
-
         <tr>
             <td class="m9">Rejection Type</td>
             <td class="m10">RejectionType</td>
@@ -53,17 +50,15 @@ The following breaks down the construction of a Rejection Action. The action is 
             <td class="m10">uint8</td>
             <td class="m10"></td>
         </tr>
-
         <tr>
             <td class="m9">Message Payload</td>
             <td class="m10">MessagePayload</td>
             <td class="m10">0</td>
             <td class="m10"><abbr title="Sorry, you don't have enough tokens.">Hover for example</abbr></td>
-            <td class="m10">Length 0-65,535 bytes. Message that explains the reasoning for a rejection, if needed.  Most rejection types will be captured by the Rejection Type Subfield.</td>
+            <td class="m10"><abbr title="Length 0-65,535 bytes. Message that explains the reasoning for a rejection, if needed.  Most rejection types will be captured by the Rejection Type Subfield.">Length 0-65,535 bytes. Message that explains the reasoning for a rejec ... Hover for more</abbr></td>
             <td class="m10">nvarchar32</td>
             <td class="m10"></td>
         </tr>
-
         <tr>
             <td class="m9">Timestamp</td>
             <td class="m10">Timestamp</td>
@@ -73,7 +68,6 @@ The following breaks down the construction of a Rejection Action. The action is 
             <td class="m10">timestamp</td>
             <td class="m10">Cannot be changed by issuer, operator. Smart contract controls.</td>
         </tr>
-
     </table>
 </div>
 
@@ -93,7 +87,7 @@ The following breaks down the construction of a Rejection Action. The action is 
             <th class="s1">Comments</th>
        </tr>
        <tr>
-            <td class="m5">.</td>
+            <td class="m5">[{Contract Contract Public Address }]</td>
             <td class="m6">.</td>
             <td class="m6">.</td>
             <td class="m10">.</td>

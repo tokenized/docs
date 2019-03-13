@@ -23,7 +23,6 @@ The following breaks down the construction of a Settlement Action. The action is
                 </a>
              </td>
         </tr>
-
         <tr>
             <td class="t9">Asset Count</td>
             <td class="t10">AssetCount</td>
@@ -33,7 +32,6 @@ The following breaks down the construction of a Settlement Action. The action is
             <td class="t10">uint8</td>
             <td class="t10"></td>
         </tr>
-
         <tr>
             <td class="t9">Asset Type X</td>
             <td class="t10">AssetTypeX</td>
@@ -43,17 +41,15 @@ The following breaks down the construction of a Settlement Action. The action is
             <td class="t10">string</td>
             <td class="t10"></td>
         </tr>
-
         <tr>
             <td class="t9">Asset ID X</td>
             <td class="t10">AssetIDX</td>
             <td class="t10">32</td>
             <td class="t10">apm2qsznhks23z8d83u41s8019hyri3i</td>
-            <td class="t10">Randomly generated base58 string.  Each Asset ID should be unique.  However, a Asset ID is always linked to a Contract that is identified by the public address of the Contract wallet. The Asset Type can be the leading bytes - a convention - to make it easy to identify that it is a token by humans. </td>
+            <td class="t10"><abbr title="Randomly generated base58 string.  Each Asset ID should be unique.  However, a Asset ID is always linked to a Contract that is identified by the public address of the Contract wallet. The Asset Type can be the leading bytes - a convention - to make it easy to identify that it is a token by humans. ">Randomly generated base58 string.  Each Asset ID should be unique.  Ho ... Hover for more</abbr></td>
             <td class="t10">string</td>
             <td class="t10"></td>
         </tr>
-
         <tr>
             <td class="t9">Asset X Settlements Count</td>
             <td class="t10">AssetXSettlementsCount</td>
@@ -63,7 +59,6 @@ The following breaks down the construction of a Settlement Action. The action is
             <td class="t10">uint8</td>
             <td class="t10"></td>
         </tr>
-
         <tr>
             <td class="t5" colspan="7">
                 <a href="javascript:;" data-popover="type-QuantityIndex">
@@ -71,7 +66,6 @@ The following breaks down the construction of a Settlement Action. The action is
                 </a>
             </td>
         </tr>
-
         <tr>
             <td class="t9">Timestamp</td>
             <td class="t10">Timestamp</td>
@@ -81,7 +75,6 @@ The following breaks down the construction of a Settlement Action. The action is
             <td class="t10">timestamp</td>
             <td class="t10">Cannot be changed by issuer, operator. Smart contract controls.</td>
         </tr>
-
     </table>
 </div>
 
@@ -101,7 +94,7 @@ The following breaks down the construction of a Settlement Action. The action is
             <th class="s1">Comments</th>
        </tr>
        <tr>
-            <td class="t5">.</td>
+            <td class="t5">[{AssetXContract Contract Public Address (Asset X) }]</td>
             <td class="t6">.</td>
             <td class="t6">.</td>
             <td class="t10">.</td>

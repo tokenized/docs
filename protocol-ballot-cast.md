@@ -23,7 +23,6 @@ The following breaks down the construction of a Ballot Cast Action. The action i
                 </a>
              </td>
         </tr>
-
         <tr>
             <td class="g9">Asset Type</td>
             <td class="g10">AssetType</td>
@@ -33,17 +32,15 @@ The following breaks down the construction of a Ballot Cast Action. The action i
             <td class="g10">string</td>
             <td class="g10"></td>
         </tr>
-
         <tr>
             <td class="g9">Asset ID</td>
             <td class="g10">AssetID</td>
             <td class="g10">32</td>
             <td class="g10">apm2qsznhks23z8d83u41s8019hyri3i</td>
-            <td class="g10">Randomly generated base58 string.  Each Asset ID should be unique.  However, a Asset ID is always linked to a Contract that is identified by the public address of the Contract wallet. The Asset Type can be the leading bytes - a convention - to make it easy to identify that it is a token by humans.</td>
+            <td class="g10"><abbr title="Randomly generated base58 string.  Each Asset ID should be unique.  However, a Asset ID is always linked to a Contract that is identified by the public address of the Contract wallet. The Asset Type can be the leading bytes - a convention - to make it easy to identify that it is a token by humans.">Randomly generated base58 string.  Each Asset ID should be unique.  Ho ... Hover for more</abbr></td>
             <td class="g10">string</td>
             <td class="g10"></td>
         </tr>
-
         <tr>
             <td class="g9">Vote Txn ID</td>
             <td class="g10">VoteTxnID</td>
@@ -53,17 +50,15 @@ The following breaks down the construction of a Ballot Cast Action. The action i
             <td class="g10">sha256</td>
             <td class="g10"></td>
         </tr>
-
         <tr>
             <td class="g9">Vote</td>
             <td class="g10">Vote</td>
             <td class="g10">0</td>
             <td class="g10">A</td>
-            <td class="g10">Length 1-255 bytes. 0 is not valid. Accept, Reject, Abstain, Spoiled, Multiple Choice, or Preference List. 15 options total. Order of preference.  1st position = 1st choice. 2nd position = 2nd choice, etc.  A is always Accept and B is always reject in a Y/N votes.</td>
+            <td class="g10"><abbr title="Length 1-255 bytes. 0 is not valid. Accept, Reject, Abstain, Spoiled, Multiple Choice, or Preference List. 15 options total. Order of preference.  1st position = 1st choice. 2nd position = 2nd choice, etc.  A is always Accept and B is always reject in a Y/N votes.">Length 1-255 bytes. 0 is not valid. Accept, Reject, Abstain, Spoiled,  ... Hover for more</abbr></td>
             <td class="g10">nvarchar8</td>
             <td class="g10"></td>
         </tr>
-
     </table>
 </div>
 
@@ -83,7 +78,7 @@ The following breaks down the construction of a Ballot Cast Action. The action i
             <th class="s1">Comments</th>
        </tr>
        <tr>
-            <td class="g5">.</td>
+            <td class="g5">[{User Token Owner's Public Address }]</td>
             <td class="g6">.</td>
             <td class="g6">.</td>
             <td class="g10">.</td>

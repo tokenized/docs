@@ -23,7 +23,6 @@ The following breaks down the construction of a Asset Modification Action. The a
                 </a>
              </td>
         </tr>
-
         <tr>
             <td class="a9">Asset Type</td>
             <td class="a10">AssetType</td>
@@ -33,27 +32,24 @@ The following breaks down the construction of a Asset Modification Action. The a
             <td class="a10">string</td>
             <td class="a10"></td>
         </tr>
-
         <tr>
             <td class="a9">Asset ID</td>
             <td class="a10">AssetID</td>
             <td class="a10">32</td>
             <td class="a10">apm2qsznhks23z8d83u41s8019hyri3i</td>
-            <td class="a10">Randomly generated base58 string.  Each Asset ID should be unique.  However, a Asset ID is always linked to a Contract that is identified by the public address of the Contract wallet. The Asset Type + Asset ID = Asset Code.  An Asset Code is a human readable idenitfier that can be used in a similar way to a Bitcoin (BSV) address, a vanity identifying label.</td>
+            <td class="a10"><abbr title="Randomly generated base58 string.  Each Asset ID should be unique.  However, a Asset ID is always linked to a Contract that is identified by the public address of the Contract wallet. The Asset Type + Asset ID = Asset Code.  An Asset Code is a human readable idenitfier that can be used in a similar way to a Bitcoin (BSV) address, a vanity identifying label.">Randomly generated base58 string.  Each Asset ID should be unique.  Ho ... Hover for more</abbr></td>
             <td class="a10">string</td>
             <td class="a10"></td>
         </tr>
-
         <tr>
             <td class="a9">Asset Revision</td>
             <td class="a10">AssetRevision</td>
             <td class="a10">8</td>
             <td class="a10">0</td>
-            <td class="a10">Counter. (Subfield cannot be manually changed by Asset Modification Action.  Only SC can increment by 1 with each AC action. SC will reject AM actions where the wrong asset revision has been selected. </td>
+            <td class="a10"><abbr title="Counter. (Subfield cannot be manually changed by Asset Modification Action.  Only SC can increment by 1 with each AC action. SC will reject AM actions where the wrong asset revision has been selected. ">Counter. (Subfield cannot be manually changed by Asset Modification Ac ... Hover for more</abbr></td>
             <td class="a10">uint64</td>
             <td class="a10">Cannot be Amended</td>
         </tr>
-
         <tr>
             <td class="a9">ModificationCount</td>
             <td class="a10">ModificationCount</td>
@@ -63,7 +59,6 @@ The following breaks down the construction of a Asset Modification Action. The a
             <td class="a10">uint8</td>
             <td class="a10"></td>
         </tr>
-
         <tr>
             <td class="a5" colspan="7">
                 <a href="javascript:;" data-popover="type-Amendment">
@@ -71,7 +66,6 @@ The following breaks down the construction of a Asset Modification Action. The a
                 </a>
             </td>
         </tr>
-
         <tr>
             <td class="a9">Ref Tx-ID</td>
             <td class="a10">RefTxID</td>
@@ -81,7 +75,6 @@ The following breaks down the construction of a Asset Modification Action. The a
             <td class="a10">sha256</td>
             <td class="a10"></td>
         </tr>
-
     </table>
 </div>
 
@@ -101,7 +94,7 @@ The following breaks down the construction of a Asset Modification Action. The a
             <th class="s1">Comments</th>
        </tr>
        <tr>
-            <td class="a5">.</td>
+            <td class="a5">[{Issuer Issuer's Public Address }]</td>
             <td class="a6">.</td>
             <td class="a6">.</td>
             <td class="a10">.</td>

@@ -23,27 +23,24 @@ The following breaks down the construction of a Contract Amendment Action. The a
                 </a>
              </td>
         </tr>
-
         <tr>
             <td class="c9">Change Issuer Address</td>
             <td class="c10">ChangeIssuerAddress</td>
             <td class="c10">1</td>
             <td class="c10">1</td>
-            <td class="c10">1 - Yes, 0 - No.  Used to change the issuer address.  The new issuer address must be in the input[1] position.</td>
+            <td class="c10"><abbr title="1 - Yes, 0 - No.  Used to change the issuer address.  The new issuer address must be in the input[1] position.">1 - Yes, 0 - No.  Used to change the issuer address.  The new issuer a ... Hover for more</abbr></td>
             <td class="c10">bool</td>
             <td class="c10"></td>
         </tr>
-
         <tr>
             <td class="c9">Change Operator Address</td>
             <td class="c10">ChangeOperatorAddress</td>
             <td class="c10">1</td>
             <td class="c10">1</td>
-            <td class="c10">1 - Yes, 0 - No.  Used to change the smart contract operator address.  The new operator address must be in the input[1] position.</td>
+            <td class="c10"><abbr title="1 - Yes, 0 - No.  Used to change the smart contract operator address.  The new operator address must be in the input[1] position.">1 - Yes, 0 - No.  Used to change the smart contract operator address.  ... Hover for more</abbr></td>
             <td class="c10">bool</td>
             <td class="c10"></td>
         </tr>
-
         <tr>
             <td class="c9">Contract Revision</td>
             <td class="c10">ContractRevision</td>
@@ -53,7 +50,6 @@ The following breaks down the construction of a Contract Amendment Action. The a
             <td class="c10">uint16</td>
             <td class="c10"></td>
         </tr>
-
         <tr>
             <td class="c9">AmendmentsCount</td>
             <td class="c10">AmendmentsCount</td>
@@ -63,7 +59,6 @@ The following breaks down the construction of a Contract Amendment Action. The a
             <td class="c10">uint8</td>
             <td class="c10"></td>
         </tr>
-
         <tr>
             <td class="c5" colspan="7">
                 <a href="javascript:;" data-popover="type-Amendment">
@@ -71,7 +66,6 @@ The following breaks down the construction of a Contract Amendment Action. The a
                 </a>
             </td>
         </tr>
-
         <tr>
             <td class="c9">Ref Tx-ID</td>
             <td class="c10">RefTxID</td>
@@ -81,7 +75,6 @@ The following breaks down the construction of a Contract Amendment Action. The a
             <td class="c10">SHA256</td>
             <td class="c10"></td>
         </tr>
-
     </table>
 </div>
 
@@ -101,7 +94,7 @@ The following breaks down the construction of a Contract Amendment Action. The a
             <th class="s1">Comments</th>
        </tr>
        <tr>
-            <td class="c5">.</td>
+            <td class="c5">[{Issuer Issuer's Public Address } {NewIssuer New Issuer Public Address }]</td>
             <td class="c6">.</td>
             <td class="c6">.</td>
             <td class="c10">.</td>

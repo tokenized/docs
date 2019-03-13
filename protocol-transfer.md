@@ -23,7 +23,6 @@ The following breaks down the construction of a Transfer Action. The action is c
                 </a>
              </td>
         </tr>
-
         <tr>
             <td class="t9">Asset Count</td>
             <td class="t10">AssetCount</td>
@@ -33,7 +32,6 @@ The following breaks down the construction of a Transfer Action. The action is c
             <td class="t10">uint8</td>
             <td class="t10"></td>
         </tr>
-
         <tr>
             <td class="t9">Asset Type X</td>
             <td class="t10">AssetTypeX</td>
@@ -43,17 +41,15 @@ The following breaks down the construction of a Transfer Action. The action is c
             <td class="t10">string</td>
             <td class="t10"></td>
         </tr>
-
         <tr>
             <td class="t9">Asset ID X</td>
             <td class="t10">AssetIDX</td>
             <td class="t10">32</td>
             <td class="t10">apm2qsznhks23z8d83u41s8019hyri3i</td>
-            <td class="t10">Randomly generated base58 string.  Each Asset ID should be unique.  However, a Asset ID is always linked to a Contract that is identified by the public address of the Contract wallet. The Asset Type can be the leading bytes - a convention - to make it easy to identify that it is a token by humans.</td>
+            <td class="t10"><abbr title="Randomly generated base58 string.  Each Asset ID should be unique.  However, a Asset ID is always linked to a Contract that is identified by the public address of the Contract wallet. The Asset Type can be the leading bytes - a convention - to make it easy to identify that it is a token by humans.">Randomly generated base58 string.  Each Asset ID should be unique.  Ho ... Hover for more</abbr></td>
             <td class="t10">string</td>
             <td class="t10"></td>
         </tr>
-
         <tr>
             <td class="t9">Token Sender Count</td>
             <td class="t10">AssetXSenderCount</td>
@@ -63,7 +59,6 @@ The following breaks down the construction of a Transfer Action. The action is c
             <td class="t10">uint8</td>
             <td class="t10"></td>
         </tr>
-
         <tr>
             <td class="t5" colspan="7">
                 <a href="javascript:;" data-popover="type-QuantityIndex">
@@ -71,7 +66,6 @@ The following breaks down the construction of a Transfer Action. The action is c
                 </a>
             </td>
         </tr>
-
         <tr>
             <td class="t9">The number of token receivers</td>
             <td class="t10">AssetXReceiverCount</td>
@@ -81,7 +75,6 @@ The following breaks down the construction of a Transfer Action. The action is c
             <td class="t10">uint8</td>
             <td class="t10"></td>
         </tr>
-
         <tr>
             <td class="t5" colspan="7">
                 <a href="javascript:;" data-popover="type-TokenReceiver">
@@ -89,17 +82,15 @@ The following breaks down the construction of a Transfer Action. The action is c
                 </a>
             </td>
         </tr>
-
         <tr>
             <td class="t9">Offer Expiry</td>
             <td class="t10">OfferExpiry</td>
             <td class="t10">8</td>
             <td class="t10"><abbr title="Sun May 06 2018 06:00:00 GMT+1000 (AEST)">Hover for example</abbr></td>
-            <td class="t10">This prevents any party from holding on to the partially signed message as a form of an option.  Eg. the exchange at this price is valid for 30 mins.</td>
+            <td class="t10"><abbr title="This prevents any party from holding on to the partially signed message as a form of an option.  Eg. the exchange at this price is valid for 30 mins.">This prevents any party from holding on to the partially signed messag ... Hover for more</abbr></td>
             <td class="t10">time</td>
             <td class="t10"></td>
         </tr>
-
         <tr>
             <td class="t9">Exchange Fee Currency</td>
             <td class="t10">ExchangeFeeCurrency</td>
@@ -109,7 +100,6 @@ The following breaks down the construction of a Transfer Action. The action is c
             <td class="t10">string</td>
             <td class="t10"></td>
         </tr>
-
         <tr>
             <td class="t9">Exchange Fee Variable</td>
             <td class="t10">ExchangeFeeVar</td>
@@ -119,7 +109,6 @@ The following breaks down the construction of a Transfer Action. The action is c
             <td class="t10">float32</td>
             <td class="t10"></td>
         </tr>
-
         <tr>
             <td class="t9">Exchange Fee Fixed</td>
             <td class="t10">ExchangeFeeFixed</td>
@@ -129,7 +118,6 @@ The following breaks down the construction of a Transfer Action. The action is c
             <td class="t10">float32</td>
             <td class="t10"></td>
         </tr>
-
         <tr>
             <td class="t9">Exchange Fee Address</td>
             <td class="t10">ExchangeFeeAddress</td>
@@ -139,7 +127,6 @@ The following breaks down the construction of a Transfer Action. The action is c
             <td class="t10">string</td>
             <td class="t10"></td>
         </tr>
-
     </table>
 </div>
 
@@ -159,7 +146,7 @@ The following breaks down the construction of a Transfer Action. The action is c
             <th class="s1">Comments</th>
        </tr>
        <tr>
-            <td class="t5">.</td>
+            <td class="t5">[{AssetXSenderX Asset (token) Sending Public Address X }]</td>
             <td class="t6">.</td>
             <td class="t6">.</td>
             <td class="t10">.</td>

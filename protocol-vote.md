@@ -23,7 +23,6 @@ The following breaks down the construction of a Vote Action. The action is const
                 </a>
              </td>
         </tr>
-
         <tr>
             <td class="g9">Timestamp</td>
             <td class="g10">Timestamp</td>
@@ -33,7 +32,6 @@ The following breaks down the construction of a Vote Action. The action is const
             <td class="g10">timestamp</td>
             <td class="g10">Cannot be changed by issuer, operator. Smart contract controls.</td>
         </tr>
-
     </table>
 </div>
 
@@ -53,7 +51,7 @@ The following breaks down the construction of a Vote Action. The action is const
             <th class="s1">Comments</th>
        </tr>
        <tr>
-            <td class="g5">.</td>
+            <td class="g5">[{Contract Contract Public Address }]</td>
             <td class="g6">.</td>
             <td class="g6">.</td>
             <td class="g10">.</td>

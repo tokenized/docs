@@ -24,7 +24,6 @@ The following breaks down the construction of a Message Action. The action is co
                 </a>
              </td>
         </tr>
-
         <tr>
             <td class="m9">Qty Receiving Addresses</td>
             <td class="m10">QtyReceivingAddresses</td>
@@ -34,7 +33,6 @@ The following breaks down the construction of a Message Action. The action is co
             <td class="m10">uint8</td>
             <td class="m10"></td>
         </tr>
-
         <tr>
             <td class="m9">Address Indexes</td>
             <td class="m10">AddressIndexes</td>
@@ -44,7 +42,6 @@ The following breaks down the construction of a Message Action. The action is co
             <td class="m10">uint16[]</td>
             <td class="m10"></td>
         </tr>
-
         <tr>
             <td class="m9">Message Type</td>
             <td class="m10">MessageType</td>
@@ -54,18 +51,16 @@ The following breaks down the construction of a Message Action. The action is co
             <td class="m10">string</td>
             <td class="m10"></td>
         </tr>
-
         <tr>
             <td class="m9">Message Payload</td>
             <td class="m10">MessagePayload</td>
             <td class="m10">0</td>
             <td class="m10">Hello world!</td>
-            <td class="m10">Public or private (RSA public key, Diffie-Hellman). Issuers/Contracts can send the signifying amount of satoshis to themselves for public announcements or private 'notes' if encrypted. See Message Types for a full list of potential use cases.
-</td>
+            <td class="m10"><abbr title="Public or private (RSA public key, Diffie-Hellman). Issuers/Contracts can send the signifying amount of satoshis to themselves for public announcements or private 'notes' if encrypted. See Message Types for a full list of potential use cases.
+">Public or private (RSA public key, Diffie-Hellman). Issuers/Contracts  ... Hover for more</abbr></td>
             <td class="m10">nvarchar32</td>
             <td class="m10"></td>
         </tr>
-
     </table>
 </div>
 
@@ -85,7 +80,7 @@ The following breaks down the construction of a Message Action. The action is co
             <th class="s1">Comments</th>
        </tr>
        <tr>
-            <td class="m5">.</td>
+            <td class="m5">[{MsgSender Msg Sender's Public Address }]</td>
             <td class="m6">.</td>
             <td class="m6">.</td>
             <td class="m10">.</td>

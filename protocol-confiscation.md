@@ -23,7 +23,6 @@ The following breaks down the construction of a Confiscation Action. The action 
                 </a>
              </td>
         </tr>
-
         <tr>
             <td class="e9">Number of Addresses</td>
             <td class="e10">AddressCount</td>
@@ -33,7 +32,6 @@ The following breaks down the construction of a Confiscation Action. The action 
             <td class="e10">uint16</td>
             <td class="e10"></td>
         </tr>
-
         <tr>
             <td class="e5" colspan="7">
                 <a href="javascript:;" data-popover="type-Address">
@@ -41,7 +39,6 @@ The following breaks down the construction of a Confiscation Action. The action 
                 </a>
             </td>
         </tr>
-
         <tr>
             <td class="e9">Deposit Qty</td>
             <td class="e10">DepositQty</td>
@@ -51,7 +48,6 @@ The following breaks down the construction of a Confiscation Action. The action 
             <td class="e10">uint64</td>
             <td class="e10"></td>
         </tr>
-
         <tr>
             <td class="e9">Timestamp</td>
             <td class="e10">Timestamp</td>
@@ -61,7 +57,6 @@ The following breaks down the construction of a Confiscation Action. The action 
             <td class="e10">timestamp</td>
             <td class="e10">Cannot be changed by issuer, operator. Smart contract controls.</td>
         </tr>
-
     </table>
 </div>
 
@@ -81,7 +76,7 @@ The following breaks down the construction of a Confiscation Action. The action 
             <th class="s1">Comments</th>
        </tr>
        <tr>
-            <td class="e5">.</td>
+            <td class="e5">[{Contract Contract Public Address }]</td>
             <td class="e6">.</td>
             <td class="e6">.</td>
             <td class="e10">.</td>

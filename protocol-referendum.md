@@ -23,7 +23,6 @@ The following breaks down the construction of a Referendum Action. The action is
                 </a>
              </td>
         </tr>
-
         <tr>
             <td class="g9">Asset Specific Vote</td>
             <td class="g10">AssetSpecificVote</td>
@@ -33,7 +32,6 @@ The following breaks down the construction of a Referendum Action. The action is
             <td class="g10">bool</td>
             <td class="g10"></td>
         </tr>
-
         <tr>
             <td class="g9">Asset Type</td>
             <td class="g10">AssetType</td>
@@ -43,17 +41,15 @@ The following breaks down the construction of a Referendum Action. The action is
             <td class="g10">string</td>
             <td class="g10"></td>
         </tr>
-
         <tr>
             <td class="g9">Asset ID</td>
             <td class="g10">AssetID</td>
             <td class="g10">32</td>
             <td class="g10">apm2qsznhks23z8d83u41s8019hyri3i</td>
-            <td class="g10">Randomly generated base58 string.  Each Asset ID should be unique.  However, an Asset ID is always linked to a Contract that is identified by the public address of the Contract wallet. The Asset Type can be the leading bytes - a convention - to make it easy to identify that it is a token by humans.</td>
+            <td class="g10"><abbr title="Randomly generated base58 string.  Each Asset ID should be unique.  However, an Asset ID is always linked to a Contract that is identified by the public address of the Contract wallet. The Asset Type can be the leading bytes - a convention - to make it easy to identify that it is a token by humans.">Randomly generated base58 string.  Each Asset ID should be unique.  Ho ... Hover for more</abbr></td>
             <td class="g10">string</td>
             <td class="g10"></td>
         </tr>
-
         <tr>
             <td class="g9">Vote System</td>
             <td class="g10">VoteSystem</td>
@@ -63,17 +59,15 @@ The following breaks down the construction of a Referendum Action. The action is
             <td class="g10">uint8</td>
             <td class="g10"></td>
         </tr>
-
         <tr>
             <td class="g9">Proposal</td>
             <td class="g10">Proposal</td>
             <td class="g10">1</td>
             <td class="g10">0</td>
-            <td class="g10">1 for a Proposal, 0 for an initiative that is requesting changes to specific subfields for modification. If this field is true, the subfields should be empty.  The smart contract cannot interpret the results of a vote when Proposal = 1.  All meaning is interpreted by the token owners and smart contract simply facilates the record keeping.  When Proposal = 0, the smart contract always assumes the first choice is a 'yes', or 'pass', if the threshold is met, and will process the proposed changes accordingly.</td>
+            <td class="g10"><abbr title="1 for a Proposal, 0 for an initiative that is requesting changes to specific subfields for modification. If this field is true, the subfields should be empty.  The smart contract cannot interpret the results of a vote when Proposal = 1.  All meaning is interpreted by the token owners and smart contract simply facilates the record keeping.  When Proposal = 0, the smart contract always assumes the first choice is a 'yes', or 'pass', if the threshold is met, and will process the proposed changes accordingly.">1 for a Proposal, 0 for an initiative that is requesting changes to sp ... Hover for more</abbr></td>
             <td class="g10">bool</td>
             <td class="g10"></td>
         </tr>
-
         <tr>
             <td class="g9"></td>
             <td class="g10">ProposedChangesCount</td>
@@ -83,7 +77,6 @@ The following breaks down the construction of a Referendum Action. The action is
             <td class="g10">uint8</td>
             <td class="g10"></td>
         </tr>
-
         <tr>
             <td class="g5" colspan="7">
                 <a href="javascript:;" data-popover="type-Amendment">
@@ -91,27 +84,24 @@ The following breaks down the construction of a Referendum Action. The action is
                 </a>
             </td>
         </tr>
-
         <tr>
             <td class="g9">Vote Options</td>
             <td class="g10">VoteOptions</td>
             <td class="g10">0</td>
             <td class="g10">ABCDEFGHIJKLMNO</td>
-            <td class="g10">Length 1-255 bytes. 0 is not valid. Each byte allows for a different vote option.  Typical votes will likely be multiple choice or Y/N. Vote instances are identified by the Tx-ID. AB000000000 would be chosen for Y/N (binary) type votes. Only applicable if Proposal Type is set to P for Proposal.  All other Proposal Types will be binary.  Pass/Fail.</td>
+            <td class="g10"><abbr title="Length 1-255 bytes. 0 is not valid. Each byte allows for a different vote option.  Typical votes will likely be multiple choice or Y/N. Vote instances are identified by the Tx-ID. AB000000000 would be chosen for Y/N (binary) type votes. Only applicable if Proposal Type is set to P for Proposal.  All other Proposal Types will be binary.  Pass/Fail.">Length 1-255 bytes. 0 is not valid. Each byte allows for a different v ... Hover for more</abbr></td>
             <td class="g10">nvarchar8</td>
             <td class="g10"></td>
         </tr>
-
         <tr>
             <td class="g9">Vote Max</td>
             <td class="g10">VoteMax</td>
             <td class="g10">1</td>
             <td class="g10">15</td>
-            <td class="g10">Range: 1-15. How many selections can a voter make in a Ballot Cast.  1 is selected for Y/N (binary)</td>
+            <td class="g10"><abbr title="Range: 1-15. How many selections can a voter make in a Ballot Cast.  1 is selected for Y/N (binary)">Range: 1-15. How many selections can a voter make in a Ballot Cast.  1 ... Hover for more</abbr></td>
             <td class="g10">uint8</td>
             <td class="g10"></td>
         </tr>
-
         <tr>
             <td class="g9">Proposal Description</td>
             <td class="g10">ProposalDescription</td>
@@ -121,7 +111,6 @@ The following breaks down the construction of a Referendum Action. The action is
             <td class="g10">nvarchar32</td>
             <td class="g10"></td>
         </tr>
-
         <tr>
             <td class="g9">Proposal Document Hash</td>
             <td class="g10">ProposalDocumentHash</td>
@@ -131,7 +120,6 @@ The following breaks down the construction of a Referendum Action. The action is
             <td class="g10">sha256</td>
             <td class="g10"></td>
         </tr>
-
         <tr>
             <td class="g9">Vote Cut-Off Timestamp</td>
             <td class="g10">VoteCutOffTimestamp</td>
@@ -141,7 +129,6 @@ The following breaks down the construction of a Referendum Action. The action is
             <td class="g10">time</td>
             <td class="g10"></td>
         </tr>
-
     </table>
 </div>
 
@@ -161,7 +148,7 @@ The following breaks down the construction of a Referendum Action. The action is
             <th class="s1">Comments</th>
        </tr>
        <tr>
-            <td class="g5">.</td>
+            <td class="g5">[{Issuer Issuer's Public Address }]</td>
             <td class="g6">.</td>
             <td class="g6">.</td>
             <td class="g10">.</td>
