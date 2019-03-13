@@ -24,11 +24,11 @@ Tokenized transactions are build by compiling the token data as a list of fields
 15. PUSHDATA_LENGTH - Length data for OPCODES that require secondary information regarding the length of the data packet
 16. Payload - The token payload is an additional packet of data made that represents the details of the token. Each token type has its own payload.
 
-#Assembling OP_RETURN packet
+##Assembling OP_RETURN packet
 To assemble an OP_RETURN packet, the first byte is always the OP_RETURN opcode (0x6a)
 The second byte is a PUSHDATA instruction. The PUSHDATA instruction can be variable depending on the number of bytes in the data packet being pushed into the output. It is possible to perform multiple pushes in a single OP_RETURN output, allowing the output to have multiple fields of different lengths. There are always 2 pushdata operations in a Tokenized operation. The first carries the "Tokenized" protocol identifer (tokenized.com), and the second carries the remainder of the data in the packet. This can be up to 99kB of data with the current BitcoinSV network capability, but will eventually allow contracts of up to 4GB to be built.
 
-##Using PUSHDATA
+###Using PUSHDATA
 For packets with less than 75 bytes of data, the pushdata instruction is simply a single byte containing the length of the packet.
 e.g. 0x6a 0x03 0x010203 is a OP_RETURN followed by a PUSHDATA instruction to push 3 bytes, and then 3 bytes of information
 
@@ -40,8 +40,8 @@ For packets containing 256 - 65,535 bytes of data, OP_PUSHDATA2 (0x4d) is used, 
 
 For packets containing 65,536 - 4,294,967,295 bytes of data, OP_PUSHDATA4 (0x4e) is used, followed by a 4 byte represenation of the length of the data packet following.
 
-##Buiding a Tokenized Operation
-A Tokenized operation is always done as 2 separate push operations.
+##Breaking down the OP_RETURN output
+A Tokenized action output is always created with 2 separate push operations. They are split as follows:
 
 ###1. Tokenized protocol identifier
 The first push is 13 bytes long and contains only the Tokenized protocol identifier which is the string 'tokenized.com'.
