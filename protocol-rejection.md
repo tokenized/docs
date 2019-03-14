@@ -1,4 +1,6 @@
 
+
+
 # Rejection Action
 
 Rejection Action - used to reject request actions that do not comply with the Contract. If money is to be returned to a User then it is used in lieu of the Settlement Action to properly account for token balances. All Issuer/User request Actions must be responded to by the Contract with an Action.  The only exception to this rule is when there is not enough fees in the first Action for the Contract response action to remain revenue neutral.  If not enough fees are attached to pay for the Contract response then the Contract will not respond.
@@ -55,7 +57,7 @@ The following breaks down the construction of a Rejection Action. The action is 
             <td class="m10">MessagePayload</td>
             <td class="m10">0</td>
             <td class="m10"><abbr title="Sorry, you don't have enough tokens.">Hover for example</abbr></td>
-            <td class="m10"><abbr title="Length 0-65,535 bytes. Message that explains the reasoning for a rejection, if needed.  Most rejection types will be captured by the Rejection Type Subfield.">Length 0-65,535 bytes. Message that explains the reasoning for a rejec ... Hover for more</abbr></td>
+            <td class="m10"><abbr title="Length 0-65,535 bytes. Message that explains the reasoning for a rejection, if needed.  Most rejection types will be captured by the Rejection Type Subfield.">Length 0-65,535 bytes. Message that explains the reasoning for a rejection, if needed.  Mo ...</abbr></td>
             <td class="m10">nvarchar32</td>
             <td class="m10"></td>
         </tr>
@@ -104,13 +106,13 @@ The following breaks down the construction of a Rejection Action. The action is 
     <div class="content docs-content">
         <table class="ui table">
             <tr style='height:19px;'>
-                <th style="width:9%" class="s1">Label</th>
+                <th style="width:5%" class="s1">Label</th>
                 <th style="width:9%" class="s1">Name</th>
-                <th style="width:2%" class="s1">Bytes</th>
-                <th style="width:29%" class="s1">Example Values</th>
+                <th style="width:3%" class="s1">Bytes</th>
+                <th style="width:33%" class="s1">Example Values</th>
                 <th style="width:26%" class="s1">Comments</th>
                 <th style="width:5%" class="s1">Data Type</th>
-                <th style="width:14%" class="s2">Amendment Restrictions</th>
+                <th class="s2">Amendment Restrictions</th>
             </tr>
             <tr>
                 <td class="m10">Protocol Identifier</td>
@@ -152,8 +154,8 @@ The following breaks down the construction of a Rejection Action. The action is 
                 <td class="m10">Action Prefix</td>
                 <td class="m10">ActionPrefix</td>
                 <td class="m10">2</td>
-                <td class="m10" style="word-break:break-all">C1</td>
-                <td class="m10">Contract Offer: The Contract Offer Action allows the Issuer to initialize a smart contract by providing all the necessary information, including T&C's.  The Contract Offer Action can also be used to signal to a market actor that they want to buy/form a contract.</td>
+                <td class="m10" style="word-break:break-all">M2</td>
+                <td class="m10">// M2 identifies data as a Rejection message.</td>
                 <td class="m10">string</td>
                 <td class="m10">Cannot be changed by issuer, operator or smart contract.</td>
             </tr>

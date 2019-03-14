@@ -1,4 +1,6 @@
 
+
+
 # Reconciliation Action
 
 Reconciliation Action -  to be used at the direction of the issuer to fix record keeping errors with bitcoin and token balances.
@@ -84,13 +86,13 @@ The following breaks down the construction of a Reconciliation Action. The actio
     <div class="content docs-content">
         <table class="ui table">
             <tr style='height:19px;'>
-                <th style="width:9%" class="s1">Label</th>
+                <th style="width:5%" class="s1">Label</th>
                 <th style="width:9%" class="s1">Name</th>
-                <th style="width:2%" class="s1">Bytes</th>
-                <th style="width:29%" class="s1">Example Values</th>
+                <th style="width:3%" class="s1">Bytes</th>
+                <th style="width:33%" class="s1">Example Values</th>
                 <th style="width:26%" class="s1">Comments</th>
                 <th style="width:5%" class="s1">Data Type</th>
-                <th style="width:14%" class="s2">Amendment Restrictions</th>
+                <th class="s2">Amendment Restrictions</th>
             </tr>
             <tr>
                 <td class="e10">Protocol Identifier</td>
@@ -132,8 +134,8 @@ The following breaks down the construction of a Reconciliation Action. The actio
                 <td class="e10">Action Prefix</td>
                 <td class="e10">ActionPrefix</td>
                 <td class="e10">2</td>
-                <td class="e10" style="word-break:break-all">C1</td>
-                <td class="e10">Contract Offer: The Contract Offer Action allows the Issuer to initialize a smart contract by providing all the necessary information, including T&C's.  The Contract Offer Action can also be used to signal to a market actor that they want to buy/form a contract.</td>
+                <td class="e10" style="word-break:break-all">E5</td>
+                <td class="e10">// E5 identifies data as a Reconciliation message.</td>
                 <td class="e10">string</td>
                 <td class="e10">Cannot be changed by issuer, operator or smart contract.</td>
             </tr>
@@ -146,13 +148,13 @@ The following breaks down the construction of a Reconciliation Action. The actio
     <div class="content docs-content">
         <table class="ui table">
             <tr style='height:19px;'>
-                <th style="width:9%" class="s1">Label</th>
+                <th style="width:5%" class="s1">Label</th>
                 <th style="width:9%" class="s1">Name</th>
-                <th style="width:2%" class="s1">Bytes</th>
-                <th style="width:29%" class="s1">Example Values</th>
+                <th style="width:3%" class="s1">Bytes</th>
+                <th style="width:33%" class="s1">Example Values</th>
                 <th style="width:26%" class="s1">Comments</th>
                 <th style="width:5%" class="s1">Data Type</th>
-                <th style="width:14%" class="s2">Amendment Restrictions</th>
+                <th class="s2">Amendment Restrictions</th>
             </tr>
             <tr>
                 <td class="e10">Address</td>

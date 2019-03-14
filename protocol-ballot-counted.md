@@ -1,4 +1,6 @@
 
+
+
 # Ballot Counted Action
 
 Ballot Counted Action -  The smart contract will respond to a Ballot Cast action with a Ballot Counted action if the Ballot Cast is valid.  If the Ballot Cast is not valid, then the smart contract will respond with a Rejection Action.
@@ -68,13 +70,13 @@ The following breaks down the construction of a Ballot Counted Action. The actio
     <div class="content docs-content">
         <table class="ui table">
             <tr style='height:19px;'>
-                <th style="width:9%" class="s1">Label</th>
+                <th style="width:5%" class="s1">Label</th>
                 <th style="width:9%" class="s1">Name</th>
-                <th style="width:2%" class="s1">Bytes</th>
-                <th style="width:29%" class="s1">Example Values</th>
+                <th style="width:3%" class="s1">Bytes</th>
+                <th style="width:33%" class="s1">Example Values</th>
                 <th style="width:26%" class="s1">Comments</th>
                 <th style="width:5%" class="s1">Data Type</th>
-                <th style="width:14%" class="s2">Amendment Restrictions</th>
+                <th class="s2">Amendment Restrictions</th>
             </tr>
             <tr>
                 <td class="g10">Protocol Identifier</td>
@@ -116,8 +118,8 @@ The following breaks down the construction of a Ballot Counted Action. The actio
                 <td class="g10">Action Prefix</td>
                 <td class="g10">ActionPrefix</td>
                 <td class="g10">2</td>
-                <td class="g10" style="word-break:break-all">C1</td>
-                <td class="g10">Contract Offer: The Contract Offer Action allows the Issuer to initialize a smart contract by providing all the necessary information, including T&C's.  The Contract Offer Action can also be used to signal to a market actor that they want to buy/form a contract.</td>
+                <td class="g10" style="word-break:break-all">G5</td>
+                <td class="g10">// G5 identifies data as a BallotCounted message.</td>
                 <td class="g10">string</td>
                 <td class="g10">Cannot be changed by issuer, operator or smart contract.</td>
             </tr>

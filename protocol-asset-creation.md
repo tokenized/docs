@@ -1,4 +1,6 @@
 
+
+
 # Asset Creation Action
 
 Asset Creation Action -  This action creates an Asset in response to the Issuer's instructions in the Definition Action.
@@ -37,7 +39,7 @@ The following breaks down the construction of a Asset Creation Action. The actio
             <td class="a10">AssetID</td>
             <td class="a10">32</td>
             <td class="a10">apm2qsznhks23z8d83u41s8019hyri3i</td>
-            <td class="a10"><abbr title="Randomly generated base58 string.  Each Asset ID should be unique.  However, a Asset ID is always linked to a Contract that is identified by the public address of the Contract wallet. The Asset Type + Asset ID = Asset Code.  An Asset Code is a human readable idenitfier that can be used in a similar way to a Bitcoin (BSV) address, a vanity identifying label.">Randomly generated base58 string.  Each Asset ID should be unique.  Ho ... Hover for more</abbr></td>
+            <td class="a10"><abbr title="Randomly generated base58 string.  Each Asset ID should be unique.  However, a Asset ID is always linked to a Contract that is identified by the public address of the Contract wallet. The Asset Type + Asset ID = Asset Code.  An Asset Code is a human readable idenitfier that can be used in a similar way to a Bitcoin (BSV) address, a vanity identifying label.">Randomly generated base58 string.  Each Asset ID should be unique.  However, a Asset ID is ...</abbr></td>
             <td class="a10">string</td>
             <td class="a10"></td>
         </tr>
@@ -64,7 +66,7 @@ The following breaks down the construction of a Asset Creation Action. The actio
             <td class="a10">TradeRestrictions</td>
             <td class="a10">3</td>
             <td class="a10">GBR</td>
-            <td class="a10"><abbr title="Asset can only be traded within the trade restrictions.  Eg. AUS - Australian residents only.  EU - European Union residents only.">Asset can only be traded within the trade restrictions.  Eg. AUS - Aus ... Hover for more</abbr></td>
+            <td class="a10"><abbr title="Asset can only be traded within the trade restrictions.  Eg. AUS - Australian residents only.  EU - European Union residents only.">Asset can only be traded within the trade restrictions.  Eg. AUS - Australian residents on ...</abbr></td>
             <td class="a10">string</td>
             <td class="a10"></td>
         </tr>
@@ -82,7 +84,7 @@ The following breaks down the construction of a Asset Creation Action. The actio
             <td class="a10">VoteMultiplier</td>
             <td class="a10">1</td>
             <td class="a10">3</td>
-            <td class="a10"><abbr title="Multiplies the vote by the integer. 1 token = 1 vote with a 1 for vote multipler (normal).  1 token = 3 votes with a multiplier of 3, for example.">Multiplies the vote by the integer. 1 token = 1 vote with a 1 for vote ... Hover for more</abbr></td>
+            <td class="a10"><abbr title="Multiplies the vote by the integer. 1 token = 1 vote with a 1 for vote multipler (normal).  1 token = 3 votes with a multiplier of 3, for example.">Multiplies the vote by the integer. 1 token = 1 vote with a 1 for vote multipler (normal). ...</abbr></td>
             <td class="a10">uint8</td>
             <td class="a10"></td>
         </tr>
@@ -91,7 +93,7 @@ The following breaks down the construction of a Asset Creation Action. The actio
             <td class="a10">ReferendumProposal</td>
             <td class="a10">1</td>
             <td class="a10">1</td>
-            <td class="a10"><abbr title="A Referendum is permitted for Asset-Wide Proposals (outside of smart contract scope) if also permitted by the contract. If the contract has proposals by referendum restricted, then this flag is meaningless.">A Referendum is permitted for Asset-Wide Proposals (outside of smart c ... Hover for more</abbr></td>
+            <td class="a10"><abbr title="A Referendum is permitted for Asset-Wide Proposals (outside of smart contract scope) if also permitted by the contract. If the contract has proposals by referendum restricted, then this flag is meaningless.">A Referendum is permitted for Asset-Wide Proposals (outside of smart contract scope) if al ...</abbr></td>
             <td class="a10">bool</td>
             <td class="a10"></td>
         </tr>
@@ -100,7 +102,7 @@ The following breaks down the construction of a Asset Creation Action. The actio
             <td class="a10">InitiativeProposal</td>
             <td class="a10">1</td>
             <td class="a10">1</td>
-            <td class="a10"><abbr title="An initiative is permitted for Asset-Wide Proposals (outside of smart contract scope) if also permitted by the contract. If the contract has proposals by initiative restricted, then this flag is meaningless.">An initiative is permitted for Asset-Wide Proposals (outside of smart  ... Hover for more</abbr></td>
+            <td class="a10"><abbr title="An initiative is permitted for Asset-Wide Proposals (outside of smart contract scope) if also permitted by the contract. If the contract has proposals by initiative restricted, then this flag is meaningless.">An initiative is permitted for Asset-Wide Proposals (outside of smart contract scope) if a ...</abbr></td>
             <td class="a10">bool</td>
             <td class="a10"></td>
         </tr>
@@ -109,7 +111,7 @@ The following breaks down the construction of a Asset Creation Action. The actio
             <td class="a10">AssetModificationGovernance</td>
             <td class="a10">1</td>
             <td class="a10">1</td>
-            <td class="a10"><abbr title="1 - Contract-wide Asset Governance.  0 - Asset-wide Asset Governance.  If a referendum or initiative is used to propose a modification to a subfield controlled by the asset auth flags, then the vote will either be a contract-wide vote (all assets vote on the referendum/initiative) or an asset-wide vote (all assets vote on the referendum/initiative).  The voting system specifies the voting rules.">1 - Contract-wide Asset Governance.  0 - Asset-wide Asset Governance.  ... Hover for more</abbr></td>
+            <td class="a10"><abbr title="1 - Contract-wide Asset Governance.  0 - Asset-wide Asset Governance.  If a referendum or initiative is used to propose a modification to a subfield controlled by the asset auth flags, then the vote will either be a contract-wide vote (all assets vote on the referendum/initiative) or an asset-wide vote (all assets vote on the referendum/initiative).  The voting system specifies the voting rules.">1 - Contract-wide Asset Governance.  0 - Asset-wide Asset Governance.  If a referendum or  ...</abbr></td>
             <td class="a10">bool</td>
             <td class="a10"></td>
         </tr>
@@ -118,7 +120,7 @@ The following breaks down the construction of a Asset Creation Action. The actio
             <td class="a10">TokenQty</td>
             <td class="a10">8</td>
             <td class="a10">1000000</td>
-            <td class="a10"><abbr title="Quantity of token - 0 is valid. Fungible 'shares' of the Asset. 1 is used for non-fungible tokens.  Asset IDs become the non-fungible Asset ID and many Asset IDs can be associated with a particular Contract.">Quantity of token - 0 is valid. Fungible 'shares' of the Asset. 1 is u ... Hover for more</abbr></td>
+            <td class="a10"><abbr title="Quantity of token - 0 is valid. Fungible 'shares' of the Asset. 1 is used for non-fungible tokens.  Asset IDs become the non-fungible Asset ID and many Asset IDs can be associated with a particular Contract.">Quantity of token - 0 is valid. Fungible 'shares' of the Asset. 1 is used for non-fungible ...</abbr></td>
             <td class="a10">uint64</td>
             <td class="a10"></td>
         </tr>
@@ -163,7 +165,7 @@ The following breaks down the construction of a Asset Creation Action. The actio
             <td class="a10">AssetPayload</td>
             <td class="a10">0</td>
             <td class="a10">some data</td>
-            <td class="a10"><abbr title="Payload length is dependent on the asset type. Each asset is made up of a defined set of information pertaining to the specific asset type, and may contain fields of variable length type (nvarchar8, 16, 32)">Payload length is dependent on the asset type. Each asset is made up o ... Hover for more</abbr></td>
+            <td class="a10"><abbr title="Payload length is dependent on the asset type. Each asset is made up of a defined set of information pertaining to the specific asset type, and may contain fields of variable length type (nvarchar8, 16, 32)">Payload length is dependent on the asset type. Each asset is made up of a defined set of i ...</abbr></td>
             <td class="a10">byte[]</td>
             <td class="a10"></td>
         </tr>
@@ -221,13 +223,13 @@ The following breaks down the construction of a Asset Creation Action. The actio
     <div class="content docs-content">
         <table class="ui table">
             <tr style='height:19px;'>
-                <th style="width:9%" class="s1">Label</th>
+                <th style="width:5%" class="s1">Label</th>
                 <th style="width:9%" class="s1">Name</th>
-                <th style="width:2%" class="s1">Bytes</th>
-                <th style="width:29%" class="s1">Example Values</th>
+                <th style="width:3%" class="s1">Bytes</th>
+                <th style="width:33%" class="s1">Example Values</th>
                 <th style="width:26%" class="s1">Comments</th>
                 <th style="width:5%" class="s1">Data Type</th>
-                <th style="width:14%" class="s2">Amendment Restrictions</th>
+                <th class="s2">Amendment Restrictions</th>
             </tr>
             <tr>
                 <td class="a10">Protocol Identifier</td>
@@ -269,8 +271,8 @@ The following breaks down the construction of a Asset Creation Action. The actio
                 <td class="a10">Action Prefix</td>
                 <td class="a10">ActionPrefix</td>
                 <td class="a10">2</td>
-                <td class="a10" style="word-break:break-all">C1</td>
-                <td class="a10">Contract Offer: The Contract Offer Action allows the Issuer to initialize a smart contract by providing all the necessary information, including T&C's.  The Contract Offer Action can also be used to signal to a market actor that they want to buy/form a contract.</td>
+                <td class="a10" style="word-break:break-all">A2</td>
+                <td class="a10">// A2 identifies data as a AssetCreation message.</td>
                 <td class="a10">string</td>
                 <td class="a10">Cannot be changed by issuer, operator or smart contract.</td>
             </tr>

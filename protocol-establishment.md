@@ -1,4 +1,6 @@
 
+
+
 # Establishment Action
 
 Establishment Action -  Establishes an on-chain register.
@@ -68,13 +70,13 @@ The following breaks down the construction of a Establishment Action. The action
     <div class="content docs-content">
         <table class="ui table">
             <tr style='height:19px;'>
-                <th style="width:9%" class="s1">Label</th>
+                <th style="width:5%" class="s1">Label</th>
                 <th style="width:9%" class="s1">Name</th>
-                <th style="width:2%" class="s1">Bytes</th>
-                <th style="width:29%" class="s1">Example Values</th>
+                <th style="width:3%" class="s1">Bytes</th>
+                <th style="width:33%" class="s1">Example Values</th>
                 <th style="width:26%" class="s1">Comments</th>
                 <th style="width:5%" class="s1">Data Type</th>
-                <th style="width:14%" class="s2">Amendment Restrictions</th>
+                <th class="s2">Amendment Restrictions</th>
             </tr>
             <tr>
                 <td class="r10">Protocol Identifier</td>
@@ -116,8 +118,8 @@ The following breaks down the construction of a Establishment Action. The action
                 <td class="r10">Action Prefix</td>
                 <td class="r10">ActionPrefix</td>
                 <td class="r10">2</td>
-                <td class="r10" style="word-break:break-all">C1</td>
-                <td class="r10">Contract Offer: The Contract Offer Action allows the Issuer to initialize a smart contract by providing all the necessary information, including T&C's.  The Contract Offer Action can also be used to signal to a market actor that they want to buy/form a contract.</td>
+                <td class="r10" style="word-break:break-all">R1</td>
+                <td class="r10">// R1 identifies data as a Establishment message.</td>
                 <td class="r10">string</td>
                 <td class="r10">Cannot be changed by issuer, operator or smart contract.</td>
             </tr>

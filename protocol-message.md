@@ -1,4 +1,6 @@
 
+
+
 # Message Action
 
 Message Action - the message action is a general purpose communication action. 'Twitter/SMS' for Issuers/Investors/Users. The message txn can also be used for passing partially signed txns on-chain, establishing private communication channels and EDI (receipting, invoices, PO, and private offers/bids). The messages are broken down by type for easy filtering in the a user's wallet. The Message Types are listed in the Message Types table.
@@ -57,7 +59,7 @@ The following breaks down the construction of a Message Action. The action is co
             <td class="m10">0</td>
             <td class="m10">Hello world!</td>
             <td class="m10"><abbr title="Public or private (RSA public key, Diffie-Hellman). Issuers/Contracts can send the signifying amount of satoshis to themselves for public announcements or private 'notes' if encrypted. See Message Types for a full list of potential use cases.
-">Public or private (RSA public key, Diffie-Hellman). Issuers/Contracts  ... Hover for more</abbr></td>
+">Public or private (RSA public key, Diffie-Hellman). Issuers/Contracts can send the signify ...</abbr></td>
             <td class="m10">nvarchar32</td>
             <td class="m10"></td>
         </tr>
@@ -97,13 +99,13 @@ The following breaks down the construction of a Message Action. The action is co
     <div class="content docs-content">
         <table class="ui table">
             <tr style='height:19px;'>
-                <th style="width:9%" class="s1">Label</th>
+                <th style="width:5%" class="s1">Label</th>
                 <th style="width:9%" class="s1">Name</th>
-                <th style="width:2%" class="s1">Bytes</th>
-                <th style="width:29%" class="s1">Example Values</th>
+                <th style="width:3%" class="s1">Bytes</th>
+                <th style="width:33%" class="s1">Example Values</th>
                 <th style="width:26%" class="s1">Comments</th>
                 <th style="width:5%" class="s1">Data Type</th>
-                <th style="width:14%" class="s2">Amendment Restrictions</th>
+                <th class="s2">Amendment Restrictions</th>
             </tr>
             <tr>
                 <td class="m10">Protocol Identifier</td>
@@ -145,8 +147,8 @@ The following breaks down the construction of a Message Action. The action is co
                 <td class="m10">Action Prefix</td>
                 <td class="m10">ActionPrefix</td>
                 <td class="m10">2</td>
-                <td class="m10" style="word-break:break-all">C1</td>
-                <td class="m10">Contract Offer: The Contract Offer Action allows the Issuer to initialize a smart contract by providing all the necessary information, including T&C's.  The Contract Offer Action can also be used to signal to a market actor that they want to buy/form a contract.</td>
+                <td class="m10" style="word-break:break-all">M1</td>
+                <td class="m10">// M1 identifies data as a Message message.</td>
                 <td class="m10">string</td>
                 <td class="m10">Cannot be changed by issuer, operator or smart contract.</td>
             </tr>

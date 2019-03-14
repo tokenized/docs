@@ -1,4 +1,6 @@
 
+
+
 # Contract Amendment Action
 
 Contract Amendment Action - the issuer can initiate an amendment to the contract establishment metadata. The ability to make an amendment to the contract is restricted by the Authorization Flag set on the current revision of Contract Formation action.
@@ -28,7 +30,7 @@ The following breaks down the construction of a Contract Amendment Action. The a
             <td class="c10">ChangeIssuerAddress</td>
             <td class="c10">1</td>
             <td class="c10">1</td>
-            <td class="c10"><abbr title="1 - Yes, 0 - No.  Used to change the issuer address.  The new issuer address must be in the input[1] position.">1 - Yes, 0 - No.  Used to change the issuer address.  The new issuer a ... Hover for more</abbr></td>
+            <td class="c10"><abbr title="1 - Yes, 0 - No.  Used to change the issuer address.  The new issuer address must be in the input[1] position.">1 - Yes, 0 - No.  Used to change the issuer address.  The new issuer address must be in th ...</abbr></td>
             <td class="c10">bool</td>
             <td class="c10"></td>
         </tr>
@@ -37,7 +39,7 @@ The following breaks down the construction of a Contract Amendment Action. The a
             <td class="c10">ChangeOperatorAddress</td>
             <td class="c10">1</td>
             <td class="c10">1</td>
-            <td class="c10"><abbr title="1 - Yes, 0 - No.  Used to change the smart contract operator address.  The new operator address must be in the input[1] position.">1 - Yes, 0 - No.  Used to change the smart contract operator address.  ... Hover for more</abbr></td>
+            <td class="c10"><abbr title="1 - Yes, 0 - No.  Used to change the smart contract operator address.  The new operator address must be in the input[1] position.">1 - Yes, 0 - No.  Used to change the smart contract operator address.  The new operator ad ...</abbr></td>
             <td class="c10">bool</td>
             <td class="c10"></td>
         </tr>
@@ -111,13 +113,13 @@ The following breaks down the construction of a Contract Amendment Action. The a
     <div class="content docs-content">
         <table class="ui table">
             <tr style='height:19px;'>
-                <th style="width:9%" class="s1">Label</th>
+                <th style="width:5%" class="s1">Label</th>
                 <th style="width:9%" class="s1">Name</th>
-                <th style="width:2%" class="s1">Bytes</th>
-                <th style="width:29%" class="s1">Example Values</th>
+                <th style="width:3%" class="s1">Bytes</th>
+                <th style="width:33%" class="s1">Example Values</th>
                 <th style="width:26%" class="s1">Comments</th>
                 <th style="width:5%" class="s1">Data Type</th>
-                <th style="width:14%" class="s2">Amendment Restrictions</th>
+                <th class="s2">Amendment Restrictions</th>
             </tr>
             <tr>
                 <td class="c10">Protocol Identifier</td>
@@ -159,8 +161,8 @@ The following breaks down the construction of a Contract Amendment Action. The a
                 <td class="c10">Action Prefix</td>
                 <td class="c10">ActionPrefix</td>
                 <td class="c10">2</td>
-                <td class="c10" style="word-break:break-all">C1</td>
-                <td class="c10">Contract Offer: The Contract Offer Action allows the Issuer to initialize a smart contract by providing all the necessary information, including T&C's.  The Contract Offer Action can also be used to signal to a market actor that they want to buy/form a contract.</td>
+                <td class="c10" style="word-break:break-all">C3</td>
+                <td class="c10">// C3 identifies data as a ContractAmendment message.</td>
                 <td class="c10">string</td>
                 <td class="c10">Cannot be changed by issuer, operator or smart contract.</td>
             </tr>
@@ -173,13 +175,13 @@ The following breaks down the construction of a Contract Amendment Action. The a
     <div class="content docs-content">
         <table class="ui table">
             <tr style='height:19px;'>
-                <th style="width:9%" class="s1">Label</th>
+                <th style="width:5%" class="s1">Label</th>
                 <th style="width:9%" class="s1">Name</th>
-                <th style="width:2%" class="s1">Bytes</th>
-                <th style="width:29%" class="s1">Example Values</th>
+                <th style="width:3%" class="s1">Bytes</th>
+                <th style="width:33%" class="s1">Example Values</th>
                 <th style="width:26%" class="s1">Comments</th>
                 <th style="width:5%" class="s1">Data Type</th>
-                <th style="width:14%" class="s2">Amendment Restrictions</th>
+                <th class="s2">Amendment Restrictions</th>
             </tr>
             <tr>
                 <td class="c10">Field Index</td>
