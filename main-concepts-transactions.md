@@ -1,4 +1,4 @@
-#What's in a Tokenized Transaction?
+##Tokenized Transactions
 All tokenized transactions are sent by delivering a UTXO to the receiving parties address, accompanied by an OP_RETURN output which describes the action being performed. All user driven actions are initiated by sending a request to the contract agent to perform a certain action. If the request is valid, the agent will respond by sending another transaction (or transactions) containing updated information about the contract or asset (New balances, updated revision data, etc) either to a known public address for all token holders or directly to particular token holders.
 
 Some transactions (contract offer, exchange, atomic swap) require multiple inputs that are signed by different parties to be recognised by the contract agent. If the agent finds that the transaction is valid (within contract rules, adequate balance and fees included) it will process the instruction, and send response transaction onto the blockchain to confirm the action.

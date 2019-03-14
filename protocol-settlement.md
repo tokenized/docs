@@ -26,45 +26,18 @@ The following breaks down the construction of a Settlement Action. The action is
              </td>
         </tr>
         <tr>
-            <td class="t9">Asset Count</td>
-            <td class="t10">AssetCount</td>
+            <td class="t9">Asset Settlement Count</td>
+            <td class="t10">AssetSettlementCount</td>
             <td class="t10">1</td>
             <td class="t10">0</td>
-            <td class="t10">The number of Assets specified by the Transfer action to be settled.</td>
-            <td class="t10">uint8</td>
-            <td class="t10"></td>
-        </tr>
-        <tr>
-            <td class="t9">Asset Type X</td>
-            <td class="t10">AssetTypeX</td>
-            <td class="t10">3</td>
-            <td class="t10">RRE</td>
-            <td class="t10">eg. Share, Bond, Ticket</td>
-            <td class="t10">string</td>
-            <td class="t10"></td>
-        </tr>
-        <tr>
-            <td class="t9">Asset ID X</td>
-            <td class="t10">AssetIDX</td>
-            <td class="t10">32</td>
-            <td class="t10">apm2qsznhks23z8d83u41s8019hyri3i</td>
-            <td class="t10"><abbr title="Randomly generated base58 string.  Each Asset ID should be unique.  However, a Asset ID is always linked to a Contract that is identified by the public address of the Contract wallet. The Asset Type can be the leading bytes - a convention - to make it easy to identify that it is a token by humans. ">Randomly generated base58 string.  Each Asset ID should be unique.  However, a Asset ID is ...</abbr></td>
-            <td class="t10">string</td>
-            <td class="t10"></td>
-        </tr>
-        <tr>
-            <td class="t9">Asset X Settlements Count</td>
-            <td class="t10">AssetXSettlementsCount</td>
-            <td class="t10">1</td>
-            <td class="t10">0</td>
-            <td class="t10">Number of settlements for Asset X.</td>
+            <td class="t10">The number of Asset Settlements specified by the Transfer action to be settled.</td>
             <td class="t10">uint8</td>
             <td class="t10"></td>
         </tr>
         <tr>
             <td class="t5" colspan="7">
-                <a href="javascript:;" data-popover="type-QuantityIndex">
-                   Asset X Address X Qty - Click to show content
+                <a href="javascript:;" data-popover="type-AssetSettlement">
+                   Asset Settlements - Click to show content
                 </a>
             </td>
         </tr>
@@ -170,7 +143,7 @@ The following breaks down the construction of a Settlement Action. The action is
     </div>
 </div>
 
-<div class="ui modal" id="type-QuantityIndex">
+<div class="ui modal" id="type-AssetSettlement">
     <i class="close icon"></i>
     <div class="content docs-content">
         <table class="ui table">
@@ -184,21 +157,39 @@ The following breaks down the construction of a Settlement Action. The action is
                 <th class="s2">Amendment Restrictions</th>
             </tr>
             <tr>
-                <td class="t10">Index</td>
-                <td class="t10">Index</td>
-                <td class="t10">2</td>
-                <td class="t10" style="word-break:break-all">0</td>
-                <td class="t10">The index of the input sending the tokens</td>
-                <td class="t10">uint16</td>
+                <td class="t10">Asset Type</td>
+                <td class="t10">Type</td>
+                <td class="t10">3</td>
+                <td class="t10" style="word-break:break-all">RRE</td>
+                <td class="t10">eg. Share, Bond, Ticket. All characters must be capitalised.</td>
+                <td class="t10">string</td>
                 <td class="t10"></td>
             </tr>
             <tr>
-                <td class="t10">Quantity</td>
-                <td class="t10">Quantity</td>
-                <td class="t10">8</td>
-                <td class="t10" style="word-break:break-all">100</td>
-                <td class="t10">Number of tokens being sent</td>
-                <td class="t10">uint64</td>
+                <td class="t10">Asset ID</td>
+                <td class="t10">ID</td>
+                <td class="t10">32</td>
+                <td class="t10" style="word-break:break-all">apm2qsznhks23z8d83u41s8019hyri3i</td>
+                <td class="t10">Randomly generated base58 string.  Each Asset ID should be unique.  However, a Asset ID is always linked to a Contract that is identified by the public address of the Contract wallet. The Asset Type can be the leading bytes - a convention - to make it easy to identify that it is a token by humans.</td>
+                <td class="t10">string</td>
+                <td class="t10"></td>
+            </tr>
+            <tr>
+                <td class="t10">Settlement Count</td>
+                <td class="t10">SettlementCount</td>
+                <td class="t10">1</td>
+                <td class="t10" style="word-break:break-all">0</td>
+                <td class="t10">Number of settlements for the Asset.</td>
+                <td class="t10">uint8</td>
+                <td class="t10"></td>
+            </tr>
+            <tr>
+                <td class="t10">Settlements[]</td>
+                <td class="t10">Settlements</td>
+                <td class="t10">0</td>
+                <td class="t10" style="word-break:break-all"></td>
+                <td class="t10">Each element contains the resulting token balance of Asset X for the output Address, which is referred to by the index.</td>
+                <td class="t10">QuantityIndex[]</td>
                 <td class="t10"></td>
             </tr>
         </table>
