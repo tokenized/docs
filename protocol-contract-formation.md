@@ -359,14 +359,17 @@ The following breaks down the construction of a Contract Formation Action. The a
             <th style="width:20%" class="s1">Txn outputs</th>
             <th class="s1">Comments</th>
        </tr>
+
+
        <tr>
-            <td class="c5">[{Contract Contract Public Address }]</td>
-            <td class="c6">.</td>
-            <td class="c6">.</td>
-            <td class="c10">.</td>
-            <td class="c10">.</td>
-            <td class="c10">.</td>
+            <td class="c5">0</td>
+            <td class="c6">Contract Public Address</td>
+            <td class="c6"></td>
+            <td class="c10">0</td>
+            <td class="c10">Contract Public Address</td>
+            <td class="c10"></td>
         </tr>
+
     </table>
 </div>
 

@@ -341,14 +341,26 @@ The following breaks down the construction of a Contract Offer Action. The actio
             <th style="width:20%" class="s1">Txn outputs</th>
             <th class="s1">Comments</th>
        </tr>
+
+
        <tr>
-            <td class="c5">[{Issuer Issuer's Public Address } {ContractOperator Contract Operator's Public Address (Optional) }]</td>
-            <td class="c6">.</td>
-            <td class="c6">.</td>
-            <td class="c10">.</td>
-            <td class="c10">.</td>
-            <td class="c10">.</td>
+            <td class="c5">0</td>
+            <td class="c6">Issuer's Public Address</td>
+            <td class="c6">The smart contract sets the issuer public address with whatever public address is in Index 0 of the first valid Contract Offer.  From then on, the SC will only respond to 'commands' (request actions) from this address with respect to actions that are issuer controlled according to the protocol.</td>
+            <td class="c10">0</td>
+            <td class="c10">Contract Public Address</td>
+            <td class="c10"></td>
         </tr>
+
+       <tr>
+            <td class="c5">1</td>
+            <td class="c6">Contract Operator's Public Address (Optional)</td>
+            <td class="c6">The one exception to the rule above.  The Contract Operator can nominate a secondary controlling public address that can act on behalf of the issuer for issuer related requests. Typically this will be the Smart Contract Operator. (Optional)</td>
+            <td class="c10"></td>
+            <td class="c10"></td>
+            <td class="c10"></td>
+        </tr>
+
     </table>
 </div>
 

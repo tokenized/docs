@@ -68,14 +68,17 @@ The following breaks down the construction of a Reconciliation Action. The actio
             <th style="width:20%" class="s1">Txn outputs</th>
             <th class="s1">Comments</th>
        </tr>
+
+
        <tr>
-            <td class="e5">[{Contract Contract Public Address }]</td>
-            <td class="e6">.</td>
-            <td class="e6">.</td>
-            <td class="e10">.</td>
-            <td class="e10">.</td>
-            <td class="e10">.</td>
+            <td class="e5">0</td>
+            <td class="e6">Contract Public Address</td>
+            <td class="e6"></td>
+            <td class="e10">0</td>
+            <td class="e10">Target Public Address X</td>
+            <td class="e10">546 minimum.  If N bitcoin needs to be sent to the address, then this will be the output that receives the Bitcoin.</td>
         </tr>
+
     </table>
 </div>
 

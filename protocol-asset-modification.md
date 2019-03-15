@@ -95,14 +95,17 @@ The following breaks down the construction of a Asset Modification Action. The a
             <th style="width:20%" class="s1">Txn outputs</th>
             <th class="s1">Comments</th>
        </tr>
+
+
        <tr>
-            <td class="a5">[{Issuer Issuer's Public Address }]</td>
-            <td class="a6">.</td>
-            <td class="a6">.</td>
-            <td class="a10">.</td>
-            <td class="a10">.</td>
-            <td class="a10">.</td>
+            <td class="a5">0</td>
+            <td class="a6">Issuer's Public Address</td>
+            <td class="a6"></td>
+            <td class="a10">0</td>
+            <td class="a10">Contract Public Address</td>
+            <td class="a10">Enough for the responding action.</td>
         </tr>
+
     </table>
 </div>
 

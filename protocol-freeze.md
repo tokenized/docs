@@ -68,14 +68,17 @@ The following breaks down the construction of a Freeze Action. The action is con
             <th style="width:20%" class="s1">Txn outputs</th>
             <th class="s1">Comments</th>
        </tr>
+
+
        <tr>
-            <td class="e5">[{Contract Contract Public Address }]</td>
-            <td class="e6">.</td>
-            <td class="e6">.</td>
-            <td class="e10">.</td>
-            <td class="e10">.</td>
-            <td class="e10">.</td>
+            <td class="e5">0</td>
+            <td class="e6">Contract Public Address</td>
+            <td class="e6"></td>
+            <td class="e10">0</td>
+            <td class="e10">Target Public Address X</td>
+            <td class="e10">If Target Public Address is the Contract Address then the entire contract is frozen.  All request actions during the Freeze period will be ignored and rejected when the contract is thawed and rebuilds.</td>
         </tr>
+
     </table>
 </div>
 

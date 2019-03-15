@@ -68,14 +68,17 @@ The following breaks down the construction of a Settlement Action. The action is
             <th style="width:20%" class="s1">Txn outputs</th>
             <th class="s1">Comments</th>
        </tr>
+
+
        <tr>
-            <td class="t5">[{AssetXContract Contract Public Address (Asset X) }]</td>
-            <td class="t6">.</td>
-            <td class="t6">.</td>
-            <td class="t10">.</td>
-            <td class="t10">.</td>
-            <td class="t10">.</td>
+            <td class="t5">0</td>
+            <td class="t6">Contract Public Address (Asset X)</td>
+            <td class="t6">Contract (Asset X) in response to a transfer action with Asset X being sent to another address(es).</td>
+            <td class="t10">0</td>
+            <td class="t10">Asset 1 Settlement Address X</td>
+            <td class="t10">Address X that is being settled for Asset 1.</td>
         </tr>
+
     </table>
 </div>
 

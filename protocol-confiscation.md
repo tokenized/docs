@@ -77,14 +77,26 @@ The following breaks down the construction of a Confiscation Action. The action 
             <th style="width:20%" class="s1">Txn outputs</th>
             <th class="s1">Comments</th>
        </tr>
+
+
        <tr>
-            <td class="e5">[{Contract Contract Public Address }]</td>
-            <td class="e6">.</td>
-            <td class="e6">.</td>
-            <td class="e10">.</td>
-            <td class="e10">.</td>
-            <td class="e10">.</td>
+            <td class="e5">0</td>
+            <td class="e6">Contract Public Address</td>
+            <td class="e6"></td>
+            <td class="e10">0</td>
+            <td class="e10">Target Public Address X</td>
+            <td class="e10">Can be the Contract Address for a 'Contract-wide' Confiscation.</td>
         </tr>
+
+       <tr>
+            <td class="e5"></td>
+            <td class="e6"></td>
+            <td class="e6"></td>
+            <td class="e10">1</td>
+            <td class="e10">Deposit Public Address</td>
+            <td class="e10">Dust limit rule minimum value output of 546</td>
+        </tr>
+
     </table>
 </div>
 

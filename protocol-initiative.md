@@ -140,14 +140,26 @@ The following breaks down the construction of a Initiative Action. The action is
             <th style="width:20%" class="s1">Txn outputs</th>
             <th class="s1">Comments</th>
        </tr>
+
+
        <tr>
-            <td class="g5">[{User Token Owner's Public Address }]</td>
-            <td class="g6">.</td>
-            <td class="g6">.</td>
-            <td class="g10">.</td>
-            <td class="g10">.</td>
-            <td class="g10">.</td>
+            <td class="g5">0</td>
+            <td class="g6">Token Owner's Public Address</td>
+            <td class="g6"></td>
+            <td class="g10">0</td>
+            <td class="g10">Contract Public Address</td>
+            <td class="g10"></td>
         </tr>
+
+       <tr>
+            <td class="g5"></td>
+            <td class="g6"></td>
+            <td class="g6"></td>
+            <td class="g10">1</td>
+            <td class="g10">Contract Public Address</td>
+            <td class="g10">Fund the Result at Vote cut off</td>
+        </tr>
+
     </table>
 </div>
 

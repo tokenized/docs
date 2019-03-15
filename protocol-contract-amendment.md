@@ -95,14 +95,26 @@ The following breaks down the construction of a Contract Amendment Action. The a
             <th style="width:20%" class="s1">Txn outputs</th>
             <th class="s1">Comments</th>
        </tr>
+
+
        <tr>
-            <td class="c5">[{Issuer Issuer's Public Address } {NewIssuer New Issuer Public Address }]</td>
-            <td class="c6">.</td>
-            <td class="c6">.</td>
-            <td class="c10">.</td>
-            <td class="c10">.</td>
-            <td class="c10">.</td>
+            <td class="c5">0</td>
+            <td class="c6">Issuer's Public Address</td>
+            <td class="c6"></td>
+            <td class="c10">0</td>
+            <td class="c10">Contract Public Address</td>
+            <td class="c10"></td>
         </tr>
+
+       <tr>
+            <td class="c5">1</td>
+            <td class="c6">New Issuer Public Address</td>
+            <td class="c6">Only treated as the new Issuer address when the Change Issuer Address flag is set to Y.</td>
+            <td class="c10"></td>
+            <td class="c10"></td>
+            <td class="c10"></td>
+        </tr>
+
     </table>
 </div>
 

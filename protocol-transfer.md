@@ -104,14 +104,26 @@ The following breaks down the construction of a Transfer Action. The action is c
             <th style="width:20%" class="s1">Txn outputs</th>
             <th class="s1">Comments</th>
        </tr>
+
+
        <tr>
-            <td class="t5">[{AssetXSenderX Asset (token) Sending Public Address X }]</td>
-            <td class="t6">.</td>
-            <td class="t6">.</td>
-            <td class="t10">.</td>
-            <td class="t10">.</td>
-            <td class="t10">.</td>
+            <td class="t5">0</td>
+            <td class="t6">Asset (token) Sending Public Address X</td>
+            <td class="t6"></td>
+            <td class="t10">0</td>
+            <td class="t10">Contract Public Address for Asset X</td>
+            <td class="t10">Enough for the costs of the responding action + the Contract Fee</td>
         </tr>
+
+       <tr>
+            <td class="t5"></td>
+            <td class="t6"></td>
+            <td class="t6"></td>
+            <td class="t10">1</td>
+            <td class="t10">Asset (token) Receiving Public Address X</td>
+            <td class="t10">Token Output Address X (Token Receiver).</td>
+        </tr>
+
     </table>
 </div>
 

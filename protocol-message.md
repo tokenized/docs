@@ -81,14 +81,17 @@ The following breaks down the construction of a Message Action. The action is co
             <th style="width:20%" class="s1">Txn outputs</th>
             <th class="s1">Comments</th>
        </tr>
+
+
        <tr>
-            <td class="m5">[{MsgSender Msg Sender's Public Address }]</td>
-            <td class="m6">.</td>
-            <td class="m6">.</td>
-            <td class="m10">.</td>
-            <td class="m10">.</td>
-            <td class="m10">.</td>
+            <td class="m5">0</td>
+            <td class="m6">Msg Sender's Public Address</td>
+            <td class="m6"></td>
+            <td class="m10">0</td>
+            <td class="m10">Msg Receiver's Public Address</td>
+            <td class="m10">Dust limit rule minimum value output of 546</td>
         </tr>
+
     </table>
 </div>
 

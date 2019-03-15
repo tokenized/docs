@@ -10,7 +10,10 @@ Main Concepts:
     main-concepts/action-mechanism: "Action Mechanism"
     main-concepts/rules: "Rules"
     main-concepts/transactions: "Transactions"
-    main-concepts/order-of-operations: "Order of Operations"
+Order of Operations:
+  pages:
+    order-of-operations/contract: "Contract"
+    order-of-operations/asset: "Asset"
 Actions:
   pages:
     protocol/contract-offer: "Contract offer"
@@ -41,11 +44,11 @@ Actions:
     protocol/rejection: "Rejection"
 Asset Types:
   pages:
-    assets/cou: "Coupons"
-    assets/loy: "Loyalty Points"
-    assets/mem: "Membership"
-    assets/shc: "Common Share"
-    assets/tic: "Admission Ticket"
-    assets/cur: "Currency"
+    asset/coupon: "Coupons"
+    asset/loyalty-points: "Loyalty Points"
+    asset/membership: "Membership"
+    asset/share-common: "Common Share"
+    asset/ticket-admission: "Admission Ticket"
+    asset/currency: "Currency"
 Examples:
   pages:

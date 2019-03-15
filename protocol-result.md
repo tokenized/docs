@@ -131,14 +131,17 @@ The following breaks down the construction of a Result Action. The action is con
             <th style="width:20%" class="s1">Txn outputs</th>
             <th class="s1">Comments</th>
        </tr>
+
+
        <tr>
-            <td class="g5">[{Contract Contract Public Address }]</td>
-            <td class="g6">.</td>
-            <td class="g6">.</td>
-            <td class="g10">.</td>
-            <td class="g10">.</td>
-            <td class="g10">.</td>
+            <td class="g5">0</td>
+            <td class="g6">Contract Public Address</td>
+            <td class="g6"></td>
+            <td class="g10">0</td>
+            <td class="g10">Contract Public Address</td>
+            <td class="g10">Dust limit rule minimum value output of 546</td>
         </tr>
+
     </table>
 </div>
 
