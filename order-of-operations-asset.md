@@ -1,5 +1,9 @@
 ##Asset Actions
-An asset is defined as a token or group of tokens created with a single unique asset ID and properties. 
+An asset is defined as a token or group of tokens created with a single unique asset ID and properties. There are several things that can be done with assets.
+1. Asset Creation
+2. Asset Modification
+3. Asset Exchange
+4. Asset Governance
 
 ##Asset Creation
 Assets are created by a Smart Contract under the instruction of the Smart Contract issuer. Each token has a set of rules that govern how it can be modified in future which may require that there be a successful motion to change that item as part of a vote.
