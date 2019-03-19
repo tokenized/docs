@@ -9,4 +9,4 @@ When the contract finds that a request is in breach of the rules that govern tha
 
 For a complete list of the different action types, and the applicable responses, please see the image below.
 
-<img src="http://github.com/tokenized/docs/images/actions.JPG?raw=true" alt="Tokenized Actions with Responses">
+<img src="https://github.com/tokenized/docs/blob/master/images/actions.JPG?raw=true" alt="Tokenized Actions with Responses">

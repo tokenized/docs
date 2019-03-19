@@ -29,6 +29,9 @@ There are two ways in which a contract amendment by vote can be brought forth.
 A referendum is when the Issuer issues an intent to vote to the smart contract. The smart contract will evaluate the issues being voted on (amendments etc) and make sure that those which result in changes to the smart contract do not violate the rules.
 ####1B. Initiative
 An initiative is the method used for an asset owner to propose a vote. There is a significant cost attached to the initiative action as conducting a vote is a costly and disruptive exercise.
+
+<img src="https://github.com/tokenized/docs/blob/master/images/initiative.JPG?raw=true" alt="Initiative Process">
+
 ####2. Vote
 Once the smart contract has received a referendum or initiative action, it evaluates it for validity against the rules of the contract. If the vote is able to go ahead, the smart contract issues a Vote action onto the blockchain.
 ####3. Ballot Cast

@@ -133,6 +133,8 @@ If the Smart Contract finds that the order is invalid, it will issue a rejection
 If the Smart Contract finds that the order is valid, it will issue a confiscation order that strips the addresses listed of the number of tokens in the order. The confiscation order is adequate to settle all token account balances on its own and does not need to be followed up with any further transaction. Once the tokens have been re-allocated, the receiving account is free to use them as normal.
 A Confiscation action cannot be reversed and would be regarded as the final outcome of a legal dispute. Tokens can be confiscated while they are frozen, and are automatically thawed as soon as the re-allocation is complete. 
 
+<img src="https://github.com/tokenized/docs/blob/master/images/confiscation.JPG?raw=true" alt="Confiscation action flow diagram">
+
 ####Reconciling Token balances
 In the rare event of a failure on the Bitcoin network that causes Tokenized transactions to be lost, the action used to update the smart contract to reflect a new state is called 'Reconciliation'.
 A reconciliation is an order from the Issuer to the smart contract that reflects a new state of ownership for the asset. The reconciliation must balance meaning that at the end of a reconciliation, the total number of tokens attached to the asset cannot change.
