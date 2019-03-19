@@ -20,7 +20,7 @@ A Loyalty Point
         <tr>
             <td class="a10">Version</td>
             <td class="a9">Version</td>
-            <td class="a10">uint8</td>
+            <td class="a10">uint</td>
             <td class="a10">Payload Version</td>
             <td class="a10">1</td>
             <td class="a10"></td>
@@ -53,7 +53,7 @@ A Loyalty Point
         <tr>
             <td class="a10">OfferType</td>
             <td class="a9">Offer Type</td>
-            <td class="a10">string</td>
+            <td class="a10">fixedchar</td>
             <td class="a10"></td>
             <td class="a10">1</td>
             <td class="a10"></td>
@@ -64,7 +64,7 @@ A Loyalty Point
         <tr>
             <td class="a10">OfferName</td>
             <td class="a9">Offer Name</td>
-            <td class="a10">nvarchar8</td>
+            <td class="a10">varchar</td>
             <td class="a10"></td>
             <td class="a10">255</td>
             <td class="a10"></td>
@@ -75,9 +75,9 @@ A Loyalty Point
         <tr>
             <td class="a10">ValidFrom</td>
             <td class="a9">Valid From</td>
-            <td class="a10">timestamp</td>
+            <td class="a10">Timestamp</td>
             <td class="a10"></td>
-            <td class="a10">8</td>
+            <td class="a10">0</td>
             <td class="a10"></td>
             <td class="a10">false</td>
             <td class="a10">0</td>
@@ -86,9 +86,9 @@ A Loyalty Point
         <tr>
             <td class="a10">ExpirationTimestamp</td>
             <td class="a9">Expiration Timestamp</td>
-            <td class="a10">timestamp</td>
+            <td class="a10">Timestamp</td>
             <td class="a10"></td>
-            <td class="a10">8</td>
+            <td class="a10">0</td>
             <td class="a10"></td>
             <td class="a10">false</td>
             <td class="a10">0</td>
@@ -97,9 +97,9 @@ A Loyalty Point
         <tr>
             <td class="a10">Description</td>
             <td class="a9">Description</td>
-            <td class="a10">nvarchar16</td>
+            <td class="a10">varchar</td>
             <td class="a10"></td>
-            <td class="a10">0</td>
+            <td class="a10">16</td>
             <td class="a10"></td>
             <td class="a10">false</td>
             <td class="a10">0</td>

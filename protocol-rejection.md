@@ -49,26 +49,24 @@ The following breaks down the construction of a Rejection Action. The action is 
             <td class="m10">1</td>
             <td class="m10">1</td>
             <td class="m10">Classifies the rejection by a type.</td>
-            <td class="m10">uint8</td>
+            <td class="m10">uint</td>
             <td class="m10"></td>
         </tr>
         <tr>
             <td class="m9">Message Payload</td>
             <td class="m10">MessagePayload</td>
-            <td class="m10">0</td>
+            <td class="m10">32</td>
             <td class="m10"><abbr title="Sorry, you don't have enough tokens.">Hover for example</abbr></td>
             <td class="m10"><abbr title="Length 0-65,535 bytes. Message that explains the reasoning for a rejection, if needed.  Most rejection types will be captured by the Rejection Type Subfield.">Length 0-65,535 bytes. Message that explains the reasoning for a rejection, if needed.  Mo ...</abbr></td>
-            <td class="m10">nvarchar32</td>
+            <td class="m10">varchar</td>
             <td class="m10"></td>
         </tr>
         <tr>
-            <td class="m9">Timestamp</td>
-            <td class="m10">Timestamp</td>
-            <td class="m10">8</td>
-            <td class="m10">1551767413250187179</td>
-            <td class="m10">Timestamp in nanoseconds of when the smart contract created the action.</td>
-            <td class="m10">timestamp</td>
-            <td class="m10">Cannot be changed by issuer, operator. Smart contract controls.</td>
+            <td class="m5" colspan="7">
+                <a href="javascript:;" data-popover="type-Timestamp">
+                   Timestamp - Click to show content
+                </a>
+            </td>
         </tr>
     </table>
 </div>
@@ -116,51 +114,6 @@ The following breaks down the construction of a Rejection Action. The action is 
                 <th style="width:26%" class="s1">Comments</th>
                 <th style="width:5%" class="s1">Data Type</th>
                 <th class="s2">Amendment Restrictions</th>
-            </tr>
-            <tr>
-                <td class="m10">Protocol Identifier</td>
-                <td class="m10">ProtocolID</td>
-                <td class="m10">13</td>
-                <td class="m10" style="word-break:break-all">tokenized.com</td>
-                <td class="m10">Tokenized ID Prefix.  tokenized.com</td>
-                <td class="m10">string</td>
-                <td class="m10"></td>
-            </tr>
-            <tr>
-                <td class="m10">Push Data</td>
-                <td class="m10">OpPushdata</td>
-                <td class="m10">1</td>
-                <td class="m10" style="word-break:break-all">77</td>
-                <td class="m10">PACKET LENGTH, PUSHDATA1 (76), PUSHDATA2 (77), or PUSHDATA4 (78) depending on total size of action payload.</td>
-                <td class="m10">opcode</td>
-                <td class="m10">Cannot be changed by issuer, operator or smart contract.</td>
-            </tr>
-            <tr>
-                <td class="m10">Length of Action Payload</td>
-                <td class="m10">LenActionPayload</td>
-                <td class="m10">2</td>
-                <td class="m10" style="word-break:break-all">409</td>
-                <td class="m10">Length of the action message (0 - 65,535 bytes). 0 if pushdata length <76B, 1 byte if PUSHDATA1 is used, 2 bytes if PUSHDATA2 and 4 bytes if PUSHDATA4.</td>
-                <td class="m10">pushdata_length</td>
-                <td class="m10">Depends on Action Payload</td>
-            </tr>
-            <tr>
-                <td class="m10">Version</td>
-                <td class="m10">Version</td>
-                <td class="m10">1</td>
-                <td class="m10" style="word-break:break-all">0</td>
-                <td class="m10">255 reserved for additional versions. Tokenized protocol versioning.</td>
-                <td class="m10">uint8</td>
-                <td class="m10">Can be changed by Issuer or Operator at their discretion.  Smart Contract will reject if it hasn't been updated to interpret the specified version.</td>
-            </tr>
-            <tr>
-                <td class="m10">Action Prefix</td>
-                <td class="m10">ActionPrefix</td>
-                <td class="m10">2</td>
-                <td class="m10" style="word-break:break-all">M2</td>
-                <td class="m10">// M2 identifies data as a Rejection message.</td>
-                <td class="m10">string</td>
-                <td class="m10">Cannot be changed by issuer, operator or smart contract.</td>
             </tr>
         </table>
     </div>

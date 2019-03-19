@@ -20,7 +20,7 @@ A Currency
         <tr>
             <td class="a10">Version</td>
             <td class="a9">Version</td>
-            <td class="a10">uint8</td>
+            <td class="a10">uint</td>
             <td class="a10">Payload Version</td>
             <td class="a10">1</td>
             <td class="a10"></td>
@@ -42,7 +42,7 @@ A Currency
         <tr>
             <td class="a10">ISOCode</td>
             <td class="a9">ISO Code</td>
-            <td class="a10">string</td>
+            <td class="a10">fixedchar</td>
             <td class="a10"></td>
             <td class="a10">3</td>
             <td class="a10"></td>
@@ -53,7 +53,7 @@ A Currency
         <tr>
             <td class="a10">MonetaryAuthority</td>
             <td class="a9">Monetary Authority</td>
-            <td class="a10">nvarchar8</td>
+            <td class="a10">varchar</td>
             <td class="a10"></td>
             <td class="a10">255</td>
             <td class="a10"></td>
@@ -64,7 +64,7 @@ A Currency
         <tr>
             <td class="a10">Description</td>
             <td class="a9">Description</td>
-            <td class="a10">nvarchar8</td>
+            <td class="a10">varchar</td>
             <td class="a10"></td>
             <td class="a10">255</td>
             <td class="a10"></td>

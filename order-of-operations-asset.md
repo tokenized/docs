@@ -1,11 +1,12 @@
 ##Asset Actions
 An asset is defined as a token or group of tokens created with a single unique asset ID and properties. There are several things that can be done with assets.
-1. Asset Creation
-2. Asset Modification
-3. Asset Transfer
-4. Asset Governance
+1. [Asset Creation](#asset-creation)
+2. [Asset Modification](#asset-modification)
+3. [Asset Transfer](#asset-transfer)
+4. [Asset Enforcement](#asset-enforcement)
 
-##1. Asset Creation
+<a name="asset-creation"></a>
+### Asset Creation
 Assets are created by a Smart Contract under the instruction of the Smart Contract issuer. Each token has a set of rules that govern how it can be modified in future which may require that there be a successful motion to change that item as part of a vote.
 
 ###1. Asset Definition
@@ -15,7 +16,8 @@ To create an asset, the Issuer must send the Smart Contract an Asset Definition 
 If the Smart Contract finds that the issuer is trying to create a token that is missing required information or has a contradictory setup, then it will issue a rejection message. The issuer must re-do the asset definition action with correct information.
 When the Smart Contract finds a correctly defined asset (one that doesn't violate its logical checks) it will create the asset using the Asset Creation action. This action effectively repeats the information in the Asset Definition action as a confirmation that the Smart Contract has accepted its validity. It also includes a timestamp and a version which is set to 0 for a new token. The Asset Creation action marks the moment from which the contract can begin managing that asset on behalf of the Issuer.
 
-##2. Asset Modification
+<a name="asset-modification"></a>
+### Asset Modification
 Once an asset has been created, the only way to change it is through the asset modification process. An asset modification allows a token issuer to modify any asset's details, as long as the rules governing the modification of those details have been met.
 
 ###Unilateral Amendment
@@ -44,7 +46,8 @@ If the successful motion requires any changes to be made to the asset, the Issue
 ####7. Rejection/Contract Formation
 Once the amendment has been checked against the Smart Contract rules, the Smart Contract will either send a rejection notice in the case that the Issuer is trying to make a change that isn't supported by the necessary motions, or it will issue an Asset Creation action that includes all of the changes made to the asset and an incremented version number.
 
-###3. Asset Transfer
+<a name="asset-transfer"></a>
+### Asset Transfer
 Exchanging assets is at the core of Tokenized's functionality and gives users the power to trade assets on the Bitcoin network, with all of the certainty and security of bitcoin transactions.
 The tokenized protocol uses just 2 operations to provide for a rich and full framework to conduct exchanges between parties including the ability to exchange tokens for Bitcoin, for other tokens, or to send tokens without inbound payment. When a smart contract creates an asset, a set of rules are established which govern how that token can be exchanged.
 Some tokens such as loyalty coupons can only be sent from the issuer to a customer and back again. Some may only be able to be exchnaged between people who have been whitelisted in a register. These conditions are all dependent on the nature of the smart contract and of the assets being exchanged under the smart contract. One smart contract can manage the exchange of many different types of assets with different rules for each asset. There is no effective limit on the number of assets that a Smart contract can create or manage.
@@ -87,6 +90,58 @@ The first user prepares a swap offering for the second user. In this the first u
 Once the Transfer action template has been signed, the first user takes the transfer action and puts it into a transaction template, adding an input from their own sending address and any change outputs needed. They then send the transaction template to the next user who does the same until all users have added their inputs and change outputs to the transaction.
 #####3. Signatures
 Once all users have added their inputs, the process is repeated with each party so they can sign the transaction inputs. As each user can evaluate the whole transaction, they can validate that their outputs haven't been changed and that the transaction is what they agreed to. Users sign their inputs using SIGHASH_ALL, and the final signatory sends the fully signed transaction back to all parties and onto the network.
-#####4. Smart Contract Evaluation
+#####4. Smart Contract Evaluation, Rejection/Settlement
 Once the smart contract or contracts see the swap transaction in their wallets, each one evaluates it against its own rules. If it finds that the transaction goes against the logic of the smart contract it will issue a rejection message. If any of the smart contracts issues a rejection, the transaction cannot go ahead.
-When a smart contract decides that it is 
+In a contract trading assets managed by a single smart contract, once the smart contract decides that it is a valid transaction it will issue a Settlement which outlines the final balances controlled by each PKH.
+In a trade involving multiple Smart Contracts, each will have an input connected to the transaction which it will need to sign using SIGHASH_ALL before the transaction can be sent onto the network. this means that each contract can completely evaluate the conditions of the trade are being upheld before signing. 
+
+<a name="asset-enforcement"></a>
+### Asset Enforcement
+Asset Enforcement means action by the issuer upon assets over which it does not directly control.
+These actions may be due to reasons of legal enforcement, contract breach, or simply built into the usage model of the token. There are numerous ways in which enforcement actions can be used in a smart contract including including:
+* Freezing tokens
+* Thawing tokens
+* Confiscating tokens
+* Reconciling token balances
+Each of these actions is ordered by the issuer sending an 'Order' transaction to the blockchain with instructions for the smart contract on what actions are needed. 
+One order instruction can perform one enforcement action type on one asset, but to many addresses.
+
+####Freezing and Thawing Tokens
+To freeze tokens, the issuer must send an Order action that identifies the asset being frozen, the addresses holding that asset upon which the freeze order is to be applied, and the number of tokens from each address that the order is acting upon. In this way, a contract may freeze one or all tokens held by a user.
+#####1. Issuing the freeze order
+The issuer first creates an order action which contains all of the pertinant information relating to the tokens being frozen. This includes the Asset type and code for the tokens being frozen, the addresses where they are held, and the quantities being frozen at each address. The order also includes a place for a public key and signature from the authority who created the order being enforced as well as a link to a transaction containing supporting evidence. In some instances where a freeze may only be temporary, there is also a field to determine a Freeze Period.
+#####2. Smart Contract Evaluation, Rejection/Freeze
+When the smart contract receives the order it will evaluate it for compliance with the Smart Contract rules including whether the correct of information has been supplied, and that the signature and public key are from an authority with the right to create enforcement actions on the contract. 
+If the Smart Contract finds that the order is invalid, it will issue a rejection action with a message detailing the issues with the order.
+If the Smart Contract finds that the order is valid, it will respond by creating a 'Freeze Action' which it will send onto the blockchain. Once the freeze action has been sent, the users wallets should flag that their assets have been frozen and not allow them to attempt any transfer actions. The freeze goes into effect the moment the Smart Contract has validated and responded to the freeze action. The contract does not need for the action to be propagated across the network or confirmed in a block for the freeze to take effect and can immediately begin rejecting actions that operate on frozen assets.
+So that the action can be tracked from 'Order' to 'Enforcement', rather than including references to the order transaction in the freeze action, the smart contract simply creates the Freeze action using the same UTXO that the Order action was sent with. By doing this there can be no question that the action is in response to a particular order.
+#####3. Thawing tokens
+For tokens that do not have an automatic time out on the thaw action, or upon which the freeze action is able to be lifted, the issuer must create a an 'Order Action' that instructs the smart contract to thaw the tokens and send it to the smart contract. The order contains the same set of information as the freeze action, including the address list, token quantities, transaction reference to the enforcement order and however the tokens being referenced are the ones having the freeze action lifted.
+The Smart Contract will again spend the receiving UTXO into a 'Thaw Action' which repeats the list of addresses and token quantities being thawed so that wallets can update details to their users.
+Once the Smart Contract has issued the thaw action, token transfers can begin immediately. 
+
+####Confiscating Tokens
+The process of confiscating a token is predicated on the legal right of the issuer to perform the confiscation action. Issuers must have the right to confiscate the tokens either due to malfeasance on the part of the token holder, or through the terms and conditions of the smart contract itself.
+Once the issuer has established that they have the need and the right to confiscate tokens, the process is straight forward.
+#####1. Issuing the Confiscation Order
+The Confiscation order comes in the form of an Order action that details the AssetID of the token being confiscated, the authority who has determined that the tokens must be confiscated, their signature and public key and copies of or links to the legal documentation regarding the confiscation event. 
+The order also includes a address to which all of the tokens confiscated in the order will be sent. This address can be one controlled by the legal authority requesting the confiscation, or in the context of returning tokens to someone after a fraud event, can specify that the tokens be sent back to the original owner. 
+Once the confiscation order has been built, the issuer sends it in a Bitcoin transaction to the wallet of the Smart Contract.
+#####2. Smart Contract Evaluation, Rejection/Confiscation
+When the smart contract receives the order it will evaluate it for compliance with the Smart Contract rules including whether the correct of information has been supplied, and that the signature and public key are from an authority with the right to create enforcement actions on the contract. 
+If the Smart Contract finds that the order is invalid, it will issue a rejection action with a message detailing the issues with the order.
+If the Smart Contract finds that the order is valid, it will issue a confiscation order that strips the addresses listed of the number of tokens in the order. The confiscation order is adequate to settle all token account balances on its own and does not need to be followed up with any further transaction. Once the tokens have been re-allocated, the receiving account is free to use them as normal.
+A Confiscation action cannot be reversed and would be regarded as the final outcome of a legal dispute. Tokens can be confiscated while they are frozen, and are automatically thawed as soon as the re-allocation is complete. 
+
+####Reconciling Token balances
+In the rare event of a failure on the Bitcoin network that causes Tokenized transactions to be lost, the action used to update the smart contract to reflect a new state is called 'Reconciliation'.
+A reconciliation is an order from the Issuer to the smart contract that reflects a new state of ownership for the asset. The reconciliation must balance meaning that at the end of a reconciliation, the total number of tokens attached to the asset cannot change.
+The process of reconciling a contract is as follows:
+#####1. Issuing the Reconciliation Order
+The Reconciliation order comes in the form of an Order action that details the AssetID of the token being reconciled, documentation relating to the reasons for the reconciliation and a full set of balances for the updated state of any accounts impacted by the reconciliation action.
+The action must also includ the full hexadecimal strings of each transaction that included an action that was lost/rejected by the network as proof that the actions were once received as a zero-conf transaction into the wallet of a Tokenized smart contract. The transactions must be complete, signed and valid Bitcoin transactions that spend UTXOS that still exist on the network.  
+#####2. Smart Contract Evaluation, Rejection/Reconciliation
+When the smart contract receives the order it will evaluate it for compliance with the Smart Contract rules including whether the correct information has been supplied, and that the signature and public key are from an authority with the right to create enforcement actions on the contract.
+If the Smart Contract finds that the order is invalid, it will issue a rejection action with a message detailing the issues with the order.
+If the Smart Contract finds that the order is valid, it will issue a reconciliation order that effectively re-settles the token balances of all of the accounts involved. The reconciliation order is adequate to settle all token account balances on its own and does not need to be followed up with any further transaction. Once the tokens have been re-allocated, accounts are free to use them as normal.
+A Reconciliation action cannot be reversed and would be regarded as the final outcome of a legal dispute. The preconditions needed for a reconciliation to be required are exceptionally rare and as such any moves to create a reconciliation action on a contract should be performed with extreme oversight.

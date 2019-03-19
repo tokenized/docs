@@ -20,7 +20,7 @@ Value exchange coupon
         <tr>
             <td class="a10">Version</td>
             <td class="a9">Version</td>
-            <td class="a10">uint8</td>
+            <td class="a10">uint</td>
             <td class="a10">Payload Version</td>
             <td class="a10">1</td>
             <td class="a10"></td>
@@ -42,7 +42,7 @@ Value exchange coupon
         <tr>
             <td class="a10">RedeemingEntity</td>
             <td class="a9">Redeeming Entity</td>
-            <td class="a10">nvarchar8</td>
+            <td class="a10">varchar</td>
             <td class="a10"></td>
             <td class="a10">255</td>
             <td class="a10"></td>
@@ -53,9 +53,9 @@ Value exchange coupon
         <tr>
             <td class="a10">IssueDate</td>
             <td class="a9">Issue Date</td>
-            <td class="a10">time</td>
+            <td class="a10">Timestamp</td>
             <td class="a10"></td>
-            <td class="a10">8</td>
+            <td class="a10">0</td>
             <td class="a10"></td>
             <td class="a10">false</td>
             <td class="a10">0</td>
@@ -64,9 +64,9 @@ Value exchange coupon
         <tr>
             <td class="a10">ExpiryDate</td>
             <td class="a9">Expiry Date</td>
-            <td class="a10">time</td>
+            <td class="a10">Timestamp</td>
             <td class="a10"></td>
-            <td class="a10">8</td>
+            <td class="a10">0</td>
             <td class="a10"></td>
             <td class="a10">false</td>
             <td class="a10">0</td>
@@ -75,7 +75,7 @@ Value exchange coupon
         <tr>
             <td class="a10">Value</td>
             <td class="a9">Value</td>
-            <td class="a10">uint64</td>
+            <td class="a10">uint</td>
             <td class="a10"></td>
             <td class="a10">8</td>
             <td class="a10"></td>
@@ -86,7 +86,7 @@ Value exchange coupon
         <tr>
             <td class="a10">Currency</td>
             <td class="a9">Currency</td>
-            <td class="a10">string</td>
+            <td class="a10">fixedchar</td>
             <td class="a10"></td>
             <td class="a10">3</td>
             <td class="a10"></td>
@@ -97,9 +97,9 @@ Value exchange coupon
         <tr>
             <td class="a10">Description</td>
             <td class="a9">Description</td>
-            <td class="a10">nvarchar16</td>
+            <td class="a10">varchar</td>
             <td class="a10"></td>
-            <td class="a10">0</td>
+            <td class="a10">16</td>
             <td class="a10"></td>
             <td class="a10">false</td>
             <td class="a10">0</td>

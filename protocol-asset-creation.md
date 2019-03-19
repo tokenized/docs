@@ -31,17 +31,15 @@ The following breaks down the construction of a Asset Creation Action. The actio
             <td class="a10">3</td>
             <td class="a10">SHC</td>
             <td class="a10">eg. Share - Common</td>
-            <td class="a10">string</td>
+            <td class="a10">fixedchar</td>
             <td class="a10"></td>
         </tr>
         <tr>
-            <td class="a9">Asset ID</td>
-            <td class="a10">AssetID</td>
-            <td class="a10">32</td>
-            <td class="a10">apm2qsznhks23z8d83u41s8019hyri3i</td>
-            <td class="a10"><abbr title="Randomly generated base58 string.  Each Asset ID should be unique.  However, a Asset ID is always linked to a Contract that is identified by the public address of the Contract wallet. The Asset Type + Asset ID = Asset Code.  An Asset Code is a human readable idenitfier that can be used in a similar way to a Bitcoin (BSV) address, a vanity identifying label.">Randomly generated base58 string.  Each Asset ID should be unique.  However, a Asset ID is ...</abbr></td>
-            <td class="a10">string</td>
-            <td class="a10"></td>
+            <td class="a5" colspan="7">
+                <a href="javascript:;" data-popover="type-AssetCode">
+                   Asset Code - Click to show content
+                </a>
+            </td>
         </tr>
         <tr>
             <td class="a9">Asset Authorization Flags</td>
@@ -55,7 +53,7 @@ The following breaks down the construction of a Asset Creation Action. The actio
         <tr>
             <td class="a9">Transfers Permitted</td>
             <td class="a10">TransfersPermitted</td>
-            <td class="a10">1</td>
+            <td class="a10">0</td>
             <td class="a10">1</td>
             <td class="a10">1 = Transfers are permitted.  0 = Transfers are not permitted.</td>
             <td class="a10">bool</td>
@@ -67,13 +65,13 @@ The following breaks down the construction of a Asset Creation Action. The actio
             <td class="a10">3</td>
             <td class="a10">GBR</td>
             <td class="a10"><abbr title="Asset can only be traded within the trade restrictions.  Eg. AUS - Australian residents only.  EU - European Union residents only.">Asset can only be traded within the trade restrictions.  Eg. AUS - Australian residents on ...</abbr></td>
-            <td class="a10">string</td>
+            <td class="a10">fixedchar</td>
             <td class="a10"></td>
         </tr>
         <tr>
             <td class="a9">Enforcement Orders Permitted</td>
             <td class="a10">EnforcementOrdersPermitted</td>
-            <td class="a10">1</td>
+            <td class="a10">0</td>
             <td class="a10">1</td>
             <td class="a10">1 = Enforcement Orders are permitted. 0 = Enforcement Orders are not permitted.</td>
             <td class="a10">bool</td>
@@ -85,13 +83,13 @@ The following breaks down the construction of a Asset Creation Action. The actio
             <td class="a10">1</td>
             <td class="a10">3</td>
             <td class="a10"><abbr title="Multiplies the vote by the integer. 1 token = 1 vote with a 1 for vote multipler (normal).  1 token = 3 votes with a multiplier of 3, for example.">Multiplies the vote by the integer. 1 token = 1 vote with a 1 for vote multipler (normal). ...</abbr></td>
-            <td class="a10">uint8</td>
+            <td class="a10">uint</td>
             <td class="a10"></td>
         </tr>
         <tr>
             <td class="a9">Referendum Proposal</td>
             <td class="a10">ReferendumProposal</td>
-            <td class="a10">1</td>
+            <td class="a10">0</td>
             <td class="a10">1</td>
             <td class="a10"><abbr title="A Referendum is permitted for Asset-Wide Proposals (outside of smart contract scope) if also permitted by the contract. If the contract has proposals by referendum restricted, then this flag is meaningless.">A Referendum is permitted for Asset-Wide Proposals (outside of smart contract scope) if al ...</abbr></td>
             <td class="a10">bool</td>
@@ -100,7 +98,7 @@ The following breaks down the construction of a Asset Creation Action. The actio
         <tr>
             <td class="a9">Initiative Proposal</td>
             <td class="a10">InitiativeProposal</td>
-            <td class="a10">1</td>
+            <td class="a10">0</td>
             <td class="a10">1</td>
             <td class="a10"><abbr title="An initiative is permitted for Asset-Wide Proposals (outside of smart contract scope) if also permitted by the contract. If the contract has proposals by initiative restricted, then this flag is meaningless.">An initiative is permitted for Asset-Wide Proposals (outside of smart contract scope) if a ...</abbr></td>
             <td class="a10">bool</td>
@@ -109,7 +107,7 @@ The following breaks down the construction of a Asset Creation Action. The actio
         <tr>
             <td class="a9">Asset Modification Governance</td>
             <td class="a10">AssetModificationGovernance</td>
-            <td class="a10">1</td>
+            <td class="a10">0</td>
             <td class="a10">1</td>
             <td class="a10"><abbr title="1 - Contract-wide Asset Governance.  0 - Asset-wide Asset Governance.  If a referendum or initiative is used to propose a modification to a subfield controlled by the asset auth flags, then the vote will either be a contract-wide vote (all assets vote on the referendum/initiative) or an asset-wide vote (all assets vote on the referendum/initiative).  The voting system specifies the voting rules.">1 - Contract-wide Asset Governance.  0 - Asset-wide Asset Governance.  If a referendum or  ...</abbr></td>
             <td class="a10">bool</td>
@@ -120,8 +118,8 @@ The following breaks down the construction of a Asset Creation Action. The actio
             <td class="a10">TokenQty</td>
             <td class="a10">8</td>
             <td class="a10">1000000</td>
-            <td class="a10"><abbr title="Quantity of token - 0 is valid. Fungible 'shares' of the Asset. 1 is used for non-fungible tokens.  Asset IDs become the non-fungible Asset ID and many Asset IDs can be associated with a particular Contract.">Quantity of token - 0 is valid. Fungible 'shares' of the Asset. 1 is used for non-fungible ...</abbr></td>
-            <td class="a10">uint64</td>
+            <td class="a10"><abbr title="Quantity of token - 0 is valid. Fungible 'shares' of the Asset. 1 is used for non-fungible tokens.  Asset Codes become the non-fungible Asset Code and many Asset Codes can be associated with a particular Contract.">Quantity of token - 0 is valid. Fungible 'shares' of the Asset. 1 is used for non-fungible ...</abbr></td>
+            <td class="a10">uint</td>
             <td class="a10"></td>
         </tr>
         <tr>
@@ -130,7 +128,7 @@ The following breaks down the construction of a Asset Creation Action. The actio
             <td class="a10">3</td>
             <td class="a10">AUD</td>
             <td class="a10">BSV, USD, AUD, EUR, etc.</td>
-            <td class="a10">string</td>
+            <td class="a10">fixedchar</td>
             <td class="a10"></td>
         </tr>
         <tr>
@@ -139,7 +137,7 @@ The following breaks down the construction of a Asset Creation Action. The actio
             <td class="a10">4</td>
             <td class="a10">0.005</td>
             <td class="a10">Percent of the value of the transaction</td>
-            <td class="a10">float32</td>
+            <td class="a10">float</td>
             <td class="a10"></td>
         </tr>
         <tr>
@@ -148,44 +146,33 @@ The following breaks down the construction of a Asset Creation Action. The actio
             <td class="a10">4</td>
             <td class="a10">0.01</td>
             <td class="a10">Fixed fee (payment made in BSV)</td>
-            <td class="a10">float32</td>
-            <td class="a10"></td>
-        </tr>
-        <tr>
-            <td class="a9">Asset Payload Length</td>
-            <td class="a10">AssetPayloadLen</td>
-            <td class="a10">2</td>
-            <td class="a10">9</td>
-            <td class="a10">Size of the asset payload in bytes.</td>
-            <td class="a10">uint16</td>
+            <td class="a10">float</td>
             <td class="a10"></td>
         </tr>
         <tr>
             <td class="a9">Asset Payload</td>
             <td class="a10">AssetPayload</td>
-            <td class="a10">0</td>
+            <td class="a10">16</td>
             <td class="a10">some data</td>
             <td class="a10"><abbr title="Payload length is dependent on the asset type. Each asset is made up of a defined set of information pertaining to the specific asset type, and may contain fields of variable length type (nvarchar8, 16, 32)">Payload length is dependent on the asset type. Each asset is made up of a defined set of i ...</abbr></td>
-            <td class="a10">byte[]</td>
+            <td class="a10">varbin</td>
             <td class="a10"></td>
         </tr>
         <tr>
             <td class="a9">Asset Revision</td>
             <td class="a10">Asset Revision</td>
-            <td class="a10">8</td>
+            <td class="a10">4</td>
             <td class="a10"><abbr title="0000000000000000000000000000000000000000000000000001000110111111">Hover for example</abbr></td>
-            <td class="a10">Counter 0 - 65,535</td>
-            <td class="a10">uint64</td>
+            <td class="a10">Counter 0 to (2^32)-1</td>
+            <td class="a10">uint</td>
             <td class="a10"></td>
         </tr>
         <tr>
-            <td class="a9">Timestamp</td>
-            <td class="a10">Timestamp</td>
-            <td class="a10">8</td>
-            <td class="a10">1551767413250187179</td>
-            <td class="a10">Timestamp in nanoseconds of when the smart contract created the action.</td>
-            <td class="a10">timestamp</td>
-            <td class="a10">Cannot be changed by issuer, operator. Smart contract controls.</td>
+            <td class="a5" colspan="7">
+                <a href="javascript:;" data-popover="type-Timestamp">
+                   Timestamp - Click to show content
+                </a>
+            </td>
         </tr>
     </table>
 </div>
@@ -251,51 +238,6 @@ The following breaks down the construction of a Asset Creation Action. The actio
                 <th style="width:26%" class="s1">Comments</th>
                 <th style="width:5%" class="s1">Data Type</th>
                 <th class="s2">Amendment Restrictions</th>
-            </tr>
-            <tr>
-                <td class="a10">Protocol Identifier</td>
-                <td class="a10">ProtocolID</td>
-                <td class="a10">13</td>
-                <td class="a10" style="word-break:break-all">tokenized.com</td>
-                <td class="a10">Tokenized ID Prefix.  tokenized.com</td>
-                <td class="a10">string</td>
-                <td class="a10"></td>
-            </tr>
-            <tr>
-                <td class="a10">Push Data</td>
-                <td class="a10">OpPushdata</td>
-                <td class="a10">1</td>
-                <td class="a10" style="word-break:break-all">77</td>
-                <td class="a10">PACKET LENGTH, PUSHDATA1 (76), PUSHDATA2 (77), or PUSHDATA4 (78) depending on total size of action payload.</td>
-                <td class="a10">opcode</td>
-                <td class="a10">Cannot be changed by issuer, operator or smart contract.</td>
-            </tr>
-            <tr>
-                <td class="a10">Length of Action Payload</td>
-                <td class="a10">LenActionPayload</td>
-                <td class="a10">2</td>
-                <td class="a10" style="word-break:break-all">409</td>
-                <td class="a10">Length of the action message (0 - 65,535 bytes). 0 if pushdata length <76B, 1 byte if PUSHDATA1 is used, 2 bytes if PUSHDATA2 and 4 bytes if PUSHDATA4.</td>
-                <td class="a10">pushdata_length</td>
-                <td class="a10">Depends on Action Payload</td>
-            </tr>
-            <tr>
-                <td class="a10">Version</td>
-                <td class="a10">Version</td>
-                <td class="a10">1</td>
-                <td class="a10" style="word-break:break-all">0</td>
-                <td class="a10">255 reserved for additional versions. Tokenized protocol versioning.</td>
-                <td class="a10">uint8</td>
-                <td class="a10">Can be changed by Issuer or Operator at their discretion.  Smart Contract will reject if it hasn't been updated to interpret the specified version.</td>
-            </tr>
-            <tr>
-                <td class="a10">Action Prefix</td>
-                <td class="a10">ActionPrefix</td>
-                <td class="a10">2</td>
-                <td class="a10" style="word-break:break-all">A2</td>
-                <td class="a10">// A2 identifies data as a AssetCreation message.</td>
-                <td class="a10">string</td>
-                <td class="a10">Cannot be changed by issuer, operator or smart contract.</td>
             </tr>
         </table>
     </div>

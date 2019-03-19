@@ -31,34 +31,30 @@ The following breaks down the construction of a Ballot Cast Action. The action i
             <td class="g10">3</td>
             <td class="g10">RRE</td>
             <td class="g10">eg. Share, Bond, Ticket</td>
-            <td class="g10">string</td>
+            <td class="g10">fixedchar</td>
             <td class="g10"></td>
         </tr>
         <tr>
-            <td class="g9">Asset ID</td>
-            <td class="g10">AssetID</td>
-            <td class="g10">32</td>
-            <td class="g10">apm2qsznhks23z8d83u41s8019hyri3i</td>
-            <td class="g10"><abbr title="Randomly generated base58 string.  Each Asset ID should be unique.  However, a Asset ID is always linked to a Contract that is identified by the public address of the Contract wallet. The Asset Type can be the leading bytes - a convention - to make it easy to identify that it is a token by humans.">Randomly generated base58 string.  Each Asset ID should be unique.  However, a Asset ID is ...</abbr></td>
-            <td class="g10">string</td>
-            <td class="g10"></td>
+            <td class="g5" colspan="7">
+                <a href="javascript:;" data-popover="type-AssetCode">
+                   Asset Code - Click to show content
+                </a>
+            </td>
         </tr>
         <tr>
-            <td class="g9">Vote Txn ID</td>
-            <td class="g10">VoteTxnID</td>
-            <td class="g10">32</td>
-            <td class="g10"><abbr title="f3318be9fb3f73e53b29868beae46b42911c2116f979a5d3284face90746cb37">Hover for example</abbr></td>
-            <td class="g10">Tx-ID of the Vote the Ballot Cast is being made for.</td>
-            <td class="g10">sha256</td>
-            <td class="g10"></td>
+            <td class="g5" colspan="7">
+                <a href="javascript:;" data-popover="type-TxId">
+                   Vote Tx ID - Click to show content
+                </a>
+            </td>
         </tr>
         <tr>
             <td class="g9">Vote</td>
             <td class="g10">Vote</td>
-            <td class="g10">0</td>
+            <td class="g10">8</td>
             <td class="g10">A</td>
             <td class="g10"><abbr title="Length 1-255 bytes. 0 is not valid. Accept, Reject, Abstain, Spoiled, Multiple Choice, or Preference List. 15 options total. Order of preference.  1st position = 1st choice. 2nd position = 2nd choice, etc.  A is always Accept and B is always reject in a Y/N votes.">Length 1-255 bytes. 0 is not valid. Accept, Reject, Abstain, Spoiled, Multiple Choice, or  ...</abbr></td>
-            <td class="g10">nvarchar8</td>
+            <td class="g10">varchar</td>
             <td class="g10"></td>
         </tr>
     </table>
@@ -107,51 +103,6 @@ The following breaks down the construction of a Ballot Cast Action. The action i
                 <th style="width:26%" class="s1">Comments</th>
                 <th style="width:5%" class="s1">Data Type</th>
                 <th class="s2">Amendment Restrictions</th>
-            </tr>
-            <tr>
-                <td class="g10">Protocol Identifier</td>
-                <td class="g10">ProtocolID</td>
-                <td class="g10">13</td>
-                <td class="g10" style="word-break:break-all">tokenized.com</td>
-                <td class="g10">Tokenized ID Prefix.  tokenized.com</td>
-                <td class="g10">string</td>
-                <td class="g10"></td>
-            </tr>
-            <tr>
-                <td class="g10">Push Data</td>
-                <td class="g10">OpPushdata</td>
-                <td class="g10">1</td>
-                <td class="g10" style="word-break:break-all">77</td>
-                <td class="g10">PACKET LENGTH, PUSHDATA1 (76), PUSHDATA2 (77), or PUSHDATA4 (78) depending on total size of action payload.</td>
-                <td class="g10">opcode</td>
-                <td class="g10">Cannot be changed by issuer, operator or smart contract.</td>
-            </tr>
-            <tr>
-                <td class="g10">Length of Action Payload</td>
-                <td class="g10">LenActionPayload</td>
-                <td class="g10">2</td>
-                <td class="g10" style="word-break:break-all">409</td>
-                <td class="g10">Length of the action message (0 - 65,535 bytes). 0 if pushdata length <76B, 1 byte if PUSHDATA1 is used, 2 bytes if PUSHDATA2 and 4 bytes if PUSHDATA4.</td>
-                <td class="g10">pushdata_length</td>
-                <td class="g10">Depends on Action Payload</td>
-            </tr>
-            <tr>
-                <td class="g10">Version</td>
-                <td class="g10">Version</td>
-                <td class="g10">1</td>
-                <td class="g10" style="word-break:break-all">0</td>
-                <td class="g10">255 reserved for additional versions. Tokenized protocol versioning.</td>
-                <td class="g10">uint8</td>
-                <td class="g10">Can be changed by Issuer or Operator at their discretion.  Smart Contract will reject if it hasn't been updated to interpret the specified version.</td>
-            </tr>
-            <tr>
-                <td class="g10">Action Prefix</td>
-                <td class="g10">ActionPrefix</td>
-                <td class="g10">2</td>
-                <td class="g10" style="word-break:break-all">G4</td>
-                <td class="g10">// G4 identifies data as a BallotCast message.</td>
-                <td class="g10">string</td>
-                <td class="g10">Cannot be changed by issuer, operator or smart contract.</td>
             </tr>
         </table>
     </div>

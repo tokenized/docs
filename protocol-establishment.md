@@ -28,10 +28,10 @@ The following breaks down the construction of a Establishment Action. The action
         <tr>
             <td class="r9">Message</td>
             <td class="r10">Message</td>
-            <td class="r10">25</td>
+            <td class="r10">32</td>
             <td class="r10">North America Whitelist</td>
             <td class="r10"></td>
-            <td class="r10">nvarchar32</td>
+            <td class="r10">varchar</td>
             <td class="r10"></td>
         </tr>
     </table>
@@ -80,51 +80,6 @@ The following breaks down the construction of a Establishment Action. The action
                 <th style="width:26%" class="s1">Comments</th>
                 <th style="width:5%" class="s1">Data Type</th>
                 <th class="s2">Amendment Restrictions</th>
-            </tr>
-            <tr>
-                <td class="r10">Protocol Identifier</td>
-                <td class="r10">ProtocolID</td>
-                <td class="r10">13</td>
-                <td class="r10" style="word-break:break-all">tokenized.com</td>
-                <td class="r10">Tokenized ID Prefix.  tokenized.com</td>
-                <td class="r10">string</td>
-                <td class="r10"></td>
-            </tr>
-            <tr>
-                <td class="r10">Push Data</td>
-                <td class="r10">OpPushdata</td>
-                <td class="r10">1</td>
-                <td class="r10" style="word-break:break-all">77</td>
-                <td class="r10">PACKET LENGTH, PUSHDATA1 (76), PUSHDATA2 (77), or PUSHDATA4 (78) depending on total size of action payload.</td>
-                <td class="r10">opcode</td>
-                <td class="r10">Cannot be changed by issuer, operator or smart contract.</td>
-            </tr>
-            <tr>
-                <td class="r10">Length of Action Payload</td>
-                <td class="r10">LenActionPayload</td>
-                <td class="r10">2</td>
-                <td class="r10" style="word-break:break-all">409</td>
-                <td class="r10">Length of the action message (0 - 65,535 bytes). 0 if pushdata length <76B, 1 byte if PUSHDATA1 is used, 2 bytes if PUSHDATA2 and 4 bytes if PUSHDATA4.</td>
-                <td class="r10">pushdata_length</td>
-                <td class="r10">Depends on Action Payload</td>
-            </tr>
-            <tr>
-                <td class="r10">Version</td>
-                <td class="r10">Version</td>
-                <td class="r10">1</td>
-                <td class="r10" style="word-break:break-all">0</td>
-                <td class="r10">255 reserved for additional versions. Tokenized protocol versioning.</td>
-                <td class="r10">uint8</td>
-                <td class="r10">Can be changed by Issuer or Operator at their discretion.  Smart Contract will reject if it hasn't been updated to interpret the specified version.</td>
-            </tr>
-            <tr>
-                <td class="r10">Action Prefix</td>
-                <td class="r10">ActionPrefix</td>
-                <td class="r10">2</td>
-                <td class="r10" style="word-break:break-all">R1</td>
-                <td class="r10">// R1 identifies data as a Establishment message.</td>
-                <td class="r10">string</td>
-                <td class="r10">Cannot be changed by issuer, operator or smart contract.</td>
             </tr>
         </table>
     </div>

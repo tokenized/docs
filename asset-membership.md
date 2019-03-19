@@ -20,7 +20,7 @@ A Membership
         <tr>
             <td class="a10">Version</td>
             <td class="a9">Version</td>
-            <td class="a10">uint8</td>
+            <td class="a10">uint</td>
             <td class="a10">Payload Version</td>
             <td class="a10">1</td>
             <td class="a10"></td>
@@ -53,9 +53,9 @@ A Membership
         <tr>
             <td class="a10">ValidFrom</td>
             <td class="a9">Valid From</td>
-            <td class="a10">timestamp</td>
+            <td class="a10">Timestamp</td>
             <td class="a10"></td>
-            <td class="a10">8</td>
+            <td class="a10">0</td>
             <td class="a10"></td>
             <td class="a10">false</td>
             <td class="a10">0</td>
@@ -64,9 +64,9 @@ A Membership
         <tr>
             <td class="a10">ExpirationTimestamp</td>
             <td class="a9">Expiration Timestamp</td>
-            <td class="a10">timestamp</td>
+            <td class="a10">Timestamp</td>
             <td class="a10"></td>
-            <td class="a10">8</td>
+            <td class="a10">0</td>
             <td class="a10"></td>
             <td class="a10">false</td>
             <td class="a10">0</td>
@@ -75,7 +75,7 @@ A Membership
         <tr>
             <td class="a10">ID</td>
             <td class="a9">ID</td>
-            <td class="a10">nvarchar8</td>
+            <td class="a10">varchar</td>
             <td class="a10"></td>
             <td class="a10">255</td>
             <td class="a10"></td>
@@ -86,7 +86,7 @@ A Membership
         <tr>
             <td class="a10">MembershipType</td>
             <td class="a9">MembershipType</td>
-            <td class="a10">nvarchar8</td>
+            <td class="a10">varchar</td>
             <td class="a10"></td>
             <td class="a10">255</td>
             <td class="a10"></td>
@@ -97,9 +97,9 @@ A Membership
         <tr>
             <td class="a10">Description</td>
             <td class="a9">Description</td>
-            <td class="a10">nvarchar64</td>
+            <td class="a10">varchar</td>
             <td class="a10"></td>
-            <td class="a10">0</td>
+            <td class="a10">16</td>
             <td class="a10"></td>
             <td class="a10">false</td>
             <td class="a10">0</td>

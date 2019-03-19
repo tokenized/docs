@@ -20,7 +20,7 @@ Common stock represents ownership interests in corporations.
         <tr>
             <td class="a10">Version</td>
             <td class="a9">Version</td>
-            <td class="a10">uint8</td>
+            <td class="a10">uint</td>
             <td class="a10">Payload Version</td>
             <td class="a10">1</td>
             <td class="a10"></td>
@@ -42,9 +42,9 @@ Common stock represents ownership interests in corporations.
         <tr>
             <td class="a10">TransferLockout</td>
             <td class="a9">TransferLockout</td>
-            <td class="a10">timestamp</td>
+            <td class="a10">Timestamp</td>
             <td class="a10"></td>
-            <td class="a10">8</td>
+            <td class="a10">0</td>
             <td class="a10"></td>
             <td class="a10">false</td>
             <td class="a10">0</td>
@@ -53,7 +53,7 @@ Common stock represents ownership interests in corporations.
         <tr>
             <td class="a10">Ticker</td>
             <td class="a9">Ticker</td>
-            <td class="a10">string</td>
+            <td class="a10">fixedchar</td>
             <td class="a10"></td>
             <td class="a10">5</td>
             <td class="a10"></td>
@@ -64,7 +64,7 @@ Common stock represents ownership interests in corporations.
         <tr>
             <td class="a10">ISIN</td>
             <td class="a9">ISIN (optional)</td>
-            <td class="a10">string</td>
+            <td class="a10">fixedchar</td>
             <td class="a10"></td>
             <td class="a10">12</td>
             <td class="a10"></td>
@@ -75,7 +75,7 @@ Common stock represents ownership interests in corporations.
         <tr>
             <td class="a10">Description</td>
             <td class="a9">Description</td>
-            <td class="a10">nvarchar16</td>
+            <td class="a10">varchar</td>
             <td class="a10"></td>
             <td class="a10">113</td>
             <td class="a10"></td>
