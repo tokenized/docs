@@ -139,7 +139,7 @@ A reconciliation is an order from the Issuer to the smart contract that reflects
 The process of reconciling a contract is as follows:
 #####1. Issuing the Reconciliation Order
 The Reconciliation order comes in the form of an Order action that details the AssetID of the token being reconciled, documentation relating to the reasons for the reconciliation and a full set of balances for the updated state of any accounts impacted by the reconciliation action.
-The action must also includ the full hexadecimal strings of each transaction that included an action that was lost/rejected by the network as proof that the actions were once received as a zero-conf transaction into the wallet of a Tokenized smart contract. The transactions must be complete, signed and valid Bitcoin transactions that spend UTXOS that still exist on the network.  
+The action also has fields for the mandatory inclusion of full hexadecimal strings for each transaction that included an action that was lost/rejected by the network as proof that the actions were once received as a zero-conf transaction into the wallet of a Tokenized smart contract. The transactions must be complete, signed and valid Bitcoin transactions that spend UTXOS that still exist on the network.  
 #####2. Smart Contract Evaluation, Rejection/Reconciliation
 When the smart contract receives the order it will evaluate it for compliance with the Smart Contract rules including whether the correct information has been supplied, and that the signature and public key are from an authority with the right to create enforcement actions on the contract.
 If the Smart Contract finds that the order is invalid, it will issue a rejection action with a message detailing the issues with the order.
