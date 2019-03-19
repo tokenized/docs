@@ -41,11 +41,11 @@
 		<v:layer v:name="Connector" v:index="0"/>
 		<g id="shape59-1" v:mID="59" v:groupContext="shape" transform="translate(18.5156,-18.375)">
 			<title>Sheet.59</title>
-			<desc>Contract Formation Operations</desc>
+			<desc>Contract Establishment Sequence</desc>
 			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
 			<v:textRect cx="135.547" cy="43.575" width="272.13" height="9.00234"/>
 			<rect x="0" y="37.4851" width="272.126" height="96.378" class="st1"/>
-			<text x="59.29" y="47.18" class="st2" v:langID="3081"><v:paragraph v:horizAlign="1"/><v:tabList/>Contract Formation Operations</text>		</g>
+			<text x="53.58" y="47.18" class="st2" v:langID="3081"><v:paragraph v:horizAlign="1"/><v:tabList/>Contract Establishment Sequence</text>		</g>
 		<g id="shape24-4" v:mID="24" v:groupContext="shape" transform="translate(29.8542,-25.6033)">
 			<title>Sheet.24</title>
 			<desc>From: Issuer To: Contract Value: $16.00 (formation fee) Actio...</desc>
