@@ -6,7 +6,7 @@ Intro:
 Main Concepts:
   pages:
     main-concepts/tokens: "Tokens"
-    main-concepts/smart-contracts: "Smart Contracts"
+    main-concepts/tokenized-contracts: "Tokenized Contracts"
     main-concepts/action-mechanism: "Action Mechanism"
     main-concepts/rules: "Rules"
     main-concepts/transactions: "Transactions"

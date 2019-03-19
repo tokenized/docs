@@ -1,7 +1,17 @@
-##Tokenized Smart Contracts
+#Tokenized Contracts
 Tokenized smart contracts are new way for corporations, businesses and individuals to manage the ownership and distribution of goods and services, and the division of a large asset such as a company or holding into pieces for the purposes of distributing ownership and capital raising.
 
 A tokenized smart contract carries with it the full weight of a legal document or structure that would achieve the same thing in an off-chain environment.
+There are two types of contract primarily supported by the Tokenized system:
+1. Static Contracts
+2. Smart Contracts
+
+##Static Contracts
+A static contract is a legal contract similar to that which one would enter into today for the undertaking of a scope of work, to enter into a non-disclosure agreement, or to manage the sale of an off-chain asset that has not been tokenized. 
+The Tokenized Static Contract framework simply provides an easy and low cost way for inscribing the details of these contracts onto the public ledger in a way that is immutable, carries the weight of signatures and can be upheld as a true document outlining an agreement between parties. Static Contracts require only a single action to be established and do not require a Tokenized smart contract to operate. 
+
+##Smart Contracts
+A Smart Contract is a contract which is managed by a Tokenized agent using the Tokenized protocol. This is a dynamic asset allocator which can be used for the distribution and management of tokens, tickets and other types of asset using the Tokenized platform.
 
 ###Contract Parties
 There are two parties involved in the creation of a tokenized smart contract. These are:
