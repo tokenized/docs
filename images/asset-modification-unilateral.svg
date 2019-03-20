@@ -18,9 +18,9 @@
 		.st4 {fill:#a5a5a5;fill-opacity:0.6;filter:url(#filter_2);stroke:#a5a5a5;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:0.6}
 		.st5 {fill:url(#ptrn15-10);shape-rendering:crispEdges;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:0.6;stroke-width:0.75}
 		.st6 {fill:#000000;font-family:Arial;font-size:0.916672em;font-weight:bold}
-		.st7 {font-size:0.818177em;font-weight:normal}
-		.st8 {fill:#c00000;font-size:0.818177em;font-weight:normal}
-		.st9 {fill:#7030a0;font-size:0.818177em;font-weight:normal}
+		.st7 {font-size:0.909089em;font-weight:normal}
+		.st8 {fill:#c00000;font-size:0.909089em;font-weight:normal}
+		.st9 {fill:#7030a0;font-size:0.909089em;font-weight:normal}
 		.st10 {marker-end:url(#mrkr13-36);stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:1}
 		.st11 {fill:#000000;fill-opacity:1;stroke:#000000;stroke-opacity:1;stroke-width:0.28409090909091}
 		.st12 {fill:none;fill-rule:evenodd;font-size:12px;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
@@ -75,9 +75,9 @@
 			</g>
 			<rect x="0" y="68.5007" width="141.576" height="77.2349" class="st5"/>
 			<text x="4" y="82.4" class="st6" v:langID="3081"><v:paragraph/><v:tabList/>Asset Modification<v:newlineChar/><v:newlineChar/><v:paragraph/><tspan
-						x="4" dy="2.733em" class="st7">From: <v:tabChar/></tspan><tspan dx="1.836em" class="st8">Issuer<v:newlineChar/></tspan><tspan
-						x="4" dy="1.2em" class="st7">To: <v:tabChar/></tspan><tspan dx="3.002em" class="st9">Contract<v:newlineChar/></tspan><tspan
-						x="4" dy="1.3em" class="st7">Value: <v:tabChar/></tspan><tspan dx="1.611em" class="st7">Modification fee</tspan></text>		</g>
+						x="4" dy="2.43em" class="st7">From: <v:tabChar/></tspan><tspan dx="1.363em" class="st8">Issuer<v:newlineChar/></tspan><tspan
+						x="4" dy="1.2em" class="st7">To: <v:tabChar/></tspan><tspan dx="2.529em" class="st9">Contract<v:newlineChar/></tspan><tspan
+						x="4" dy="1.2em" class="st7">Value: <v:tabChar/></tspan><tspan dx="1.139em" class="st7">Modification fee</tspan></text>		</g>
 		<g id="shape134-18" v:mID="134" v:groupContext="shape" transform="translate(202.234,-23.3766)">
 			<title>Sheet.134</title>
 			<desc>Asset Creation From: Contract To: Issuer Value: Dust</desc>
@@ -89,9 +89,9 @@
 			</g>
 			<rect x="0" y="68.5007" width="141.576" height="77.2349" class="st5"/>
 			<text x="4" y="82.4" class="st6" v:langID="3081"><v:paragraph/><v:tabList/>Asset Creation<v:newlineChar/><v:newlineChar/><tspan
-						x="4" dy="2.733em" class="st7">From: <v:tabChar/></tspan><tspan dx="1.836em" class="st9">Contract<v:newlineChar/></tspan><tspan
-						x="4" dy="1.2em" class="st7">To: <v:tabChar/></tspan><tspan dx="3.002em" class="st8">Issuer<v:newlineChar/></tspan><tspan
-						x="4" dy="1.3em" class="st7">Value: <v:tabChar/></tspan><tspan dx="1.611em" class="st7">Dust</tspan></text>		</g>
+						x="4" dy="2.43em" class="st7">From: <v:tabChar/></tspan><tspan dx="1.363em" class="st9">Contract<v:newlineChar/></tspan><tspan
+						x="4" dy="1.2em" class="st7">To: <v:tabChar/></tspan><tspan dx="2.529em" class="st8">Issuer<v:newlineChar/></tspan><tspan
+						x="4" dy="1.2em" class="st7">Value: <v:tabChar/></tspan><tspan dx="1.139em" class="st7">Dust</tspan></text>		</g>
 		<g id="shape135-31" v:mID="135" v:groupContext="shape" v:layerMember="0" transform="translate(162.951,-54.9074)">
 			<title>Dynamic connector.135</title>
 			<path d="M0 138.65 L28.72 138.65" class="st10"/>
