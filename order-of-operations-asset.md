@@ -32,7 +32,7 @@ If the modifications being requested are outside of the rules allowed by the sma
 
 ###Modification by vote
 The following lays out the process of asset modification by vote.
-<img src="https://github.com/tokenized/docs/blob/master/images/asset-modification-by-vote.png?raw=true" alt="Asset Modification by Vote">
+<img src="https://raw.githubusercontent.com/tokenized/docs/master/images/asset-modification-by-vote.svg?sanitize=true" alt="Asset Modification by Vote">
 ####1A. Referendum
 A referendum is when the Issuer issues an intent to vote to the smart contract. The smart contract will evaluate the issues being voted on (modification etc) and make sure that those which result in changes to any assets do not violate the rules.
 ####1B. Initiative
@@ -48,7 +48,7 @@ Once the vote is over (time limited) the smart contract counts the votes and pub
 ####6. Asset Modification
 If the successful motion requires any changes to be made to the asset, the Issuer must issue a new asset modification action with the updated details and a new version number for the asset. This is not something that happens automatically and the smart contract will not allow the Issuer to change fields that it is not authorised to change without authorisation unless the issuer includes a pointer to a vote result authorising the change of that item.
 ####7. Rejection/Asset Creation
-Once the amendment has been checked against the Smart Contract rules, the Smart Contract will either send a rejection notice in the case that the Issuer is trying to make a change that isn't supported by the necessary motions, or it will issue an Asset Creation action that includes all of the changes made to the asset and an incremented version number.
+Once the amendment has been checked against the Smart Contract rules, the Smart Contract will either send a rejection notice in the case that the Issuer is trying to make a change that isn't supported by the necessary motions, or it will issue an Asset Creation action that includes all of the changes made to the asset and an incremfented version number.
 
 <a name="asset-transfer"></a>
 ### Asset Transfer

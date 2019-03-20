@@ -28,7 +28,7 @@ The amendment action is followed by a Contract Formation action which is the ack
 ###Amendment by vote
 There are two ways in which a contract amendment by vote can be brought forth.
 
-<img src="https://github.com/tokenized/docs/blob/master/images/contract-amendment-by-vote.png?raw=true" alt="Contract Amendment by Vote">
+<img src="https://raw.githubusercontent.com/tokenized/docs/master/images/contract-amendment-by-vote.svg?sanitize=true" alt="Contract Amendment by Vote">
 
 ####1A. Referendum
 A referendum is when the Issuer issues an intent to vote to the smart contract. The smart contract will evaluate the issues being voted on (amendments etc) and make sure that those which result in changes to the smart contract do not violate the rules.
