@@ -1,7 +1,7 @@
 ##Contract Actions
 There are two ways that an issuer can interact with their Smart Contract:
 1. [Establishment](#establishment)
-2. [Modification](#modification)
+2. [Amendment](#amendment)
 
 <a name="establishment"></a>
 ##Establishment
@@ -13,8 +13,8 @@ The Contract offer is a transaction sent from the Contract Issuer to the smart c
 Once the smart contract has evaluated the contract offer and determined that all the necessary information is present, it will send a Contract Formation action onto the blockchain. The contract formation action is an exact copy of the contract offer, which is timestamped with the date and time at which the contract went live and a version number.
 The Contract Formation action marks the moment from which the contract can begin creating and managing assets on behalf of the issuer.
 
-<a name="modification"></a>
-##Modification
+<a name="amendment"></a>
+##Amendment
 Once a contract has been formed, the only way to change it is through the contract amendment process. A contract amendment allows a token issuer to modify any contract details, as long as the rules governing the modification of those details have been met.
 
 ###Unilateral Amendment
