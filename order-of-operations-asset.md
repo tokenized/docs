@@ -64,6 +64,7 @@ There are three separate ways of moving assets using the Transfer Action:
 ####Send
 The sending of an asset is done by sending a Transfer action to the Smart Contract with the destination address and quantity of that asset. A send operation can send more than one asset type to more than one asset receiver in a transfer action allowing for fast distribution of both fungible and non-fungible token types to receivers.
 The send process is a 2 step process:
+<img src="https://raw.githubusercontent.com/tokenized/docs/master/images/asset-transfer-send.svg?sanitize=true" alt="Sending an Asset">
 #####1. Transfer Action
 The entity sending the tokens builds a Transfer action that defines which assets they wish to distribute, in which quantities, and to which parties. If the sender has assets stored in multiple addresses, they will need to build a transaction that reflects that, and to sign the transaction with inputs from each of those addresses. This process should be automated within the wallet, needing the sender only to specify which assets they are sending to which parties. Once the transaction is ready it is sent to the blockchain.
 #####2. Rejection/Settlement
