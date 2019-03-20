@@ -1,12 +1,12 @@
 ##Contract Actions
-There are two things that can be done to a Smart Contract:
+There are two ways that an issuer can interact with their Smart Contract:
 1. [Establishment](#establishment)
 2. [Modification](#modification)
 
 <a name="establishment"></a>
 ##Establishment
 The establishment of a contract is a two step process.
-<img src="https://github.com/tokenized/docs/blob/master/images/contract-formation.png?raw=true" alt="Contract Formation Process">
+<img src="https://github.com/tokenized/docs/blob/master/images/contract-establishment.png?raw=true" alt="Contract Establishment Process">
 ###1. Contract Offer
 The Contract offer is a transaction sent from the Contract Issuer to the smart contract which outlines the details of a contract the issuer is seeking to create. The offer contains a complete copy of all details of the contract which includes things such as rules limiting on the number of assets the contract can manage, details on how the contract will be governed and information on the issuer, the smart contract operator, and key persons linked to the creation of the contract.
 ###2. Contract Formation
@@ -27,13 +27,13 @@ The amendment action is followed by a Contract Formation action which is the ack
 
 ###Amendment by vote
 There are two ways in which a contract amendment by vote can be brought forth.
+
+<img src="https://github.com/tokenized/docs/blob/master/images/contract-amendment-by-vote.png?raw=true" alt="Contract Amendment by Vote">
+
 ####1A. Referendum
 A referendum is when the Issuer issues an intent to vote to the smart contract. The smart contract will evaluate the issues being voted on (amendments etc) and make sure that those which result in changes to the smart contract do not violate the rules.
 ####1B. Initiative
 An initiative is the method used for an asset owner to propose a vote. There is a significant cost attached to the initiative action as conducting a vote is a costly and disruptive exercise.
-
-<img src="https://github.com/tokenized/docs/blob/master/images/initiative.JPG?raw=true" alt="Initiative Process">
-
 ####2. Vote
 Once the smart contract has received a referendum or initiative action, it evaluates it for validity against the rules of the contract. If the vote is able to go ahead, the smart contract issues a Vote action onto the blockchain.
 ####3. Ballot Cast
