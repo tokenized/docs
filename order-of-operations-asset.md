@@ -8,7 +8,7 @@ An asset is defined as a token or group of tokens created with a single unique a
 <a name="asset-creation"></a>
 ### Asset Creation
 Assets are created by a Smart Contract under the instruction of the Smart Contract issuer. Each token has a set of rules that govern how it can be modified in future which may require that there be a successful motion to change that item as part of a vote.
-
+<img src="https://github.com/tokenized/docs/blob/master/images/asset-creation.png?raw=true" alt="Asset Creation Process">
 ###1. Asset Definition
 To create an asset, the Issuer must send the Smart Contract an Asset Definition action that fully defines the asset. This means stating the asset's type, asset number, administration settings and more, as well as the asset specific metadata. The Asset Definition action is sent to the Smart Contract's wallet in an on-chain transaction where the Smart Contract detects it and opens it for analysis.
 
@@ -18,17 +18,21 @@ When the Smart Contract finds a correctly defined asset (one that doesn't violat
 
 <a name="asset-modification"></a>
 ### Asset Modification
-Once an asset has been created, the only way to change it is through the asset modification process. An asset modification allows a token issuer to modify any asset's details, as long as the rules governing the modification of those details have been met.
+Once an asset has been created, the only way to change it is through the asset modification process. An asset modification allows a token issuer to modify any asset's details, as long as the rules governing the modification of those details have been met. There are two ways to modify an asset:
+1. Unilateral Modification
+2. Modification by Vote
 
-###Unilateral Amendment
-A unilateral amendment takes place when the Issuer makes a change to the asset which does not require a ballot or referendum to take place. This could include updating the asset's metadata or other details dependent on the rules. The process involves just two transactions.
+###Unilateral Modification
+A unilateral modification takes place when the Issuer makes a change to the asset which does not require a ballot or referendum to take place. This could include updating the asset's metadata or other details dependent on the rules. The process involves just two transactions.
+<img src="https://github.com/tokenized/docs/blob/master/images/asset-modification-unilateral.png?raw=true" alt="Unilateral Asset Modification Process">
 ####1. Asset Modification
 The asset modification action includes details of any changes that are being made to the asset. One modification action can create multiple changes to an asset. Inside the action these are listed as individual items referenced to their position in the asset creation action, and the new values to be used. 
 ####2. Rejection/Asset Creation
 If the modifications being requested are outside of the rules allowed by the smart contract, the agent will respond with a Rejection action. If the modification is analysed and is ok, the Smart Contract responds with an Asset Creation action which is the acknowledgement from the smart contract that the asset has been updated. The creation action contains a new full copy of all asset details and the new version number. 
 
-###Amendment by vote
-There are two ways in which a asset modification by vote can be brought forth.
+###Modification by vote
+The following lays out the process of asset modification by vote.
+<img src="https://github.com/tokenized/docs/blob/master/images/asset-modification-by-vote.png?raw=true" alt="Asset Modification by Vote">
 ####1A. Referendum
 A referendum is when the Issuer issues an intent to vote to the smart contract. The smart contract will evaluate the issues being voted on (modification etc) and make sure that those which result in changes to any assets do not violate the rules.
 ####1B. Initiative
@@ -43,7 +47,7 @@ After a user has sent their ballot onto the blockchain, the smart contract confi
 Once the vote is over (time limited) the smart contract counts the votes and publishes the result to the blockchain. 
 ####6. Asset Modification
 If the successful motion requires any changes to be made to the asset, the Issuer must issue a new asset modification action with the updated details and a new version number for the asset. This is not something that happens automatically and the smart contract will not allow the Issuer to change fields that it is not authorised to change without authorisation unless the issuer includes a pointer to a vote result authorising the change of that item.
-####7. Rejection/Contract Formation
+####7. Rejection/Asset Creation
 Once the amendment has been checked against the Smart Contract rules, the Smart Contract will either send a rejection notice in the case that the Issuer is trying to make a change that isn't supported by the necessary motions, or it will issue an Asset Creation action that includes all of the changes made to the asset and an incremented version number.
 
 <a name="asset-transfer"></a>
