@@ -6,7 +6,7 @@ There are two ways that an issuer can interact with their Smart Contract:
 <a name="establishment"></a>
 ##Establishment
 The establishment of a contract is a two step process.
-<img src="https://github.com/tokenized/docs/blob/master/images/contract-establishment.png?raw=true" alt="Contract Establishment Process">
+<img src="https://raw.githubusercontent.com/tokenized/docs/master/images/contract-establishment.svg?sanitize=true" alt="Contract Establishment Process">
 ###1. Contract Offer
 The Contract offer is a transaction sent from the Contract Issuer to the smart contract which outlines the details of a contract the issuer is seeking to create. The offer contains a complete copy of all details of the contract which includes things such as rules limiting on the number of assets the contract can manage, details on how the contract will be governed and information on the issuer, the smart contract operator, and key persons linked to the creation of the contract.
 ###2. Contract Formation
@@ -19,7 +19,7 @@ Once a contract has been formed, the only way to change it is through the contra
 
 ###Unilateral Amendment
 A unilateral amendment takes place when the contract issuer makes a change to the contract which does not require a ballot or referendum to take place. This could include updating the office address of the token issuer, or changing the details of a key person tied to the contract. The process involves just two transactions.
-<img src="https://github.com/tokenized/docs/blob/master/images/contract-amendment-unilateral.png?raw=true" alt="Unilateral Contract Amendment Process">
+<img src="https://raw.githubusercontent.com/tokenized/docs/master/images/contract-amendment-unilateral.svg?sanitize=true" alt="Unilateral Contract Amendment">
 ####1. Contract Amendment
 The contract amendment action includes details of any changes that are being made to a smart contract. One amendment action can create multiple changes to a contract. Inside the action these are listed as individual items referenced to their position in the contract formation action, and the new values to be used.
 ####2. Contract Formation

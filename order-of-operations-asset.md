@@ -8,7 +8,7 @@ An asset is defined as a token or group of tokens created with a single unique a
 <a name="asset-creation"></a>
 ### Asset Creation
 Assets are created by a Smart Contract under the instruction of the Smart Contract issuer. Each token has a set of rules that govern how it can be modified in future which may require that there be a successful motion to change that item as part of a vote.
-<img src="https://github.com/tokenized/docs/blob/master/images/asset-creation.png?raw=true" alt="Asset Creation Process">
+<img src="https://raw.githubusercontent.com/tokenized/docs/master/images/asset-creation.svg?sanitize=true" alt="Asset Creation Process">
 ###1. Asset Definition
 To create an asset, the Issuer must send the Smart Contract an Asset Definition action that fully defines the asset. This means stating the asset's type, asset number, administration settings and more, as well as the asset specific metadata. The Asset Definition action is sent to the Smart Contract's wallet in an on-chain transaction where the Smart Contract detects it and opens it for analysis.
 
@@ -24,7 +24,7 @@ Once an asset has been created, the only way to change it is through the asset m
 
 ###Unilateral Modification
 A unilateral modification takes place when the Issuer makes a change to the asset which does not require a ballot or referendum to take place. This could include updating the asset's metadata or other details dependent on the rules. The process involves just two transactions.
-<img src="https://github.com/tokenized/docs/blob/master/images/asset-modification-unilateral.png?raw=true" alt="Unilateral Asset Modification Process">
+<img src="https://raw.githubusercontent.com/tokenized/docs/master/images/asset-modification-unilateral.svg?sanitize=true" alt="Unilateral Asset Modification Process">
 ####1. Asset Modification
 The asset modification action includes details of any changes that are being made to the asset. One modification action can create multiple changes to an asset. Inside the action these are listed as individual items referenced to their position in the asset creation action, and the new values to be used. 
 ####2. Rejection/Asset Creation
