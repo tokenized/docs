@@ -26,4 +26,4 @@ Tokenized also welcome user contributions in languages not listed here.
 
 ##Contacting us
 
-The Tokenized team are available to give support where needed as projects evolve. Join our telegram at https://t.me/joinchat/GTCTKhDcyW4-QepyjqiLdQ or use the contact form at www.tokenized.com
+The Tokenized team are available to give support for protocol specific queries and requests.  If the protocol does not satisfy your needs/use case, or you have positive or negative feedback, then please feel free to reach out by joining our telegram at https://t.me/joinchat/GTCTKhDcyW4-QepyjqiLdQ or email us at protocol@tokenized.com.
