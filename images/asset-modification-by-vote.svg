@@ -150,40 +150,40 @@
 			</g>
 			<path d="M0 612.6 L8.5 612.6 L8.5 731.09 L0 731.09" class="st15"/>
 		</g>
-		<g id="shape133-64" v:mID="133" v:groupContext="shape" transform="translate(97.2283,-72.1329)">
+		<g id="shape133-64" v:mID="133" v:groupContext="shape" transform="translate(97.2283,-68.0315)">
 			<title>Sheet.133</title>
 			<desc>Asset Modification From: Issuer Input: Any To: Contract Outpu...</desc>
 			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197" v:verticalAlign="0"/>
-			<v:textRect cx="89.0038" cy="678.931" width="178.01" height="104.315"/>
+			<v:textRect cx="89.0038" cy="676.881" width="178.01" height="108.416"/>
 			<g id="shadow133-65" v:groupContext="shadow" v:shadowOffsetX="1.22561E-16" v:shadowOffsetY="-2.00157" v:shadowType="1"
 					transform="matrix(1,0,0,1,0,2.00157)" class="st1">
-				<rect x="0" y="626.774" width="178.008" height="104.315" class="st2"/>
+				<rect x="0" y="622.672" width="178.008" height="108.416" class="st2"/>
 			</g>
-			<rect x="0" y="626.774" width="178.008" height="104.315" class="st6"/>
-			<text x="4" y="640.67" class="st7" v:langID="3081"><v:paragraph/><v:tabList/>Asset Modification<v:newlineChar/><v:newlineChar/><v:paragraph/><tspan
+			<rect x="0" y="622.672" width="178.008" height="108.416" class="st6"/>
+			<text x="4" y="636.57" class="st7" v:langID="3081"><v:paragraph/><v:tabList/>Asset Modification<v:newlineChar/><v:newlineChar/><v:paragraph/><tspan
 						x="4" dy="2.43em" class="st8">From:<v:tabChar/></tspan><tspan dx="1.641em" class="st16">Issuer<v:newlineChar/></tspan><tspan
 						x="4" dy="1.2em" class="st8">Input:<v:tabChar/></tspan><tspan dx="1.75em" class="st8">Any<v:newlineChar/></tspan><tspan
 						x="4" dy="1.2em" class="st8">To:<v:tabChar/></tspan><tspan dx="2.807em" class="st10">Contract<v:newlineChar/></tspan><tspan
 						x="4" dy="1.2em" class="st8">Output:<v:tabChar/></tspan><tspan dx="0.972em" class="st8">Asset Creation fee<v:newlineChar/></tspan><tspan
 						x="4" dy="1.2em" class="st8">Include:<v:tabChar/></tspan><tspan dx="0.749em" class="st8">Result TXID</tspan></text>		</g>
-		<g id="shape134-81" v:mID="134" v:groupContext="shape" transform="translate(300.481,-72.1329)">
+		<g id="shape134-81" v:mID="134" v:groupContext="shape" transform="translate(300.481,-68.0315)">
 			<title>Sheet.134</title>
 			<desc>Asset Creation From: Contract Input: Asset Creation Fee UTXO ...</desc>
 			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197" v:verticalAlign="0"/>
-			<v:textRect cx="103.886" cy="678.931" width="207.78" height="104.315"/>
+			<v:textRect cx="103.886" cy="676.881" width="207.78" height="108.416"/>
 			<g id="shadow134-82" v:groupContext="shadow" v:shadowOffsetX="1.22561E-16" v:shadowOffsetY="-2.00157" v:shadowType="1"
 					transform="matrix(1,0,0,1,0,2.00157)" class="st1">
-				<rect x="0" y="626.774" width="207.771" height="104.315" class="st2"/>
+				<rect x="0" y="622.672" width="207.771" height="108.416" class="st2"/>
 			</g>
-			<rect x="0" y="626.774" width="207.771" height="104.315" class="st6"/>
-			<text x="4" y="640.67" class="st7" v:langID="3081"><v:paragraph/><v:tabList/>Asset Creation<v:lf/><v:newlineChar/><tspan
+			<rect x="0" y="622.672" width="207.771" height="108.416" class="st6"/>
+			<text x="4" y="636.57" class="st7" v:langID="3081"><v:paragraph/><v:tabList/>Asset Creation<v:lf/><v:newlineChar/><tspan
 						x="4" dy="2.43em" class="st8">From:<v:tabChar/></tspan><tspan dx="1.641em" class="st10">Contract<v:newlineChar/></tspan><tspan
 						x="4" dy="1.2em" class="st8">Input:<v:tabChar/></tspan><tspan dx="1.75em" class="st8">Asset Creation Fee UTXO<v:newlineChar/></tspan><tspan
 						x="4" dy="1.2em" class="st8">To 1:<v:tabChar/></tspan><tspan dx="1.973em" class="st16">Issuer<v:newlineChar/></tspan><tspan
 						x="4" dy="1.2em" class="st8">Output 1:<v:tabChar/></tspan><tspan dx="0.138em" class="st8">Dust<v:newlineChar/></tspan><tspan
 						x="4" dy="1.2em" class="st8">To 2:<v:tabChar/></tspan><tspan dx="1.973em" class="st17">Operator<v:newlineChar/></tspan><tspan
 						x="4" dy="1.2em" class="st8">Output 2:<v:tabChar/></tspan><tspan dx="0.138em" class="st8">Remainder</tspan></text>		</g>
-		<g id="shape135-100" v:mID="135" v:groupContext="shape" v:layerMember="0" transform="translate(275.236,-117.204)">
+		<g id="shape135-100" v:mID="135" v:groupContext="shape" v:layerMember="0" transform="translate(275.236,-115.153)">
 			<title>Dynamic connector.135</title>
 			<path d="M0 724 L14.68 724" class="st11"/>
 		</g>
@@ -335,7 +335,7 @@
 						x="4" dy="1.2em" class="st8">To 2:<v:tabChar/></tspan><tspan dx="1.973em" class="st17">Operator<v:newlineChar/></tspan><tspan
 						x="4" dy="1.2em" class="st8">Output 2:<v:tabChar/></tspan><tspan dx="0.138em" class="st8">Remainder<v:newlineChar/></tspan><tspan
 						x="4" dy="1.2em" class="st8">Include:<v:tabChar/></tspan><tspan dx="0.749em" class="st8">Vote Count</tspan></text>		</g>
-		<g id="shape220-240" v:mID="220" v:groupContext="shape" transform="translate(47.9586,-18.375)">
+		<g id="shape220-240" v:mID="220" v:groupContext="shape" transform="translate(47.9586,-14.1732)">
 			<title>Sheet.220</title>
 			<desc>Note: Network fees are not shown. All request actions must pa...</desc>
 			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
