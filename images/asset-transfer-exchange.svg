@@ -106,10 +106,10 @@
 						x="4" dy="1.2em" class="st7">Value 1:<v:tabChar/></tspan><tspan dx="0.582em" class="st7">Dust<v:newlineChar/></tspan><tspan
 						x="4" dy="1.2em" class="st7">To 1:<v:tabChar/></tspan><tspan dx="1.973em" class="st10">Exchange<v:newlineChar/></tspan><tspan
 						x="4" dy="1.2em" class="st7">Value 1:<v:tabChar/></tspan><tspan dx="0.582em" class="st7">Dust<v:newlineChar/></tspan><tspan
-						x="4" dy="1.2em" class="st7">To 2:<v:tabChar/></tspan><tspan dx="1.973em" class="st11">Token Receiver 1<v:newlineChar/></tspan><tspan
+						x="4" dy="1.2em" class="st7">To 2:<v:tabChar/></tspan><tspan dx="1.973em" class="st11">Token Address 1<v:newlineChar/></tspan><tspan
 						x="4" dy="1.2em" class="st7">Value 2:<v:tabChar/></tspan><tspan dx="0.582em" class="st7">Dust<v:newlineChar/><v:tabChar/></tspan><tspan
 						x="46.52" dy="1.202em" class="st7">  </tspan><tspan class="st12">⋮<v:newlineChar/></tspan><tspan x="4"
-						dy="1.201em" class="st7">To N:<v:tabChar/></tspan><tspan dx="1.807em" class="st11">Token Receiver N<v:newlineChar/></tspan><tspan
+						dy="1.201em" class="st7">To N:<v:tabChar/></tspan><tspan dx="1.807em" class="st11">Token Address N<v:newlineChar/></tspan><tspan
 						x="4" dy="1.2em" class="st7">Value N:<v:tabChar/></tspan><tspan dx="0.416em" class="st7">Dust</tspan></text>		</g>
 		<g id="shape135-59" v:mID="135" v:groupContext="shape" v:layerMember="0" transform="translate(252.978,-142.147)">
 			<title>Dynamic connector.135</title>
