@@ -89,6 +89,7 @@ If the smart contract finds that the action is valid, it will issue a Settlement
 
 ####Swap
 An asset swap is when two asset holders conduct an exchange between themselves for another asset. A swap can be between holders of assets on a single smart contract, or between two asset holders with assets managed by different smart contracts. 
+<img src="https://raw.githubusercontent.com/tokenized/docs/master/images/asset-transfer-swap.svg?sanitize=true" alt="Intercontract Atomic Swap">
 The process of conducting a swap is complex and involves multiple messages being passed by each user.
 #####1. Offer
 The first user prepares a swap offering for the second user. In this the first user creates a Transfer Action that outlines which assets they would like to swap and what they would like to exchange for it. This offering is sent to the second party in the exchange. It is possible for more than two token holders to be party to an exchange and for that exchange to involve more than one smart contract. Were this the case, the transfer action template would be sent between all parties in the swap until it was established that the terms were agreeable.
