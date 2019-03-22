@@ -34,27 +34,42 @@ C. In cases where a whitelist is used, any Transfer action will be rejected if i
 
 ##Governance Operations
 A. All Vote actions must be preceded by an Initiative action or a Referendum action.
+
 B. A Ballot Cast action is only valid if it is cast during a vote. The Vote action specifies the time period that a vote is on, the start is the timestamp of the Vote action and the cut off timestamp is specified by the ‘Vote Cut Off Timestamp’ sub-field in the Vote action. The next block to be announced after the timestamp is the last set of transactions that will be included in the count. The smart contract will wait for six confirmations of the last valid block before tallying up the ballots.
+
 C. Ballot Casts are counted as one vote per token as a standard convention. However, vote proposals are free to add additional rules that give some tokens more voting power than others. All of this extra functionality can be added to custom smart contracts.
+
 D. Ballot Cast actions must be responded to by a Ballot Counted action if valid, or a Rejection action if invalid.
+
 E. Result actions must have a preceding Vote action.
+
 F. Result actions tally up the votes specified in all the Ballot Counted actions at the end of the vote. Ballots cast are only valid if the votes was cast by a token owner that owned the token before the valid period specified by the Vote action. Trading votes away after the vote has been announced is not permitted by the smart contract.
 
 ##Enforcement Operations
 A. All Enforcement operations require an Order action sent from the issuer’s address as the initiating action.
+
 B. A Freeze action alerts the affected token owner that the smart contract will be unable to respond to any actions with an affirmative action (Settlement, Vote). All actions will be responded to with a negation (Rejection action).
+
 C. Votes submitted by a token owner whose account is frozen will not be counted in the vote tally.
+
 D. A frozen address can only be unfrozen by a Thaw action.
+
 E. Thaw actions that are not directed at a frozen address will be ignored.
+
 F. Confiscation actions that are not directed at an address with tokens will be rejected.
+
 G. Reconciliation actions will decrement the tokens of the specified type at the targeted address to ensure that the number of outstanding tokens issued by the issuer is maintained across the state of the blockchain. Chained token transfer actions that are broken can result in additional tokens in the system that need reconciling.
 
 ##Messaging Operations
 A. Message actions can be from any address to any other address.
+
 B. Rejection actions are the negative response from a smart contract to indicate that another action is not valid. Actions that have a Rejection action as a response are ignored by the protocol.
 
 ##Registry Operations
 A. All Registry operations that come before an Establishment action are ignored.
+
 B. All Addition actions are on a treated on a first seen basis. All subsequent Addition actions that are repetitions of the first are ignored.
+
 C. An Alteration action must be preceded by an Addition action that is pointed to the same user’s address.
+
 D. All Removal actions must be preceded by a valid Addition action.
