@@ -115,6 +115,7 @@ One order instruction can perform one enforcement action type on one asset, but 
 
 ####Freezing and Thawing Tokens
 To freeze tokens, the issuer must send an Order action that identifies the asset being frozen, the addresses holding that asset upon which the freeze order is to be applied, and the number of tokens from each address that the order is acting upon. In this way, a contract may freeze one or all tokens held by a user.
+<img src="https://raw.githubusercontent.com/tokenized/docs/master/images/asset-enforcement-freeze.svg?sanitize=true" alt="Freezing Assets">
 #####1. Issuing the freeze order
 The issuer first creates an order action which contains all of the pertinant information relating to the tokens being frozen. This includes the Asset type and code for the tokens being frozen, the addresses where they are held, and the quantities being frozen at each address. The order also includes a place for a public key and signature from the authority who created the order being enforced as well as a link to a transaction containing supporting evidence. In some instances where a freeze may only be temporary, there is also a field to determine a Freeze Period.
 #####2. Smart Contract Evaluation, Rejection/Freeze
@@ -123,12 +124,14 @@ If the Smart Contract finds that the order is invalid, it will issue a rejection
 If the Smart Contract finds that the order is valid, it will respond by creating a 'Freeze Action' which it will send onto the blockchain. Once the freeze action has been sent, the users wallets should flag that their assets have been frozen and not allow them to attempt any transfer actions. The freeze goes into effect the moment the Smart Contract has validated and responded to the freeze action. The contract does not need for the action to be propagated across the network or confirmed in a block for the freeze to take effect and can immediately begin rejecting actions that operate on frozen assets.
 So that the action can be tracked from 'Order' to 'Enforcement', rather than including references to the order transaction in the freeze action, the smart contract simply creates the Freeze action using the same UTXO that the Order action was sent with. By doing this there can be no question that the action is in response to a particular order.
 #####3. Thawing tokens
+<img src="https://raw.githubusercontent.com/tokenized/docs/master/images/asset-enforcement-thaw.svg?sanitize=true" alt="Thawing Assets">
 For tokens that do not have an automatic time out on the thaw action, or upon which the freeze action is able to be lifted, the issuer must create a an 'Order Action' that instructs the smart contract to thaw the tokens and send it to the smart contract. The order contains the same set of information as the freeze action, including the address list, token quantities, transaction reference to the enforcement order and however the tokens being referenced are the ones having the freeze action lifted.
 The Smart Contract will again spend the receiving UTXO into a 'Thaw Action' which repeats the list of addresses and token quantities being thawed so that wallets can update details to their users.
 Once the Smart Contract has issued the thaw action, token transfers can begin immediately. 
 
 ####Confiscating Tokens
 The process of confiscating a token is predicated on the legal right of the issuer to perform the confiscation action. Issuers must have the right to confiscate the tokens either due to malfeasance on the part of the token holder, or through the terms and conditions of the smart contract itself.
+<img src="https://raw.githubusercontent.com/tokenized/docs/master/images/asset-enforcement-confiscation.svg?sanitize=true" alt="Confiscating Assets">
 Once the issuer has established that they have the need and the right to confiscate tokens, the process is straight forward.
 #####1. Issuing the Confiscation Order
 The Confiscation order comes in the form of an Order action that details the AssetID of the token being confiscated, the authority who has determined that the tokens must be confiscated, their signature and public key and copies of or links to the legal documentation regarding the confiscation event. 
@@ -145,6 +148,7 @@ A Confiscation action cannot be reversed and would be regarded as the final outc
 ####Reconciling Token balances
 In the rare event of a failure on the Bitcoin network that causes Tokenized transactions to be lost, the action used to update the smart contract to reflect a new state is called 'Reconciliation'.
 A reconciliation is an order from the Issuer to the smart contract that reflects a new state of ownership for the asset. The reconciliation must balance meaning that at the end of a reconciliation, the total number of tokens attached to the asset cannot change.
+<img src="https://raw.githubusercontent.com/tokenized/docs/master/images/asset-enforcement-reconciliation.svg?sanitize=true" alt="Reconciling Assets">
 The process of reconciling a contract is as follows:
 #####1. Issuing the Reconciliation Order
 The Reconciliation order comes in the form of an Order action that details the AssetID of the token being reconciled, documentation relating to the reasons for the reconciliation and a full set of balances for the updated state of any accounts impacted by the reconciliation action.
