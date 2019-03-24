@@ -52,3 +52,4 @@ Asset Types:
     asset/currency: "Currency"
 Examples:
   pages:
+    example/alice-goes-to-the-movies: "Alice Goes to the Movies"
