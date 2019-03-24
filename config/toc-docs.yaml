@@ -52,4 +52,5 @@ Asset Types:
     asset/currency: "Currency"
 Examples:
   pages:
+    example/tokenized-transfers: "Different types of tokenized transfers"
     example/alice-goes-to-the-movies: "Alice Goes to the Movies"
