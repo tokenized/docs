@@ -1,6 +1,6 @@
 ##Transferring Tokens to a Single Receiver
-The act of transferring tokens can become fairly complicated when there are multiple parties and contracts involved however the final outcome is always captured in just two on-chain transactions:
-1. Tranfer Action (request)
+The act of transferring tokens can become fairly complicated when there are multiple parties and contracts involved, however, the final outcome is always captured in just two on-chain transactions:
+1. Tranfer Action (Request)
 2. Settlement Action (Response)
 In its simplest form, a transfer is an action between 2 parties which is validated by a smart contract.
 In this example, a token issuer will send 100 tokens from its own balance to a receiver. This event is initiated by the issuer through the creation of a transfer action detailing the receiver's address and the number of tokens they wish to send.
