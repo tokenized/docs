@@ -4,7 +4,7 @@ When a tokenized asset is created, it includes a payload that defines the metada
 
 For the initial release of the Tokenized platform, the following 5 asset types will be available:
 
-## 1. [COU -Coupons](../assets/cou)
+## 1. [COU - Coupons](../assets/cou)
 
 Coupons represent an asset that gives the bearer a right to procure a good or service with terms that are different to those under which someone without a coupon would need to agree to. This may include a discounted price, longer warranty, free installation or any other add-on or benefit.
 
