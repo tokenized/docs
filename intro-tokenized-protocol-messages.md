@@ -10,7 +10,7 @@ Responses to messages are also sent on-chain. A response is either a confirmatio
 
 ## Messages
 
-The protocol is comprised of 29 separate action messages which are broken up into 7 groups as defined below. With these actions, Tokenized provides a complete platform for the issuance, management and use of any type of digitized asset that can be created.
+The protocol is comprised of 26 separate action messages which are broken up into 7 groups as defined below. With these actions, Tokenized provides a complete platform for the issuance, management and use of any type of digitized asset that can be created.
 
 ### 1. Contract actions
 
