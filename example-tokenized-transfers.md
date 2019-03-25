@@ -35,8 +35,9 @@ Conducting an atomic swap using tokenized is another more complicated transactio
 To begin, the two token holders agree to a transaction between themselves. The first token holder builds a partially complete transaction which has the full details of the exchange except for the second party's receiving address.
 <img src="https://raw.githubusercontent.com/tokenized/docs/master/images/atomic-swap-transfer-template.svg?sanitize=true" alt="Atomic Swap Transfer Action Template" align="middle">
 The second party then fills in the missing details and signs the transaction before sending it back to the first party, who then countersigns and sends the transaction onto the network.
-<img src="https://raw.githubusercontent.com/tokenized/docs/master/images/atomic-swap-settlement.svg?sanitize=true" alt="Atomic Swap Settlement" align="middle">
+<img src="https://raw.githubusercontent.com/tokenized/docs/master/images/atomic-swap-transfer-final.svg?sanitize=true" alt="Atomic Swap Transfer Action Final" align="middle">
 Once it is received by the Smart Contracts, the first contract listed in the Transfer action builds a settlement transaction template. Because it knows which UTXO the other smart contract is going to use, it can pre-sign the entire contract before sending it on, reducing the number of times it needs to be handled to just one. The second smart contract receives the full settlement, signed by the first contract, and must only review that the token quantities in the settlement action match what was agreed to in the transfer action, and that the addresses and fees are all correct. It then signs the transaction and sends it onto the network, completing the swap.
 In this example, Participant 1 is is sending 100 of it's 150 Token 1 to Participant 2 (who previously had none) in exchange for 20 of its Token 2 (all of them). Participant 1 already has 10 of Token 2, leaving its final balance at 30.
+<img src="https://raw.githubusercontent.com/tokenized/docs/master/images/atomic-swap-settlement.svg?sanitize=true" alt="Atomic Swap Settlement" align="middle">
 
 
