@@ -23,7 +23,7 @@ Actions:
     protocol/asset-definition: "Asset Definition"
     protocol/asset-creation: "Asset Creation"
     protocol/asset-modification: "Asset Modification"
-    protocol/transfer: "transfer"
+    protocol/transfer: "Transfer"
     protocol/settlement: "Settlement"
     protocol/initiative: "Initiative"
     protocol/referendum: "Referendum"
