@@ -31,7 +31,7 @@ Tokenized transactions are build by compiling the token data as a list of fields
 
 To assemble an OP_RETURN packet, the first byte is always the OP_RETURN opcode (0x6a).
 
-The second byte is a PUSHDATA instruction. The PUSHDATA instruction can be variable depending on the number of bytes in the data packet being pushed into the output. It is possible to perform multiple pushes in a single OP_RETURN output, allowing the output to have multiple fields of different lengths. There are always 2 pushdata operations in a Tokenized operation. The first carries the "Tokenized" protocol identifer (tokenized.com), and the second carries the remainder of the data in the packet. This can be up to 99kB of data with the current BitcoinSV network capability, but will eventually allow contracts of up to 4GB to be built.
+The second byte is a PUSHDATA instruction. The PUSHDATA instruction can be variable depending on the number of bytes in the data packet being pushed into the output. It is possible to perform multiple pushes in a single OP_RETURN output, allowing the output to have multiple fields of different lengths. There are always 2 pushdata operations in a Tokenized operation. The first carries the "Tokenized" protocol identifer (tokenized.com), and the second carries the remainder of the data in the packet. This can be up to 99kB of data with the current BitcoinSV network capability, but as the Bitcoin protocol is returned to the Version 0.1 platform the removal of restrictions will allow contracts of up to 4GB to be built.
 
 ### Using PUSHDATA
 

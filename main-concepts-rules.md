@@ -30,13 +30,13 @@ In practice this means that the contract must receive at least enough money to s
 4. The Asset Definition action must come from the issuer’s address, which is set by the input address on the valid Contract Offer action.
 5. Only one Asset Creation (Rev.0) action can exist per AssetID, per Contract address.
 6. All additional revisions of an Asset Creation action must be preceded by an Asset Modification action initiated by the issuer’s public address.
-7. A Contract’s public address can have an unlimited number of Asset Creation actions but each one must have a unique Asset Code. This property allows for an ‘unlimited’ amount of non-fungible assets to be associated and controlled by one Contract address.
+7. A Contract’s public address can have an unlimited number of Asset Creation actions but each one must have a unique Asset Code. This property allows for a practically unlimited amount of non-fungible assets to be associated and controlled by each Contract.
 8. The first Asset Creation action assigns the ownership of all tokens created to the issuer.
 9. Asset Creation actions are limited to a quantity of non-fungible assets specified by the Contract Formation in subfield ‘Restricted Qty’. Restricted Qty refers to the number of non-fungible assets that are allowed to be associated with the contract. However, each non-fungible asset can have many fungible tokens associated to it. The Restricted Qty does not restrict how many tokens per asset, only how many asset types per contract.
 
 ## Transfer Operations
 
-1. All Transfer operations must be in reference to an Asset Code specified by a valid Asset Creation action.
+1. All Transfer operations must be in reference to an Asset ID specified by a valid Asset Creation action.
 2. All Transfer actions must be responded to by a succeeding Settlement action.
 3. In cases where a whitelist is used, any Transfer action will be rejected if it would send tokens to a public address not on the whitelist. As mentioned above, this is to ensure KYC/AML compliance is adhered to. All token owners must have their tokens stored at a public address on the whitelist.
 

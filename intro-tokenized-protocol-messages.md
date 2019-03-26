@@ -1,6 +1,6 @@
 # Tokenized Protocol Messages
 
-The tokenized protocol builds upon the original Tokeda Token management system defined by Joannes Vermorel. It is what is called a fire and forget protocol where each token operation is sent onto the blockchain and must be subsequently confirmed as valid by a Tokenized smart contract agent. Confirmation is a 3 step process which is as folows:
+The tokenized protocol builds upon the original Tokeda Token management system defined by Joannes Vermorel. It is what is called a Request/Response protocol where each request action is sent onto the blockchain and must be subsequently confirmed as valid by a Tokenized smart contract agent. Confirmation is a 3 step process which is as folows:
 
 1. Receive and unpack message
 2. Evaluate message instruction in terms of contract rules
@@ -59,7 +59,7 @@ Enforcement actions allow the token issuer or any user with enforcement permissi
 
 ### 6. Registry actions
 
-Registry actions allow a contract issuer to set up and manage whitelists for contracts that require KYC records to be managed for trade. When a registry is in use for a particular asset, only users who have been recorded in the registry will be permitted to hold or exchange that asset.
+Registry actions allow a contract issuer to set up and manage whitelists and blacklists for contracts that require KYC records to be managed for trade. When a KYC registry is in use for a particular asset, only users who have been recorded as eligible in the registry will be permitted to hold or exchange that asset.
 
 * [Establishment](../protocol/establishment)
 * [Addition](../protocol/addition)

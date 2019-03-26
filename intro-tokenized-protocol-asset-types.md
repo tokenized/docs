@@ -14,11 +14,11 @@ Tokenized loyalty points allow a merchant or business to reward repeat customers
 
 ## 3. [MEM - Membership](../assets/mem)
 
-A membership token is a token that is usually handed out in a quantity of one which confers upon their bearers the right to access a members only zone of a business. This might include entry to a physical location such as a gym or club, or entry to a restricted part of a website such as a forum or members only zone.
+A membership token is a token that is usually handed out in a quantity of one which confers upon their bearers the right to access premium tiers of service offered by a business. This might include entry to a physical location such as a gym or club, or entry to a restricted part of a website such as a forum or members only zone.
 
 ## 4. [SHC - Common Share](../assets/shc)
 
-A common share is the base security that is issued in most IPOs and STOs. It generally has shareholder rights attached to it such as the ability to vote in ballots and to create initiatives.
+A common share is the base structure for equity securities issued by companies. It generally has shareholder rights attached to it such as the ability to vote in ballots and to create initiatives.
 
 ## 5. [TIC - Admission Ticket](../assets/tic)
 

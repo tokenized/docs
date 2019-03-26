@@ -15,7 +15,7 @@ The Tokenized Static Contract framework simply provides an easy and low cost way
 
 ## Smart Contracts
 
-A Smart Contract is a contract which is managed by a Tokenized agent using the Tokenized protocol. This is a dynamic asset allocator which can be used for the distribution and management of tokens, tickets and other types of asset using the Tokenized platform.
+A Smart Contract is a contract which is managed by an autonomous agent using the Tokenized protocol. This is a dynamic asset allocator which can be used for the distribution and management of tokens, tickets and other types of asset using the Tokenized platform.
 
 ### Contract Parties
 
@@ -24,11 +24,11 @@ There are two parties involved in the creation of a tokenized smart contract. Th
 1. The issuer
 2. The Smart Contract Operator
 
-It is possible for the issuer and the smart contract operator to be the same entity, however it is expected that this will only be the case for a minority of contracts that operate using platforms based on the Tokenized protocol.
+It is possible for the issuer and the smart contract operator to be the same entity.
 
 In most cases, the Issuer will make use of a smart contract agent and services provided by a third party to build and operate their smart contract. These third party providers will likely also provide the necessary legal and financial knowledge to ensure that tokens issued on their platform are done in such a way that they are valid, legal and meaningful.
 
-For this reason, building contracts using Tokenized requires the same level of foresight and preparation as that required for the creation of a similarly structured off-chain device.
+For this reason, building contracts using Tokenized requires the same level of foresight and preparation as that required for the creation of a similarly structured off-chain document.
 
 ## Tokenized Smart Contract Agent
 

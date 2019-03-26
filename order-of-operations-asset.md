@@ -77,7 +77,7 @@ Once the vote is over (time limited) the smart contract counts the votes and pub
 
 #### 6. Asset Modification
 
-If the successful motion requires any changes to be made to the asset, the Issuer must issue a new asset modification action with the updated details and a new version number for the asset. This is not something that happens automatically and the smart contract will not allow the Issuer to change fields that it is not authorised to change without authorisation unless the issuer includes a pointer to a vote result authorising the change of that item.
+If the successful motion requires any changes to be made to the asset, the Issuer must issue a new asset modification action with the updated details and a new version number for the asset. This is not something that happens automatically and the smart contract will not allow the Issuer to change fields that it is not permitted to change unless the issuer includes a pointer to a vote result authorising the change of that item.
 
 #### 7. Rejection/Asset Creation
 
@@ -126,11 +126,11 @@ The process has 5 steps:
 
 ##### 1. Purchaser decides on tokens to purchase
 
-The token purchaser views the tokens that are for sale by the vendor and decides on which token or tokens they would like to purchase. Each asset type will have its own prices, and the purchaser can purchase multiple quantities of each asset type. Once the purchaser has assembled their list of desired assets, they notify the smart contract operators of their intention to buy.
+The token purchaser views the tokens that are for sale by the token seller and decides on which token or tokens they would like to purchase. Each asset type will have its own prices, and the purchaser can purchase multiple quantities of each asset type. Once the purchaser has assembled their list of desired assets, they notify the smart contract operators of their intention to buy.
 
 ##### 2. Issuer creates template to send to purchaser
 
-The issuer creates a transaction template for the purchase of the tokens. This template includes an unsigned input from the token issuer as well as a pre-constructed Transfer action in the correct index to allow the user to add their own inputs and a single change output to the transaction. The user can move the OP_RETURN from its index if their wallet needs to send change to more than one address however this would be uncommon. This can be sent to the user in a URI, as an email, in an on-chain Message Action or by any other method that allows for the simple exchange of hexadecimal messages. As part of a buy limit order, the purchaser may buy tokens from more than one offering party in a single purchase. This will be handled by the exchange using multisig inputs controlling tokens for sale. Users selling tokens will input their desired price range and the exchange will pair them with buyers. The issuer can include their own change output which will allow them to set and pay the miner fee, as well as details of the fees and levies paid by the user to conduct the exchange.
+The issuer creates a transaction template for the purchase of the tokens. This template includes an unsigned input from the token issuer as well as a pre-constructed Transfer action. This can be sent to the user in a URI, as an email, in an on-chain Message Action or by any other method that allows for the simple exchange of hexadecimal messages. The issuer can also include their own change output which will allow them to set and pay the miner fee, as well as details of the fees and levies paid by the user to conduct the exchange.
 
 ##### 3. Purchaser adds inputs and signs
 Once the purchaser has received the template, their wallet will add enough inputs to satisfy the needs of the purchase, including adding their own change output. The purchaser then signs their inputs using SIGHASH_ALL which locks the transaction, preventing further change. This partially signed transaction is then transmitted back to the issuer, again via any suitable method for sending hexadecimal information.
