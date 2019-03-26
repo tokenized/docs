@@ -16,7 +16,7 @@ Order of Operations:
     order-of-operations/asset: "Asset"
 Actions:
   pages:
-    protocol/contract-offer: "Contract offer"
+    protocol/contract-offer: "Contract Offer"
     protocol/contract-formation: "Contract Formation"
     protocol/contract-amendment: "Contract Amendment"
     protocol/static-contract-formation: "Static Contract Formation"

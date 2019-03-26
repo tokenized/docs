@@ -6,26 +6,26 @@ Some transactions (contract offer, exchange, atomic swap) require multiple input
 
 Transactions that impact balances or the contract state always include a timestamp to ensure that even in the event of a block re-organisation that the contract actions can be restored in the correct order.
 
-## Building a transaction
+## Building a Transaction
 
 Tokenized transactions are build by compiling the token data as a list of fields and appending them to each other as a hexadecimal string. There are multiple different data formats used in Tokenized:
 
 1. String - An ascii string
-2. Text - Text in UTF-8 format (the text format is intended to accomodate UTF-8, UTF-16, UTF-32, Unicode and ASCII formats however only UTF-8 is currently supported)
-3. uint64 - A 64 bit unsigned integer
-4. uint32 - A 32 bit unsigned integer
-5. uint16 - A 16 bit unsigned integer
-6. uint8 - An 8 bit unsigned integer
-7. varchar32 - A variable length datum with a 4 byte field at the beginning that contains its length in uint32 format
-8. varchar16 - A variable length datum with a 2 byte field at the beginning that contains its length in uint16 format
-9. varchar8 - A variable length datum with a 1 byte field at the beginning that contains its length in uint8 format
-10. Float32 - A 32 bit floating point number
-11. Time - 64 bit unix epoch time (milliseconds since 0:00:00, Jan 1 1970)
-12. Binary - A variable byte length field for supporting binary flags
-13. Sha256 - A SHA256 hash
-14. OPCODE - Script OPCODES - Limited to push instructions (0-75 byte push, OP_PUSHDATA1, OP_PUSHDATA2, OP_PUSHDATA4)
-15. PUSHDATA_LENGTH - Length data for OPCODES that require secondary information regarding the length of the data packet
-16. Payload - The token payload is an additional packet of data made that represents the details of the token. Each token type has its own payload.
+1. Text - Text in UTF-8 format (the text format is intended to accomodate UTF-8, UTF-16, UTF-32, Unicode and ASCII formats however only UTF-8 is currently supported)
+1. uint64 - A 64 bit unsigned integer
+1. uint32 - A 32 bit unsigned integer
+1. uint16 - A 16 bit unsigned integer
+1. uint8 - An 8 bit unsigned integer
+1. varchar32 - A variable length datum with a 4 byte field at the beginning that contains its length in uint32 format
+1. varchar16 - A variable length datum with a 2 byte field at the beginning that contains its length in uint16 format
+1. varchar8 - A variable length datum with a 1 byte field at the beginning that contains its length in uint8 format
+1. float32 - A 32 bit floating point number
+1. Timestamp - Nanoseconds since 0:00:00, Jan 1 1970. 64 bits.
+1. Binary - A variable byte length field for supporting binary flags
+1. Sha256 - A SHA256 hash
+1. OPCODE - Script OPCODES - Limited to push instructions (0-75 byte push, OP_PUSHDATA1, OP_PUSHDATA2, OP_PUSHDATA4)
+1. PUSHDATA_LENGTH - Length data for OPCODES that require secondary information regarding the length of the data packet
+1. Payload - The token payload is an additional packet of data made that represents the details of the token. Each token type has its own payload.
 
 ## Assembling OP_RETURN packet
 
