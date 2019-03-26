@@ -1,15 +1,15 @@
 ##Tokenized Contract Formation
-A Tokenized contract is formed when a token Issuer presents a valid 'Contract Offer' action to a Smart Cntract. The Smart Contract checks only that the rules proposed in the offer are compliant with its logic, but the legal and regulatory aspects of dealing with the assets being created must be pre-determined and managed by the Issuer to ensure the contract operates within all applicable laws and regulations.
+A Tokenized contract is formed when a token Issuer presents a valid 'Contract Offer' action to a Smart Contract. The Smart Contract checks only that the rules proposed in the offer are compliant with its logic, but the legal and regulatory aspects of dealing with the assets being created must be pre-determined and managed by the Issuer to ensure the contract operates within all applicable laws and regulations.
 
 ###1. Contract Offer
-To create a Contract Offer, the Contract Issuer must prepare an 'Offer' action that contains all of the required information such as:
+To create a Contract Offer, the Contract Issuer must prepare an action that contains all of the required information such as:
 * Contract name
 * Governing Law
 * Jurisdiction
 * Contract rules, voting systems
 * Detail of the issuing entity/entities including key personnel, addresses etc.
 Included with the offer is either a hash and a URL linking to a contract file, or when possible, the entire contract file itself as a Markdown formatted file or PDF.
-The contract offer action must be signed by both the Issuer and the Smart Contract Operator, so the issuer first builds a template transaction which it sends to the Smart Contract Operator:
+The Contract Offer action must be signed by both the Issuer and the Smart Contract Operator, so the issuer first builds a template transaction which it sends to the Smart Contract Operator:
 <img src="https://raw.githubusercontent.com/tokenized/docs/master/images/contract-offer-action-template.svg?sanitize=true" alt="A contract offer action template" align="middle">
 If the contract meets the Smart Contract Operator's requirements, they will add an input from their own wallet, add the change outputs they need and sign the Contract Offer using SIGHASH_ALL before sending it back to the Issuer. Once the issuer has reviewed the Smart Contract Operator's changes, they can sign their own input (or inputs) using SIGHASH_ALL and send the transaction onto the network.
 <img src="https://raw.githubusercontent.com/tokenized/docs/master/images/contract-offer-action-final.svg?sanitize=true" alt="Final contract offer action" align="middle">
