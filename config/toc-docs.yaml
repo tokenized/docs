@@ -14,6 +14,11 @@ Order of Operations:
   pages:
     order-of-operations/contract: "Contract"
     order-of-operations/asset: "Asset"
+Examples:
+  pages:
+    example/tokenized-contract-formation: "Formation and modification of Tokenized contracts"
+    example/tokenized-transfers: "Different types of tokenized transfers"
+    example/alice-goes-to-the-movies: "Alice Goes to the Movies"
 Actions:
   pages:
     protocol/contract-offer: "Contract Offer"
@@ -50,7 +55,3 @@ Asset Types:
     asset/share-common: "Common Share"
     asset/ticket-admission: "Admission Ticket"
     asset/currency: "Currency"
-Examples:
-  pages:
-    example/tokenized-transfers: "Different types of tokenized transfers"
-    example/alice-goes-to-the-movies: "Alice Goes to the Movies"
