@@ -19,3 +19,20 @@ The contract also adds two additional fields
 <img src="https://raw.githubusercontent.com/tokenized/docs/master/images/asset-creation-action.svg?sanitize=true" alt="An Asset Creation action" align="middle">
 
 ##Tokenized Asset Modification
+To modify a Tokenized asset, the issuer must first build an 'Asset Modification' action which contains the necessary infomration required for the Smart Contract to authorise and issue responses that update the asset properties.
+The action contains the Asset Type and Asset Code, which make up the Asset ID. These fields cannot be modified.
+Following on from these is the asset revision, which is incremented by 1 each time the asset is updated. An Asset Modification request that has a version number that isn't in sequence will be rejected.
+Subsequent to these fields, the modifications to the asset are contained in an array of objects, each of which has the following information:
+* The field index of the contract element being changed
+* The element of the field (for to identify the index number of the element within an array - complex types only)
+* The Sub Field Index (to identify the field within the object in the array - complex types only)
+* An instruction on whether to add or delete an element (for arrays)
+* The new data being placed into the specified index
+For asset modifications that require a vote to be passed, the TXID of a Result action showing a positive vote outcome for the change must be added as the final data item in the Asset Modification action.
+<img src="https://raw.githubusercontent.com/tokenized/docs/master/images/asset-modification-action.svg?sanitize=true" alt="Asset Modification action" align="middle">
+
+###2. Contract Formation
+When the contract sees the Contract Amendment action land in its wallet, it evaluates the action and looks to ensure that the modifications are valid. 
+If the contract determines that the amendment is valid, it issues a full Contract Formation action including the full details of the contract, the updated version number and a new timestamp.
+From this moment, all transaction requests to the contract must abide by the amended rules.
+<img src="https://raw.githubusercontent.com/tokenized/docs/master/images/asset-creation-action-amendment.svg?sanitize=true" alt="Updated Contract Formation action" align="middle">
