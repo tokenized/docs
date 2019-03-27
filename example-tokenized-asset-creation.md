@@ -20,6 +20,8 @@ The contract also adds two additional fields
 
 ##Tokenized Asset Modification
 To modify a Tokenized asset, the issuer must first build an 'Asset Modification' action which contains the necessary infomration required for the Smart Contract to authorise and issue responses that update the asset properties.
+
+###1. Asset Modification
 The action contains the Asset Type and Asset Code, which make up the Asset ID. These fields cannot be modified.
 Following on from these is the asset revision, which is incremented by 1 each time the asset is updated. An Asset Modification request that has a version number that isn't in sequence will be rejected.
 Subsequent to these fields, the modifications to the asset are contained in an array of objects, each of which has the following information:
