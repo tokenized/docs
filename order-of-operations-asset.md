@@ -47,19 +47,18 @@ The asset modification action includes details of any changes that are being mad
 If the modifications being requested are outside of the rules allowed by the smart contract, the agent will respond with a Rejection action. If the modification is analysed and is ok, the Smart Contract responds with an Asset Creation action which is the acknowledgement from the smart contract that the asset has been updated. The creation action contains a new full copy of all asset details and the new version number.
 
 <a name="modification-by-vote"></a>
-## Modification by vote
+### Modification by vote
 
-The following lays out the process of asset modification by vote.
+There are two ways in which an Asset Modification by vote can be brought forth. 
+1. Referendum (called by the Issuer)
+2. Initiative (called by any holder of a token that has voting rights, subject to their payment of the initiative fee)
 
-<img src="https://raw.githubusercontent.com/tokenized/docs/master/images/asset-modification-by-vote.svg?sanitize=true" alt="Asset Modification by Vote">
+Both are initiated using the Proposal action. 
+<img src="https://raw.githubusercontent.com/tokenized/docs/master/images/asset-amendment-by-vote.svg?sanitize=true" alt="Asset Modification by Vote">
 
-### 1A. Referendum
+#### 1. Proposal
 
-A referendum is when the Issuer issues an intent to vote to the smart contract. The smart contract will evaluate the issues being voted on (modification etc) and make sure that those which result in changes to any assets do not violate the rules.
-
-### 1B. Initiative
-
-An initiative is the method used for an asset owner to propose a vote. There is a significant cost attached to the initiative action as conducting a vote is a costly and disruptive exercise.
+The proposal action is sent to the Smart Contract which will evaluate the issues being voted on (amendments etc) and make sure that those which result in changes to the smart contract do not violate the rules.
 
 ### 2. Vote
 

@@ -33,47 +33,36 @@ A unilateral amendment takes place when the contract issuer makes a change to th
 <img src="https://raw.githubusercontent.com/tokenized/docs/master/images/contract-amendment-unilateral.svg?sanitize=true" alt="Unilateral Contract Amendment">
 
 #### 1. Contract Amendment
-
 The contract amendment action includes details of any changes that are being made to a smart contract. One amendment action can create multiple changes to a contract. Inside the action these are listed as individual items referenced to their position in the contract formation action, and the new values to be used.
 
 #### 2. Contract Formation
-
 The amendment action is followed by a Contract Formation action which is the acknowledgement from the smart contract that the contract has been updated. The formation action contains a new full copy of all contract details updated to the new version number.
 
 ### Amendment by vote
+There are two ways in which a contract amendment by vote can be brought forth. 
+1. Referendum (called by the Issuer)
+2. Initiative (called by any holder of a token that has voting rights, subject to their payment of the initiative fee)
 
-There are two ways in which a contract amendment by vote can be brought forth.
-
+Both are initiated using the Proposal action. 
 <img src="https://raw.githubusercontent.com/tokenized/docs/master/images/contract-amendment-by-vote.svg?sanitize=true" alt="Contract Amendment by Vote">
 
-#### 1A. Referendum
-
-A referendum is when the Issuer issues an intent to vote to the smart contract. The smart contract will evaluate the issues being voted on (amendments etc) and make sure that those which result in changes to the smart contract do not violate the rules.
-
-#### 1B. Initiative
-
-An initiative is the method used for an asset owner to propose a vote. There is a significant cost attached to the initiative action as conducting a vote is a costly and disruptive exercise.
+#### 1. Proposal
+The proposal action is sent to the Smart Contract which will evaluate the issues being voted on (amendments etc) and make sure that those which result in changes to the smart contract do not violate the rules.
 
 #### 2. Vote
-
 Once the smart contract has received a referendum or initiative action, it evaluates it for validity against the rules of the contract. If the vote is able to go ahead, the smart contract issues a Vote action onto the blockchain.
 
 #### 3. Ballot Cast
-
 When users wallets detect the vote action, they will present the user with a form that displays details of all the options being voted upon and the possible choices. When a user has finished voting, their wallet sends the transaction onto the blockchain for checking by the smart contract. If the options chosen aren't valid, the smart contract will issue a rejection action but this should in most cases be a rare occurrence as wallets will prevent users from entering invalid choices.
 
 #### 4. Ballot Counted
-
 After a user has sent their ballot onto the blockchain, the smart contract confirms that it has received it and that it is valid by issuing their wallet with a Ballot Counted action.
 
 #### 5. Result
-
 Once the vote is over (time limited) the smart contract counts the votes and publishes the result to the blockchain.
 
 #### 6. Contract Amendment
-
 If the successful motion requires any changes to be made to the contract, the Issuer must issue a new Contract Amendment action with the updated details and a new version number for the contract. This is not something that happens automatically and the smart contract will not allow the Issuer to change fields that it is not authorised to change without authorisation unless the issuer includes a pointer to a vote result authorising the change of that item.
 
 #### 7. Rejection/Contract Formation
-
 Once the amendment has been checked against the Smart Contract rules, the Smart Contract will either send a rejection notice in the case that the Issuer is trying to make a change that isn't supported by the necessary motions, or it will issue a Contract Formation action that includes all of the changes made to the smart contract.
