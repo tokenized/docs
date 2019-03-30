@@ -14,7 +14,7 @@ The protocol is comprised of 26 separate action messages which are broken up int
 
 ### 1. Contract actions
 
-Contract actions are used to establish and modify smart contracts that are operated by a smart contract agent. The contract actions are as follows:
+Contract actions are used to establish and modify Smart Contracts that are operated by a Smart Contract agent. The contract actions are as follows:
 
 * [Contract Offer](../protocol/contract-offer)
 * [Contract Formation](../protocol/contract-formation)
@@ -30,17 +30,16 @@ Asset actions are used to create and manage the assets that the contract agent c
 
 ### 3. Transfer actions
 
-Transfer actions are used to move assets from the control of one address to another. A transfer instruction is sent to the Smart Contract agent which responds with either a settlement action, or a rejection message.
+Transfer actions are used to move assets from the control of one address to another. A transfer instruction is sent to the Smart Contract agent which responds with either a Settlement action, or a Rejection message.
 
 * [Transfer](../protocol/transfer)
 * [Settlement](../protocol/settlement)
 
 ### 4. Governance actions
 
-Governance actions allow the issuer and asset owners to manifest changes in the smart contract rules through binding votes created by referendum and initiative actions.
+Governance actions allow the issuer and asset owners to manifest changes in the smart contract rules through binding votes created by Proposal actions.
 
-* [Initiative](../protocol/initiative)
-* [Referendum](../protocol/referendum)
+* [Proposal](../protocol/proposal)
 * [Vote](../protocol/vote)
 * [Ballot Cast](../protocol/ballot-cast)
 * [Ballot Counted](../protocol/ballot-counted)
@@ -50,7 +49,6 @@ Governance actions allow the issuer and asset owners to manifest changes in the 
 
 Enforcement actions allow the token issuer or any user with enforcement permissions to conduct enforcement actions on the assets managed by the Smart Contract. The instructions include fields to include records of enforcement instructions received from authorities to establish the reason for each action.
 
-* [Result](../protocol/result)
 * [Order](../protocol/order)
 * [Freeze](../protocol/freeze)
 * [Thaw](../protocol/thaw)
