@@ -22,7 +22,7 @@ Examples:
     example/tokenized-governance: "Contract governance"
     example/tokenized-enforcement: "Tokenized enforcement actions"
     example/tokenized-messaging: "Tokenized messaging"
-    example/tokenized-registry: "Tokenized registries"
+    example/tokenized-registries: "Tokenized registries"
     example/alice-goes-to-the-movies: "Alice Goes to the Movies"
 Actions:
   pages:
