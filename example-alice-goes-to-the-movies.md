@@ -30,20 +30,17 @@ When Alice's, Bob's and Carol's wallets all see the settlement transaction arriv
 Alice, Bob and Carol meet that evening at the Gigaplex. The first thing they do is head to the Candy Bar.
 
 Bob grabs a medium Popcorn combo, and Carol a choc-top and they go to the counter. Their items have embedded RFID tags in the packaging so the system automatically detects the items they have selected and prepares a transfer request. The kiosk asks Carol if she would like a receipt for an extra $0.01 and she selects Yes.
+The cinema prepares both a Transfer template and a Message action including Carol's receipt. 
 
 <img src="https://raw.githubusercontent.com/tokenized/docs/master/images/candy-bar-transfer-template.svg?sanitize=true" alt="Candy Bar Transfer Template" align="middle">
 
-Carol has eAUD in an account in her Tokenized wallet so the transaction comes together quite simply. Carol provides an input from her eAUD wallet which links the transaction to the eAUD contract.
+Carol has eAUD in an account in her Tokenized wallet so the transaction comes together quite simply. Carol provides an input from her eAUD wallet which links the transaction to the eAUD contract. Carols wallet sends a transaction including the template receipt it received from the Cinema. 
 
 <img src="https://raw.githubusercontent.com/tokenized/docs/master/images/candy-bar-transfer-final.svg?sanitize=true" alt="Candy Bar Final Transfer" align="middle">
 
 The eAUD Contract sees Carol's transfer action arrive in it's wallet and quickly validates the action. Carol has adequate money in her account so it prepares the settlement.
 
 <img src="https://raw.githubusercontent.com/tokenized/docs/master/images/candy-bar-settlement.svg?sanitize=true" alt="Candy Bar Settlement" align="middle">
-
-Once the Cinema sees that the transaction has been settled, it prepares a receipt for Carol and packages it into a Message action which it sends to Alice's wallet.
-
-<img src="https://raw.githubusercontent.com/tokenized/docs/master/images/carols-receipt-message.svg?sanitize=true" alt="Candy Bar Receipt" align="middle">
 
 When Alice goes to the candy bar, she grabs her combo and heads to the checkout. It scans her items and offers a pre-built transaction, but alice selects the 'Pre-Purchased' option.
 
