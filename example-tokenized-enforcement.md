@@ -36,11 +36,24 @@ After the Smart Contract has determined that the thaw order is valid, it respond
 <img src="https://raw.githubusercontent.com/tokenized/docs/master/images/thaw-action.svg?sanitize=true" alt="Thaw action" align="middle">
 
 ###Confiscating Tokens
+Token confiscation actions are used to move tokens from an address without the need for a signed message from the token owner. A confiscation action can be applied to tokens from multiple addresses at once, however all confiscated tokens must be sent to a single address. A confiscation action can be performed on frozen tokens. Once moved into the new address, those tokens can be moved unless a pre-emptive Freeze order is placed on the receiving address to lock down the received tokens.
 Confiscating tokens is a two step process.
 
 ####1 Order (Confiscation)
-A Confiscation order can be used to move tokens without the need for a signed transaction from the private key that holds the tokens. A confiscation can be applied to multiple addresses in a single action, however all confiscated tokens must be delivered to a single receiving address.
-<img src="https://raw.githubusercontent.com/tokenized/docs/master/images/order-action-thaw.svg?sanitize=true" alt="Order action (Thaw)" align="middle">
+A Confiscation order can be used to move tokens without the need for a signed transaction from the private key that holds the tokens. A confiscation can be applied to multiple addresses in a single action, however all confiscated tokens must be delivered to a single deposit address.
+<img src="https://raw.githubusercontent.com/tokenized/docs/master/images/order-action-confiscation.svg?sanitize=true" alt="Order action (Thaw)" align="middle">
 ####2. Confiscation
-After the Smart Contract has determined that the confiscation order is valid, it responds by issuing a Confiscation action. The action is sent to all addresses that the confiscation order applies to. As soon as the confiscation action is sent, the Smart Contract updates the balances of all addresses that have had confiscation applied as well as the address to which the confiscated funds will be sent. This address can transact using the tokens immediately.
+After the Smart Contract has determined that the confiscation order is valid, it responds by issuing a Confiscation action. The action is sent to all addresses that the confiscation order applies to. The confiscation order sets a new balance for each address in the order as well as for the deposit address.
 <img src="https://raw.githubusercontent.com/tokenized/docs/master/images/confiscation-action.svg?sanitize=true" alt="Confiscation action" align="middle">
+
+###Reconciliation
+A Reconciliation process is needed when a Smart Contract has received actions that have been lost by the network, or which have been incorrectly assigned by the smart contract due to error. A reconciliation is regarded as a very rare occurrence.
+The Reconciliation applies new balances to a series of addresses. The action must balance. i.e. the number of tokens in the new balances must match the number of tokens previously held.
+Reconciliation is a two step process.
+
+####1 Order (Reconciliation)
+A Reconciliation order can be used to resolve disputes around lost or misapplied transaction which have resulted in incorrect token balances. A Reconciliation can be applied to multiple addresses in a single action.
+<img src="https://raw.githubusercontent.com/tokenized/docs/master/images/order-action-reconciliation.svg?sanitize=true" alt="Order action (Thaw)" align="middle">
+####2. Reconciliation
+After the Smart Contract has determined that the Reconciliation order is valid, it responds by issuing a Reconciliation action. The action is sent to all addresses that the Reconciliation order applies to. The Reconciliation order sets a new balance for each address in the order as well as for the deposit address.
+<img src="https://raw.githubusercontent.com/tokenized/docs/master/images/reconciliation-action.svg?sanitize=true" alt="Reconciliation action" align="middle">

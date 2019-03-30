@@ -16,8 +16,11 @@ Order of Operations:
     order-of-operations/asset: "Asset"
 Examples:
   pages:
-    example/tokenized-contract-formation: "Formation and modification of Tokenized contracts"
+    example/tokenized-contract-formation: "Formation and amendment of Tokenized contracts"
+    example/tokenized-asset-creation: "Creating and modifying assets"
     example/tokenized-transfers: "Different types of tokenized transfers"
+    example/tokenized-governance: "Contract governance"
+    example/tokenized-enforcement: "Tokenized enforcement actions"
     example/alice-goes-to-the-movies: "Alice Goes to the Movies"
 Actions:
   pages:
