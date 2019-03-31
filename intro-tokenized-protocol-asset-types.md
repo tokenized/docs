@@ -2,7 +2,7 @@
 
 When a tokenized asset is created, it includes a payload that defines the metadata that are attached to that particular token or tokens. The tokenized protocol is broad enough that any type of token can be developed and created.
 
-For the initial release of the Tokenized platform, the following 5 asset types will be available:
+For the initial release of the Tokenized protocol, the following 6 asset types will be available:
 
 ## 1. [COU - Coupons](../assets/cou)
 
