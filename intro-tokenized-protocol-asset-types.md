@@ -14,7 +14,7 @@ Loyalty points allow a merchant or business to reward repeat customers with toke
 
 ## 3. [MEM - Membership](../assets/mem)
 
-A membership token is a token that is usually handed out in a quantity of one.  The posession of a membership token signifies the belonging of the bearer to a group.  As a few examples, membership tokens can be used to represent membership in a Board of Directors, a non-profit organization, or even a special interest club.  Membership tokens can allow access to certain rights and priveleges that members of the particular group are entitled.. This might include entry to a physical location such as a gym or club, or entry to a restricted part of a website such as a forum or members only zone.
+A membership token is a token that is usually handed out in a quantity of one.  The possession of a membership token signifies the belonging of the bearer to a defined group.  As a few examples, membership tokens can be used to represent membership in a Board of Directors, a non-profit organization, or even a special interest club.  Membership tokens can allow access to certain rights/privileges that members of the particular group are entitled, as well as any duties/responsibilities. This might include entry to a physical location such as a gym or club, or entry to a restricted part of a website such as a forum or members only zone.
 
 ## 4. [SHC - Common Share](../assets/shc)
 
