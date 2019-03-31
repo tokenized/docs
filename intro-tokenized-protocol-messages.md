@@ -48,7 +48,7 @@ Governance operations allow the issuer and asset owners to manifest changes in t
 
 ### 5. Enforcement Operations
 
-Enforcement operations provide the issuer the tools required to carry out enforcement orders.  These enforcement orders can be at the direction of legal/law enforcement authorities, or simply due to the issuer's own rules or wishes.  The instructions include fields to include records of enforcement instructions received from authorities (eg. court orders/warrants) to establish the justification for each enforcement order.  Enforcement operations will likely work in coordination with authorities and KYC registries that link identity's to addresses.
+Enforcement operations provide the issuer the tools required to carry out enforcement orders.  These enforcement orders can be at the direction of legal/law enforcement authorities, or simply due to the issuer's own rules or wishes.  The instructions include fields to include records of enforcement instructions received from authorities (eg. court orders/warrants) to establish the justification for each enforcement order.  Enforcement operations will likely work in coordination with authorities and KYC registries that link identities to addresses.
 
 * [Order](../protocol/order)
 * [Freeze](../protocol/freeze)
@@ -58,7 +58,7 @@ Enforcement operations provide the issuer the tools required to carry out enforc
 
 ### 6. Registry Operations
 
-Registry operations allow a contract issuer to set up and manage on-chain registers which can be used for any purpose.  Registers do not require a smart contract.
+Registry operations allow a user or issuer to set up and manage on-chain registers which can be used for any purpose.  Registers do not require a smart contract.
 
 * [Establishment](../protocol/establishment)
 * [Addition](../protocol/addition)
