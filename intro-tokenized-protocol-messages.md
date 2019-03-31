@@ -1,43 +1,44 @@
-# Tokenized Protocol Messages
+# Tokenized Protocol Operations
 
-The tokenized protocol builds upon the original Tokeda Token management system defined by Joannes Vermorel. It is what is called a Request/Response protocol where each request action is sent onto the blockchain and must be subsequently confirmed as valid by a Tokenized smart contract agent. Confirmation is a 3 step process which is as folows:
+The Tokenized protocol operates on a request and response mechanism where operations are carried out in 2 steps (except Message and Registry), called 'actions'.  The request and response actions are always initiated by two different entities, the requester, which can be the issuer, user or contract operator (on behalf of the issuer), and the responder, which is the smart contract. Each request action is sent to the blockchain by a user or issuer, and must be subsequently confirmed as valid by the smart contract. A response action is a 3-step process which is as follows:
 
 1. Receive and unpack message
-2. Evaluate message instruction in terms of contract rules
+2. Evaluate action instruction with respect to the contract rules and state
 3. Create and send response
 
-Responses to messages are also sent on-chain. A response is either a confirmation of the action requested, or a rejection message. Any confirmations that make material changes to the contract which need to be evaluated in-order for the contract state to be recalculated also contain embedded timestamps such that the true state of the contract can be truthfully established in the event of a blockchain re-organisation.
+Responses to messages are also sent on-chain. A response is either a confirmation of the action requested, or a rejection message. All confirmation actions result in some change to the state, rules or terms of the contract.  All response actions also have a timestamp embedded in the payload that represents the time that the smart contract first saw and processed the corresponding request action.  These timestamps can be used for rebuilding the contract's state from the block chain, even if there have been block reorganizations. 
 
-## Messages
+## Operations
 
-The protocol is comprised of 26 separate action messages which are broken up into 7 groups as defined below. With these actions, Tokenized provides a complete platform for the issuance, management and use of any type of digitized asset that can be created.
+The protocol is comprised of 25 separate action messages which are broken up into 7 groups as defined below. With these actions, Tokenized provides all of the tools required for the issuance, management and exchange of any type of digitized asset that can be created.
 
-### 1. Contract actions
+### 1. Contract Operations
 
-Contract actions are used to establish and modify Smart Contracts that are operated by a Smart Contract agent. The contract actions are as follows:
+Contract operations are used to establish and modify smart contracts that are operated by a smart contract. Contract operations are made up of the following 4 actions:
 
 * [Contract Offer](../protocol/contract-offer)
 * [Contract Formation](../protocol/contract-formation)
 * [Contract Amendment](../protocol/contract-amendment)
 * [Static Contract Formation](../protocol/static-contract-formation)
 
-### 2. Asset actions
+### 2. Asset Operations
 
-Asset actions are used to create and manage the assets that the contract agent controls. The asset actions are as follows:
+Asset operations are used to create and manage the assets that the smart contract controls. The asset actions are as follows:
+
 * [Asset Definition](../protocol/asset-definition)
 * [Asset Creation](../protocol/asset-creation)
 * [Asset Modification](../protocol/asset-modification)
 
-### 3. Transfer actions
+### 3. Transfer Operations
 
-Transfer actions are used to move assets from the control of one address to another. A transfer instruction is sent to the Smart Contract agent which responds with either a Settlement action, or a Rejection message.
+Transfer operations are used to move assets from the control of one address to another. A transfer instruction is sent to the smart contract which responds with either a Settlement action, or a Rejection message.
 
 * [Transfer](../protocol/transfer)
 * [Settlement](../protocol/settlement)
 
-### 4. Governance actions
+### 4. Governance Operations
 
-Governance actions allow the issuer and asset owners to manifest changes in the smart contract rules through binding votes created by Proposal actions.
+Governance operations allow the issuer and asset owners to manifest changes in the smart contract rules, terms or state through binding votes created by Proposal actions.
 
 * [Proposal](../protocol/proposal)
 * [Vote](../protocol/vote)
@@ -45,9 +46,9 @@ Governance actions allow the issuer and asset owners to manifest changes in the 
 * [Ballot Counted](../protocol/ballot-counted)
 * [Result](../protocol/result)
 
-### 5. Enforcement actions
+### 5. Enforcement Operations
 
-Enforcement actions allow the token issuer or any user with enforcement permissions to conduct enforcement actions on the assets managed by the Smart Contract. The instructions include fields to include records of enforcement instructions received from authorities to establish the reason for each action.
+Enforcement operations provide the issuer the tools required to carry out enforcement orders.  These enforcement orders can be at the direction of legal/law enforcement authorities, or simply due to the issuer's own rules or wishes.  The instructions include fields to include records of enforcement instructions received from authorities (eg. court orders/warrants) to establish the justification for each enforcement order.  Enforcement operations will likely work in coordination with authorities and KYC registries that link identity's to addresses.
 
 * [Order](../protocol/order)
 * [Freeze](../protocol/freeze)
@@ -55,18 +56,18 @@ Enforcement actions allow the token issuer or any user with enforcement permissi
 * [Confiscation](../protocol/confiscation)
 * [Reconciliation](../protocol/reconciliation)
 
-### 6. Registry actions
+### 6. Registry Operations
 
-Registry actions allow a contract issuer to set up and manage whitelists and blacklists for contracts that require KYC records to be managed for trade. When a KYC registry is in use for a particular asset, only users who have been recorded as eligible in the registry will be permitted to hold or exchange that asset.
+Registry operations allow a contract issuer to set up and manage on-chain registers which can be used for any purpose.  Registers do not require a smart contract.
 
 * [Establishment](../protocol/establishment)
 * [Addition](../protocol/addition)
 * [Alteration](../protocol/alteration)
 * [Removal](../protocol/removal)
 
-### 7. Message actions
+### 7. Message Operations
 
-The "Message" action allow users of a smart contract to exchange messages between themselves or the asset issuer. The "Rejection" action is used by the smart contract to reject any actions that do not comply with the rule set in place for the asset the request relates to.
+Message operations allow entities to communicate with each other on-chain. No response is required and the smart contract does not need to be involved.  Messages are used to communicate all types of information, but do not alter the state, rules or terms of the contract and do not require a contract at all.  Messages are categorized into different Message Types which are distinct in the structure of payload fields. The "Rejection" action is used by the smart contract to reject any actions that do not comply with the rule set in place for the asset the request relates to.
 
 * [Message](../protocol/message)
 * [Rejection](../protocol/rejection)
