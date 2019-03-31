@@ -6,7 +6,7 @@ The Tokenized protocol operates on a request and response mechanism where operat
 2. Evaluate action instruction with respect to the contract rules and state
 3. Create and send response
 
-Responses to messages are also sent on-chain. A response is either a confirmation of the action requested, or a rejection message. All confirmation actions result in some change to the state, rules or terms of the contract.  All response actions also have a timestamp embedded in the payload that represents the time that the smart contract first saw and processed the corresponding request action.  These timestamps can be used for rebuilding the contract's state from the block chain, even if there have been block reorganizations. 
+Responses to messages are also sent on-chain. A response is either a confirmation of the action requested, or a rejection message. All confirmation actions result in some change to the state, rules or terms of the contract.  All response actions also have a timestamp embedded in the payload that represents the time that the smart contract first saw and processed the corresponding request action.  These timestamps can be used for rebuilding the contract's state from the blockchain, even if there have been block reorganizations. 
 
 ## Operations
 
