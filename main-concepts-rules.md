@@ -63,6 +63,7 @@ The following lays out a set of rules applicable to different aspects of the tok
 7. Reconciliation actions will decrement the tokens of the specified type at the targeted address to ensure that the number of outstanding tokens issued by the issuer is maintained across the state of the blockchain. Chained token transfer actions that are broken can result in additional tokens in the system that need reconciling.
 8. A Thaw action always references a specific Freeze action and removes its effect from the address(es).
 9. Multiple Freeze actions can be placed on an address.
+10. Freeze actions can only be undone through a Thaw or a Confiscation action. 
 
 ## Message Operations
 
