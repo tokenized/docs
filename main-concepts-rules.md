@@ -4,11 +4,11 @@ The following lays out a set of rules applicable to different aspects of the tok
 
 ## General
 
-* All contract actions must be cash flow neutral. The request action must include enough bitcoin to pay for all costs (dust, contract fees, exchange fees, mining fees, etc.) associated with the response action. In cases where not enough bitcoin has been included, no response action will take place. 
+* All contract actions must be cash flow neutral. The request action must include enough bitcoin to pay for all costs (dust, contract fees, exchange fees, mining fees, etc.) required to generate a response action. In cases where not enough bitcoin has been included, no response action will take place. 
 
-* Smart contracts maintain a small resevoir of satoshis (small multiple of the dust value) at the contract address to use to send back to itself on contract-wide actions.  However, this resevoir will not deplete over time, as all fees will be paid for by the requester.
+* Smart contracts maintain a small resevoir of satoshis (small multiple of the dust value) at the contract address to use to send back to itself on contract-wide actions.  This resevoir will not deplete over time, as all fees will be paid for by the requester.
 
-* Every contract-initiated action must be in response to a user/issuer initiated action. No contract-initiated action will be valid without a preceding ‘request’ action initiated by a user or issuer.
+* Every contract-initiated action must be in response to a user/issuer-initiated action. No contract-initiated action will be valid without a preceding ‘request’ action initiated by a user or issuer.
 
 * All Tokenized actions must be sent to or from a contract’s public address. The contract’s public address is what connects all associated token actions. The only exceptions to this rule are the Messaging action (M1), the Registry actions (R1 - R4) and the Static Contract Formation action (C4).  All of which operate independently of any smart contract. Therefore, for a wallet to track a token, all it has to do is add the token contract’s public address as a watch-only address and monitor for relevant actions.
 
