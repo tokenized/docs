@@ -1,10 +1,10 @@
-##Tokenized Messaging
+## Tokenized Messaging
 The Tokenized protocol includes the capability for all wallets to send messages using the tokenized protocol. Message actions do not elicit any reaction from the Smart contract and are used to convey information not related to changing the status of the Smart Contract.
 There are two Message types used by the protocol:
 1. Message Action
 2. Rejection Action
 
-###1. Message Actions
+### 1. Message Actions
 The Message Action is an open OP_RETURN which can be used to exchange any type of message on the blockchain. This can be anything from:
 * Transaction templates
 * Invoices and receipts
@@ -13,7 +13,7 @@ The Message Action is an open OP_RETURN which can be used to exchange any type o
 Message actions are not read by the Smart Contract and only serve as a service to record data onto the blockchain. The message action format is standardised to ensure that any wallets which follow the Tokenized protocol will be able to identify and parse messages.
 A message may be sent to many addresses at once by appending multiple outputs to the transaction which contains the Message Action.
 
-####Message Types
+#### Message Types
 Messages are identified by Message Type, which is a 32 Byte number allowing for up to 65,535 message types to be developed.
 Moving forward, Tokenized plans to release a suite of pre-formatted message types which will allow contract operators to provide a rich set of default options to contract owners.
 
@@ -27,7 +27,7 @@ Current message types include:
 
 <img src="https://raw.githubusercontent.com/tokenized/docs/master/images/message-action.svg?sanitize=true" alt="Message action" align="middle">
 
-###2. Rejection Actions
+### 2. Rejection Actions
 A rejection action is sent by the Smart Contract in response to a request action that did not conform to the requirements of the Smart Contract. Where possible, the rejection action includes infomration about the issues to enable users to remedy the issue before re-attempting the transaction.
 The rejection message has 'Type' information which relays to the users why their transaction was rejected. This is accompanied by a detailed message constructed by the Smart Contract. 
 All rejection actions are timestamped.
