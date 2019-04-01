@@ -14,6 +14,10 @@ The following lays out a set of rules applicable to different aspects of the tok
 
 * Where a contract operator has been nominated in the Contract Formation action, the contract operator's address will be treated by the smart contract as identical to the issuer's address for the initiation of all request actions.  However, the contract operator cannot transfer tokens that are not held by the contract operator's address.
 
+* Only one Tokenized action per Bitcoin transaction, with the exception of the Message action (M1) which can be included in transactions with other Tokenized actions and in an unlimited quantity.
+
+* The Tokenized action should always be the last output.
+
 ## Contract Operations
 
 1. Every token must have a valid Contract Formation action to be considered a valid token by the protocol.
