@@ -16,58 +16,58 @@ The protocol is comprised of 25 separate action messages which are broken up int
 
 Contract operations are used to establish and modify smart contracts that are operated by a smart contract. Contract operations are made up of the following 4 actions:
 
-* [Contract Offer](../protocol/contract-offer)
-* [Contract Formation](../protocol/contract-formation)
-* [Contract Amendment](../protocol/contract-amendment)
-* [Static Contract Formation](../protocol/static-contract-formation)
+* [Contract Offer](../protocol/contract-offer) (Action Code: C1)
+* [Contract Formation](../protocol/contract-formation) (Action Code: C2)
+* [Contract Amendment](../protocol/contract-amendment) (Action Code: C3)
+* [Static Contract Formation](../protocol/static-contract-formation) (Action Code: C4)
 
 ### 2. Asset Operations
 
 Asset operations are used to create and manage the assets that the smart contract controls. The asset actions are as follows:
 
-* [Asset Definition](../protocol/asset-definition)
-* [Asset Creation](../protocol/asset-creation)
-* [Asset Modification](../protocol/asset-modification)
+* [Asset Definition](../protocol/asset-definition) (Action Code: A1)
+* [Asset Creation](../protocol/asset-creation) (Action Code: A2)
+* [Asset Modification](../protocol/asset-modification) (Action Code: A3)
 
 ### 3. Transfer Operations
 
 Transfer operations are used to move assets from the control of one address to another. A transfer instruction is sent to the smart contract which responds with either a Settlement action, or a Rejection message.
 
-* [Transfer](../protocol/transfer)
-* [Settlement](../protocol/settlement)
+* [Transfer](../protocol/transfer) (Action Code: T1)
+* [Settlement](../protocol/settlement) (Action Code: T2)
 
 ### 4. Governance Operations
 
 Governance operations allow the issuer and asset owners to manifest changes in the smart contract rules, terms or state through binding votes created by Proposal actions.
 
-* [Proposal](../protocol/proposal)
-* [Vote](../protocol/vote)
-* [Ballot Cast](../protocol/ballot-cast)
-* [Ballot Counted](../protocol/ballot-counted)
+* [Proposal](../protocol/proposal) (Action Code: G1)
+* [Vote](../protocol/vote) (Action Code: G2)
+* [Ballot Cast](../protocol/ballot-cast) (Action Code: G3)
+* [Ballot Counted](../protocol/ballot-counted) (Action Code: G4)
 * [Result](../protocol/result)
 
 ### 5. Enforcement Operations
 
 Enforcement operations provide the issuer the tools required to carry out enforcement orders.  These enforcement orders can be at the direction of legal/law enforcement authorities, or simply due to the issuer's own rules or wishes.  The instructions include fields to include records of enforcement instructions received from authorities (eg. court orders/warrants) to establish the justification for each enforcement order.  Enforcement operations will likely work in coordination with authorities and KYC registries that link identities to addresses.
 
-* [Order](../protocol/order)
-* [Freeze](../protocol/freeze)
-* [Thaw](../protocol/thaw)
-* [Confiscation](../protocol/confiscation)
-* [Reconciliation](../protocol/reconciliation)
+* [Order](../protocol/order) (Action Code: E1)
+* [Freeze](../protocol/freeze) (Action Code: E2)
+* [Thaw](../protocol/thaw) (Action Code: E3)
+* [Confiscation](../protocol/confiscation) (Action Code: E4)
+* [Reconciliation](../protocol/reconciliation) (Action Code: E5)
 
 ### 6. Registry Operations
 
 Registry operations allow a user or issuer to set up and manage on-chain registers which can be used for any purpose.  Registers do not require a smart contract.
 
-* [Establishment](../protocol/establishment)
-* [Addition](../protocol/addition)
-* [Alteration](../protocol/alteration)
-* [Removal](../protocol/removal)
+* [Establishment](../protocol/establishment) (Action Code: R1)
+* [Addition](../protocol/addition) (Action Code: R2)
+* [Alteration](../protocol/alteration) (Action Code: R3)
+* [Removal](../protocol/removal) (Action Code: R4)
 
 ### 7. Message Operations
 
 Message operations allow entities to communicate with each other on-chain. No response is required and the smart contract does not need to be involved.  Messages are used to communicate all types of information, but do not alter the state, rules or terms of the contract and do not require a contract at all.  Messages are categorized into different Message Types which are distinct in the structure of payload fields. The "Rejection" action is used by the smart contract to reject any actions that do not comply with the rule set in place for the asset the request relates to.
 
-* [Message](../protocol/message)
-* [Rejection](../protocol/rejection)
+* [Message](../protocol/message) (Action Code: M1)
+* [Rejection](../protocol/rejection) (Action Code: M2)
