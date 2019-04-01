@@ -74,7 +74,7 @@
 						x="4" dy="1.202em" class="st7"> </tspan><tspan class="st10">⋮<v:tabChar/></tspan><tspan dx="3.664em"
 						class="st7">  </tspan><tspan class="st10">⋮<v:newlineChar/></tspan><tspan x="4" dy="1.201em" class="st7">Out N: <v:tabChar/></tspan><tspan
 						dx="1.084em" class="st9">Message Receiver N<v:newlineChar/></tspan><tspan x="4" dy="1.2em" class="st7">Value N:<v:tabChar/></tspan><tspan
-						dx="0.416em" class="st7">Dust<v:newlineChar/><v:newlineChar/></tspan><tspan x="4" dy="2.4em" class="st7">Other outputs: Contract fees (optional), Change, Rejection action </tspan> </text>		</g>
+						dx="0.416em" class="st7">Dust<v:newlineChar/><v:newlineChar/></tspan><tspan x="4" dy="2.4em" class="st7">Other outputs: Contract Fee Refund, Rejection action </tspan> </text>		</g>
 		<g id="shape13-31" v:mID="13" v:groupContext="shape" transform="translate(369.493,-23.3766)">
 			<title>Sheet.13</title>
 			<desc>Rejection Action Details: Address List Rejection type Rejecti...</desc>

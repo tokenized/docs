@@ -69,10 +69,10 @@
 						x="4" dy="2.43em" class="st7">In 1:<v:tabChar/></tspan><tspan dx="2.306em" class="st8">Carol</tspan><tspan
 						class="st8">’</tspan><tspan class="st8">s AUD Account<v:newlineChar/></tspan><tspan x="4" dy="1.2em"
 						class="st7">Out 1: <v:tabChar/></tspan><tspan dx="1.25em" class="st9">AUD Contract<v:newlineChar/></tspan><tspan
-						x="4" dy="1.2em" class="st7">Value 2:<v:tabChar/></tspan><tspan dx="0.582em" class="st7">Dust + Fiat exchange fees<v:newlineChar/></tspan><tspan
-						x="4" dy="1.2em" class="st7">Out 4:<v:tabChar/></tspan><tspan dx="1.528em" class="st10">Cinema</tspan><tspan
+						x="4" dy="1.2em" class="st7">Value 1:<v:tabChar/></tspan><tspan dx="0.582em" class="st7">Contract fees + Response cost<v:newlineChar/></tspan><tspan
+						x="4" dy="1.2em" class="st7">Out 2:<v:tabChar/></tspan><tspan dx="1.528em" class="st10">Cinema</tspan><tspan
 						class="st10">’</tspan><tspan class="st10">s AUD Account<v:newlineChar/></tspan><tspan x="4" dy="1.2em"
-						class="st7">Value 4:<v:tabChar/></tspan><tspan dx="0.582em" class="st7">Dust<v:newlineChar/></tspan><tspan
+						class="st7">Value 2:<v:tabChar/></tspan><tspan dx="0.582em" class="st7">Dust<v:newlineChar/></tspan><tspan
 						x="4" dy="1.2em" class="st7">Other outputs: Change, Transfer action, Message Action</tspan></text>		</g>
 		<g id="shape20-27" v:mID="20" v:groupContext="shape" transform="translate(333.868,-160.139)">
 			<title>Sheet.20</title>

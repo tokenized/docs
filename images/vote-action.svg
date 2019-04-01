@@ -67,10 +67,10 @@
 			<text x="4" y="120.15" class="st6" v:langID="3081"><v:paragraph/><v:tabList/>Transaction Structure<v:newlineChar/><v:newlineChar/><tspan
 						x="4" dy="2.43em" class="st7">In 1:<v:tabChar/></tspan><tspan dx="2.306em" class="st8">Smart Contract<v:newlineChar/></tspan><tspan
 						x="4" dy="1.2em" class="st7">Out 1: <v:tabChar/></tspan><tspan dx="1.25em" class="st8">Smart Contract<v:newlineChar/></tspan><tspan
-						x="4" dy="1.2em" class="st7">Value 1:<v:tabChar/></tspan><tspan dx="0.582em" class="st7">Dust<v:newlineChar/></tspan><tspan
+						x="4" dy="1.2em" class="st7">Value 1:<v:tabChar/></tspan><tspan dx="0.582em" class="st7">Change<v:newlineChar/></tspan><tspan
 						x="4" dy="1.2em" class="st7">Out 2: <v:tabChar/></tspan><tspan dx="1.25em" class="st9">Issuer<v:newlineChar/><v:paragraph/></tspan><tspan
-						x="4" dy="1.2em" class="st7">Value 2:<v:tabChar/></tspan><tspan dx="0.582em" class="st7">Initiative cost<v:newlineChar/><v:paragraph/><v:newlineChar/></tspan><tspan
-						x="4" dy="2.4em" class="st7">Other outputs: Contract fees (optional), Change, Vote action </tspan> </text>		</g>
+						x="4" dy="1.2em" class="st7">Value 2:<v:tabChar/></tspan><tspan dx="0.582em" class="st7">Initiative cost<v:newlineChar/><v:newlineChar/></tspan><tspan
+						x="4" dy="2.4em" class="st7">Other outputs: Vote action </tspan> </text>		</g>
 		<g id="shape9-23" v:mID="9" v:groupContext="shape" transform="translate(369.493,-23.3766)">
 			<title>Sheet.9</title>
 			<desc>Vote Action Details: Vote Creation Timestamp</desc>

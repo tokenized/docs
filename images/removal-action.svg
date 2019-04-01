@@ -66,7 +66,7 @@
 			<text x="4" y="120.15" class="st6" v:langID="3081"><v:paragraph/><v:tabList/>Transaction Structure<v:newlineChar/><v:newlineChar/><tspan
 						x="4" dy="2.43em" class="st7">In 1:<v:tabChar/></tspan><tspan dx="2.306em" class="st8">Registry<v:newlineChar/></tspan><tspan
 						x="4" dy="1.2em" class="st7">Out 1: <v:tabChar/></tspan><tspan dx="1.25em" class="st8">Registry<v:newlineChar/><v:paragraph/></tspan><tspan
-						x="4" dy="1.2em" class="st7">Value 1:<v:tabChar/></tspan><tspan dx="0.582em" class="st7">Full UTXO<v:newlineChar/><v:newlineChar/></tspan><tspan
+						x="4" dy="1.2em" class="st7">Value 1:<v:tabChar/></tspan><tspan dx="0.582em" class="st7">Change<v:newlineChar/><v:newlineChar/></tspan><tspan
 						x="4" dy="2.4em" class="st7">Other outputs: Removal action </tspan> </text>		</g>
 		<g id="shape13-19" v:mID="13" v:groupContext="shape" transform="translate(369.493,-23.3766)">
 			<title>Sheet.13</title>
