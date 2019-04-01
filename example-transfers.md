@@ -20,7 +20,7 @@ First, the issuer builds a transfer request detailing the number of tokens to be
 Next, once the smart contract has checked everything is ok, it sends a settlement transaction that updates the balances of any wallets involved in the transaction.
 <img src="https://raw.githubusercontent.com/tokenized/docs/master/images/two-receiver-settlement-example.svg?sanitize=true" alt="A two receiver settlement action" align="middle">
 
-## Purchasing tokens with Bitcoin (Exchange via Transfer Action)
+## Purchasing Tokens with Bitcoin (Exchange via Transfer Action)
 The purchase of tokens with Bitcoin is a slightly more complicated interaction as it requires that the Transfer action be signed by two parties before it can be sent onto the network.
 This would typically work by the token purchaser entering into an exchange interface or shopfront and selecting the tokens that they wish to purchase. Typically, the interface will provide them with a cost for the tokens, with a time limit to finalise the purchase at the proposed price.
 Once they user has accepted the seller's contract, they are given a transaction template that contains the details of the seller, the asset and the smart contract that will settle the transaction.
@@ -33,8 +33,8 @@ They must now send the transfer back to the token Seller in order for them to co
 Because only one smart contract is involved, the settlement can be built and sent without having to deliver any templates.
 <img src="https://raw.githubusercontent.com/tokenized/docs/master/images/exchange-settlement-example-final.svg?sanitize=true" alt="Exchange settlement" align="middle">
 
-## Tokenized Atomic Swaps
-Conducting an atomic swap using tokenized is another more complicated transaction as it requires the holders of the tokens being exchanged to sign the transfer action, and for both contracts to sign the settlement.
+## Atomic Swaps
+Conducting an atomic swap (token for token transfer) using tokenized is another more complicated transaction as it requires the holders of the tokens being exchanged to sign the transfer action, and for both contracts to sign the settlement.
 To begin, the two token holders agree to a transaction between themselves. The first token holder builds a partially complete transaction which has the full details of the exchange except for the second party's receiving address.
 <img src="https://raw.githubusercontent.com/tokenized/docs/master/images/atomic-swap-transfer-template.svg?sanitize=true" alt="Atomic Swap Transfer Action Template" align="middle">
 The second party then fills in the missing details and signs the transaction before sending it back to the first party, who then countersigns and sends the transaction onto the network.
