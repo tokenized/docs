@@ -5,9 +5,9 @@ Main Concepts:
   pages:
     main-concepts/action-mechanism: "Action Mechanism"
     main-concepts/transactions: "Transactions"
-    main-concepts/message-types: "Message types"
+    main-concepts/message-types: "Message type Overview"
     main-concepts/tokens: "Tokens"
-    main-concepts/action-asset-types: "Asset Types"
+    main-concepts/action-asset-types: "Asset Type Overview"
     main-concepts/tokenized-contracts: "Tokenized Contracts"
     main-concepts/rules: "Rules"
 Order of Operations:
