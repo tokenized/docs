@@ -22,8 +22,10 @@ In a Plurality, the number of votes in favour of the resolution must be more tha
 
 ## Creating and Running a Vote
 There are two ways for a vote action to be created, both using the Proposal Action. 
+The following image defines the order of operations in which a vote takes place:
+<img src="https://raw.githubusercontent.com/tokenized/docs/master/images/vote-order-of-operations.svg?sanitize=true" alt="The order of operations for a Voting process" align="middle">
 ### 1. Proposal
-A Proposal is the means by which a vote action which is called. There are two ways to create a vote. 
+A Proposal is the means by which a vote action which is called. Proposals can be created in two ways: 
 
 1. Referendum
 A Referendum is called by sending a Proposal action to the Smart Contract with the issuer set as the 'Initiator' of the action. Referendums can be called at any time and the cost is only the contract fees needed for the vote, and any transaction fees.
