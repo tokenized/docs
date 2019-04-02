@@ -12,7 +12,7 @@ The documentation package is wholly hosted within the tokenized.com domain, but 
 
 This repository contains the source code for the Tokenized smart contract autonomous agent. This smart contract is written in Go.
 
-Note March 13 2019: This is an Alpha release, with more changes likely before the final version. Do not use this in production.
+This is an Alpha release, with more changes likely before the final version. Do not use this in production. 
 
 ### https://github.com/tokenized/specification
 
@@ -28,4 +28,4 @@ Tokenized also welcome user contributions in languages not listed here.
 
 ## Contacting us
 
-The Tokenized team are available to give support for protocol specific queries and requests.  If the protocol does not satisfy your needs/use case, or you have positive or negative feedback, then please feel free to reach out by joining our [Telegram channel](https://t.me/joinchat/GTCTKhDcyW4-QepyjqiLdQ) or email us at [protocol@tokenized.com](mailto:protocol@tokenized.com).
+The Tokenized team are available to give support for protocol specific queries and requests.  If the protocol does not satisfy your needs/use case, or you have constructive feedback, then please feel free to reach out by joining our [Telegram channel](https://t.me/joinchat/GTCTKhDcyW4-QepyjqiLdQ) or email us at [protocol@tokenized.com](mailto:protocol@tokenized.com).

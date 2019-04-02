@@ -1,4 +1,4 @@
-# LoyaltyPoints
+# Loyalty Points
 
 A Loyalty Point
 
