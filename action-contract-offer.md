@@ -315,7 +315,7 @@ The following breaks down the construction of a Contract Offer Action. The actio
     </table>
 </div>
 
-##Contract Offer Action Transaction Summary
+## Contract Offer Action Transaction Summary
 
 <div class="ritz grid-container" dir="ltr">
     <table class="waffle" cellspacing="0" cellpadding="0" table-layout=fixed width=100%>
