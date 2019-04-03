@@ -44,7 +44,7 @@ Governance operations allow the issuer and asset owners to manifest changes in t
 * [Vote](../protocol/vote) (Action Code: G2)
 * [Ballot Cast](../protocol/ballot-cast) (Action Code: G3)
 * [Ballot Counted](../protocol/ballot-counted) (Action Code: G4)
-* [Result](../protocol/result)
+* [Result](../protocol/result) (Action Code: G5)
 
 ### 5. Enforcement Operations
 
