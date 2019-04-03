@@ -27,7 +27,7 @@ The smart contract can only respond to instructions it receives as Tokenized tra
 
 The Tokenized Smart Contract is written in Go and is fully open source. Details of the smart contract can be found in the [Tokenized Smart Contract Github repository](https://github.com/tokenized).
 
-## contract operator
+## Contract Operator
 
 An issuer can operate their own smart contract, or they can have a technical specialist operate the smart contract on their behalf. This technical specialist is called a 'contract operator'.  The contract operator is identified by their public address which is specified in the Contract Offer action.
 
