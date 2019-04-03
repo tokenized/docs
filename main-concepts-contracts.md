@@ -25,7 +25,7 @@ A smart contract (aka dynamic contract) is a contract which is managed by an aut
 
 The smart contract can only respond to instructions it receives as Tokenized transactions into its own wallet. All responses from the agent are sent onto the blockchain as per the order of operations needed for the action taking place.
 
-The Tokenized Smart Contract Agent is written in Go and is fully open source. Details of the agent can be found in the [Tokenized Smart Agent Github repository](https://github.com/tokenized/specification).
+The Tokenized Smart Contract is written in Go and is fully open source. Details of the smart contract can be found in the [Tokenized Smart Contract Github repository](https://github.com/tokenized).
 
 ## contract operator
 
