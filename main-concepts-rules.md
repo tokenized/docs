@@ -37,6 +37,7 @@ The following lays out a set of rules applicable to different aspects of the tok
 7. A contract’s public address can have an unlimited number of Asset Creation actions but each one must have a unique Asset ID. This property allows for a practically unlimited amount of non-fungible assets to be associated and controlled by each smart contract.
 8. The first Asset Creation action assigns the ownership of all tokens created to the issuer.
 9. Any changes to the qty of tokens for a given asset is account for by the issuer's balance.  If tokens are burned (Asset Modification), they can only be burned up to the quantity held by the issuer at the time of Asset Modification action.  If new tokens are created, then the new tokens are automatically assigned to the issuer's address.
+10. Asset ID's (Asset ID = Asset Type + base58(Asset Code + checksum)) cannot be modified.
 
 ## Transfer Operations
 
