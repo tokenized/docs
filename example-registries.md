@@ -1,7 +1,5 @@
 ## Tokenized Registries
-The Tokenized protocol has a full set of registry actions that are able to support a wide range of registry activities such as Whitelisting, Blacklisting, KYC provisions and more. Registries do not need to be operated by Tokenized Smart Contracts.
-A registry is a separate entity to a Smart Contract, allowing a single registry to be used as an approval gateway for multiple Smart Contracts. 
-If an Issuer wants to create assets that require receivers to be registered for KYC verification, the asset must be linked to the registry upon creation.
+The Tokenized protocol has a full set of registry actions that are able to support a wide range of registry activities such as Whitelisting, Blacklisting, KYC provisions and more. Registries do not need to be operated by smart contracts.
 
 There are four actions involved in the creation and management of a registry.
 1. Establishment
