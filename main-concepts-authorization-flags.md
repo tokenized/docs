@@ -24,5 +24,7 @@ When you parse the authorization flags, you get an array of permission objects c
 
 ## Example
 
-AuthFlag for the Contract Name field in the contract.  The contract has 11 voting systems and voting system 5 will be used for any vote proposals put forward to change the Contract Name field.  The Contract Name field cannot be changed except with approval from the token holders by way of a token holder vote proposed by the issuer.  Token holders cannot initiate a vote to change the Contract Name field.
+The Contract Name field in the contract is controlled by a permission object within the Contract Authorization Flags.  The contract has 11 voting systems and voting system 5 will be used for any vote proposals put forward to change the Contract Name field.  The Contract Name field cannot be changed except with approval from the token holders by way of a token holder vote proposed by the issuer.  Token holders cannot initiate a vote to change the Contract Name field.
+
+A permission object for the Contract Name field with these settings would look like this:
 
