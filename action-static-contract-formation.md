@@ -30,7 +30,7 @@ The following breaks down the construction of a Static Contract Formation Action
             <td class="c10">ContractName</td>
             <td class="c10">8</td>
             <td class="c10">Tesla - Shareholder Agreement</td>
-            <td class="c10"><abbr title="Length 0-255 bytes. Can be any unique identifying string, including human readable names for branding/vanity purposes.   [Contract identifier (instance) is the bitcoin public address. If the Public Address is lost, then the issuer will have to reissue the entire contract, Asset definition and tokens with the new public address.]. Smart contracts can be branded and specialized to suit any terms and conditions.">Length 0-255 bytes. Can be any unique identifying string, including human readable names f ...</abbr></td>
+            <td class="c10"><abbr title="Length 0-255 bytes. Can be any unique identifying string, including human readable names for branding/vanity purposes.   [Contract identifier (instance) is the bitcoin public address. If the Public Address is lost, then the issuer will have to reissue the entire contract, Asset definition and tokens with the new public address.]. smart contracts can be branded and specialized to suit any terms and conditions.">Length 0-255 bytes. Can be any unique identifying string, including human readable names f ...</abbr></td>
             <td class="c10">varchar</td>
             <td class="c10"></td>
         </tr>
@@ -158,7 +158,7 @@ The following breaks down the construction of a Static Contract Formation Action
 <div class="ritz grid-container" dir="ltr">
     <table class="waffle" cellspacing="0" cellpadding="0" table-layout=fixed width=100%>
          <tr style='height:19px;'>
-            <th class="s0" colspan="6">Smart Contract Operator Fee: 0</th>
+            <th class="s0" colspan="6">smart contract Operator Fee: 0</th>
        </tr>
          <tr style='height:19px;'>
             <th style="width:10%" class="s0">Index (input)</th>

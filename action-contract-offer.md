@@ -3,7 +3,7 @@
 
 # Contract Offer Action
 
-The Contract Offer action allows the Issuer to tell the smart contract what they want the details (labels, data, T&C's, etc.) of the Contract to be on-chain in a public and immutable way. The Contract Offer action 'initializes' a generic smart contract that has been spun up by either the Smart Contract Operator or the Issuer. This on-chain action allows for the positive response from the smart contract with either a Contract Formation Action or a Rejection Action.
+The Contract Offer action allows the Issuer to tell the smart contract what they want the details (labels, data, T&C's, etc.) of the Contract to be on-chain in a public and immutable way. The Contract Offer action 'initializes' a generic smart contract that has been spun up by either the smart contract Operator or the Issuer. This on-chain action allows for the positive response from the smart contract with either a Contract Formation Action or a Rejection Action.
 
 The following breaks down the construction of a Contract Offer Action. The action is constructed by building a single string from each of the elements in order.
 
@@ -30,7 +30,7 @@ The following breaks down the construction of a Contract Offer Action. The actio
             <td class="c10">ContractName</td>
             <td class="c10">8</td>
             <td class="c10">Tesla - Shareholder Agreement</td>
-            <td class="c10"><abbr title="Can be any unique identifying string, including human readable names for branding/vanity purposes.   [Contract identifier (instance) is the bitcoin public key hash address. If the Public Address is lost, then the issuer will have to reissue the entire contract, Asset definition and tokens with the new public address.]. Smart contracts can be branded and specialized to suit any terms and conditions.">Can be any unique identifying string, including human readable names for branding/vanity p ...</abbr></td>
+            <td class="c10"><abbr title="Can be any unique identifying string, including human readable names for branding/vanity purposes.   [Contract identifier (instance) is the bitcoin public key hash address. If the Public Address is lost, then the issuer will have to reissue the entire contract, Asset definition and tokens with the new public address.]. smart contracts can be branded and specialized to suit any terms and conditions.">Can be any unique identifying string, including human readable names for branding/vanity p ...</abbr></td>
             <td class="c10">varchar</td>
             <td class="c10"></td>
         </tr>
@@ -141,11 +141,11 @@ The following breaks down the construction of a Contract Offer Action. The actio
             <td class="c10"></td>
         </tr>
         <tr>
-            <td class="c9">Contract Operator ID</td>
+            <td class="c9">contract operator ID</td>
             <td class="c10">ContractOperatorID</td>
             <td class="c10">8</td>
             <td class="c10">Tokenized</td>
-            <td class="c10"><abbr title="Length 0-255 bytes. 0 is valid. Smart Contract Operator identifier. Can be any unique identifying string, including human readable names for branding/vanity purposes. Can also be null or the Issuer.">Length 0-255 bytes. 0 is valid. Smart Contract Operator identifier. Can be any unique iden ...</abbr></td>
+            <td class="c10"><abbr title="Length 0-255 bytes. 0 is valid. smart contract Operator identifier. Can be any unique identifying string, including human readable names for branding/vanity purposes. Can also be null or the Issuer.">Length 0-255 bytes. 0 is valid. smart contract Operator identifier. Can be any unique iden ...</abbr></td>
             <td class="c10">varchar</td>
             <td class="c10"></td>
         </tr>
@@ -320,7 +320,7 @@ The following breaks down the construction of a Contract Offer Action. The actio
 <div class="ritz grid-container" dir="ltr">
     <table class="waffle" cellspacing="0" cellpadding="0" table-layout=fixed width=100%>
          <tr style='height:19px;'>
-            <th class="s0" colspan="6">Smart Contract Operator Fee: 0</th>
+            <th class="s0" colspan="6">smart contract Operator Fee: 0</th>
        </tr>
          <tr style='height:19px;'>
             <th style="width:10%" class="s0">Index (input)</th>
@@ -343,8 +343,8 @@ The following breaks down the construction of a Contract Offer Action. The actio
 
        <tr>
             <td class="c5">1</td>
-            <td class="c6">Contract Operator's Public Address (Optional)</td>
-            <td class="c6">The one exception to the rule above.  The Contract Operator can nominate a secondary controlling public address that can act on behalf of the issuer for issuer related requests. Typically this will be the Smart Contract Operator. (Optional)</td>
+            <td class="c6">contract operator's Public Address (Optional)</td>
+            <td class="c6">The one exception to the rule above.  The contract operator can nominate a secondary controlling public address that can act on behalf of the issuer for issuer related requests. Typically this will be the smart contract Operator. (Optional)</td>
             <td class="c10"></td>
             <td class="c10"></td>
             <td class="c10"></td>

@@ -1,7 +1,7 @@
 ## Tokenized Registries
-The Tokenized protocol has a full set of registry actions that are able to support a wide range of registry activities such as Whitelisting, Blacklisting, KYC provisions and more. Registries do not need to be operated by Tokenized Smart Contracts.
-A registry is a separate entity to a Smart Contract, allowing a single registry to be used as an approval gateway for multiple Smart Contracts. 
-If an Issuer wants to create assets that require receivers to be registered for KYC verification, the asset must be linked to the registry upon creation.
+The Tokenized protocol has a full set of registry actions that are able to support a wide range of registry activities such as Whitelisting, Blacklisting, KYC provisions and more. Registries do not need to be operated by Tokenized smart contracts.
+A registry is a separate entity to a smart contract, allowing a single registry to be used as an approval gateway for multiple smart contracts. 
+If an issuer wants to create assets that require receivers to be registered for KYC verification, the asset must be linked to the registry upon creation.
 
 There are four actions involved in the creation and management of a registry.
 1. Establishment
@@ -10,7 +10,7 @@ There are four actions involved in the creation and management of a registry.
 4. Removal
 
 ### 1. Establishment
-The Establishment action shows the Tokenized Smart Contract where a Registry has been created. When a Tokenized Smart Contract is told to look for a registry, it expects to see an Establishment transaction as the first action occurring at that addresss.
+The Establishment action shows the Tokenized smart contract where a Registry has been created. When a Tokenized smart contract is told to look for a registry, it expects to see an Establishment transaction as the first action occurring at that addresss.
 
 <img src="https://raw.githubusercontent.com/tokenized/docs/master/images/establishment-action.svg?sanitize=true" alt="Establishment action" align="middle">
 

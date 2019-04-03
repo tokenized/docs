@@ -6,7 +6,7 @@ The following lays out a set of rules applicable to different aspects of the tok
 
 * All contract actions must be cash flow neutral. The request action must include enough bitcoin to pay for all costs (dust, contract fees, exchange fees, mining fees, etc.) required to generate a response action. In cases where not enough bitcoin has been included, no response action will take place. 
 
-* Smart contracts maintain a small resevoir of satoshis (small multiple of the dust value) at the contract address to use to send back to itself on contract-wide actions.  This resevoir will not deplete over time, as all fees will be paid for by the requester.
+* smart contracts maintain a small resevoir of satoshis (small multiple of the dust value) at the contract address to use to send back to itself on contract-wide actions.  This resevoir will not deplete over time, as all fees will be paid for by the requester.
 
 * Every contract-initiated action must be in response to a user/issuer-initiated action. No contract-initiated action will be valid without a preceding ‘request’ action initiated by a user or issuer.
 

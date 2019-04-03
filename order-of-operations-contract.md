@@ -1,6 +1,6 @@
 ## Contract Actions
 
-There are two ways that an issuer can interact with their Smart Contract:
+There are two ways that an issuer can interact with their smart contract:
 
 1. [Establishment](#establishment)
 2. [Amendment](#amendment)
@@ -13,7 +13,7 @@ The establishment of a contract is a two step process.
 
 ### 1. Contract Offer
 
-The Contract offer is a transaction sent from the Contract Issuer to the smart contract which outlines the details of a contract the issuer is seeking to create. The offer contains a complete copy of all details of the contract which includes things such as rules limiting on the number of assets the contract can manage, details on how the contract will be governed and information on the issuer, the smart contract operator, and key persons linked to the creation of the contract.
+The Contract offer is a transaction sent from the Contract issuer to the smart contract which outlines the details of a contract the issuer is seeking to create. The offer contains a complete copy of all details of the contract which includes things such as rules limiting on the number of assets the contract can manage, details on how the contract will be governed and information on the issuer, the smart contract operator, and key persons linked to the creation of the contract.
 
 ### 2. Contract Formation
 
@@ -40,14 +40,14 @@ The amendment action is followed by a Contract Formation action which is the ack
 
 ### Amendment by vote
 There are two ways in which a contract amendment by vote can be brought forth. 
-1. Referendum (called by the Issuer)
+1. Referendum (called by the issuer)
 2. Initiative (called by any holder of a token that has voting rights, subject to their payment of the initiative fee)
 
 Both are initiated using the Proposal action. 
 <img src="https://raw.githubusercontent.com/tokenized/docs/master/images/contract-amendment-by-vote.svg?sanitize=true" alt="Contract Amendment by Vote">
 
 #### 1. Proposal
-The proposal action is sent to the Smart Contract which will evaluate the issues being voted on (amendments etc) and make sure that those which result in changes to the smart contract do not violate the rules.
+The proposal action is sent to the smart contract which will evaluate the issues being voted on (amendments etc) and make sure that those which result in changes to the smart contract do not violate the rules.
 
 #### 2. Vote
 Once the smart contract has received a referendum or initiative action, it evaluates it for validity against the rules of the contract. If the vote is able to go ahead, the smart contract issues a Vote action onto the blockchain.
@@ -62,7 +62,7 @@ After a user has sent their ballot onto the blockchain, the smart contract confi
 Once the vote is over (time limited) the smart contract counts the votes and publishes the result to the blockchain.
 
 #### 6. Contract Amendment
-If the successful motion requires any changes to be made to the contract, the Issuer must issue a new Contract Amendment action with the updated details and a new version number for the contract. This is not something that happens automatically and the smart contract will not allow the Issuer to change fields that it is not authorised to change without authorisation unless the issuer includes a pointer to a vote result authorising the change of that item.
+If the successful motion requires any changes to be made to the contract, the issuer must issue a new Contract Amendment action with the updated details and a new version number for the contract. This is not something that happens automatically and the smart contract will not allow the issuer to change fields that it is not authorised to change without authorisation unless the issuer includes a pointer to a vote result authorising the change of that item.
 
 #### 7. Rejection/Contract Formation
-Once the amendment has been checked against the Smart Contract rules, the Smart Contract will either send a rejection notice in the case that the Issuer is trying to make a change that isn't supported by the necessary motions, or it will issue a Contract Formation action that includes all of the changes made to the smart contract.
+Once the amendment has been checked against the smart contract rules, the smart contract will either send a rejection notice in the case that the issuer is trying to make a change that isn't supported by the necessary motions, or it will issue a Contract Formation action that includes all of the changes made to the smart contract.

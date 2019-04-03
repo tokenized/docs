@@ -1,23 +1,23 @@
 ## Tokenized Contract Formation
-A Tokenized contract is formed when a token Issuer presents a valid 'Contract Offer' action to a Smart Contract. The Smart Contract checks only that the rules proposed in the offer are compliant with its logic, but the legal and regulatory aspects of dealing with the assets being created must be pre-determined and managed by the Issuer to ensure the contract operates within all applicable laws and regulations.
+A Tokenized contract is formed when a token issuer presents a valid 'Contract Offer' action to a smart contract. The smart contract checks only that the rules proposed in the offer are compliant with its logic, but the legal and regulatory aspects of dealing with the assets being created must be pre-determined and managed by the issuer to ensure the contract operates within all applicable laws and regulations.
 
 ### 1. Contract Offer
-To create a Contract Offer, the Contract Issuer must prepare an action that contains all of the required information such as:
+To create a Contract Offer, the Contract issuer must prepare an action that contains all of the required information such as:
 * Contract name
 * Governing Law
 * Jurisdiction
 * Contract rules, voting systems
 * Detail of the issuing entity/entities including key personnel, addresses etc.
 Included with the offer is either a hash and a URL linking to a contract file, or when possible, the entire contract file itself as a Markdown formatted file or PDF.
-The Contract Offer action must be signed by both the Issuer and the Smart Contract Operator, so the issuer first builds a template transaction which it sends to the Smart Contract Operator:
+The Contract Offer action must be signed by both the issuer and the smart contract Operator, so the issuer first builds a template transaction which it sends to the smart contract Operator:
 <img src="https://raw.githubusercontent.com/tokenized/docs/master/images/contract-offer-action-template.svg?sanitize=true" alt="A contract offer action template" align="middle">
-If the contract meets the Smart Contract Operator's requirements, they will add an input from their own wallet, add the change outputs they need and sign the Contract Offer using SIGHASH_ALL before sending it back to the Issuer. Once the issuer has reviewed the Smart Contract Operator's changes, they can sign their own input (or inputs) using SIGHASH_ALL and send the transaction onto the network.
+If the contract meets the smart contract Operator's requirements, they will add an input from their own wallet, add the change outputs they need and sign the Contract Offer using SIGHASH_ALL before sending it back to the issuer. Once the issuer has reviewed the smart contract Operator's changes, they can sign their own input (or inputs) using SIGHASH_ALL and send the transaction onto the network.
 <img src="https://raw.githubusercontent.com/tokenized/docs/master/images/contract-offer-action-final.svg?sanitize=true" alt="Final contract offer action" align="middle">
 
 ### 2. Contract Formation
-When the Smart Contract receives the Offer action it unpacks the information and evaluates it. If the Smart Contract decides there are no issues, it builds a 'Contract Formation' action in response which is sent onto the network. The Contract Formation action contains a complete repeat of all of the information in the Contract Offer action as an acknowledgement that the Smart Contract has accepted the setup as valid.
+When the smart contract receives the Offer action it unpacks the information and evaluates it. If the smart contract decides there are no issues, it builds a 'Contract Formation' action in response which is sent onto the network. The Contract Formation action contains a complete repeat of all of the information in the Contract Offer action as an acknowledgement that the smart contract has accepted the setup as valid.
 The contract also adds two additional fields
-1. Timestamp - The time at which the Smart Contract built the Contract Formation action
+1. Timestamp - The time at which the smart contract built the Contract Formation action
 2. Version field - Set to zero for a new contract. Increments by 1 each time the contract is updated
 <img src="https://raw.githubusercontent.com/tokenized/docs/master/images/contract-formation-action.svg?sanitize=true" alt="Contract Formation action" align="middle">
 
@@ -29,7 +29,7 @@ The amendment of a Tokenized contract can be simple when the rules or conditions
 Where a Contract Amendment seeks to make changes that require a vote through referendum or initiative, there is no longer a Unlateral Amendment since the rules of the vote determine the outcome of the Contract Amendment.
 
 ### 1. Contract Amendment
-If the Issuer wants to change the Issuer address (e.g. in the event of a contract being sold) or to change the Operator address (to move to a new service provider) there are flags for these options. The Smart Contract receives the new addresses for these contracts from signed inputs paying into the transaction carrying the Contract Amendment action.
+If the issuer wants to change the issuer address (e.g. in the event of a contract being sold) or to change the Operator address (to move to a new service provider) there are flags for these options. The smart contract receives the new addresses for these contracts from signed inputs paying into the transaction carrying the Contract Amendment action.
 Following on from these flags is the new contract revision, which is incremented by 1 each time the contract is updated. A Contract Amendment request that has a version number that isn't in sequence will be rejected.
 Subsequent to these fields, amendments to the contract are contained in an array of objects, each of which has the following information:
 * The field index of the contract element being changed

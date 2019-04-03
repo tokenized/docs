@@ -3,7 +3,7 @@
 
 # Vote Action
 
-Vote Action -  A vote is created by the Contract in response to a valid Referendum (Issuer) or Initiative (User) Action.
+Vote Action -  A vote is created by the Contract in response to a valid Referendum (issuer) or Initiative (User) Action.
 
 The following breaks down the construction of a Vote Action. The action is constructed by building a single string from each of the elements in order.
 
@@ -40,7 +40,7 @@ The following breaks down the construction of a Vote Action. The action is const
 <div class="ritz grid-container" dir="ltr">
     <table class="waffle" cellspacing="0" cellpadding="0" table-layout=fixed width=100%>
          <tr style='height:19px;'>
-            <th class="s0" colspan="6">Smart Contract Operator Fee: 0</th>
+            <th class="s0" colspan="6">smart contract Operator Fee: 0</th>
        </tr>
          <tr style='height:19px;'>
             <th style="width:10%" class="s0">Index (input)</th>
@@ -66,8 +66,8 @@ The following breaks down the construction of a Vote Action. The action is const
             <td class="g6"></td>
             <td class="g6"></td>
             <td class="g10">1</td>
-            <td class="g10">Issuer's Public Address</td>
-            <td class="g10">Issuer gets the threshold fee.</td>
+            <td class="g10">issuer's Public Address</td>
+            <td class="g10">issuer gets the threshold fee.</td>
         </tr>
 
     </table>

@@ -27,8 +27,8 @@ The smart contract can only respond to instructions it receives as Tokenized tra
 
 The Tokenized Smart Contract Agent is written in Go and is fully open source. Details of the agent can be found in the [Tokenized Smart Agent Github repository](https://github.com/tokenized/specification).
 
-## Contract Operator
+## contract operator
 
 An issuer can operate their own smart contract, or they can have a technical specialist operate the smart contract on their behalf. This technical specialist is called a 'contract operator'.  The contract operator is identified by their public address which is specified in the Contract Offer action.
 
-The contract operator has permission to act on the behalf of the issuer for the inititation of different actions.  Issuers may prefer to outsource this work for various reasons and it is likely they will get a better price and higher reliability/performance than they would if they tried to operate it themselves.
+The contract operator has permission to act on the behalf of the issuer for the inititation of different actions.  issuers may prefer to outsource this work for various reasons and it is likely they will get a better price and higher reliability/performance than they would if they tried to operate it themselves.

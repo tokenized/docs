@@ -2,15 +2,15 @@
 
 ## Tokenized: A Token Protocol for the Bitcoin (BSV) Network
 
-The Tokenized protocol and system have been developed to enable users around the world to create, issue and manage tokens of all kind using the low friction and high reliability of the Bitcoin network as their infrastructure.
+The Tokenized protocol and platform have been developed to enable users around the world to create, issue and manage tokens of all kind using the low friction and high reliability of the Bitcoin network as their infrastructure.
 
-This documentation package gives developers who want to use the Tokenized protocol and platform a clear and concise set of information about the Tokenized protocol.
+This documentation package gives developers who want to use the Tokenized protocol and platform a clear and concise set of information.
 
 The documentation package is wholly hosted within the tokenized.com domain, but more information can be found in our public Github repositories which are as follows:
 
 ### https://github.com/tokenized/smart-contract
 
-This repository contains the source code for the Tokenized smart contract autonomous agent. This smart contract is written in Go.
+This repository contains the source code for the Tokenized platform. This platform is written in Go.
 
 This is an Alpha release, with more changes likely before the final version. Do not use this in production. 
 
