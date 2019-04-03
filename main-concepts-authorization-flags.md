@@ -9,7 +9,9 @@ There are a number of fields that are likely to be subject to an amendment/modif
 The authorization flags are represented by 3 bits (XYZ) per field plus an array of booleans to represent all of the Voting Systems specified in the Contract Formation action of the contract.  
 
 The first bit (X) specifies whether unilateral changes are allowed to be made to the field by the issuer. 1 = Permitted, 0 = Not Permitted.  
+
 The second bit (Y) specifies whether a successful issuer-initiated vote will permit a change to be made. 1 = Issuer Proposals are Permitted, 0 = Issuer Proposals are not Permitted.  
+
 The third bit (Z) specifies whether a successful token holder-initiated vote will permit a change to be made. 1 = Token Holder Proposals are Permitted, 0 = Token Holder Proposals are not Permitted.
 
 The booleans that make up the array of M represent a voting system (by index) and a value of 1 = that voting system controls the field, 0 = that voting system does not control that field.  If a proposal was made to vote on a change for a field, the vote system selected for that field would have to be used, otherwise the smart contract will reject it.
