@@ -51,7 +51,7 @@ The following breaks down the construction of a Confiscation Action. The action 
     </table>
 </div>
 
-##Confiscation Action Transaction Summary
+## Confiscation Action Transaction Summary
 
 <div class="ritz grid-container" dir="ltr">
     <table class="waffle" cellspacing="0" cellpadding="0" table-layout=fixed width=100%>
