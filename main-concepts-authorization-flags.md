@@ -32,3 +32,4 @@ The Contract Name field in the contract is controlled by a permission object wit
 
 A permission object for the Contract Name field with these settings would look like this:
 
+<img src="https://raw.githubusercontent.com/tokenized/docs/master/images/main-concepts-authorization-flags.svg?sanitize=true" alt="Order of Operations">
