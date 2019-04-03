@@ -12,7 +12,13 @@ The first bit (X) specifies whether unilateral changes are allowed to be made to
 
 The booleans that make up the array of M represent a voting system (by index) and a value of 1 = that voting system controls the field, 0 = that voting system does not control that field.  If a proposal was made to vote on a change for a field, the vote system selected for that field would have to be used, otherwise the smart contract will reject it.
 
-For Field[N], ContractAuthFlags = XYZM[] & AssetAuthFlags = XYZM[], where X = Permitted, Y = Issuer Proposal, Z = Token Holder Proposal and N = the index of the field within the action, M[] = an array of booleans equal to the # of voting systems in the contract. If Y and Z are false, then M is empty
+For Field[N]:
+
+ContractAuthFlags = XYZM[] 
+
+AssetAuthFlags = XYZM[]
+
+where X = Permitted, Y = Issuer Proposal, Z = Token Holder Proposal and N = the index of the field within the action, M[] = an array of booleans equal to the # of voting systems in the contract. If Y and Z are false, then M is empty
 
 When you parse the authorization flags, you get an array of permission objects containing XYZM[] that has a length corresponding the the number of fields in the contract or asset.  The Contract Offer and Asset Creation is used to determine the indexes of the fields.  Index 0 is the field after the header.
 
