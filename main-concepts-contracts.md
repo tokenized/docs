@@ -23,7 +23,7 @@ The static contract framework simply provides an easy and low-cost way for inscr
 
 A smart contract (aka dynamic contract) is a contract which is managed by an autonomous agent (off-chain daemon) using the Tokenized protocol. The smart contract operates on behalf of the issuer for all administrative tasks associated with maintaining and updating the contract's on-chain records.  The smart contract is responsible for monitoring the state of the contract and for controlling actions that affect the terms and state of the contract with respect to the terms and state of the contract, at the time the request action was received.  The smart contract can also work with other autonomous agents working on behalf of the issuer or other contracting parties to fully automate all the various processes and tasks associated with the formation and performance of a contract.
 
-The smart contract can only respond to instructions it receives as Tokenized transactions into its own wallet. All responses from the agent are sent onto the blockchain as per the order of operations needed for the action taking place.
+The smart contract can only respond to instructions it receives as Tokenized transactions into its own wallet. All responses from the smart contract are sent onto the blockchain as per the order of operations needed for the action taking place.
 
 The Tokenized Smart Contract is written in Go and is fully open source. Details of the smart contract can be found in the [Tokenized Smart Contract Github repository](https://github.com/tokenized).
 
