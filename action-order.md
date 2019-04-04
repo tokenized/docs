@@ -133,7 +133,7 @@ The following breaks down the construction of a Order Action. The action is cons
     </table>
 </div>
 
-##Order Action Transaction Summary
+## Order Action Transaction Summary
 
 <div class="ritz grid-container" dir="ltr">
     <table class="waffle" cellspacing="0" cellpadding="0" table-layout=fixed width=100%>
