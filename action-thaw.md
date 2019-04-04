@@ -49,7 +49,7 @@ The following breaks down the construction of a Thaw Action. The action is const
     </table>
 </div>
 
-##Thaw Action Transaction Summary
+## Thaw Action Transaction Summary
 
 <div class="ritz grid-container" dir="ltr">
     <table class="waffle" cellspacing="0" cellpadding="0" table-layout=fixed width=100%>
