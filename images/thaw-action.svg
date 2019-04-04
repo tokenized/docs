@@ -75,7 +75,7 @@
 						class="st7">  </tspan><tspan class="st10">⋮<v:newlineChar/></tspan><tspan x="4" dy="1.201em" class="st7">Output N:</tspan><tspan
 						class="st9">Frozen Address N<v:newlineChar/></tspan><tspan x="4" dy="1.2em" class="st7">Value N:<v:tabChar/></tspan><tspan
 						dx="0.416em" class="st7">Dust<v:newlineChar/><v:newlineChar/><v:paragraph/></tspan><tspan x="4" dy="2.4em"
-						class="st7">Other outputs: Change, Thaw action </tspan> </text>		</g>
+						class="st7">Other outputs: Contract Fee (to Operator), Thaw action </tspan> </text>		</g>
 		<g id="shape13-31" v:mID="13" v:groupContext="shape" transform="translate(369.493,-23.3766)">
 			<title>Sheet.13</title>
 			<desc>Thaw Action Details: Reference to Freeze Action being thawed ...</desc>

@@ -77,7 +77,7 @@
 						class="st9">Frozen Address N2<v:newlineChar/></tspan><tspan x="4" dy="1.2em" class="st7">Value N:<v:tabChar/></tspan><tspan
 						dx="0.416em" class="st7">Dust<v:newlineChar/></tspan><tspan x="4" dy="1.2em" class="st7">Output N+1:</tspan><tspan
 						class="st11">Collection Address<v:newlineChar/></tspan><tspan x="4" dy="1.2em" class="st7">Value N+1: Dust<v:newlineChar/><v:newlineChar/><v:paragraph/></tspan><tspan
-						x="4" dy="2.4em" class="st7">Other outputs: Change, Thaw action </tspan> </text>		</g>
+						x="4" dy="2.4em" class="st7">Other outputs: Contract Fee (to Operator), Confiscation action </tspan> </text>		</g>
 		<g id="shape13-34" v:mID="13" v:groupContext="shape" transform="translate(369.493,-23.3766)">
 			<title>Sheet.13</title>
 			<desc>Confiscation Action Details: List of addresses the confiscati...</desc>

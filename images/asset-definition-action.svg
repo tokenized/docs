@@ -56,7 +56,7 @@
 			<text x="54.23" y="210.07" class="st2" v:langID="3081"><v:paragraph v:horizAlign="1"/><v:tabList/>Asset Definition Action Transaction</text>		</g>
 		<g id="shape8-4" v:mID="8" v:groupContext="shape" transform="translate(21.375,-23.3766)">
 			<title>Sheet.8</title>
-			<desc>Transaction Structure In 1: Issuer Out 1: Smart Contract Valu...</desc>
+			<desc>Transaction Structure Input 1: Issuer Output 1: Smart Contrac...</desc>
 			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197" v:verticalAlign="0"/>
 			<v:textRect cx="160.551" cy="162.338" width="321.11" height="112.173"/>
 			<g id="shadow8-5" v:groupContext="shadow" v:shadowOffsetX="1.22561E-16" v:shadowOffsetY="-2.00157" v:shadowType="1"
@@ -65,8 +65,8 @@
 			</g>
 			<rect x="0" y="106.251" width="321.103" height="112.173" class="st5"/>
 			<text x="4" y="120.15" class="st6" v:langID="3081"><v:paragraph/><v:tabList/>Transaction Structure<v:newlineChar/><v:newlineChar/><tspan
-						x="4" dy="2.43em" class="st7">In 1:<v:tabChar/></tspan><tspan dx="2.306em" class="st8">Issuer<v:newlineChar/></tspan><tspan
-						x="4" dy="1.2em" class="st7">Out 1: <v:tabChar/></tspan><tspan dx="1.25em" class="st9">Smart Contract<v:newlineChar/></tspan><tspan
+						x="4" dy="2.43em" class="st7">Input 1:<v:tabChar/></tspan><tspan dx="0.916em" class="st8">Issuer<v:newlineChar/></tspan><tspan
+						x="4" dy="1.2em" class="st7">Output 1:<v:tabChar/></tspan><tspan dx="0.138em" class="st9">Smart Contract<v:newlineChar/></tspan><tspan
 						x="4" dy="1.2em" class="st7">Value 1:<v:tabChar/></tspan><tspan dx="0.582em" class="st7">Contract fees + Response Costs<v:newlineChar/><v:newlineChar/><v:paragraph/></tspan><tspan
 						x="4" dy="2.4em" class="st7">Other outputs: Change, Asset Definition action </tspan> </text>		</g>
 		<g id="shape9-19" v:mID="9" v:groupContext="shape" transform="translate(369.493,-23.3766)">
