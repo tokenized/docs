@@ -18,6 +18,7 @@ Examples:
     example/transfers: "Different types of tokenized transfers"
     example/governance: "Contract governance"
     example/enforcement: "Tokenized enforcement actions"
+    example/messaging: "Tokenized protocol messaging"
     example/registries: "Tokenized registries"
     example/alice-goes-to-the-movies: "Alice Goes to the Movies"
 Message:
