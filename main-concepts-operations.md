@@ -1,4 +1,4 @@
-# Protocol Operations
+# Operations
 
 The Tokenized protocol operates on a 'request and response' mechanism whereby operations are carried out in 2 steps called 'actions'.  The only exceptions to this rule are the Message (M1) action and the Register (R1-R4) actions where each action does not work on the request and response model.  They are 1 step actions where no response is required.  
 
