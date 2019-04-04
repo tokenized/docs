@@ -42,7 +42,7 @@ The following breaks down the construction of a Settlement Action. The action is
     </table>
 </div>
 
-##Settlement Action Transaction Summary
+## Settlement Action Transaction Summary
 
 <div class="ritz grid-container" dir="ltr">
     <table class="waffle" cellspacing="0" cellpadding="0" table-layout=fixed width=100%>
