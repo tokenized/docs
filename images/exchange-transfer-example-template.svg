@@ -57,7 +57,7 @@
 			<text x="11.85" y="262.68" class="st2" v:langID="3081"><v:paragraph v:horizAlign="1"/><v:tabList/>Exchange Transfer Example Template Transaction</text>		</g>
 		<g id="shape8-4" v:mID="8" v:groupContext="shape" transform="translate(21.375,-23.3766)">
 			<title>Sheet.8</title>
-			<desc>Transaction Structure Input 1: Seller UTXO Input 2(+): Empty ...</desc>
+			<desc>Transaction Structure Input 1: Seller UTXO Input 2: Null (for...</desc>
 			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197" v:verticalAlign="0"/>
 			<v:textRect cx="160.551" cy="188.643" width="321.11" height="164.783"/>
 			<g id="shadow8-5" v:groupContext="shadow" v:shadowOffsetX="1.22561E-16" v:shadowOffsetY="-2.00157" v:shadowType="1"
@@ -66,23 +66,23 @@
 			</g>
 			<rect x="0" y="106.251" width="321.103" height="164.783" class="st5"/>
 			<text x="4" y="120.15" class="st6" v:langID="3081"><v:paragraph/><v:tabList/>Transaction Structure<v:newlineChar/><v:newlineChar/><tspan
-						x="4" dy="2.43em" class="st7">Input 1:<v:tabChar/><v:tabChar/></tspan><tspan dx="5.168em" class="st8">Seller </tspan><tspan
-						class="st7">UTXO<v:newlineChar/><v:paragraph/></tspan><tspan x="4" dy="1.2em" class="st7">Input 2(+):<v:tabChar/></tspan><tspan
-						dx="3.918em" class="st7">Empty (for </tspan><tspan class="st9">Buyer</tspan><tspan class="st7">)<v:newlineChar/></tspan><tspan
-						x="4" dy="1.2em" class="st7">Output 1: <v:tabChar/></tspan><tspan dx="4.112em" class="st10">Smart Contract<v:newlineChar/></tspan><tspan
-						x="4" dy="1.2em" class="st7">Value 1:<v:tabChar/><v:tabChar/></tspan><tspan dx="4.834em" class="st7">Contract Fee + Response Costs<v:newlineChar/></tspan><tspan
-						x="4" dy="1.2em" class="st7">Output 2:<v:tabChar/><v:tabChar/></tspan><tspan dx="4.39em" class="st8">Seller</tspan><tspan
+						x="4" dy="2.43em" class="st7">Input 1:<v:tabChar/></tspan><tspan dx="0.916em" class="st8">Seller </tspan><tspan
+						class="st7">UTXO<v:newlineChar/><v:paragraph/></tspan><tspan x="4" dy="1.2em" class="st7">Input 2:<v:tabChar/></tspan><tspan
+						dx="0.916em" class="st7">Null (for </tspan><tspan class="st9">Buyer</tspan><tspan class="st7">)<v:newlineChar/></tspan><tspan
+						x="4" dy="1.2em" class="st7">Output 1:<v:tabChar/></tspan><tspan dx="0.138em" class="st10">Smart Contract<v:newlineChar/></tspan><tspan
+						x="4" dy="1.2em" class="st7">Value 1:<v:tabChar/></tspan><tspan dx="0.582em" class="st7">Contract Fee + Response Costs<v:newlineChar/></tspan><tspan
+						x="4" dy="1.2em" class="st7">Output 2:<v:tabChar/></tspan><tspan dx="0.138em" class="st8">Seller</tspan><tspan
 						class="st8">’</tspan><tspan class="st8">s address<v:newlineChar/></tspan><tspan x="4" dy="1.2em"
-						class="st7">Value 2:<v:tabChar/><v:tabChar/></tspan><tspan dx="4.834em" class="st7">Dust<v:newlineChar/></tspan><tspan
-						x="4" dy="1.2em" class="st7">Output 3:<v:tabChar/><v:tabChar/></tspan><tspan dx="4.39em" class="st7">Empty (for </tspan><tspan
-						class="st9">Buyer</tspan><tspan class="st7">)<v:newlineChar/></tspan><tspan x="4" dy="1.2em" class="st7">Value 3:<v:tabChar/><v:tabChar/></tspan><tspan
-						dx="4.834em" class="st7">Dust<v:newlineChar/><v:newlineChar/></tspan><tspan x="4" dy="2.4em" class="st7">Other outputs: Exchange fees (optional) Change, transfer action </tspan> </text>		</g>
-		<g id="shape9-36" v:mID="9" v:groupContext="shape" transform="translate(369.493,-23.3766)">
+						class="st7">Value 2:<v:tabChar/></tspan><tspan dx="0.582em" class="st7">Dust<v:newlineChar/></tspan><tspan
+						x="4" dy="1.2em" class="st7">Output 3:<v:tabChar/></tspan><tspan dx="0.138em" class="st7">Null (for </tspan><tspan
+						class="st9">Buyer</tspan><tspan class="st7">)<v:newlineChar/></tspan><tspan x="4" dy="1.2em" class="st7">Value 3:<v:tabChar/><v:newlineChar/><v:newlineChar/></tspan><tspan
+						x="4" dy="2.4em" class="st7">Other outputs: Exchange fees (optional) Change, transfer action </tspan> </text>		</g>
+		<g id="shape9-35" v:mID="9" v:groupContext="shape" transform="translate(369.493,-23.3766)">
 			<title>Sheet.9</title>
 			<desc>Transfer Action Contract: Smart Contract Transfer details: Se...</desc>
 			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197" v:verticalAlign="0"/>
 			<v:textRect cx="176.077" cy="188.643" width="352.16" height="164.783"/>
-			<g id="shadow9-37" v:groupContext="shadow" v:shadowOffsetX="1.22561E-16" v:shadowOffsetY="-2.00157" v:shadowType="1"
+			<g id="shadow9-36" v:groupContext="shadow" v:shadowOffsetX="1.22561E-16" v:shadowOffsetY="-2.00157" v:shadowType="1"
 					transform="matrix(1,0,0,1,0,2.00157)" class="st3">
 				<rect x="0" y="106.251" width="352.154" height="164.783" class="st4"/>
 			</g>

@@ -76,7 +76,7 @@
 		<v:layer v:name="Container" v:index="1"/>
 		<g id="shape140-1" v:mID="140" v:groupContext="shape" transform="translate(21.375,-23.3766)">
 			<title>Sheet.140</title>
-			<desc>Transaction Structure Message Action (Signature Request) From...</desc>
+			<desc>Transaction Structure Message Action (Signature Request) Inpu...</desc>
 			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197" v:verticalAlign="0"/>
 			<v:textRect cx="326.693" cy="279.512" width="653.39" height="362.135"/>
 			<g id="shadow140-2" v:groupContext="shadow" v:shadowOffsetX="1.22561E-16" v:shadowOffsetY="-2.00157" v:shadowType="1"
@@ -86,9 +86,9 @@
 			<rect x="0" y="98.4445" width="653.386" height="362.135" class="st3"/>
 			<text x="4" y="112.34" class="st4" v:langID="3081"><v:paragraph/><v:tabList/>Transaction Structure<v:tabChar/><v:tabChar/><v:tabChar/><v:tabChar/><v:tabChar/><v:tabChar/><tspan
 						dx="20.532em" class="st5">Message Action (Signature Request)<v:newlineChar/><v:newlineChar/></tspan><tspan
-						x="4" dy="2.43em" class="st6">From:<v:tabChar/></tspan><tspan dx="1.641em" class="st7">Buyer<v:tabChar/><v:tabChar/><v:tabChar/><v:tabChar/><v:tabChar/><v:tabChar/><v:tabChar/></tspan><tspan
+						x="4" dy="2.43em" class="st6">Input 1:<v:tabChar/></tspan><tspan dx="0.916em" class="st7">Buyer<v:tabChar/><v:tabChar/><v:tabChar/><v:tabChar/><v:tabChar/><v:tabChar/><v:tabChar/></tspan><tspan
 						dx="27.151em" class="st8">Merchant/exchange </tspan><tspan class="st6">receiving address<v:newlineChar/></tspan><tspan
-						x="4" dy="1.2em" class="st6">To: <v:tabChar/></tspan><tspan dx="2.529em" class="st8">Merchant/exchange<v:tabChar/><v:tabChar/><v:tabChar/><v:tabChar/><v:tabChar/></tspan><tspan
+						x="4" dy="1.2em" class="st6">Output 1:<v:tabChar/></tspan><tspan dx="0.138em" class="st8">Merchant/exchange<v:tabChar/><v:tabChar/><v:tabChar/><v:tabChar/><v:tabChar/></tspan><tspan
 						dx="20.98em" class="st6">Message Type (1002 </tspan><tspan class="st6">–</tspan><tspan class="st6"> </tspan><tspan
 						class="st6">Signature Request)<v:newlineChar/></tspan><tspan x="4" dy="1.2em" class="st6">Value 1:<v:tabChar/></tspan><tspan
 						dx="0.582em" class="st6">Dust<v:tabChar/><v:tabChar/><v:tabChar/><v:tabChar/><v:tabChar/><v:tabChar/><v:tabChar/></tspan><tspan

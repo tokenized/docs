@@ -74,7 +74,7 @@
 		<v:layer v:name="Container" v:index="1"/>
 		<g id="shape82-1" v:mID="82" v:groupContext="shape" transform="translate(431.705,-192.392)">
 			<title>Sheet.82</title>
-			<desc>Ballot Cast From: Token Holder 1 To: Contract</desc>
+			<desc>Ballot Cast Input 1: Token Holder 1 Output 1: Contract</desc>
 			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197" v:verticalAlign="0"/>
 			<v:textRect cx="60.4965" cy="290.994" width="121" height="59.8376"/>
 			<g id="shadow82-2" v:groupContext="shadow" v:shadowOffsetX="1.22561E-16" v:shadowOffsetY="-2.00157" v:shadowType="1"
@@ -83,11 +83,11 @@
 			</g>
 			<rect x="0" y="261.075" width="120.993" height="59.8376" class="st3"/>
 			<text x="4" y="274.98" class="st4" v:langID="3081"><v:paragraph/><v:tabList/>Ballot Cast<v:lf/><v:newlineChar/><tspan
-						x="4" dy="2.55em" class="st5">From:<v:tabChar/></tspan><tspan dx="1.641em" class="st6">Token Holder 1<v:newlineChar/></tspan><tspan
-						x="4" dy="1.2em" class="st5">To:<v:tabChar/></tspan><tspan dx="2.807em" class="st7">Contract</tspan></text>		</g>
+						x="4" dy="2.55em" class="st5">Input 1:<v:tabChar/></tspan><tspan dx="0.916em" class="st6">Token Holder 1<v:newlineChar/></tspan><tspan
+						x="4" dy="1.2em" class="st5">Output 1:<v:tabChar/></tspan><tspan dx="0.138em" class="st7">Contract</tspan></text>		</g>
 		<g id="shape87-13" v:mID="87" v:groupContext="shape" transform="translate(431.705,-104.123)">
 			<title>Sheet.87</title>
-			<desc>Ballot Cast From: Token Holder N To: Contract</desc>
+			<desc>Ballot Cast Input 1: Token Holder N Output 1: Contract</desc>
 			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197" v:verticalAlign="0"/>
 			<v:textRect cx="60.4965" cy="290.994" width="121" height="59.8376"/>
 			<g id="shadow87-14" v:groupContext="shadow" v:shadowOffsetX="1.22561E-16" v:shadowOffsetY="-2.00157" v:shadowType="1"
@@ -96,8 +96,8 @@
 			</g>
 			<rect x="0" y="261.075" width="120.993" height="59.8376" class="st3"/>
 			<text x="4" y="274.98" class="st4" v:langID="3081"><v:paragraph/><v:tabList/>Ballot Cast<v:lf/><v:newlineChar/><tspan
-						x="4" dy="2.55em" class="st5">From:<v:tabChar/></tspan><tspan dx="1.641em" class="st6">Token Holder N</tspan><tspan
-						class="st5"> </tspan><tspan x="4" dy="1.2em" class="st5">To:<v:tabChar/></tspan><tspan dx="2.807em"
+						x="4" dy="2.55em" class="st5">Input 1:<v:tabChar/></tspan><tspan dx="0.916em" class="st6">Token Holder N</tspan><tspan
+						class="st5"> </tspan><tspan x="4" dy="1.2em" class="st5">Output 1:<v:tabChar/></tspan><tspan dx="0.138em"
 						class="st7">Contract</tspan></text>		</g>
 		<g id="shape110-25" v:mID="110" v:groupContext="shape" v:layerMember="0" transform="translate(552.698,-215.224)">
 			<title>Dynamic connector.110</title>
@@ -124,7 +124,7 @@
 		</g>
 		<g id="shape92-47" v:mID="92" v:groupContext="shape" transform="translate(575.935,-192.392)">
 			<title>Sheet.92</title>
-			<desc>Ballot Counted From: Contract To: Token Holder 1</desc>
+			<desc>Ballot Counted Input 1: Contract Output 1: Token Holder 1</desc>
 			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197" v:verticalAlign="0"/>
 			<v:textRect cx="60.4965" cy="290.994" width="121" height="59.8376"/>
 			<g id="shadow92-48" v:groupContext="shadow" v:shadowOffsetX="1.22561E-16" v:shadowOffsetY="-2.00157" v:shadowType="1"
@@ -133,11 +133,11 @@
 			</g>
 			<rect x="0" y="261.075" width="120.993" height="59.8376" class="st3"/>
 			<text x="4" y="274.98" class="st4" v:langID="3081"><v:paragraph/><v:tabList/>Ballot Counted<v:lf/><v:newlineChar/><tspan
-						x="4" dy="2.55em" class="st5">From:<v:tabChar/></tspan><tspan dx="1.641em" class="st7">Contract<v:newlineChar/></tspan><tspan
-						x="4" dy="1.2em" class="st5">To:<v:tabChar/></tspan><tspan dx="2.807em" class="st6">Token Holder 1</tspan></text>		</g>
+						x="4" dy="2.55em" class="st5">Input 1:<v:tabChar/></tspan><tspan dx="0.916em" class="st7">Contract<v:newlineChar/></tspan><tspan
+						x="4" dy="1.2em" class="st5">Output 1:<v:tabChar/></tspan><tspan dx="0.138em" class="st6">Token Holder 1</tspan></text>		</g>
 		<g id="shape94-58" v:mID="94" v:groupContext="shape" transform="translate(575.375,-104.208)">
 			<title>Sheet.94</title>
-			<desc>Ballot Counted From: Contract To: Token Holder N</desc>
+			<desc>Ballot Counted Input 1: Contract Output 1: Token Holder N</desc>
 			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197" v:verticalAlign="0"/>
 			<v:textRect cx="60.4965" cy="290.994" width="121" height="59.8376"/>
 			<g id="shadow94-59" v:groupContext="shadow" v:shadowOffsetX="1.22561E-16" v:shadowOffsetY="-2.00157" v:shadowType="1"
@@ -146,15 +146,15 @@
 			</g>
 			<rect x="0" y="261.075" width="120.993" height="59.8376" class="st3"/>
 			<text x="4" y="274.98" class="st4" v:langID="3081"><v:paragraph/><v:tabList/>Ballot Counted<v:lf/><v:newlineChar/><tspan
-						x="4" dy="2.55em" class="st5">From:<v:tabChar/></tspan><tspan dx="1.641em" class="st7">Contract<v:newlineChar/></tspan><tspan
-						x="4" dy="1.2em" class="st5">To:<v:tabChar/></tspan><tspan dx="2.807em" class="st6">Token Holder N</tspan></text>		</g>
+						x="4" dy="2.55em" class="st5">Input 1:<v:tabChar/></tspan><tspan dx="0.916em" class="st7">Contract<v:newlineChar/></tspan><tspan
+						x="4" dy="1.2em" class="st5">Output 1:<v:tabChar/></tspan><tspan dx="0.138em" class="st6">Token Holder N</tspan></text>		</g>
 		<g id="shape191-69" v:mID="191" v:groupContext="shape" transform="translate(150.828,-179.613)">
 			<title>Sheet.191</title>
 			<path d="M0 320.91 L65 320.91" class="st8"/>
 		</g>
 		<g id="shape213-74" v:mID="213" v:groupContext="shape" transform="translate(21.375,-142.036)">
 			<title>Sheet.213</title>
-			<desc>Proposal From: Issuer or Any Token Holder To: Contract</desc>
+			<desc>Proposal Input 1: Issuer or Any Token Holder Output 1: Contract</desc>
 			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197" v:verticalAlign="0"/>
 			<v:textRect cx="86.2995" cy="283.575" width="172.6" height="74.6749"/>
 			<g id="shadow213-75" v:groupContext="shadow" v:shadowOffsetX="1.22561E-16" v:shadowOffsetY="-2.00157" v:shadowType="1"
@@ -163,12 +163,12 @@
 			</g>
 			<rect x="0" y="246.238" width="172.599" height="74.6749" class="st3"/>
 			<text x="4" y="260.14" class="st4" v:langID="3081"><v:paragraph/><v:tabList/>Proposal<v:newlineChar/><v:newlineChar/><tspan
-						x="4" dy="2.55em" class="st5">From:<v:tabChar/></tspan><tspan dx="1.641em" class="st14">Issuer </tspan><tspan
+						x="4" dy="2.55em" class="st5">Input 1:<v:tabChar/></tspan><tspan dx="0.916em" class="st14">Issuer </tspan><tspan
 						class="st5">or </tspan><tspan class="st15">Any Token Holder<v:newlineChar/></tspan><tspan x="4" dy="1.2em"
-						class="st5">To:<v:tabChar/></tspan><tspan dx="2.807em" class="st16">Contract</tspan></text>		</g>
+						class="st5">Output 1:<v:tabChar/></tspan><tspan dx="0.138em" class="st16">Contract</tspan></text>		</g>
 		<g id="shape127-87" v:mID="127" v:groupContext="shape" transform="translate(723.373,-142.036)">
 			<title>Sheet.127</title>
-			<desc>Result From: Contract To: Contract</desc>
+			<desc>Result Input 1: Contract Output 1: Contract</desc>
 			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197" v:verticalAlign="0"/>
 			<v:textRect cx="86.2995" cy="283.575" width="172.6" height="74.6749"/>
 			<g id="shadow127-88" v:groupContext="shadow" v:shadowOffsetX="1.22561E-16" v:shadowOffsetY="-2.00157" v:shadowType="1"
@@ -177,8 +177,8 @@
 			</g>
 			<rect x="0" y="246.238" width="172.599" height="74.6749" class="st3"/>
 			<text x="4" y="260.14" class="st4" v:langID="3081"><v:paragraph/><v:tabList/>Result<v:newlineChar/><v:newlineChar/><tspan
-						x="4" dy="2.43em" class="st5">From:<v:tabChar/></tspan><tspan dx="1.641em" class="st7">Contract<v:newlineChar/></tspan><tspan
-						x="4" dy="1.2em" class="st5">To:<v:tabChar/></tspan><tspan dx="2.807em" class="st7">Contract</tspan></text>		</g>
+						x="4" dy="2.43em" class="st5">Input 1:<v:tabChar/></tspan><tspan dx="0.916em" class="st7">Contract<v:newlineChar/></tspan><tspan
+						x="4" dy="1.2em" class="st5">Output 1:<v:tabChar/></tspan><tspan dx="0.138em" class="st7">Contract</tspan></text>		</g>
 		<g id="shape221-98" v:mID="221" v:groupContext="shape" transform="translate(196.816,-18.375)">
 			<title>Sheet.221</title>
 			<desc>Note: Network fees and change outputs are not shown. All requ...</desc>
@@ -200,7 +200,7 @@
 		</g>
 		<g id="shape32-110" v:mID="32" v:groupContext="shape" transform="translate(226.383,-142.036)">
 			<title>Sheet.32</title>
-			<desc>Vote From: Contract To: Contract And to: Issuer (Initiative O...</desc>
+			<desc>Vote Input 1: Contract Output 1: Contract Output 2: Issuer (I...</desc>
 			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197" v:verticalAlign="0"/>
 			<v:textRect cx="86.2995" cy="283.575" width="172.6" height="74.6749"/>
 			<g id="shadow32-111" v:groupContext="shadow" v:shadowOffsetX="1.22561E-16" v:shadowOffsetY="-2.00157" v:shadowType="1"
@@ -209,9 +209,9 @@
 			</g>
 			<rect x="0" y="246.238" width="172.599" height="74.6749" class="st3"/>
 			<text x="4" y="260.14" class="st4" v:langID="3081"><v:paragraph/><v:tabList/>Vote<v:lf/><v:newlineChar/><tspan x="4"
-						dy="2.43em" class="st5">From:<v:tabChar/></tspan><tspan dx="1.641em" class="st16">Contract<v:newlineChar/></tspan><tspan
-						x="4" dy="1.2em" class="st5">To:<v:tabChar/></tspan><tspan dx="2.807em" class="st16">Contract<v:newlineChar/></tspan><tspan
-						x="4" dy="1.2em" class="st5">And to:<v:tabChar/></tspan><tspan dx="1.083em" class="st14">Issuer</tspan><tspan
+						dy="2.43em" class="st5">Input 1:<v:tabChar/></tspan><tspan dx="0.916em" class="st16">Contract<v:newlineChar/></tspan><tspan
+						x="4" dy="1.2em" class="st5">Output 1:<v:tabChar/></tspan><tspan dx="0.138em" class="st16">Contract<v:newlineChar/></tspan><tspan
+						x="4" dy="1.2em" class="st5">Output 2:<v:tabChar/></tspan><tspan dx="0.138em" class="st14">Issuer</tspan><tspan
 						class="st5"> </tspan><tspan class="st5">(Initiative Only)</tspan><v:newlineChar/></text>		</g>
 		<g id="shape224-125" v:mID="224" v:groupContext="shape" v:layerMember="0" transform="translate(312.683,-216.711)">
 			<title>Dynamic connector</title>

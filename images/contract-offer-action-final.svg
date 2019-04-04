@@ -24,7 +24,7 @@
 		.st10 {fill:#c00000;font-size:0.909089em;font-weight:normal}
 		.st11 {font-size:0.909089em;font-weight:normal;text-decoration:underline}
 		.st12 {fill:#000000;font-family:Arial;font-size:1.00001em}
-		.st13 {marker-start:url(#mrkr13-49);stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:1}
+		.st13 {marker-start:url(#mrkr13-47);stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:1}
 		.st14 {fill:#000000;fill-opacity:1;stroke:#000000;stroke-opacity:1;stroke-width:0.28409090909091}
 		.st15 {fill:none;fill-rule:evenodd;font-size:12px;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
 	]]>
@@ -41,7 +41,7 @@
 		<g id="lend13">
 			<path d="M 3 1 L 0 0 L 3 -1 L 3 1 " style="stroke:none"/>
 		</g>
-		<marker id="mrkr13-49" class="st14" v:arrowType="13" v:arrowSize="2" v:setback="10.2" refX="10.2" orient="auto"
+		<marker id="mrkr13-47" class="st14" v:arrowType="13" v:arrowSize="2" v:setback="10.2" refX="10.2" orient="auto"
 				markerUnits="strokeWidth" overflow="visible">
 			<use xlink:href="#lend13" transform="scale(3.52) "/>
 		</marker>
@@ -69,7 +69,7 @@
 			<text x="43.56" y="257.01" class="st2" v:langID="3081"><v:paragraph v:horizAlign="1"/><v:tabList/>Contract Offer Action Final Transaction</text>		</g>
 		<g id="shape8-4" v:mID="8" v:groupContext="shape" transform="translate(21.375,-23.3766)">
 			<title>Sheet.8</title>
-			<desc>Transaction Structure In 1: Issuer UTXO In 2: Contract Operat...</desc>
+			<desc>Transaction Structure Input 1: Issuer UTXO Input 2: Contract ...</desc>
 			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197" v:verticalAlign="0"/>
 			<v:textRect cx="160.551" cy="185.808" width="321.11" height="159.114"/>
 			<g id="shadow8-5" v:groupContext="shadow" v:shadowOffsetX="1.22561E-16" v:shadowOffsetY="-2.00157" v:shadowType="1"
@@ -78,15 +78,15 @@
 			</g>
 			<rect x="0" y="106.251" width="321.103" height="159.114" class="st5"/>
 			<text x="4" y="120.15" class="st6" v:langID="3081"><v:paragraph/><v:tabList/>Transaction Structure<v:newlineChar/><v:newlineChar/><tspan
-						x="4" dy="2.43em" class="st7">In 1:<v:tabChar/></tspan><tspan dx="2.306em" class="st8">Issuer </tspan><tspan
-						class="st7">UTXO<v:newlineChar/></tspan><tspan x="4" dy="1.2em" class="st7">In 2:<v:tabChar/></tspan><tspan
-						dx="2.306em" class="st9">Contract Operator</tspan><tspan class="st7"> </tspan><tspan class="st7">UTXO<v:newlineChar/></tspan><tspan
-						x="4" dy="1.2em" class="st7">Out 1: <v:tabChar/></tspan><tspan dx="1.25em" class="st10">Smart Contract<v:newlineChar/><v:paragraph/></tspan><tspan
-						x="4" dy="1.2em" class="st7">Value 1:<v:tabChar/></tspan><tspan dx="0.582em" class="st7">Dust<v:newlineChar/><v:newlineChar/></tspan><tspan
-						x="4" dy="2.4em" class="st7">Other outputs: Contract fees (optional), Change, Contract Offer action </tspan> </text>		</g>
+						x="4" dy="2.43em" class="st7">Input 1:<v:tabChar/></tspan><tspan dx="0.916em" class="st8">Issuer </tspan><tspan
+						class="st7">UTXO<v:newlineChar/></tspan><tspan x="4" dy="1.2em" class="st7">Input 2:<v:tabChar/></tspan><tspan
+						dx="0.916em" class="st9">Contract Operator</tspan><tspan class="st7"> </tspan><tspan class="st7">UTXO<v:newlineChar/></tspan><tspan
+						x="4" dy="1.2em" class="st7">Output 1:<v:tabChar/></tspan><tspan dx="0.138em" class="st10">Smart Contract<v:newlineChar/><v:paragraph/></tspan><tspan
+						x="4" dy="1.2em" class="st7">Value 1:<v:tabChar/></tspan><tspan dx="0.582em" class="st7">Contract Fee + Response Cost<v:newlineChar/><v:newlineChar/></tspan><tspan
+						x="4" dy="2.4em" class="st7">Other outputs: Change, Contract Offer action </tspan> </text>		</g>
 		<g id="shape9-24" v:mID="9" v:groupContext="shape" transform="translate(369.493,-23.3766)">
 			<title>Sheet.9</title>
-			<desc>Contract Offer Action Contract: Smart Contract Contract detai...</desc>
+			<desc>Contract Offer Action Contract details: Contract name Contrac...</desc>
 			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197" v:verticalAlign="0"/>
 			<v:textRect cx="176.077" cy="185.808" width="352.16" height="159.114"/>
 			<g id="shadow9-25" v:groupContext="shadow" v:shadowOffsetX="1.22561E-16" v:shadowOffsetY="-2.00157" v:shadowType="1"
@@ -95,21 +95,20 @@
 			</g>
 			<rect x="0" y="106.251" width="352.154" height="159.114" class="st5"/>
 			<text x="4" y="120.15" class="st6" v:langID="3081"><v:paragraph/><v:tabList/>Contract Offer Action<v:newlineChar/><v:newlineChar/><tspan
-						x="4" dy="2.43em" class="st7">Contract:<v:tabChar/><v:tabChar/></tspan><tspan dx="4.447em" class="st10">Smart Contract<v:newlineChar/><v:newlineChar/></tspan><tspan
-						x="4" dy="2.4em" class="st11">Contract details:<v:newlineChar/></tspan><tspan x="4" dy="1.2em" class="st7">Contract name<v:newlineChar/></tspan><tspan
+						x="4" dy="2.43em" class="st11">Contract details:<v:newlineChar/></tspan><tspan x="4" dy="1.2em" class="st7">Contract name<v:newlineChar/></tspan><tspan
 						x="4" dy="1.2em" class="st7">Contract file (Can be document Hash or whole file)<v:newlineChar/></tspan><tspan
 						x="4" dy="1.2em" class="st7">Issuer details<v:newlineChar/></tspan><tspan x="4" dy="1.2em" class="st7">Regulatory information (Governing law, jurisdiction)<v:newlineChar/></tspan><tspan
 						x="4" dy="1.2em" class="st7">Issuer details (name, address, notable personnel)<v:newlineChar/></tspan><tspan
 						x="4" dy="1.2em" class="st7">Contract Operator identification<v:newlineChar/></tspan><tspan x="4"
 						dy="1.2em" class="st7">Contract rules (Flags, voting systems, transfer restrictions, registry)</tspan><v:newlineChar/></text>		</g>
-		<g id="shape13-41" v:mID="13" v:groupContext="shape" transform="translate(235.276,-190.826)">
+		<g id="shape13-39" v:mID="13" v:groupContext="shape" transform="translate(235.276,-190.826)">
 			<title>Sheet.13</title>
 			<desc>Changes made by Smart Contract Operator</desc>
 			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
 			<v:textRect cx="122.315" cy="253.408" width="244.63" height="23.9144"/>
 			<rect x="0" y="241.451" width="244.63" height="23.9144" class="st1"/>
 			<text x="4" y="257.01" class="st12" v:langID="3081"><v:paragraph/><v:tabList/>Changes made by Smart Contract Operator</text>		</g>
-		<g id="shape14-44" v:mID="14" v:groupContext="shape" transform="translate(12.4549,-84.8751) rotate(-38.2109)">
+		<g id="shape14-42" v:mID="14" v:groupContext="shape" transform="translate(12.4549,-84.8751) rotate(-38.2109)">
 			<title>Sheet.14</title>
 			<path d="M10.2 265.36 L10.56 265.36 L79.37 265.36" class="st13"/>
 		</g>

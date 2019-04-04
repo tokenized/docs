@@ -78,7 +78,7 @@
 		<v:layer v:name="Container" v:index="1"/>
 		<g id="shape194-1" v:mID="194" v:groupContext="shape" transform="translate(21.375,-23.3766)">
 			<title>Sheet.194</title>
-			<desc>Transaction Structure Message Action (Signature Request) In 1...</desc>
+			<desc>Transaction Structure Message Action (Signature Request) Inpu...</desc>
 			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197" v:verticalAlign="0"/>
 			<v:textRect cx="326.693" cy="279.512" width="653.39" height="362.135"/>
 			<g id="shadow194-2" v:groupContext="shadow" v:shadowOffsetX="1.22561E-16" v:shadowOffsetY="-2.00157" v:shadowType="1"
@@ -88,9 +88,9 @@
 			<rect x="0" y="98.4445" width="653.386" height="362.135" class="st3"/>
 			<text x="4" y="112.34" class="st4" v:langID="3081"><v:paragraph/><v:tabList/>Transaction Structure<v:tabChar/><v:tabChar/><v:tabChar/><v:tabChar/><v:tabChar/><v:tabChar/><tspan
 						dx="20.532em" class="st5">Message Action (Signature Request)<v:newlineChar/><v:newlineChar/></tspan><tspan
-						x="4" dy="2.43em" class="st6">In 1:<v:tabChar/></tspan><tspan dx="2.306em" class="st6">Participant 2<v:tabChar/><v:tabChar/><v:tabChar/><v:tabChar/><v:tabChar/><v:tabChar/></tspan><tspan
+						x="4" dy="2.43em" class="st6">Input 1:<v:tabChar/></tspan><tspan dx="0.916em" class="st6">Participant 2<v:tabChar/><v:tabChar/><v:tabChar/><v:tabChar/><v:tabChar/><v:tabChar/></tspan><tspan
 						dx="24.205em" class="st6">Participant 2 receiving address<v:newlineChar/></tspan><tspan x="4" dy="1.2em"
-						class="st6">Out 1: <v:tabChar/></tspan><tspan dx="1.25em" class="st6">Participant 1 Message Address<v:tabChar/><v:tabChar/><v:tabChar/><v:tabChar/></tspan><tspan
+						class="st6">Output 1:<v:tabChar/></tspan><tspan dx="0.138em" class="st6">Participant 1 Message Address<v:tabChar/><v:tabChar/><v:tabChar/><v:tabChar/></tspan><tspan
 						dx="15.923em" class="st6">Message Type (1002 </tspan><tspan class="st6">–</tspan><tspan class="st6"> </tspan><tspan
 						class="st6">Signature Request)<v:newlineChar/></tspan><tspan x="4" dy="1.2em" class="st6">Value 1:<v:tabChar/></tspan><tspan
 						dx="0.582em" class="st6">Dust<v:tabChar/><v:tabChar/><v:tabChar/><v:tabChar/><v:tabChar/><v:tabChar/><v:tabChar/></tspan><tspan
@@ -116,7 +116,7 @@
 			<text x="4.29" y="452.22" class="st9" v:langID="3081"><v:paragraph v:horizAlign="1"/><v:tabList/>Atomic Swap Transfer Signature Request</text>		</g>
 		<g id="shape133-37" v:mID="133" v:groupContext="shape" transform="translate(48.9862,-52.4225)">
 			<title>Sheet.133</title>
-			<desc>Transaction Structure In 1: Participant 1 (unsigned) In 2: Pa...</desc>
+			<desc>Transaction Structure Input 1: Participant 1 (unsigned) Input...</desc>
 			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197" v:verticalAlign="0"/>
 			<v:textRect cx="144.121" cy="370.533" width="288.25" height="180.094"/>
 			<g id="shadow133-38" v:groupContext="shadow" v:shadowOffsetX="1.22561E-16" v:shadowOffsetY="-2.00157" v:shadowType="1"
@@ -125,15 +125,15 @@
 			</g>
 			<rect x="0" y="280.485" width="288.242" height="180.094" class="st10"/>
 			<text x="4" y="294.39" class="st4" v:langID="3081"><v:paragraph/><v:tabList/>Transaction Structure<v:newlineChar/><v:newlineChar/><tspan
-						x="4" dy="2.43em" class="st6">In 1:<v:tabChar/></tspan><tspan dx="2.306em" class="st11">Participant 1 (unsigned)<v:newlineChar/><v:paragraph/></tspan><tspan
-						x="4" dy="1.2em" class="st6">In 2:<v:tabChar/></tspan><tspan dx="2.306em" class="st12">Participant 2<v:newlineChar/></tspan><tspan
-						x="4" dy="1.2em" class="st6">Out 1: <v:tabChar/></tspan><tspan dx="1.25em" class="st13">Token 1 contract<v:newlineChar/></tspan><tspan
+						x="4" dy="2.43em" class="st6">Input 1:<v:tabChar/></tspan><tspan dx="0.916em" class="st11">Participant 1 (unsigned)<v:newlineChar/><v:paragraph/></tspan><tspan
+						x="4" dy="1.2em" class="st6">Input 2:<v:tabChar/></tspan><tspan dx="0.916em" class="st12">Participant 2<v:newlineChar/></tspan><tspan
+						x="4" dy="1.2em" class="st6">Output 1:<v:tabChar/></tspan><tspan dx="0.138em" class="st13">Token 1 contract<v:newlineChar/></tspan><tspan
 						x="4" dy="1.2em" class="st6">Value 1:<v:tabChar/></tspan><tspan dx="0.582em" class="st6">Dust + Contract fees<v:newlineChar/></tspan><tspan
-						x="4" dy="1.2em" class="st6">Out 2:<v:tabChar/></tspan><tspan dx="1.528em" class="st14">Token 2 contract<v:newlineChar/></tspan><tspan
+						x="4" dy="1.2em" class="st6">Output 2:<v:tabChar/></tspan><tspan dx="0.138em" class="st14">Token 2 contract<v:newlineChar/></tspan><tspan
 						x="4" dy="1.2em" class="st6">Value 2:<v:tabChar/></tspan><tspan dx="0.582em" class="st6">Dust + Contract fees<v:newlineChar/></tspan><tspan
-						x="4" dy="1.2em" class="st6">Out 3:<v:tabChar/></tspan><tspan dx="1.528em" class="st11">Participant 1<v:newlineChar/></tspan><tspan
+						x="4" dy="1.2em" class="st6">Output 3:<v:tabChar/></tspan><tspan dx="0.138em" class="st11">Participant 1<v:newlineChar/></tspan><tspan
 						x="4" dy="1.2em" class="st6">Value 3:<v:tabChar/></tspan><tspan dx="0.582em" class="st6">Dust<v:newlineChar/></tspan><tspan
-						x="4" dy="1.2em" class="st6">Out 4:<v:tabChar/></tspan><tspan dx="1.528em" class="st12">Participant 2<v:newlineChar/></tspan><tspan
+						x="4" dy="1.2em" class="st6">Output 4:<v:tabChar/></tspan><tspan dx="0.138em" class="st12">Participant 2<v:newlineChar/></tspan><tspan
 						x="4" dy="1.2em" class="st6">Value 4:<v:tabChar/></tspan><tspan dx="0.582em" class="st6">Dust<v:newlineChar/></tspan><tspan
 						x="4" dy="1.2em" class="st6">Other outputs: Change, Transfer action</tspan></text>		</g>
 		<g id="shape134-66" v:mID="134" v:groupContext="shape" transform="translate(361.479,-52.4225)">

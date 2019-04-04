@@ -27,7 +27,7 @@
 		.st13 {fill:#7030a0;font-size:0.909089em;font-weight:normal}
 		.st14 {fill:#7030a0;font-size:0.909089em;font-weight:normal;text-decoration:underline}
 		.st15 {font-size:0.909089em;font-weight:normal;text-decoration:underline}
-		.st16 {marker-end:url(#mrkr13-91);stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:1}
+		.st16 {marker-end:url(#mrkr13-90);stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:1}
 		.st17 {fill:#000000;fill-opacity:1;stroke:#000000;stroke-opacity:1;stroke-width:0.28409090909091}
 		.st18 {stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:1}
 		.st19 {fill:none;fill-rule:evenodd;font-size:12px;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
@@ -55,7 +55,7 @@
 		<g id="lend13">
 			<path d="M 3 1 L 0 0 L 3 -1 L 3 1 " style="stroke:none"/>
 		</g>
-		<marker id="mrkr13-91" class="st17" v:arrowType="13" v:arrowSize="2" v:setback="10.56" refX="-10.56" orient="auto"
+		<marker id="mrkr13-90" class="st17" v:arrowType="13" v:arrowSize="2" v:setback="10.56" refX="-10.56" orient="auto"
 				markerUnits="strokeWidth" overflow="visible">
 			<use xlink:href="#lend13" transform="scale(-3.52,-3.52) "/>
 		</marker>
@@ -76,7 +76,7 @@
 		<v:layer v:name="Container" v:index="1"/>
 		<g id="shape139-1" v:mID="139" v:groupContext="shape" transform="translate(21.375,-23.3766)">
 			<title>Sheet.139</title>
-			<desc>Transaction Structure Message Action (Offer) In 1: Merchant/e...</desc>
+			<desc>Transaction Structure Message Action (Offer) Input 1: Merchan...</desc>
 			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197" v:verticalAlign="0"/>
 			<v:textRect cx="326.693" cy="254.13" width="653.39" height="323.849"/>
 			<g id="shadow139-2" v:groupContext="shadow" v:shadowOffsetX="1.22561E-16" v:shadowOffsetY="-2.00157" v:shadowType="1"
@@ -86,9 +86,9 @@
 			<rect x="0" y="92.205" width="653.386" height="323.849" class="st3"/>
 			<text x="4" y="106.11" class="st4" v:langID="3081"><v:paragraph/><v:tabList/>Transaction Structure<v:tabChar/><v:tabChar/><v:tabChar/><v:tabChar/><v:tabChar/><v:tabChar/><tspan
 						dx="20.532em" class="st5">Message Action (Offer)<v:newlineChar/><v:newlineChar/></tspan><tspan x="4"
-						dy="2.43em" class="st6">In 1:<v:tabChar/></tspan><tspan dx="2.306em" class="st7">Merchant/exchange<v:tabChar/><v:tabChar/><v:tabChar/><v:tabChar/><v:tabChar/></tspan><tspan
+						dy="2.43em" class="st6">Input 1:<v:tabChar/></tspan><tspan dx="0.916em" class="st7">Merchant/exchange<v:tabChar/><v:tabChar/><v:tabChar/><v:tabChar/><v:tabChar/></tspan><tspan
 						dx="20.98em" class="st8">Buyer</tspan><tspan class="st6"> </tspan><tspan class="st6">receiving address<v:newlineChar/></tspan><tspan
-						x="4" dy="1.2em" class="st6">Out 1: <v:tabChar/></tspan><tspan dx="1.25em" class="st8">Buyer<v:tabChar/><v:tabChar/><v:tabChar/><v:tabChar/><v:tabChar/><v:tabChar/><v:tabChar/></tspan><tspan
+						x="4" dy="1.2em" class="st6">Output 1:<v:tabChar/></tspan><tspan dx="0.138em" class="st8">Buyer<v:tabChar/><v:tabChar/><v:tabChar/><v:tabChar/><v:tabChar/><v:tabChar/><v:tabChar/></tspan><tspan
 						dx="27.151em" class="st6">Message Type (1001 </tspan><tspan class="st6">–</tspan><tspan class="st6"> </tspan><tspan
 						class="st6">Offer)<v:newlineChar/></tspan><tspan x="4" dy="1.2em" class="st6">Value 1:<v:tabChar/></tspan><tspan
 						dx="0.582em" class="st6">Dust<v:tabChar/><v:tabChar/><v:tabChar/><v:tabChar/><v:tabChar/><v:tabChar/><v:tabChar/></tspan><tspan
@@ -114,7 +114,7 @@
 			<text x="25.28" y="407.7" class="st11" v:langID="3081"><v:paragraph v:horizAlign="1"/><v:tabList/>Exchange Transfer Offer Message</text>		</g>
 		<g id="shape133-39" v:mID="133" v:groupContext="shape" transform="translate(45.6112,-51.7231)">
 			<title>Sheet.133</title>
-			<desc>Transaction Structure In 1: Merchant/exchange (unsigned) In 2...</desc>
+			<desc>Transaction Structure Input 1: Merchant/exchange (unsigned) I...</desc>
 			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197" v:verticalAlign="0"/>
 			<v:textRect cx="144.121" cy="333.5" width="288.25" height="165.109"/>
 			<g id="shadow133-40" v:groupContext="shadow" v:shadowOffsetX="1.22561E-16" v:shadowOffsetY="-2.00157" v:shadowType="1"
@@ -123,22 +123,22 @@
 			</g>
 			<rect x="0" y="250.945" width="288.242" height="165.109" class="st12"/>
 			<text x="4" y="264.85" class="st4" v:langID="3081"><v:paragraph/><v:tabList/>Transaction Structure<v:newlineChar/><v:newlineChar/><tspan
-						x="4" dy="2.43em" class="st6">In 1:<v:tabChar/></tspan><tspan dx="2.306em" class="st7">Merchant/exchange (unsigned)<v:newlineChar/><v:paragraph/></tspan><tspan
-						x="4" dy="1.2em" class="st6">In 2:<v:tabChar/></tspan><tspan dx="2.306em" class="st6">Nil (for </tspan><tspan
-						class="st8">Buyer</tspan><tspan class="st6">)<v:newlineChar/></tspan><tspan x="4" dy="1.2em" class="st6">Out 1: <v:tabChar/></tspan><tspan
-						dx="1.25em" class="st13">Token contract<v:newlineChar/></tspan><tspan x="4" dy="1.2em" class="st6">Value 1:<v:tabChar/></tspan><tspan
+						x="4" dy="2.43em" class="st6">Input 1:<v:tabChar/></tspan><tspan dx="0.916em" class="st7">Merchant/exchange (unsigned)<v:newlineChar/><v:paragraph/></tspan><tspan
+						x="4" dy="1.2em" class="st6">Input 2:<v:tabChar/></tspan><tspan dx="0.916em" class="st6">Null (for </tspan><tspan
+						class="st8">Buyer</tspan><tspan class="st6">)<v:newlineChar/></tspan><tspan x="4" dy="1.2em" class="st6">Output 1:<v:tabChar/></tspan><tspan
+						dx="0.138em" class="st13">Token contract<v:newlineChar/></tspan><tspan x="4" dy="1.2em" class="st6">Value 1:<v:tabChar/></tspan><tspan
 						dx="0.582em" class="st6">Contract fees + Response Costs<v:newlineChar/></tspan><tspan x="4" dy="1.2em"
-						class="st6">Out 2:<v:tabChar/></tspan><tspan dx="1.528em" class="st7">Merchant/exchange<v:newlineChar/></tspan><tspan
+						class="st6">Output 2:<v:tabChar/></tspan><tspan dx="0.138em" class="st7">Merchant/exchange<v:newlineChar/></tspan><tspan
 						x="4" dy="1.2em" class="st6">Value 2:<v:tabChar/></tspan><tspan dx="0.582em" class="st6">Dust<v:newlineChar/></tspan><tspan
-						x="4" dy="1.2em" class="st6">Out 3:<v:tabChar/></tspan><tspan dx="1.528em" class="st6">Nil (for </tspan><tspan
-						class="st8">Buyer)<v:newlineChar/></tspan><tspan x="4" dy="1.2em" class="st6">Value 3:<v:tabChar/></tspan><tspan
-						dx="0.582em" class="st6">Dust<v:newlineChar/><v:newlineChar/></tspan><tspan x="4" dy="2.4em" class="st6">Other outputs: Change, Transfer action</tspan></text>		</g>
-		<g id="shape134-67" v:mID="134" v:groupContext="shape" transform="translate(363.685,-51.7231)">
+						x="4" dy="1.2em" class="st6">Output 3:<v:tabChar/></tspan><tspan dx="0.138em" class="st6">Null (for </tspan><tspan
+						class="st8">Buyer)<v:newlineChar/></tspan><tspan x="4" dy="1.2em" class="st6">Value 3:<v:tabChar/><v:newlineChar/><v:newlineChar/></tspan><tspan
+						x="4" dy="2.4em" class="st6">Other outputs: Change, Transfer action</tspan></text>		</g>
+		<g id="shape134-66" v:mID="134" v:groupContext="shape" transform="translate(363.685,-51.7231)">
 			<title>Sheet.134</title>
 			<desc>Template Transfer Action Contract : Token Contract Token Cont...</desc>
 			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197" v:verticalAlign="0"/>
 			<v:textRect cx="144.121" cy="333.5" width="288.25" height="165.109"/>
-			<g id="shadow134-68" v:groupContext="shadow" v:shadowOffsetX="1.22561E-16" v:shadowOffsetY="-2.00157" v:shadowType="1"
+			<g id="shadow134-67" v:groupContext="shadow" v:shadowOffsetX="1.22561E-16" v:shadowOffsetY="-2.00157" v:shadowType="1"
 					transform="matrix(1,0,0,1,0,2.00157)" class="st1">
 				<rect x="0" y="250.945" width="288.242" height="165.109" class="st2"/>
 			</g>
@@ -149,11 +149,11 @@
 						x="4" dy="1.2em" class="st6">Sender: <v:tabChar/><v:tabChar/></tspan><tspan dx="4.724em" class="st7">Merchant/exchange<v:newlineChar/></tspan><tspan
 						x="4" dy="1.2em" class="st6">Receiver:<v:tabChar/><v:tabChar/></tspan><tspan dx="4.28em" class="st6">Empty (for </tspan><tspan
 						class="st8">Buyer</tspan><tspan class="st6">)<v:newlineChar/></tspan><tspan x="4" dy="1.2em" class="st6">100 x Token 1</tspan></text>		</g>
-		<g id="shape152-86" v:mID="152" v:groupContext="shape" transform="translate(761.314,127.638) rotate(90)">
+		<g id="shape152-85" v:mID="152" v:groupContext="shape" transform="translate(761.314,127.638) rotate(90)">
 			<title>Sheet.152</title>
 			<path d="M0 416.05 L27.01 416.05" class="st16"/>
 		</g>
-		<g id="shape154-92" v:mID="154" v:groupContext="shape" transform="translate(363.118,543.692) rotate(180)">
+		<g id="shape154-91" v:mID="154" v:groupContext="shape" transform="translate(363.118,543.692) rotate(180)">
 			<title>Sheet.154</title>
 			<path d="M0 416.05 L17.86 416.05" class="st18"/>
 		</g>

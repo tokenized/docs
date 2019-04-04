@@ -95,7 +95,7 @@
 			<text x="20.37" y="449.64" class="st11" v:langID="3081"><v:paragraph v:horizAlign="1"/><v:tabList/>Atomic Swap Process Order of Operations</text>		</g>
 		<g id="shape213-27" v:mID="213" v:groupContext="shape" transform="translate(31.666,-232.898)">
 			<title>Sheet.213</title>
-			<desc>Transfer Template Input: Participant 1 (unsigned) Output 1: T...</desc>
+			<desc>Transfer Template Input 1: Participant 1 (unsigned) Output 1:...</desc>
 			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197" v:verticalAlign="0"/>
 			<v:textRect cx="93.6189" cy="411.723" width="187.24" height="92.5533"/>
 			<g id="shadow213-28" v:groupContext="shadow" v:shadowOffsetX="1.22561E-16" v:shadowOffsetY="-2.00157" v:shadowType="1"
@@ -104,7 +104,7 @@
 			</g>
 			<rect x="0" y="365.447" width="187.238" height="92.5533" class="st12"/>
 			<text x="4" y="379.35" class="st6" v:langID="3081"><v:paragraph/><v:tabList/>Transfer Template<v:newlineChar/><v:newlineChar/><tspan
-						x="4" dy="2.55em" class="st7">Input:<v:tabChar/></tspan><tspan dx="1.75em" class="st8">Participant 1 (unsigned)<v:newlineChar/></tspan><tspan
+						x="4" dy="2.55em" class="st7">Input 1:<v:tabChar/></tspan><tspan dx="0.916em" class="st8">Participant 1 (unsigned)<v:newlineChar/></tspan><tspan
 						x="4" dy="1.2em" class="st7">Output 1:<v:tabChar/></tspan><tspan dx="0.138em" class="st13">Token 1 Contract<v:newlineChar/></tspan><tspan
 						x="4" dy="1.2em" class="st7">Output 2:<v:tabChar/></tspan><tspan dx="0.138em" class="st14">Token 2 Contract</tspan></text>		</g>
 		<g id="shape233-41" v:mID="233" v:groupContext="shape" transform="translate(255.449,-222.127)">
