@@ -76,7 +76,7 @@ The following breaks down the construction of a Transfer Action. The action is c
     </table>
 </div>
 
-##Transfer Action Transaction Summary
+## Transfer Action Transaction Summary
 
 <div class="ritz grid-container" dir="ltr">
     <table class="waffle" cellspacing="0" cellpadding="0" table-layout=fixed width=100%>
