@@ -22,16 +22,17 @@ Next, once the smart contract has checked everything is ok, it sends a settlemen
 
 ## Purchasing Tokens with Bitcoin (Exchange via Transfer Action)
 The purchase of tokens with Bitcoin is a slightly more complicated interaction as it requires that the Transfer action be signed by two parties before it can be sent onto the network.
+<img src="https://raw.githubusercontent.com/tokenized/docs/master/images/exchange--order-of-operations.svg?sanitize=true" alt="Order of operations for exchange transaction" align="middle">
 This would typically work by the token purchaser entering into an exchange interface or shopfront, and selecting the tokens that they wish to purchase. Typically, the interface will provide them with a cost for the tokens, with a time limit to finalize the purchase at the proposed price.
-Once they user has accepted the seller's contract, they are given a transaction template that contains the details of the seller, the asset and the smart contract that will settle the transaction.
-Depending on the exchange used, there may be additional BSV outputs for the cost of performing the exchange. These details will also be included in the transfer action and be distributed to the fee receiving address by the smart contract.
-<img src="https://raw.githubusercontent.com/tokenized/docs/master/images/exchange-transfer-example-template.svg?sanitize=true" alt="Transfer request template given by token seller to purchaser" align="middle">
-The seller can provide this information to the purchaser via standard HTTP delivery methods, or in an on-chain transaction using a Message action. Either method is valid.
-Once the purchaser has received the template, their wallet fills in the missing information and signs the transaction with SIGHASH_ALL. If the buyer needs to add more than one input UTXO to the transaction this is possible. The input addresses do not affect the action taken by the contract. 
-They must now send the transfer back to the token Seller in order for them to countersign also using SIGHASH_ALL. Once this has been completed, the contract can be sent onto the network for mining.
+When the user has assembled the information for their purchase, they are sent a Message action which contains an 'Offer' message type. This includes a transaction template that contains the details of the seller, the amount they are to pay, the asset and the smart contract that will settle the transaction.
+<img src="https://raw.githubusercontent.com/tokenized/docs/master/images/exchange-transfer-offer.svg?sanitize=true" alt="Transfer request template sent in Message action to purchaser" align="middle">
+Depending on the exchange used, there may be additional BSV outputs for the cost of performing the exchange. These details will also be included in the Transfer template. If the buyer changes the contents of the transaction, the exchange can simply elect not to sign, invalidating the transaction.
+If the buyer is happy with the proposed exchange, they add appropriate Bitcoin inputs to the transaction, insert their token receiving address into the appropriate locations, and sign the transaction, sending the template back to the Smart Contract in a 'Signature Request' message.
+<img src="https://raw.githubusercontent.com/tokenized/docs/master/images/exchange-transfer-signature-request.svg?sanitize=true" alt="Transfer template sent in Message action to Merchant/Exchange for final signature" align="middle">
+Once the seller-signed transatction has been received by the merchant/exchange, they have one final opportunity to verify that the contents remain in-line with what they agreed to with the buyer, and can sign and transmit the transaction to the Bitcoin network. 
 <img src="https://raw.githubusercontent.com/tokenized/docs/master/images/exchange-transfer-example-final.svg?sanitize=true" alt="Final Transfer request signed by buyer and seller" align="middle">
 
-Because only one smart contract is involved, the settlement can be built and sent without having to deliver any templates.
+Because only one smart contract is involved, the exchange settlement can be built and sent directly by the smart contract.
 <img src="https://raw.githubusercontent.com/tokenized/docs/master/images/exchange-settlement-example-final.svg?sanitize=true" alt="Exchange settlement" align="middle">
 
 ## Atomic Swaps

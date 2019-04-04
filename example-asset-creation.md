@@ -30,7 +30,7 @@ Subsequent to these fields, the modifications to the asset are contained in an a
 * The Sub Field Index (to identify the field within the object in the array - complex types only)
 * An instruction on whether to add or delete an element (for arrays)
 * The new data being placed into the specified index
-For asset modifications that require a vote to be passed, the TXID of a Result action showing a positive vote outcome for the change must be added as the final data item in the Asset Modification action.
+For asset modifications that require a vote to be passed, the TXID of a Result action showing a positive vote outcome for the change must be added as the final data item in the Asset Modification action. For detail on the voting process please see [Governance](governance).
 <img src="https://raw.githubusercontent.com/tokenized/docs/master/images/asset-modification-action.svg?sanitize=true" alt="Asset Modification action" align="middle">
 
 ###2. Contract Formation

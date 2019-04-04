@@ -18,9 +18,14 @@ Examples:
     example/transfers: "Different types of tokenized transfers"
     example/governance: "Contract governance"
     example/enforcement: "Tokenized enforcement actions"
-    example/messaging: "Tokenized messaging"
     example/registries: "Tokenized registries"
     example/alice-goes-to-the-movies: "Alice Goes to the Movies"
+Message:
+  pages:
+    message/publid-message: "Public Messages"
+    message/private-message: "Private Messages"
+    message/offer: "Offer Message"
+    message/signature-reqest: "Signature Request message"
 Actions:
   pages:
     action/contract-offer: "Contract Offer"
