@@ -35,7 +35,7 @@ The following breaks down the construction of a Vote Action. The action is const
     </table>
 </div>
 
-##Vote Action Transaction Summary
+## Vote Action Transaction Summary
 
 <div class="ritz grid-container" dir="ltr">
     <table class="waffle" cellspacing="0" cellpadding="0" table-layout=fixed width=100%>
