@@ -112,7 +112,7 @@ The following breaks down the construction of a Initiative Action. The action is
     </table>
 </div>
 
-##Initiative Action Transaction Summary
+## Initiative Action Transaction Summary
 
 <div class="ritz grid-container" dir="ltr">
     <table class="waffle" cellspacing="0" cellpadding="0" table-layout=fixed width=100%>

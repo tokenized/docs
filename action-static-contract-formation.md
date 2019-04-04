@@ -153,7 +153,7 @@ The following breaks down the construction of a Static Contract Formation Action
     </table>
 </div>
 
-##Static Contract Formation Action Transaction Summary
+## Static Contract Formation Action Transaction Summary
 
 <div class="ritz grid-container" dir="ltr">
     <table class="waffle" cellspacing="0" cellpadding="0" table-layout=fixed width=100%>

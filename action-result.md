@@ -101,7 +101,7 @@ The following breaks down the construction of a Result Action. The action is con
     </table>
 </div>
 
-##Result Action Transaction Summary
+## Result Action Transaction Summary
 
 <div class="ritz grid-container" dir="ltr">
     <table class="waffle" cellspacing="0" cellpadding="0" table-layout=fixed width=100%>

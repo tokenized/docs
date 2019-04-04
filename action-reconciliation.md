@@ -42,7 +42,7 @@ The following breaks down the construction of a Reconciliation Action. The actio
     </table>
 </div>
 
-##Reconciliation Action Transaction Summary
+## Reconciliation Action Transaction Summary
 
 <div class="ritz grid-container" dir="ltr">
     <table class="waffle" cellspacing="0" cellpadding="0" table-layout=fixed width=100%>

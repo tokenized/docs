@@ -35,7 +35,7 @@ The following breaks down the construction of a Ballot Counted Action. The actio
     </table>
 </div>
 
-##Ballot Counted Action Transaction Summary
+## Ballot Counted Action Transaction Summary
 
 <div class="ritz grid-container" dir="ltr">
     <table class="waffle" cellspacing="0" cellpadding="0" table-layout=fixed width=100%>

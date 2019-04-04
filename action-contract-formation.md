@@ -331,7 +331,7 @@ The following breaks down the construction of a Contract Formation Action. The a
     </table>
 </div>
 
-##Contract Formation Action Transaction Summary
+## Contract Formation Action Transaction Summary
 
 <div class="ritz grid-container" dir="ltr">
     <table class="waffle" cellspacing="0" cellpadding="0" table-layout=fixed width=100%>

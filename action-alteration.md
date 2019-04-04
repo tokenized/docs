@@ -37,7 +37,7 @@ The following breaks down the construction of a Alteration Action. The action is
     </table>
 </div>
 
-##Alteration Action Transaction Summary
+## Alteration Action Transaction Summary
 
 <div class="ritz grid-container" dir="ltr">
     <table class="waffle" cellspacing="0" cellpadding="0" table-layout=fixed width=100%>

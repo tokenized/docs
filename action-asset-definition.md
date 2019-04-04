@@ -161,7 +161,7 @@ The following breaks down the construction of a Asset Definition Action. The act
     </table>
 </div>
 
-##Asset Definition Action Transaction Summary
+## Asset Definition Action Transaction Summary
 
 <div class="ritz grid-container" dir="ltr">
     <table class="waffle" cellspacing="0" cellpadding="0" table-layout=fixed width=100%>

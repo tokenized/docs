@@ -3,9 +3,9 @@
 
 # Rejection Action
 
-Rejection Action - used to reject request actions that do not comply with the Contract. If money is to be returned to a User then it is used in lieu of the Settlement Action to properly account for token balances. All issuer/User request Actions must be responded to by the Contract with an Action.  The only exception to this rule is when there is not enough fees in the first Action for the Contract response action to remain revenue neutral.  If not enough fees are attached to pay for the Contract response then the Contract will not respond.
+Rejection Action - used to reject request actions that do not comply with the rules of the protocol or terms and conditions or state of the contract. If money is to be returned to a user then it is used in lieu of the Settlement action to properly account for token balances. All issuer/user request actions must be responded to by the smart contract with an action.  The only exception to this rule is when there is not enough fees in the first action for the smart contract to respond and remain revenue neutral.  If not enough fees are attached to pay for the smart contract response then the smart contract will not respond.
 
-The following breaks down the construction of a Rejection Action. The action is constructed by building a single string from each of the elements in order.
+The following breaks down the construction of a Rejection action. The action is constructed by building a single string from each of the elements in order.
 
 <div class="ritz grid-container" dir="ltr">
     <table class="waffle" cellspacing="0" cellpadding="0" table-layout=fixed width=100%>
@@ -71,7 +71,7 @@ The following breaks down the construction of a Rejection Action. The action is 
     </table>
 </div>
 
-##Rejection Action Transaction Summary
+## Rejection Action Transaction Summary
 
 <div class="ritz grid-container" dir="ltr">
     <table class="waffle" cellspacing="0" cellpadding="0" table-layout=fixed width=100%>

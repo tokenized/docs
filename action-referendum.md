@@ -121,7 +121,7 @@ The following breaks down the construction of a Referendum Action. The action is
     </table>
 </div>
 
-##Referendum Action Transaction Summary
+## Referendum Action Transaction Summary
 
 <div class="ritz grid-container" dir="ltr">
     <table class="waffle" cellspacing="0" cellpadding="0" table-layout=fixed width=100%>

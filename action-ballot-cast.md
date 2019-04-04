@@ -60,7 +60,7 @@ The following breaks down the construction of a Ballot Cast Action. The action i
     </table>
 </div>
 
-##Ballot Cast Action Transaction Summary
+## Ballot Cast Action Transaction Summary
 
 <div class="ritz grid-container" dir="ltr">
     <table class="waffle" cellspacing="0" cellpadding="0" table-layout=fixed width=100%>
