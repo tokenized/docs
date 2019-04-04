@@ -33,8 +33,8 @@ Subsequent to these fields, the modifications to the asset are contained in an a
 For asset modifications that require a vote to be passed, the TXID of a Result action showing a positive vote outcome for the change must be added as the final data item in the Asset Modification action. For detail on the voting process please see [Governance](governance).
 <img src="https://raw.githubusercontent.com/tokenized/docs/master/images/asset-modification-action.svg?sanitize=true" alt="Asset Modification action" align="middle">
 
-### 2. Contract Formation
-When the contract sees the Contract Amendment action land in its wallet, it evaluates the action and looks to ensure that the modifications are valid. 
-If the contract determines that the amendment is valid, it issues a full Contract Formation action including the full details of the contract, the updated version number and a new timestamp.
-From this moment, all transaction requests to the contract must abide by the amended rules.
+### 2. Asset Creation
+When the contract sees the Asset Modification action land in its wallet, it evaluates the action and looks to ensure that the modifications are valid. 
+If the contract determines that the amendment is valid, it issues a full Asset Creation action including the full details of the asset, the updated version number and a new timestamp.
+From this moment, all transaction requests to the contract must abide by any amended rules that apply to the asset.
 <img src="https://raw.githubusercontent.com/tokenized/docs/master/images/asset-creation-action-amendment.svg?sanitize=true" alt="Updated Contract Formation action" align="middle">

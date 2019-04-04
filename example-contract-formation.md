@@ -1,47 +1,30 @@
-## Tokenized Contract Formation
-A Tokenized contract is formed when a token issuer presents a valid 'Contract Offer' action to a smart contract. The smart contract checks only that the rules proposed in the offer are compliant with its logic, but the legal and regulatory aspects of dealing with the assets being created must be pre-determined and managed by the issuer to ensure the contract operates within all applicable laws and regulations.
+## Bob's Family Trust
+Bill is setting up a family trust to share assets recently passed to him and his siblings Angela and Chris through an estate distribution.
+Bill's lawyer, Daniel, establishes a set of contract rules to create a contract giving each sibiling an equal stake in the distribution of the assets, but which makes Bill, Angela and Chris equal managers in the issuance of the contract and associated assets.
+The lawyer and Bill's family agree on the terms and the contract is clearly described in English with a paper copy signed by all parties including Daniel.
+The signed copy is then scanned and a hash of the document created.
 
-### 1. Contract Offer
-To create a Contract Offer, the Contract issuer must prepare an action that contains all of the required information such as:
-* Contract name
-* Governing Law
-* Jurisdiction
-* Contract rules, voting systems
-* Detail of the issuing entity/entities including key personnel, addresses etc.
-Included with the offer is either a hash and a URL linking to a contract file, or when possible, the entire contract file itself as a Markdown formatted file or PDF.
-The Contract Offer action must be signed by both the issuer and the smart contract Operator, so the issuer first builds a template transaction which it sends to the smart contract Operator:
-<img src="https://raw.githubusercontent.com/tokenized/docs/master/images/contract-offer-action-template.svg?sanitize=true" alt="A contract offer action template" align="middle">
-If the contract meets the smart contract Operator's requirements, they will add an input from their own wallet, add the change outputs they need and sign the Contract Offer using SIGHASH_ALL before sending it back to the issuer. Once the issuer has reviewed the smart contract Operator's changes, they can sign their own input (or inputs) using SIGHASH_ALL and send the transaction onto the network.
-<img src="https://raw.githubusercontent.com/tokenized/docs/master/images/contract-offer-action-final.svg?sanitize=true" alt="Final contract offer action" align="middle">
+Subsequently, a Contract Offer is created that establishes the smart contract incorporating all the rules laid out in the agreement. Because the three family members are the only ones involved in the contract, the rules are set up such that the issuer can make unilateral modifications at any time.
 
-### 2. Contract Formation
-When the smart contract receives the Offer action it unpacks the information and evaluates it. If the smart contract decides there are no issues, it builds a 'Contract Formation' action in response which is sent onto the network. The Contract Formation action contains a complete repeat of all of the information in the Contract Offer action as an acknowledgement that the smart contract has accepted the setup as valid.
-The contract also adds two additional fields
-1. Timestamp - The time at which the smart contract built the Contract Formation action
-2. Version field - Set to zero for a new contract. Increments by 1 each time the contract is updated
-<img src="https://raw.githubusercontent.com/tokenized/docs/master/images/contract-formation-action.svg?sanitize=true" alt="Contract Formation action" align="middle">
+This is done by setting each set of three authorisation flags to 100 for every contract parameter. This setting enables the Issuer to manage all changes without the need for votes.
+The contract issuer is listed as the BillAngelaChris Family trust. The definition of the issuer includes details such as an administrative address, and key persons. Bill, Angela and Chris are listed as the directors of the contract, and Daniel as the lawyer. 
 
-## Tokenized Contract Amendment
-The amendment of a Tokenized contract can be simple when the rules or conditions being changed are able to be amended without needing a vote. This is called a Unilateral Amendment, and is comprised of just 2 actions.
-1. Contract Amendment
-2. Contract Formation
+Becuase the nature of the contract is simple, the trust uses a third party operator to manage the contract on their behalf. They select Tokenized Contract Operations (TCO) who's details are publicly available and their details are added into the operator definition field.
+An issuer proposal is added to the contract which stipulates that the only people authorised to hold assets under the contract are the three directors. To keep it simple, they elect not to use a registry to confirm their own addresses for asset transfers, electing instead to manage it through off-chain means.
+The Contract Offer is assembled in full and double checked by Daniel to ensure it will pass the contract validation process used by the Tokenized platform. Once all the details have been double checked, the Contract Offer transaction is packaged into a Message action using the 'Signature Request' message type and sent to the TCO platform. The trust knows what fees it needs to pay based on the public information provided by TCO.
 
-Where a Contract Amendment seeks to make changes that require a vote through referendum or initiative, there is no longer a Unlateral Amendment since the rules of the vote determine the outcome of the Contract Amendment.
+/// INSERT IMAGE
 
-### 1. Contract Amendment
-If the issuer wants to change the issuer address (e.g. in the event of a contract being sold) or to change the Operator address (to move to a new service provider) there are flags for these options. The smart contract receives the new addresses for these contracts from signed inputs paying into the transaction carrying the Contract Amendment action.
-Following on from these flags is the new contract revision, which is incremented by 1 each time the contract is updated. A Contract Amendment request that has a version number that isn't in sequence will be rejected.
-Subsequent to these fields, amendments to the contract are contained in an array of objects, each of which has the following information:
-* The field index of the contract element being changed
-* The element of the field (for to identify the index number of the element within an array - complex types only)
-* The Sub Field Index (to identify the field within the object in the array - complex types only)
-* An instruction on whether to add or delete an element (for arrays)
-* The new data being placed into the specified index
-For amendments that require a vote to be passed, the TXID of a Result action showing a positive vote outcome for the change must be added as the final data item in the Contract Amendment action.
-<img src="https://raw.githubusercontent.com/tokenized/docs/master/images/contract-amendment-action.svg?sanitize=true" alt="Contract Amendment action" align="middle">
+The Contract Offer is sent to an address which is provided to the issuer by TCO. It corresponds to an address controlled by their Tokenized platform which is exclusively for the control of the BillAngelaChris family trust. This is the only contract that will be hosted at this address.
 
-### 2. Contract Formation
-When the contract sees the Contract Amendment action land in its wallet, it evaluates the action and looks to ensure that the modifications are valid. 
-If the contract determines that the amendment is valid, it issues a full Contract Formation action including the full details of the contract, the updated version number and a new timestamp.
-From this moment, all transaction requests to the contract must abide by the amended rules.
-<img src="https://raw.githubusercontent.com/tokenized/docs/master/images/contract-formation-action-amendment.svg?sanitize=true" alt="Updated Contract Formation action" align="middle">
+The platform receives the Contract Offer and and unpacks the transaction. Once the conditions that are specified for the establishment of the contract are proven to be valid, the platform sends a Contract Formation action from the contract address. From this moment, the smart contract can be considered live and is ready to create, distribute and manage assets.
+
+/// INSERT IMAGE
+
+Asset Creation - Home
+Home Distribution
+Asset Creation - Jewellery
+Jewellery Distribution
+Asset Creation - Bullion
+Bullion Distribution
+Bullion swap for home
