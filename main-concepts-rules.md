@@ -18,6 +18,8 @@ The following lays out a set of rules applicable to different aspects of the tok
 
 * The Tokenized action should always be the last output.
 
+* If a request action is sent to the smart contract, but is invalid and the RETURN payload is malformed in such a way as it is impossible to determine which inputs to refund in the Rejection message, then the refunded bitcoin will be sent to the issuer's address. 
+
 ## Contract Operations
 
 1. Every token must have a valid Contract Formation action to be considered a valid token by the protocol.
