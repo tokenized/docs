@@ -3,8 +3,25 @@ The Tokenized protocol includes a rich and expressive set of messaging actions w
 Messaging actions are split into two types, the Message action and Rejection action.
  
 ## Message action
-Message actions are for general purpose messaging between users. The protocol has the means to support pre-defined message types allowing messaging to be used for things such as private messaging between 2 users and the transmission of transaction templates requiring additional data such as inputs, signatures and more.
-There are 4 Message types defined in the Tokenized protocol:
+Message actions are for general purpose messaging between users. The protocol has the means to support pre-defined message types allowing messaging to be used for many things including:
+* Transaction templates
+* Purchase Orders and Invoices
+* Receipts
+* Shipping notices
+* Tags
+* Transaction descriptions
+* Quartlery/Yearly Reports (10K, 10Q, etc)
+* Collateral Calls
+* Encrypted messages
+* Public (cleartext) messages
+* And many other types
+
+Message actions do not, generally, involve a smart contract and only serve to record communication data to the blockchain. The message action format is standardised to ensure that any wallets which follow the Tokenized protocol will be able to identify, parse and categorize messages.
+A message may be sent to many addresses at once by appending multiple outputs to the transaction which contains the Message action.
+
+<img src="https://raw.githubusercontent.com/tokenized/docs/master/images/message-action.svg?sanitize=true" alt="Message action" align="middle">
+
+There are 4 Message types currently defined in the Tokenized protocol:
 1. Public message: Message #0002 - A generic public message or public announcement. Sent to an address(es).  Can be used for an official issuer announcement.
 2. Private message" Message #0003 - A generic private message. Sent to another address(es). Encryption is to be used.
 3. Offer message: Message #1001 - A message that contains all of the details required for an agreement to be formed. Sent to an address(es). The Offer should 
@@ -16,6 +33,9 @@ As the Tokenized protocol matures, it is expected that many more message types w
 
 ## Rejection action
 The rejection action is the only message type sent by the smart contract. The Rejection action is used when a user has requested an action that is unable to be completed by the smart contract. All rejection messages include a rejection type, which links to a message telling the user why their request was rejected.
+
+<img src="https://raw.githubusercontent.com/tokenized/docs/master/images/rejection-action.svg?sanitize=true" alt="Rejection action" align="middle">
+
 The following rejection messages have been defined:
 
 ### Basic Rejection Codes

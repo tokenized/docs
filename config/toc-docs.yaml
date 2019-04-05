@@ -4,23 +4,22 @@ Intro:
 Main Concepts:
   pages:
     main-concepts/action-mechanism: "Action Mechanism"
+    main-concepts/contracts: "Contracts"
     main-concepts/transactions: "Transactions"
     main-concepts/operations: "Tokenized Operations"
-    main-concepts/message-types: "Message type Overview"
-    main-concepts/tokens: "Tokens"
-    main-concepts/asset-types: "Asset Type Overview"
-    main-concepts/contracts: "Tokenized Contracts"
     main-concepts/rules: "Rules"
+    main-concepts/tokens: "Tokens"
+    main-concepts/assets: "Creating and managing assets"
+    main-concepts/governance: "Contract and asset governance"
+    main-concepts/enforcement: "Tokenized enforcement actions"
+    main-concepts/message-types: "Message type Overview"
+    main-concepts/registries: "Tokenized registries"
+    main-concepts/asset-types: "Asset Type Overview"
 Examples:
   pages:
-    example/contract-formation: "Formation and amendment of Tokenized contracts"
-    example/asset-creation: "Creating and modifying assets"
-    example/transfers: "Different types of tokenized transfers"
-    example/governance: "Contract governance"
-    example/enforcement: "Tokenized enforcement actions"
-    example/messaging: "Tokenized protocol messaging"
-    example/registries: "Tokenized registries"
-    example/alice-goes-to-the-movies: "Alice Goes to the Movies"
+    example/bill-family-trust: "Bill's family trust"
+    example/bob-gives-away-air-miles: "Bob's air miles"
+    example/alice-goes-to-the-movies: "Alice goes to the movies"
 Message:
   pages:
     message/publid-message: "Public Messages"
