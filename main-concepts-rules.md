@@ -76,6 +76,6 @@ The following lays out a set of rules applicable to different aspects of the tok
 ## Registry Operations
 
 1. All Registry operations that come before an Establishment action are ignored.
-2. All Addition actions must be preceded by an Establishment action.
-3. An Alteration action must be preceded by an Addition action.
-4. All Removal actions must be preceded by a valid Addition action.
+2. All Addition actions must be preceded by an associated Establishment action.
+3. All Alteration actions must be preceded by an associated Addition action.
+4. All Removal actions must be preceded by an associated Addition action.
