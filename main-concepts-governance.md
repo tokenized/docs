@@ -1,4 +1,4 @@
-## Tokenized Governance
+## Governance
 The Tokenized protocol includes a full and rich governance model that allows for different priorities to be placed on different authorities for almost any aspect of a contract or asset which can be modified. These settings are all governed by the authorisation flags that are present in the most recent Contract Formation or Asset Creation actions issued by the contract.
 Where a field in a contract or asset definition has been set to allow for 'Unilateral' changes to be made, this means that the issuer may make changes to this field without needing the authority of a vote process. This means that the fields can be changed at any time without restriction.
 Where a field in a contract or asset definition has been set to require a positive outcome from a Referendum, the Contract Amendment or Asset Modification action that contains the change will need to contain a TXID that references a Result action that counts the votes in a link the modification of that paramter. 
