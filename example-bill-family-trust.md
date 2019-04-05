@@ -1,20 +1,22 @@
 ## Bill's Family Trust
 Bill is setting up a family trust to share a home recently passed to him and his siblings Angela and Chris through an estate distribution.
-Bill's lawyer, Daniel, establishes a set of contract rules to create a contract giving each sibiling an equal stake in the home, but which makes Bill, Angela and Chris equal managers in the issuance of the contract and associated assets.
+Bill's lawyer, Daniel, establishes a set of contract rules to create a contract giving each sibiling an equal stake in the home, but which makes Bill, Angela and Chris equal owners of the contract and associated assets, and Bill, Angela and Chris the issuers.
 The lawyer and Bill's family agree on the terms and the contract is clearly described in English with a paper copy signed by all parties including Daniel.
 The signed copy is then scanned and a hash of the document created.
 This document is used to establish a legal entity called 'The BillAngelaChris trust' (TBACT) which will be the owner of the home.
 
 Subsequently, a Contract Offer is created that establishes the smart contract incorporating all the rules laid out in the agreement. Because the three family members and Daniel are the only ones involved in the contract, the rules are set up such that the issuer can make unilateral modifications at any time.
-The contract issuer is listed as the TBACT and includes details such as an administrative address, and key persons. Bill, Angela and Chris are listed as the directors of the contract, and Daniel as the lawyer. 
+The contract issuer is listed as the TBACT and includes details such as an administrative address, and key persons. Bill, Angela and Chris are listed as the beneficiaries of the trust, and Daniel as the lawyer. 
 
-Becuase the nature of the contract is simple, the trust uses a third party operator to manage the contract on their behalf. They select Tokenized Contract Operations (TCO) who's details are publicly available and their details are added into the operator definition field.
+Now they begin to assemble the details for the creation of their smart contract. Because the nature of the contract is simple, the trust uses a third party Operator to manage the contract on their behalf. They select Tokenized to be that third party, and use the publicly available details to determine the correct pricing for their contract. Tokenized are are added into the operator definition field. Because they are using Tokenized, they are able to use the Issuer management functions of the Nexus platform to build their smart contract.
+
 An issuer proposal is added to the contract which stipulates that the only people authorised to hold assets under the contract are the three beneficiaries.
-The Contract Offer is assembled in full and double checked by Daniel to ensure it will pass the contract validation process used by the Tokenized platform. Once all the details have been double checked, the Contract Offer transaction is packaged into a Message action using the 'Signature Request' message type and sent to the TCO platform. The offer transaction is sent with the necessary fees attached which are based on the public information provided by TCO.
+
+Once the Contract Offer is assembled in full it is double checked by Daniel to ensure it will pass the contract validation process used by the Tokenized platform. Daniel then sends the Contract Offer to the Tokenized platform using the Nexus app. As the operator of the smart contract, Tokenized must sign it or the platform will reject the offer transaction. Tokenized signs the transaction and the Contract Offer is sent with the necessary fees attached to the smart contract address.
 
 /// INSERT IMAGE
 
-The Contract Offer is sent to an address which is provided to the issuer by TCO. It corresponds to an address controlled by their Tokenized platform which is exclusively for the control of TBACT.
+The Contract Offer is sent to an address which is provided to the issuer by Tokenized. It corresponds to an address controlled by their Tokenized platform which is exclusively for the control of TBACT.
 
 The platform receives the Contract Offer and and unpacks the transaction. Once the conditions that are specified for the establishment of the contract are proven to be valid, the platform sends a Contract Formation action from the contract address. From this moment, the smart contract can be considered live and is ready to create, distribute and manage assets.
 

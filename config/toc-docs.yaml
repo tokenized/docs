@@ -10,6 +10,7 @@ Main Concepts:
     main-concepts/rules: "Rules"
     main-concepts/tokens: "Tokens"
     main-concepts/assets: "Creating and managing assets"
+    main-concepts/transfers: "Transferring assets"
     main-concepts/governance: "Contract and asset governance"
     main-concepts/enforcement: "Tokenized enforcement actions"
     main-concepts/message-types: "Message type Overview"
