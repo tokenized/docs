@@ -1,6 +1,6 @@
 ## Tokens
 
-A token is defined, in this context, as a digital record of ownership.  The term 'token' implies a sense of physicality in that it can only be in one place at one time. However, at a technical level, it is simply a digital ledger entry that records the ownership rights of a certain entity for a given asset, and the subsequent changes of ownership over time to the Bitcoin (BSV) ledger.  The protocol doesn't recognize two owners of a token at the same point in time, and the smart contract governs this rule.  
+A token is defined, in this context, as a digital record of ownership that is managed by a smart contract.  The term 'token' implies a sense of physicality in that it can only be in one place at one time. However, at a technical level, it is simply a digital ledger entry that records the ownership rights of a certain entity for a given asset, and the subsequent changes of ownership over time to the Bitcoin (BSV) ledger.  The protocol doesn't recognize two owners of a token at the same point in time, and the smart contract governs this rule.  
 
 With Tokenized tokens, the owner of the asset is the entity that possesses the associated token by controlling the private keys to the Bitcoin public address that the token is held at. For the ownership of the asset to change, the token must be transferred to the new owners. 
 
