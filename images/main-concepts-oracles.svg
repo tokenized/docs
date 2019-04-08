@@ -99,7 +99,7 @@
 		<title>Page-1</title>
 		<v:pageProperties v:drawingScale="0.0393701" v:pageScale="0.0393701" v:drawingUnits="24" v:shadowOffsetX="8.50394"
 				v:shadowOffsetY="-8.50394"/>
-		<g id="shape150-1" v:mID="150" v:groupContext="shape" transform="translate(19.7953,-2165.72)">
+		<g id="shape150-1" v:mID="150" v:groupContext="shape" transform="translate(28.3465,-2165.72)">
 			<title>Sheet.150</title>
 			<desc>Receiver Sends Payment Request to Sender</desc>
 			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
@@ -286,7 +286,7 @@
 						class="st13">Current Block Height</tspan><tspan class="st13">-</tspan><tspan class="st13">4 + Block Hash </tspan><tspan
 						x="29.54" dy="1.2em" class="st13">(of Current Block Height</tspan><tspan class="st13">-</tspan><tspan
 						class="st13">4)</tspan></text>		</g>
-		<g id="shape217-100" v:mID="217" v:groupContext="shape" transform="translate(146.903,-911.556)">
+		<g id="shape217-100" v:mID="217" v:groupContext="shape" transform="translate(146.903,-946.706)">
 			<title>Sheet.217</title>
 			<desc>Transfer Action Contract: Smart Contract Transfer details: Se...</desc>
 			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197" v:verticalAlign="0"/>
@@ -304,7 +304,7 @@
 						x="4" dy="1.2em" class="st18">Qty x Asset:<v:tabChar/></tspan><tspan dx="3.114em" class="st18">100 x Tokens<v:newlineChar/></tspan><tspan
 						x="4" dy="1.2em" class="st18">Oracle Signature: <v:tabChar/></tspan><tspan dx="0.444em" class="st23">OracleSignature(Message(OSR)+1)<v:newlineChar/></tspan><tspan
 						x="4" dy="1.2em" class="st18">Receive Message: </tspan><tspan class="st24">Message(OSR)</tspan><v:newlineChar/><v:newlineChar/></text>		</g>
-		<g id="shape218-123" v:mID="218" v:groupContext="shape" transform="translate(146.903,-1057.04)">
+		<g id="shape218-123" v:mID="218" v:groupContext="shape" transform="translate(146.903,-1092.19)">
 			<title>Sheet.218</title>
 			<desc>Transaction Structure In 1: Sender UTXO Out 1: Smart Contract...</desc>
 			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197" v:verticalAlign="0"/>
@@ -693,11 +693,11 @@
 				</g>
 			</g>
 		</g>
-		<g id="shape276-236" v:mID="276" v:groupContext="shape" transform="translate(35.4361,-1766.68)">
+		<g id="shape276-236" v:mID="276" v:groupContext="shape" transform="translate(45.553,-1766.68)">
 			<title>Sheet.276</title>
 			<path d="M0 2212.44 L467.27 2212.44" class="st39"/>
 		</g>
-		<g id="shape277-239" v:mID="277" v:groupContext="shape" transform="translate(35.7344,-1306.05)">
+		<g id="shape277-239" v:mID="277" v:groupContext="shape" transform="translate(45.553,-1306.05)">
 			<title>Sheet.277</title>
 			<path d="M0 2212.44 L467.27 2212.44" class="st39"/>
 		</g>
@@ -715,28 +715,28 @@
 			<v:textRect cx="37.5573" cy="2169.92" width="75.12" height="85.0394"/>
 			<rect x="0" y="2127.4" width="75.1145" height="85.0394" class="st1"/>
 			<text x="4" y="2177.12" class="st40" v:langID="3081"><v:paragraph/><v:tabList/>Step 2</text>		</g>
-		<g id="shape281-248" v:mID="281" v:groupContext="shape" transform="translate(19.4203,-1011.63)">
+		<g id="shape281-248" v:mID="281" v:groupContext="shape" transform="translate(19.4203,-1046.78)">
 			<title>Sheet.281</title>
 			<desc>Step 3</desc>
 			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
 			<v:textRect cx="37.5573" cy="2169.92" width="75.12" height="85.0394"/>
 			<rect x="0" y="2127.4" width="75.1145" height="85.0394" class="st1"/>
 			<text x="4" y="2177.12" class="st40" v:langID="3081"><v:paragraph/><v:tabList/>Step 3</text>		</g>
-		<g id="shape282-251" v:mID="282" v:groupContext="shape" transform="translate(19.8706,-1731.24)">
+		<g id="shape282-251" v:mID="282" v:groupContext="shape" transform="translate(28.3465,-1731.24)">
 			<title>Sheet.282</title>
 			<desc>Sender’s Wallet Requests Identity Oracle’s Permission to Tran...</desc>
 			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
 			<v:textRect cx="250.841" cy="2198.26" width="501.69" height="28.3465"/>
 			<rect x="0" y="2184.09" width="501.682" height="28.3465" class="st1"/>
 			<text x="39.22" y="2201.86" class="st2" v:langID="3081"><v:paragraph v:horizAlign="1"/><v:tabList/>Sender’s Wallet Requests Identity Oracle’s Permission to Transfer Tokens to Receiver</text>		</g>
-		<g id="shape283-254" v:mID="283" v:groupContext="shape" transform="translate(19.8706,-1263.53)">
+		<g id="shape283-254" v:mID="283" v:groupContext="shape" transform="translate(28.3465,-1263.53)">
 			<title>Sheet.283</title>
 			<desc>Sender’s Wallet Builds and Signs a Transaction with the Oracl...</desc>
 			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
 			<v:textRect cx="250.841" cy="2198.26" width="501.69" height="28.3465"/>
 			<rect x="0" y="2184.09" width="501.682" height="28.3465" class="st1"/>
 			<text x="47.66" y="2201.86" class="st2" v:langID="3081"><v:paragraph v:horizAlign="1"/><v:tabList/>Sender’s Wallet Builds and Signs a Transaction with the Oracle Signature Included</text>		</g>
-		<g id="shape315-257" v:mID="315" v:groupContext="shape" transform="translate(146.431,-472.68)">
+		<g id="shape315-257" v:mID="315" v:groupContext="shape" transform="translate(146.431,-542.979)">
 			<title>Sheet.315</title>
 			<desc>Transfer Action Contract: Smart Contract Transfer details: Se...</desc>
 			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197" v:verticalAlign="0"/>
@@ -754,7 +754,7 @@
 						x="4" dy="1.2em" class="st18">Qty x Asset:<v:tabChar/></tspan><tspan dx="3.114em" class="st18">100 x Tokens<v:newlineChar/></tspan><tspan
 						x="4" dy="1.2em" class="st18">Oracle Signature: <v:tabChar/></tspan><tspan dx="0.444em" class="st23">OracleSignature(Message(OSR)+1)<v:newlineChar/></tspan><tspan
 						x="4" dy="1.2em" class="st18">Receive Message: </tspan><tspan class="st24">Message(OSR)</tspan><v:newlineChar/><v:newlineChar/></text>		</g>
-		<g id="shape316-279" v:mID="316" v:groupContext="shape" transform="translate(146.431,-618.169)">
+		<g id="shape316-279" v:mID="316" v:groupContext="shape" transform="translate(146.431,-688.468)">
 			<title>Sheet.316</title>
 			<desc>Transaction Structure In 1: Sender UTXO Out 1: Smart Contract...</desc>
 			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197" v:verticalAlign="0"/>
@@ -772,25 +772,25 @@
 						class="st18">Out 2:<v:tabChar/></tspan><tspan dx="1.528em" class="st22">Receiver</tspan><tspan class="st22">’</tspan><tspan
 						class="st22">s address<v:newlineChar/></tspan><tspan x="4" dy="1.2em" class="st18">Value 2:<v:tabChar/></tspan><tspan
 						dx="0.582em" class="st18">Dust<v:newlineChar/><v:newlineChar/></tspan><tspan x="4" dy="2.4em" class="st18">Other outputs:  Change, Transfer action </tspan> </text>		</g>
-		<g id="shape317-300" v:mID="317" v:groupContext="shape" transform="translate(35.2625,-843.301)">
+		<g id="shape317-300" v:mID="317" v:groupContext="shape" transform="translate(45.553,-913.6)">
 			<title>Sheet.317</title>
 			<path d="M0 2212.44 L467.27 2212.44" class="st39"/>
 		</g>
-		<g id="shape318-303" v:mID="318" v:groupContext="shape" transform="translate(18.9483,-572.755)">
+		<g id="shape318-303" v:mID="318" v:groupContext="shape" transform="translate(18.9483,-643.054)">
 			<title>Sheet.318</title>
 			<desc>Step 4</desc>
 			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
 			<v:textRect cx="37.5573" cy="2169.92" width="75.12" height="85.0394"/>
 			<rect x="0" y="2127.4" width="75.1145" height="85.0394" class="st1"/>
 			<text x="4" y="2177.12" class="st40" v:langID="3081"><v:paragraph/><v:tabList/>Step 4</text>		</g>
-		<g id="shape319-306" v:mID="319" v:groupContext="shape" transform="translate(19.3986,-800.781)">
+		<g id="shape319-306" v:mID="319" v:groupContext="shape" transform="translate(28.3465,-871.08)">
 			<title>Sheet.319</title>
 			<desc>Smart Contract Validates Transfer Action and Verifies the Ora...</desc>
 			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
 			<v:textRect cx="250.841" cy="2198.26" width="501.69" height="28.3465"/>
 			<rect x="0" y="2184.09" width="501.682" height="28.3465" class="st1"/>
 			<text x="24.12" y="2201.86" class="st2" v:langID="3081"><v:paragraph v:horizAlign="1"/><v:tabList/>Smart Contract Validates Transfer Action and Verifies the Oracle Signature + Message(OSR)</text>		</g>
-		<g id="shape320-309" v:mID="320" v:groupContext="shape" transform="translate(411.024,-554.173)">
+		<g id="shape320-309" v:mID="320" v:groupContext="shape" transform="translate(411.024,-624.472)">
 			<title>Sheet.320</title>
 			<desc>Oracle’s Public Key is found in the Contract Formation metada...</desc>
 			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
@@ -814,25 +814,25 @@
 			<v:textRect cx="45.3543" cy="2194.72" width="90.71" height="35.4331"/>
 			<rect x="0" y="2177" width="90.7087" height="35.4331" class="st1"/>
 			<text x="15.97" y="2198.32" class="st42" v:langID="3081"><v:paragraph v:horizAlign="1"/><v:tabList/>Tokens: 100</text>		</g>
-		<g id="shape328-323" v:mID="328" v:groupContext="shape" transform="translate(34.6891,-388.745)">
+		<g id="shape328-323" v:mID="328" v:groupContext="shape" transform="translate(45.553,-499.863)">
 			<title>Sheet.328</title>
 			<path d="M0 2212.44 L467.27 2212.44" class="st39"/>
 		</g>
-		<g id="shape329-326" v:mID="329" v:groupContext="shape" transform="translate(18.375,-118.2)">
+		<g id="shape329-326" v:mID="329" v:groupContext="shape" transform="translate(18.375,-229.318)">
 			<title>Sheet.329</title>
 			<desc>Step 5</desc>
 			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
 			<v:textRect cx="37.5573" cy="2169.92" width="75.12" height="85.0394"/>
 			<rect x="0" y="2127.4" width="75.1145" height="85.0394" class="st1"/>
 			<text x="4" y="2177.12" class="st40" v:langID="3081"><v:paragraph/><v:tabList/>Step 5</text>		</g>
-		<g id="shape330-329" v:mID="330" v:groupContext="shape" transform="translate(18.8253,-346.225)">
+		<g id="shape330-329" v:mID="330" v:groupContext="shape" transform="translate(28.3465,-457.343)">
 			<title>Sheet.330</title>
 			<desc>If the Transfer Action is Valid, Smart Contract Responds with...</desc>
 			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
 			<v:textRect cx="250.841" cy="2198.26" width="501.69" height="28.3465"/>
 			<rect x="0" y="2184.09" width="501.682" height="28.3465" class="st1"/>
 			<text x="49.36" y="2201.86" class="st2" v:langID="3081"><v:paragraph v:horizAlign="1"/><v:tabList/>If the Transfer Action is Valid, Smart Contract Responds with a Settlement Action</text>		</g>
-		<g id="group333-332" transform="translate(241.843,-56.7989)" v:mID="333" v:groupContext="group">
+		<g id="group333-332" transform="translate(241.843,-167.917)" v:mID="333" v:groupContext="group">
 			<title>Sheet.333</title>
 			<g id="group334-333" v:mID="334" v:groupContext="group">
 				<title>Sheet.334</title>
@@ -864,7 +864,7 @@
 				</g>
 			</g>
 		</g>
-		<g id="group339-342" transform="translate(126.765,-212.257)" v:mID="339" v:groupContext="group">
+		<g id="group339-342" transform="translate(126.765,-323.375)" v:mID="339" v:groupContext="group">
 			<title>Sheet.339</title>
 			<g id="group340-343" v:mID="340" v:groupContext="group">
 				<title>Sheet.340</title>
@@ -953,7 +953,7 @@
 				</g>
 			</g>
 		</g>
-		<g id="group349-360" transform="translate(239.295,-222.862)" v:mID="349" v:groupContext="group">
+		<g id="group349-360" transform="translate(239.295,-333.98)" v:mID="349" v:groupContext="group">
 			<title>Sheet.349</title>
 			<g id="group350-361" v:mID="350" v:groupContext="group">
 				<title>Sheet.350</title>
@@ -985,14 +985,14 @@
 				</g>
 			</g>
 		</g>
-		<g id="shape355-370" v:mID="355" v:groupContext="shape" transform="translate(101.252,-181.155)">
+		<g id="shape355-370" v:mID="355" v:groupContext="shape" transform="translate(101.252,-292.273)">
 			<title>Sheet.355</title>
 			<desc>Receiver</desc>
 			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
 			<v:textRect cx="63.0709" cy="2198.26" width="126.15" height="28.3465"/>
 			<rect x="0" y="2184.09" width="126.142" height="28.3465" class="st1"/>
 			<text x="41.67" y="2201.86" class="st31" v:langID="3081"><v:paragraph v:horizAlign="1"/><v:tabList/>Receiver</text>		</g>
-		<g id="group358-373" transform="translate(117.117,-48.5232)" v:mID="358" v:groupContext="group">
+		<g id="group358-373" transform="translate(117.117,-159.641)" v:mID="358" v:groupContext="group">
 			<title>Sheet.358</title>
 			<g id="group359-374" v:mID="359" v:groupContext="group">
 				<title>Sheet.359</title>
@@ -1079,28 +1079,28 @@
 				</g>
 			</g>
 		</g>
-		<g id="shape366-387" v:mID="366" v:groupContext="shape" transform="translate(330.431,-236.46)">
+		<g id="shape366-387" v:mID="366" v:groupContext="shape" transform="translate(323.766,-347.578)">
 			<title>Sheet.366</title>
-			<desc>Shares: 100</desc>
+			<desc>Tokens: 100</desc>
 			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
 			<v:textRect cx="45.3543" cy="2194.72" width="90.71" height="35.4331"/>
 			<rect x="0" y="2177" width="90.7087" height="35.4331" class="st1"/>
-			<text x="17.06" y="2198.32" class="st42" v:langID="3081"><v:paragraph v:horizAlign="1"/><v:tabList/>Shares: 100</text>		</g>
-		<g id="shape367-390" v:mID="367" v:groupContext="shape" transform="translate(340.774,-66.7386)">
+			<text x="15.97" y="2198.32" class="st42" v:langID="3081"><v:paragraph v:horizAlign="1"/><v:tabList/>Tokens: 100</text>		</g>
+		<g id="shape367-390" v:mID="367" v:groupContext="shape" transform="translate(323.766,-177.857)">
 			<title>Sheet.367</title>
-			<desc>Shares: 0</desc>
+			<desc>Tokens: 0</desc>
 			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
 			<v:textRect cx="45.3543" cy="2194.72" width="90.71" height="35.4331"/>
 			<rect x="0" y="2177" width="90.7087" height="35.4331" class="st1"/>
-			<text x="23.14" y="2198.32" class="st42" v:langID="3081"><v:paragraph v:horizAlign="1"/><v:tabList/>Shares: 0</text>		</g>
-		<g id="shape368-393" v:mID="368" v:groupContext="shape" transform="translate(99.7859,-18.375)">
+			<text x="22.05" y="2198.32" class="st42" v:langID="3081"><v:paragraph v:horizAlign="1"/><v:tabList/>Tokens: 0</text>		</g>
+		<g id="shape368-393" v:mID="368" v:groupContext="shape" transform="translate(99.7859,-129.493)">
 			<title>Sheet.368</title>
 			<desc>Sender</desc>
 			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
 			<v:textRect cx="63.0709" cy="2198.26" width="126.15" height="28.3465"/>
 			<rect x="0" y="2184.09" width="126.142" height="28.3465" class="st1"/>
 			<text x="45.62" y="2201.86" class="st25" v:langID="3081"><v:paragraph v:horizAlign="1"/><v:tabList/>Sender</text>		</g>
-		<g id="shape369-396" v:mID="369" v:groupContext="shape" transform="translate(425.197,-149.814)">
+		<g id="shape369-396" v:mID="369" v:groupContext="shape" transform="translate(425.197,-260.932)">
 			<title>Sheet.369</title>
 			<desc>New Balances after Settlement</desc>
 			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
@@ -1108,26 +1108,26 @@
 			<rect x="0" y="2165.95" width="106.583" height="46.4882" class="st1"/>
 			<text x="6.23" y="2185.59" class="st42" v:langID="3081"><v:paragraph v:horizAlign="1"/><v:tabList/>New Balances after <tspan
 						x="26.23" dy="1.2em" class="st34">Settlement</tspan></text>		</g>
-		<g id="shape370-400" v:mID="370" v:groupContext="shape" transform="translate(-1935.77,2058.66) rotate(-90)">
+		<g id="shape370-400" v:mID="370" v:groupContext="shape" transform="translate(-1935.77,1947.54) rotate(-90)">
 			<title>Sheet.370</title>
 			<path d="M0 2212.44 L42.38 2212.44" class="st43"/>
 		</g>
-		<g id="shape371-406" v:mID="371" v:groupContext="shape" transform="translate(281.203,-160.869)">
+		<g id="shape371-406" v:mID="371" v:groupContext="shape" transform="translate(281.203,-271.987)">
 			<title>Sheet.371</title>
 			<desc>Transfer of 100 Shares</desc>
 			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
 			<v:textRect cx="63.0709" cy="2194.72" width="126.15" height="35.4331"/>
 			<rect x="0" y="2177" width="126.142" height="35.4331" class="st1"/>
 			<text x="8.38" y="2198.32" class="st42" v:langID="3081"><v:paragraph v:horizAlign="1"/><v:tabList/>Transfer of 100 Shares</text>		</g>
-		<g id="shape372-409" v:mID="372" v:groupContext="shape" transform="translate(1976.03,401.816) rotate(45)">
+		<g id="shape372-409" v:mID="372" v:groupContext="shape" transform="translate(1976.03,290.698) rotate(45)">
 			<title>Sheet.372</title>
 			<path d="M10.2 2212.44 L10.56 2212.44 L63.76 2212.44" class="st45"/>
 		</g>
-		<g id="shape373-415" v:mID="373" v:groupContext="shape" transform="translate(-1439,915.927) rotate(-57.1715)">
+		<g id="shape373-415" v:mID="373" v:groupContext="shape" transform="translate(-1439,804.808) rotate(-57.1715)">
 			<title>Sheet.373</title>
 			<path d="M10.2 2212.44 L10.56 2212.44 L62.74 2212.44" class="st45"/>
 		</g>
-		<g id="shape374-420" v:mID="374" v:groupContext="shape" transform="translate(-1537.17,634.834) rotate(-60.9454)">
+		<g id="shape374-420" v:mID="374" v:groupContext="shape" transform="translate(-1537.17,564.534) rotate(-60.9454)">
 			<title>Sheet.374</title>
 			<path d="M10.2 2212.44 L10.56 2212.44 L72.96 2212.44" class="st45"/>
 		</g>
