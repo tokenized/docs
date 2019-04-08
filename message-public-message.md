@@ -1,4 +1,4 @@
-# PublicMessage
+# Public Message
 
 Generic public message or public announcement. Sent to an address(es).  Can be used for an official issuer announcement.
 
