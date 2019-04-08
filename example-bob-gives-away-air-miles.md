@@ -1,6 +1,6 @@
 # Transferring tokens
 
-Bob is a frequent flyer of TokenAir for his work and has managed to rack up 4,000,000 air miles, but cannot stand the idea of flying to a holiday destination.
+Bob is a frequent flyer of TokenAir for his work and has managed to rack up 4,139,332 air miles, but cannot stand the idea of flying to a holiday destination.
 
 His sister Dianne has never been on a plane so Bob gifts her 2,000,000 air miles to spend on her first overseas holiday.
 
@@ -12,10 +12,15 @@ This is done by Bob contacting the TokenAir registry and supplying the necessary
 
 Now that Bob and Dianne are linked by TokenAir's registry, he is free to transfer Dianne his airline miles.
 He does this using his mobile phone app, which now allows him to add Dianne as a recipient when he creates the transfer request.
-The app communicates with the TokenAir Points manager back end which is the issuer of the airline mile tokens. TokenAir also run their own instance of the Tokenized platform making them an Issuer/Operator in one. 
-Because there is only one contract involved, and Bob has all the details of the transaction including Dianne's receiving address, he can build, sign and send the complete transfer request without having to template anything.
+The app communicates with the TokenAir Points manager back end which is the issuer of the airline mile tokens. TokenAir also run their own instance of the Tokenized platform making them an Issuer/Operator in one.
 
-/// INSERT IMAGE
+Now that Bob has registered Dianne as his family member, he is able to reach out to the TokenAir Air Mile Transfer Authorisation Server Oracle (AMTAS Oracle) and get an authorisation to transfer tokens to Dianne. This comes in the form of a signed, limited lifetime message which Bob includes in the transfer action which he sends to the smart contract. Bob's app is connected to AMTAS, and handles this with minimal interface from Bob, and then caches the message, which expires in 48 hours.
+
+Because there is only one contract involved, and Bob has all the details of the transaction including Dianne's receiving address, he can build, sign and send the complete transfer request without having to template anything. The TokenAir system includes a message action with the transfer as a record of exactly what was exchanged with whom, including details from the TokenAir oracle about the transfer approval.
+
+<img src="https://raw.githubusercontent.com/tokenized/docs/master/images/bob-airmile-transfer-final.svg?sanitize=true" alt="Bob's Airmile Transfer" align="middle">
+
+The TokenAir smart contract receives the action and unpacks it. After validating the signed
 
 When Dianne opens her TokenAir wallet, it how shows that she has received 2,000,000 air mile tokens from Bob.
 
@@ -25,18 +30,23 @@ Dianne wants to use the points for a trip with her husband Edward and daughter F
 
 <img src="https://raw.githubusercontent.com/tokenized/docs/master/images/dianne-fran-family-addition-action.svg?sanitize=true" alt="Adding a family link" align="middle">
 
-She selects 'Book Travel' in the interface and selects a packaged holiday to Fiji including flights, transfers and hotels. The app uses APIs to feed hotel booking data into the transaction as needed. The total cost of the holiday is 2,400,000 points so Dianne elects to use 'Points + Pay' and to pay the difference using some Bitcoin that Bob gave her a few years earlier.
-The hotel that Dianne has booked uses its own smart contract to manage room bookings and transfers, but it has a contract with TokenAir that guarantees them a cash value for the tokens.
-TokenAir's app builds a template transfer action for Dianne to sign and sends it to her in a Message action using the 'Offer' message type.
-The transfer takes Dianne's 2,000,000 air miles and 0.2324 Bitcoins and distributes them to the hotel and itself. In return, it gives Dianne 3 return tickets to Fiji valid for their selected flights, including bonus Lounge entry coupons.
-The hotel contract also gives Dianne an ACC (accomodation) token for 7 nights accomodation in a family suite which is valid for the nights of her stay. Included with this are 7 breakfast coupons, a spa coupon, 3 golf coupons, three luxury dinner package coupons (one each) and membership to the Hotel Rewards scheme for all three family members.
+She selects 'Book Travel' in the interface and selects a packaged holiday to Fiji including flights, transfers and 7 nights at Fiji by the sea hotel. The app uses APIs to feed hotel booking data into the transaction as needed. The total cost of the holiday is 2,400,000 points so Dianne decides to pay using some Bitcoin that Bob gave her some years ago. Sh selects 'Points + Pay' in the interface and selects 'Bitcoin' as the currency. 
+The hotel uses its own smart contract to manage room bookings and transfers, and through a separate agreement with TokenAir is able to exchange the air miles for a guaranteed cash value.
+TokenAir's app requests an input from Fiji by the sea hotel and uses it to build a template transfer action for Dianne to sign. It delivers this directly to her wallet.
+The transfer sends 1.2 million of Dianne's air miles to the hotel, and the remaining 800,000 air miles plus 0.2324 Bitcoins to TokenAir. In return, it gives Dianne 3 return tickets, business class, to Fiji valid for their selected flights, check in baggage for each flight plus golf bag for Edward, lounge entry coupons, accomodation tokens for 7 nights in a family suite, 7 breakfast coupons each, a spa coupon for herself, 3 golf coupons for Edward, Kids club entry for three days for Fran, three gourmet dinner package coupons (one per family member) and membership to the Hotel Rewards scheme for all three family members.
 
-/// INSERT IMAGE
+<img src="https://raw.githubusercontent.com/tokenized/docs/master/images/diannes-booking-transfer-template.svg?sanitize=true" alt="Dianne's Holiday Booking Transfer" align="middle">
 
-Happy with the deal, Dianne fills in the blank information before signing the transaction and sending it on to the Hotel in a Message action using the 'Signature Request' message type.
+Happy with the deal, Dianne decides to accept. To use air miles for Edward and Fran's bookings, Dianne must receive permission from the AMTAS oracle. This is handled automatically by Dianne's wallet which gets the signed message before gathering 10 UTXOs it needs to pay the 0.2324BSV owing and adding them to the input list. It then signs the transaction and sends it to Fiji by the sea for their signature.
 
-/// INSERT IMAGE
+<img src="https://raw.githubusercontent.com/tokenized/docs/master/images/diannes-booking-transfer-signed.svg?sanitize=true" alt="Dianne's Holiday Booking Transfer, with Dianne's signature" align="middle">
 
-The hotel sees the transaction and double checks the figures, before signing and sending the contract back to TokenAir for final signature. Once TokenAir receives the transaction, it checks that the details match what it gave to Dianne, signs and sends onto the network.
+Fiji by the sea looks at the contract and signs it's input before sending it to TokenAir for the final signature and transmission to the network.
 
-Once the transaction has been sent to the blockchain, the TokenAir smart contract pulls open the transaction and checks that it is valid. Once it has determined that the contract can go ahead, it prepares a settlement action. In this it shows that it will award 1.2 million air miles to the hotel, and send three return tickets to each of Dianne, Edward and Fran. It pre-fills the distribution of the room stay, meal and activity vouchers and airport bus transfers into the transfer action and sends the settlement template to the Hotel smart contract for signature. Because they share an API they are able to do this without spending an on-chain transaction.
+As soon as the two contracts see the Transfer action enter the network, they unpack the order and check that everything matches what they expect. In particular, the TokenAir contract inspects the messages signed by the AMTAS oracle to ensure that they are valid, unexpired and contain authorisations for the addresses used in the transfer action. Once this has been verified, it prepares a Settlement action for both itself and the Fiji by the sea hotel contract to sign. Once complete, it signs the template and delivers it to the Fiji by the sea hotel contract.
+
+<img src="https://raw.githubusercontent.com/tokenized/docs/master/images/diannes-booking-settlement-template.svg?sanitize=true" alt="Dianne's Holiday Booking settlement, with TokenAir's signature" align="middle">
+
+The hotel sees the transaction and double checks the figures, before signing and sending the contract onto the network. 
+
+Dianne, Edward and Fran simultaneously receive all of their tokens for the upcoming holiday.

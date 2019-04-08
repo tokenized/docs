@@ -88,9 +88,9 @@
 						x="4" dy="1.2em" class="st7">In 2:<v:tabChar/></tspan><tspan dx="2.306em" class="st9">Alice (Includes enough BSV for all fees and outputs)<v:newlineChar/></tspan><tspan
 						x="4" dy="1.2em" class="st7">In 3:<v:tabChar/></tspan><tspan dx="2.306em" class="st10">AUD Exchange<v:newlineChar/></tspan><tspan
 						x="4" dy="1.2em" class="st7">Out 1: <v:tabChar/></tspan><tspan dx="1.25em" class="st11">Cinema Ticketing Contract<v:newlineChar/></tspan><tspan
-						x="4" dy="1.2em" class="st7">Value 1:<v:tabChar/></tspan><tspan dx="0.582em" class="st7">Dust + ticketing fees<v:newlineChar/></tspan><tspan
+						x="4" dy="1.2em" class="st7">Value 1:<v:tabChar/></tspan><tspan dx="0.582em" class="st7">Contract Fees + Response Cost<v:newlineChar/></tspan><tspan
 						x="4" dy="1.2em" class="st7">Out 2:<v:tabChar/></tspan><tspan dx="1.528em" class="st12">AUD Contract<v:newlineChar/></tspan><tspan
-						x="4" dy="1.2em" class="st7">Value 2:<v:tabChar/></tspan><tspan dx="0.582em" class="st7">Dust + Fiat exchange fees<v:newlineChar/></tspan><tspan
+						x="4" dy="1.2em" class="st7">Value 2:<v:tabChar/></tspan><tspan dx="0.582em" class="st7">Contract Fees + Response Cost<v:newlineChar/></tspan><tspan
 						x="4" dy="1.2em" class="st7">Out 3:<v:tabChar/></tspan><tspan dx="1.528em" class="st9">Alice<v:newlineChar/></tspan><tspan
 						x="4" dy="1.2em" class="st7">Value 3:<v:tabChar/></tspan><tspan dx="0.582em" class="st7">Dust<v:newlineChar/></tspan><tspan
 						x="4" dy="1.2em" class="st7">Out 4:<v:tabChar/></tspan><tspan dx="1.528em" class="st13">Bob<v:newlineChar/></tspan><tspan

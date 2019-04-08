@@ -7,7 +7,7 @@ Because she likes snacks, Alice also purchases a Popcorn/soda combo for herself.
 
 The cinema allows Alice to send each of the tickets to a separate wallet, so she enters the handles for Bob and Carol. She also allocates the combo token to her own wallet.
 
-The cinema's interface now builds a transaction template for a 'Transfer' action which sends the three seat tokens to each of Alice, Bob and Carol, the snack combo to Alice, and payment in eAUD (Australian dollar currency token) to the cinema chain's wallet. The cinema chain generates a new address for each eAUD receipt, and aggregates them as needed for its outgoing accounts.
+The cinema's interface now builds a transaction template for a 'Transfer' action which sends the three seat tokens to each of Alice, Bob and Carol, the snack combo to Alice, and payment in eAUD (Australian dollar currency token) to the cinema chain's wallet.
 
 <img src="https://raw.githubusercontent.com/tokenized/docs/master/images/cinema-transfer-template.svg?sanitize=true" alt="Cinema's transfer template" align="middle">
 
