@@ -1,4 +1,4 @@
-# PrivateMessage
+# Private Message
 
 Generic private message. Sent to another address(es). Encryption is to be used.
 
