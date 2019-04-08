@@ -1,6 +1,6 @@
-# TicketAdmission
+# LoyaltyPoints
 
-Admission ticket
+A Loyalty Point
 
 
 
@@ -28,45 +28,17 @@ Admission ticket
             <td class="a10"></td>
         </tr>
         <tr>
-            <td class="a10">Admission Type</td>
+            <td class="a10">Offer Type</td>
             <td class="a10">fixedchar</td>
             <td class="a10"></td>
-            <td class="a10">3</td>
+            <td class="a10">1</td>
             <td class="a10"></td>
         </tr>
         <tr>
-            <td class="a10">Venue</td>
+            <td class="a10">Offer Name</td>
             <td class="a10">varchar</td>
             <td class="a10"></td>
             <td class="a10">8</td>
-            <td class="a10"></td>
-        </tr>
-        <tr>
-            <td class="a10">Class</td>
-            <td class="a10">varchar</td>
-            <td class="a10"></td>
-            <td class="a10">8</td>
-            <td class="a10"></td>
-        </tr>
-        <tr>
-            <td class="a10">Area</td>
-            <td class="a10">varchar</td>
-            <td class="a10"></td>
-            <td class="a10">8</td>
-            <td class="a10"></td>
-        </tr>
-        <tr>
-            <td class="a10">Seat</td>
-            <td class="a10">varchar</td>
-            <td class="a10"></td>
-            <td class="a10">8</td>
-            <td class="a10"></td>
-        </tr>
-        <tr>
-            <td class="a10">Start Time and Date</td>
-            <td class="a10">Timestamp</td>
-            <td class="a10"></td>
-            <td class="a10">0</td>
             <td class="a10"></td>
         </tr>
         <tr>
