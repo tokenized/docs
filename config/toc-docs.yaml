@@ -23,7 +23,7 @@ Examples:
     example/alice-goes-to-the-movies: "Alice goes to the movies"
 Message:
   pages:
-    message/publid-message: "Public Messages"
+    message/public-message: "Public Messages"
     message/private-message: "Private Messages"
     message/offer: "Offer Message"
     message/signature-reqest: "Signature Request message"

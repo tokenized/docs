@@ -7,10 +7,10 @@ Admission ticket
 <div class="ritz grid-container" dir="ltr">
     <table class="waffle" cellspacing="0" cellpadding="0" table-layout=fixed width=100%>
          <tr style='height:19px;'>
-            <th style="width:18%" class="s1">Field</th>
-            <th style="width:9%" class="s1">Type</th>
-            <th style="width:15%" class="s1">Description</th>
-            <th style="width:20%" class="s1">Size</th>
+            <th style="width:20%" class="s1">Field</th>
+            <th style="width:10%" class="s1">Type</th>
+            <th style="width:30%" class="s1">Description</th>
+            <th style="width:5%" class="s1">Size</th>
             <th class="s1">Example</th>
         </tr>
         <tr>
