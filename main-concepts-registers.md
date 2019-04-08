@@ -1,4 +1,4 @@
-## Tokenized Registers
+## Registers
 The Tokenized protocol has a full set of register actions that are able to support a wide range of general purpose register functions such as whitelisting, blacklisting, and more. Registers do not need to be operated by Tokenized smart contracts.
 
 There are four actions involved in the creation and management of a registry.
