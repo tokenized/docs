@@ -1,4 +1,4 @@
-# SignatureRequest
+# Signature Request
 
 Partially-signed transactions (Tokenized actions, Bitcoin, Multisig, Threshold Signatures, etc.) can be passed around on-chain to the parties (including Smart Contracts) that still have to sign the transaction.
 
