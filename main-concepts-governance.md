@@ -1,13 +1,13 @@
 ## Governance
-The Tokenized protocol includes a full and rich governance model that allows for different priorities to be placed on different authorities for almost any aspect of a contract or asset which can be modified. These settings are all governed by the authorisation flags that are present in the most recent Contract Formation or Asset Creation actions issued by the contract.
-Where a field in a contract or asset definition has been set to allow for 'Unilateral' changes to be made, this means that the issuer may make changes to this field without needing the authority of a vote process. This means that the fields can be changed at any time without restriction.
+The Tokenized protocol includes a full and rich governance system that allows for expressive control over almost any aspect of a contract or asset which can be modified. The governance model also extends to organizational matters/proposals that exist outside of the blockchain (eg. a shareholder votes on a company matter).  These settings are all controlled by authorisation flags that are present in the most recent Contract Formation or Asset Creation actions issued by the contract.
+Where a field in a contract or asset definition has been set to allow for 'unilateral' changes to be made, this means that the issuer may make changes to this field without needing the authority of a vote process. This means that the fields can be changed at any time without restriction.
 Where a field in a contract or asset definition has been set to require a positive outcome from a Referendum, the Contract Amendment or Asset Modification action that contains the change will need to contain a TXID that references a Result action that counts the votes in a link the modification of that paramter. 
 
 ### Authorisation flags
-When a Contract or Asset is created, there are a set of authorisation flags which are defined in the Contract offer or Asset Definition action. These flags determine for each parameter that can be changed what the minimum requirement for making a change is. Each field has three flags, which each define whether or not a particular governance mechanism can be used to modify that field. To enable the mechanism related to each flag they must be set to 'True' (binary 1). The three flags correspond to the enablement of the following change mechanisms:
+When a contract or asset is created, there are a set of authorisation flags which are defined in the Contract Offer or Asset Definition action. These flags determine for each parameter that can be changed what the minimum requirement for making a change is. Each field has three flags, which each define whether or not a particular governance mechanism can be used to modify that field. To enable the mechanism related to each flag they must be set to 'True' (binary 1). The three flags correspond to the enablement of the following change mechanisms:
 1. Issuer can change unilaterally
-2. Issuer must hold a Referendum leading to a postive result in line with voting systems
-3. Parameter can only be changed after a user requested Initiative leading to a postive result as defined by voting systems
+2. Issuer must hold a token holder vote leading to a postive result in line with voting systems (Issuer initiates the proposal)
+3. Parameter can only be changed after a token holder requested vote leads to a postive result as defined by voting systems (A token holder initiates the proposal)
 Each parameter has a set of three flags which are represented as a sequential set of three bits within the Authorisation Flags element of the contract or asset. Where parameters are a variable length array type, the flag settings apply to the whole array.
 
 ### Voting Systems
