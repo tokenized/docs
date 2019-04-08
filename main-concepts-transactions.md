@@ -1,8 +1,13 @@
-## Tokenized Transactions
+## Transactions
 
-All tokenized transactions are sent by delivering a UTXO to the receiving parties address, accompanied by an OP_RETURN output which describes the action being performed. All user driven actions are initiated by sending a request to the contract agent to perform a certain action. If the request is valid, the agent will respond by sending another transaction (or transactions) containing updated information about the contract or asset (New balances, updated revision data, etc) either to a known public address for all token holders or directly to particular token holders.
+All Tokenized transactions are normal Bitcoin transactions, with normal P2PKH (or P2PSH) addresses in the inputs and outputs.  The main feature that defines a Tokenized transaction is an OP_RETURN output that contains all of the metadata required by the protocol. Bitcoin (BSV) is always used to pay network fees and all inputs and outputs require dust amounts of Bitcoin, at a minimum, to be valid.  The protocol also identifies roles (smart contract, issuer, token senders/receivers, etc.) by the position (index of the inputs and outputs) of public address(es) in the transaction.  
 
-Some transactions (contract offer, exchange, atomic swap) require multiple inputs that are signed by different parties to be recognised by the contract agent. If the agent finds that the transaction is valid (within contract rules, adequate balance and fees included) it will process the instruction, and send response transaction onto the blockchain to confirm the action.
+
+
+
+All user driven actions are initiated by sending a request to the smart contract to perform a certain action. If the request is valid, the smart contract will respond by sending another transaction (or transactions) containing updated information about the contract or asset (new balances, updated revision data, etc) either to a known public address for all token holders or directly to particular token holders.
+
+Some transactions (contract offer, exchange, atomic swap) require multiple inputs that are signed by different parties to be recognised by the contract. If the smart contract finds that the transaction is valid (within contract & protocol rules, adequate balance and the correct fees included) it will process the instruction, and send response transaction onto the blockchain to confirm the action.
 
 Transactions that impact balances or the contract state always include a timestamp to ensure that even in the event of a block re-organisation that the contract actions can be restored in the correct order.
 
@@ -48,14 +53,18 @@ For packets containing 256 - 65,535 bytes of data, OP_PUSHDATA2 (0x4d) is used, 
 
 For packets containing 65,536 - 4,294,967,295 bytes of data, OP_PUSHDATA4 (0x4e) is used, followed by a 4 byte represenation of the length of the data packet following.
 
-## Breaking down the OP_RETURN output
+## Breaking Down the OP_RETURN Output
 
 A Tokenized action output is always created with 2 separate push operations. They are split as follows:
 
-### 1. Tokenized protocol identifier
+### 1. Protocol Identifier
 
 The first push is 13 bytes long and contains only the Tokenized protocol identifier which is the string 'tokenized.com'.
 
-### 2. Action payload
+### 2. Action Payload
 
 The action payload is dependent on the action type and may include token specific information as required. It is important that the client and wallet must both know exactly what is expected in the remainder of the packet through a combination of the action prefix and version. If the packet does not conform to the contract agent's expectation of the operation being requested, it will respond with a rejection message.
+
+## Example
+
+<img src="https://raw.githubusercontent.com/tokenized/docs/master/images/main-concepts-transaction-overview.svg?sanitize=true" alt="The BobAngelaChris Trust Share settlement" align="middle">
