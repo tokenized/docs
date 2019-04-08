@@ -5,8 +5,8 @@ Where a field in a contract or asset definition has been set to require a positi
 
 ### Authorisation flags
 When a Contract or Asset is created, there are a set of authorisation flags which are defined in the Contract offer or Asset Definition action. These flags determine for each parameter that can be changed what the minimum requirement for making a change is. Each field has three flags, which each define whether or not a particular governance mechanism can be used to modify that field. To enable the mechanism related to each flag they must be set to 'True' (binary 1). The three flags correspond to the enablement of the following change mechanisms:
-1. issuer can change unilaterally
-2. issuer must hold a Referendum leading to a postive result in line with voting systems
+1. Issuer can change unilaterally
+2. Issuer must hold a Referendum leading to a postive result in line with voting systems
 3. Parameter can only be changed after a user requested Initiative leading to a postive result as defined by voting systems
 Each parameter has a set of three flags which are represented as a sequential set of three bits within the Authorisation Flags element of the contract or asset. Where parameters are a variable length array type, the flag settings apply to the whole array.
 
