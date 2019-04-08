@@ -1,13 +1,10 @@
 ## Transactions
 
-All Tokenized transactions are normal Bitcoin transactions, with normal P2PKH (or P2PSH) addresses in the inputs and outputs.  The main feature that defines a Tokenized transaction is an OP_RETURN output that contains all of the metadata required by the protocol. Bitcoin (BSV) is always used to pay network fees and all inputs and outputs require dust amounts of Bitcoin, at a minimum, to be valid.  The protocol also identifies roles (smart contract, issuer, token senders/receivers, etc.) by the position (index of the inputs and outputs) of public address(es) in the transaction.  
+All Tokenized transactions are normal Bitcoin transactions that use P2PKH (or P2PSH) addresses in the inputs and outputs.  The main feature that defines a Tokenized transaction is an OP_RETURN output that contains a Tokenized action. Bitcoin (BSV) is always used to pay network fees and all inputs and outputs require dust amounts of Bitcoin, at a minimum, to be valid.  The protocol also identifies roles (smart contract, issuer, token senders/receivers, etc.) by the position (index of the inputs and outputs) of public address(es) in the transaction.  
 
+All user and issuer driven actions are initiated by sending a request to the smart contract, via the blockchain, to perform a certain action. If the request is valid, the smart contract will respond by sending a response transaction containing updated information about the contract or asset (new balances, updated revision data, etc).  Response actions will always be addressed to either the issuer or user address(es) or some satoshis will be sent back to the smart contract address.  The smart contract sends change back to itself in what are known as 'contract-wide' actions that affect the contract or asset as a whole.
 
-
-
-All user driven actions are initiated by sending a request to the smart contract to perform a certain action. If the request is valid, the smart contract will respond by sending another transaction (or transactions) containing updated information about the contract or asset (new balances, updated revision data, etc) either to a known public address for all token holders or directly to particular token holders.
-
-Some transactions (contract offer, exchange, atomic swap) require multiple inputs that are signed by different parties to be recognised by the contract. If the smart contract finds that the transaction is valid (within contract & protocol rules, adequate balance and the correct fees included) it will process the instruction, and send response transaction onto the blockchain to confirm the action.
+Some transactions (eg. contract offer, exchange, atomic swap) require multiple inputs that are signed by different parties to be recognised by the contract. If the smart contract finds that the transaction is valid (within contract & protocol rules, adequate balance and the correct fees included) it will process the instruction, and send response transaction onto the blockchain to confirm the action.
 
 Transactions that impact balances or the contract state always include a timestamp to ensure that even in the event of a block re-organisation that the contract actions can be restored in the correct order.
 
@@ -66,5 +63,7 @@ The first push is 13 bytes long and contains only the Tokenized protocol identif
 The action payload is dependent on the action type and may include token specific information as required. It is important that the client and wallet must both know exactly what is expected in the remainder of the packet through a combination of the action prefix and version. If the packet does not conform to the contract agent's expectation of the operation being requested, it will respond with a rejection message.
 
 ## Example
+
+The following example shows a high-level overview of a transfer of tokens to highlight key components of the structure of a Tokenized transaction in a request and response action.  The example shows one person, Mary, sending 15,000 tokens to Bill using the most basic form of a Transfer action.  The smart contract, upon validation of the Transfer action, responds with a Settlement action to complete the transfer of tokens.
 
 <img src="https://raw.githubusercontent.com/tokenized/docs/master/images/main-concepts-transaction-overview.svg?sanitize=true" alt="The BobAngelaChris Trust Share settlement" align="middle">
