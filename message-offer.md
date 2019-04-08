@@ -9,8 +9,8 @@ A message that contains all of the details required for an agreement to be forme
          <tr style='height:19px;'>
             <th style="width:20%" class="s1">Field</th>
             <th style="width:10%" class="s1">Type</th>
-            <th style="width:15%" class="s1">Description</th>
-            <th style="width:20%" class="s1">Size</th>
+            <th style="width:30%" class="s1">Description</th>
+            <th style="width:5%" class="s1">Size</th>
             <th style="width:20%" class="s1">Example</th>
             <th class="s1">Notes</th>
         </tr>
