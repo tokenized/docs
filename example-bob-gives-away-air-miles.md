@@ -21,9 +21,9 @@ When Dianne opens her TokenAir wallet, it how shows that she has received 2,000,
 
 Dianne wants to use the points for a trip with her husband Edward and daughter Fran so she accesses the registry site and adds the pair to her family.
 
-<img src="https://raw.githubusercontent.com/tokenized/docs/master/images/bob-dianne-family-addition-action.svg?sanitize=true" alt="Adding a family link" align="middle">
+<img src="https://raw.githubusercontent.com/tokenized/docs/master/images/dianne-edward-family-addition-action.svg?sanitize=true" alt="Adding a family link" align="middle">
 
-<img src="https://raw.githubusercontent.com/tokenized/docs/master/images/bob-dianne-family-addition-action.svg?sanitize=true" alt="Adding a family link" align="middle">
+<img src="https://raw.githubusercontent.com/tokenized/docs/master/images/dianne-fran-family-addition-action.svg?sanitize=true" alt="Adding a family link" align="middle">
 
 She selects 'Book Travel' in the interface and selects a packaged holiday to Fiji including flights, transfers and hotels. The app uses APIs to feed hotel booking data into the transaction as needed. The total cost of the holiday is 2,400,000 points so Dianne elects to use 'Points + Pay' and to pay the difference using some Bitcoin that Bob gave her a few years earlier.
 The hotel that Dianne has booked uses its own smart contract to manage room bookings and transfers, but it has a contract with TokenAir that guarantees them a cash value for the tokens.

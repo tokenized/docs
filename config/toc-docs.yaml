@@ -14,7 +14,7 @@ Main Concepts:
     main-concepts/governance: "Contract and asset governance"
     main-concepts/enforcement: "Tokenized enforcement actions"
     main-concepts/message-types: "Message type Overview"
-    main-concepts/registries: "Tokenized registries"
+    main-concepts/oracles: "Tokenized oracles"
     main-concepts/asset-types: "Asset Type Overview"
 Examples:
   pages:

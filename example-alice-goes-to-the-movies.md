@@ -2,7 +2,7 @@
 
 Alice and her friends Bob and Carol have agreed to go to the latest hit movie at their local gigaplex.
 
-Alice visits her local cinema and picks a session. The cinema has allocated seats, so for every showing, a ticket is created that is specific to a particular seat. Alice is able to see using the booking system which seats are still available, and is able to pick 3 seats that are next to each other.
+Alice visits her local cinema's metanet portal and picks a session. The cinema has allocated seating, so for every showing, a ticket is created that is specific to a particular seat. Alice is able to see using the booking system which seats are still available, and picks 3 seats that are next to each other.
 Because she likes snacks, Alice also purchases a Popcorn/soda combo for herself.
 
 The cinema allows Alice to send each of the tickets to a separate wallet, so she enters the handles for Bob and Carol. She also allocates the combo token to her own wallet.
