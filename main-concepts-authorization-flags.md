@@ -28,8 +28,8 @@ When you parse the authorization flags, you get an array of permission objects c
 
 ## Example
 
-The Contract Name field in the contract is controlled by a permission object within the Contract Authorization Flags.  The contract has 11 voting systems and voting system 5 will be used for any vote proposals put forward to change the Contract Name field.  The Contract Name field cannot be changed except with approval from the token holders by way of a token holder vote proposed by the issuer.  Token holders cannot initiate a vote to change the Contract Name field.
+In practice, authorization flag settings for Contracts and Assets won't vary too much.  Laws require companies to manage certain aspects of the company in certain ways.  For example, in the UK, changes to the name of a company require a special resolution (shareholder vote) and a minimum approval threshold of 75% to be lawful.
 
-A permission object for the Contract Name field with these settings would look like this:
+The contract authorization flags for a typical private company's shareholder agreement might look something like this: 
 
-<img src="https://raw.githubusercontent.com/tokenized/docs/master/images/main-concepts-authorization-flags.svg?sanitize=true" alt="Order of Operations">
+<img src="https://raw.githubusercontent.com/tokenized/docs/master/images/main-concepts-authorization-flags.svg?sanitize=true" alt="Order of Operations" align="middle">
