@@ -6,7 +6,7 @@ An oracle, in the context of blockchains and smart contracts, is an agent that m
 
 Currently, the protocol only supports Identity Oracles, but will support other types of oracles in the future.  A user's wallet will send a request message to the oracle and the oracle will respond with a signature (eg. ECDSA) for the message containing the data or instructions the smart contract is interested in.
 
-Oracles are included in a smart contract by the issuer in the Contract Offer action.  The issuer includes the oracle's name, hostname:port and public key in the Contract Offer, and these will be found in the Contract Formation action.  Wallets can use the hostname:port to request signatures from the oracle, and the smart contract will use the public key to verify the signatures.
+Oracles are included in a smart contract by the issuer in the Contract Offer action.  The issuer includes the oracle's name, hostname:port and public key in the Contract Offer, and these will be found in the Contract Formation action for future reference by users and the smart contract.  Wallets can use the hostname:port to request signatures from the oracle, and the smart contract will use the public key to verify the signatures.
 
 ## Identity Oracles
 
