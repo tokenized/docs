@@ -4,13 +4,13 @@ All Tokenized transactions are normal Bitcoin transactions that use P2PKH (or P2
 
 All user and issuer driven actions are initiated by sending a request to the smart contract, via the blockchain, to perform a certain action. If the request is valid, the smart contract will respond by sending a response transaction containing updated information about the contract or asset (new balances, updated revision data, etc).  Response actions will always be addressed to either the issuer or user address(es) or some satoshis will be sent back to the smart contract address.  The smart contract sends change back to itself in what are known as 'contract-wide' actions that affect the contract or asset as a whole.
 
-Some transactions (eg. contract offer, exchange, atomic swap) require multiple inputs that are signed by different parties to be recognised by the contract. If the smart contract finds that the transaction is valid (within contract & protocol rules, adequate balance and the correct fees included) it will process the instruction, and send response transaction onto the blockchain to confirm the action.
+Some transactions (eg. contract offer, exchange, atomic swap) require multiple inputs that are signed by different parties to be recognised by the contract. If the smart contract finds that the transaction is valid (within contract & protocol rules, adequate balance and the correct fees included) it will process the request, and send a response transaction to the blockchain as confirmation.
 
 Transactions that impact balances or the contract state always include a timestamp to ensure that even in the event of a block re-organisation that the contract actions can be restored in the correct order.
 
 ## Building a Transaction
 
-Tokenized transactions are build by compiling the token data as a list of fields and appending them to each other as a hexadecimal string. There are multiple different data formats used in Tokenized:
+Tokenized transactions are built by compiling the token data as a list of fields and appending them to each other as a hexadecimal string. There are many different data formats used in Tokenized, they are as follows:
 
 1. String - An ascii string
 1. Text - Text in UTF-8 format (the text format is intended to accomodate UTF-8, UTF-16, UTF-32, Unicode and ASCII formats however only UTF-8 is currently supported)
@@ -29,11 +29,11 @@ Tokenized transactions are build by compiling the token data as a list of fields
 1. PUSHDATA_LENGTH - Length data for OPCODES that require secondary information regarding the length of the data packet
 1. Payload - The token payload is an additional packet of data made that represents the details of the token. Each token type has its own payload.
 
-## Assembling OP_RETURN packet
+## Assembling OP_RETURN Packet
 
 To assemble an OP_RETURN packet, the first byte is always the OP_RETURN opcode (0x6a).
 
-The second byte is a PUSHDATA instruction. The PUSHDATA instruction can be variable depending on the number of bytes in the data packet being pushed into the output. It is possible to perform multiple pushes in a single OP_RETURN output, allowing the output to have multiple fields of different lengths. There are always 2 pushdata operations in a Tokenized operation. The first carries the "Tokenized" protocol identifer (tokenized.com), and the second carries the remainder of the data in the packet. This can be up to 99kB of data with the current BitcoinSV network capability, but as the Bitcoin protocol is returned to the Version 0.1 platform the removal of restrictions will allow contracts of up to 4GB to be built.
+The second byte is a PUSHDATA instruction. The PUSHDATA instruction can be variable depending on the number of bytes in the data packet being pushed into the output. It is possible to perform multiple pushes in a single OP_RETURN output, allowing the output to have multiple fields of different lengths. There are always 2 pushdata operations in a Tokenized operation. The first carries the "Tokenized" protocol identifer (tokenized.com), and the second carries the remainder of the data in the packet. This can be up to 99kB of data with the current BitcoinSV network capability, but as the Bitcoin protocol is returned to the Version 0.1 platform the removal of restrictions will allow contracts up to ~4GB to be built.
 
 ### Using PUSHDATA
 
@@ -64,6 +64,6 @@ The action payload is dependent on the action type and may include token specifi
 
 ## Example
 
-The following example shows a high-level overview of a transfer of tokens to highlight key components of the structure of a Tokenized transaction in a request and response action.  The example shows one person, Mary, sending 15,000 tokens to Bill using the most basic form of a Transfer action.  The smart contract, upon validation of the Transfer action, responds with a Settlement action to complete the transfer of tokens.
+The following example shows a high-level overview of a transfer of tokens to highlight key components of the structure of Tokenized transactions.  The example shows one person, Mary, sending 15,000 tokens to Bill using the most basic form of a Transfer action.  The smart contract, upon validation of the Transfer action, responds with a Settlement action to complete the transfer of tokens.
 
 <img src="https://raw.githubusercontent.com/tokenized/docs/master/images/main-concepts-transaction-overview.svg?sanitize=true" alt="The BobAngelaChris Trust Share settlement" align="middle">
