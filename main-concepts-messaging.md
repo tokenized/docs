@@ -1,4 +1,4 @@
-# Tokenized Messaging
+# Messaging
 The Tokenized protocol includes a rich and expressive set of messaging actions which allow issuers, operators and users the flexibility to correspond in a way that gives wallets, account management and audit software the ability to record a full set of transactional actions.
 Messaging actions are split into two types, the Message action and Rejection action.
  
