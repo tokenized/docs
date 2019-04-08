@@ -26,10 +26,10 @@ The use of Identity Oracles can provide smart contracts with the following capab
 
 • Any combination of the above
 
-### Process
+### Example
 
-The basic process is best described through a simple example.  
+The interaction between the user, the Identity Oracle and the smart contract is best illustrated through a simple example.  
 
-A user (Sender) wants to send 100 tokens to another user (Receiver).  The tokens are restricted by the smart contract to transfers to addresses who are associated with users that have had their identity verified to meet KYC and AML compliace obligations.
+A user (Sender) wants to send 100 tokens to another user (Receiver).  The tokens are restricted by the smart contract to transfers to addresses who are associated with users that have had their identity verified to meet KYC and AML compliance obligations.
 
 <img src="https://raw.githubusercontent.com/tokenized/docs/master/images/main-concepts-oracles.svg?sanitize=true" alt="Oracle Process" align="middle">
