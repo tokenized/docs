@@ -34,7 +34,7 @@ The contract responds with an Asset Creation action, allocating the 300 shares t
 
 Now that the home has been tokenized, the trust is able to distribute it to the trustees. This is done in a single Transfer action, which sends 100/300 of the tokens to each of the trustees:
 
-<img src="https://raw.githubusercontent.com/tokenized/docs/master/images/tbact-share-transfer.svg?sanitize=true" alt="The BobAngelaChris Trust Share Transfer" align="middle">
+<img src="https://raw.githubusercontent.com/tokenized/docs/master/images/tbact-asset-transfer.svg?sanitize=true" alt="The BobAngelaChris Trust Share Transfer" align="middle">
 
 After receiving and evaluating the transfer, the Smart Contract responds with a settlement transaction.
 
