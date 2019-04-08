@@ -1,9 +1,9 @@
-##Transferring assets using the Tokenized Protocol
+## Transfers
 The Transfer action is the means by which all asset transfers (Outside of enforcement actions) are conducted. The action is versatile and allows assets to be transferred between multiple holders and across multiple smart contracts. The following outlines the main ways in which the Transfer action is used.
 
 1. [Transferring tokens to a single receiver](#single-receiver)
 2. [Transferring tokens to a multiple receivers](#multiple-receiver)
-3. [Purchasing tokens with Bitcoin](#exchange)
+3. [Purchasing tokens with bitcoin](#exchange)
 4. [Cross contract atomic swaps](#atomic-swaps)
 
 <a name="single-receiver"></a>
@@ -11,8 +11,8 @@ The Transfer action is the means by which all asset transfers (Outside of enforc
 
 The act of transferring tokens can become fairly complicated when there are multiple parties and contracts involved, however, the final outcome is always captured in just two on-chain transactions:
 
-1. Transfer Action (Request)
-2. Settlement Action (Response)
+1. Transfer action (Request)
+2. Settlement action (Response)
 
 In its simplest form, a transfer is an action between 2 parties which is validated by a smart contract.
 In this example, a token issuer will send 100 tokens from its own balance to a receiver. This event is initiated by the issuer through the creation of a Transfer action detailing the receiver's address and the number of tokens they wish to send.
@@ -48,7 +48,7 @@ Because only one smart contract is involved, the exchange settlement can be buil
 
 <a name="atomic-swaps"></a>
 ### Atomic Swaps
-Conducting an atomic swap (token for token transfer) using Tokenized is another more complicated transaction as it requires the holders of the tokens being exchanged to sign the Transfer action, and for both smart contracts to sign the settlement.
+Conducting an atomic swap (token for token transfer) using Tokenized is another more complicated transaction as it requires the holders of the tokens being exchanged to sign the Transfer action, and for both smart contracts to sign the Settlement action.
 <img src="https://raw.githubusercontent.com/tokenized/docs/master/images/atomic-swap-order-of-operations.svg?sanitize=true" alt="Atomic Swap Transfer Order of Operations" align="middle">
 To begin, the two token holders agree to a transaction between themselves. The first token holder builds a partially complete transaction template which has the full details of the exchange except for the second party's receiving addresses and UTXO commitment. This is sent to the second party as a serialized partial transaction inside a Message action, using message type 1001 (Offer).
 <img src="https://raw.githubusercontent.com/tokenized/docs/master/images/atomic-swap-transfer-offer.svg?sanitize=true" alt="Atomic Swap Transfer Offer Message" align="middle">

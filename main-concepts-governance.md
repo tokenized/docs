@@ -1,4 +1,4 @@
-## Tokenized Governance
+## Governance
 The Tokenized protocol includes a full and rich governance model that allows for different priorities to be placed on different authorities for almost any aspect of a contract or asset which can be modified. These settings are all governed by the authorisation flags that are present in the most recent Contract Formation or Asset Creation actions issued by the contract.
 Where a field in a contract or asset definition has been set to allow for 'Unilateral' changes to be made, this means that the issuer may make changes to this field without needing the authority of a vote process. This means that the fields can be changed at any time without restriction.
 Where a field in a contract or asset definition has been set to require a positive outcome from a Referendum, the Contract Amendment or Asset Modification action that contains the change will need to contain a TXID that references a Result action that counts the votes in a link the modification of that paramter. 
@@ -14,9 +14,9 @@ Each parameter has a set of three flags which are represented as a sequential se
 Voting systems can be set up to provide a complex and layered approach to governance. Individual settings within individual assets or contracts can have voting mechanisms that differ from all other voting systems in that contract or asset. The exception to this is that the rules that forbid the creation of a vote through referendum or initiative that apply to a contract also apply to the assets in that contract.
 When a vote is performed, the result of each proposed amendment will be counted in-line with the specific voting rules attached to that field. The different ways of counting are as follows:
 #### R - Relative Threshold
-(Relative Threshold means the number of counted votes must exceed the threshold % of total ballots cast. Abstentations/spoiled votes do not detract from the liklihood of a vote passing as they are not included in the denominator.  
+(Relative Threshold means the number of counted votes must exceed the threshold % of total ballots cast. Abstentions/spoiled votes do not detract from the liklihood of a vote passing as they are not included in the denominator.  
 #### A - Absolute Threshold
-Absolute Threshold requires the number of ballots counted to exceed the threshold value when compared to the total outstanding tokens. Abstentations/spoiled votes detract from the liklihood of the vote passing.  For example, in an absolute threshold vote, if the threshold was 50% and 51% of the total outstanding tokens did not vote, then the vote cannot pass.  50% of all tokens would have had to vote for one vote option for the vote to be successful."
+Absolute Threshold requires the number of ballots counted to exceed the threshold value when compared to the total outstanding tokens. Abstentions/spoiled votes detract from the liklihood of the vote passing.  For example, in an absolute threshold vote, if the threshold was 50% and 51% of the total outstanding tokens did not vote, then the vote cannot pass.  50% of all tokens would have had to vote for one vote option for the vote to be successful."
 #### P - Plurality
 In a Plurality, the number of votes in favour of the resolution must be more than the number of votes againts. Abstentions and spoiled votes do not detract from the likelihood of a plurality passing.
 
