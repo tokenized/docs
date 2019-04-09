@@ -30,7 +30,7 @@ In this example, the issuer will now send an additional 100 tokens to the receiv
 Note that the transfer action deals with the number of tokens being sent, but the settlement transaction deals with the final balances of each account.
 First, the issuer builds a transfer request detailing the number of tokens to be sent and the addresses to send them to:
 
-<img src="https://raw.githubusercontent.com/tokenized/docs/master/images/two-receiver-transfer-example.svg?sanitize=true" alt="A two receiver transfer action" align="center" align="middle">
+<img src="https://raw.githubusercontent.com/tokenized/docs/master/images/two-receivers-transfer-example.svg?sanitize=true" alt="A two receiver transfer action" align="center" align="middle">
 
 Next, once the smart contract has checked everything is ok, it sends a settlement transaction that updates the balances of any wallets involved in the transaction.
 
