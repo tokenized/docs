@@ -1,7 +1,14 @@
 Intro:
   pages:
     intro/preface: "Preface"
-Main Concepts:
+
+Actions:
+  pages:
+    protocol/actions: "Protocol Actions"
+    protocol/assets: "Asset Types"
+    protocol/messages: "Message Types"
+
+Concepts:
   pages:
     # concepts/action-mechanism: "Action Mechanism"
     concepts/contract-types: "Contract Types"
@@ -16,50 +23,9 @@ Main Concepts:
     concepts/message-types: "Message type Overview"
     concepts/oracles: "Tokenized oracles"
     concepts/asset-types: "Asset Type Overview"
+
 Examples:
   pages:
     example/family-trust: "Family Trust"
     example/air-miles: "Air Miles"
     example/movie-tickets: "Movie Tickets"
-Message:
-  pages:
-    message/public-message: "Public Messages"
-    message/private-message: "Private Messages"
-    message/offer: "Offer Message"
-    message/signature-reqest: "Signature Request message"
-Actions:
-  pages:
-    action/contract-offer: "Contract Offer"
-    action/contract-formation: "Contract Formation"
-    action/contract-amendment: "Contract Amendment"
-    action/static-contract-formation: "Static Contract Formation"
-    action/asset-definition: "Asset Definition"
-    action/asset-creation: "Asset Creation"
-    action/asset-modification: "Asset Modification"
-    action/transfer: "Transfer"
-    action/settlement: "Settlement"
-    action/initiative: "Initiative"
-    action/referendum: "Referendum"
-    action/vote: "Vote"
-    action/ballot-cast: "Ballot Cast"
-    action/ballot-counted: "Ballot Counted"
-    action/result: "Result"
-    action/order: "Order"
-    action/freeze: "Freeze"
-    action/thaw: "Thaw"
-    action/confiscation: "Confiscation"
-    action/reconciliation: "Reconciliation"
-    action/establishment: "Establishment"
-    action/addition: "Addition"
-    action/alteration: "Alteration"
-    action/removal: "Removal"
-    action/message: "Message"
-    action/rejection: "Rejection"
-Asset Types:
-  pages:
-    asset/coupon: "Coupons"
-    asset/loyalty-points: "Loyalty Points"
-    asset/membership: "Membership"
-    asset/share-common: "Common Share"
-    asset/ticket-admission: "Admission Ticket"
-    asset/currency: "Currency"
