@@ -3,8 +3,8 @@ Intro:
     intro/preface: "Preface"
 Main Concepts:
   pages:
-    concepts/action-mechanism: "Action Mechanism"
-    concepts/contracts: "Contracts"
+    # concepts/action-mechanism: "Action Mechanism"
+    concepts/contract-types: "Contract Types"
     concepts/transactions: "Transactions"
     concepts/operations: "Tokenized Operations"
     concepts/rules: "Rules"
@@ -18,9 +18,9 @@ Main Concepts:
     concepts/asset-types: "Asset Type Overview"
 Examples:
   pages:
-    example/bill-family-trust: "Bill's family trust"
-    example/bob-gives-away-air-miles: "Bob's air miles"
-    example/alice-goes-to-the-movies: "Alice goes to the movies"
+    example/family-trust: "Family Trust"
+    example/air-miles: "Air Miles"
+    example/movie-tickets: "Movie Tickets"
 Message:
   pages:
     message/public-message: "Public Messages"

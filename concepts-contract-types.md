@@ -1,4 +1,12 @@
-# Contracts
+# Contract Types
+
+- [Introduction](#introduction)
+- [Smart Contracts](#smart-contracts)
+    - [Contract Operator](#contract-operator)
+- [Static Contracts](#static-contracts)
+
+<a name="introduction"></a>
+## Introduction
 
 Tokenized contracts allow for entities to store and manage contracts on the Bitcoin (BSV) network in a standardized way that allows for interoperability with other contracting parties and the use of Bitcoin's digital signature algorithms to create a more robust way of creating and managing agreements.  The Bitcoin network allows for a global, public, immutable, and reliable ledger which is extremely valuable for storing, managing and timestamping contracts.
 
@@ -6,8 +14,8 @@ A Tokenized contract references (hash) or stores all of the terms and conditions
 
 There are two types of contracts supported by the Tokenized system:
 
-1. [Smart Contracts](#smart-contracts)
-2. [Static Contracts](#static-contracts)
+* [Smart Contracts](#smart-contracts)
+* [Static Contracts](#static-contracts)
 
 <img src="https://raw.githubusercontent.com/tokenized/docs/master/images/contract-formation-decision-tree.svg?sanitize=true" alt="Decision Tree - Static vs Dynamic Contracts">
 
@@ -20,13 +28,14 @@ The smart contract can only respond to instructions it receives as Tokenized tra
 
 The Tokenized Smart Contract is written in Go and is fully open source. Details of the smart contract can be found in the [Tokenized Smart Contract Github repository](https://github.com/tokenized).
 
-## Contract Operator
+<a name="contract-operator"></a>
+### Contract Operator
 
 An issuer can operate their own smart contract, or they can have a technical specialist operate the smart contract on their behalf. This technical specialist is called a 'contract operator'.  The contract operator is identified by their public address which is specified in the Contract Offer action.
 
 The contract operator has permission to act on the behalf of the issuer for the inititation of different actions.  issuers may prefer to outsource this work for various reasons and it is likely they will get a better price and higher reliability/performance than they would if they tried to operate it themselves.
 
-### Tokenized Contract Formation
+#### Tokenized Contract Formation
 A Tokenized contract is formed when a token issuer presents a valid 'Contract Offer' action to a smart contract. The smart contract checks only that the rules proposed in the offer are compliant with its logic, but the legal and regulatory aspects of dealing with the assets being created must be pre-determined and managed by the issuer to ensure the contract operates within all applicable laws and regulations.
 
 #### 1. Contract Offer

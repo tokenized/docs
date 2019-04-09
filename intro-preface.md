@@ -25,9 +25,9 @@ Each action message is defined by the Tokenized protocol and provides various me
 
 An example of an action message is the creation of an asset token, this is prepared as an [Asset Definition](#) request and sent by the wallet to the smart contract. The Asset Definition contains all the information about the asset, including the asset class, number of issued tokens, a unique code, meta data and other details.
 
-Each action message contains a number of fields that are populated to form the final message that is sent over the Bitcoin network. The message contents contain the value of each field where it then is concatenated together. This method provides maximum efficiency for storing the data on the blockchain.
+Each action message contains a number of fields that are populated to form the final message that is sent over the Bitcoin network. The message contents contain the value of each field where it is then concatenated together. This method provides maximum efficiency for storing the data on the blockchain.
 
-It is important when converting these messages that every implementation uses the same specification. This source of truth can be found on the Tokenized GitHub repository:
+It is important when converting these messages that every implementation uses the same specification. This source of truth for this can be found via the Tokenized GitHub repository:
 
 - [Tokenized Protocol Specification](https://github.com/tokenized/specification)
 
