@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="666" height="486" viewBox="0 0 666 486">
+  <g id="Group_31" data-name="Group 31" transform="translate(-3534 10758)">
+    <g id="Rectangle_76" data-name="Rectangle 76" transform="translate(3534 -10686)" fill="#fcfcfc" stroke="#707070" stroke-width="1">
+      <rect width="660" height="210" stroke="none"/>
+      <rect x="0.5" y="0.5" width="659" height="209" fill="none"/>
+    </g>
+    <text id="Request_Transaction_Settlement_" data-name="Request Transaction (Settlement)" transform="translate(3546 -10653)" fill="#707070" font-size="20" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Request Transaction (Settlement)</tspan></text>
+    <line id="Line_134" data-name="Line 134" y2="144" transform="translate(3734.5 -10625.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <text id="INPUTS" transform="translate(3547 -10624)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">INPUTS</tspan></text>
+    <text id="OUTPUTS_" data-name="OUTPUTS " transform="translate(3750 -10624)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">OUTPUTS </tspan></text>
+    <text id="_0:_Smart_Contract" data-name="0: Smart Contract" transform="translate(3547 -10604)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="15">0: Smart Contract</tspan></text>
+    <text id="_0:_Merchant_Exchange_1_1:_Buyer_2_2:_Merchant_Exchange_2_N:_Settlement_Action" data-name="0: Merchant/Exchange (1)
+1: Buyer (2)
+2: Merchant/Exchange (2)
+N: Settlement Action" transform="translate(3750 -10604)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="15">0: </tspan><tspan y="15" fill="#ef1818">Merchant/Exchange (1)</tspan><tspan x="0" y="34">1: </tspan><tspan y="34" fill="#7b1adb">Buyer (2)</tspan><tspan x="0" y="53">2: </tspan><tspan y="53" fill="#ef1818">Merchant/Exchange (2)</tspan><tspan x="0" y="72">N: Settlement Action</tspan></text>
+    <text id="VALUE" transform="translate(3943 -10624)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">VALUE</tspan></text>
+    <g id="Rectangle_77" data-name="Rectangle 77" transform="translate(3692 -10453)" fill="#fcfcfc" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+      <rect width="339.499" height="181" stroke="none"/>
+      <rect x="0.5" y="0.5" width="338.499" height="180" fill="none"/>
+    </g>
+    <text id="Settlement_Action_Payload" data-name="Settlement Action Payload" transform="translate(3703 -10418)" fill="#707070" font-size="20" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Settlement Action Payload</tspan></text>
+    <text id="Settlements" transform="translate(3718 -10381)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">Settlements</tspan></text>
+    <text id="Merchant_Exchange_1_:_0_tokens" data-name="Merchant/Exchange (1): 0 tokens" transform="translate(3718 -10346)" fill="#ef1818" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Merchant/Exchange (1)</tspan><tspan y="0" fill="#707070">: 0 tokens</tspan></text>
+    <text id="Buyer_2_:_100_tokens_Merchant_Exchange_2_:_450_tokens_" data-name="Buyer (2): 100 tokens
+Merchant/Exchange (2): 450 tokens " transform="translate(3718 -10325)" fill="#7b1adb" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Buyer (2)</tspan><tspan y="0" fill="#707070">: 100 tokens</tspan><tspan fill="#ef1818"><tspan x="0" y="19">Merchant/Exchange (2):</tspan><tspan y="19" xml:space="preserve" fill="#707070"> 450 tokens </tspan></tspan></text>
+    <text id="ASSETID:_SHC1BvBMSEYstWetqTFn5Au4m4GFg7xJ..." data-name="ASSETID: SHC1BvBMSEYstWetqTFn5Au4m4GFg7xJ..." transform="translate(3707 -10400)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">ASSETID: SHC1BvBMSEYstWetqTFn5Au4m4GFg7xJ...</tspan></text>
+    <line id="Line_135" data-name="Line 135" y2="84" transform="translate(3708.5 -10378.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <text id="_2_BSV_Dust_Dust_N_A_Not_shown:_Contract_Fee" data-name="2 BSV
+Dust
+Dust
+N/A
+Not shown: Contract Fee" transform="translate(3943 -10604)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="15">2 BSV</tspan><tspan x="0" y="34">Dust</tspan><tspan x="0" y="53">Dust</tspan><tspan x="0" y="72">N/A</tspan><tspan x="0" y="91">Not shown: Contract Fee</tspan></text>
+    <g id="Rectangle_78" data-name="Rectangle 78" transform="translate(3766 -10545)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+      <rect width="116" height="17" stroke="none"/>
+      <rect x="0.5" y="0.5" width="115" height="16" fill="none"/>
+    </g>
+    <line id="Line_136" data-name="Line 136" y2="74" transform="translate(3812.5 -10526.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
+    <text id="Exchange_Settlement_Example" data-name="Exchange Settlement Example" transform="translate(3671 -10732)" fill="#707070" font-size="24" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">Exchange Settlement Example</tspan></text>
+    <g id="Rectangle_79" data-name="Rectangle 79" transform="translate(4031 -10476)" fill="#fff" stroke="#cf730b" stroke-width="4">
+      <rect width="163" height="111" stroke="none"/>
+      <rect x="2" y="2" width="159" height="107" fill="none"/>
+    </g>
+    <text id="Note:" transform="translate(4047 -10470)" fill="#707070" font-size="20" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="22">Note:</tspan></text>
+    <text id="Exchange:_100_tokens_for_2_BSV" data-name="Exchange: 100 tokens for 2 BSV" transform="translate(4047 -10439)" fill="#707070" font-size="14" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="15">Exchange: </tspan><tspan x="0" y="34">100 tokens for 2 BSV</tspan></text>
+    <line id="Line_137" data-name="Line 137" x2="110" transform="translate(3992.5 -10590.5)" fill="none" stroke="#cf730b" stroke-width="1" stroke-dasharray="3"/>
+    <line id="Line_138" data-name="Line 138" y1="115" transform="translate(4102.5 -10590.5)" fill="none" stroke="#cf730b" stroke-width="1" stroke-dasharray="3"/>
+    <line id="Line_139" data-name="Line 139" x2="276" transform="translate(3852.5 -10329.5)" fill="none" stroke="#cf730b" stroke-width="1" stroke-dasharray="3"/>
+    <line id="Line_140" data-name="Line 140" y2="38" transform="translate(4128.5 -10367.5)" fill="none" stroke="#cf730b" stroke-width="1" stroke-dasharray="3"/>
+    <g id="Rectangle_80" data-name="Rectangle 80" transform="translate(3778 -10338)" fill="none" stroke="#cf730b" stroke-width="1" stroke-dasharray="3">
+      <rect width="74" height="17" stroke="none"/>
+      <rect x="0.5" y="0.5" width="73" height="16" fill="none"/>
+    </g>
+    <g id="Rectangle_81" data-name="Rectangle 81" transform="translate(3937 -10602)" fill="none" stroke="#cf730b" stroke-width="1" stroke-dasharray="3">
+      <rect width="56" height="16" stroke="none"/>
+      <rect x="0.5" y="0.5" width="55" height="15" fill="none"/>
+    </g>
+  </g>
+</svg>

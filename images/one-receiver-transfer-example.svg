@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="628" height="473" viewBox="0 0 628 473">
+  <g id="Group_24" data-name="Group 24" transform="translate(1094 10758)">
+    <g id="Rectangle_46" data-name="Rectangle 46" transform="translate(-1094 -10685)" fill="#fcfcfc" stroke="#707070" stroke-width="1">
+      <rect width="628" height="185" stroke="none"/>
+      <rect x="0.5" y="0.5" width="627" height="184" fill="none"/>
+    </g>
+    <text id="Request_Transaction_Transfer_" data-name="Request Transaction (Transfer)" transform="translate(-1082 -10652)" fill="#707070" font-size="20" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Request Transaction (Transfer)</tspan></text>
+    <line id="Line_80" data-name="Line 80" y2="103" transform="translate(-893.5 -10624.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <text id="INPUTS" transform="translate(-1081 -10623)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">INPUTS</tspan></text>
+    <text id="OUTPUTS_" data-name="OUTPUTS " transform="translate(-878 -10623)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">OUTPUTS </tspan></text>
+    <text id="_0:_Issuer" data-name="0: Issuer" transform="translate(-1081 -10603)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="15">0: </tspan><tspan y="15" fill="#ef1818">Issuer</tspan></text>
+    <text id="_0:_Smart_Contract_1:_Bill_2:_Issuer_N:_Transfer_Action" data-name="0: Smart Contract
+1: Bill
+2: Issuer
+N: Transfer Action" transform="translate(-878 -10603)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="15">0: Smart Contract</tspan><tspan x="0" y="34">1: </tspan><tspan y="34" fill="#19e134">Bill</tspan><tspan x="0" y="53">2: </tspan><tspan y="53" fill="#ef1818">Issuer</tspan><tspan x="0" y="72">N: Transfer Action</tspan></text>
+    <text id="VALUE" transform="translate(-685 -10623)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">VALUE</tspan></text>
+    <g id="Rectangle_47" data-name="Rectangle 47" transform="translate(-950 -10462)" fill="#fcfcfc" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+      <rect width="339.499" height="177" stroke="none"/>
+      <rect x="0.5" y="0.5" width="338.499" height="176" fill="none"/>
+    </g>
+    <text id="Transfer_Action_Payload" data-name="Transfer Action Payload" transform="translate(-939 -10427)" fill="#707070" font-size="20" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Transfer Action Payload</tspan></text>
+    <text id="Senders" transform="translate(-924 -10390)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">Senders</tspan></text>
+    <text id="Issuer:_100_tokens" data-name="Issuer: 100 tokens" transform="translate(-924 -10355)" fill="#ef1818" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Issuer</tspan><tspan y="0" fill="#707070">: 100 tokens</tspan></text>
+    <text id="Receivers" transform="translate(-924 -10344)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">Receivers</tspan></text>
+    <text id="Bill:_100_tokens" data-name="Bill: 100 tokens" transform="translate(-924 -10308)" fill="#19e134" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Bill</tspan><tspan y="0" fill="#707070">: 100 tokens</tspan></text>
+    <text id="ASSETID:_SHC1BvBMSEYstWetqTFn5Au4m4GFg7xJ..." data-name="ASSETID: SHC1BvBMSEYstWetqTFn5Au4m4GFg7xJ..." transform="translate(-935 -10409)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">ASSETID: SHC1BvBMSEYstWetqTFn5Au4m4GFg7xJ...</tspan></text>
+    <line id="Line_82" data-name="Line 82" y2="84" transform="translate(-933.5 -10387.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <text id="Response_Costs_Contract_Fees_Dust_Change_Minimum:_Dust_value_N_A" data-name="Response Costs + Contract Fees
+Dust
+Change (Minimum: Dust value)
+N/A" transform="translate(-685 -10603)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="15">Response Costs + Contract Fees</tspan><tspan x="0" y="34">Dust</tspan><tspan x="0" y="53">Change (Minimum: Dust value)</tspan><tspan x="0" y="72">N/A</tspan></text>
+    <g id="Rectangle_51" data-name="Rectangle 51" transform="translate(-862 -10546)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+      <rect width="98" height="18" stroke="none"/>
+      <rect x="0.5" y="0.5" width="97" height="17" fill="none"/>
+    </g>
+    <line id="Line_104" data-name="Line 104" y2="66" transform="translate(-815.5 -10527.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
+    <text id="One_Receiver_Transfer_Example" data-name="One Receiver Transfer Example" transform="translate(-953 -10732)" fill="#707070" font-size="24" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">One Receiver Transfer Example</tspan></text>
+  </g>
+</svg>

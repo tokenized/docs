@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="721" height="939.866" viewBox="0 0 721 939.866">
+  <g id="Group_36" data-name="Group 36" transform="translate(-2637 9400)">
+    <g id="Rectangle_175" data-name="Rectangle 175" transform="translate(2637 -9328)" fill="#fcfcfc" stroke="#707070" stroke-width="1">
+      <rect width="721" height="149" stroke="none"/>
+      <rect x="0.5" y="0.5" width="720" height="148" fill="none"/>
+    </g>
+    <text id="Atomic_Swap_Settlement_Signature_Request_Message" data-name="Atomic Swap Settlement Signature Request Message" transform="translate(2696 -9374)" fill="#707070" font-size="24" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">Atomic Swap Settlement Signature Request Message</tspan></text>
+    <text id="Message_Transaction_Signature_Request_" data-name="Message Transaction (Signature Request)" transform="translate(2652 -9293)" fill="#707070" font-size="20" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Message Transaction (Signature Request)</tspan></text>
+    <line id="Line_231" data-name="Line 231" y2="70" transform="translate(2839.5 -9267.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <text id="INPUTS" transform="translate(2652 -9266)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">INPUTS</tspan></text>
+    <text id="OUTPUTS_" data-name="OUTPUTS " transform="translate(2855 -9266)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">OUTPUTS </tspan></text>
+    <text id="_0:_Smart_Contract_1" data-name="0: Smart Contract 1" transform="translate(2652 -9246)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="15">0: Smart Contract 1</tspan></text>
+    <text id="_0:_Smart_Contract_2_N:_Message_Action" data-name="0: Smart Contract 2
+N: Message Action" transform="translate(2855 -9246)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="15">0: Smart Contract 2</tspan><tspan x="0" y="34">N: Message Action</tspan></text>
+    <text id="VALUE" transform="translate(3048 -9266)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">VALUE</tspan></text>
+    <text id="Dust_0_Not_shown:_Change" data-name="Dust
+0
+Not shown: Change" transform="translate(3048 -9246)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="15">Dust</tspan><tspan x="0" y="34">0</tspan><tspan x="0" y="53">Not shown: Change</tspan></text>
+    <g id="Rectangle_176" data-name="Rectangle 176" transform="translate(2870 -9226)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+      <rect width="103" height="18" stroke="none"/>
+      <rect x="0.5" y="0.5" width="102" height="17" fill="none"/>
+    </g>
+    <g id="Rectangle_177" data-name="Rectangle 177" transform="translate(2637 -9159)" fill="#fcfcfc" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+      <rect width="721" height="698.866" stroke="none"/>
+      <rect x="0.5" y="0.5" width="720" height="697.866" fill="none"/>
+    </g>
+    <text id="Message_Action_Payload" data-name="Message Action Payload" transform="translate(2652 -9119)" fill="#707070" font-size="20" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Message Action Payload</tspan></text>
+    <line id="Line_232" data-name="Line 232" y2="49" transform="translate(2909.5 -9207.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
+    <g id="Rectangle_178" data-name="Rectangle 178" transform="translate(2666 -8969)" fill="#fcfcfc" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+      <rect width="660" height="210" stroke="none"/>
+      <rect x="0.5" y="0.5" width="659" height="209" fill="none"/>
+    </g>
+    <text id="Request_Transaction_Transfer_-_Partially_Signed_" data-name="Request Transaction (Transfer - Partially Signed)" transform="translate(2678 -8936)" fill="#707070" font-size="20" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Request Transaction (Transfer - Partially Signed)</tspan></text>
+    <line id="Line_233" data-name="Line 233" y2="144" transform="translate(2876.5 -8908.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <text id="INPUTS-2" data-name="INPUTS" transform="translate(2679 -8907)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">INPUTS</tspan></text>
+    <text id="OUTPUTS_2" data-name="OUTPUTS " transform="translate(2892 -8907)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">OUTPUTS </tspan></text>
+    <text id="_0:_Smart_Contract_1_signed_1:_Smart_Contract_2_unsigned_" data-name="0: Smart Contract 1 (signed)
+1: Smart Contract 2 (unsigned)" transform="translate(2679 -8887)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="15">0: Smart Contract 1 (signed)</tspan><tspan x="0" y="34">1: Smart Contract 2 (unsigned)</tspan><tspan x="0" y="53"></tspan></text>
+    <text id="_0:_Participant_1_1_1:_Participant_2_2_2:_Participant_2_1_3:_Participant_1_2_N:_Transfer_Action" data-name="0: Participant 1 (1)
+1: Participant 2 (2)2: Participant 2 (1)3: Participant 1 (2)
+N: Transfer Action" transform="translate(2892 -8887)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="15">0: </tspan><tspan y="15" fill="#ef1818">Participant 1 (1)</tspan><tspan x="0" y="34">1: </tspan><tspan y="34" fill="#7b1adb">Participant 2 (2)</tspan><tspan y="34"></tspan><tspan x="0" y="53">2: </tspan><tspan y="53" fill="#7b1adb">Participant 2 (1)</tspan><tspan y="53"></tspan><tspan x="0" y="72">3: </tspan><tspan y="72" fill="#ef1818">Participant 1 (2)</tspan><tspan x="0" y="91">N: Transfer Action</tspan></text>
+    <text id="VALUE-2" data-name="VALUE" transform="translate(3085 -8907)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">VALUE</tspan></text>
+    <g id="Rectangle_179" data-name="Rectangle 179" transform="translate(2824 -8736)" fill="#fcfcfc" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+      <rect width="339.499" height="253" stroke="none"/>
+      <rect x="0.5" y="0.5" width="338.499" height="252" fill="none"/>
+    </g>
+    <text id="Settlement_Action_Payload" data-name="Settlement Action Payload" transform="translate(2835 -8701)" fill="#707070" font-size="20" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Settlement Action Payload</tspan></text>
+    <text id="Settlements" transform="translate(2850 -8664)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">Settlements</tspan></text>
+    <text id="Participant_1_1_:_0_tokens_Participant_2_2_:_300_tokens" data-name="Participant 1 (1): 0 tokens
+Participant 2 (2): 300 tokens" transform="translate(2850 -8629)" fill="#ef1818" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Participant 1 (1)</tspan><tspan y="0" fill="#707070">: 0 tokens</tspan><tspan fill="#7b1adb"><tspan x="0" y="19">Participant 2 (2)</tspan><tspan y="19" fill="#707070">: 300 tokens</tspan></tspan></text>
+    <text id="ASSETID_1_:_SHC1BvBMSEYstWetqTFn5Au4m47xJ..." data-name="ASSETID(1): SHC1BvBMSEYstWetqTFn5Au4m47xJ..." transform="translate(2839 -8683)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">ASSETID(1): SHC1BvBMSEYstWetqTFn5Au4m47xJ...</tspan></text>
+    <line id="Line_234" data-name="Line 234" y2="57" transform="translate(2840.5 -8661.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <text id="Dust_Dust_Dust_Dust_0" data-name="Dust
+Dust
+Dust 
+Dust
+0" transform="translate(3085 -8887)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="15">Dust</tspan><tspan x="0" y="34">Dust</tspan><tspan x="0" y="53">Dust </tspan><tspan x="0" y="72">Dust</tspan><tspan x="0" y="91">0</tspan></text>
+    <g id="Rectangle_180" data-name="Rectangle 180" transform="translate(2907 -8810)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+      <rect width="98" height="17" stroke="none"/>
+      <rect x="0.5" y="0.5" width="97" height="16" fill="none"/>
+    </g>
+    <line id="Line_235" data-name="Line 235" y2="59" transform="translate(2944.5 -8794.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
+    <text id="MESSAGE_TYPE:_1002_-_Signature_Request" data-name="MESSAGE TYPE: 1002 - Signature Request" transform="translate(2652 -9098)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">MESSAGE TYPE: 1002 - Signature Request</tspan></text>
+    <text id="Message_Receivers" data-name="Message Receivers" transform="translate(2669 -9074)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">Message Receivers</tspan></text>
+    <text id="Smart_Contract_2" data-name="Smart Contract 2" transform="translate(2669 -9039)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Smart Contract 2</tspan></text>
+    <line id="Line_236" data-name="Line 236" y2="37" transform="translate(2657.5 -9073.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <g id="Rectangle_181" data-name="Rectangle 181" transform="translate(2648 -9029)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+      <rect width="120" height="21" stroke="none"/>
+      <rect x="0.5" y="0.5" width="119" height="20" fill="none"/>
+    </g>
+    <text id="MESSAGE_PAYLOAD" data-name="MESSAGE PAYLOAD" transform="translate(2652 -9028)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">MESSAGE PAYLOAD</tspan></text>
+    <line id="Line_237" data-name="Line 237" y2="40" transform="translate(2762.5 -9008.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
+    <text id="ASSETID_2_:_SHP3Bv3nmMkjknqTFn5Au4mFg7xJ..." data-name="ASSETID(2): SHP3Bv3nmMkjknqTFn5Au4mFg7xJ..." transform="translate(2838 -8587)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">ASSETID(2): SHP3Bv3nmMkjknqTFn5Au4mFg7xJ...</tspan></text>
+    <text id="Settlements-2" data-name="Settlements" transform="translate(2850 -8568)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">Settlements</tspan></text>
+    <text id="Participant_2_1_:_0_tokens_Participant_1_2_:_100_tokens" data-name="Participant 2 (1): 0 tokens
+Participant 1 (2): 100 tokens" transform="translate(2850 -8533)" fill="#7b1adb" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Participant 2 (1): </tspan><tspan y="0" fill="#707070">0 tokens</tspan><tspan fill="#ef1818"><tspan x="0" y="19">Participant 1 (2): </tspan><tspan y="19" fill="#707070">100 tokens</tspan></tspan></text>
+    <line id="Line_238" data-name="Line 238" y2="65" transform="translate(2840.5 -8569.5)" fill="none" stroke="#707070" stroke-width="1"/>
+  </g>
+</svg>

@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="587" height="513" viewBox="0 0 587 513">
+  <g id="Group_27" data-name="Group 27" transform="translate(-791 10758)">
+    <g id="Rectangle_55" data-name="Rectangle 55" transform="translate(791 -10685)" fill="#fcfcfc" stroke="#707070" stroke-width="1">
+      <rect width="587" height="205" stroke="none"/>
+      <rect x="0.5" y="0.5" width="586" height="204" fill="none"/>
+    </g>
+    <line id="Line_108" data-name="Line 108" y2="124" transform="translate(991.5 -10629.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <text id="INPUTS" transform="translate(804 -10628)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">INPUTS</tspan></text>
+    <text id="OUTPUTS_" data-name="OUTPUTS " transform="translate(1007 -10628)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">OUTPUTS </tspan></text>
+    <text id="_0:_Smart_Contract_" data-name="0: Smart Contract
+" transform="translate(804 -10608)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="15">0: Smart Contract</tspan><tspan x="0" y="34"></tspan></text>
+    <text id="_0:_John_1_1:_Bill_2:_Angela_3:_John_2_N:_Settlement_Action" data-name="0: John (1)
+1: Bill
+2: Angela
+3: John (2)
+N: Settlement Action" transform="translate(1007 -10608)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="15">0: </tspan><tspan y="15" fill="#ef1818">John (1)</tspan><tspan x="0" y="34">1: </tspan><tspan y="34" fill="#19e134">Bill</tspan><tspan x="0" y="53">2: </tspan><tspan y="53" fill="#cd18ef">Angela</tspan><tspan x="0" y="72">3: </tspan><tspan y="72" fill="#ef1818">John (2)</tspan><tspan x="0" y="91">N: Settlement Action</tspan></text>
+    <text id="VALUE" transform="translate(1180 -10628)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">VALUE</tspan></text>
+    <text id="Dust_Dust_Dust_Dust_N_A_Not_shown:_Contract_Fee" data-name="Dust
+Dust
+Dust
+Dust
+N/A
+Not shown: Contract Fee" transform="translate(1180 -10608)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="15">Dust</tspan><tspan x="0" y="34">Dust</tspan><tspan x="0" y="53">Dust</tspan><tspan x="0" y="72">Dust</tspan><tspan x="0" y="91">N/A</tspan><tspan x="0" y="110">Not shown: Contract Fee</tspan></text>
+    <g id="Rectangle_56" data-name="Rectangle 56" transform="translate(914 -10438)" fill="#fcfcfc" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+      <rect width="331.499" height="193" stroke="none"/>
+      <rect x="0.5" y="0.5" width="330.499" height="192" fill="none"/>
+    </g>
+    <text id="Settlement_Action_Payload" data-name="Settlement Action Payload" transform="translate(926 -10403)" fill="#707070" font-size="20" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Settlement Action Payload</tspan></text>
+    <text id="Response_Transaction_Settlement_" data-name="Response Transaction (Settlement)" transform="translate(803 -10652)" fill="#707070" font-size="20" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Response Transaction (Settlement)</tspan></text>
+    <text id="Settlements" transform="translate(939 -10365)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">Settlements</tspan></text>
+    <text id="John_1_:_0_tokens" data-name="John (1): 0 tokens" transform="translate(939 -10330)" fill="#ef1818" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">John (1)</tspan><tspan y="0" fill="#707070">: 0 tokens</tspan></text>
+    <text id="Bill:_100_tokens" data-name="Bill: 100 tokens" transform="translate(939 -10309)" fill="#19e134" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Bill</tspan><tspan y="0" fill="#707070">: 100 tokens</tspan></text>
+    <text id="Angela:_100_tokens_John_2_:_100_tokens" data-name="Angela: 100 tokensJohn (2): 100 tokens" transform="translate(939 -10290)" fill="#cd18ef" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Angela</tspan><tspan y="0" fill="#707070">: 100 tokens</tspan><tspan fill="#ef1818"><tspan x="0" y="19">John (2): </tspan><tspan y="19" fill="#707070">100 tokens</tspan></tspan></text>
+    <line id="Line_109" data-name="Line 109" y2="99" transform="translate(929.5 -10362.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <g id="Rectangle_58" data-name="Rectangle 58" transform="translate(1022 -10531)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+      <rect width="117" height="18" stroke="none"/>
+      <rect x="0.5" y="0.5" width="116" height="17" fill="none"/>
+    </g>
+    <line id="Line_111" data-name="Line 111" y2="75" transform="translate(1080.5 -10512.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
+    <text id="ASSETID:_SHC1BvBMSEYstWetqTFn5Au4m4GFg7xJ..." data-name="ASSETID: SHC1BvBMSEYstWetqTFn5Au4m4GFg7xJ..." transform="translate(926 -10386)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">ASSETID: SHC1BvBMSEYstWetqTFn5Au4m4GFg7xJ...</tspan></text>
+    <text id="Two_Receivers_Settlement_Example" data-name="Two Receivers Settlement Example" transform="translate(879 -10732)" fill="#707070" font-size="24" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">Two Receivers Settlement Example</tspan></text>
+  </g>
+</svg>
