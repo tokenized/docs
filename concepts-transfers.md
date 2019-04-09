@@ -33,7 +33,7 @@ First, the issuer builds a transfer request detailing the number of tokens to be
 <p align="center"><img src="https://raw.githubusercontent.com/tokenized/docs/master/images/two-receivers-transfer-example.svg?sanitize=true" alt="A two receiver transfer action" align="center" align="middle"></p>
 <br>
 Next, once the smart contract has checked everything is ok, it sends a settlement transaction that updates the balances of any wallets involved in the transaction.
-<br>
+<br><br>
 <p align="center"><img src="https://raw.githubusercontent.com/tokenized/docs/master/images/two-receivers-settlement-example.svg?sanitize=true" alt="A two receiver settlement action" align="center" align="middle"></p>
 <br>
 <a name="exchange"></a>
