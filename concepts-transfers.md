@@ -16,27 +16,28 @@ The act of transferring tokens can become fairly complicated when there are mult
 
 In its simplest form, a transfer is an action between 2 parties which is validated by a smart contract.
 In this example, a token issuer will send 100 tokens from its own balance to a receiver. This event is initiated by the issuer through the creation of a Transfer action detailing the receiver's address and the number of tokens they wish to send.
-<br>
+<br><br>
 <p align="center">
 <img src="https://raw.githubusercontent.com/tokenized/docs/master/images/one-receiver-transfer-example.svg?sanitize=true" alt="A basic transfer action" align="center" align="middle">
 </p>
+<br><br>
 The smart contract receives the request into its wallet and validates that it meets all of the terms and conditions for transfers on the contract. Once evaluated, the contract then builds a Settlement action in response and sends it onto the network.
-<br>
+<br><br>
 <p align="center">
 <img src="https://raw.githubusercontent.com/tokenized/docs/master/images/one-receiver-settlement-example.svg?sanitize=true" alt="A basic transfer action" align="center" align="middle">
 </p>
-<br>
+<br><br>
 <a name="multiple-receiver"></a>
 ### Transferring Tokens to Multiple Receivers
 Similarly, for an issuer to distribute tokens to more than one person, the transfer is a 2 step process. 
 In this example, the issuer will now send an additional 100 tokens to the receiver from the example above (receiver 1), and 300 tokens to a second receiver (receiver 2).
 Note that the transfer action deals with the number of tokens being sent, but the settlement transaction deals with the final balances of each account.
 First, the issuer builds a transfer request detailing the number of tokens to be sent and the addresses to send them to:
-<br>
+<br><br>
 <p align="center">
 <img src="https://raw.githubusercontent.com/tokenized/docs/master/images/two-receivers-transfer-example.svg?sanitize=true" alt="A two receiver transfer action" align="center" align="middle">
 </p>
-<br>
+<br><br>
 Next, once the smart contract has checked everything is ok, it sends a settlement transaction that updates the balances of any wallets involved in the transaction.
 <br>
 <p align="center">
