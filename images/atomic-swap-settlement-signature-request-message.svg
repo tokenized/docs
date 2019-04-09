@@ -1,11 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="721" height="939.866" viewBox="0 0 721 939.866">
-  <g id="Group_36" data-name="Group 36" transform="translate(-2637 9400)">
+<svg xmlns="http://www.w3.org/2000/svg" width="721" height="932.866" viewBox="0 0 721 932.866">
+  <g id="Group_36" data-name="Group 36" transform="translate(-2637 9393)">
     <g id="Rectangle_175" data-name="Rectangle 175" transform="translate(2637 -9328)" fill="#fcfcfc" stroke="#707070" stroke-width="1">
       <rect width="721" height="149" stroke="none"/>
       <rect x="0.5" y="0.5" width="720" height="148" fill="none"/>
     </g>
-    <text id="Atomic_Swap_Settlement_Signature_Request_Message" data-name="Atomic Swap Settlement Signature Request Message" transform="translate(2696 -9374)" fill="#707070" font-size="24" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">Atomic Swap Settlement Signature Request Message</tspan></text>
-    <text id="Message_Transaction_Signature_Request_" data-name="Message Transaction (Signature Request)" transform="translate(2652 -9293)" fill="#707070" font-size="20" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Message Transaction (Signature Request)</tspan></text>
+    <text id="Atomic_Swap_Settlement_Signature_Request_Message" data-name="Atomic Swap Settlement Signature Request Message" transform="translate(2766 -9374)" fill="#707070" font-size="18" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">Atomic Swap Settlement Signature Request Message</tspan></text>
+    <text id="Message_Transaction_Signature_Request_" data-name="Message Transaction (Signature Request)" transform="translate(2652 -9293)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Message Transaction (Signature Request)</tspan></text>
     <line id="Line_231" data-name="Line 231" y2="70" transform="translate(2839.5 -9267.5)" fill="none" stroke="#707070" stroke-width="1"/>
     <text id="INPUTS" transform="translate(2652 -9266)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">INPUTS</tspan></text>
     <text id="OUTPUTS_" data-name="OUTPUTS " transform="translate(2855 -9266)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">OUTPUTS </tspan></text>
@@ -24,13 +24,13 @@ Not shown: Change" transform="translate(3048 -9246)" fill="#707070" font-size="1
       <rect width="721" height="698.866" stroke="none"/>
       <rect x="0.5" y="0.5" width="720" height="697.866" fill="none"/>
     </g>
-    <text id="Message_Action_Payload" data-name="Message Action Payload" transform="translate(2652 -9119)" fill="#707070" font-size="20" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Message Action Payload</tspan></text>
+    <text id="Message_Action_Payload" data-name="Message Action Payload" transform="translate(2652 -9119)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Message Action Payload</tspan></text>
     <line id="Line_232" data-name="Line 232" y2="49" transform="translate(2909.5 -9207.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
     <g id="Rectangle_178" data-name="Rectangle 178" transform="translate(2666 -8969)" fill="#fcfcfc" stroke="#707070" stroke-width="1" stroke-dasharray="3">
       <rect width="660" height="210" stroke="none"/>
       <rect x="0.5" y="0.5" width="659" height="209" fill="none"/>
     </g>
-    <text id="Request_Transaction_Transfer_-_Partially_Signed_" data-name="Request Transaction (Transfer - Partially Signed)" transform="translate(2678 -8936)" fill="#707070" font-size="20" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Request Transaction (Transfer - Partially Signed)</tspan></text>
+    <text id="Request_Transaction_Transfer_-_Partially_Signed_" data-name="Request Transaction (Transfer - Partially Signed)" transform="translate(2678 -8936)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Request Transaction (Transfer - Partially Signed)</tspan></text>
     <line id="Line_233" data-name="Line 233" y2="144" transform="translate(2876.5 -8908.5)" fill="none" stroke="#707070" stroke-width="1"/>
     <text id="INPUTS-2" data-name="INPUTS" transform="translate(2679 -8907)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">INPUTS</tspan></text>
     <text id="OUTPUTS_2" data-name="OUTPUTS " transform="translate(2892 -8907)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">OUTPUTS </tspan></text>
@@ -44,7 +44,7 @@ N: Transfer Action" transform="translate(2892 -8887)" fill="#707070" font-size="
       <rect width="339.499" height="253" stroke="none"/>
       <rect x="0.5" y="0.5" width="338.499" height="252" fill="none"/>
     </g>
-    <text id="Settlement_Action_Payload" data-name="Settlement Action Payload" transform="translate(2835 -8701)" fill="#707070" font-size="20" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Settlement Action Payload</tspan></text>
+    <text id="Settlement_Action_Payload" data-name="Settlement Action Payload" transform="translate(2835 -8701)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Settlement Action Payload</tspan></text>
     <text id="Settlements" transform="translate(2850 -8664)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">Settlements</tspan></text>
     <text id="Participant_1_1_:_0_tokens_Participant_2_2_:_300_tokens" data-name="Participant 1 (1): 0 tokens
 Participant 2 (2): 300 tokens" transform="translate(2850 -8629)" fill="#ef1818" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Participant 1 (1)</tspan><tspan y="0" fill="#707070">: 0 tokens</tspan><tspan fill="#7b1adb"><tspan x="0" y="19">Participant 2 (2)</tspan><tspan y="19" fill="#707070">: 300 tokens</tspan></tspan></text>

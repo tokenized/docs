@@ -1,10 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="612" height="556" viewBox="0 0 612 556">
-  <g id="Group_37" data-name="Group 37" transform="translate(-3370 9401)">
+<svg xmlns="http://www.w3.org/2000/svg" width="612" height="549" viewBox="0 0 612 549">
+  <g id="Group_37" data-name="Group 37" transform="translate(-3370 9394)">
     <g id="Rectangle_99" data-name="Rectangle 99" transform="translate(3370 -9329)" fill="#fcfcfc" stroke="#707070" stroke-width="1">
       <rect width="612" height="210" stroke="none"/>
       <rect x="0.5" y="0.5" width="611" height="209" fill="none"/>
     </g>
-    <text id="Request_Transaction_Settlement_" data-name="Request Transaction (Settlement)" transform="translate(3382 -9296)" fill="#707070" font-size="20" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Request Transaction (Settlement)</tspan></text>
+    <text id="Request_Transaction_Settlement_" data-name="Request Transaction (Settlement)" transform="translate(3382 -9296)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Request Transaction (Settlement)</tspan></text>
     <line id="Line_161" data-name="Line 161" y2="144" transform="translate(3570.5 -9268.5)" fill="none" stroke="#707070" stroke-width="1"/>
     <text id="INPUTS" transform="translate(3383 -9267)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">INPUTS</tspan></text>
     <text id="OUTPUTS_" data-name="OUTPUTS " transform="translate(3586 -9267)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">OUTPUTS </tspan></text>
@@ -25,12 +25,12 @@ Dust
       <rect width="119" height="17" stroke="none"/>
       <rect x="0.5" y="0.5" width="118" height="16" fill="none"/>
     </g>
-    <text id="Atomic_Swap_Settlement_Action" data-name="Atomic Swap Settlement Action" transform="translate(3507 -9375)" fill="#707070" font-size="24" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">Atomic Swap Settlement Action</tspan></text>
+    <text id="Atomic_Swap_Settlement_Action" data-name="Atomic Swap Settlement Action" transform="translate(3542 -9375)" fill="#707070" font-size="18" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">Atomic Swap Settlement Action</tspan></text>
     <g id="Rectangle_189" data-name="Rectangle 189" transform="translate(3526 -9098)" fill="#fcfcfc" stroke="#707070" stroke-width="1" stroke-dasharray="3">
       <rect width="339.499" height="253" stroke="none"/>
       <rect x="0.5" y="0.5" width="338.499" height="252" fill="none"/>
     </g>
-    <text id="Settlement_Action_Payload" data-name="Settlement Action Payload" transform="translate(3537 -9063)" fill="#707070" font-size="20" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Settlement Action Payload</tspan></text>
+    <text id="Settlement_Action_Payload" data-name="Settlement Action Payload" transform="translate(3537 -9063)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Settlement Action Payload</tspan></text>
     <text id="Settlements" transform="translate(3552 -9026)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">Settlements</tspan></text>
     <text id="Participant_1_1_:_0_tokens_Participant_2_2_:_300_tokens" data-name="Participant 1 (1): 0 tokens
 Participant 2 (2): 300 tokens" transform="translate(3552 -8991)" fill="#ef1818" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Participant 1 (1)</tspan><tspan y="0" fill="#707070">: 0 tokens</tspan><tspan fill="#7b1adb"><tspan x="0" y="19">Participant 2 (2)</tspan><tspan y="19" fill="#707070">: 300 tokens</tspan></tspan></text>

@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="587" height="431" viewBox="0 0 587 431">
-  <g id="Group_25" data-name="Group 25" transform="translate(452 10758)">
+<svg xmlns="http://www.w3.org/2000/svg" width="587" height="424" viewBox="0 0 587 424">
+  <g id="Group_25" data-name="Group 25" transform="translate(452 10751)">
     <g id="Rectangle_49" data-name="Rectangle 49" transform="translate(-452 -10686)" fill="#fcfcfc" stroke="#707070" stroke-width="1">
       <rect width="587" height="167" stroke="none"/>
       <rect x="0.5" y="0.5" width="586" height="166" fill="none"/>
@@ -21,8 +21,8 @@ Not shown: Operator Fee" transform="translate(-63 -10609)" fill="#707070" font-s
       <rect width="331.499" height="152" stroke="none"/>
       <rect x="0.5" y="0.5" width="330.499" height="151" fill="none"/>
     </g>
-    <text id="Settlement_Action_Payload" data-name="Settlement Action Payload" transform="translate(-317 -10444)" fill="#707070" font-size="20" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Settlement Action Payload</tspan></text>
-    <text id="Response_Transaction_Settlement_" data-name="Response Transaction (Settlement)" transform="translate(-440 -10653)" fill="#707070" font-size="20" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Response Transaction (Settlement)</tspan></text>
+    <text id="Settlement_Action_Payload" data-name="Settlement Action Payload" transform="translate(-317 -10444)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Settlement Action Payload</tspan></text>
+    <text id="Response_Transaction_Settlement_" data-name="Response Transaction (Settlement)" transform="translate(-440 -10653)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Response Transaction (Settlement)</tspan></text>
     <text id="Settlements" transform="translate(-304 -10406)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">Settlements</tspan></text>
     <text id="Issuer:_0_tokens" data-name="Issuer: 0 tokens" transform="translate(-304 -10371)" fill="#ef1818" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Issuer</tspan><tspan y="0" fill="#707070">: 0 tokens</tspan></text>
     <text id="Bill:_100_tokens" data-name="Bill: 100 tokens" transform="translate(-304 -10350)" fill="#19e134" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Bill</tspan><tspan y="0" fill="#707070">: 100 tokens</tspan></text>
@@ -33,6 +33,6 @@ Not shown: Operator Fee" transform="translate(-63 -10609)" fill="#707070" font-s
     </g>
     <line id="Line_105" data-name="Line 105" y2="74" transform="translate(-162.5 -10552.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
     <text id="ASSETID:_SHC1BvBMSEYstWetqTFn5Au4m4GFg7xJ..." data-name="ASSETID: SHC1BvBMSEYstWetqTFn5Au4m4GFg7xJ..." transform="translate(-317 -10427)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">ASSETID: SHC1BvBMSEYstWetqTFn5Au4m4GFg7xJ...</tspan></text>
-    <text id="One_Receiver_Settlement_Example" data-name="One Receiver Settlement Example" transform="translate(-350 -10732)" fill="#707070" font-size="24" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">One Receiver Settlement Example</tspan></text>
+    <text id="One_Receiver_Settlement_Example" data-name="One Receiver Settlement Example" transform="translate(-306 -10732)" fill="#707070" font-size="18" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">One Receiver Settlement Example</tspan></text>
   </g>
 </svg>

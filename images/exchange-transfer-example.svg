@@ -1,10 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="660" height="641" viewBox="0 0 660 641">
-  <g id="Group_30" data-name="Group 30" transform="translate(-2862 10758)">
+<svg xmlns="http://www.w3.org/2000/svg" width="660" height="634" viewBox="0 0 660 634">
+  <g id="Group_30" data-name="Group 30" transform="translate(-2862 10751)">
     <g id="Rectangle_73" data-name="Rectangle 73" transform="translate(2862 -10686)" fill="#fcfcfc" stroke="#707070" stroke-width="1">
       <rect width="660" height="210" stroke="none"/>
       <rect x="0.5" y="0.5" width="659" height="209" fill="none"/>
     </g>
-    <text id="Request_Transaction_Transfer_" data-name="Request Transaction (Transfer)" transform="translate(2874 -10653)" fill="#707070" font-size="20" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Request Transaction (Transfer)</tspan></text>
+    <text id="Request_Transaction_Transfer_" data-name="Request Transaction (Transfer)" transform="translate(2874 -10653)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Request Transaction (Transfer)</tspan></text>
     <line id="Line_129" data-name="Line 129" y2="144" transform="translate(3062.5 -10625.5)" fill="none" stroke="#707070" stroke-width="1"/>
     <text id="INPUTS" transform="translate(2875 -10624)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">INPUTS</tspan></text>
     <text id="OUTPUTS_" data-name="OUTPUTS " transform="translate(3078 -10624)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">OUTPUTS </tspan></text>
@@ -20,7 +20,7 @@ N: Transfer Action" transform="translate(3078 -10604)" fill="#707070" font-size=
       <rect width="339.499" height="337" stroke="none"/>
       <rect x="0.5" y="0.5" width="338.499" height="336" fill="none"/>
     </g>
-    <text id="Transfer_Action_Payload" data-name="Transfer Action Payload" transform="translate(3031 -10418)" fill="#707070" font-size="20" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Transfer Action Payload</tspan></text>
+    <text id="Transfer_Action_Payload" data-name="Transfer Action Payload" transform="translate(3031 -10418)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Transfer Action Payload</tspan></text>
     <text id="Senders" transform="translate(3046 -10381)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">Senders</tspan></text>
     <text id="Merchant_Exchange_1_:_550_tokens" data-name="Merchant/Exchange (1): 550 tokens" transform="translate(3046 -10346)" fill="#ef1818" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Merchant/Exchange (1)</tspan><tspan y="0" fill="#707070">: 550 tokens</tspan></text>
     <text id="Receivers" transform="translate(3046 -10335)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">Receivers</tspan></text>
@@ -43,6 +43,6 @@ N/A" transform="translate(3271 -10604)" fill="#707070" font-size="14" font-famil
     <text id="Receivers-2" data-name="Receivers" transform="translate(3046 -10175)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">Receivers</tspan></text>
     <text id="Merchant_Exchange_2_:_2_BSV" data-name="Merchant/Exchange (2): 2 BSV" transform="translate(3046 -10140)" fill="#ef1818" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Merchant/Exchange (2)</tspan><tspan y="0" fill="#707070">: 2 BSV</tspan></text>
     <line id="Line_133" data-name="Line 133" y2="91" transform="translate(3036.5 -10226.5)" fill="none" stroke="#707070" stroke-width="1"/>
-    <text id="Exchange_Transfer_Example" data-name="Exchange Transfer Example" transform="translate(3036 -10732)" fill="#707070" font-size="24" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">Exchange Transfer Example</tspan></text>
+    <text id="Exchange_Transfer_Example" data-name="Exchange Transfer Example" transform="translate(3066 -10732)" fill="#707070" font-size="18" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">Exchange Transfer Example</tspan></text>
   </g>
 </svg>

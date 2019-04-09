@@ -1,11 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="721" height="1025.866" viewBox="0 0 721 1025.866">
-  <g id="Group_28" data-name="Group 28" transform="translate(-1396 10758)">
+<svg xmlns="http://www.w3.org/2000/svg" width="721" height="1018.866" viewBox="0 0 721 1018.866">
+  <g id="Group_28" data-name="Group 28" transform="translate(-1396 10751)">
     <g id="Rectangle_62" data-name="Rectangle 62" transform="translate(1396 -10686)" fill="#fcfcfc" stroke="#707070" stroke-width="1">
       <rect width="721" height="153" stroke="none"/>
       <rect x="0.5" y="0.5" width="720" height="152" fill="none"/>
     </g>
-    <text id="Exchange_Transfer_Offer_Message" data-name="Exchange Transfer Offer Message" transform="translate(1569 -10732)" fill="#707070" font-size="24" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">Exchange Transfer Offer Message</tspan></text>
-    <text id="Message_Transaction_Offer_" data-name="Message Transaction (Offer)" transform="translate(1411 -10651)" fill="#707070" font-size="20" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Message Transaction (Offer)</tspan></text>
+    <text id="Exchange_Transfer_Offer_Message" data-name="Exchange Transfer Offer Message" transform="translate(1616 -10732)" fill="#707070" font-size="18" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">Exchange Transfer Offer Message</tspan></text>
+    <text id="Message_Transaction_Offer_" data-name="Message Transaction (Offer)" transform="translate(1411 -10651)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Message Transaction (Offer)</tspan></text>
     <line id="Line_115" data-name="Line 115" y2="70" transform="translate(1598.5 -10625.5)" fill="none" stroke="#707070" stroke-width="1"/>
     <text id="INPUTS" transform="translate(1411 -10624)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">INPUTS</tspan></text>
     <text id="OUTPUTS_" data-name="OUTPUTS " transform="translate(1614 -10624)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">OUTPUTS </tspan></text>
@@ -24,13 +24,13 @@ Not shown: Change" transform="translate(1807 -10604)" fill="#707070" font-size="
       <rect width="721" height="784.866" stroke="none"/>
       <rect x="0.5" y="0.5" width="720" height="783.866" fill="none"/>
     </g>
-    <text id="Message_Action_Payload" data-name="Message Action Payload" transform="translate(1411 -10477)" fill="#707070" font-size="20" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Message Action Payload</tspan></text>
+    <text id="Message_Action_Payload" data-name="Message Action Payload" transform="translate(1411 -10477)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Message Action Payload</tspan></text>
     <line id="Line_117" data-name="Line 117" y2="49" transform="translate(1668.5 -10565.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
     <g id="Rectangle_59" data-name="Rectangle 59" transform="translate(1425 -10327)" fill="#fcfcfc" stroke="#707070" stroke-width="1" stroke-dasharray="3">
       <rect width="660" height="210" stroke="none"/>
       <rect x="0.5" y="0.5" width="659" height="209" fill="none"/>
     </g>
-    <text id="Request_Transaction_Transfer_Template_-_Partially_Filled_Out_" data-name="Request Transaction (Transfer Template - Partially Filled Out)" transform="translate(1437 -10294)" fill="#707070" font-size="20" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Request Transaction (Transfer Template - Partially Filled Out)</tspan></text>
+    <text id="Request_Transaction_Transfer_Template_-_Partially_Filled_Out_" data-name="Request Transaction (Transfer Template - Partially Filled Out)" transform="translate(1437 -10294)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Request Transaction (Transfer Template - Partially Filled Out)</tspan></text>
     <line id="Line_112" data-name="Line 112" y2="144" transform="translate(1625.5 -10266.5)" fill="none" stroke="#707070" stroke-width="1"/>
     <text id="INPUTS-2" data-name="INPUTS" transform="translate(1438 -10265)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">INPUTS</tspan></text>
     <text id="OUTPUTS_2" data-name="OUTPUTS " transform="translate(1641 -10265)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">OUTPUTS </tspan></text>
@@ -46,7 +46,7 @@ N: Transfer Action" transform="translate(1641 -10245)" fill="#707070" font-size=
       <rect width="339.499" height="337" stroke="none"/>
       <rect x="0.5" y="0.5" width="338.499" height="336" fill="none"/>
     </g>
-    <text id="Transfer_Action_Payload" data-name="Transfer Action Payload" transform="translate(1594 -10059)" fill="#707070" font-size="20" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Transfer Action Payload</tspan></text>
+    <text id="Transfer_Action_Payload" data-name="Transfer Action Payload" transform="translate(1594 -10059)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Transfer Action Payload</tspan></text>
     <text id="Senders" transform="translate(1609 -10022)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">Senders</tspan></text>
     <text id="Merchant_Exchange_1_:_550_tokens" data-name="Merchant/Exchange (1): 550 tokens" transform="translate(1609 -9987)" fill="#ef1818" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Merchant/Exchange (1)</tspan><tspan y="0" fill="#707070">: 550 tokens</tspan></text>
     <text id="Receivers" transform="translate(1609 -9976)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">Receivers</tspan></text>

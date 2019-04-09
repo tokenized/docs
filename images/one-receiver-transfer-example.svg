@@ -1,10 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="628" height="473" viewBox="0 0 628 473">
-  <g id="Group_24" data-name="Group 24" transform="translate(1094 10758)">
+<svg xmlns="http://www.w3.org/2000/svg" width="628" height="466" viewBox="0 0 628 466">
+  <g id="Group_24" data-name="Group 24" transform="translate(1094 10751)">
     <g id="Rectangle_46" data-name="Rectangle 46" transform="translate(-1094 -10685)" fill="#fcfcfc" stroke="#707070" stroke-width="1">
       <rect width="628" height="185" stroke="none"/>
       <rect x="0.5" y="0.5" width="627" height="184" fill="none"/>
     </g>
-    <text id="Request_Transaction_Transfer_" data-name="Request Transaction (Transfer)" transform="translate(-1082 -10652)" fill="#707070" font-size="20" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Request Transaction (Transfer)</tspan></text>
+    <text id="Request_Transaction_Transfer_" data-name="Request Transaction (Transfer)" transform="translate(-1082 -10652)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Request Transaction (Transfer)</tspan></text>
     <line id="Line_80" data-name="Line 80" y2="103" transform="translate(-893.5 -10624.5)" fill="none" stroke="#707070" stroke-width="1"/>
     <text id="INPUTS" transform="translate(-1081 -10623)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">INPUTS</tspan></text>
     <text id="OUTPUTS_" data-name="OUTPUTS " transform="translate(-878 -10623)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">OUTPUTS </tspan></text>
@@ -18,7 +18,7 @@ N: Transfer Action" transform="translate(-878 -10603)" fill="#707070" font-size=
       <rect width="339.499" height="177" stroke="none"/>
       <rect x="0.5" y="0.5" width="338.499" height="176" fill="none"/>
     </g>
-    <text id="Transfer_Action_Payload" data-name="Transfer Action Payload" transform="translate(-939 -10427)" fill="#707070" font-size="20" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Transfer Action Payload</tspan></text>
+    <text id="Transfer_Action_Payload" data-name="Transfer Action Payload" transform="translate(-939 -10427)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Transfer Action Payload</tspan></text>
     <text id="Senders" transform="translate(-924 -10390)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">Senders</tspan></text>
     <text id="Issuer:_100_tokens" data-name="Issuer: 100 tokens" transform="translate(-924 -10355)" fill="#ef1818" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Issuer</tspan><tspan y="0" fill="#707070">: 100 tokens</tspan></text>
     <text id="Receivers" transform="translate(-924 -10344)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">Receivers</tspan></text>
@@ -34,6 +34,6 @@ N/A" transform="translate(-685 -10603)" fill="#707070" font-size="14" font-famil
       <rect x="0.5" y="0.5" width="97" height="17" fill="none"/>
     </g>
     <line id="Line_104" data-name="Line 104" y2="66" transform="translate(-815.5 -10527.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
-    <text id="One_Receiver_Transfer_Example" data-name="One Receiver Transfer Example" transform="translate(-953 -10732)" fill="#707070" font-size="24" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">One Receiver Transfer Example</tspan></text>
+    <text id="One_Receiver_Transfer_Example" data-name="One Receiver Transfer Example" transform="translate(-911 -10732)" fill="#707070" font-size="18" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">One Receiver Transfer Example</tspan></text>
   </g>
 </svg>
