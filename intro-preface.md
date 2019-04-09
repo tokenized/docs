@@ -12,9 +12,9 @@ This documentation is intended to provide a clear and concise set of information
 
 The Tokenized protocol operates using two key components:
 
-- [Smart Contract](concepts/smart-contract): An autonomous agent service, hosted by the issuer or a third party service.
+- [Smart Contract](concepts/smart-contract): An autonomous agent service, hosted by the issuer or a third party provider.
 
-- [Tokenized Wallet](concepts/wallet-platform): An enhanced bitcoin wallet that can operate with the Tokenized protocol. Operated by the user or issuer.
+- [Tokenized Wallet](concepts/wallet-platform): An enhanced bitcoin wallet, operated by the user or issuer.
 
 The smart contract and wallet interact by broadcasting [action messages](protocol-actions) to the Bitcoin network. These actions are commonly prepared in the form of a request, coming from the wallet, and a response, from the smart contract. This provides a cryptographically provable event between two or more parties that is solidified in the immutable blockchain.
 
@@ -27,7 +27,7 @@ An example of an action message is the creation of an asset token, this is prepa
 
 Each action message contains a number of fields that are populated to form the final message that is sent over the Bitcoin network. The message contents contain the value of each field where it then is concatenated together. This method provides maximum efficiency for storing the data on the blockchain.
 
-It is important when converting this messages that every implementation uses the same specification. This source of truth can be found on the Tokenized GitHub repository:
+It is important when converting these messages that every implementation uses the same specification. This source of truth can be found on the Tokenized GitHub repository:
 
 - [Tokenized Protocol Specification](https://github.com/tokenized/specification)
 
