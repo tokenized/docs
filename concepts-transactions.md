@@ -66,4 +66,4 @@ The action payload is dependent on the action type and may include token specifi
 
 The following example shows a high-level overview of a transfer of tokens to highlight key components of the structure of Tokenized transactions.  The example shows one person, Mary, sending 15,000 tokens to Bill using the most basic form of a Transfer action.  The smart contract, upon validation of the Transfer action, responds with a Settlement action to complete the transfer of tokens.
 
-<img src="https://raw.githubusercontent.com/tokenized/docs/master/images/main-concepts-transaction-overview.svg?sanitize=true" alt="The BobAngelaChris Trust Share settlement" align="middle">
+<img src="https://raw.githubusercontent.com/tokenized/docs/master/images/concepts-transaction-overview.svg?sanitize=true" alt="The BobAngelaChris Trust Share settlement" align="middle">

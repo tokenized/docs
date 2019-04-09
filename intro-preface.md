@@ -16,7 +16,7 @@ The Tokenized protocol operates using two key components:
 
 - [Tokenized Wallet](concepts/wallet-platform): An enhanced bitcoin wallet, operated by the user or issuer.
 
-The smart contract and wallet interact by broadcasting [action messages](protocol-actions) to the Bitcoin network. These actions are commonly prepared in the form of a request, coming from the wallet, and a response, from the smart contract. This provides a cryptographically provable event between two or more parties that is solidified in the immutable blockchain.
+The smart contract and wallet both operate with the Tokenized protocol and interact by broadcasting [action messages](protocol-actions) to the Bitcoin network. These actions are commonly prepared in the form of a request, coming from the wallet, and a response, from the smart contract. This provides a cryptographically provable event between two or more parties that is solidified in the immutable blockchain.
 
 <a name="specification"></a>
 ## Specification
