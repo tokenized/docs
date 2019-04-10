@@ -27,7 +27,8 @@ In a Plurality vote, the option with the most votes is the winner.  No threshold
 ## Creating and Running a Vote
 There are two ways for a vote action to be created, both using the Proposal Action. 
 The following image defines the order of operations in which a vote takes place:
-<img src="https://raw.githubusercontent.com/tokenized/docs/master/images/vote-order-of-operations.svg?sanitize=true" alt="The order of operations for a Voting process" align="middle">
+<br><br>
+<img src="https://raw.githubusercontent.com/tokenized/docs/master/images/vote-order-of-operations.svg?sanitize=true" alt="The order of operations for a Voting process" align="center">
 ### 1. Proposal
 A Proposal is the means by which a vote action which is called. Proposals can be created in two ways: 
 
@@ -35,7 +36,8 @@ A Proposal is the means by which a vote action which is called. Proposals can be
 A Referendum is called by sending a Proposal action to the smart contract with the issuer signing and sending the action from its public address. Referendums can be called at any time and the cost is only the contract fees needed for the vote, and any transaction fees.
 2. Initiative
 An Initiative is a vote initiated by a token holder of a token that has initiative rights. Any token holder regardless of the number of tokens they hold can call an initiative, as long as the Initiative Cost is paid. The initiative cost is a threshold that sets a floor on the cost of creating an initiative. It is a fee paid to the contract issuer.  As long as the fee is paid the proposal will be put to all token holders and can be binding depending on the proposal.  The initiative cost is meant to reduce spam/wasting token holder's time.
-<img src="https://raw.githubusercontent.com/tokenized/docs/master/images/proposal-action.svg?sanitize=true" alt="A Proposal action" align="middle">
+<br><br>
+<img src="https://raw.githubusercontent.com/tokenized/docs/master/images/proposal-action.svg?sanitize=true" alt="A Proposal action" align="center">
 
 ### 2. Vote
 Once the smart contract receives the valid Proposal action, it creates a Vote action. The vote action is sent from the contract to itself, which is an indicator to all wallets that it is a message they should read. When user wallets see the vote action, the user is presented with all the options in the vote and can select their choices.
@@ -43,18 +45,22 @@ Once the smart contract receives the valid Proposal action, it creates a Vote ac
 The Vote action itself is very simple, and contains only the timestamp when the vote was created. The action is created by spending the UTXO associated with the Proposal action it is creating the vote for. Wallets refer back to the Proposal action to build the voting interface for the user.
 
 There is no restriction on the number of Vote actions that can be active at once however the contract will reject a vote for a change to a field in a contract or asset that is already under an active Vote action, or which has had a successful Vote action that stipulates a change that has not yet been made. The vote results themselves do not activate any changes to the smart contract. It is still up to the issuer to create and send an Asset Modification or Contract Amendment action that implements the changes that have been voted on. If a Vote action results in the successful passage of an amendment order, the contract will not allow further votes on that field until the changes  
-<img src="https://raw.githubusercontent.com/tokenized/docs/master/images/vote-action.svg?sanitize=true" alt="A Vote action" align="middle">
+<br><br>
+<img src="https://raw.githubusercontent.com/tokenized/docs/master/images/vote-action.svg?sanitize=true" alt="A Vote action" align="center">
 
 ### 3. Ballot Cast
 Once the user's wallet sees the Vote action, it can build the ballot for the user. The ballot consists of a set of response fields that display the proposal and voting options detailed in the Proposal action. Once the user has selected their choice(s) the wallet builds a Ballot Cast action. If a user has more than one asset with voting rights in a contract, their votes will be cast against their full asset holdings in aggregate. The counting is performed by the smart contract. 
-<img src="https://raw.githubusercontent.com/tokenized/docs/master/images/ballot-cast-action.svg?sanitize=true" alt="A Ballot Cast action" align="middle">
+<br><br>
+<img src="https://raw.githubusercontent.com/tokenized/docs/master/images/ballot-cast-action.svg?sanitize=true" alt="A Ballot Cast action" align="center">
 
 ### 4. Ballot Count
 When the smart contract sees that the user has cast their vote using a valid Ballot Cast action, it responds with a Ballot Counted action that acknowledges the receipt of the Ballot Cast action. The contract spends the UTXO that carried the Ballot Cast action to enable the wallet to track which vote is being responded to. The action only contains a timestamp from when the Ballot Counted action was created.
-<img src="https://raw.githubusercontent.com/tokenized/docs/master/images/ballot-cast-action.svg?sanitize=true" alt="A Ballot Cast action" align="middle">
+<br><br>
+<img src="https://raw.githubusercontent.com/tokenized/docs/master/images/ballot-cast-action.svg?sanitize=true" alt="A Ballot Cast action" align="center">
 
 ### 5. Result
 When the time elapses on the vote, the smart contract tallies the ballots cast against each option. The full details of the changes from the Proposal are repeated with a pass or fail result based on the voting system, and the number of votes received.
-<img src="https://raw.githubusercontent.com/tokenized/docs/master/images/result-action.svg?sanitize=true" alt="A Result action" align="middle">
+<br><br>
+<img src="https://raw.githubusercontent.com/tokenized/docs/master/images/result-action.svg?sanitize=true" alt="A Result action" align="center">
 
 Once the result action has been published, the Vote is concluded and the issuer can act on the amendments that have passed.
