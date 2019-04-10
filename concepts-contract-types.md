@@ -1,4 +1,4 @@
-# Contract Types
+# Contract
 
 - [Introduction](#introduction)
 - [Smart Contracts](#smart-contracts)
