@@ -24,6 +24,10 @@ Absolute Threshold requires the number of ballots counted to exceed the threshol
 #### P - Plurality
 In a Plurality vote, the option with the most votes is the winner.  No threshold percentage is required.
 
+#### Tally Logic
+**Standard Scoring:** Choice * # of tokens held * vote multiplier <br><br>
+**Weighted Scoring:** 1st choice * 1 * # of tokens held * vote multiplier, 2nd choice * ((Vote Max-1)/Vote Max) * # of tokens held * vote multiplier,..etc. <br><br>
+Note: Vote multipliers are optional and can be restricted.
 ## Creating and Running a Vote
 There are two ways for a vote action to be created, both using the Proposal Action. 
 The following image defines the order of operations in which a vote takes place:
