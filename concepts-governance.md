@@ -22,7 +22,7 @@ When a vote is performed, the result of each proposed amendment will be counted 
 #### A - Absolute Threshold
 Absolute Threshold requires the number of ballots counted to exceed the threshold value when compared to the total outstanding tokens. Abstentions/spoiled votes detract from the liklihood of the motion/proposal passing.  For example, in an absolute threshold vote, if the threshold was 50% and 51% of the total outstanding tokens did not vote, then the motion cannot pass.  50% of all tokens would have had to vote for one vote option for the motion to be successful."
 #### P - Plurality
-In a Plurality vote, the option with the most votes is the winner.  No threshold percentage is required, but a minimum threshold % value can be specified to ensure that the winning option has at least that threshold % to pass, otherwise no option wins.
+In a Plurality vote, the option with the most votes is the winner.  No threshold percentage is required.
 
 ## Creating and Running a Vote
 There are two ways for a vote action to be created, both using the Proposal Action. 
