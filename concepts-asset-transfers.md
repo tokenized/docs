@@ -1,4 +1,4 @@
-# Transfers
+# Asset Transfers
 
 - [Introduction](#introduction)
 - [Transferring tokens to a single receiver](#single-receiver)
