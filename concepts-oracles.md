@@ -32,4 +32,4 @@ The interaction between the user, the Identity Oracle and the smart contract is 
 
 A user (Sender) wants to send 100 tokens to another user (Receiver).  The tokens are restricted by the smart contract to transfers to addresses who are associated with users that have had their identity verified to meet KYC and AML compliance obligations.
 
-<img src="https://raw.githubusercontent.com/tokenized/docs/master/images/concepts-oracles.svg?sanitize=true" alt="Oracle Process" align="middle">
+![Oracle Process](https://raw.githubusercontent.com/tokenized/docs/master/images/concepts-oracles.svg?sanitize=true "Oracle Process") {.frame .centered .padded}
