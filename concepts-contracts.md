@@ -57,7 +57,7 @@ The Contract Offer action must be signed by both the issuer and the smart contra
 
 If the contract meets the smart contract Operator's requirements, they will add an input from their own wallet, add the change outputs they need and sign the Contract Offer using `SIGHASH_ALL` before sending it back to the issuer. Once the issuer has reviewed the smart contract Operator's changes, they can sign their own input (or inputs) using `SIGHASH_ALL` and send the transaction onto the network.
 
-![Final contract offer action](https://raw.githubusercontent.com/tokenized/docs/master/images/contract-offer-action-final.svg?sanitize=true) {.frame .centered}
+![Final contract offer action](https://raw.githubusercontent.com/tokenized/docs/master/images/contract-offer-action.svg?sanitize=true) {.frame .centered}
 
 #### Contract Formation
 
@@ -109,3 +109,5 @@ From this moment, all transaction requests to the contract must abide by the ame
 A static contract is a legal contract similar to that which one would enter into today for the undertaking of a scope of work, to enter into a non-disclosure agreement, or to manage the sale of an off-chain asset that has not been tokenized. A static contract uses the [Static Contract Formation](../protocol/actions#action-static-contract-formation) action.
 
 The static contract framework simply provides an easy and low-cost way for inscribing the details of these contracts onto the public ledger which provides the contracting parties with benefits of the Bitcoin network. Static contracts require only a single action to be established and do not require a Tokenized smart contract to operate.  Each of the contracting parties simply sends a small amount of Bitcoin back to themselves all on the same transaction that has the static contract formation action in it, to allow for their signatures (intention) to be recorded to the contract.
+
+![Updated Static Contract Formation action](https://raw.githubusercontent.com/tokenized/docs/master/images/static-contract-formation-action-amendment.svg?sanitize=true) {.frame .centered}
