@@ -11,19 +11,19 @@ Protocol:
 
 Concepts:
   pages:
-    # concepts/action-mechanism: "Action Mechanism"
-    concepts/contracts: "Contract Types"
+    concepts/contracts: "Contracts"
     concepts/transactions: "Transactions"
-    concepts/operations: "Tokenized Operations"
+    concepts/operations: "Operations"
     concepts/rules: "Rules"
     concepts/tokens: "Tokens"
-    concepts/assets: "Creating and managing assets"
-    concepts/transfers: "Transferring assets"
-    concepts/governance: "Contract and asset governance"
-    concepts/enforcement: "Tokenized enforcement actions"
-    concepts/message-types: "Message type Overview"
-    concepts/oracles: "Tokenized oracles"
-    concepts/asset-types: "Asset Type Overview"
+    concepts/assets: "Managing Assets"
+    concepts/transfers: "Transferring Assets"
+    concepts/governance: "Governance"
+    concepts/enforcement: "Enforcement Actions"
+    concepts/authorization-flags: "Authorization Flags"
+    concepts/oracles: "Oracles"
+    concepts/registers: "Registers"
+    concepts/messaging: "Messaging"
 
 Examples:
   pages:
