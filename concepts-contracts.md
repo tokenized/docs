@@ -10,7 +10,7 @@
 
 Tokenized contracts allow for entities to store and manage contracts on the Bitcoin (BSV) network in a standardized way that allows for interoperability with other contracting parties and the use of Bitcoin's digital signature algorithms to create a more robust way of creating and managing agreements.  The Bitcoin network allows for a global, public, immutable, and reliable ledger which is extremely valuable for storing, managing and timestamping contracts.
 
-A Tokenized contract references (hash) or stores all of the terms and conditions, in prose, associated with a binding legal contract.  Depending on the jurisdiction, additional clauses may have to be added to the contract to recongnise the Tokenized protocol and on-chain actions as meaningful and binding to the contracting parties of the contract.  For this reason, building contracts using Tokenized requires the same level of foresight, preparation and expertise as that required for the creation of any other traditional contract.
+A Tokenized contract references (hash) or stores all of the terms and conditions, in prose, associated with a binding legal contract. Depending on the jurisdiction, additional clauses may have to be added to the contract to recongnise the Tokenized protocol and on-chain actions as meaningful and binding to the contracting parties of the contract.  For this reason, building contracts using Tokenized requires the same level of foresight, preparation and expertise as that required for the creation of any other traditional contract.
 
 There are two types of contracts supported by the Tokenized system:
 

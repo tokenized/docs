@@ -1299,16 +1299,6 @@ To be used to comply with contractual/legal/issuer requirements.  The target pub
         <td>Target Public Address X</td>
         <td>If Target Public Address is the Contract Address then the entire contract is frozen.  All request actions during the Freeze period will be ignored and rejected when the contract is thawed and rebuilds.</td>
     </tr>
-   <tr>
-        <td class="text-center">1</td>
-        <td>Contract Public Address</td>
-        <td>Contract fee and change</td>
-    </tr>
-   <tr>
-        <td class="text-center">2</td>
-        <td>Contract Fee Public Address</td>
-        <td>Contract fee if applicable</td>
-    </tr>
 </table>
 
 
@@ -1371,16 +1361,6 @@ To be used to comply with contractual obligations or legal requirements.  The Al
         <td class="text-center">0</td>
         <td>Target Public Address X</td>
         <td>Can be the Contract Address for a 'Contract-wide' Thaw in response to a Contract-wide Freeze.</td>
-    </tr>
-   <tr>
-        <td class="text-center">1</td>
-        <td>Contract Public Address</td>
-        <td>Contract fee and change</td>
-    </tr>
-   <tr>
-        <td class="text-center">2</td>
-        <td>Contract Fee Public Address</td>
-        <td>Contract fee if applicable</td>
     </tr>
 </table>
 
@@ -1471,16 +1451,6 @@ To be used to comply with contractual obligations, legal and/or issuer requireme
         <td>Deposit Public Address</td>
         <td>Dust limit rule minimum value output of 546</td>
     </tr>
-   <tr>
-        <td class="text-center">2</td>
-        <td>Contract Public Address</td>
-        <td>Change</td>
-    </tr>
-   <tr>
-        <td class="text-center">3</td>
-        <td>Contract Fee Public Address</td>
-        <td>Contract fee if applicable</td>
-    </tr>
 </table>
 
 
@@ -1557,16 +1527,6 @@ To be used at the direction of the issuer to fix record keeping errors with bitc
         <td class="text-center">0</td>
         <td>Target Public Address X</td>
         <td>546 minimum.  If N bitcoin needs to be sent to the address, then this will be the output that receives the Bitcoin.</td>
-    </tr>
-   <tr>
-        <td class="text-center">1</td>
-        <td>Contract Public Address</td>
-        <td>Change</td>
-    </tr>
-   <tr>
-        <td class="text-center">2</td>
-        <td>Contract Fee Public Address</td>
-        <td>Contract fee if applicable</td>
     </tr>
 </table>
 

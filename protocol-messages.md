@@ -12,11 +12,49 @@ The Tokenized protocol features a complete messaging suite for all types of mess
 ## Available Messages
 
 <div class="content-list collection-method-list" markdown="1">
+- [Reverted Tx](#message-reverted-tx)
 - [Offer](#message-offer)
 - [Signature Request](#message-signature-request)
+- [Settlement Request](#message-settlement-request)
 - [Public Message](#message-public-message)
 - [Private Message](#message-private-message)
 </div>
+
+<a name="message-reverted-tx"></a>
+#### Reverted Tx
+
+A message that contains a bitcoin transaction that was accepted by the network or an agent and then invalidated by a reorg, or zero conf double spend. This serves as on chain evidence of the sending party's signatures and approval for the given transaction.
+
+<table>
+    <tr>
+        <th style="width:15%">Field</th>
+        <th style="width:15%">Type</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>Version</td>
+        <td>
+            uint(1)
+        </td>
+        <td>Payload Version </td>
+    </tr>
+    <tr>
+        <td>Timestamp</td>
+        <td>
+            <a href="field-types#type-timestamp">Timestamp</a>
+        </td>
+        <td>Timestamp in nanoseconds for when the message sender creates the transaction. </td>
+    </tr>
+    <tr>
+        <td>Transaction</td>
+        <td>
+            varbin(32)
+        </td>
+        <td>Serialized bitcoin transaction that was reverted/invalidated after being accepted. </td>
+    </tr>
+</table>
+
+
 
 <a name="message-offer"></a>
 #### Offer
@@ -41,21 +79,14 @@ A message that contains all of the details required for an agreement to be forme
         <td>
             <a href="field-types#type-timestamp">Timestamp</a>
         </td>
-        <td>Timestamp in nanoseconds for when the message sender creates the transaction. </td>
-    </tr>
-    <tr>
-        <td>RefTxId</td>
-        <td>
-            <a href="field-types#type-tx-id">TxId</a>
-        </td>
-        <td>Tx Id of the request transaction referenced by the offer. For a multi-contract settlement, the Payload will be a Settlement op return script and the RefTxId will be the id of the tx containing the Transfer.</td>
+        <td>Timestamp in nanoseconds for when the message sender created the offer. </td>
     </tr>
     <tr>
         <td>Payload</td>
         <td>
             varbin(32)
         </td>
-        <td>Full serialized op return script containing an offer to another party, usually to exchange tokens/bitcoin. The message needs data added by another party. </td>
+        <td>Serialized Tokenized OP_RETURN message. The message needs data added by another party upon acceptance of offer. </td>
     </tr>
 </table>
 
@@ -92,6 +123,56 @@ Partially-signed transactions (Tokenized actions, Bitcoin, Multisig, Threshold S
             varbin(32)
         </td>
         <td>Full serialized bitcoin tx with multiple inputs from different wallets/users. </td>
+    </tr>
+</table>
+
+
+
+<a name="message-settlement-request"></a>
+#### Settlement Request
+
+A message that contains a multi-contract settlement that needs settlement data added by another contract. Sent to another contract to request data be added.
+
+<table>
+    <tr>
+        <th style="width:15%">Field</th>
+        <th style="width:15%">Type</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>Version</td>
+        <td>
+            uint(1)
+        </td>
+        <td>Payload Version </td>
+    </tr>
+    <tr>
+        <td>Timestamp</td>
+        <td>
+            <a href="field-types#type-timestamp">Timestamp</a>
+        </td>
+        <td>Timestamp in nanoseconds for when the message sender creates the transaction. </td>
+    </tr>
+    <tr>
+        <td>TransferTxId</td>
+        <td>
+            <a href="field-types#type-tx-id">TxId</a>
+        </td>
+        <td>Tx Id of the transfer request transaction that triggered this message. </td>
+    </tr>
+    <tr>
+        <td>ContractFees</td>
+        <td>
+            <a href="field-types#type-target-address">TargetAddress[]</a>
+        </td>
+        <td>Contract fees (in bitcoin) and addresses(PKHs) where fees should be paid. Added by each contract as settlement data is added. </td>
+    </tr>
+    <tr>
+        <td>Settlement</td>
+        <td>
+            varbin(32)
+        </td>
+        <td>Serialized settlement OP_RETURN that needs data added by another contract. </td>
     </tr>
 </table>
 
