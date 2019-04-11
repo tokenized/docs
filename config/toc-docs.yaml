@@ -2,11 +2,12 @@ Intro:
   pages:
     intro/preface: "Preface"
 
-Actions:
+Protocol:
   pages:
-    protocol/actions: "Protocol Actions"
-    protocol/assets: "Asset Types"
-    protocol/messages: "Message Types"
+    protocol/actions: "Actions"
+    protocol/assets: "Assets"
+    protocol/messages: "Messages"
+    protocol/field-types: "Field Types"
 
 Concepts:
   pages:
