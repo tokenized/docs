@@ -1,4 +1,4 @@
-## Transactions
+# Transactions
 
 - [Introduction](#introduction)
 - [Building a Transaction](#building-transaction)
@@ -28,7 +28,7 @@ The second byte is a `PUSHDATA` instruction. The `PUSHDATA` instruction can be v
 
 ### Using PUSHDATA
 
-For packets with less than 75 bytes of data, the pushdata instruction is simply a single byte containing the length of the packet. e.g. `0x6a 0x03 0x010203 is a `OP_RETURN` followed by a `PUSHDATA` instruction to push 3 bytes, and then 3 bytes of information.
+For packets with less than 75 bytes of data, the pushdata instruction is simply a single byte containing the length of the packet. e.g. `0x6a 0x03 0x010203` is a `OP_RETURN` followed by a `PUSHDATA` instruction to push 3 bytes, and then 3 bytes of information.
 
 For packets containing 76 - 255 bytes of data, the pushdata instruction is the `OP_PUSHDATA1` opcode (`0x4c`) followed by a single byte unsigned integer containing the number of bytes to push in the instruction. For example:
 
