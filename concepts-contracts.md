@@ -16,7 +16,7 @@ A Tokenized contract references (hash) or stores all of the terms and conditions
 
 There are two types of contracts supported by the Tokenized system. [Smart contracts](#smart-contracts) that are hosted by the issuer or third party provider and [static contracts](#static-contracts) which are recorded to the blockchain and require no further on-going maintenance.
 
-![Decision Tree - Static vs Dynamic Contracts](https://raw.githubusercontent.com/tokenized/docs/master/images/contract-formation-decision-tree.svg?sanitize=true) {.frame .centered}
+![Decision Tree - Static vs Dynamic Contracts](https://raw.githubusercontent.com/tokenized/docs/master/images/contract-formation-decision-tree.svg?sanitize=true "Contract Formation: Decision Tree") {.frame .centered .padded}
 
 <a name="smart-contracts"></a>
 ## Smart Contracts
