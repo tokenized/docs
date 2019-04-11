@@ -1,4 +1,4 @@
-# Assets
+# Asset Management
 
 - [Creating an Asset](#asset-create)
 - [Updating an Asset](#asset-update)
