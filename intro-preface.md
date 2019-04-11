@@ -31,13 +31,7 @@ It is important when converting these messages that every implementation uses th
 
 - [Tokenized Protocol Specification](https://github.com/tokenized/specification)
 
-This repository is a reference for the Tokenized protocol structure. All definitions for message types and asset types are stored in YAML to be parsed and compiled into other languages. All definitions are grouped by their purpose and are versioned within.
-
-Currently supported languages are:
-
-* Go
-* Python
-* Markdown (this documentation)
+This repository is a reference for the Tokenized protocol structure. All definitions for message types and asset types are stored in YAML to be parsed and compiled into various programming languages.
 
 <a name="support"></a>
 ## Support
