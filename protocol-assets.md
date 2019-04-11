@@ -48,14 +48,14 @@ A voucher entitling the holder to a discount off a particular product or service
     <tr>
         <td>IssueDate</td>
         <td>
-            <a href="#type-timestamp">Timestamp</a>
+            <a href="field-types#type-timestamp">Timestamp</a>
         </td>
         <td> </td>
     </tr>
     <tr>
         <td>ExpiryDate</td>
         <td>
-            <a href="#type-timestamp">Timestamp</a>
+            <a href="field-types#type-timestamp">Timestamp</a>
         </td>
         <td> </td>
     </tr>
@@ -148,7 +148,7 @@ A Loyalty Point
     <tr>
         <td>AgeRestriction</td>
         <td>
-            <a href="#type-age-restriction">AgeRestriction</a>
+            <a href="field-types#type-age-restriction">AgeRestriction</a>
         </td>
         <td> </td>
     </tr>
@@ -162,14 +162,14 @@ A Loyalty Point
     <tr>
         <td>ValidFrom</td>
         <td>
-            <a href="#type-timestamp">Timestamp</a>
+            <a href="field-types#type-timestamp">Timestamp</a>
         </td>
         <td> </td>
     </tr>
     <tr>
         <td>ExpirationTimestamp</td>
         <td>
-            <a href="#type-timestamp">Timestamp</a>
+            <a href="field-types#type-timestamp">Timestamp</a>
         </td>
         <td> </td>
     </tr>
@@ -205,21 +205,21 @@ A Membership
     <tr>
         <td>AgeRestriction</td>
         <td>
-            <a href="#type-age-restriction">AgeRestriction</a>
+            <a href="field-types#type-age-restriction">AgeRestriction</a>
         </td>
         <td> </td>
     </tr>
     <tr>
         <td>ValidFrom</td>
         <td>
-            <a href="#type-timestamp">Timestamp</a>
+            <a href="field-types#type-timestamp">Timestamp</a>
         </td>
         <td> </td>
     </tr>
     <tr>
         <td>ExpirationTimestamp</td>
         <td>
-            <a href="#type-timestamp">Timestamp</a>
+            <a href="field-types#type-timestamp">Timestamp</a>
         </td>
         <td> </td>
     </tr>
@@ -283,7 +283,7 @@ Common stock represents ownership interests in corporations.
     <tr>
         <td>TransferLockout</td>
         <td>
-            <a href="#type-timestamp">Timestamp</a>
+            <a href="field-types#type-timestamp">Timestamp</a>
         </td>
         <td>A period of time where the asset is unable to be transferred.  After the transfer lockout period, the assets can be transferred. </td>
     </tr>
@@ -333,7 +333,7 @@ Admission ticket
     <tr>
         <td>AgeRestriction</td>
         <td>
-            <a href="#type-age-restriction">AgeRestriction</a>
+            <a href="field-types#type-age-restriction">AgeRestriction</a>
         </td>
         <td> </td>
     </tr>
@@ -375,21 +375,21 @@ Admission ticket
     <tr>
         <td>StartTimeDate</td>
         <td>
-            <a href="#type-timestamp">Timestamp</a>
+            <a href="field-types#type-timestamp">Timestamp</a>
         </td>
         <td> </td>
     </tr>
     <tr>
         <td>ValidFrom</td>
         <td>
-            <a href="#type-timestamp">Timestamp</a>
+            <a href="field-types#type-timestamp">Timestamp</a>
         </td>
         <td> </td>
     </tr>
     <tr>
         <td>ExpirationTimestamp</td>
         <td>
-            <a href="#type-timestamp">Timestamp</a>
+            <a href="field-types#type-timestamp">Timestamp</a>
         </td>
         <td> </td>
     </tr>

@@ -16,14 +16,14 @@ The Tokenized protocol operates using two key components:
 
 - [Tokenized Wallet](concepts/wallet-platform): An enhanced bitcoin wallet, operated by the user or issuer.
 
-The smart contract and wallet both operate with the Tokenized protocol and interact by broadcasting [action messages](protocol-actions) to the Bitcoin network. These actions are commonly prepared in the form of a request, coming from the wallet, and a response, from the smart contract. This provides a cryptographically provable event between two or more parties that is solidified in the immutable blockchain.
+The smart contract and wallet both operate with the Tokenized protocol and interact by [broadcasting actions](../protocol/actions) to the Bitcoin network. These actions are commonly prepared in the form of a request, coming from the wallet, and a response, from the smart contract. This provides a cryptographically provable event between two or more parties that is solidified in the immutable blockchain.
 
 <a name="specification"></a>
 ## Specification
 
 Each action message is defined by the Tokenized protocol and provides various methods for common use cases, such as governance and compliance. A unique aspect of the Tokenized protocol is its careful alignment with real world scenarios and coverage of the various requirements when conducting business.
 
-An example of an action message is the creation of an asset token, this is prepared as an [Asset Definition](#) request and sent by the wallet to the smart contract. The Asset Definition contains all the information about the asset, including the asset class, number of issued tokens, a unique code, meta data and other details.
+An example of an action message is the creation of an asset token, this is prepared as an [Asset Definition](../protocol/actions#action-asset-definition) request and sent by the wallet to the smart contract. The Asset Definition contains all the information about the asset, including the asset class, number of issued tokens, a unique code, meta data and other details.
 
 Each action message contains a number of fields that are populated to form the final message that is sent over the Bitcoin network. The message contents contain the value of each field where it is then concatenated together. This method provides maximum efficiency for storing the data on the blockchain.
 
