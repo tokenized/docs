@@ -8,13 +8,13 @@ The Tokenized protocol is a system developed to enable businesses and users arou
 This documentation is intended to provide a clear and concise set of information on how to use the protocol. It also acts as the reference material for developers who wish to build their own implementation.
 
 <a name="concepts"></a>
-### Key Concepts
+### Key Components
 
 The Tokenized protocol operates using two key components:
 
-- [Smart Contract](concepts/smart-contract): An autonomous agent service, hosted by the issuer or a third party provider.
+- [Smart Contract](https://github.com/tokenized/smart-contract): An autonomous agent service, hosted by the issuer or a third party provider.
 
-- [Tokenized Wallet](concepts/wallet-platform): An enhanced bitcoin wallet, operated by the user or issuer.
+- [Tokenized Wallet](https://github.com/tokenized/wallet): An enhanced bitcoin wallet, operated by the user or issuer.
 
 The smart contract and wallet both operate with the Tokenized protocol and interact by [broadcasting actions](../protocol/actions) to the Bitcoin network. These actions are commonly prepared in the form of a request, coming from the wallet, and a response, from the smart contract. This provides a cryptographically provable event between two or more parties that is solidified in the immutable blockchain.
 

@@ -36,49 +36,70 @@ A voucher entitling the holder to a discount off a particular product or service
         <td>
             uint(1)
         </td>
-        <td> </td>
+        <td>
+            The version number that this asset payload adheres to.
+             Example: 0
+        </td>
     </tr>
     <tr>
         <td>RedeemingEntity</td>
         <td>
             varchar(8)
         </td>
-        <td> </td>
+        <td>
+            The entity responsible for redemption of this coupon.
+             Example: Woolworths - Robina Town Centre
+        </td>
     </tr>
     <tr>
         <td>IssueDate</td>
         <td>
             <a href="field-types#type-timestamp">Timestamp</a>
         </td>
-        <td> </td>
+        <td>
+            
+             Example: Sat Dec 12 2015 18:00:00 GMT+1000 (AEST)
+        </td>
     </tr>
     <tr>
         <td>ExpiryDate</td>
         <td>
             <a href="field-types#type-timestamp">Timestamp</a>
         </td>
-        <td> </td>
+        <td>
+            
+             Example: Sat Dec 12 2020 18:00:00 GMT+1000 (AEST)
+        </td>
     </tr>
     <tr>
         <td>Value</td>
         <td>
             uint(8)
         </td>
-        <td> </td>
+        <td>
+            
+             Example: Denominated in the smallest unit of currency specified in the Currency subfield.
+        </td>
     </tr>
     <tr>
         <td>Currency</td>
         <td>
             Currency
         </td>
-        <td>Currency for coupon. From resources/currency. </td>
+        <td>
+            Currency for coupon. From resources/currency.
+             Example: AUD
+        </td>
     </tr>
     <tr>
         <td>Description</td>
         <td>
             varchar(16)
         </td>
-        <td> </td>
+        <td>
+            
+             Example: Gift Card
+        </td>
     </tr>
 </table>
 
@@ -100,28 +121,40 @@ A Currency
         <td>
             uint(1)
         </td>
-        <td> </td>
+        <td>
+            The version number that this asset payload adheres to.
+             Example: 0
+        </td>
     </tr>
     <tr>
         <td>ISOCode</td>
         <td>
             Currency
         </td>
-        <td> </td>
+        <td>
+            
+             Example: AUD
+        </td>
     </tr>
     <tr>
         <td>MonetaryAuthority</td>
         <td>
             varchar(8)
         </td>
-        <td> </td>
+        <td>
+            
+             Example: Reserve Bank of Australia
+        </td>
     </tr>
     <tr>
         <td>Description</td>
         <td>
             varchar(16)
         </td>
-        <td> </td>
+        <td>
+            
+             Example: Australian dollar
+        </td>
     </tr>
 </table>
 
@@ -143,42 +176,60 @@ A Loyalty Point
         <td>
             uint(1)
         </td>
-        <td> </td>
+        <td>
+            The version number that this asset payload adheres to.
+             Example: 0
+        </td>
     </tr>
     <tr>
         <td>AgeRestriction</td>
         <td>
             <a href="field-types#type-age-restriction">AgeRestriction</a>
         </td>
-        <td> </td>
+        <td>
+            Age restriction is used to specify required ages for asset ownership.
+            
+        </td>
     </tr>
     <tr>
         <td>OfferName</td>
         <td>
             varchar(8)
         </td>
-        <td> </td>
+        <td>
+            
+             Example: Qantas Frequent Flyer Points
+        </td>
     </tr>
     <tr>
         <td>ValidFrom</td>
         <td>
             <a href="field-types#type-timestamp">Timestamp</a>
         </td>
-        <td> </td>
+        <td>
+            
+             Example: Fri Nov 09 2018 09:00:00 GMT+1000 (AEST)
+        </td>
     </tr>
     <tr>
         <td>ExpirationTimestamp</td>
         <td>
             <a href="field-types#type-timestamp">Timestamp</a>
         </td>
-        <td> </td>
+        <td>
+            
+             Example: Fri Nov 09 2018 09:00:00 GMT+1000 (AEST)
+        </td>
     </tr>
     <tr>
         <td>Description</td>
         <td>
             varchar(16)
         </td>
-        <td> </td>
+        <td>
+            
+             Example: Coingeek Conference - London (November 2018).
+        </td>
     </tr>
 </table>
 
@@ -200,63 +251,90 @@ A Membership
         <td>
             uint(1)
         </td>
-        <td>Payload Version </td>
+        <td>
+            The version number that this asset payload adheres to.
+             Example: 0
+        </td>
     </tr>
     <tr>
         <td>AgeRestriction</td>
         <td>
             <a href="field-types#type-age-restriction">AgeRestriction</a>
         </td>
-        <td> </td>
+        <td>
+            Age restriction is used to specify required ages for asset ownership.
+            
+        </td>
     </tr>
     <tr>
         <td>ValidFrom</td>
         <td>
             <a href="field-types#type-timestamp">Timestamp</a>
         </td>
-        <td> </td>
+        <td>
+            
+             Example: Fri Nov 09 2018 09:00:00 GMT+1000 (AEST)
+        </td>
     </tr>
     <tr>
         <td>ExpirationTimestamp</td>
         <td>
             <a href="field-types#type-timestamp">Timestamp</a>
         </td>
-        <td> </td>
+        <td>
+            
+             Example: Fri Nov 09 2018 09:00:00 GMT+1000 (AEST)
+        </td>
     </tr>
     <tr>
         <td>ID</td>
         <td>
             varchar(8)
         </td>
-        <td> </td>
+        <td>
+            
+             Example: 34536457575486868
+        </td>
     </tr>
     <tr>
         <td>MembershipClass</td>
         <td>
             varchar(8)
         </td>
-        <td> </td>
+        <td>
+            
+             Example: Owner, Administrator, Manager, General, can be NULL.
+        </td>
     </tr>
     <tr>
         <td>RoleType</td>
         <td>
             varchar(8)
         </td>
-        <td> </td>
+        <td>
+            
+             Example: Director, Partner, CEO, COO, etc., can be NULL from Roles in Resources/Roles
+        </td>
     </tr>
     <tr>
         <td>MembershipType</td>
         <td>
             varchar(8)
         </td>
-        <td> </td>
+        <td>
+            
+             Example: Silver, Platinum, can be NULL.
+        </td>
     </tr>
     <tr>
         <td>Description</td>
         <td>
             varchar(16)
         </td>
-        <td> </td>
+        <td>
+            
+             Example: Rights and duties listed.
+        </td>
     </tr>
 </table>
 
@@ -278,35 +356,50 @@ Common stock represents ownership interests in corporations.
         <td>
             uint(1)
         </td>
-        <td>Payload Version </td>
+        <td>
+            The version number that this asset payload adheres to.
+             Example: 0
+        </td>
     </tr>
     <tr>
         <td>TransferLockout</td>
         <td>
             <a href="field-types#type-timestamp">Timestamp</a>
         </td>
-        <td>A period of time where the asset is unable to be transferred.  After the transfer lockout period, the assets can be transferred. </td>
+        <td>
+            A period of time where the asset is unable to be transferred.  After the transfer lockout period, the assets can be transferred.
+             Example: 11/4/2019 18:00:00
+        </td>
     </tr>
     <tr>
         <td>Ticker</td>
         <td>
             fixedchar(5)
         </td>
-        <td>Ticker symbol assigned by exchanges to represent the asset. </td>
+        <td>
+            Ticker symbol assigned by exchanges to represent the asset.
+             Example: AAPL
+        </td>
     </tr>
     <tr>
         <td>ISIN</td>
         <td>
             fixedchar(12)
         </td>
-        <td>International Securities Identification Number </td>
+        <td>
+            International Securities Identification Number
+             Example: US0004026250
+        </td>
     </tr>
     <tr>
         <td>Description</td>
         <td>
             varchar(16)
         </td>
-        <td> </td>
+        <td>
+            
+             Example: Class C
+        </td>
     </tr>
 </table>
 
@@ -328,77 +421,110 @@ Admission ticket
         <td>
             uint(1)
         </td>
-        <td>Payload Version </td>
+        <td>
+            The version number that this asset payload adheres to.
+             Example: 0
+        </td>
     </tr>
     <tr>
         <td>AgeRestriction</td>
         <td>
             <a href="field-types#type-age-restriction">AgeRestriction</a>
         </td>
-        <td> </td>
+        <td>
+            Age restriction is used to specify required ages for asset ownership.
+            
+        </td>
     </tr>
     <tr>
         <td>AdmissionType</td>
         <td>
             fixedchar(3)
         </td>
-        <td> </td>
+        <td>
+            
+             Example: MOV - Movie, CON - Conference, MUS - Music/Concert, GAM - Sports/Game/Athletics, EXH - Exhibition
+        </td>
     </tr>
     <tr>
         <td>Venue</td>
         <td>
             varchar(8)
         </td>
-        <td> </td>
+        <td>
+            
+             Example: Orion Cinemas - 293 Stehpens St, Vancouver, BC V4A 9V1
+        </td>
     </tr>
     <tr>
         <td>Class</td>
         <td>
             varchar(8)
         </td>
-        <td> </td>
+        <td>
+            
+             Example: Gold Class, Platinum, VIP, Section A, etc.
+        </td>
     </tr>
     <tr>
         <td>Area</td>
         <td>
             varchar(8)
         </td>
-        <td> </td>
+        <td>
+            
+             Example: Upper Bowl
+        </td>
     </tr>
     <tr>
         <td>Seat</td>
         <td>
             varchar(8)
         </td>
-        <td> </td>
+        <td>
+            
+             Example: Sec 1, Row 3, Seat 5, or A122
+        </td>
     </tr>
     <tr>
         <td>StartTimeDate</td>
         <td>
             <a href="field-types#type-timestamp">Timestamp</a>
         </td>
-        <td> </td>
+        <td>
+            
+             Example: Mon Nov 05 2018 09:00:00 GMT+1000 (AEST)
+        </td>
     </tr>
     <tr>
         <td>ValidFrom</td>
         <td>
             <a href="field-types#type-timestamp">Timestamp</a>
         </td>
-        <td> </td>
+        <td>
+            
+             Example: Fri Nov 09 2018 09:00:00 GMT+1000 (AEST)
+        </td>
     </tr>
     <tr>
         <td>ExpirationTimestamp</td>
         <td>
             <a href="field-types#type-timestamp">Timestamp</a>
         </td>
-        <td> </td>
+        <td>
+            
+             Example: Fri Nov 09 2018 09:00:00 GMT+1000 (AEST)
+        </td>
     </tr>
     <tr>
         <td>Description</td>
         <td>
             varchar(16)
         </td>
-        <td> </td>
+        <td>
+            
+             Example: Coingeek Conference - London (November 2018).
+        </td>
     </tr>
 </table>
 

@@ -36,21 +36,30 @@ A message that contains a bitcoin transaction that was accepted by the network o
         <td>
             uint(1)
         </td>
-        <td>Payload Version </td>
+        <td>
+            Payload Version
+             Example: 0
+        </td>
     </tr>
     <tr>
         <td>Timestamp</td>
         <td>
             <a href="field-types#type-timestamp">Timestamp</a>
         </td>
-        <td>Timestamp in nanoseconds for when the message sender creates the transaction. </td>
+        <td>
+            Timestamp in nanoseconds for when the message sender creates the transaction.
+             Example: 1551767413250187179
+        </td>
     </tr>
     <tr>
         <td>Transaction</td>
         <td>
             varbin(32)
         </td>
-        <td>Serialized bitcoin transaction that was reverted/invalidated after being accepted. </td>
+        <td>
+            Serialized bitcoin transaction that was reverted/invalidated after being accepted.
+            
+        </td>
     </tr>
 </table>
 
@@ -72,21 +81,30 @@ A message that contains all of the details required for an agreement to be forme
         <td>
             uint(1)
         </td>
-        <td>Payload Version </td>
+        <td>
+            Payload Version
+             Example: 0
+        </td>
     </tr>
     <tr>
         <td>Timestamp</td>
         <td>
             <a href="field-types#type-timestamp">Timestamp</a>
         </td>
-        <td>Timestamp in nanoseconds for when the message sender created the offer. </td>
+        <td>
+            Timestamp in nanoseconds for when the message sender created the offer.
+             Example: 1551767413250187179
+        </td>
     </tr>
     <tr>
         <td>Payload</td>
         <td>
             varbin(32)
         </td>
-        <td>Serialized Tokenized OP_RETURN message. The message needs data added by another party upon acceptance of offer. </td>
+        <td>
+            Serialized Tokenized OP_RETURN message. The message needs data added by another party upon acceptance of offer.
+            
+        </td>
     </tr>
 </table>
 
@@ -108,21 +126,30 @@ Partially-signed transactions (Tokenized actions, Bitcoin, Multisig, Threshold S
         <td>
             uint(1)
         </td>
-        <td>Payload Version </td>
+        <td>
+            Payload Version
+             Example: 0
+        </td>
     </tr>
     <tr>
         <td>Timestamp</td>
         <td>
             <a href="field-types#type-timestamp">Timestamp</a>
         </td>
-        <td>Timestamp in nanoseconds for when the message sender creates the transaction. </td>
+        <td>
+            Timestamp in nanoseconds for when the message sender creates the transaction.
+             Example: 1551767413250187179
+        </td>
     </tr>
     <tr>
         <td>Payload</td>
         <td>
             varbin(32)
         </td>
-        <td>Full serialized bitcoin tx with multiple inputs from different wallets/users. </td>
+        <td>
+            Full serialized bitcoin tx with multiple inputs from different wallets/users.
+            
+        </td>
     </tr>
 </table>
 
@@ -144,35 +171,50 @@ A message that contains a multi-contract settlement that needs settlement data a
         <td>
             uint(1)
         </td>
-        <td>Payload Version </td>
+        <td>
+            Payload Version
+             Example: 0
+        </td>
     </tr>
     <tr>
         <td>Timestamp</td>
         <td>
             <a href="field-types#type-timestamp">Timestamp</a>
         </td>
-        <td>Timestamp in nanoseconds for when the message sender creates the transaction. </td>
+        <td>
+            Timestamp in nanoseconds for when the message sender creates the transaction.
+             Example: 1551767413250187179
+        </td>
     </tr>
     <tr>
         <td>TransferTxId</td>
         <td>
             <a href="field-types#type-tx-id">TxId</a>
         </td>
-        <td>Tx Id of the transfer request transaction that triggered this message. </td>
+        <td>
+            Tx Id of the transfer request transaction that triggered this message.
+            
+        </td>
     </tr>
     <tr>
         <td>ContractFees</td>
         <td>
             <a href="field-types#type-target-address">TargetAddress[]</a>
         </td>
-        <td>Contract fees (in bitcoin) and addresses(PKHs) where fees should be paid. Added by each contract as settlement data is added. </td>
+        <td>
+            Contract fees (in bitcoin) and addresses(PKHs) where fees should be paid. Added by each contract as settlement data is added.
+            
+        </td>
     </tr>
     <tr>
         <td>Settlement</td>
         <td>
             varbin(32)
         </td>
-        <td>Serialized settlement OP_RETURN that needs data added by another contract. </td>
+        <td>
+            Serialized settlement OP_RETURN that needs data added by another contract.
+            
+        </td>
     </tr>
 </table>
 
@@ -194,21 +236,30 @@ Generic public message or public announcement. Sent to an address(es).  Can be u
         <td>
             uint(1)
         </td>
-        <td>Payload Version </td>
+        <td>
+            Payload Version
+             Example: 0
+        </td>
     </tr>
     <tr>
         <td>Timestamp</td>
         <td>
             <a href="field-types#type-timestamp">Timestamp</a>
         </td>
-        <td>Timestamp in nanoseconds for when the message sender creates the transaction. </td>
+        <td>
+            Timestamp in nanoseconds for when the message sender creates the transaction.
+             Example: 1551767413250187179
+        </td>
     </tr>
     <tr>
         <td>PublicMessage</td>
         <td>
             varchar(32)
         </td>
-        <td>Tokenized Ltd. announces product launch. </td>
+        <td>
+            Tokenized Ltd. announces product launch.
+            
+        </td>
     </tr>
 </table>
 
@@ -230,21 +281,30 @@ Generic private message. Sent to another address(es). Encryption is to be used.
         <td>
             uint(1)
         </td>
-        <td>Payload Version </td>
+        <td>
+            Payload Version
+             Example: 0
+        </td>
     </tr>
     <tr>
         <td>Timestamp</td>
         <td>
             <a href="field-types#type-timestamp">Timestamp</a>
         </td>
-        <td>Timestamp in nanoseconds for when the message sender creates the transaction. </td>
+        <td>
+            Timestamp in nanoseconds for when the message sender creates the transaction.
+             Example: 1551767413250187179
+        </td>
     </tr>
     <tr>
         <td>PrivateMessage</td>
         <td>
             varbin(32)
         </td>
-        <td>Tokenized Ltd announces product launch. </td>
+        <td>
+            Tokenized Ltd announces product launch.
+            
+        </td>
     </tr>
 </table>
 

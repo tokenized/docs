@@ -14,15 +14,15 @@ Each field in a protocol action is assigned with a data type. Standard scalar ty
         <th style="width:15%">Type</th>
         <th>Description</th>
    </tr>
-    <tr><td>int</td><td>is a signed integer. <code>size</code> is the number of bits for the integer. Valid values for <code>size</code> are 8, 16, 32, 64.</td></tr>
-    <tr><td>uint</td><td>is an unsigned integer. <code>size</code> is the number of bits for the integer. Valid values for <code>size</code> are 8, 16, 32, 64.</td></tr>
-    <tr><td>float</td><td>is a floating point number. <code>size</code> is the number of bits for the float. Valid values for <code>size</code> are 32 and 64.</td></tr>
-    <tr><td>bool</td><td>is a boolean stored as 1 byte.</td></tr>
-    <tr><td>bin</td><td>is fixed length binary data. <code>size</code> is the length in bytes of the data.</td></tr>
+    <tr><td>int</td><td>A signed integer. <code>size</code> is the number of bits for the integer. Valid values for <code>size</code> are 8, 16, 32, 64.</td></tr>
+    <tr><td>uint</td><td>An unsigned integer. <code>size</code> is the number of bits for the integer. Valid values for <code>size</code> are 8, 16, 32, 64.</td></tr>
+    <tr><td>float</td><td>A floating point number. <code>size</code> is the number of bits for the float. Valid values for <code>size</code> are 32 and 64.</td></tr>
+    <tr><td>bool</td><td>A boolean stored as 1 byte.</td></tr>
+    <tr><td>bin</td><td>Fixed length binary data. <code>size</code> is the length in bytes of the data.</td></tr>
     <tr>
         <td>varbin</td>
         <td>
-            is variable length binary data.
+            Variable length binary data.
             The data is preceded by an integer that specifies the actual length in bytes.
             <code>size</code> is the number of bits used to serialize the length in bytes of the data.
             Valid values for <code>size</code> are 8, 16, 32, and 64.
@@ -32,7 +32,7 @@ Each field in a protocol action is assigned with a data type. Standard scalar ty
     <tr>
         <td>fixedchar</td>
         <td>
-            is fixed length text data.
+            Fixed length text data.
             The data is assumed to be UTF-8 unless the first two bytes are a valid UTF-16 BOM (Byte Order Method).
             <code>size</code> is the length in bytes of the data.
         </td>
@@ -40,7 +40,7 @@ Each field in a protocol action is assigned with a data type. Standard scalar ty
     <tr>
         <td>varchar</td>
         <td>
-            is variable length text data.
+            Variable length text data.
             The data is assumed to be UTF-8 unless the first two bytes are a valid UTF-16 BOM (Byte Order Method).
             The data is preceded by an integer that specifies the actual length in bytes.
             <code>size</code> is the number of bits used to serialize the length in bytes of the data.
@@ -142,14 +142,20 @@ Administrator is used to refer to a Administration role in an Entity.
         <td>
             Role
         </td>
-        <td>Chairman, Director, Managing Partner, etc.. Found in 'Roles' in Specification/Resources 7 - Chair</td>
+        <td>
+            Chairman, Director, Managing Partner, etc.. Found in 'Roles' in Specification/Resources
+            7 - Chair Example: 7
+        </td>
     </tr>
     <tr>
         <td>Name</td>
         <td>
             varchar(8)
         </td>
-        <td>Length 0-255 bytes. 0 is valid. Name (eg. John Alexander Smith) </td>
+        <td>
+            Length 0-255 bytes. 0 is valid. Name (eg. John Alexander Smith)
+             Example: Satoshi Nakamoto
+        </td>
     </tr>
 </table>
 
@@ -171,14 +177,20 @@ Age restriction is used to specify required ages for asset ownership.
         <td>
             uint(1)
         </td>
-        <td>The lowest age valid to own asset. Zero for no restriction. </td>
+        <td>
+            The lowest age valid to own asset. Zero for no restriction.
+            
+        </td>
     </tr>
     <tr>
         <td>Upper</td>
         <td>
             uint(1)
         </td>
-        <td>The highest age valid to own asset. Zero for no restriction. </td>
+        <td>
+            The highest age valid to own asset. Zero for no restriction.
+            
+        </td>
     </tr>
 </table>
 
@@ -200,42 +212,60 @@ An Amendment is used to describe the modification of a single field in a Contrac
         <td>
             uint(1)
         </td>
-        <td>Index of the field to be amended. A field with a complex array type uses the same FieldIndex value for all elements. For example, in C1 the VotingSystems field is FieldIndex 16. Indexes are zero based.</td>
+        <td>
+            Index of the field to be amended.
+            A field with a complex array type uses the same FieldIndex value for all elements. For example, in C1 the VotingSystems field is FieldIndex 16. Indexes are zero based. Example: 2
+        </td>
     </tr>
     <tr>
         <td>Element</td>
         <td>
             uint(2)
         </td>
-        <td>Specifies the element of the complex array type to be amended. This only applies to array types, and has no meaning for a simple type such as uint64, string, byte or byte[]. Specifying a value > 0 for a simple type will result in a Rejection. To specify the 3rd VotingSystem of a Contract, the value 2 would be given. Indexes are zero based.</td>
+        <td>
+            Specifies the element of the complex array type to be amended. This only applies to array types, and has no meaning for a simple type such as uint64, string, byte or byte[]. Specifying a value > 0 for a simple type will result in a Rejection.
+            To specify the 3rd VotingSystem of a Contract, the value 2 would be given. Indexes are zero based. Example: 0
+        </td>
     </tr>
     <tr>
         <td>SubfieldIndex</td>
         <td>
             uint(1)
         </td>
-        <td>Index of the subfield to be amended. This only applies to specific fields containing complex types with subfields. This is used to specify which field of the object the amendment applies to. For example to specify the 2nd field of a VotingSystem, value 1 would be given.</td>
+        <td>
+            Index of the subfield to be amended. This only applies to specific fields containing complex types with subfields. This is used to specify which field of the object the amendment applies to.
+            For example to specify the 2nd field of a VotingSystem, value 1 would be given. Example: 1
+        </td>
     </tr>
     <tr>
         <td>SubfieldElement</td>
         <td>
             uint(2)
         </td>
-        <td>Specifies the element of the complex array type to be amended. This only applies to array types, and has no meaning for a simple type such as uint64, string, byte or byte[]. Specifying a value > 0 for a simple type will result in a Rejection. For example to specify the 2nd field of a VotingSystem, value 1 would be given.</td>
+        <td>
+            Specifies the element of the complex array type to be amended. This only applies to array types, and has no meaning for a simple type such as uint64, string, byte or byte[]. Specifying a value > 0 for a simple type will result in a Rejection.
+            For example to specify the 2nd field of a VotingSystem, value 1 would be given. Example: 1
+        </td>
     </tr>
     <tr>
         <td>Operation</td>
         <td>
             uint(1)
         </td>
-        <td>0 = Modify. 1 = Add an element to the data to the array of elements. 2 = Delete the element listed in the Element field. The Add and Delete operations only apply to a particilar element of a complex array type. For example, it could be used to remove a particular VotingSystem from a Contract. </td>
+        <td>
+            0 = Modify. 1 = Add an element to the data to the array of elements. 2 = Delete the element listed in the Element field. The Add and Delete operations only apply to a particilar element of a complex array type. For example, it could be used to remove a particular VotingSystem from a Contract.
+             Example: 0
+        </td>
     </tr>
     <tr>
         <td>Data</td>
         <td>
             varbin(32)
         </td>
-        <td>New data for the amended subfield. Data type depends on the the type of the field being amended. The value should be serialize as defined by the protocol. The bytes should be in an format appropriate for the field being modified.</td>
+        <td>
+            New data for the amended subfield. Data type depends on the the type of the field being amended. The value should be serialize as defined by the protocol.
+            The bytes should be in an format appropriate for the field being modified.
+        </td>
     </tr>
 </table>
 
@@ -257,28 +287,40 @@ AssetSettlement is the data required to settle an asset transfer.
         <td>
             uint(2)
         </td>
-        <td>Index of input containing the contract's address for this offset </td>
+        <td>
+            Index of input containing the contract's address for this offset
+            
+        </td>
     </tr>
     <tr>
         <td>AssetType</td>
         <td>
             fixedchar(3)
         </td>
-        <td>eg. Share, Bond, Ticket. All characters must be capitalised. </td>
+        <td>
+            Three letter character that specifies the asset type. Example: COU
+             Example: SHC
+        </td>
     </tr>
     <tr>
         <td>AssetCode</td>
         <td>
             <a href="field-types#type-asset-code">AssetCode</a>
         </td>
-        <td>32 randomly generated bytes.  Each Asset Code should be unique.  However, an Asset Code is always linked to a Contract that is identified by the public address of the Contract wallet. The Asset Type + Asset Code = Asset Code.  An Asset Code is a human readable identifier that can be used in a similar way to a Bitcoin (BSV) address. Cannot be changed by issuer, operator or smart contract.</td>
+        <td>
+            A unique code that is used to identify the asset, made up of 32 randomly generated bytes. The asset code is a human readable identifier that can be used in a similar way to a Bitcoin (BSV) address.
+            Cannot be changed by issuer, operator or smart contract.
+        </td>
     </tr>
     <tr>
         <td>Settlements</td>
         <td>
             <a href="field-types#type-quantity-index">QuantityIndex[]</a>
         </td>
-        <td>Each element contains the resulting token balance of Asset X for the output Address, which is referred to by the index. </td>
+        <td>
+            Each element contains the resulting token balance of Asset X for the output Address, which is referred to by the index.
+            
+        </td>
     </tr>
 </table>
 
@@ -300,35 +342,50 @@ AssetTransfer is the data required to transfer an asset.
         <td>
             uint(2)
         </td>
-        <td>Index of output containing the contract's address for this offset </td>
+        <td>
+            Index of output containing the contract's address for this offset
+            
+        </td>
     </tr>
     <tr>
         <td>AssetType</td>
         <td>
             fixedchar(3)
         </td>
-        <td>eg. Share, Bond, Ticket. All characters must be capitalised. </td>
+        <td>
+            Three letter character that specifies the asset type. Example: COU
+             Example: SHC
+        </td>
     </tr>
     <tr>
         <td>AssetCode</td>
         <td>
             <a href="field-types#type-asset-code">AssetCode</a>
         </td>
-        <td>32 randomly generated bytes.  Each Asset Code should be unique.  However, an Asset Code is always linked to a Contract that is identified by the public address of the Contract wallet. The Asset Type + Asset Code = Asset Code.  An Asset Code is a human readable identifier that can be used in a similar way to a Bitcoin (BSV) address. Cannot be changed by issuer, operator or smart contract.</td>
+        <td>
+            A unique code that is used to identify the asset, made up of 32 randomly generated bytes. The asset code is a human readable identifier that can be used in a similar way to a Bitcoin (BSV) address.
+            Cannot be changed by issuer, operator or smart contract.
+        </td>
     </tr>
     <tr>
         <td>AssetSenders</td>
         <td>
             <a href="field-types#type-quantity-index">QuantityIndex[]</a>
         </td>
-        <td>Each element has the value of tokens to be spent from the input address, which is referred to by the index. </td>
+        <td>
+            Each element has the value of tokens to be spent from the input address, which is referred to by the index.
+            
+        </td>
     </tr>
     <tr>
         <td>AssetReceivers</td>
         <td>
             <a href="field-types#type-token-receiver">TokenReceiver[]</a>
         </td>
-        <td>Each element has the value of tokens to be received by the output address, which is referred to by the index. </td>
+        <td>
+            Each element has the value of tokens to be received by the output address, which is referred to by the index.
+            
+        </td>
     </tr>
 </table>
 
@@ -350,105 +407,150 @@ Entity represents the details of a legal Entity, such as a public or private com
         <td>
             varchar(8)
         </td>
-        <td>Length 1-255 bytes (0 is not valid). Issuing entity (company, organization, individual).  Can be any unique identifying string, including human readable names for branding/vanity purposes.  </td>
+        <td>
+            Length 1-255 bytes (0 is not valid). Issuing entity (company, organization, individual).  Can be any unique identifying string, including human readable names for branding/vanity purposes. 
+             Example: Tesla Inc.
+        </td>
     </tr>
     <tr>
         <td>Type</td>
         <td>
             fixedchar(1)
         </td>
-        <td>P - Public Company Limited by Shares, C - Private Company Limited by Shares, I - Individual, L - Limited Partnership, U -Unlimited Partnership, T - Sole Proprietorship, S - Statutory Company, O - Non-Profit Organization, N - Nation State, G - Government Agency, U - Unit Trust, D - Discretionary Trust.  Found in 'Entities' (Specification/Resources). </td>
+        <td>
+            P - Public Company Limited by Shares, C - Private Company Limited by Shares, I - Individual, L - Limited Partnership, U -Unlimited Partnership, T - Sole Proprietorship, S - Statutory Company, O - Non-Profit Organization, N - Nation State, G - Government Agency, U - Unit Trust, D - Discretionary Trust.  Found in 'Entities' (Specification/Resources).
+             Example: P
+        </td>
     </tr>
     <tr>
         <td>LEI</td>
         <td>
             fixedchar(20)
         </td>
-        <td>Null is valid. A Legal Entity Identifier (or LEI) is an international identifier made up of a 20-character identifier that identifies distinct legal entities that engage in financial transactions. It is defined by ISO 17442.[1] Natural persons are not required to have an LEI; they’re eligible to have one issued, however, but only if they act in an independent business capacity.[2] The LEI is a global standard, designed to be non-proprietary data that is freely accessible to all.[3] As of December 2018, over 1,300,000 legal entities from more than 200 countries have now been issued with LEIs. ISO 17442 - https://en.wikipedia.org/wiki/Legal_Entity_Identifier</td>
+        <td>
+            Null is valid. A Legal Entity Identifier (or LEI) is an international identifier made up of a 20-character identifier that identifies distinct legal entities that engage in financial transactions. It is defined by ISO 17442.[1] Natural persons are not required to have an LEI; they’re eligible to have one issued, however, but only if they act in an independent business capacity.[2] The LEI is a global standard, designed to be non-proprietary data that is freely accessible to all.[3] As of December 2018, over 1,300,000 legal entities from more than 200 countries have now been issued with LEIs.
+            ISO 17442 - https://en.wikipedia.org/wiki/Legal_Entity_Identifier Example: 54930084UKLVMY22DS16
+        </td>
     </tr>
     <tr>
         <td>AddressIncluded</td>
         <td>
             bool
         </td>
-        <td>Registered/Physical/mailing address(HQ). Y-1/N-0, N means there is no issuer address. Entity/Contracting Party X Details</td>
+        <td>
+            Registered/Physical/mailing address(HQ). Y-1/N-0, N means there is no issuer address.
+            Entity/Contracting Party X Details Example: 1
+        </td>
     </tr>
     <tr>
         <td>UnitNumber</td>
         <td>
             varchar(8)
         </td>
-        <td>Issuer/Entity/Contracting Party X Address Details (eg. HQ) </td>
+        <td>
+            Issuer/Entity/Contracting Party X Address Details (eg. HQ)
+             Example: 2
+        </td>
     </tr>
     <tr>
         <td>BuildingNumber</td>
         <td>
             varchar(8)
         </td>
-        <td> </td>
+        <td>
+            
+             Example: 13577
+        </td>
     </tr>
     <tr>
         <td>Street</td>
         <td>
             varchar(16)
         </td>
-        <td> </td>
+        <td>
+            
+             Example: Fairmont Ave
+        </td>
     </tr>
     <tr>
         <td>SuburbCity</td>
         <td>
             varchar(8)
         </td>
-        <td> </td>
+        <td>
+            
+             Example: Robinoh
+        </td>
     </tr>
     <tr>
         <td>TerritoryStateProvinceCode</td>
         <td>
             fixedchar(5)
         </td>
-        <td> </td>
+        <td>
+            
+             Example: BC
+        </td>
     </tr>
     <tr>
         <td>CountryCode</td>
         <td>
             fixedchar(3)
         </td>
-        <td> </td>
+        <td>
+            
+             Example: USA
+        </td>
     </tr>
     <tr>
         <td>PostalZIPCode</td>
         <td>
             fixedchar(12)
         </td>
-        <td> </td>
+        <td>
+            
+             Example: 50210
+        </td>
     </tr>
     <tr>
         <td>EmailAddress</td>
         <td>
             varchar(8)
         </td>
-        <td>Length 0-255 bytes. Address for text-based communication: eg. email address, Bitcoin address </td>
+        <td>
+            Length 0-255 bytes. Address for text-based communication: eg. email address, Bitcoin address
+             Example: satoshi@tokenized.com
+        </td>
     </tr>
     <tr>
         <td>PhoneNumber</td>
         <td>
             varchar(8)
         </td>
-        <td>Length 0-50 bytes. 0 is valid. Phone Number for Entity. </td>
+        <td>
+            Length 0-50 bytes. 0 is valid. Phone Number for Entity.
+             Example: 0448484848
+        </td>
     </tr>
     <tr>
         <td>Administration</td>
         <td>
             <a href="field-types#type-administrator">Administrator[]</a>
         </td>
-        <td>A list of people that are in Administrative Roles for the Entity.  eg. Chair, Director, Managing Partner, etc. </td>
+        <td>
+            A list of people that are in Administrative Roles for the Entity.  eg. Chair, Director, Managing Partner, etc.
+            
+        </td>
     </tr>
     <tr>
         <td>Management</td>
         <td>
             <a href="field-types#type-manager">Manager[]</a>
         </td>
-        <td>A list of people in Management Roles for the Entity. e.g CEO, COO, CTO, CFO, Secretary, Executive, etc. </td>
+        <td>
+            A list of people in Management Roles for the Entity. e.g CEO, COO, CTO, CFO, Secretary, Executive, etc.
+            
+        </td>
     </tr>
 </table>
 
@@ -470,14 +572,20 @@ Manager is used to refer to a role that is responsible for the Management of an 
         <td>
             Role
         </td>
-        <td>CEO, COO, CFO, etc. Found in 'Roles' in Specification/Resources 5 - CEO</td>
+        <td>
+            CEO, COO, CFO, etc. Found in 'Roles' in Specification/Resources
+            5 - CEO Example: 5
+        </td>
     </tr>
     <tr>
         <td>Name</td>
         <td>
             varchar(8)
         </td>
-        <td>Length 0-255 bytes. 0 is valid. Name (eg. John Alexander Smith) </td>
+        <td>
+            Length 0-255 bytes. 0 is valid. Name (eg. John Alexander Smith)
+             Example: Satoshi Nakamoto
+        </td>
     </tr>
 </table>
 
@@ -499,14 +607,20 @@ A QuantityIndex contains a quantity, and an index. The quantity could be used to
         <td>
             uint(2)
         </td>
-        <td>The index of the input sending the tokens </td>
+        <td>
+            The index of the input sending the tokens
+             Example: 0
+        </td>
     </tr>
     <tr>
         <td>Quantity</td>
         <td>
             uint(8)
         </td>
-        <td>Number of tokens being sent </td>
+        <td>
+            Number of tokens being sent
+             Example: 100
+        </td>
     </tr>
 </table>
 
@@ -528,21 +642,30 @@ A Register defines the details of a public Register.
         <td>
             varchar(8)
         </td>
-        <td>Length 0-255 bytes. 0 is valid. Register X Name (eg. Coinbase, Tokenized, etc.) </td>
+        <td>
+            Length 0-255 bytes. 0 is valid. Register X Name (eg. Coinbase, Tokenized, etc.)
+             Example: Tokenized
+        </td>
     </tr>
     <tr>
         <td>URL</td>
         <td>
             varchar(8)
         </td>
-        <td>Length 0-255 bytes. 0 is valid. If applicable: URL for REST/RPC Endpoint </td>
+        <td>
+            Length 0-255 bytes. 0 is valid. If applicable: URL for REST/RPC Endpoint
+             Example: http://register.tokenized.com/api/3650d9/version2010
+        </td>
     </tr>
     <tr>
         <td>PublicKey</td>
         <td>
             varbin(8)
         </td>
-        <td>Length 0-255 bytes. 0 is not valid. Register Public Key (eg. Bitcoin Public key), used to confirm digital signed proofs for transfers.  Can also be the same public address that controls a Tokenized Register. </td>
+        <td>
+            Length 0-255 bytes. 0 is not valid. Register Public Key (eg. Bitcoin Public key), used to confirm digital signed proofs for transfers.  Can also be the same public address that controls a Tokenized Register.
+            
+        </td>
     </tr>
 </table>
 
@@ -564,14 +687,20 @@ A TargetAddress defines a public address and quantity.
         <td>
             <a href="field-types#type-public-key-hash">PublicKeyHash</a>
         </td>
-        <td>Public address where the token balance will be changed. </td>
+        <td>
+            Public address where the token balance will be changed.
+            
+        </td>
     </tr>
     <tr>
         <td>Quantity</td>
         <td>
             uint(8)
         </td>
-        <td>Qty of tokens to be frozen, thawed, confiscated or reconciled. For Contract-wide freezes 0 will be used. </td>
+        <td>
+            Qty of tokens to be frozen, thawed, confiscated or reconciled. For Contract-wide freezes 0 will be used.
+             Example: 10000
+        </td>
     </tr>
 </table>
 
@@ -593,28 +722,40 @@ A TokenReceiver is contains a quantity, index, and register signature. The quant
         <td>
             uint(2)
         </td>
-        <td>The index of the output receiving the tokens </td>
+        <td>
+            The index of the output receiving the tokens
+             Example: 0
+        </td>
     </tr>
     <tr>
         <td>Quantity</td>
         <td>
             uint(8)
         </td>
-        <td>Number of tokens to be received by address at Output X </td>
+        <td>
+            Number of tokens to be received by address at Output X
+             Example: 100
+        </td>
     </tr>
     <tr>
         <td>RegisterSigAlgorithm</td>
         <td>
             uint(1)
         </td>
-        <td>0 = No Register-signed Message (RegisterConfirmationSig skipped in serialization), 1 = ECDSA+secp256k1. If the contract for the asset being received has registers, then a signature is required from one of them. </td>
+        <td>
+            0 = No Register-signed Message (RegisterConfirmationSig skipped in serialization), 1 = ECDSA+secp256k1. If the contract for the asset being received has registers, then a signature is required from one of them.
+             Example: 1
+        </td>
     </tr>
     <tr>
         <td>RegisterConfirmationSig</td>
         <td>
             varbin(8)
         </td>
-        <td>Length 0-255 bytes. If restricted to a register (whitelist) or has transfer restrictions (age, location, investor status): ECDSA+secp256k1 (or the like) signed message provided by an approved/trusted register through an API signature of the defined message. If no transfer restrictions(trade restriction/age restriction fields in the Asset Type payload. or restricted to a whitelist by the Contract Auth Flags, it is a NULL field. </td>
+        <td>
+            Length 0-255 bytes. If restricted to a register (whitelist) or has transfer restrictions (age, location, investor status): ECDSA+secp256k1 (or the like) signed message provided by an approved/trusted register through an API signature of the defined message. If no transfer restrictions(trade restriction/age restriction fields in the Asset Type payload. or restricted to a whitelist by the Contract Auth Flags, it is a NULL field.
+             Example: IEwzJB23sFryKMzx5MfBwnt1GMUKNTQnqF8WhsSD1wwtKKg7BoA/5GLeu5Unwar7ZhtR18tdzuIfdXDtU+zMHL8=
+        </td>
     </tr>
 </table>
 
@@ -636,42 +777,60 @@ A VotingSystem defines all details of a Voting System.
         <td>
             varchar(8)
         </td>
-        <td>eg. Special Resolutions, Ordinary Resolutions, Fundamental Matters, General Matters, Directors' Vote, Poll, etc. </td>
+        <td>
+            eg. Special Resolutions, Ordinary Resolutions, Fundamental Matters, General Matters, Directors' Vote, Poll, etc.
+             Example: Special Resolutions
+        </td>
     </tr>
     <tr>
         <td>VoteType</td>
         <td>
             fixedchar(1)
         </td>
-        <td>R - Relative Threshold, A - Absolute Threshold, P - Plurality,  (Relative Threshold means the number of counted votes must exceed the threshold % of total ballots cast.  Abstentations/spoiled votes do not detract from the liklihood of a vote passing as they are not included in the denominator.  Absolute Threshold requires the number of ballots counted to exceed the threshold value when compared to the total outstanding tokens.  Abstentations/spoiled votes detract from the liklihood of the vote passing.  For example, in an absolute threshold vote, if the threshold was 50% and 51% of the total outstanding tokens did not vote, then the vote cannot pass.  50% of all tokens would have had to vote for one vote option for the vote to be successful. </td>
+        <td>
+            R - Relative Threshold, A - Absolute Threshold, P - Plurality,  (Relative Threshold means the number of counted votes must exceed the threshold % of total ballots cast.  Abstentations/spoiled votes do not detract from the liklihood of a vote passing as they are not included in the denominator.  Absolute Threshold requires the number of ballots counted to exceed the threshold value when compared to the total outstanding tokens.  Abstentations/spoiled votes detract from the liklihood of the vote passing.  For example, in an absolute threshold vote, if the threshold was 50% and 51% of the total outstanding tokens did not vote, then the vote cannot pass.  50% of all tokens would have had to vote for one vote option for the vote to be successful.
+             Example: A
+        </td>
     </tr>
     <tr>
         <td>TallyLogic</td>
         <td>
             fixedchar(1)
         </td>
-        <td>0 - Standard Scoring (+1 * # of tokens owned), 1 - Weighted Scoring (1st choice * Vote Max * # of tokens held, 2nd choice * Vote Max-1 * # of tokens held,..etc.)  </td>
+        <td>
+            0 - Standard Scoring (+1 * # of tokens owned), 1 - Weighted Scoring (1st choice * Vote Max * # of tokens held, 2nd choice * Vote Max-1 * # of tokens held,..etc.) 
+             Example: 0
+        </td>
     </tr>
     <tr>
         <td>ThresholdPercentage</td>
         <td>
             uint(1)
         </td>
-        <td>This field is ignored when VoteType is P (Plurality). Otherwise it is the percentage of ballots required for a proposal to pass. Valid values are greater than 0 and less than 100. 75 means 75% and greater.  Only applicable to Relative and Absolute Threshold vote methods.  The Plurality vote method requires no threshold value (NULL), as the successful vote option is simply selected on the basis of highest ballots cast for it. </td>
+        <td>
+            This field is ignored when VoteType is P (Plurality). Otherwise it is the percentage of ballots required for a proposal to pass. Valid values are greater than 0 and less than 100. 75 means 75% and greater.  Only applicable to Relative and Absolute Threshold vote methods.  The Plurality vote method requires no threshold value (NULL), as the successful vote option is simply selected on the basis of highest ballots cast for it.
+             Example: 75
+        </td>
     </tr>
     <tr>
         <td>VoteMultiplierPermitted</td>
         <td>
             bool
         </td>
-        <td>Where an asset has a vote multiplier, true must be set here for the vote multiplier to count, otherwise votes are simply treated as 1x per token. </td>
+        <td>
+            Where an asset has a vote multiplier, true must be set here for the vote multiplier to count, otherwise votes are simply treated as 1x per token.
+            
+        </td>
     </tr>
     <tr>
         <td>HolderProposalFee</td>
         <td>
             uint(8)
         </td>
-        <td>Token Owners must pay the fee amount to broadcast a valid Proposal.  If the Proposal action is valid, the smart contract will start a vote. 0 is valid. </td>
+        <td>
+            Token Owners must pay the fee amount to broadcast a valid Proposal.  If the Proposal action is valid, the smart contract will start a vote. 0 is valid.
+             Example: 100
+        </td>
     </tr>
 </table>
 
