@@ -110,4 +110,4 @@ A static contract is a legal contract similar to that which one would enter into
 
 The static contract framework simply provides an easy and low-cost way for inscribing the details of these contracts onto the public ledger which provides the contracting parties with benefits of the Bitcoin network. Static contracts require only a single action to be established and do not require a Tokenized smart contract to operate.  Each of the contracting parties simply sends a small amount of Bitcoin back to themselves all on the same transaction that has the static contract formation action in it, to allow for their signatures (intention) to be recorded to the contract.
 
-![Updated Static Contract Formation action](https://raw.githubusercontent.com/tokenized/docs/master/images/static-contract-formation-action-amendment.svg?sanitize=true) {.frame .centered .padded}
+![Updated Static Contract Formation action](https://raw.githubusercontent.com/tokenized/docs/master/images/static-contract-formation-action.svg?sanitize=true) {.frame .centered .padded}

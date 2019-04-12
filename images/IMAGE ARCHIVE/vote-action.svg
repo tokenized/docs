@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="632" height="410" viewBox="0 0 632 410">
+  <g id="Group_42" data-name="Group 42" transform="translate(-1568 5765)">
+    <g id="Rectangle_260" data-name="Rectangle 260" transform="translate(1787 -5528)" fill="#fcfcfc" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+      <rect width="204.499" height="99" stroke="none"/>
+      <rect x="0.5" y="0.5" width="203.499" height="98" fill="none"/>
+    </g>
+    <text id="Vote_Action_Transaction" data-name="Vote Action Transaction" transform="translate(1884 -5746)" fill="#707070" font-size="18" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="-100.472" y="0">Vote Action Transaction</tspan></text>
+    <g id="Rectangle_264" data-name="Rectangle 264" transform="translate(1568 -5718)" fill="#fcfcfc" stroke="#707070" stroke-width="1">
+      <rect width="632" height="180" stroke="none"/>
+      <rect x="0.5" y="0.5" width="631" height="179" fill="none"/>
+    </g>
+    <text id="Response_Transaction_Vote_" data-name="Response Transaction (Vote)" transform="translate(1583 -5685)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Response Transaction (Vote)</tspan></text>
+    <line id="Line_321" data-name="Line 321" y2="101" transform="translate(1777.5 -5657.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <text id="INPUTS" transform="translate(1583 -5656)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">INPUTS</tspan></text>
+    <text id="OUTPUTS_" data-name="OUTPUTS " transform="translate(1793 -5656)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">OUTPUTS </tspan></text>
+    <text id="_0:_" data-name="0: " transform="translate(1583 -5621)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: </tspan></text>
+    <text id="VALUE" transform="translate(1986 -5656)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">VALUE</tspan></text>
+    <text id="Vote_Action_Payload" data-name="Vote Action Payload" transform="translate(1798 -5497)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Vote Action Payload</tspan></text>
+    <line id="Line_323" data-name="Line 323" y2="51" transform="translate(1860.5 -5578.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
+    <text id="_0:_2" data-name="0: " transform="translate(1793 -5621)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: </tspan></text>
+    <text id="_1:_" data-name="1: " transform="translate(1793 -5602)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1: </tspan></text>
+    <text id="Dust" transform="translate(1987 -5621)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust</tspan></text>
+    <text id="Initiative_Cost" data-name="Initiative Cost" transform="translate(1987 -5602)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Initiative Cost</tspan></text>
+    <text id="Issuer" transform="translate(1811 -5602)" fill="#19e134" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Issuer</tspan></text>
+    <text id="Smart_Contract" data-name="Smart Contract" transform="translate(1601 -5621)" fill="#7030a0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Smart Contract</tspan></text>
+    <g id="Rectangle_265" data-name="Rectangle 265" transform="translate(1809 -5596)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+      <rect width="115" height="18" stroke="none"/>
+      <rect x="0.5" y="0.5" width="114" height="17" fill="none"/>
+    </g>
+    <text id="N:_" data-name="N: " transform="translate(1793 -5582)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N: </tspan></text>
+    <text id="Vote_Action" data-name="Vote Action" transform="translate(1811 -5582)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Vote Action</tspan></text>
+    <text id="N_A" data-name="N/A" transform="translate(1987 -5582)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N/A</tspan></text>
+    <text id="Not_Shown:_Contract_Fees" data-name="Not Shown: Contract Fees" transform="translate(1986 -5561)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Not Shown: Contract Fees</tspan></text>
+    <text id="Smart_Contract-2" data-name="Smart Contract" transform="translate(1811 -5621)" fill="#7030a0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Smart Contract</tspan></text>
+    <text id="DETAILS" transform="translate(1799 -5486)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">DETAILS</tspan></text>
+    <path id="Path_158" data-name="Path 158" d="M0,0V18.238" transform="translate(1801.5 -5469.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <text id="Timestamp" transform="translate(1808 -5454)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Timestamp</tspan></text>
+    <g id="Rectangle_266" data-name="Rectangle 266" transform="translate(1789 -5616)" fill="none" stroke="#cf730b" stroke-width="1" stroke-dasharray="3">
+      <rect width="298" height="18" stroke="none"/>
+      <rect x="0.5" y="0.5" width="297" height="17" fill="none"/>
+    </g>
+    <g id="Rectangle_267" data-name="Rectangle 267" transform="translate(2024 -5527)" fill="#fff" stroke="#cf730b" stroke-width="4">
+      <rect width="162" height="151" stroke="none"/>
+      <rect x="2" y="2" width="158" height="147" fill="none"/>
+    </g>
+    <text id="Note:" transform="translate(2040 -5521)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="17">Note:</tspan></text>
+    <text id="Optional_and_only_applicable_to_token_holder_initiated_proposals_called_Initiatives." data-name="Optional and only applicable to token holder initiated proposals called Initiatives." transform="translate(2040 -5493)" fill="#707070" font-size="14" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="15">Optional and only </tspan><tspan x="0" y="34">applicable to token </tspan><tspan x="0" y="53">holder initiated </tspan><tspan x="0" y="72">proposals called </tspan><tspan x="0" y="91">Initiatives.</tspan></text>
+    <line id="Line_324" data-name="Line 324" y2="135" transform="translate(2004.5 -5597.5)" fill="none" stroke="#cf730b" stroke-width="1" stroke-dasharray="3"/>
+    <line id="Line_325" data-name="Line 325" x2="21" transform="translate(2004.5 -5462.5)" fill="none" stroke="#cf730b" stroke-width="1" stroke-dasharray="3"/>
+    <g id="Rectangle_276" data-name="Rectangle 276" transform="translate(1572 -5521)" fill="#fff" stroke="#cf730b" stroke-width="4">
+      <rect width="176" height="166" stroke="none"/>
+      <rect x="2" y="2" width="172" height="162" fill="none"/>
+    </g>
+    <text id="Note:-2" data-name="Note:" transform="translate(1588 -5515)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="17">Note:</tspan></text>
+    <text id="The_outpoint_in_input_0_UTXO_from_Proposal_Action_is_used_to_link_the_Vote_action_to_the_Proposal_action." data-name="The outpoint in input[0] (UTXO from Proposal Action) is used to link the Vote action to the Proposal action." transform="translate(1587 -5487)" fill="#707070" font-size="14" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="15">The outpoint in </tspan><tspan x="0" y="34">input[0] (UTXO from </tspan><tspan x="0" y="53">Proposal Action) is </tspan><tspan x="0" y="72">used to link the Vote </tspan><tspan x="0" y="91">action to the Proposal </tspan><tspan x="0" y="110">action.</tspan></text>
+    <line id="Line_331" data-name="Line 331" y1="97" transform="translate(1647.5 -5617.5)" fill="none" stroke="#cf730b" stroke-width="1" stroke-dasharray="3"/>
+    <g id="Rectangle_277" data-name="Rectangle 277" transform="translate(1597 -5635)" fill="none" stroke="#cf730b" stroke-width="1" stroke-dasharray="3">
+      <rect width="111" height="18" stroke="none"/>
+      <rect x="0.5" y="0.5" width="110" height="17" fill="none"/>
+    </g>
+  </g>
+</svg>

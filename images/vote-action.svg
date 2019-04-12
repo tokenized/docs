@@ -1,10 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="632" height="410" viewBox="0 0 632 410">
-  <g id="Group_42" data-name="Group 42" transform="translate(-1568 5765)">
+<svg xmlns="http://www.w3.org/2000/svg" width="632" height="363" viewBox="0 0 632 363">
+  <g id="vote-action" transform="translate(-1568 5718)">
     <g id="Rectangle_260" data-name="Rectangle 260" transform="translate(1787 -5528)" fill="#fcfcfc" stroke="#707070" stroke-width="1" stroke-dasharray="3">
       <rect width="204.499" height="99" stroke="none"/>
       <rect x="0.5" y="0.5" width="203.499" height="98" fill="none"/>
     </g>
-    <text id="Vote_Action_Transaction" data-name="Vote Action Transaction" transform="translate(1884 -5746)" fill="#707070" font-size="18" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="-100.472" y="0">Vote Action Transaction</tspan></text>
     <g id="Rectangle_264" data-name="Rectangle 264" transform="translate(1568 -5718)" fill="#fcfcfc" stroke="#707070" stroke-width="1">
       <rect width="632" height="180" stroke="none"/>
       <rect x="0.5" y="0.5" width="631" height="179" fill="none"/>
@@ -45,8 +44,8 @@
     </g>
     <text id="Note:" transform="translate(2040 -5521)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="17">Note:</tspan></text>
     <text id="Optional_and_only_applicable_to_token_holder_initiated_proposals_called_Initiatives." data-name="Optional and only applicable to token holder initiated proposals called Initiatives." transform="translate(2040 -5493)" fill="#707070" font-size="14" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="15">Optional and only </tspan><tspan x="0" y="34">applicable to token </tspan><tspan x="0" y="53">holder initiated </tspan><tspan x="0" y="72">proposals called </tspan><tspan x="0" y="91">Initiatives.</tspan></text>
-    <line id="Line_324" data-name="Line 324" y2="135" transform="translate(2004.5 -5597.5)" fill="none" stroke="#cf730b" stroke-width="1" stroke-dasharray="3"/>
-    <line id="Line_325" data-name="Line 325" x2="21" transform="translate(2004.5 -5462.5)" fill="none" stroke="#cf730b" stroke-width="1" stroke-dasharray="3"/>
+    <line id="Line_324" data-name="Line 324" y2="81" transform="translate(2166.5 -5607.5)" fill="none" stroke="#cf730b" stroke-width="1" stroke-dasharray="3"/>
+    <line id="Line_325" data-name="Line 325" x2="80" transform="translate(2086.5 -5607.5)" fill="none" stroke="#cf730b" stroke-width="1" stroke-dasharray="3"/>
     <g id="Rectangle_276" data-name="Rectangle 276" transform="translate(1572 -5521)" fill="#fff" stroke="#cf730b" stroke-width="4">
       <rect width="176" height="166" stroke="none"/>
       <rect x="2" y="2" width="172" height="162" fill="none"/>

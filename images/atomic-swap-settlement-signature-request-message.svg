@@ -1,10 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="721" height="932.866" viewBox="0 0 721 932.866">
-  <g id="Group_36" data-name="Group 36" transform="translate(-2637 9393)">
+<svg xmlns="http://www.w3.org/2000/svg" width="721" height="867.866" viewBox="0 0 721 867.866">
+  <g id="atomic-swap-settlement-signature-request-message" transform="translate(-2637 9328)">
     <g id="Rectangle_175" data-name="Rectangle 175" transform="translate(2637 -9328)" fill="#fcfcfc" stroke="#707070" stroke-width="1">
       <rect width="721" height="149" stroke="none"/>
       <rect x="0.5" y="0.5" width="720" height="148" fill="none"/>
     </g>
-    <text id="Atomic_Swap_Settlement_Signature_Request_Message" data-name="Atomic Swap Settlement Signature Request Message" transform="translate(2766 -9374)" fill="#707070" font-size="18" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">Atomic Swap Settlement Signature Request Message</tspan></text>
     <text id="Message_Transaction_Signature_Request_" data-name="Message Transaction (Signature Request)" transform="translate(2652 -9293)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Message Transaction (Signature Request)</tspan></text>
     <line id="Line_231" data-name="Line 231" y2="70" transform="translate(2839.5 -9267.5)" fill="none" stroke="#707070" stroke-width="1"/>
     <text id="INPUTS" transform="translate(2652 -9266)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">INPUTS</tspan></text>
@@ -46,15 +45,16 @@ N: Transfer Action" transform="translate(2892 -8887)" fill="#707070" font-size="
     </g>
     <text id="Settlement_Action_Payload" data-name="Settlement Action Payload" transform="translate(2835 -8701)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Settlement Action Payload</tspan></text>
     <text id="Settlements" transform="translate(2850 -8664)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">Settlements</tspan></text>
-    <text id="Participant_1_1_:_0_tokens_Participant_2_2_:_300_tokens" data-name="Participant 1 (1): 0 tokens
-Participant 2 (2): 300 tokens" transform="translate(2850 -8629)" fill="#ef1818" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Participant 1 (1)</tspan><tspan y="0" fill="#707070">: 0 tokens</tspan><tspan fill="#7b1adb"><tspan x="0" y="19">Participant 2 (2)</tspan><tspan y="19" fill="#707070">: 300 tokens</tspan></tspan></text>
-    <text id="ASSETID_1_:_SHC1BvBMSEYstWetqTFn5Au4m47xJ..." data-name="ASSETID(1): SHC1BvBMSEYstWetqTFn5Au4m47xJ..." transform="translate(2839 -8683)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">ASSETID(1): SHC1BvBMSEYstWetqTFn5Au4m47xJ...</tspan></text>
+    <text id="Participant_1_1_:_0_shares_Participant_2_2_:_300_shares" data-name="Participant 1 (1): 0 shares
+Participant 2 (2): 300 shares" transform="translate(2850 -8629)" fill="#ef1818" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Participant 1 (1)</tspan><tspan y="0" fill="#707070">: 0 shares</tspan><tspan fill="#7b1adb"><tspan x="0" y="19">Participant 2 (2)</tspan><tspan y="19" fill="#707070">: 300 shares</tspan></tspan></text>
+    <text id="ASSETID:_SHC1BvBMSJ..._Common_Shares" data-name="ASSETID: SHC1BvBMSJ... Common Shares" transform="translate(2839 -8683)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">ASSETID: SHC1BvBMSJ... Common Shares</tspan></text>
     <line id="Line_234" data-name="Line 234" y2="57" transform="translate(2840.5 -8661.5)" fill="none" stroke="#707070" stroke-width="1"/>
-    <text id="Dust_Dust_Dust_Dust_0" data-name="Dust
+    <text id="Dust_Dust_Dust_Dust_N_A_Not_shown:_Contract_Fees" data-name="Dust
 Dust
 Dust 
 Dust
-0" transform="translate(3085 -8887)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="15">Dust</tspan><tspan x="0" y="34">Dust</tspan><tspan x="0" y="53">Dust </tspan><tspan x="0" y="72">Dust</tspan><tspan x="0" y="91">0</tspan></text>
+N/A
+Not shown: Contract Fees" transform="translate(3085 -8887)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="15">Dust</tspan><tspan x="0" y="34">Dust</tspan><tspan x="0" y="53">Dust </tspan><tspan x="0" y="72">Dust</tspan><tspan x="0" y="91">N/A</tspan><tspan x="0" y="110">Not shown: Contract Fees</tspan></text>
     <g id="Rectangle_180" data-name="Rectangle 180" transform="translate(2907 -8810)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
       <rect width="98" height="17" stroke="none"/>
       <rect x="0.5" y="0.5" width="97" height="16" fill="none"/>
@@ -70,10 +70,10 @@ Dust
     </g>
     <text id="MESSAGE_PAYLOAD" data-name="MESSAGE PAYLOAD" transform="translate(2652 -9028)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">MESSAGE PAYLOAD</tspan></text>
     <line id="Line_237" data-name="Line 237" y2="40" transform="translate(2762.5 -9008.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
-    <text id="ASSETID_2_:_SHP3Bv3nmMkjknqTFn5Au4mFg7xJ..." data-name="ASSETID(2): SHP3Bv3nmMkjknqTFn5Au4mFg7xJ..." transform="translate(2838 -8587)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">ASSETID(2): SHP3Bv3nmMkjknqTFn5Au4mFg7xJ...</tspan></text>
+    <text id="ASSETID_2_:_SHP3Bv3m..._Preferred_Shares" data-name="ASSETID(2): SHP3Bv3m... Preferred Shares" transform="translate(2838 -8587)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">ASSETID(2): SHP3Bv3m... Preferred Shares</tspan></text>
     <text id="Settlements-2" data-name="Settlements" transform="translate(2850 -8568)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">Settlements</tspan></text>
-    <text id="Participant_2_1_:_0_tokens_Participant_1_2_:_100_tokens" data-name="Participant 2 (1): 0 tokens
-Participant 1 (2): 100 tokens" transform="translate(2850 -8533)" fill="#7b1adb" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Participant 2 (1): </tspan><tspan y="0" fill="#707070">0 tokens</tspan><tspan fill="#ef1818"><tspan x="0" y="19">Participant 1 (2): </tspan><tspan y="19" fill="#707070">100 tokens</tspan></tspan></text>
+    <text id="Participant_2_1_:_0_shares_Participant_1_2_:_100_shares" data-name="Participant 2 (1): 0 shares
+Participant 1 (2): 100 shares" transform="translate(2850 -8533)" fill="#7b1adb" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Participant 2 (1): </tspan><tspan y="0" fill="#707070">0 shares</tspan><tspan fill="#ef1818"><tspan x="0" y="19">Participant 1 (2): </tspan><tspan y="19" fill="#707070">100 shares</tspan></tspan></text>
     <line id="Line_238" data-name="Line 238" y2="65" transform="translate(2840.5 -8569.5)" fill="none" stroke="#707070" stroke-width="1"/>
   </g>
 </svg>

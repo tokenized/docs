@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="628" height="485" viewBox="0 0 628 485">
-  <g id="Group_41" data-name="Group 41" transform="translate(-932 5765)">
+<svg xmlns="http://www.w3.org/2000/svg" width="628" height="438" viewBox="0 0 628 438">
+  <g id="proposal-action" transform="translate(-932 5718)">
     <g id="Rectangle_261" data-name="Rectangle 261" transform="translate(932 -5718)" fill="#fcfcfc" stroke="#707070" stroke-width="1">
       <rect width="628" height="164" stroke="none"/>
       <rect x="0.5" y="0.5" width="627" height="163" fill="none"/>
@@ -11,7 +11,6 @@
     <text id="OUTPUTS_" data-name="OUTPUTS " transform="translate(1153 -5656)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">OUTPUTS </tspan></text>
     <text id="_0:_" data-name="0: " transform="translate(949 -5618)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: </tspan></text>
     <text id="VALUE" transform="translate(1346 -5656)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">VALUE</tspan></text>
-    <text id="Proposal_Action_Transaction" data-name="Proposal Action Transaction" transform="translate(1252 -5746)" fill="#707070" font-size="18" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="-118.235" y="0">Proposal Action Transaction</tspan></text>
     <text id="_0:_2" data-name="0: " transform="translate(1153 -5618)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: </tspan></text>
     <text id="Smart_Contract" data-name="Smart Contract" transform="translate(1172 -5618)" fill="#7030a0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Smart Contract</tspan></text>
     <text id="Contract_Fees_Response_Cost_" data-name="Contract Fees + Response Cost " transform="translate(1348 -5618)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Contract Fees + Response Cost </tspan></text>

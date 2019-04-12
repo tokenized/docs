@@ -1,10 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="632" height="403" viewBox="0 0 632 403">
-  <g id="Group_54" data-name="Group 54" transform="translate(-18893 870)">
+<svg xmlns="http://www.w3.org/2000/svg" width="632" height="356" viewBox="0 0 632 356">
+  <g id="reconciliation-action" transform="translate(-18893 823)">
     <g id="Rectangle_287" data-name="Rectangle 287" transform="translate(19067 -593)" fill="#fcfcfc" stroke="#707070" stroke-width="1" stroke-dasharray="3">
       <rect width="245.499" height="126" stroke="none"/>
       <rect x="0.5" y="0.5" width="244.499" height="125" fill="none"/>
     </g>
-    <text id="Reconciliation_Action_Transaction" data-name="Reconciliation Action Transaction" transform="translate(19209 -851)" fill="#707070" font-size="18" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="-140.845" y="0">Reconciliation Action Transaction</tspan></text>
     <g id="Rectangle_288" data-name="Rectangle 288" transform="translate(18893 -823)" fill="#fcfcfc" stroke="#707070" stroke-width="1">
       <rect width="632" height="193" stroke="none"/>
       <rect x="0.5" y="0.5" width="631" height="192" fill="none"/>
@@ -25,15 +24,15 @@
       <rect x="0.5" y="0.5" width="140" height="17" fill="none"/>
     </g>
     <text id="N:_" data-name="N: " transform="translate(19118 -665)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N: </tspan></text>
-    <text id="Ballot_Counted_Action" data-name="Ballot Counted Action" transform="translate(19136 -666)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Ballot Counted Action</tspan></text>
+    <text id="Reconciliation_Action" data-name="Reconciliation Action" transform="translate(19136 -666)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Reconciliation Action</tspan></text>
     <text id="N_A" data-name="N/A" transform="translate(19312 -665)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N/A</tspan></text>
     <text id="Not_Shown:_Contract_Fees" data-name="Not Shown: Contract Fees" transform="translate(19311 -644)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Not Shown: Contract Fees</tspan></text>
     <text id="Target_Address_1" data-name="Target Address 1" transform="translate(19136 -726)" fill="#e1b219" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Target Address 1</tspan></text>
     <text id="DETAILS" transform="translate(19079 -556)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">DETAILS</tspan></text>
     <path id="Path_164" data-name="Path 164" d="M0,0V59.179" transform="translate(19081.5 -539.5)" fill="none" stroke="#707070" stroke-width="1"/>
-    <text id="_-AssetID_-Quantities_-Timestamp" data-name="-AssetID
--Quantities
--Timestamp" transform="translate(19088 -524)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">-AssetID</tspan><tspan x="0" y="19">-Quantities</tspan><tspan x="0" y="38">-Timestamp</tspan></text>
+    <text id="_-_AssetID_-_Quantities_-_Timestamp" data-name="- AssetID
+- Quantities
+- Timestamp" transform="translate(19088 -524)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">- AssetID</tspan><tspan x="0" y="19">- Quantities</tspan><tspan x="0" y="38">- Timestamp</tspan></text>
     <text id="_1:_" data-name="1: " transform="translate(19118 -706)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1: </tspan></text>
     <text id="Dust-2" data-name="Dust" transform="translate(19312 -706)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust</tspan></text>
     <text id="Target_Address_2" data-name="Target Address 2" transform="translate(19136 -706)" fill="#e1b219" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Target Address 2</tspan></text>

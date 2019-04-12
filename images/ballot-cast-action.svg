@@ -1,10 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="632" height="360" viewBox="0 0 632 360">
-  <g id="Group_43" data-name="Group 43" transform="translate(-2208 5765)">
+<svg xmlns="http://www.w3.org/2000/svg" width="632" height="313" viewBox="0 0 632 313">
+  <g id="ballot-cast-action" transform="translate(-2208 5718)">
     <g id="Rectangle_270" data-name="Rectangle 270" transform="translate(2382 -5528)" fill="#fcfcfc" stroke="#707070" stroke-width="1" stroke-dasharray="3">
       <rect width="230.499" height="123" stroke="none"/>
       <rect x="0.5" y="0.5" width="229.499" height="122" fill="none"/>
     </g>
-    <text id="Ballot_Cast_Action_Transaction" data-name="Ballot Cast Action Transaction" transform="translate(2524 -5746)" fill="#707070" font-size="18" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="-126.352" y="0">Ballot Cast Action Transaction</tspan></text>
     <g id="Rectangle_271" data-name="Rectangle 271" transform="translate(2208 -5718)" fill="#fcfcfc" stroke="#707070" stroke-width="1">
       <rect width="632" height="161" stroke="none"/>
       <rect x="0.5" y="0.5" width="631" height="160" fill="none"/>

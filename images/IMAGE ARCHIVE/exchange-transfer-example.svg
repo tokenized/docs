@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="660" height="634" viewBox="0 0 660 634">
+  <g id="Group_30" data-name="Group 30" transform="translate(-2862 10751)">
+    <g id="Rectangle_73" data-name="Rectangle 73" transform="translate(2862 -10686)" fill="#fcfcfc" stroke="#707070" stroke-width="1">
+      <rect width="660" height="210" stroke="none"/>
+      <rect x="0.5" y="0.5" width="659" height="209" fill="none"/>
+    </g>
+    <text id="Request_Transaction_Transfer_" data-name="Request Transaction (Transfer)" transform="translate(2874 -10653)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Request Transaction (Transfer)</tspan></text>
+    <line id="Line_129" data-name="Line 129" y2="144" transform="translate(3062.5 -10625.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <text id="INPUTS" transform="translate(2875 -10624)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">INPUTS</tspan></text>
+    <text id="OUTPUTS_" data-name="OUTPUTS " transform="translate(3078 -10624)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">OUTPUTS </tspan></text>
+    <text id="_0:_Merchant_Exchange_1_unsigned_1:_Buyer_1_signed_" data-name="0: Merchant/Exchange (1)
+(unsigned)
+1: Buyer (1) (signed)" transform="translate(2875 -10604)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="15">0: </tspan><tspan y="15" fill="#ef1818">Merchant/Exchange (1)</tspan><tspan fill="#ef1818"><tspan x="0" y="34">(unsigned)</tspan><tspan y="34" fill="#7b1adb"></tspan></tspan><tspan fill="#7b1adb"><tspan x="0" y="53">1: Buyer (1) (signed</tspan><tspan y="53" fill="#ef1818">)</tspan></tspan></text>
+    <text id="_0:_Smart_Contract_1:_Merchant_Exchange_2_2:_Buyer_2_N:_Transfer_Action" data-name="0: Smart Contract
+1: Merchant/Exchange (2)
+2: Buyer (2)
+N: Transfer Action" transform="translate(3078 -10604)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="15">0: Smart Contract</tspan><tspan x="0" y="34">1: </tspan><tspan y="34" fill="#ef1818">Merchant/Exchange (2)</tspan><tspan x="0" y="53">2: </tspan><tspan y="53" fill="#7b1adb">Buyer (2)</tspan><tspan x="0" y="72">N: Transfer Action</tspan></text>
+    <text id="VALUE" transform="translate(3271 -10624)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">VALUE</tspan></text>
+    <g id="Rectangle_74" data-name="Rectangle 74" transform="translate(3011 -10454)" fill="#fcfcfc" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+      <rect width="339.499" height="337" stroke="none"/>
+      <rect x="0.5" y="0.5" width="338.499" height="336" fill="none"/>
+    </g>
+    <text id="Transfer_Action_Payload" data-name="Transfer Action Payload" transform="translate(3031 -10418)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Transfer Action Payload</tspan></text>
+    <text id="Senders" transform="translate(3046 -10381)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">Senders</tspan></text>
+    <text id="Merchant_Exchange_1_:_550_tokens" data-name="Merchant/Exchange (1): 550 tokens" transform="translate(3046 -10346)" fill="#ef1818" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Merchant/Exchange (1)</tspan><tspan y="0" fill="#707070">: 550 tokens</tspan></text>
+    <text id="Receivers" transform="translate(3046 -10335)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">Receivers</tspan></text>
+    <text id="Buyer_2_:_100_tokens_Merchant_Exchange_2_:_450_tokens_" data-name="Buyer (2): 100 tokens
+Merchant/Exchange (2): 450 tokens " transform="translate(3046 -10299)" fill="#7b1adb" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Buyer (2)</tspan><tspan y="0" fill="#707070">: 100 tokens</tspan><tspan fill="#ef1818"><tspan x="0" y="19">Merchant/Exchange (2):</tspan><tspan y="19" xml:space="preserve" fill="#707070"> 450 tokens </tspan></tspan></text>
+    <text id="ASSETID:_SHC1BvBMSEYstWetqTFn5Au4m4GFg7xJ..." data-name="ASSETID: SHC1BvBMSEYstWetqTFn5Au4m4GFg7xJ..." transform="translate(3035 -10400)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">ASSETID: SHC1BvBMSEYstWetqTFn5Au4m4GFg7xJ...</tspan></text>
+    <line id="Line_130" data-name="Line 130" y2="125" transform="translate(3036.5 -10378.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <text id="_2_BSV_Response_Costs_Contract_Fee_Dust_Change_Minimum:_Dust_value_N_A" data-name="2 BSV + Response Costs + Contract Fee
+Dust
+Change (Minimum: Dust value)
+N/A" transform="translate(3271 -10604)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="15">2 BSV + Response Costs + Contract Fee</tspan><tspan x="0" y="34">Dust</tspan><tspan x="0" y="53">Change (Minimum: Dust value)</tspan><tspan x="0" y="72">N/A</tspan></text>
+    <g id="Rectangle_75" data-name="Rectangle 75" transform="translate(3094 -10545)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+      <rect width="98" height="17" stroke="none"/>
+      <rect x="0.5" y="0.5" width="97" height="16" fill="none"/>
+    </g>
+    <line id="Line_131" data-name="Line 131" y2="74" transform="translate(3140.5 -10526.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
+    <text id="ASSET:_Bitcoin_BSV_" data-name="ASSET: Bitcoin (BSV)" transform="translate(3034 -10244)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">ASSET: Bitcoin (BSV)</tspan></text>
+    <text id="Senders-2" data-name="Senders" transform="translate(3046 -10225)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">Senders</tspan></text>
+    <text id="Buyer_1_:_2_BSV" data-name="Buyer (1): 2 BSV" transform="translate(3046 -10190)" fill="#7b1adb" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Buyer (1)</tspan><tspan y="0" fill="#707070">: 2 BSV</tspan></text>
+    <text id="Receivers-2" data-name="Receivers" transform="translate(3046 -10175)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">Receivers</tspan></text>
+    <text id="Merchant_Exchange_2_:_2_BSV" data-name="Merchant/Exchange (2): 2 BSV" transform="translate(3046 -10140)" fill="#ef1818" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Merchant/Exchange (2)</tspan><tspan y="0" fill="#707070">: 2 BSV</tspan></text>
+    <line id="Line_133" data-name="Line 133" y2="91" transform="translate(3036.5 -10226.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <text id="Exchange_Transfer_Example" data-name="Exchange Transfer Example" transform="translate(3066 -10732)" fill="#707070" font-size="18" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">Exchange Transfer Example</tspan></text>
+  </g>
+</svg>

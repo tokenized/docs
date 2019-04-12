@@ -1,6 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="628" height="417" viewBox="0 0 628 417">
-  <g id="Group_57" data-name="Group 57" transform="translate(-12089 948)">
-    <text id="Contract_Amendment_Action_Transaction" data-name="Contract Amendment Action Transaction" transform="translate(12403 -929)" fill="#707070" font-size="18" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="-172.529" y="0">Contract Amendment Action Transaction</tspan></text>
+<svg xmlns="http://www.w3.org/2000/svg" width="628" height="370" viewBox="0 0 628 370">
+  <g id="contract-amendment-action" transform="translate(-12089 901)">
     <g id="Rectangle_331" data-name="Rectangle 331" transform="translate(12089 -901)" fill="#fcfcfc" stroke="#707070" stroke-width="1">
       <rect width="628" height="164" stroke="none"/>
       <rect x="0.5" y="0.5" width="627" height="163" fill="none"/>
@@ -23,18 +22,18 @@
     <text id="Contract_Amendment_Action" data-name="Contract Amendment Action" transform="translate(12328 -782)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Contract Amendment Action</tspan></text>
     <text id="N_A" data-name="N/A" transform="translate(12511 -782)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N/A</tspan></text>
     <g id="Rectangle_333" data-name="Rectangle 333" transform="translate(12239 -717)" fill="#fcfcfc" stroke="#707070" stroke-width="1" stroke-dasharray="3">
-      <rect width="387.499" height="186" stroke="none"/>
-      <rect x="0.5" y="0.5" width="386.499" height="185" fill="none"/>
+      <rect width="473.499" height="186" stroke="none"/>
+      <rect x="0.5" y="0.5" width="472.499" height="185" fill="none"/>
     </g>
     <text id="Contract_Amendment_Action_Payload" data-name="Contract Amendment Action Payload" transform="translate(12250 -684)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Contract Amendment Action Payload</tspan></text>
     <line id="Line_391" data-name="Line 391" y2="61" transform="translate(12370.5 -777.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
     <text id="Not_Shown:_Change" data-name="Not Shown: Change" transform="translate(12510 -762)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Not Shown: Change</tspan></text>
     <line id="Line_392" data-name="Line 392" y2="106" transform="translate(12252.5 -653.5)" fill="none" stroke="#707070" stroke-width="1"/>
     <text id="DETAILS" transform="translate(12250 -672)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">DETAILS</tspan></text>
-    <text id="_-Change_Issuer_Address_optional_-Change_Operator_Address_optional_-Contract_Revision_-Amendments_-Ref_Tx-ID_only_for_governance_related_amendments_" data-name="-Change Issuer Address (optional)
--Change Operator Address (optional)
--Contract Revision
--Amendments
--Ref Tx-ID (only for governance related amendments)" transform="translate(12260 -638)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">-Change Issuer Address (optional)</tspan><tspan x="0" y="19">-Change Operator Address (optional)</tspan><tspan x="0" y="38">-Contract Revision</tspan><tspan x="0" y="57">-Amendments</tspan><tspan x="0" y="76">-Ref Tx-ID (only for governance related amendments)</tspan></text>
+    <text id="_-_Change_Issuer_Address_optional_-_Change_Operator_Address_optional_-_Updated_Contract_Revision_Must_be_sequential_from_last_valid_revision_-_Amendments_-_Ref_Tx-ID_only_for_governance_related_amendments_" data-name="- Change Issuer Address (optional)
+- Change Operator Address (optional)
+- Updated Contract Revision (Must be sequential from last valid revision)
+- Amendments
+- Ref Tx-ID (only for governance related amendments)" transform="translate(12260 -638)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">- Change Issuer Address (optional)</tspan><tspan x="0" y="19">- Change Operator Address (optional)</tspan><tspan x="0" y="38">- Updated Contract Revision (Must be sequential from last valid revision)</tspan><tspan x="0" y="57">- Amendments</tspan><tspan x="0" y="76">- Ref Tx-ID (only for governance related amendments)</tspan></text>
   </g>
 </svg>

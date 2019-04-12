@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1489" height="509" viewBox="0 0 1489 509">
-  <g id="Group_40" data-name="Group 40" transform="translate(674 5777)">
-    <g id="Rectangle_251" data-name="Rectangle 251" transform="translate(-674 -5623)" fill="#fcfcfc" stroke="#707070" stroke-width="1">
+<svg xmlns="http://www.w3.org/2000/svg" width="1490" height="449" viewBox="0 0 1490 449">
+  <g id="vote-order-of-operations" transform="translate(675 5717)">
+    <g id="Rectangle_251" data-name="Rectangle 251" transform="translate(-675 -5623)" fill="#fcfcfc" stroke="#707070" stroke-width="1">
       <rect width="320" height="131" stroke="none"/>
       <rect x="0.5" y="0.5" width="319" height="130" fill="none"/>
     </g>
@@ -79,7 +79,6 @@
     <text id="_0:_Contract-9" data-name="0: Contract" transform="translate(712 -5518)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: Contract</tspan></text>
     <line id="Line_310" data-name="Line 310" y1="20" transform="translate(-147.5 -5661.5)" fill="none" stroke="#707070" stroke-width="3" stroke-dasharray="12"/>
     <line id="Line_311" data-name="Line 311" x2="151.794" transform="translate(-149.5 -5660.5)" fill="none" stroke="#707070" stroke-width="3" stroke-dasharray="12"/>
-    <text id="Voting_Process_Order_of_Operations" data-name="Voting Process Order of Operations" transform="translate(103 -5758)" fill="#707070" font-size="18" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="-149.489" y="0">Voting Process Order of Operations</tspan></text>
     <line id="Line_312" data-name="Line 312" y1="20" transform="translate(-154.5 -5462.5)" fill="none" stroke="#707070" stroke-width="3" stroke-dasharray="12"/>
     <line id="Line_313" data-name="Line 313" x2="151.794" transform="translate(-156.5 -5434.5)" fill="none" stroke="#707070" stroke-width="3" stroke-dasharray="12"/>
     <g id="chevron-pointing-to-the-left-2" data-name="chevron-pointing-to-the-left" transform="translate(9.356 -5426.221) rotate(179)">
@@ -125,5 +124,6 @@
     <text id="The_Result_action_is_published_to_the_blockchain_after_the_vote_period_finishes." data-name="The Result action is published to the blockchain after the vote period finishes." transform="translate(-163 -5366)" fill="#707070" font-size="14" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="15">The Result action is </tspan><tspan x="0" y="34">published to the </tspan><tspan x="0" y="53">blockchain after the </tspan><tspan x="0" y="72">vote period finishes.</tspan></text>
     <line id="Line_316" data-name="Line 316" x2="315" transform="translate(-4.5 -5327.5)" fill="none" stroke="#cf730b" stroke-width="1" stroke-dasharray="3"/>
     <line id="Line_317" data-name="Line 317" y2="174" transform="translate(310.5 -5501.5)" fill="none" stroke="#cf730b" stroke-width="1" stroke-dasharray="3"/>
+    <text id="_0:_Contract_2" data-name="0: Contract " transform="translate(-452 -5536)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: Contract </tspan></text>
   </g>
 </svg>

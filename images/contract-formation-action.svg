@@ -1,12 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="628" height="872" viewBox="0 0 628 872">
-  <g id="Group_58" data-name="Group 58" transform="translate(-11438 948)">
-    <text id="Contract_Formation_Action_Transaction" data-name="Contract Formation Action Transaction" transform="translate(11752 -929)" fill="#707070" font-size="18" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="-163.894" y="0">Contract Formation Action Transaction</tspan></text>
+<svg xmlns="http://www.w3.org/2000/svg" width="628" height="842" viewBox="0 0 628 842">
+  <g id="contract-formation-action" transform="translate(-11438 901)">
     <g id="Rectangle_321" data-name="Rectangle 321" transform="translate(11438 -901)" fill="#fcfcfc" stroke="#707070" stroke-width="1">
       <rect width="628" height="164" stroke="none"/>
       <rect x="0.5" y="0.5" width="627" height="163" fill="none"/>
     </g>
     <text id="Smart_Contract" data-name="Smart Contract" transform="translate(11474 -801)" fill="#7030a0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Smart Contract</tspan></text>
-    <text id="Request_Transaction_Contract_Formation_" data-name="Request Transaction (Contract Formation)" transform="translate(11455 -868)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Request Transaction (Contract Formation)</tspan></text>
+    <text id="Response_Transaction_Contract_Formation_" data-name="Response Transaction (Contract Formation)" transform="translate(11455 -868)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Response Transaction (Contract Formation)</tspan></text>
     <line id="Line_382" data-name="Line 382" y2="86" transform="translate(11643.5 -840.5)" fill="none" stroke="#707070" stroke-width="1"/>
     <text id="INPUTS" transform="translate(11455 -836)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">INPUTS</tspan></text>
     <text id="OUTPUTS_" data-name="OUTPUTS " transform="translate(11659 -839)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">OUTPUTS </tspan></text>
@@ -31,26 +30,26 @@
     <text id="Not_Shown:_Change" data-name="Not Shown: Change" transform="translate(11852 -762)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Not Shown: Change</tspan></text>
     <line id="Line_384" data-name="Line 384" y2="362" transform="translate(11601.5 -653.5)" fill="none" stroke="#707070" stroke-width="1"/>
     <text id="DETAILS" transform="translate(11599 -672)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">DETAILS</tspan></text>
-    <text id="_-Contract_Name_-Body_of_Agreement_hash_or_full_text_-Contract_Type_-Supporting_Docs_7z_compressed_volume_-Governing_Law_-Jurisdiction_-Contract_Expiration_-URI_-Issuer_Identifying_Details_Name_LEI_address_etc._-Issuer_Logo_-Contract_Operator_Ident" data-name="-Contract Name
--Body of Agreement (hash or full text)
--Contract Type
--Supporting Docs (7z compressed volume)
--Governing Law
--Jurisdiction
--Contract Expiration
--URI
--Issuer Identifying Details (Name, LEI, address, etc.)
--Issuer Logo
--Contract Operator Ident" transform="translate(11609 -638)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">-Contract Name</tspan><tspan x="0" y="19">-Body of Agreement (hash or full text)</tspan><tspan x="0" y="38">-Contract Type</tspan><tspan x="0" y="57">-Supporting Docs (7z compressed volume)</tspan><tspan x="0" y="76">-Governing Law</tspan><tspan x="0" y="95">-Jurisdiction</tspan><tspan x="0" y="114">-Contract Expiration</tspan><tspan x="0" y="133">-URI</tspan><tspan x="0" y="152">-Issuer Identifying Details (Name, LEI, address, etc.)</tspan><tspan x="0" y="171">-Issuer Logo</tspan><tspan x="0" y="190">-Contract Operator Identifying Details (Name, LEI, etc.)</tspan><tspan x="0" y="209">-Contract Authorization Flags</tspan><tspan x="0" y="228">-Contract Fee</tspan><tspan x="0" y="247">-Voting Systems</tspan><tspan x="0" y="266">-Asset Qty Restrictions</tspan><tspan x="0" y="285">-Proposal Rights</tspan><tspan x="0" y="304">-Identity Oracles (Name, hostname:port, public key)</tspan><tspan font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="323">-Revision</tspan><tspan x="0" y="342">-Timestamp</tspan></tspan></text>
-    <g id="Rectangle_324" data-name="Rectangle 324" transform="translate(11587 -247)" fill="#fff" stroke="#cf730b" stroke-width="4">
-      <rect width="388" height="171" stroke="none"/>
-      <rect x="2" y="2" width="384" height="167" fill="none"/>
+    <text id="_-_Contract_Name_-_Body_of_Agreement_hash_or_full_text_-_Contract_Type_-_Supporting_Docs_7z_compressed_volume_-_Governing_Law_-_Jurisdiction_-_Contract_Expiration_-_URI_-_Issuer_Identifying_Details_Name_LEI_address_etc._-_Issuer_Logo_-_Contract_Ope" data-name="- Contract Name
+- Body of Agreement (hash or full text)
+- Contract Type
+- Supporting Docs (7z compressed volume)
+- Governing Law
+- Jurisdiction
+- Contract Expiration
+- URI
+- Issuer Identifying Details (Name, LEI, address, etc.)
+- Issuer Logo
+- Contract Ope" transform="translate(11609 -638)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">- Contract Name</tspan><tspan x="0" y="19">- Body of Agreement (hash or full text)</tspan><tspan x="0" y="38">- Contract Type</tspan><tspan x="0" y="57">- Supporting Docs (7z compressed volume)</tspan><tspan x="0" y="76">- Governing Law</tspan><tspan x="0" y="95">- Jurisdiction</tspan><tspan x="0" y="114">- Contract Expiration</tspan><tspan x="0" y="133">- URI</tspan><tspan x="0" y="152">- Issuer Identifying Details (Name, LEI, address, etc.)</tspan><tspan x="0" y="171">- Issuer Logo</tspan><tspan x="0" y="190">- Contract Operator Identifying Details (Name, LEI, etc.)</tspan><tspan x="0" y="209">- Contract Authorization Flags</tspan><tspan x="0" y="228">- Contract Fee</tspan><tspan x="0" y="247">- Voting Systems</tspan><tspan x="0" y="266">- Asset Qty Restrictions</tspan><tspan x="0" y="285">- Proposal Rights</tspan><tspan x="0" y="304">- Identity Oracles (Name, hostname:port, public key)</tspan><tspan font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="323">- Revision = 0</tspan><tspan x="0" y="342">- Timestamp</tspan></tspan></text>
+    <g id="Rectangle_324" data-name="Rectangle 324" transform="translate(11588 -248)" fill="#fff" stroke="#cf730b" stroke-width="4">
+      <rect width="388" height="189" stroke="none"/>
+      <rect x="2" y="2" width="384" height="185" fill="none"/>
     </g>
     <text id="Note:" transform="translate(11603 -234)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="17">Note:</tspan></text>
-    <text id="The_contract_revision_and_a_timestamp_is_added_to_the_metadata_submitted_by_the_issuer_in_the_Contract_Offer_action._These_are_the_only_two_fields_that_are_different_compared_to_the_Contract_Offer_for_Rev.0._Contract_Amendments_can_change_the_Contract_Of" data-name="The contract revision and a timestamp is added to the metadata submitted by the issuer in the Contract Offer action.  These are the only two fields that are different compared to the Contract Offer for Rev.0.  Contract Amendments can change the Contract Of" transform="translate(11603 -208)" fill="#707070" font-size="14" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="15">The contract revision and a timestamp is added to the </tspan><tspan x="0" y="34">metadata submitted by the issuer in the Contract Offer </tspan><tspan x="0" y="53" xml:space="preserve">action.  These are the only two fields that are different </tspan><tspan x="0" y="72" xml:space="preserve">compared to the Contract Offer for Rev.0.  Contract </tspan><tspan x="0" y="91">Amendments can change the Contract Offer, however, </tspan><tspan x="0" y="110">but the Contract Offer will always remain the same.</tspan></text>
+    <text id="The_contract_revision_and_a_timestamp_is_added_to_the_metadata_submitted_by_the_issuer_in_the_Contract_Offer_action._These_are_the_only_two_fields_that_are_different_compared_to_the_Contract_Offer_for_Rev.0._Contract_Amendments_can_change_the_revision_h" data-name="The contract revision and a timestamp is added to the metadata submitted by the issuer in the Contract Offer action.  These are the only two fields that are different compared to the Contract Offer for Rev.0.  Contract Amendments can change the revision, h" transform="translate(11604 -209)" fill="#707070" font-size="14" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="15">The contract revision and a timestamp is added to the </tspan><tspan x="0" y="34">metadata submitted by the issuer in the Contract Offer </tspan><tspan x="0" y="53" xml:space="preserve">action.  These are the only two fields that are different </tspan><tspan x="0" y="72" xml:space="preserve">compared to the Contract Offer for Rev.0.  Contract </tspan><tspan x="0" y="91">Amendments can change the revision, however a </tspan><tspan x="0" y="110">Contract Offer must always result in a Revision 0 </tspan><tspan x="0" y="129">Contract Creation.</tspan></text>
     <g id="Rectangle_325" data-name="Rectangle 325" transform="translate(11606 -330)" fill="none" stroke="#cf730b" stroke-width="1" stroke-dasharray="3">
-      <rect width="92" height="42" stroke="none"/>
-      <rect x="0.5" y="0.5" width="91" height="41" fill="none"/>
+      <rect width="101" height="42" stroke="none"/>
+      <rect x="0.5" y="0.5" width="100" height="41" fill="none"/>
     </g>
     <line id="Line_385" data-name="Line 385" y2="41" transform="translate(11645.5 -287.5)" fill="none" stroke="#cf730b" stroke-width="1" stroke-dasharray="3"/>
   </g>

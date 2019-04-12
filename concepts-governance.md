@@ -102,7 +102,7 @@ Once the user's wallet sees the Vote action, it can build the ballot for the use
 
 When the smart contract sees that the user has cast their vote using a valid Ballot Cast action, it responds with a Ballot Counted action that acknowledges the receipt of the Ballot Cast action. The contract spends the UTXO that carried the Ballot Cast action to enable the wallet to track which vote is being responded to. The action only contains a timestamp from when the Ballot Counted action was created.
 
-![A Ballot Cast action](https://raw.githubusercontent.com/tokenized/docs/master/images/ballot-cast-action.svg?sanitize=true "A Ballot Cast action") {.frame .centered .padded}
+![A Ballot Cast action](https://raw.githubusercontent.com/tokenized/docs/master/images/ballot-counted-action.svg?sanitize=true "A Ballot Cast action") {.frame .centered .padded}
 
 <a name="vote-result"></a>
 ### Result

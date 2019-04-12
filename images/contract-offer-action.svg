@@ -1,6 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="628" height="863" viewBox="0 0 628 863">
-  <g id="Group_59" data-name="Group 59" transform="translate(-10799 948)">
-    <text id="Contract_Offer_Action_Transaction" data-name="Contract Offer Action Transaction" transform="translate(11113 -929)" fill="#707070" font-size="18" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="-142.185" y="0">Contract Offer Action Transaction</tspan></text>
+<svg xmlns="http://www.w3.org/2000/svg" width="628" height="816" viewBox="0 0 628 816">
+  <g id="contract-offer-action" transform="translate(-10799 901)">
     <g id="Rectangle_316" data-name="Rectangle 316" transform="translate(10799 -901)" fill="#fcfcfc" stroke="#707070" stroke-width="1">
       <rect width="628" height="164" stroke="none"/>
       <rect x="0.5" y="0.5" width="627" height="163" fill="none"/>
@@ -31,17 +30,17 @@
     <text id="Not_Shown:_Change" data-name="Not Shown: Change" transform="translate(11213 -762)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Not Shown: Change</tspan></text>
     <line id="Line_380" data-name="Line 380" y2="324" transform="translate(10962.5 -653.5)" fill="none" stroke="#707070" stroke-width="1"/>
     <text id="DETAILS" transform="translate(10960 -672)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">DETAILS</tspan></text>
-    <text id="_-Contract_Name_-Body_of_Agreement_hash_or_full_text_-Contract_Type_-Supporting_Docs_7z_compressed_volume_-Governing_Law_-Jurisdiction_-Contract_Expiration_-URI_-Issuer_Identifying_Details_Name_LEI_address_etc._-Issuer_Logo_-Contract_Operator_Ident" data-name="-Contract Name
--Body of Agreement (hash or full text)
--Contract Type
--Supporting Docs (7z compressed volume)
--Governing Law
--Jurisdiction
--Contract Expiration
--URI
--Issuer Identifying Details (Name, LEI, address, etc.)
--Issuer Logo
--Contract Operator Ident" transform="translate(10970 -638)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">-Contract Name</tspan><tspan x="0" y="19">-Body of Agreement (hash or full text)</tspan><tspan x="0" y="38">-Contract Type</tspan><tspan x="0" y="57">-Supporting Docs (7z compressed volume)</tspan><tspan x="0" y="76">-Governing Law</tspan><tspan x="0" y="95">-Jurisdiction</tspan><tspan x="0" y="114">-Contract Expiration</tspan><tspan x="0" y="133">-URI</tspan><tspan x="0" y="152">-Issuer Identifying Details (Name, LEI, address, etc.)</tspan><tspan x="0" y="171">-Issuer Logo</tspan><tspan x="0" y="190">-Contract Operator Identifying Details (Name, LEI, etc.)</tspan><tspan x="0" y="209">-Contract Authorization Flags</tspan><tspan x="0" y="228">-Contract Fee</tspan><tspan x="0" y="247">-Voting Systems</tspan><tspan x="0" y="266">-Asset Qty Restrictions</tspan><tspan x="0" y="285">-Proposal Rights</tspan><tspan x="0" y="304">-Identity Oracles (Name, hostname:port, public key)</tspan></text>
+    <text id="_-_Contract_Name_-_Body_of_Agreement_hash_or_full_text_-_Contract_Type_-_Supporting_Docs_7z_compressed_volume_-_Governing_Law_-_Jurisdiction_-_Contract_Expiration_-_URI_-_Issuer_Identifying_Details_Name_LEI_address_etc._-_Issuer_Logo_-_Contract_Ope" data-name="- Contract Name
+- Body of Agreement (hash or full text)
+- Contract Type
+- Supporting Docs (7z compressed volume)
+- Governing Law
+- Jurisdiction
+- Contract Expiration
+- URI
+- Issuer Identifying Details (Name, LEI, address, etc.)
+- Issuer Logo
+- Contract Ope" transform="translate(10970 -638)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">- Contract Name</tspan><tspan x="0" y="19">- Body of Agreement (hash or full text)</tspan><tspan x="0" y="38">- Contract Type</tspan><tspan x="0" y="57">- Supporting Docs (7z compressed volume)</tspan><tspan x="0" y="76">- Governing Law</tspan><tspan x="0" y="95">- Jurisdiction</tspan><tspan x="0" y="114">- Contract Expiration</tspan><tspan x="0" y="133">- URI</tspan><tspan x="0" y="152">- Issuer Identifying Details (Name, LEI, address, etc.)</tspan><tspan x="0" y="171">- Issuer Logo</tspan><tspan x="0" y="190">- Contract Operator Identifying Details (Name, LEI, etc.)</tspan><tspan x="0" y="209">- Contract Authorization Flags</tspan><tspan x="0" y="228">- Contract Fee</tspan><tspan x="0" y="247">- Voting Systems</tspan><tspan x="0" y="266">- Asset Qty Restrictions</tspan><tspan x="0" y="285">- Proposal Rights</tspan><tspan x="0" y="304">- Identity Oracles (Name, hostname:port, public key)</tspan></text>
     <text id="Contract_Operator_signed_" data-name="Contract Operator (signed)" transform="translate(10835 -782)" fill="#e12719" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Contract Operator (signed)</tspan></text>
     <text id="_1:_" data-name="1: " transform="translate(10816 -782)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1: </tspan></text>
     <g id="Rectangle_319" data-name="Rectangle 319" transform="translate(10812 -295)" fill="#fff" stroke="#cf730b" stroke-width="4">

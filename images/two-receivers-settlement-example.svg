@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="587" height="506" viewBox="0 0 587 506">
-  <g id="Group_27" data-name="Group 27" transform="translate(-791 10751)">
+<svg xmlns="http://www.w3.org/2000/svg" width="587" height="440" viewBox="0 0 587 440">
+  <g id="two-receivers-settlement-example" transform="translate(-791 10685)">
     <g id="Rectangle_55" data-name="Rectangle 55" transform="translate(791 -10685)" fill="#fcfcfc" stroke="#707070" stroke-width="1">
       <rect width="587" height="205" stroke="none"/>
       <rect x="0.5" y="0.5" width="586" height="204" fill="none"/>
@@ -28,16 +28,15 @@ Not shown: Contract Fee" transform="translate(1180 -10608)" fill="#707070" font-
     <text id="Settlement_Action_Payload" data-name="Settlement Action Payload" transform="translate(926 -10403)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Settlement Action Payload</tspan></text>
     <text id="Response_Transaction_Settlement_" data-name="Response Transaction (Settlement)" transform="translate(803 -10652)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Response Transaction (Settlement)</tspan></text>
     <text id="Settlements" transform="translate(939 -10365)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">Settlements</tspan></text>
-    <text id="John_1_:_0_tokens" data-name="John (1): 0 tokens" transform="translate(939 -10330)" fill="#ef1818" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">John (1)</tspan><tspan y="0" fill="#707070">: 0 tokens</tspan></text>
-    <text id="Bill:_100_tokens" data-name="Bill: 100 tokens" transform="translate(939 -10309)" fill="#19e134" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Bill</tspan><tspan y="0" fill="#707070">: 100 tokens</tspan></text>
-    <text id="Angela:_100_tokens_John_2_:_100_tokens" data-name="Angela: 100 tokensJohn (2): 100 tokens" transform="translate(939 -10290)" fill="#cd18ef" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Angela</tspan><tspan y="0" fill="#707070">: 100 tokens</tspan><tspan fill="#ef1818"><tspan x="0" y="19">John (2): </tspan><tspan y="19" fill="#707070">100 tokens</tspan></tspan></text>
+    <text id="John_1_:_0_shares" data-name="John (1): 0 shares" transform="translate(939 -10330)" fill="#ef1818" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">John (1)</tspan><tspan y="0" fill="#707070">: 0 shares</tspan></text>
+    <text id="Bill:_100_shares" data-name="Bill: 100 shares" transform="translate(939 -10309)" fill="#19e134" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Bill</tspan><tspan y="0" fill="#707070">: 100 shares</tspan></text>
+    <text id="Angela:_100_shares_John_2_:_100_shares" data-name="Angela: 100 sharesJohn (2): 100 shares" transform="translate(939 -10290)" fill="#cd18ef" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Angela</tspan><tspan y="0" fill="#707070">: 100 shares</tspan><tspan fill="#ef1818"><tspan x="0" y="19">John (2): </tspan><tspan y="19" fill="#707070">100 shares</tspan></tspan></text>
     <line id="Line_109" data-name="Line 109" y2="99" transform="translate(929.5 -10362.5)" fill="none" stroke="#707070" stroke-width="1"/>
     <g id="Rectangle_58" data-name="Rectangle 58" transform="translate(1022 -10531)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
       <rect width="117" height="18" stroke="none"/>
       <rect x="0.5" y="0.5" width="116" height="17" fill="none"/>
     </g>
     <line id="Line_111" data-name="Line 111" y2="75" transform="translate(1080.5 -10512.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
-    <text id="ASSETID:_SHC1BvBMSEYstWetqTFn5Au4m4GFg7xJ..." data-name="ASSETID: SHC1BvBMSEYstWetqTFn5Au4m4GFg7xJ..." transform="translate(926 -10386)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">ASSETID: SHC1BvBMSEYstWetqTFn5Au4m4GFg7xJ...</tspan></text>
-    <text id="Two_Receivers_Settlement_Example" data-name="Two Receivers Settlement Example" transform="translate(938 -10732)" fill="#707070" font-size="18" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">Two Receivers Settlement Example</tspan></text>
+    <text id="ASSETID:_SHC1BvBMSJ..._Common_Shares" data-name="ASSETID: SHC1BvBMSJ... Common Shares" transform="translate(926 -10386)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">ASSETID: SHC1BvBMSJ... Common Shares</tspan></text>
   </g>
 </svg>

@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="628" height="466" viewBox="0 0 628 466">
-  <g id="Group_24" data-name="Group 24" transform="translate(1094 10751)">
+<svg xmlns="http://www.w3.org/2000/svg" width="628" height="400" viewBox="0 0 628 400">
+  <g id="one-receiver-transfer-example" transform="translate(1094 10685)">
     <g id="Rectangle_46" data-name="Rectangle 46" transform="translate(-1094 -10685)" fill="#fcfcfc" stroke="#707070" stroke-width="1">
       <rect width="628" height="185" stroke="none"/>
       <rect x="0.5" y="0.5" width="627" height="184" fill="none"/>
@@ -20,10 +20,10 @@ N: Transfer Action" transform="translate(-878 -10603)" fill="#707070" font-size=
     </g>
     <text id="Transfer_Action_Payload" data-name="Transfer Action Payload" transform="translate(-939 -10427)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Transfer Action Payload</tspan></text>
     <text id="Senders" transform="translate(-924 -10390)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">Senders</tspan></text>
-    <text id="Issuer:_100_tokens" data-name="Issuer: 100 tokens" transform="translate(-924 -10355)" fill="#ef1818" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Issuer</tspan><tspan y="0" fill="#707070">: 100 tokens</tspan></text>
+    <text id="Issuer:_100_shares" data-name="Issuer: 100 shares" transform="translate(-924 -10355)" fill="#ef1818" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Issuer</tspan><tspan y="0" fill="#707070">: 100 shares</tspan></text>
     <text id="Receivers" transform="translate(-924 -10344)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">Receivers</tspan></text>
-    <text id="Bill:_100_tokens" data-name="Bill: 100 tokens" transform="translate(-924 -10308)" fill="#19e134" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Bill</tspan><tspan y="0" fill="#707070">: 100 tokens</tspan></text>
-    <text id="ASSETID:_SHC1BvBMSEYstWetqTFn5Au4m4GFg7xJ..." data-name="ASSETID: SHC1BvBMSEYstWetqTFn5Au4m4GFg7xJ..." transform="translate(-935 -10409)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">ASSETID: SHC1BvBMSEYstWetqTFn5Au4m4GFg7xJ...</tspan></text>
+    <text id="Bill:_100_shares" data-name="Bill: 100 shares" transform="translate(-924 -10308)" fill="#19e134" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Bill</tspan><tspan y="0" fill="#707070">: 100 shares</tspan></text>
+    <text id="ASSETID:_SHC1BvBMSJ..._Common_Shares" data-name="ASSETID: SHC1BvBMSJ... Common Shares" transform="translate(-935 -10409)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">ASSETID: SHC1BvBMSJ... Common Shares</tspan></text>
     <line id="Line_82" data-name="Line 82" y2="84" transform="translate(-933.5 -10387.5)" fill="none" stroke="#707070" stroke-width="1"/>
     <text id="Response_Costs_Contract_Fees_Dust_Change_Minimum:_Dust_value_N_A" data-name="Response Costs + Contract Fees
 Dust
@@ -34,6 +34,5 @@ N/A" transform="translate(-685 -10603)" fill="#707070" font-size="14" font-famil
       <rect x="0.5" y="0.5" width="97" height="17" fill="none"/>
     </g>
     <line id="Line_104" data-name="Line 104" y2="66" transform="translate(-815.5 -10527.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
-    <text id="One_Receiver_Transfer_Example" data-name="One Receiver Transfer Example" transform="translate(-911 -10732)" fill="#707070" font-size="18" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">One Receiver Transfer Example</tspan></text>
   </g>
 </svg>

@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="632" height="390" viewBox="0 0 632 390">
+  <g id="Group_50" data-name="Group 50" transform="translate(-16333 870)">
+    <g id="Rectangle_273" data-name="Rectangle 273" transform="translate(16507 -593)" fill="#fcfcfc" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+      <rect width="245.499" height="113" stroke="none"/>
+      <rect x="0.5" y="0.5" width="244.499" height="112" fill="none"/>
+    </g>
+    <text id="Thaw_Action_Transaction" data-name="Thaw Action Transaction" transform="translate(16649 -851)" fill="#707070" font-size="18" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="-103.926" y="0">Thaw Action Transaction</tspan></text>
+    <g id="Rectangle_274" data-name="Rectangle 274" transform="translate(16333 -823)" fill="#fcfcfc" stroke="#707070" stroke-width="1">
+      <rect width="632" height="193" stroke="none"/>
+      <rect x="0.5" y="0.5" width="631" height="192" fill="none"/>
+    </g>
+    <text id="Response_Transaction_Ballot_Counted_" data-name="Response Transaction (Ballot Counted)" transform="translate(16348 -790)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Response Transaction (Ballot Counted)</tspan></text>
+    <line id="Line_329" data-name="Line 329" y2="84" transform="translate(16542.5 -762.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <text id="INPUTS" transform="translate(16348 -761)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">INPUTS</tspan></text>
+    <text id="OUTPUTS_" data-name="OUTPUTS " transform="translate(16558 -761)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">OUTPUTS </tspan></text>
+    <text id="_0:_" data-name="0: " transform="translate(16348 -726)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: </tspan></text>
+    <text id="VALUE" transform="translate(16751 -761)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">VALUE</tspan></text>
+    <text id="Thaw_Action_Payload" data-name="Thaw Action Payload" transform="translate(16518 -567)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Thaw Action Payload</tspan></text>
+    <line id="Line_330" data-name="Line 330" y2="68" transform="translate(16620.5 -660.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
+    <text id="_0:_2" data-name="0: " transform="translate(16558 -726)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: </tspan></text>
+    <text id="Dust" transform="translate(16752 -726)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust</tspan></text>
+    <text id="Smart_Contract" data-name="Smart Contract" transform="translate(16366 -726)" fill="#7030a0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Smart Contract</tspan></text>
+    <g id="Rectangle_275" data-name="Rectangle 275" transform="translate(16574 -680)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+      <rect width="141" height="18" stroke="none"/>
+      <rect x="0.5" y="0.5" width="140" height="17" fill="none"/>
+    </g>
+    <text id="N:_" data-name="N: " transform="translate(16558 -665)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N: </tspan></text>
+    <text id="Ballot_Counted_Action" data-name="Ballot Counted Action" transform="translate(16576 -666)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Ballot Counted Action</tspan></text>
+    <text id="N_A" data-name="N/A" transform="translate(16752 -665)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N/A</tspan></text>
+    <text id="Not_Shown:_Contract_Fees" data-name="Not Shown: Contract Fees" transform="translate(16751 -644)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Not Shown: Contract Fees</tspan></text>
+    <text id="Target_Address_1" data-name="Target Address 1" transform="translate(16576 -726)" fill="#e1b219" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Target Address 1</tspan></text>
+    <text id="DETAILS" transform="translate(16519 -556)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">DETAILS</tspan></text>
+    <path id="Path_160" data-name="Path 160" d="M0,0V44.989" transform="translate(16521.5 -539.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <text id="_-Tx-ID_of_Target_Freeze_Action_-Timestamp" data-name="-Tx-ID of Target Freeze Action
+-Timestamp" transform="translate(16528 -524)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">-Tx-ID of Target Freeze Action</tspan><tspan x="0" y="19">-Timestamp</tspan></text>
+    <text id="_1:_" data-name="1: " transform="translate(16558 -706)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1: </tspan></text>
+    <text id="Dust-2" data-name="Dust" transform="translate(16752 -706)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust</tspan></text>
+    <text id="Target_Address_2" data-name="Target Address 2" transform="translate(16576 -706)" fill="#e1b219" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Target Address 2</tspan></text>
+    <text id="M:_" data-name="M: " transform="translate(16558 -686)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">M: </tspan></text>
+    <text id="Dust-3" data-name="Dust" transform="translate(16752 -686)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust</tspan></text>
+    <text id="Target_Address_M" data-name="Target Address M" transform="translate(16576 -686)" fill="#e1b219" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Target Address M</tspan></text>
+  </g>
+</svg>

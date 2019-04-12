@@ -1,0 +1,413 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="721" height="2252" viewBox="0 0 721 2252">
+  <g id="diannes-booking-multicontract-signature-order-of-operations" transform="translate(-19061 10618)">
+    <g id="Rectangle_89" data-name="Rectangle 89" transform="translate(19061 -10618)" fill="#fcfcfc" stroke="#707070" stroke-width="1">
+      <rect width="721" height="153" stroke="none"/>
+      <rect x="0.5" y="0.5" width="720" height="152" fill="none"/>
+    </g>
+    <text id="Message_Transaction_Signature_Request_" data-name="Message Transaction (Signature Request)" transform="translate(19076 -10583)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Message Transaction (Signature Request)</tspan></text>
+    <line id="Line_149" data-name="Line 149" y2="70" transform="translate(19263.5 -10557.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <text id="INPUTS" transform="translate(19076 -10556)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">INPUTS</tspan></text>
+    <text id="OUTPUTS_" data-name="OUTPUTS " transform="translate(19279 -10556)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">OUTPUTS </tspan></text>
+    <text id="_0:_Dianne" data-name="0: Dianne" transform="translate(19076 -10536)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="15">0: </tspan><tspan y="15" fill="#cd18ef">Dianne</tspan></text>
+    <text id="_0:_Token_Air_N:_Message_Action" data-name="0: Token Air
+N: Message Action" transform="translate(19279 -10536)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="15">0: </tspan><tspan y="15" fill="#002060">Token Air</tspan><tspan x="0" y="34">N: Message Action</tspan></text>
+    <text id="VALUE" transform="translate(19472 -10556)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">VALUE</tspan></text>
+    <text id="Inter-User_Messaging_Cost_N_A_Not_shown:_Change" data-name="Inter-User Messaging Cost
+N/A
+Not shown: Change" transform="translate(19472 -10536)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="15">Inter-User Messaging Cost</tspan><tspan x="0" y="34">N/A</tspan><tspan x="0" y="53">Not shown: Change</tspan></text>
+    <g id="Rectangle_90" data-name="Rectangle 90" transform="translate(19294 -10516)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+      <rect width="103" height="18" stroke="none"/>
+      <rect x="0.5" y="0.5" width="102" height="17" fill="none"/>
+    </g>
+    <g id="Rectangle_91" data-name="Rectangle 91" transform="translate(19061 -10457)" fill="#fcfcfc" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+      <rect width="721" height="668.866" stroke="none"/>
+      <rect x="0.5" y="0.5" width="720" height="667.866" fill="none"/>
+    </g>
+    <text id="Message_Action_Payload" data-name="Message Action Payload" transform="translate(19076 -10409)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Message Action Payload</tspan></text>
+    <line id="Line_150" data-name="Line 150" y2="49" transform="translate(19333.5 -10497.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
+    <text id="MESSAGE_TYPE:_1002_-_Signature_Request" data-name="MESSAGE TYPE: 1002 - Signature Request" transform="translate(19076 -10388)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">MESSAGE TYPE: 1002 - Signature Request</tspan></text>
+    <text id="Message_Receivers" data-name="Message Receivers" transform="translate(19093 -10364)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">Message Receivers</tspan></text>
+    <text id="Token_Air" data-name="Token Air" transform="translate(19093 -10329)" fill="#002060" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Token Air</tspan></text>
+    <line id="Line_154" data-name="Line 154" y2="37" transform="translate(19081.5 -10363.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <g id="Rectangle_95" data-name="Rectangle 95" transform="translate(19072 -10319)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+      <rect width="127" height="21" stroke="none"/>
+      <rect x="0.5" y="0.5" width="126" height="20" fill="none"/>
+    </g>
+    <text id="MESSAGE_PAYLOAD" data-name="MESSAGE PAYLOAD" transform="translate(19076 -10318)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">MESSAGE PAYLOAD</tspan></text>
+    <line id="Line_155" data-name="Line 155" y2="40" transform="translate(19186.5 -10298.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
+    <g id="Group_63" data-name="Group 63" transform="translate(-11.5 -554)">
+      <g id="Rectangle_360" data-name="Rectangle 360" transform="translate(19093 -9704)" fill="#fcfcfc" stroke="#707070" stroke-width="1">
+        <rect width="683.807" height="306" stroke="none"/>
+        <rect x="0.5" y="0.5" width="682.807" height="305" fill="none"/>
+      </g>
+      <text id="Request_Transaction_Transfer_" data-name="Request Transaction (Transfer)" transform="translate(19105 -9671)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Request Transaction (Transfer)</tspan></text>
+      <line id="Line_453" data-name="Line 453" y2="179" transform="translate(19316.762 -9643.5)" fill="none" stroke="#707070" stroke-width="1"/>
+      <text id="INPUTS-2" data-name="INPUTS" transform="translate(19106 -9642)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">INPUTS</tspan></text>
+      <text id="OUTPUTS_2" data-name="OUTPUTS " transform="translate(19331.158 -9642)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">OUTPUTS </tspan></text>
+      <text id="_0:_" data-name="0: " transform="translate(19106 -9607)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: </tspan></text>
+      <text id="VALUE-2" data-name="VALUE" transform="translate(19541.42 -9642)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">VALUE</tspan></text>
+      <text id="_1:_" data-name="1: " transform="translate(19106 -9588)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1: </tspan></text>
+      <text id="_0:_2" data-name="0: " transform="translate(19328.633 -9607)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: </tspan></text>
+      <text id="_1:_2" data-name="1: " transform="translate(19328.633 -9588)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1: </tspan></text>
+      <text id="TokenAir_Booking_Contract" data-name="TokenAir Booking Contract" transform="translate(19355.205 -9588)" fill="#7b1adb" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">TokenAir Booking Contract</tspan></text>
+      <text id="_2:_" data-name="2: " transform="translate(19328.633 -9569)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">2: </tspan></text>
+      <text id="TokenAir_Air_Mile_Contract" data-name="TokenAir Air Mile Contract" transform="translate(19355.023 -9607)" fill="#f13f3f" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">TokenAir Air Mile Contract</tspan></text>
+      <text id="Contract_Fees_Response_Cost_" data-name="Contract Fees + Response Cost " transform="translate(19558.807 -9607)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Contract Fees + Response Cost </tspan></text>
+      <text id="Contract_Fees_Response_Cost_2" data-name="Contract Fees + Response Cost " transform="translate(19558.807 -9588)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Contract Fees + Response Cost </tspan></text>
+      <text id="Contract_Fees_Response_Cost_3" data-name="Contract Fees + Response Cost " transform="translate(19558.807 -9569)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Contract Fees + Response Cost </tspan></text>
+      <text id="_3:_" data-name="3: " transform="translate(19328.633 -9550)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">3: </tspan></text>
+      <text id="_4:_" data-name="4: " transform="translate(19328.633 -9531)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">4: </tspan></text>
+      <text id="Dianne" transform="translate(19349.322 -9550)" fill="#cd18ef" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dianne</tspan></text>
+      <text id="_7:_" data-name="7: " transform="translate(19328.633 -9474)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">7: </tspan></text>
+      <text id="Edward" transform="translate(19349.438 -9531)" fill="#b15f02" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Edward</tspan></text>
+      <text id="Token_Air-2" data-name="Token Air" transform="translate(19349.869 -9474)" fill="#002060" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Token Air</tspan></text>
+      <g id="Rectangle_361" data-name="Rectangle 361" transform="translate(19348.324 -9450)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+        <rect width="98" height="18" stroke="none"/>
+        <rect x="0.5" y="0.5" width="97" height="17" fill="none"/>
+      </g>
+      <text id="N:_" data-name="N: " transform="translate(19327.637 -9436)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N: </tspan></text>
+      <text id="Transfer_Action" data-name="Transfer Action" transform="translate(19350.26 -9436)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Transfer Action</tspan></text>
+      <text id="Dust" transform="translate(19541.133 -9550)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust</tspan></text>
+      <text id="Dust_" data-name="Dust " transform="translate(19541.391 -9531)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust </tspan></text>
+      <text id="_0.2324_BSV" data-name="0.2324 BSV" transform="translate(19543.93 -9474)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0.2324 BSV</tspan></text>
+      <text id="N_A" data-name="N/A" transform="translate(19539.854 -9436)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N/A</tspan></text>
+      <text id="_2:_2" data-name="2: " transform="translate(19106 -9569)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">2: </tspan></text>
+      <text id="_______________" transform="translate(19124 -9569)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">_______________</tspan></text>
+      <text id="Token_Air-3" data-name="Token Air" transform="translate(19124 -9607)" fill="#002060" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Token Air</tspan></text>
+      <text id="Fiji_by_the_Sea_Hotel" data-name="Fiji by the Sea Hotel" transform="translate(19124 -9588)" fill="#a5981e" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Fiji by the Sea Hotel</tspan></text>
+      <text id="Fiji_by_the_Sea_Contract" data-name="Fiji by the Sea Contract" transform="translate(19353.871 -9569)" fill="#00b0f0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Fiji by the Sea Contract</tspan></text>
+      <text id="Not_Shown:_Change" data-name="Not Shown: Change" transform="translate(19547.199 -9417)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Not Shown: Change</tspan></text>
+      <text id="_5:_" data-name="5: " transform="translate(19328.633 -9512)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">5: </tspan></text>
+      <text id="_6:_" data-name="6: " transform="translate(19328.633 -9493)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">6: </tspan></text>
+      <text id="Fran" transform="translate(19348.801 -9512)" fill="#00b050" font-size="14" font-family="ArialMT, Arial"><tspan x="0" y="0">Fran</tspan></text>
+      <text id="Fiji_by_the_sea_Hotel-2" data-name="Fiji by the sea Hotel" transform="translate(19352.756 -9493)" fill="#a5981e" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Fiji by the sea Hotel</tspan></text>
+      <text id="Dust-2" data-name="Dust" transform="translate(19541.133 -9512)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust</tspan></text>
+      <text id="Dust_2" data-name="Dust " transform="translate(19541.391 -9493)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust </tspan></text>
+      <text id="_8:_" data-name="8: " transform="translate(19328.633 -9455)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">8: </tspan></text>
+      <text id="TokenAir_Air_Mile_Contract-2" data-name="TokenAir Air Mile Contract" transform="translate(19355.023 -9455)" fill="#f13f3f" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">TokenAir Air Mile Contract</tspan></text>
+      <text id="Inter-Contract_Messaging_Cost" data-name="Inter-Contract Messaging Cost" transform="translate(19558.807 -9455)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Inter-Contract Messaging Cost</tspan></text>
+      <g id="Rectangle_362" data-name="Rectangle 362" transform="translate(19093 -9704)" fill="#fcfcfc" stroke="#707070" stroke-width="1">
+        <rect width="683.807" height="306" stroke="none"/>
+        <rect x="0.5" y="0.5" width="682.807" height="305" fill="none"/>
+      </g>
+      <text id="Request_Transaction_Transfer_2" data-name="Request Transaction (Transfer)" transform="translate(19105 -9671)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Request Transaction (Transfer)</tspan></text>
+      <line id="Line_454" data-name="Line 454" y2="179" transform="translate(19316.762 -9643.5)" fill="none" stroke="#707070" stroke-width="1"/>
+      <text id="INPUTS-3" data-name="INPUTS" transform="translate(19106 -9642)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">INPUTS</tspan></text>
+      <text id="OUTPUTS_3" data-name="OUTPUTS " transform="translate(19331.158 -9642)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">OUTPUTS </tspan></text>
+      <text id="_0:_3" data-name="0: " transform="translate(19106 -9607)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: </tspan></text>
+      <text id="VALUE-3" data-name="VALUE" transform="translate(19541.42 -9642)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">VALUE</tspan></text>
+      <text id="_1:_3" data-name="1: " transform="translate(19106 -9588)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1: </tspan></text>
+      <text id="_0:_4" data-name="0: " transform="translate(19328.633 -9607)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: </tspan></text>
+      <text id="_1:_4" data-name="1: " transform="translate(19328.633 -9588)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1: </tspan></text>
+      <text id="TokenAir_Booking_Contract-2" data-name="TokenAir Booking Contract" transform="translate(19349.5 -9588)" fill="#7b1adb" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">TokenAir Booking Contract</tspan></text>
+      <text id="_2:_3" data-name="2: " transform="translate(19328.633 -9569)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">2: </tspan></text>
+      <text id="TokenAir_Air_Mile_Contract-3" data-name="TokenAir Air Mile Contract" transform="translate(19349.5 -9607)" fill="#f13f3f" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">TokenAir Air Mile Contract</tspan></text>
+      <text id="Contract_Fees_Response_Cost_4" data-name="Contract Fees + Response Cost " transform="translate(19539.5 -9607)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Contract Fees + Response Cost </tspan></text>
+      <text id="Contract_Fees_Response_Cost_5" data-name="Contract Fees + Response Cost " transform="translate(19539.5 -9588)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Contract Fees + Response Cost </tspan></text>
+      <text id="Contract_Fees_Response_Cost_6" data-name="Contract Fees + Response Cost " transform="translate(19539.5 -9569)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Contract Fees + Response Cost </tspan></text>
+      <text id="_3:_2" data-name="3: " transform="translate(19328.633 -9550)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">3: </tspan></text>
+      <text id="_4:_2" data-name="4: " transform="translate(19328.633 -9531)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">4: </tspan></text>
+      <text id="Dianne-2" data-name="Dianne" transform="translate(19349.5 -9550)" fill="#cd18ef" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dianne</tspan></text>
+      <text id="_7:_2" data-name="7: " transform="translate(19328.633 -9474)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">7: </tspan></text>
+      <text id="Edward-2" data-name="Edward" transform="translate(19349.5 -9531)" fill="#b15f02" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Edward</tspan></text>
+      <text id="Token_Air-4" data-name="Token Air" transform="translate(19349.5 -9474)" fill="#002060" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Token Air</tspan></text>
+      <g id="Rectangle_363" data-name="Rectangle 363" transform="translate(19348.324 -9450)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+        <rect width="98" height="18" stroke="none"/>
+        <rect x="0.5" y="0.5" width="97" height="17" fill="none"/>
+      </g>
+      <text id="N:_2" data-name="N: " transform="translate(19327.637 -9436)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N: </tspan></text>
+      <text id="Transfer_Action-2" data-name="Transfer Action" transform="translate(19349.5 -9436)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Transfer Action</tspan></text>
+      <text id="Dust-3" data-name="Dust" transform="translate(19539.5 -9550)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust</tspan></text>
+      <text id="Dust_3" data-name="Dust " transform="translate(19539.5 -9531)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust </tspan></text>
+      <text id="_0.2324_BSV-2" data-name="0.2324 BSV" transform="translate(19539.5 -9474)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0.2324 BSV</tspan></text>
+      <text id="N_A-2" data-name="N/A" transform="translate(19539.5 -9436)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N/A</tspan></text>
+      <text id="_2-12:_" data-name="2-12: " transform="translate(19106 -9569)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">2-12: </tspan></text>
+      <text id="Dianne_signed_" data-name="Dianne (signed)" transform="translate(19146 -9569)" fill="#cd18ef" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dianne (signed)</tspan></text>
+      <text id="Token_Air_unsigned_" data-name="Token Air (unsigned)" transform="translate(19124 -9607)" fill="#002060" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Token Air (unsigned)</tspan></text>
+      <text id="Fiji_by_the_Sea_unsigned_" data-name="Fiji by the Sea (unsigned)" transform="translate(19124 -9588)" fill="#a5981e" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Fiji by the Sea (unsigned)</tspan></text>
+      <text id="Fiji_by_the_Sea_Contract-2" data-name="Fiji by the Sea Contract" transform="translate(19349.5 -9569)" fill="#00b0f0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Fiji by the Sea Contract</tspan></text>
+      <text id="Not_Shown:_Change-2" data-name="Not Shown: Change" transform="translate(19539.5 -9417)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Not Shown: Change</tspan></text>
+      <text id="_5:_2" data-name="5: " transform="translate(19328.633 -9512)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">5: </tspan></text>
+      <text id="_6:_2" data-name="6: " transform="translate(19328.633 -9493)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">6: </tspan></text>
+      <text id="Fran-2" data-name="Fran" transform="translate(19349.5 -9512)" fill="#00b050" font-size="14" font-family="ArialMT, Arial"><tspan x="0" y="0">Fran</tspan></text>
+      <text id="Fiji_by_the_sea" data-name="Fiji by the sea" transform="translate(19349.5 -9493)" fill="#a5981e" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Fiji by the sea</tspan></text>
+      <text id="Dust-4" data-name="Dust" transform="translate(19539.5 -9512)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust</tspan></text>
+      <text id="Dust_4" data-name="Dust " transform="translate(19539.5 -9493)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust </tspan></text>
+      <text id="_8:_2" data-name="8: " transform="translate(19328.633 -9455)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">8: </tspan></text>
+      <text id="TokenAir_Air_Mile_Contract-4" data-name="TokenAir Air Mile Contract" transform="translate(19349.5 -9455)" fill="#f13f3f" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">TokenAir Air Mile Contract</tspan></text>
+      <text id="Inter-Contract_Messaging_Cost-2" data-name="Inter-Contract Messaging Cost" transform="translate(19539.5 -9455)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Inter-Contract Messaging Cost</tspan></text>
+    </g>
+    <g id="Rectangle_354" data-name="Rectangle 354" transform="translate(19251 -9921)" fill="#fcfcfc" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+      <rect width="398.499" height="103" stroke="none"/>
+      <rect x="0.5" y="0.5" width="397.499" height="102" fill="none"/>
+    </g>
+    <text id="Transfer_Action_Payload" data-name="Transfer Action Payload" transform="translate(19262 -9886)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Transfer Action Payload</tspan></text>
+    <line id="Line_432" data-name="Line 432" y2="66" transform="translate(19385.5 -9986.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
+    <text id="Unchanged_from_Transfer_Action_Template" data-name="Unchanged from Transfer Action Template" transform="translate(19262 -9849)" fill="#707070" font-size="18" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">Unchanged from Transfer Action Template</tspan></text>
+    <g id="Rectangle_385" data-name="Rectangle 385" transform="translate(19061 -9713)" fill="#fcfcfc" stroke="#707070" stroke-width="1">
+      <rect width="721" height="153" stroke="none"/>
+      <rect x="0.5" y="0.5" width="720" height="152" fill="none"/>
+    </g>
+    <text id="Message_Transaction_Signature_Request_2" data-name="Message Transaction (Signature Request)" transform="translate(19076 -9678)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Message Transaction (Signature Request)</tspan></text>
+    <line id="Line_476" data-name="Line 476" y2="70" transform="translate(19263.5 -9652.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <text id="INPUTS-4" data-name="INPUTS" transform="translate(19076 -9651)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">INPUTS</tspan></text>
+    <text id="OUTPUTS_4" data-name="OUTPUTS " transform="translate(19279 -9651)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">OUTPUTS </tspan></text>
+    <text id="_0:_Token_Air" data-name="0: Token Air" transform="translate(19076 -9631)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="15">0: </tspan><tspan y="15" fill="#002060">Token Air</tspan></text>
+    <text id="_0:_Fiji_by_the_sea_N:_Message_Action" data-name="0: Fiji by the sea
+N: Message Action" transform="translate(19279 -9631)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="15">0: </tspan><tspan y="15" fill="#a5981e">Fiji by the sea</tspan><tspan x="0" y="34">N: Message Action</tspan></text>
+    <text id="VALUE-4" data-name="VALUE" transform="translate(19472 -9651)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">VALUE</tspan></text>
+    <text id="Dust_N_A_Not_shown:_Change" data-name="Dust
+N/A
+Not shown: Change" transform="translate(19472 -9631)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="15">Dust</tspan><tspan x="0" y="34">N/A</tspan><tspan x="0" y="53">Not shown: Change</tspan></text>
+    <g id="Rectangle_386" data-name="Rectangle 386" transform="translate(19294 -9611)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+      <rect width="103" height="18" stroke="none"/>
+      <rect x="0.5" y="0.5" width="102" height="17" fill="none"/>
+    </g>
+    <g id="Rectangle_387" data-name="Rectangle 387" transform="translate(19061 -9552)" fill="#fcfcfc" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+      <rect width="721" height="668.866" stroke="none"/>
+      <rect x="0.5" y="0.5" width="720" height="667.866" fill="none"/>
+    </g>
+    <text id="Message_Action_Payload-2" data-name="Message Action Payload" transform="translate(19076 -9504)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Message Action Payload</tspan></text>
+    <line id="Line_477" data-name="Line 477" y2="49" transform="translate(19333.5 -9592.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
+    <text id="MESSAGE_TYPE:_1002_-_Signature_Request-2" data-name="MESSAGE TYPE: 1002 - Signature Request" transform="translate(19076 -9483)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">MESSAGE TYPE: 1002 - Signature Request</tspan></text>
+    <text id="Message_Receivers-2" data-name="Message Receivers" transform="translate(19093 -9459)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">Message Receivers</tspan></text>
+    <text id="Token_Air-5" data-name="Token Air" transform="translate(19093 -9424)" fill="#002060" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Token Air</tspan></text>
+    <line id="Line_478" data-name="Line 478" y2="37" transform="translate(19081.5 -9458.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <g id="Rectangle_388" data-name="Rectangle 388" transform="translate(19072 -9414)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+      <rect width="127" height="21" stroke="none"/>
+      <rect x="0.5" y="0.5" width="126" height="20" fill="none"/>
+    </g>
+    <text id="MESSAGE_PAYLOAD-2" data-name="MESSAGE PAYLOAD" transform="translate(19076 -9413)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">MESSAGE PAYLOAD</tspan></text>
+    <line id="Line_479" data-name="Line 479" y2="40" transform="translate(19186.5 -9393.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
+    <g id="Group_78" data-name="Group 78" transform="translate(-11.5 351)">
+      <g id="Rectangle_360-2" data-name="Rectangle 360" transform="translate(19093 -9704)" fill="#fcfcfc" stroke="#707070" stroke-width="1">
+        <rect width="683.807" height="306" stroke="none"/>
+        <rect x="0.5" y="0.5" width="682.807" height="305" fill="none"/>
+      </g>
+      <text id="Request_Transaction_Transfer_3" data-name="Request Transaction (Transfer)" transform="translate(19105 -9671)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Request Transaction (Transfer)</tspan></text>
+      <line id="Line_453-2" data-name="Line 453" y2="179" transform="translate(19316.762 -9643.5)" fill="none" stroke="#707070" stroke-width="1"/>
+      <text id="INPUTS-5" data-name="INPUTS" transform="translate(19106 -9642)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">INPUTS</tspan></text>
+      <text id="OUTPUTS_5" data-name="OUTPUTS " transform="translate(19331.158 -9642)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">OUTPUTS </tspan></text>
+      <text id="_0:_5" data-name="0: " transform="translate(19106 -9607)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: </tspan></text>
+      <text id="VALUE-5" data-name="VALUE" transform="translate(19541.42 -9642)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">VALUE</tspan></text>
+      <text id="_1:_5" data-name="1: " transform="translate(19106 -9588)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1: </tspan></text>
+      <text id="_0:_6" data-name="0: " transform="translate(19328.633 -9607)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: </tspan></text>
+      <text id="_1:_6" data-name="1: " transform="translate(19328.633 -9588)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1: </tspan></text>
+      <text id="TokenAir_Booking_Contract-3" data-name="TokenAir Booking Contract" transform="translate(19355.205 -9588)" fill="#7b1adb" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">TokenAir Booking Contract</tspan></text>
+      <text id="_2:_4" data-name="2: " transform="translate(19328.633 -9569)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">2: </tspan></text>
+      <text id="TokenAir_Air_Mile_Contract-5" data-name="TokenAir Air Mile Contract" transform="translate(19355.023 -9607)" fill="#f13f3f" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">TokenAir Air Mile Contract</tspan></text>
+      <text id="Contract_Fees_Response_Cost_7" data-name="Contract Fees + Response Cost " transform="translate(19558.807 -9607)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Contract Fees + Response Cost </tspan></text>
+      <text id="Contract_Fees_Response_Cost_8" data-name="Contract Fees + Response Cost " transform="translate(19558.807 -9588)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Contract Fees + Response Cost </tspan></text>
+      <text id="Contract_Fees_Response_Cost_9" data-name="Contract Fees + Response Cost " transform="translate(19558.807 -9569)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Contract Fees + Response Cost </tspan></text>
+      <text id="_3:_3" data-name="3: " transform="translate(19328.633 -9550)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">3: </tspan></text>
+      <text id="_4:_3" data-name="4: " transform="translate(19328.633 -9531)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">4: </tspan></text>
+      <text id="Dianne-3" data-name="Dianne" transform="translate(19349.322 -9550)" fill="#cd18ef" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dianne</tspan></text>
+      <text id="_7:_3" data-name="7: " transform="translate(19328.633 -9474)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">7: </tspan></text>
+      <text id="Edward-3" data-name="Edward" transform="translate(19349.438 -9531)" fill="#b15f02" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Edward</tspan></text>
+      <text id="Token_Air-6" data-name="Token Air" transform="translate(19349.869 -9474)" fill="#002060" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Token Air</tspan></text>
+      <g id="Rectangle_361-2" data-name="Rectangle 361" transform="translate(19348.324 -9450)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+        <rect width="98" height="18" stroke="none"/>
+        <rect x="0.5" y="0.5" width="97" height="17" fill="none"/>
+      </g>
+      <text id="N:_3" data-name="N: " transform="translate(19327.637 -9436)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N: </tspan></text>
+      <text id="Transfer_Action-3" data-name="Transfer Action" transform="translate(19350.26 -9436)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Transfer Action</tspan></text>
+      <text id="Dust-5" data-name="Dust" transform="translate(19541.133 -9550)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust</tspan></text>
+      <text id="Dust_5" data-name="Dust " transform="translate(19541.391 -9531)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust </tspan></text>
+      <text id="_0.2324_BSV-3" data-name="0.2324 BSV" transform="translate(19543.93 -9474)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0.2324 BSV</tspan></text>
+      <text id="N_A-3" data-name="N/A" transform="translate(19539.854 -9436)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N/A</tspan></text>
+      <text id="_2:_5" data-name="2: " transform="translate(19106 -9569)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">2: </tspan></text>
+      <text id="_______________2" data-name="_______________" transform="translate(19124 -9569)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">_______________</tspan></text>
+      <text id="Token_Air-7" data-name="Token Air" transform="translate(19124 -9607)" fill="#002060" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Token Air</tspan></text>
+      <text id="Fiji_by_the_Sea_Hotel-3" data-name="Fiji by the Sea Hotel" transform="translate(19124 -9588)" fill="#a5981e" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Fiji by the Sea Hotel</tspan></text>
+      <text id="Fiji_by_the_Sea_Contract-3" data-name="Fiji by the Sea Contract" transform="translate(19353.871 -9569)" fill="#00b0f0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Fiji by the Sea Contract</tspan></text>
+      <text id="Not_Shown:_Change-3" data-name="Not Shown: Change" transform="translate(19547.199 -9417)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Not Shown: Change</tspan></text>
+      <text id="_5:_3" data-name="5: " transform="translate(19328.633 -9512)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">5: </tspan></text>
+      <text id="_6:_3" data-name="6: " transform="translate(19328.633 -9493)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">6: </tspan></text>
+      <text id="Fran-3" data-name="Fran" transform="translate(19348.801 -9512)" fill="#00b050" font-size="14" font-family="ArialMT, Arial"><tspan x="0" y="0">Fran</tspan></text>
+      <text id="Fiji_by_the_sea_Hotel-4" data-name="Fiji by the sea Hotel" transform="translate(19352.756 -9493)" fill="#a5981e" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Fiji by the sea Hotel</tspan></text>
+      <text id="Dust-6" data-name="Dust" transform="translate(19541.133 -9512)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust</tspan></text>
+      <text id="Dust_6" data-name="Dust " transform="translate(19541.391 -9493)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust </tspan></text>
+      <text id="_8:_3" data-name="8: " transform="translate(19328.633 -9455)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">8: </tspan></text>
+      <text id="TokenAir_Air_Mile_Contract-6" data-name="TokenAir Air Mile Contract" transform="translate(19355.023 -9455)" fill="#f13f3f" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">TokenAir Air Mile Contract</tspan></text>
+      <text id="Inter-Contract_Messaging_Cost-3" data-name="Inter-Contract Messaging Cost" transform="translate(19558.807 -9455)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Inter-Contract Messaging Cost</tspan></text>
+      <g id="Rectangle_362-2" data-name="Rectangle 362" transform="translate(19093 -9704)" fill="#fcfcfc" stroke="#707070" stroke-width="1">
+        <rect width="683.807" height="306" stroke="none"/>
+        <rect x="0.5" y="0.5" width="682.807" height="305" fill="none"/>
+      </g>
+      <text id="Request_Transaction_Transfer_4" data-name="Request Transaction (Transfer)" transform="translate(19105 -9671)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Request Transaction (Transfer)</tspan></text>
+      <line id="Line_454-2" data-name="Line 454" y2="179" transform="translate(19316.762 -9643.5)" fill="none" stroke="#707070" stroke-width="1"/>
+      <text id="INPUTS-6" data-name="INPUTS" transform="translate(19106 -9642)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">INPUTS</tspan></text>
+      <text id="OUTPUTS_6" data-name="OUTPUTS " transform="translate(19331.158 -9642)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">OUTPUTS </tspan></text>
+      <text id="_0:_7" data-name="0: " transform="translate(19106 -9607)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: </tspan></text>
+      <text id="VALUE-6" data-name="VALUE" transform="translate(19541.42 -9642)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">VALUE</tspan></text>
+      <text id="_1:_7" data-name="1: " transform="translate(19106 -9588)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1: </tspan></text>
+      <text id="_0:_8" data-name="0: " transform="translate(19328.633 -9607)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: </tspan></text>
+      <text id="_1:_8" data-name="1: " transform="translate(19328.633 -9588)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1: </tspan></text>
+      <text id="TokenAir_Booking_Contract-4" data-name="TokenAir Booking Contract" transform="translate(19349.5 -9588)" fill="#7b1adb" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">TokenAir Booking Contract</tspan></text>
+      <text id="_2:_6" data-name="2: " transform="translate(19328.633 -9569)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">2: </tspan></text>
+      <text id="TokenAir_Air_Mile_Contract-7" data-name="TokenAir Air Mile Contract" transform="translate(19349.5 -9607)" fill="#f13f3f" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">TokenAir Air Mile Contract</tspan></text>
+      <text id="Contract_Fees_Response_Cost_10" data-name="Contract Fees + Response Cost " transform="translate(19539.5 -9607)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Contract Fees + Response Cost </tspan></text>
+      <text id="Contract_Fees_Response_Cost_11" data-name="Contract Fees + Response Cost " transform="translate(19539.5 -9588)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Contract Fees + Response Cost </tspan></text>
+      <text id="Contract_Fees_Response_Cost_12" data-name="Contract Fees + Response Cost " transform="translate(19539.5 -9569)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Contract Fees + Response Cost </tspan></text>
+      <text id="_3:_4" data-name="3: " transform="translate(19328.633 -9550)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">3: </tspan></text>
+      <text id="_4:_4" data-name="4: " transform="translate(19328.633 -9531)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">4: </tspan></text>
+      <text id="Dianne-4" data-name="Dianne" transform="translate(19349.5 -9550)" fill="#cd18ef" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dianne</tspan></text>
+      <text id="_7:_4" data-name="7: " transform="translate(19328.633 -9474)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">7: </tspan></text>
+      <text id="Edward-4" data-name="Edward" transform="translate(19349.5 -9531)" fill="#b15f02" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Edward</tspan></text>
+      <text id="Token_Air-8" data-name="Token Air" transform="translate(19349.5 -9474)" fill="#002060" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Token Air</tspan></text>
+      <g id="Rectangle_363-2" data-name="Rectangle 363" transform="translate(19348.324 -9450)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+        <rect width="98" height="18" stroke="none"/>
+        <rect x="0.5" y="0.5" width="97" height="17" fill="none"/>
+      </g>
+      <text id="N:_4" data-name="N: " transform="translate(19327.637 -9436)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N: </tspan></text>
+      <text id="Transfer_Action-4" data-name="Transfer Action" transform="translate(19349.5 -9436)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Transfer Action</tspan></text>
+      <text id="Dust-7" data-name="Dust" transform="translate(19539.5 -9550)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust</tspan></text>
+      <text id="Dust_7" data-name="Dust " transform="translate(19539.5 -9531)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust </tspan></text>
+      <text id="_0.2324_BSV-4" data-name="0.2324 BSV" transform="translate(19539.5 -9474)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0.2324 BSV</tspan></text>
+      <text id="N_A-4" data-name="N/A" transform="translate(19539.5 -9436)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N/A</tspan></text>
+      <text id="_2-12:_2" data-name="2-12: " transform="translate(19106 -9569)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">2-12: </tspan></text>
+      <text id="Dianne_signed_2" data-name="Dianne (signed)" transform="translate(19146 -9569)" fill="#cd18ef" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dianne (signed)</tspan></text>
+      <text id="Token_Air_signed_" data-name="Token Air (signed)" transform="translate(19124 -9607)" fill="#002060" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Token Air (signed)</tspan></text>
+      <text id="Fiji_by_the_Sea_unsigned_2" data-name="Fiji by the Sea (unsigned)" transform="translate(19124 -9588)" fill="#a5981e" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Fiji by the Sea (unsigned)</tspan></text>
+      <text id="Fiji_by_the_Sea_Contract-4" data-name="Fiji by the Sea Contract" transform="translate(19349.5 -9569)" fill="#00b0f0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Fiji by the Sea Contract</tspan></text>
+      <text id="Not_Shown:_Change-4" data-name="Not Shown: Change" transform="translate(19539.5 -9417)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Not Shown: Change</tspan></text>
+      <text id="_5:_4" data-name="5: " transform="translate(19328.633 -9512)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">5: </tspan></text>
+      <text id="_6:_4" data-name="6: " transform="translate(19328.633 -9493)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">6: </tspan></text>
+      <text id="Fran-4" data-name="Fran" transform="translate(19349.5 -9512)" fill="#00b050" font-size="14" font-family="ArialMT, Arial"><tspan x="0" y="0">Fran</tspan></text>
+      <text id="Fiji_by_the_sea-2" data-name="Fiji by the sea" transform="translate(19349.5 -9493)" fill="#a5981e" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Fiji by the sea</tspan></text>
+      <text id="Dust-8" data-name="Dust" transform="translate(19539.5 -9512)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust</tspan></text>
+      <text id="Dust_8" data-name="Dust " transform="translate(19539.5 -9493)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust </tspan></text>
+      <text id="_8:_4" data-name="8: " transform="translate(19328.633 -9455)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">8: </tspan></text>
+      <text id="TokenAir_Air_Mile_Contract-8" data-name="TokenAir Air Mile Contract" transform="translate(19349.5 -9455)" fill="#f13f3f" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">TokenAir Air Mile Contract</tspan></text>
+      <text id="Inter-Contract_Messaging_Cost-4" data-name="Inter-Contract Messaging Cost" transform="translate(19539.5 -9455)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Inter-Contract Messaging Cost</tspan></text>
+    </g>
+    <g id="Rectangle_389" data-name="Rectangle 389" transform="translate(19251 -9016)" fill="#fcfcfc" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+      <rect width="398.499" height="103" stroke="none"/>
+      <rect x="0.5" y="0.5" width="397.499" height="102" fill="none"/>
+    </g>
+    <text id="Transfer_Action_Payload-2" data-name="Transfer Action Payload" transform="translate(19262 -8981)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Transfer Action Payload</tspan></text>
+    <line id="Line_480" data-name="Line 480" y2="66" transform="translate(19385.5 -9081.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
+    <text id="Unchanged_from_Transfer_Action_Template-2" data-name="Unchanged from Transfer Action Template" transform="translate(19262 -8944)" fill="#707070" font-size="18" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">Unchanged from Transfer Action Template</tspan></text>
+    <g id="Group_79" data-name="Group 79" transform="translate(-1212 766)">
+      <line id="Line_307" data-name="Line 307" x2="20" transform="translate(20634.09 -10527.808) rotate(90)" fill="none" stroke="#707070" stroke-width="3"/>
+      <g id="chevron-pointing-to-the-left" transform="translate(20625.809 -10504.952) rotate(-91)">
+        <path id="Path_60" data-name="Path 60" d="M6.15,8.276l6.607-5.2a1.205,1.205,0,0,0,.509-.965,1.168,1.168,0,0,0-.489-.961l-1-.795a1.887,1.887,0,0,0-1.216-.389,1.934,1.934,0,0,0-1.225.4L.469,7.327a1.206,1.206,0,0,0-.509.965,1.169,1.169,0,0,0,.489.961l8.721,6.9a1.888,1.888,0,0,0,1.217.389,1.931,1.931,0,0,0,1.224-.4l1.019-.8a1.179,1.179,0,0,0,.02-1.926Z" transform="translate(0 0)" fill="#707070"/>
+      </g>
+    </g>
+    <g id="Group_80" data-name="Group 80" transform="translate(-11.5 898)">
+      <g id="Rectangle_360-3" data-name="Rectangle 360" transform="translate(19093 -9704)" fill="#fcfcfc" stroke="#707070" stroke-width="1">
+        <rect width="683.807" height="306" stroke="none"/>
+        <rect x="0.5" y="0.5" width="682.807" height="305" fill="none"/>
+      </g>
+      <text id="Request_Transaction_Transfer_5" data-name="Request Transaction (Transfer)" transform="translate(19105 -9671)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Request Transaction (Transfer)</tspan></text>
+      <line id="Line_453-3" data-name="Line 453" y2="179" transform="translate(19316.762 -9643.5)" fill="none" stroke="#707070" stroke-width="1"/>
+      <text id="INPUTS-7" data-name="INPUTS" transform="translate(19106 -9642)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">INPUTS</tspan></text>
+      <text id="OUTPUTS_7" data-name="OUTPUTS " transform="translate(19331.158 -9642)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">OUTPUTS </tspan></text>
+      <text id="_0:_9" data-name="0: " transform="translate(19106 -9607)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: </tspan></text>
+      <text id="VALUE-7" data-name="VALUE" transform="translate(19541.42 -9642)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">VALUE</tspan></text>
+      <text id="_1:_9" data-name="1: " transform="translate(19106 -9588)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1: </tspan></text>
+      <text id="_0:_10" data-name="0: " transform="translate(19328.633 -9607)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: </tspan></text>
+      <text id="_1:_10" data-name="1: " transform="translate(19328.633 -9588)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1: </tspan></text>
+      <text id="TokenAir_Booking_Contract-5" data-name="TokenAir Booking Contract" transform="translate(19355.205 -9588)" fill="#7b1adb" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">TokenAir Booking Contract</tspan></text>
+      <text id="_2:_7" data-name="2: " transform="translate(19328.633 -9569)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">2: </tspan></text>
+      <text id="TokenAir_Air_Mile_Contract-9" data-name="TokenAir Air Mile Contract" transform="translate(19355.023 -9607)" fill="#f13f3f" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">TokenAir Air Mile Contract</tspan></text>
+      <text id="Contract_Fees_Response_Cost_13" data-name="Contract Fees + Response Cost " transform="translate(19558.807 -9607)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Contract Fees + Response Cost </tspan></text>
+      <text id="Contract_Fees_Response_Cost_14" data-name="Contract Fees + Response Cost " transform="translate(19558.807 -9588)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Contract Fees + Response Cost </tspan></text>
+      <text id="Contract_Fees_Response_Cost_15" data-name="Contract Fees + Response Cost " transform="translate(19558.807 -9569)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Contract Fees + Response Cost </tspan></text>
+      <text id="_3:_5" data-name="3: " transform="translate(19328.633 -9550)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">3: </tspan></text>
+      <text id="_4:_5" data-name="4: " transform="translate(19328.633 -9531)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">4: </tspan></text>
+      <text id="Dianne-5" data-name="Dianne" transform="translate(19349.322 -9550)" fill="#cd18ef" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dianne</tspan></text>
+      <text id="_7:_5" data-name="7: " transform="translate(19328.633 -9474)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">7: </tspan></text>
+      <text id="Edward-5" data-name="Edward" transform="translate(19349.438 -9531)" fill="#b15f02" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Edward</tspan></text>
+      <text id="Token_Air-9" data-name="Token Air" transform="translate(19349.869 -9474)" fill="#002060" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Token Air</tspan></text>
+      <g id="Rectangle_361-3" data-name="Rectangle 361" transform="translate(19348.324 -9450)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+        <rect width="98" height="18" stroke="none"/>
+        <rect x="0.5" y="0.5" width="97" height="17" fill="none"/>
+      </g>
+      <text id="N:_5" data-name="N: " transform="translate(19327.637 -9436)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N: </tspan></text>
+      <text id="Transfer_Action-5" data-name="Transfer Action" transform="translate(19350.26 -9436)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Transfer Action</tspan></text>
+      <text id="Dust-9" data-name="Dust" transform="translate(19541.133 -9550)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust</tspan></text>
+      <text id="Dust_9" data-name="Dust " transform="translate(19541.391 -9531)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust </tspan></text>
+      <text id="_0.2324_BSV-5" data-name="0.2324 BSV" transform="translate(19543.93 -9474)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0.2324 BSV</tspan></text>
+      <text id="N_A-5" data-name="N/A" transform="translate(19539.854 -9436)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N/A</tspan></text>
+      <text id="_2:_8" data-name="2: " transform="translate(19106 -9569)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">2: </tspan></text>
+      <text id="_______________3" data-name="_______________" transform="translate(19124 -9569)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">_______________</tspan></text>
+      <text id="Token_Air-10" data-name="Token Air" transform="translate(19124 -9607)" fill="#002060" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Token Air</tspan></text>
+      <text id="Fiji_by_the_Sea_Hotel-5" data-name="Fiji by the Sea Hotel" transform="translate(19124 -9588)" fill="#a5981e" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Fiji by the Sea Hotel</tspan></text>
+      <text id="Fiji_by_the_Sea_Contract-5" data-name="Fiji by the Sea Contract" transform="translate(19353.871 -9569)" fill="#00b0f0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Fiji by the Sea Contract</tspan></text>
+      <text id="Not_Shown:_Change-5" data-name="Not Shown: Change" transform="translate(19547.199 -9417)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Not Shown: Change</tspan></text>
+      <text id="_5:_5" data-name="5: " transform="translate(19328.633 -9512)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">5: </tspan></text>
+      <text id="_6:_5" data-name="6: " transform="translate(19328.633 -9493)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">6: </tspan></text>
+      <text id="Fran-5" data-name="Fran" transform="translate(19348.801 -9512)" fill="#00b050" font-size="14" font-family="ArialMT, Arial"><tspan x="0" y="0">Fran</tspan></text>
+      <text id="Fiji_by_the_sea_Hotel-6" data-name="Fiji by the sea Hotel" transform="translate(19352.756 -9493)" fill="#a5981e" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Fiji by the sea Hotel</tspan></text>
+      <text id="Dust-10" data-name="Dust" transform="translate(19541.133 -9512)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust</tspan></text>
+      <text id="Dust_10" data-name="Dust " transform="translate(19541.391 -9493)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust </tspan></text>
+      <text id="_8:_5" data-name="8: " transform="translate(19328.633 -9455)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">8: </tspan></text>
+      <text id="TokenAir_Air_Mile_Contract-10" data-name="TokenAir Air Mile Contract" transform="translate(19355.023 -9455)" fill="#f13f3f" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">TokenAir Air Mile Contract</tspan></text>
+      <text id="Inter-Contract_Messaging_Cost-5" data-name="Inter-Contract Messaging Cost" transform="translate(19558.807 -9455)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Inter-Contract Messaging Cost</tspan></text>
+      <g id="Rectangle_362-3" data-name="Rectangle 362" transform="translate(19093 -9704)" fill="#fcfcfc" stroke="#707070" stroke-width="1">
+        <rect width="683.807" height="306" stroke="none"/>
+        <rect x="0.5" y="0.5" width="682.807" height="305" fill="none"/>
+      </g>
+      <text id="Request_Transaction_Transfer_6" data-name="Request Transaction (Transfer)" transform="translate(19105 -9671)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Request Transaction (Transfer)</tspan></text>
+      <line id="Line_454-3" data-name="Line 454" y2="179" transform="translate(19316.762 -9643.5)" fill="none" stroke="#707070" stroke-width="1"/>
+      <text id="INPUTS-8" data-name="INPUTS" transform="translate(19106 -9642)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">INPUTS</tspan></text>
+      <text id="OUTPUTS_8" data-name="OUTPUTS " transform="translate(19331.158 -9642)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">OUTPUTS </tspan></text>
+      <text id="_0:_11" data-name="0: " transform="translate(19106 -9607)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: </tspan></text>
+      <text id="VALUE-8" data-name="VALUE" transform="translate(19541.42 -9642)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">VALUE</tspan></text>
+      <text id="_1:_11" data-name="1: " transform="translate(19106 -9588)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1: </tspan></text>
+      <text id="_0:_12" data-name="0: " transform="translate(19328.633 -9607)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: </tspan></text>
+      <text id="_1:_12" data-name="1: " transform="translate(19328.633 -9588)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1: </tspan></text>
+      <text id="TokenAir_Booking_Contract-6" data-name="TokenAir Booking Contract" transform="translate(19349.5 -9588)" fill="#7b1adb" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">TokenAir Booking Contract</tspan></text>
+      <text id="_2:_9" data-name="2: " transform="translate(19328.633 -9569)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">2: </tspan></text>
+      <text id="TokenAir_Air_Mile_Contract-11" data-name="TokenAir Air Mile Contract" transform="translate(19349.5 -9607)" fill="#f13f3f" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">TokenAir Air Mile Contract</tspan></text>
+      <text id="Contract_Fees_Response_Cost_16" data-name="Contract Fees + Response Cost " transform="translate(19539.5 -9607)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Contract Fees + Response Cost </tspan></text>
+      <text id="Contract_Fees_Response_Cost_17" data-name="Contract Fees + Response Cost " transform="translate(19539.5 -9588)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Contract Fees + Response Cost </tspan></text>
+      <text id="Contract_Fees_Response_Cost_18" data-name="Contract Fees + Response Cost " transform="translate(19539.5 -9569)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Contract Fees + Response Cost </tspan></text>
+      <text id="_3:_6" data-name="3: " transform="translate(19328.633 -9550)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">3: </tspan></text>
+      <text id="_4:_6" data-name="4: " transform="translate(19328.633 -9531)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">4: </tspan></text>
+      <text id="Dianne-6" data-name="Dianne" transform="translate(19349.5 -9550)" fill="#cd18ef" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dianne</tspan></text>
+      <text id="_7:_6" data-name="7: " transform="translate(19328.633 -9474)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">7: </tspan></text>
+      <text id="Edward-6" data-name="Edward" transform="translate(19349.5 -9531)" fill="#b15f02" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Edward</tspan></text>
+      <text id="Token_Air-11" data-name="Token Air" transform="translate(19349.5 -9474)" fill="#002060" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Token Air</tspan></text>
+      <g id="Rectangle_363-3" data-name="Rectangle 363" transform="translate(19348.324 -9450)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+        <rect width="98" height="18" stroke="none"/>
+        <rect x="0.5" y="0.5" width="97" height="17" fill="none"/>
+      </g>
+      <text id="N:_6" data-name="N: " transform="translate(19327.637 -9436)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N: </tspan></text>
+      <text id="Transfer_Action-6" data-name="Transfer Action" transform="translate(19349.5 -9436)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Transfer Action</tspan></text>
+      <text id="Dust-11" data-name="Dust" transform="translate(19539.5 -9550)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust</tspan></text>
+      <text id="Dust_11" data-name="Dust " transform="translate(19539.5 -9531)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust </tspan></text>
+      <text id="_0.2324_BSV-6" data-name="0.2324 BSV" transform="translate(19539.5 -9474)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0.2324 BSV</tspan></text>
+      <text id="N_A-6" data-name="N/A" transform="translate(19539.5 -9436)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N/A</tspan></text>
+      <text id="_2-12:_3" data-name="2-12: " transform="translate(19106 -9569)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">2-12: </tspan></text>
+      <text id="Dianne-7" data-name="Dianne" transform="translate(19146 -9569)" fill="#cd18ef" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dianne</tspan></text>
+      <text id="Token_Air-12" data-name="Token Air" transform="translate(19124 -9607)" fill="#002060" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Token Air</tspan></text>
+      <text id="Fiji_by_the_Sea-3" data-name="Fiji by the Sea" transform="translate(19124 -9588)" fill="#a5981e" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Fiji by the Sea</tspan></text>
+      <text id="Fiji_by_the_Sea_Contract-6" data-name="Fiji by the Sea Contract" transform="translate(19349.5 -9569)" fill="#00b0f0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Fiji by the Sea Contract</tspan></text>
+      <text id="Not_Shown:_Change-6" data-name="Not Shown: Change" transform="translate(19539.5 -9417)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Not Shown: Change</tspan></text>
+      <text id="_5:_6" data-name="5: " transform="translate(19328.633 -9512)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">5: </tspan></text>
+      <text id="_6:_6" data-name="6: " transform="translate(19328.633 -9493)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">6: </tspan></text>
+      <text id="Fran-6" data-name="Fran" transform="translate(19349.5 -9512)" fill="#00b050" font-size="14" font-family="ArialMT, Arial"><tspan x="0" y="0">Fran</tspan></text>
+      <text id="Fiji_by_the_sea-4" data-name="Fiji by the sea" transform="translate(19349.5 -9493)" fill="#a5981e" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Fiji by the sea</tspan></text>
+      <text id="Dust-12" data-name="Dust" transform="translate(19539.5 -9512)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust</tspan></text>
+      <text id="Dust_12" data-name="Dust " transform="translate(19539.5 -9493)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust </tspan></text>
+      <text id="_8:_6" data-name="8: " transform="translate(19328.633 -9455)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">8: </tspan></text>
+      <text id="TokenAir_Air_Mile_Contract-12" data-name="TokenAir Air Mile Contract" transform="translate(19349.5 -9455)" fill="#f13f3f" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">TokenAir Air Mile Contract</tspan></text>
+      <text id="Inter-Contract_Messaging_Cost-6" data-name="Inter-Contract Messaging Cost" transform="translate(19539.5 -9455)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Inter-Contract Messaging Cost</tspan></text>
+    </g>
+    <g id="Rectangle_390" data-name="Rectangle 390" transform="translate(19251 -8469)" fill="#fcfcfc" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+      <rect width="398.499" height="103" stroke="none"/>
+      <rect x="0.5" y="0.5" width="397.499" height="102" fill="none"/>
+    </g>
+    <text id="Transfer_Action_Payload-3" data-name="Transfer Action Payload" transform="translate(19262 -8434)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Transfer Action Payload</tspan></text>
+    <line id="Line_481" data-name="Line 481" y2="66" transform="translate(19385.5 -8534.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
+    <text id="Unchanged_from_Transfer_Action_Template-3" data-name="Unchanged from Transfer Action Template" transform="translate(19262 -8397)" fill="#707070" font-size="18" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">Unchanged from Transfer Action Template</tspan></text>
+    <g id="Group_81" data-name="Group 81" transform="translate(-1212 1677)">
+      <line id="Line_307-2" data-name="Line 307" x2="20" transform="translate(20634.09 -10527.808) rotate(90)" fill="none" stroke="#707070" stroke-width="3"/>
+      <g id="chevron-pointing-to-the-left-2" data-name="chevron-pointing-to-the-left" transform="translate(20625.809 -10504.952) rotate(-91)">
+        <path id="Path_60-2" data-name="Path 60" d="M6.15,8.276l6.607-5.2a1.205,1.205,0,0,0,.509-.965,1.168,1.168,0,0,0-.489-.961l-1-.795a1.887,1.887,0,0,0-1.216-.389,1.934,1.934,0,0,0-1.225.4L.469,7.327a1.206,1.206,0,0,0-.509.965,1.169,1.169,0,0,0,.489.961l8.721,6.9a1.888,1.888,0,0,0,1.217.389,1.931,1.931,0,0,0,1.224-.4l1.019-.8a1.179,1.179,0,0,0,.02-1.926Z" transform="translate(0 0)" fill="#707070"/>
+      </g>
+    </g>
+  </g>
+</svg>
