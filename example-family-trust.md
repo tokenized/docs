@@ -14,32 +14,30 @@ An issuer proposal is added to the contract which stipulates that the only peopl
 
 Once the Contract Offer is assembled in full it is double checked by Daniel to ensure it will pass the contract validation process used by the Tokenized platform. Daniel then sends the Contract Offer to the Tokenized platform using the Nexus app. As the operator of the smart contract, Tokenized must sign it or the platform will reject the offer transaction. Tokenized signs the transaction and the Contract Offer is sent with the necessary fees attached to the smart contract address.
 
-<img src="https://raw.githubusercontent.com/tokenized/docs/master/images/tbact-contract-offer.svg?sanitize=true" alt="The BobAngelaChris Trust Contract Offer" align="middle">
+![The BobAngelaChris Trust Contract Offer](https://raw.githubusercontent.com/tokenized/docs/master/images/tbact-contract-offer.svg?sanitize=true "The BobAngelaChris Trust Contract Offer") {.frame .centered .padded}
 
 The Contract Offer is sent to an address which is provided to the issuer by Tokenized. It corresponds to an address controlled by their Tokenized platform which is exclusively for the control of TBACT.
 
 The platform receives the Contract Offer and and unpacks the transaction. Once the conditions that are specified for the establishment of the contract are proven to be valid, the platform sends a Contract Formation action from the contract address. From this moment, the smart contract can be considered live and is ready to create, distribute and manage assets.
 
-<img src="https://raw.githubusercontent.com/tokenized/docs/master/images/tbact-contract-formation.svg?sanitize=true" alt="The BobAngelaChris Trust Contract Formation" align="middle">
+![The BobAngelaChris Trust Contract Formation](https://raw.githubusercontent.com/tokenized/docs/master/images/tbact-contract-formation.svg?sanitize=true "The BobAngelaChris Trust Contract Formation") {.frame .centered .padded}
 
 The only asset being created under this contract are shares in the trust itself. The trust owns the home and manages it on behalf of the trust beneficiaries. Daniel creates an Asset Definition to send to the contract using asset type SHC (Common Shares).
 The definition breaks the ownership of the trust down into 300 fungible tokens, to allow the equity to be distributed amongst the trustees.
 Once the Asset Definition is complete, Daniel sends it to the Trust's smart contract:
 
-<img src="https://raw.githubusercontent.com/tokenized/docs/master/images/tbact-asset-definition.svg?sanitize=true" alt="The BobAngelaChris Trust Share Definition" align="middle">
+![The BobAngelaChris Trust Share Definition](https://raw.githubusercontent.com/tokenized/docs/master/images/tbact-asset-definition.svg?sanitize=true "The BobAngelaChris Trust Share Definition") {.frame .centered .padded}
 
 The contract responds with an Asset Creation action, allocating the 300 shares to the Issuer's wallet.
 
-<img src="https://raw.githubusercontent.com/tokenized/docs/master/images/tbact-asset-creation.svg?sanitize=true" alt="The BobAngelaChris Trust Share Creation" align="middle">
+![The BobAngelaChris Trust Share Creation](https://raw.githubusercontent.com/tokenized/docs/master/images/tbact-asset-creation.svg?sanitize=true "The BobAngelaChris Trust Share Creation") {.frame .centered .padded}
 
 Now that the home has been tokenized, the trust is able to distribute it to the trustees. This is done in a single Transfer action, which sends 100/300 of the tokens to each of the trustees:
 
-<img src="https://raw.githubusercontent.com/tokenized/docs/master/images/tbact-asset-transfer.svg?sanitize=true" alt="The BobAngelaChris Trust Share Transfer" align="middle">
+![The BobAngelaChris Trust Share Transfer](https://raw.githubusercontent.com/tokenized/docs/master/images/tbact-asset-transfer.svg?sanitize=true "The BobAngelaChris Trust Share Transfer") {.frame .centered .padded}
 
 After receiving and evaluating the transfer, the Smart Contract responds with a settlement transaction.
 
-
-<img src="https://raw.githubusercontent.com/tokenized/docs/master/images/tbact-asset-settlement.svg?sanitize=true" alt="The BobAngelaChris Trust Share settlement" align="middle">
-
+![The BobAngelaChris Trust Share settlement](https://raw.githubusercontent.com/tokenized/docs/master/images/tbact-asset-settlement.svg?sanitize=true "The BobAngelaChris Trust Share settlement") {.frame .centered .padded}
 
 Now that the ownership of the trust has been established, the Tokenized platform can be used to create dividends for each of the asset owners when rental income is distributed. The trustees decide to rent the home and their accountant provides quarterly funds for distribution. 
