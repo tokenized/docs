@@ -24,7 +24,7 @@ Tokenized transactions are built by compiling the token data as a list of fields
 
 To assemble an `OP_RETURN` packet, the first byte is always the `OP_RETURN` opcode (`0x6a`).
 
-The second byte is a `PUSHDATA` instruction. The `PUSHDATA` instruction can be variable depending on the number of bytes in the data packet being pushed into the output. It is possible to perform multiple pushes in a single `OP_RETURN` output, allowing the output to have multiple fields of different lengths. There are always 2 pushdata operations in a Tokenized operation. The first carries the "Tokenized" protocol identifer (**tokenized.com**), and the second carries the remainder of the data in the packet. This can be up to 99kB of data with the current BitcoinSV network capability, but as the Bitcoin protocol is returned to the Version 0.1 platform the removal of restrictions will allow contracts up to ~4GB to be built.
+The second byte is a `PUSHDATA` instruction. The `PUSHDATA` instruction can be variable depending on the number of bytes in the data packet being pushed into the output. It is possible to perform multiple pushes in a single `OP_RETURN` output, allowing the output to have multiple fields of different lengths. There are always 2 pushdata operations in a Tokenized operation. The first carries the "Tokenized" protocol identifer (**tokenized.com**), and the second carries the remainder of the data in the packet. This can be up to 99kB of data with the current BitcoinSV network capability, but as the Bitcoin protocol is returned to the Version 0.1 platform the removal of restrictions will allow contracts up to 4GB to be built.
 
 ### Using PUSHDATA
 
@@ -60,4 +60,3 @@ The action payload is dependent on the action type and may include token specifi
 The following example shows a high-level overview of a transfer of tokens to highlight key components of the structure of Tokenized transactions.  The example shows one person, Mary, sending 15,000 tokens to Bill using the most basic form of a Transfer action.  The smart contract, upon validation of the Transfer action, responds with a Settlement action to complete the transfer of tokens.
 
 ![Transaction Overview](https://raw.githubusercontent.com/tokenized/docs/master/images/transactions-overview.svg?sanitize=true "Transaction Overview") {.frame .centered .padded}
-Why is this not appearing?
