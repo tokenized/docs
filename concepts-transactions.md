@@ -7,18 +7,18 @@
 <a name="introduction"></a>
 ## Introduction
 
-All Tokenized transactions are normal Bitcoin transactions that use P2PKH (or P2PSH) addresses in the inputs and outputs.  The main feature that defines a Tokenized transaction is an `OP_RETURN` output that contains a Tokenized action. Bitcoin (BSV) is always used to pay network fees and all inputs and outputs require dust amounts of Bitcoin, at a minimum, to be valid.  The protocol also identifies roles (smart contract, issuer, token senders/receivers, etc.) by the position (index of the inputs and outputs) of public address(es) in the transaction.  
+All Tokenized transactions are normal Bitcoin transactions that use P2PKH addresses.  The main feature that defines a Tokenized transaction is an `OP_RETURN` output that contains a Tokenized action. Bitcoin (BSV) is always used to pay network fees and all outputs, except `OP_RETURN`, require dust amounts of Bitcoin, at a minimum, to be valid.  The protocol also identifies roles (smart contract, issuer, token senders/receivers, etc.) by the position (index of the inputs and outputs) of public address(es) in the transaction.
 
-All user and issuer driven actions are initiated by sending a request to the smart contract, via the blockchain, to perform a certain action. If the request is valid, the smart contract will respond by sending a response transaction containing updated information about the contract or asset (new balances, updated revision data, etc).  Response actions will always be addressed to either the issuer or user address(es) or some satoshis will be sent back to the smart contract address.  The smart contract sends change back to itself in what are known as contract-wide actions that affect the contract or asset as a whole.
+All user and issuer driven actions are initiated by sending a request to the smart contract, via the blockchain, to perform a certain action. If the request is valid, the smart contract will respond by sending a response transaction containing updated information about the contract or asset (new balances, updated revision data, etc).  Response actions will always be addressed to either the contract, issuer, operator, or user address(es). As well as contract related and other fees being sent to the appropriate addresses.  The smart contract sends back to itself in what are known as contract-wide actions that affect the contract or asset as a whole.
 
-Some transactions (eg. [Static Contract](../protocol/actions#static-contracts), [Transfer](../protocol/actions#action-transfer) action) require multiple inputs that are signed by different parties to be recognised by the contract. If the smart contract finds that the transaction is valid -- within contract & protocol rules, adequate balance and the correct fees included -- it will process the request, and send a response transaction to the blockchain as confirmation.
+Some transactions (eg. [Static Contract](../protocol/actions#static-contracts), [Transfer](../protocol/actions#action-transfer) action) may require multiple inputs that are signed by different parties to be recognised by the contract.
 
 Transactions that impact balances or the contract state always include a timestamp to ensure that even in the event of a block re-organisation that the contract actions can be restored in the correct order.
 
 <a name="building-transaction"></a>
 ## Building a Transaction
 
-Tokenized transactions are built by compiling the token data as a list of fields and appending them to each other as a hexadecimal string. There are many [different data formats](../protocol/field-types) used by each protocol action.
+Tokenized transaction messages are built by serializing the data (converting to binary) according to the protocol specification. There are many [different data formats](../protocol/field-types) used by each protocol action.
 
 ### Assembling OP_RETURN Packet
 
@@ -53,7 +53,7 @@ The first push is 13 bytes long and contains only the Tokenized protocol identif
 
 ### Action Payload
 
-The action payload is dependent on the action type and may include token specific information as required. It is important that the client and wallet must both know exactly what is expected in the remainder of the packet through a combination of the action prefix and version. If the packet does not conform to the contract agent's expectation of the operation being requested, it will respond with a rejection message.
+The next push is the action payload. The action payload starts with the protocol version, then the message/action type code, which is two characters that define the format of the rest of the data. The action payload is dependent on the action type and may include token specific information as required. It is important that the client and wallet must both know exactly what is expected in the remainder of the packet through a combination of the action prefix and version. If the packet does not conform to the contract agent's expectation of the operation being requested, it will respond with a rejection message.
 
 ## Example
 
