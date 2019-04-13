@@ -106,6 +106,11 @@ The `size` does not need to be specified and is always 32 bytes.
 
 `Timestamp` represents a time. `size` does not need to be specified and is always 8 bytes.
 
+<a name="type-polity"></a>
+### Polity
+
+`Polity` represents a unique identifier for a nation/state/political entity. `size` does not need to be specified and is always 3 bytes.
+
 <a name="compound-types"></a>
 ## Compound Types
 
@@ -117,8 +122,8 @@ The `size` does not need to be specified and is always 32 bytes.
 - [Asset Transfer](#type-asset-transfer)
 - [Entity](#type-entity)
 - [Manager](#type-manager)
+- [Oracle](#type-oracle)
 - [Quantity Index](#type-quantity-index)
-- [Register](#type-register)
 - [Target Address](#type-target-address)
 - [Token Receiver](#type-token-receiver)
 - [Voting System](#type-voting-system)
@@ -591,6 +596,51 @@ Manager is used to refer to a role that is responsible for the Management of an 
 
 
 
+<a name="type-oracle"></a>
+### Oracle
+
+A Oracle defines the details of a public Oracle.
+
+<table>
+    <tr>
+        <th style="width:15%">Field</th>
+        <th style="width:15%">Type</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>Name</td>
+        <td>
+            varchar(8)
+        </td>
+        <td>
+            Length 0-255 bytes. 0 is valid. Oracle X Name (eg. Coinbase, Tokenized, etc.)
+             Example: Tokenized
+        </td>
+    </tr>
+    <tr>
+        <td>URL</td>
+        <td>
+            varchar(8)
+        </td>
+        <td>
+            Length 0-255 bytes. 0 is valid. If applicable: URL for REST/RPC Endpoint
+             Example: http://oracle.tokenized.com/api/3650d9/version2010
+        </td>
+    </tr>
+    <tr>
+        <td>PublicKey</td>
+        <td>
+            varbin(8)
+        </td>
+        <td>
+            Length 0-255 bytes. 0 is not valid. Oracle Public Key (eg. Bitcoin Public key), used to confirm digital signed proofs for transfers.  Can also be the same public address that controls a Tokenized Oracle.
+            
+        </td>
+    </tr>
+</table>
+
+
+
 <a name="type-quantity-index"></a>
 ### Quantity Index
 
@@ -620,51 +670,6 @@ A QuantityIndex contains a quantity, and an index. The quantity could be used to
         <td>
             Number of tokens being sent
              Example: 100
-        </td>
-    </tr>
-</table>
-
-
-
-<a name="type-register"></a>
-### Register
-
-A Register defines the details of a public Register.
-
-<table>
-    <tr>
-        <th style="width:15%">Field</th>
-        <th style="width:15%">Type</th>
-        <th>Description</th>
-    </tr>
-    <tr>
-        <td>Name</td>
-        <td>
-            varchar(8)
-        </td>
-        <td>
-            Length 0-255 bytes. 0 is valid. Register X Name (eg. Coinbase, Tokenized, etc.)
-             Example: Tokenized
-        </td>
-    </tr>
-    <tr>
-        <td>URL</td>
-        <td>
-            varchar(8)
-        </td>
-        <td>
-            Length 0-255 bytes. 0 is valid. If applicable: URL for REST/RPC Endpoint
-             Example: http://register.tokenized.com/api/3650d9/version2010
-        </td>
-    </tr>
-    <tr>
-        <td>PublicKey</td>
-        <td>
-            varbin(8)
-        </td>
-        <td>
-            Length 0-255 bytes. 0 is not valid. Register Public Key (eg. Bitcoin Public key), used to confirm digital signed proofs for transfers.  Can also be the same public address that controls a Tokenized Register.
-            
         </td>
     </tr>
 </table>
@@ -709,7 +714,7 @@ A TargetAddress defines a public address and quantity.
 <a name="type-token-receiver"></a>
 ### Token Receiver
 
-A TokenReceiver is contains a quantity, index, and register signature. The quantity could be used to describe a number of tokens, or a value. The index is used to refer to an input index position.
+A TokenReceiver is contains a quantity, index, and oracle signature. The quantity could be used to describe a number of tokens, or a value. The index is used to refer to an input index position.
 
 <table>
     <tr>
@@ -738,23 +743,23 @@ A TokenReceiver is contains a quantity, index, and register signature. The quant
         </td>
     </tr>
     <tr>
-        <td>RegisterSigAlgorithm</td>
+        <td>OracleSigAlgorithm</td>
         <td>
             uint(1)
         </td>
         <td>
-            0 = No Register-signed Message (RegisterConfirmationSig skipped in serialization), 1 = ECDSA+secp256k1. If the contract for the asset being received has registers, then a signature is required from one of them.
+            0 = No Oracle-signed Message (OracleConfirmationSig skipped in serialization), 1 = ECDSA+secp256k1. If the contract for the asset being received has oracles, then a signature is required from one of them.
              Example: 1
         </td>
     </tr>
     <tr>
-        <td>RegisterConfirmationSig</td>
+        <td>OracleConfirmationSig</td>
         <td>
             varbin(8)
         </td>
         <td>
-            Length 0-255 bytes. If restricted to a register (whitelist) or has transfer restrictions (age, location, investor status): ECDSA+secp256k1 (or the like) signed message provided by an approved/trusted register through an API signature of the defined message. If no transfer restrictions(trade restriction/age restriction fields in the Asset Type payload. or restricted to a whitelist by the Contract Auth Flags, it is a NULL field.
-             Example: IEwzJB23sFryKMzx5MfBwnt1GMUKNTQnqF8WhsSD1wwtKKg7BoA/5GLeu5Unwar7ZhtR18tdzuIfdXDtU+zMHL8=
+            Length 0-255 bytes. If restricted to a oracle (whitelist) or has transfer restrictions (age, location, investor status): ECDSA+secp256k1 (or the like) signed message provided by an approved/trusted oracle through an API signature of the defined message. If no transfer restrictions(trade restriction/age restriction fields in the Asset Type payload. or restricted to a whitelist by the Contract Auth Flags, it is a NULL field.
+            
         </td>
     </tr>
 </table>

@@ -49,6 +49,14 @@ This action is used by the issuer to define the properties/characteristics of th
 
 <table>
     <tr>
+        <th style="width:15%">Action Code</th>
+        <td>A1</td>
+    </tr>
+</table>
+
+
+<table>
+    <tr>
         <th style="width:15%">Field</th>
         <th style="width:15%">Type</th>
         <th>Description</th>
@@ -225,6 +233,14 @@ This action is used by the issuer to define the properties/characteristics of th
 #### Asset Creation
 
 This action creates an Asset in response to the Issuer's instructions in the Definition Action.
+
+<table>
+    <tr>
+        <th style="width:15%">Action Code</th>
+        <td>A2</td>
+    </tr>
+</table>
+
 
 <table>
     <tr>
@@ -427,6 +443,14 @@ Token Dilutions, Call Backs/Revocations, burning etc.
 
 <table>
     <tr>
+        <th style="width:15%">Action Code</th>
+        <td>A3</td>
+    </tr>
+</table>
+
+
+<table>
+    <tr>
         <th style="width:15%">Field</th>
         <th style="width:15%">Type</th>
         <th>Description</th>
@@ -523,6 +547,14 @@ Token Dilutions, Call Backs/Revocations, burning etc.
 #### Contract Offer
 
 Allows the Issuer to tell the smart contract what they want the details (labels, data, T&C's, etc.) of the Contract to be on-chain in a public and immutable way. The Contract Offer action 'initializes' a generic smart contract that has been spun up by either the Smart Contract Operator or the Issuer. This on-chain action allows for the positive response from the smart contract with either a Contract Formation Action or a Rejection Action.
+
+<table>
+    <tr>
+        <th style="width:15%">Action Code</th>
+        <td>C1</td>
+    </tr>
+</table>
+
 
 <table>
     <tr>
@@ -732,12 +764,12 @@ Allows the Issuer to tell the smart contract what they want the details (labels,
         </td>
     </tr>
     <tr>
-        <td>Registers</td>
+        <td>Oracles</td>
         <td>
-            <a href="field-types#type-register">Register[]</a>
+            <a href="field-types#type-oracle">Oracle[]</a>
         </td>
         <td>
-            A list of registers that provide approval for all token transfers for all assets under the contract.
+            A list of oracles that provide approval for all token transfers for all assets under the contract.
             
         </td>
     </tr>
@@ -788,6 +820,14 @@ Allows the Issuer to tell the smart contract what they want the details (labels,
 #### Contract Formation
 
 This txn is created by the Contract (smart contract/off-chain agent/token contract) upon receipt of a valid Contract Offer Action from the issuer.  The Smart Contract will execute on a server controlled by the Issuer. or a Smart Contract Operator on their behalf.
+
+<table>
+    <tr>
+        <th style="width:15%">Action Code</th>
+        <td>C2</td>
+    </tr>
+</table>
+
 
 <table>
     <tr>
@@ -997,12 +1037,12 @@ This txn is created by the Contract (smart contract/off-chain agent/token contra
         </td>
     </tr>
     <tr>
-        <td>Registers</td>
+        <td>Oracles</td>
         <td>
-            <a href="field-types#type-register">Register[]</a>
+            <a href="field-types#type-oracle">Oracle[]</a>
         </td>
         <td>
-            A list of registers that provide approval for all token transfers for all assets under the contract.
+            A list of oracles that provide approval for all token transfers for all assets under the contract.
             
         </td>
     </tr>
@@ -1068,6 +1108,14 @@ This txn is created by the Contract (smart contract/off-chain agent/token contra
 #### Contract Amendment
 
 The issuer can initiate an amendment to the contract establishment metadata. The ability to make an amendment to the contract is restricted by the Authorization Flag set on the current revision of Contract Formation action.
+
+<table>
+    <tr>
+        <th style="width:15%">Action Code</th>
+        <td>C3</td>
+    </tr>
+</table>
+
 
 <table>
     <tr>
@@ -1172,6 +1220,14 @@ The issuer can initiate an amendment to the contract establishment metadata. The
 #### Static Contract Formation
 
 Static Contract Formation Action
+
+<table>
+    <tr>
+        <th style="width:15%">Action Code</th>
+        <td>C4</td>
+    </tr>
+</table>
+
 
 <table>
     <tr>
@@ -1359,6 +1415,14 @@ Static Contract Formation Action
 #### Order
 
 Issuer to signal to the smart contract that the tokens that a particular public address(es) owns are to be confiscated, frozen, thawed or reconciled.
+
+<table>
+    <tr>
+        <th style="width:15%">Action Code</th>
+        <td>E1</td>
+    </tr>
+</table>
+
 
 <table>
     <tr>
@@ -1571,6 +1635,14 @@ To be used to comply with contractual/legal/issuer requirements.  The target pub
 
 <table>
     <tr>
+        <th style="width:15%">Action Code</th>
+        <td>E2</td>
+    </tr>
+</table>
+
+
+<table>
+    <tr>
         <th style="width:15%">Field</th>
         <th style="width:15%">Type</th>
         <th>Description</th>
@@ -1670,6 +1742,14 @@ To be used to comply with contractual obligations or legal requirements.  The Al
 
 <table>
     <tr>
+        <th style="width:15%">Action Code</th>
+        <td>E3</td>
+    </tr>
+</table>
+
+
+<table>
+    <tr>
         <th style="width:15%">Field</th>
         <th style="width:15%">Type</th>
         <th>Description</th>
@@ -1736,6 +1816,14 @@ To be used to comply with contractual obligations or legal requirements.  The Al
 #### Confiscation
 
 To be used to comply with contractual obligations, legal and/or issuer requirements.
+
+<table>
+    <tr>
+        <th style="width:15%">Action Code</th>
+        <td>E4</td>
+    </tr>
+</table>
+
 
 <table>
     <tr>
@@ -1843,6 +1931,14 @@ To be used at the direction of the issuer to fix record keeping errors with bitc
 
 <table>
     <tr>
+        <th style="width:15%">Action Code</th>
+        <td>E5</td>
+    </tr>
+</table>
+
+
+<table>
+    <tr>
         <th style="width:15%">Field</th>
         <th style="width:15%">Type</th>
         <th>Description</th>
@@ -1929,6 +2025,14 @@ To be used at the direction of the issuer to fix record keeping errors with bitc
 #### Proposal
 
 Allows Issuers/Token Holders to propose a change (aka Initiative/Shareholder vote).  A significant cost - specified in the Contract Formation - can be attached to this action when sent from Token Holders to reduce spam, as the resulting vote will be put to all token owners.
+
+<table>
+    <tr>
+        <th style="width:15%">Action Code</th>
+        <td>G1</td>
+    </tr>
+</table>
+
 
 <table>
     <tr>
@@ -2106,6 +2210,14 @@ A vote is created by the Contract in response to a valid Proposal Action.
 
 <table>
     <tr>
+        <th style="width:15%">Action Code</th>
+        <td>G2</td>
+    </tr>
+</table>
+
+
+<table>
+    <tr>
         <th style="width:15%">Field</th>
         <th style="width:15%">Type</th>
         <th>Description</th>
@@ -2162,6 +2274,14 @@ A vote is created by the Contract in response to a valid Proposal Action.
 #### Ballot Cast
 
 Used by Token Owners to cast their ballot (vote) on proposals. 1 Vote per token unless a vote multiplier is specified in the relevant Asset Definition action.
+
+<table>
+    <tr>
+        <th style="width:15%">Action Code</th>
+        <td>G3</td>
+    </tr>
+</table>
+
 
 <table>
     <tr>
@@ -2231,6 +2351,14 @@ Used by Token Owners to cast their ballot (vote) on proposals. 1 Vote per token 
 #### Ballot Counted
 
 The smart contract will respond to a Ballot Cast action with a Ballot Counted action if the Ballot Cast is valid. If the Ballot Cast is not valid, then the smart contract will respond with a Rejection Action.
+
+<table>
+    <tr>
+        <th style="width:15%">Action Code</th>
+        <td>G4</td>
+    </tr>
+</table>
+
 
 <table>
     <tr>
@@ -2320,6 +2448,14 @@ The smart contract will respond to a Ballot Cast action with a Ballot Counted ac
 #### Result
 
 Once a vote has been completed the results are published. After the result is posted, it is up to the issuer to send a contract/asset amendement if appropriate.
+
+<table>
+    <tr>
+        <th style="width:15%">Action Code</th>
+        <td>G5</td>
+    </tr>
+</table>
+
 
 <table>
     <tr>
@@ -2463,6 +2599,14 @@ The message action is a general purpose communication action. 'Twitter/SMS' for 
 
 <table>
     <tr>
+        <th style="width:15%">Action Code</th>
+        <td>M1</td>
+    </tr>
+</table>
+
+
+<table>
+    <tr>
         <th style="width:15%">Field</th>
         <th style="width:15%">Type</th>
         <th>Description</th>
@@ -2540,6 +2684,14 @@ The message action is a general purpose communication action. 'Twitter/SMS' for 
 #### Rejection
 
 Used to reject request actions that do not comply with the Contract. If money is to be returned to a User then it is used in lieu of the Settlement Action to properly account for token balances. All Issuer/User request Actions must be responded to by the Contract with an Action.  The only exception to this rule is when there is not enough fees in the first Action for the Contract response action to remain revenue neutral.  If not enough fees are attached to pay for the Contract response then the Contract will not respond.
+
+<table>
+    <tr>
+        <th style="width:15%">Action Code</th>
+        <td>M2</td>
+    </tr>
+</table>
+
 
 <table>
     <tr>
@@ -2642,6 +2794,14 @@ Establishes an on-chain register.
 
 <table>
     <tr>
+        <th style="width:15%">Action Code</th>
+        <td>R1</td>
+    </tr>
+</table>
+
+
+<table>
+    <tr>
         <th style="width:15%">Field</th>
         <th style="width:15%">Type</th>
         <th>Description</th>
@@ -2698,6 +2858,14 @@ Establishes an on-chain register.
 #### Addition
 
 Adds an entry to the Register.
+
+<table>
+    <tr>
+        <th style="width:15%">Action Code</th>
+        <td>R2</td>
+    </tr>
+</table>
+
 
 <table>
     <tr>
@@ -2760,9 +2928,27 @@ A register entry/record can be altered.
 
 <table>
     <tr>
+        <th style="width:15%">Action Code</th>
+        <td>R3</td>
+    </tr>
+</table>
+
+
+<table>
+    <tr>
         <th style="width:15%">Field</th>
         <th style="width:15%">Type</th>
         <th>Description</th>
+    </tr>
+    <tr>
+        <td>EntryTxID</td>
+        <td>
+            <a href="field-types#type-tx-id">TxId</a>
+        </td>
+        <td>
+            Transaction ID of the register entry to be altered.
+            
+        </td>
     </tr>
     <tr>
         <td>Message</td>
@@ -2819,9 +3005,27 @@ Removes an entry/record from the Register.
 
 <table>
     <tr>
+        <th style="width:15%">Action Code</th>
+        <td>R4</td>
+    </tr>
+</table>
+
+
+<table>
+    <tr>
         <th style="width:15%">Field</th>
         <th style="width:15%">Type</th>
         <th>Description</th>
+    </tr>
+    <tr>
+        <td>EntryTxID</td>
+        <td>
+            <a href="field-types#type-tx-id">TxId</a>
+        </td>
+        <td>
+            Transaction ID of the register entry to be altered.
+            
+        </td>
     </tr>
     <tr>
         <td>Message</td>
@@ -2875,6 +3079,14 @@ Removes an entry/record from the Register.
 #### Transfer
 
 A Token Owner(s) Sends, Exchanges or Swaps a token(s) or Bitcoin for a token(s) or Bitcoin.  Can be as simple as sending a single token to a receiver.  Or can be as complex as many senders sending many different assets - controlled by many different smart contracts - to a number of receivers.  This action also supports atomic swaps (tokens for tokens).  Since many parties and contracts can be involved in a transfer and the corresponding settlement action, the partially signed T1 and T2 actions will need to be passed around on-chain with an M1 action, or off-chain.
+
+<table>
+    <tr>
+        <th style="width:15%">Action Code</th>
+        <td>T1</td>
+    </tr>
+</table>
+
 
 <table>
     <tr>
@@ -2969,6 +3181,14 @@ A Token Owner(s) Sends, Exchanges or Swaps a token(s) or Bitcoin for a token(s) 
 #### Settlement
 
 Settles the transfer request of bitcoins and tokens from transfer (T1) actions.
+
+<table>
+    <tr>
+        <th style="width:15%">Action Code</th>
+        <td>T2</td>
+    </tr>
+</table>
+
 
 <table>
     <tr>
