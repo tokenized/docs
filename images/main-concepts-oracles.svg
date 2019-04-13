@@ -324,7 +324,7 @@ of Current Block Height-4" transform="translate(9707 -5050)" fill="#ea700d" font
       <rect id="Rectangle_141" data-name="Rectangle 141" width="90.709" height="35.433" transform="translate(0 2177)" fill="none"/>
       <text id="Tokens:_0-2" data-name="Tokens: 0" transform="translate(22.05 2198.32)" font-size="20" font-family="Calibri"><tspan x="0" y="0">Tokens: 0</tspan></text>
     </g>
-    <g id="shape370-400" transform="translate(7740.855 -3328.601) rotate(-90)">
+    <g id="shape370-400" transform="translate(7739.56 -3332.601) rotate(-90)">
       <path id="Path_129" data-name="Path 129" d="M0,2212.44H42.38" fill="none" stroke="#0c0" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="3" stroke-width="2.25" fill-rule="evenodd"/>
     </g>
     <g id="shape371-406" transform="translate(9957.828 -5548.127)">
@@ -448,6 +448,9 @@ N/A" transform="translate(10107 -4002)" fill="#707070" font-size="14" font-famil
     </g>
     <g id="shape174-14-2" data-name="shape174-14" transform="translate(12260.805 -5124.686) rotate(90)">
       <path id="Path_67-2" data-name="Path 67" d="M0,2212.44H135.34" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="3" stroke-width="1.5" fill-rule="evenodd"/>
+    </g>
+    <g id="chevron-pointing-to-the-left-4" data-name="chevron-pointing-to-the-left" transform="translate(9960.654 -3379.363) rotate(90)">
+      <path id="Path_60-4" data-name="Path 60" d="M4.91,8.322l5.2,5.2a1.381,1.381,0,0,1,0,1.936l-.8.8a1.382,1.382,0,0,1-1.936,0L.4,9.3a1.382,1.382,0,0,1,0-1.936L7.37.4A1.382,1.382,0,0,1,9.306.4l.8.8a1.309,1.309,0,0,1,.4.963,1.345,1.345,0,0,1-.4.973Z" transform="translate(0 0)" fill="#0c0"/>
     </g>
   </g>
 </svg>
