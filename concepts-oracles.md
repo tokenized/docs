@@ -1,10 +1,10 @@
 # Oracles
 
-The Tokenized protocol allows smart contracts to use oracles.  
+The Tokenized protocol allows smart contracts to use oracles.
 
-An oracle, in the context of blockchains and smart contracts, is an agent that monitors, manages and verifies real-world events/people/information (off-chain data) and provides a trusted data feed to a smart contract.  The smart contract uses the data feed to manage the performance and administrative tasks of the contract with respect to its terms and conditions.
+An oracle, in the context of blockchains and smart contracts, is an agent that monitors, manages and verifies real-world events/people/information (off-chain data) and provides a trusted data feed to a smart contract.  Oracles provide the necessary link from the block chain to the real-world. Without this, block chain can't be used to represent/facilitate anything except ownership of bitcoin. The smart contract uses the data feed to manage the performance and administrative tasks of the contract with respect to its terms and conditions.
 
-Currently, the protocol only supports Identity Oracles, but will support other types of oracles in the future.  A user's wallet will send a request message to the oracle and the oracle will respond with a signature (eg. ECDSA) for the message containing the data or instructions the smart contract is interested in.
+Currently, the protocol only supports Identity Oracles, but will support other types of oracles in the future.  A user's wallet will send a request message to the oracle and the oracle will respond with a signature (eg. ECDSA) for the parts of the message containing the data or instructions that are relevant to the oracle.
 
 Oracles are included in a smart contract by the issuer in the Contract Offer action.  The issuer includes the oracle's name, hostname:port and public key in the Contract Offer, and these will be found in the Contract Formation action for future reference by users and the smart contract.  Wallets can use the hostname:port to request signatures from the oracle, and the smart contract will use the public key to verify the signatures.
 
@@ -28,7 +28,7 @@ The use of Identity Oracles can provide smart contracts with the following capab
 
 ### Example
 
-The interaction between the user, the Identity Oracle and the smart contract is best illustrated through a simple example.  
+The interaction between the user, the Identity Oracle and the smart contract is best illustrated through a simple example.
 
 A user (Sender) wants to send 100 tokens to another user (Receiver).  The tokens are restricted by the smart contract to transfers to addresses who are associated with users that have had their identity verified to meet KYC and AML compliance obligations.
 
