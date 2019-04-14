@@ -42,13 +42,13 @@ The eAUD Contract sees Carol's transfer action arrive in it's wallet and quickly
 
 ![Candy Bar Settlement](https://raw.githubusercontent.com/tokenized/docs/master/images/candy-bar-settlement.svg?sanitize=true "Candy Bar Settlement") {.frame .centered .padded}
 
-When Alice goes to the candy bar, she grabs her combo and heads to the checkout. It scans her items and aks Alice how she would like to pay. She selects the 'Pre-Purchased' option to use her coupon she purchased earlier with the tickets.
+When Alice goes to the candy bar, she grabs her combo and heads to the checkout. It scans her items and aks Alice how she would like to pay. She selects the 'Pre-Purchased' option to use the coupon she purchased earlier with the tickets.
 
-The cinema then provides Alice with a template Transfer action including the receipt address and sends it to her wallet (QR code, NFC, etc.).
+The cinema provides Alice with a template Transfer action including a receiving address and transfer action. This is delivered via NFC to her mobile device.
 
 ![Candy Bar Pre-Paid Item Transfer](https://raw.githubusercontent.com/tokenized/docs/master/images/candy-bar-pre-paid-transfer-template.svg?sanitize=true "Candy Bar Pre-Paid Item Transfer") {.frame .centered .padded}
 
-Her wallet completes the signature and broadcasts the Transfer action to the Bitcoin SV network.
+Her wallet selects a cash input to pay for the transaction, creates the change output, then signs and broadcasts the Transfer action onto the Bitcoin SV network.
 
 ![Final Candy Bar Pre-Paid Item Transfer](https://raw.githubusercontent.com/tokenized/docs/master/images/candy-bar-pre-paid-transfer-final.svg?sanitize=true "Final Candy Bar Pre-Paid Item Transfer") {.frame .centered .padded}
 
