@@ -42,16 +42,16 @@ The eAUD Contract sees Carol's transfer action arrive in it's wallet and quickly
 
 ![Candy Bar Settlement](https://raw.githubusercontent.com/tokenized/docs/master/images/candy-bar-settlement.svg?sanitize=true "Candy Bar Settlement") {.frame .centered .padded}
 
-When Alice goes to the candy bar, she grabs her combo and heads to the checkout. It scans her items and offers a pre-built transaction, but alice selects the 'Pre-Purchased' option.
+When Alice goes to the candy bar, she grabs her combo and heads to the checkout. It scans her items and aks Alice how she would like to pay. She selects the 'Pre-Purchased' option to use her coupon she purchased earlier with the tickets.
 
-The system creates a transfer template that requests the pre-purchased items be delivered to a purchased item wallet which is received into Alice's wallet via NFC.
+The cinema then provides Alice with a template Transfer action including the receipt address and sends it to her wallet (QR code, NFC, etc.).
 
 ![Candy Bar Pre-Paid Item Transfer](https://raw.githubusercontent.com/tokenized/docs/master/images/candy-bar-pre-paid-transfer-template.svg?sanitize=true "Candy Bar Pre-Paid Item Transfer") {.frame .centered .padded}
 
-Her wallet completes the transfer and sends it to the Cinema contract.
+Her wallet completes the signature and broadcasts the Transfer action to the Bitcoin SV network.
 
 ![Final Candy Bar Pre-Paid Item Transfer](https://raw.githubusercontent.com/tokenized/docs/master/images/candy-bar-pre-paid-transfer-final.svg?sanitize=true "Final Candy Bar Pre-Paid Item Transfer") {.frame .centered .padded}
 
-The cinema contract checks that the items are valid and builds a settlement transaction. As no cash is changing hands, it can send this straight onto the network. The combo item is sent back into the same wallet as it was delivered from.
+The cinema contract sees the Transfer action addressed to it and checks that the action is valid before proceeding to build a Settlement transaction. As only one contract is involved in this Settlement action, it can send this straight to the Bitcoin SV network. The snack combo coupon has been successfully transferred between Alice's wallet and the cinema's wallet as a redemption for the snacks Alice purchased.
 
 ![Final Candy Bar Pre-Paid Item Settlement](https://raw.githubusercontent.com/tokenized/docs/master/images/candy-bar-pre-paid-settlement.svg?sanitize=true "Final Candy Bar Pre-Paid Item Settlement") {.frame .centered .padded}
