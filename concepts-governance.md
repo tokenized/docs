@@ -49,9 +49,9 @@ In a Plurality vote, the option with the most votes is the winner.  No threshold
 
 #### Tally Logic
 
-- **Standard Scoring:** Choice * # of tokens held * vote multiplier 
+- **Standard Scoring:** Choice x # of tokens held x vote multiplier
 
-- **Weighted Scoring:** 1st choice * 1 * # of tokens held * vote multiplier, 2nd choice * ((Vote Max-1)/Vote Max) * # of tokens held * vote multiplier,..etc. 
+- **Weighted Scoring:** 1st choice x 1 x # of tokens held x vote multiplier, 2nd choice x ((Vote Max-1)/Vote Max) x # of tokens held x vote multiplier,..etc. 
 
 > **Note**: Vote multipliers are optional and can be restricted.
 
