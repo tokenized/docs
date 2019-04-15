@@ -24,7 +24,7 @@ Resources are used to define lists of values, like the definitions of the possib
 
 International Organization for Standardization code for Currency. 3 character code.
 
-Source: https://github.com/tokenized/specification/blob/master/src/resources/develop/Currencies.yaml
+[View Source File](https://github.com/tokenized/specification/blob/master/src/resources/develop/Currencies.yaml)
 
 <div class="content-list collection-method-list" markdown="1">
 - UnitedArabEmiratesDirham
@@ -191,7 +191,7 @@ Source: https://github.com/tokenized/specification/blob/master/src/resources/dev
 
 Legal Entities & Ownership Structures. 1 character.
 
-Source: https://github.com/tokenized/specification/blob/master/src/resources/develop/Entities.yaml
+[View Source File](https://github.com/tokenized/specification/blob/master/src/resources/develop/Entities.yaml)
 
 <div class="content-list collection-method-list" markdown="1">
 - individual
@@ -215,7 +215,7 @@ Source: https://github.com/tokenized/specification/blob/master/src/resources/dev
 Polities (eg. Countries/Nation-States (ISO-3166 Alpha-3), Political Unions, International Organizations, etc.). Based on a 3 character code.
 
 
-Source: https://github.com/tokenized/specification/blob/master/src/resources/develop/Polities.yaml
+[View Source File](https://github.com/tokenized/specification/blob/master/src/resources/develop/Polities.yaml)
 
 <div class="content-list collection-method-list" markdown="1">
 - Aaland Islands
@@ -477,7 +477,7 @@ Source: https://github.com/tokenized/specification/blob/master/src/resources/dev
 
 Code/Text combinations returned in rejection messages when a request is not accepted.
 
-Source: https://github.com/tokenized/specification/blob/master/src/resources/develop/Rejections.yaml
+[View Source File](https://github.com/tokenized/specification/blob/master/src/resources/develop/Rejections.yaml)
 
 <div class="content-list collection-method-list" markdown="1">
 - Success
@@ -524,7 +524,7 @@ Source: https://github.com/tokenized/specification/blob/master/src/resources/dev
 Roles that entities play in relation to their interactions with other entities. These roles have widely-accepted tasks, rights and duties.
 
 
-Source: https://github.com/tokenized/specification/blob/master/src/resources/develop/Roles.yaml
+[View Source File](https://github.com/tokenized/specification/blob/master/src/resources/develop/Roles.yaml)
 
 <div class="content-list collection-method-list" markdown="1">
 - Accountant
