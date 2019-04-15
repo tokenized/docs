@@ -55,6 +55,120 @@ The first push is 13 bytes long and contains only the Tokenized protocol identif
 
 The next push is the action payload. The action payload starts with the protocol version, then the message/action type code, which is two characters that define the format of the rest of the data. The action payload is dependent on the action type and may include token specific information as required. It is important that the client and wallet must both know exactly what is expected in the remainder of the packet through a combination of the action prefix and version. If the packet does not conform to the contract agent's expectation of the operation being requested, it will respond with a rejection message.
 
+### Sample Code
+
+Here is some sample golang code that uses our reference golang protocol implementation to create a Tokenized `OP_RETURN` output.
+
+```
+import (
+	"github.com/tokenized/smart-contract/pkg/protocol"
+	"github.com/tokenized/smart-contract/pkg/wire"
+)
+
+// Create Offer message
+offerData := protocol.ContractOffer{
+	ContractName: "Test Name",
+	Issuer: protocol.Entity{Administration: []protocol.Administrator{
+		protocol.Administrator{Type: 1, Name: "John Smith"},
+	}},
+	VotingSystems: []protocol.VotingSystem{protocol.VotingSystem{Name: "Relative 50", VoteType: 'R', ThresholdPercentage: 50, HolderProposalFee: 50000}},
+}
+
+// Define permissions for contract fields
+permissions := make([]protocol.Permission, 21)
+for i, _ := range permissions {
+	permissions[i].Permitted = false      // Issuer can't update field without proposal
+	permissions[i].IssuerProposal = false // Issuer can update field with a proposal
+	permissions[i].HolderProposal = false // Holder's can initiate proposals to update field
+
+	permissions[i].VotingSystemsAllowed = make([]bool, len(offerData.VotingSystems))
+	permissions[i].VotingSystemsAllowed[0] = true // Enable this voting system for proposals on this field.
+}
+
+var err error
+offerData.ContractAuthFlags, err = protocol.WriteAuthFlags(permissions)
+if err != nil {
+	return errors.Wrap(err, "Failed to serialize contract auth flags")
+}
+
+// Build offer transaction
+offerTx := wire.NewMsgTx(2)
+
+// Add input spending P2PKH output to issuer's identifying public key hash
+...
+
+// Add P2PKH output to contract's public key hash
+...
+
+// Add Tokenized OP_RETURN message output.
+script, err := protocol.Serialize(&offerData)
+if err != nil {
+	return errors.Wrap(err, "Failed to serialize OP_RETURN")
+}
+offerTx.TxOut = append(offerTx.TxOut, wire.NewTxOut(0, script))
+```
+
+### BitDB
+
+This BitDB query can be used to query transactions containing Tokenized messages.
+```
+{
+  "v": 3,
+  "q": {
+    "find": {
+      "out.b0": { "op": 106 },
+      "out.s1": "tokenized.com"
+    },
+    "limit": 10
+  }
+}
+```
+
+This BitDB query can be used to query transactions containing Tokenized messages with a specific action code. The example is for Contract Offer (C1) actions. Just swap out the C1 for other action codes as needed.
+```
+{
+  "v": 3,
+  "q": {
+    "find": {
+      "out.b0": { "op": 106 },
+      "out.s1": "tokenized.com",
+	  "out.s2": { "$regex": "^.C1"}
+    },
+    "limit": 10
+  }
+}
+```
+
+This BitDB query is for all requests to a specific contract.
+```
+{
+  "v": 3,
+  "q": {
+    "find": {
+      "out.b0": { "op": 106 },
+      "out.s1": "tokenized.com",
+      "out.e.a": "<ContractAddress>"
+    },
+    "limit": 10
+  }
+}
+```
+
+This BitDB query is for all responses from a specific contract.
+```
+{
+  "v": 3,
+  "q": {
+    "find": {
+      "out.b0": { "op": 106 },
+      "out.s1": "tokenized.com",
+      "in.e.a": "<ContractAddress>"
+    },
+    "limit": 10
+  }
+}
+```
+
 ## Example
 
 The following example shows a high-level overview of a transfer of tokens to highlight key components of the structure of Tokenized transactions.  The example shows one person, Mary, sending 15,000 tokens to Bill using the most basic form of a Transfer action.  The smart contract, upon validation of the Transfer action, responds with a Settlement action to complete the transfer of tokens.
