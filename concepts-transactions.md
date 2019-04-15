@@ -111,7 +111,6 @@ offerTx.TxOut = append(offerTx.TxOut, wire.NewTxOut(0, script))
 ### BitDB
 
 This BitDB query can be used to query transactions containing Tokenized messages.
-
 ```
 {
   "v": 3,
@@ -126,7 +125,6 @@ This BitDB query can be used to query transactions containing Tokenized messages
 ```
 
 This BitDB query can be used to query transactions containing Tokenized messages with a specific action code. The example is for Contract Offer (C1) actions. Just swap out the C1 for other action codes as needed.
-
 ```
 {
   "v": 3,
@@ -135,6 +133,36 @@ This BitDB query can be used to query transactions containing Tokenized messages
       "out.b0": { "op": 106 },
       "out.s1": "tokenized.com",
 	  "out.s2": { "$regex": "^.C1"}
+    },
+    "limit": 10
+  }
+}
+```
+
+This BitDB query is for all requests to a specific contract.
+```
+{
+  "v": 3,
+  "q": {
+    "find": {
+      "out.b0": { "op": 106 },
+      "out.s1": "tokenized.com",
+      "out.e.a": "<ContractAddress>"
+    },
+    "limit": 10
+  }
+}
+```
+
+This BitDB query is for all responses from a specific contract.
+```
+{
+  "v": 3,
+  "q": {
+    "find": {
+      "out.b0": { "op": 106 },
+      "out.s1": "tokenized.com",
+      "in.e.a": "<ContractAddress>"
     },
     "limit": 10
   }
