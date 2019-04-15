@@ -92,7 +92,7 @@ if err != nil {
 }
 
 // Build offer transaction
-offerTx := NewMsgTx(2)
+offerTx := wire.NewMsgTx(2)
 
 // Add input spending P2PKH output to issuer's identifying public key hash
 ...
