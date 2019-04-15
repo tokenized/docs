@@ -108,6 +108,39 @@ if err != nil {
 offerTx.TxOut = append(offerTx.TxOut, wire.NewTxOut(0, script))
 ```
 
+### BitDB
+
+This BitDB query can be used to query transactions containing Tokenized messages.
+
+```
+{
+  "v": 3,
+  "q": {
+    "find": {
+      "out.b0": { "op": 106 },
+      "out.s1": "tokenized.com"
+    },
+    "limit": 10
+  }
+}
+```
+
+This BitDB query can be used to query transactions containing Tokenized messages with a specific action code. The example is for Contract Offer (C1) actions. Just swap out the C1 for other action codes as needed.
+
+```
+{
+  "v": 3,
+  "q": {
+    "find": {
+      "out.b0": { "op": 106 },
+      "out.s1": "tokenized.com",
+	  "out.s2": { "$regex": "^.C1"}
+    },
+    "limit": 10
+  }
+}
+```
+
 ## Example
 
 The following example shows a high-level overview of a transfer of tokens to highlight key components of the structure of Tokenized transactions.  The example shows one person, Mary, sending 15,000 tokens to Bill using the most basic form of a Transfer action.  The smart contract, upon validation of the Transfer action, responds with a Settlement action to complete the transfer of tokens.
