@@ -17,7 +17,7 @@ Alice doesn't have any eAUD in her wallet at the moment, so her wallet sends a r
 
 Alice's wallet then signs the transaction for her inputs using SIGHASH_ALL and sends the partially-signed transaction to the exchange company. Once the exchange company has validated that the output matches its agreement with Alice, it signs for its input using SIGHASH_ALL and sends it to the cinema for the final signature. Once the cinema has validated Alice's modifications, it signs for the third and final input before sending the whole transaction to the Bitcoin SV network.
 
-The two contracts involved (cinema ticketing contract and eAUD contract) both see the transfer request. Because it is the first output in the Transfer request, it is up to the cinema contract to build a template of the settlement transaction. The eAUD contract is well known and the cinema ticketing contract sends its template settlement directly to the contract via an API. In situations where two contracts don't know each other, the template can be delivered to the second contract using an M1 Message action direct to the contract's address.
+The two contracts involved (cinema ticketing contract and eAUD contract) both see the transfer request. Because it is the first output in the Transfer request, it is up to the cinema contract to build a template of the settlement transaction. The eAUD contract is well known and the cinema ticketing contract sends its template settlement directly to the contract via a known endpoint. In situations where two contracts don't know each other, the template can be delivered to the second contract using a 'Settlement Request' message contained in a Message action sent directly to the contract's on-chain address.
 
 ![Cinema's settlement template](https://raw.githubusercontent.com/tokenized/docs/master/images/cinema-settlement-template.svg?sanitize=true "Cinema's settlement template") {.frame .centered .padded}
 
@@ -30,15 +30,12 @@ When Alice's, Bob's and Carol's wallets all see the settlement transaction arriv
 Alice, Bob and Carol meet that evening at the cinema. The first thing they do is head to the candy bar.
 
 Bob grabs a medium popcorn combo, and Carol a choc-top and they go to the counter. Their items have embedded RFID tags in the packaging so the system automatically detects the items they have selected and prepares a transfer request.
-The cinema prepares a Transfer template for Bob and Carol's purchases and includes an M1 message action in another output to include the receipt. 
-
-![Candy Bar Transfer Template](https://raw.githubusercontent.com/tokenized/docs/master/images/candy-bar-transfer-template.svg?sanitize=true "Candy Bar Transfer Template") {.frame .centered .padded}
 
 Carol has eAUD in an account in her Tokenized wallet so the transaction comes together quite simply. Carol provides an input from her eAUD wallet which links the transaction to the eAUD contract. Carols wallet sends a transaction including the template receipt it received from the cinema. 
 
 ![Candy Bar Final Transfer](https://raw.githubusercontent.com/tokenized/docs/master/images/candy-bar-transfer-final.svg?sanitize=true "Candy Bar Final Transfer") {.frame .centered .padded}
 
-The eAUD Contract sees Carol's transfer action arrive in it's wallet and quickly validates the action. Carol has adequate money in her account so it prepares the settlement.
+The eAUD Contract sees Carol's transfer action arrive in it's wallet and quickly validates the action. Carol has adequate money in her account so it prepares and sends the on-chain Settlement action.
 
 ![Candy Bar Settlement](https://raw.githubusercontent.com/tokenized/docs/master/images/candy-bar-settlement.svg?sanitize=true "Candy Bar Settlement") {.frame .centered .padded}
 
@@ -48,7 +45,7 @@ The cinema provides Alice with a template Transfer action including a receiving 
 
 ![Candy Bar Pre-Paid Item Transfer](https://raw.githubusercontent.com/tokenized/docs/master/images/candy-bar-pre-paid-transfer-template.svg?sanitize=true "Candy Bar Pre-Paid Item Transfer") {.frame .centered .padded}
 
-Her wallet selects a cash input to pay for the transaction, creates the change output, then signs and broadcasts the Transfer action onto the Bitcoin SV network.
+Her wallet selects a cash input to pay for the transaction, creates the change output, then signs and broadcasts the Transfer action onwto the Bitcoin SV network.
 
 ![Final Candy Bar Pre-Paid Item Transfer](https://raw.githubusercontent.com/tokenized/docs/master/images/candy-bar-pre-paid-transfer-final.svg?sanitize=true "Final Candy Bar Pre-Paid Item Transfer") {.frame .centered .padded}
 

@@ -1,24 +1,38 @@
 ## Bill's Family Trust
-Bill is setting up a family trust to share a home recently passed to him and his siblings Angela and Chris through an estate distribution.
-Bill's lawyer, Daniel, establishes a set of contract rules to create a contract giving each sibiling an equal stake in the home, but which makes Bill, Angela and Chris equal owners of the contract and associated assets. Daniel also establishes a 2 of 3 multisignature address where each of Bill, Angela and Chris have a signature. This will enable any two of the three beneficiaries to sign issuer instructions to the smart contract.
-The lawyer and Bill's family agree on the terms and the contract is clearly described in English with a paper copy signed by all parties including Daniel.
-The signed copy is then scanned and a hash of the document created.
-This document is used to establish a legal entity called 'The BillAngelaChris trust' (TBACT) which will be the owner of the home.
+Bill is setting up a family trust to share assets recently passed to him and his siblings, Angela and Chris, through an estate distribution.
 
-Subsequently, a Contract Offer is created that establishes the smart contract incorporating all the rules laid out in the agreement. Because the three family members and Daniel are the only ones involved in the contract, the rules are set up such that the issuer can make unilateral modifications at any time.
-The contract issuer is listed as the TBACT and includes details such as an administrative address, and key persons. Bill, Angela and Chris are listed as the beneficiaries of the trust, and Daniel as the lawyer. 
+Bill's lawyer, Daniel, establishes a set of contract rules to create a discretionary trust to hold the assets. The lawyer and Bill's family agree on the terms and the contract is transcribed into the Tokenized Body of Agreement format to be inscribed into the Contract Offer. 
 
-Now they begin to assemble the details for the creation of their smart contract. Because the nature of the contract is simple, the trust uses a third party Operator to manage the contract on their behalf. They select Tokenized to be that third party, and use the publicly available details to determine the correct pricing for their contract. Tokenized are are added into the operator definition field. Because they are using Tokenized, they are able to use the Issuer management functions of the Nexus platform to build their smart contract.
+In a video conference with all three siblings, Daniel starts to prepare a smart contract using the Tokenized desktop wallet.
 
-An issuer proposal is added to the contract which stipulates that the only people authorised to hold assets under the contract are the three beneficiaries.
+###Creating the Contract
+Using the Contract Creation , Daniel creates the Contract Offer using the agreed upon details to build the action. These are as follows:
 
-Once the Contract Offer is assembled in full it is double checked by Daniel to ensure it will pass the contract validation process used by the Tokenized platform. Daniel then sends the Contract Offer to the Tokenized platform using the Nexus app. As the operator of the smart contract, Tokenized must sign it or the platform will reject the offer transaction. Tokenized signs the transaction and the Contract Offer is sent with the necessary fees attached to the smart contract address.
+Contract Name:					The BillAngelaChris Trust Smart Contract
+Body of Agreement Type:			SHA-256 Hash
+Body of Agreement:				A hash of the document files
+Contract Type:					Discretionary Trust
+Supporting Docs File Type:		7zip
+Supporting Docs:				A 7zip file containing supporting docs including the contract used to make the body of agreement hash
+Governing Law:					Australia
+Jurisdiction:					Australia
+Contract Expiration:			Contract is set to operate for 10 years
+Issuer:							Discretionary Trust: The BillAngelaChris Trust
+								Email: Shared TBACT email
+								Phone no: Daniel's office phone
+								Administration -	Beneficiary:	Bill
+													Beneficiary:	Angela
+													Beneficiary:	Chris
+Contract Operator Included?:	Yes
+Contract Operator:				Tokenized
+Contract Authorisation Flags:	Issuer can amend all fields. Referendums and initiatives are unable to be used.
+Contract Fee:					As per the detail in the Tokenized operator agreement
+
+Once the contract Contract Offer is created it is double checked by Daniel to ensure it will pass the contract validation process used by Tokenized. Daniel creates a Bitcoin address where the contract will receive it's instructions and directs the output of the Contract Offer to this address. He then sends the Contract Offer to Tokenized using the operator endpoint given in the app. Tokenized signs the transaction and the Contract Offer is sent with the necessary fees attached to the smart contract address.
 
 ![The BobAngelaChris Trust Contract Offer](https://raw.githubusercontent.com/tokenized/docs/master/images/tbact-contract-offer.svg?sanitize=true "The BobAngelaChris Trust Contract Offer") {.frame .centered .padded}
 
-The Contract Offer is sent to an address which is provided to the issuer by Tokenized. It corresponds to an address controlled by their Tokenized platform which is exclusively for the control of TBACT.
-
-The platform receives the Contract Offer and and unpacks the transaction. Once the conditions that are specified for the establishment of the contract are proven to be valid, the platform sends a Contract Formation action from the contract address. From this moment, the smart contract can be considered live and is ready to create, distribute and manage assets.
+The platform receives the Contract Offer and and unpacks the transaction. Once the conditions that are specified for the establishment of the contract are proven to be valid, the platform sends a Contract Formation action from the contract address. From this moment, the smart contract can be considered live and is ready to create, distribute, receive and manage assets.
 
 ![The BobAngelaChris Trust Contract Formation](https://raw.githubusercontent.com/tokenized/docs/master/images/tbact-contract-formation.svg?sanitize=true "The BobAngelaChris Trust Contract Formation") {.frame .centered .padded}
 
