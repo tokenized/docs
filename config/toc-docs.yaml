@@ -2,11 +2,12 @@ Intro:
   pages:
     intro/preface: "Preface"
 
-Protocol:
+Specification:
   pages:
     protocol/actions: "Actions"
     protocol/assets: "Assets"
     protocol/messages: "Messages"
+    protocol/resources: "Resources"
     protocol/field-types: "Field Types"
 
 Concepts:
