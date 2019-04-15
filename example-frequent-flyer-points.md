@@ -1,4 +1,4 @@
-# Frequent Flyer Points
+## Frequent Flyer Points
 
 Bob is a travelling salesman and a frequent flyer of TokenAir.  Over the last few years he has managed to rack up 4,139,332 frequent flyer points but, unfortunately, he cannot stand the idea of flying in his free time.
 
@@ -16,32 +16,31 @@ Now that Dianne is registered with the Identity Oracle, she can receive the freq
 
 The TokenAir smart contract receives the action and unpacks it. After validating the transaction, including the signed message from the Identity Oracle, it broadcasts a Settlement action to complete the transfer of frequent flyer points.
 
+![Bob's Airmile Settlement](https://raw.githubusercontent.com/tokenized/docs/master/images/bob-airmile-settlement-final.svg?sanitize=true "Bob's Airmile Settlement") {.frame .centered .padded}
+
 When Dianne opens her wallet, it now shows that she has received 2,000,000 frequent flyer points from Bob.
 
-Dianne wants to use the points for a trip with her husband Edward and daughter Fran. To book her holiday, she goes to TokenAir's online booking service and selects the package holiday she is interested in.  The package is a trip holiday to Fiji including flights, 7 nights at Fiji by the Sea hotel, and a few coupons for meals, activities and services. The app uses APIs to feed hotel booking data into the transaction as needed. The total cost of the holiday is 2,400,000 points so Dianne decides to pay the difference with Bitcoin. She selects 'Points + Pay' in the interface and selects 'Bitcoin' as the currency. 
+Dianne wants to use the points for a trip with her husband Edward and daughter Fran. To book her holiday, she goes to TokenAir's online booking service and selects the package holiday she is interested in.  The package is a trip holiday to Fiji including flights, 7 nights at Fiji by the Sea hotel, and a few coupons for meals, activities and services. The app uses APIs to feed hotel booking data into the transaction as needed. The total cost of the holiday is 2,400,000 points so Dianne decides to pay the difference with Bitcoin. She selects 'Points + Pay' in the interface and selects 'Bitcoin' as the currency.
 
-Fiji by the Sea has its own smart contract to manage room bookings and coupons.  TokenAir also uses smart contracts to manage their airline tickets. TokenAir also has a separate business arrangement with Fiji by the Sea and acts as a reseller for them.
+Fiji by the Sea has its own smart contract to manage room bookings and coupons. TokenAir also uses smart contracts to manage their airline tickets. TokenAir also has a separate business arrangement with Fiji by the Sea and acts as a reseller for them.
 TokenAir's app requests an input from Fiji by the Sea hotel and uses it to build a template Transfer action for Dianne to sign. It delivers this directly to her wallet.
 
-The summary of the Transfer action sends 2 million of Dianne's frequent flyer points plus 0.2324 Bitcoins to TokenAir. In return, it gives Dianne 3 return business class tickets to Fiji, 1 coupon for an oversized check in baggage for Edward's golf bag, 6 lounge entry coupons, accomodation tokens for 7 nights in a family suite, 21 coupons for breakfast at the hotel, a coupon for a spa session for herself, 3 coupons for a round of golf for Edward, kids club entry for three days for Fran, and three gourmet dinner package coupons (one per family member).
+The summary of the Transfer action sends 2 million of Dianne's frequent flyer points plus 0.2324 Bitcoins to TokenAir. In return, it gives Dianne 3 return business class tickets to Fiji, 1 coupon for an oversized check in baggage for Edward's golf bag, 6 lounge entry coupons (2 each), accomodation tokens for 7 nights in a family suite, 21 coupons for breakfast at the hotel, a coupon for a spa session for herself, 3 coupons for a round of golf for Edward, kids club entry for three days for Fran, and three gourmet dinner package coupons (one per family member).
 
 ![Dianne's Holiday Booking Transfer](https://raw.githubusercontent.com/tokenized/docs/master/images/diannes-booking-transfer-template.svg?sanitize=true "Dianne's Holiday Booking Transfer") {.frame .centered .padded}
 
-Happy with the deal, Dianne decides to accept. Her wallet adds her input(s) and change output required to pay the 0.2324BSV owing. Her wallet then signs the transaction and sends it back to the TokenAir token sending address in a 'Signature Request' message. TokenAir reviews the Transfer action and adds its signature.  TokenAir then sends the partially-signed Transfer action to Fiji by the Sea who also reviews and signs, before sending the fully-signed Transfer action to the Bitcoin SV network.
+Happy with the deal, Dianne decides to accept. Her wallet adds her input(s) and change output required to pay the 0.2324BSV owing. Her wallet then signs the transaction and sends it back to the TokenAir token sending address in a 'Signature Request' message. TokenAir reviews the Transfer action and adds its signature before sending the fully-signed Transfer action to the Bitcoin SV network.
 
-![Multi-Contract Signature Request Order of Operations](https://raw.githubusercontent.com/tokenized/docs/master/images/diannes-booking-multicontract-signature-order-of-operations.svg?sanitize=true "Multi-Contract Signature Request Order of Operations") {.frame .centered .padded}
+![Multi-User Transfer Request Order of Operations](https://raw.githubusercontent.com/tokenized/docs/master/images/diannes-booking-multi-user-signature-order-of-operations.svg?sanitize=true "Multi-User Transfer Signature Order of Operations") {.frame .centered .padded}
 
 As soon as the three contracts see the Transfer action enter the network, they unpack the transaction and check that everything matches what they expect. 
 
 As part of the Transfer action, Dianne's wallet includes a second output to the TokenAir Frequent Flyer contract, which is for inter-contract communication during the settlement process. 
 
-The TokenAir Frequent Flyer contract constructs a Settlement action and includes settlement balances of the frequent flyer points being transferred which it controls, and packages this into a 'Settlement Request' Message action, which it sends on to the TokenAir Airline Ticketing contract. As part of this message, the Intercontract Messaging Fee is used as the funding input, and the full change value as the only monetary output. The TokenAir Airline Ticketing contract adds the settlement balances for the flight tokens to the partially built payload, and forwards it in a second 'Settlement Request' message to the Fiji by the Sea Hotel contract. 
-The Fiji by the Sea hotel contract adds the remainder of the settlement balances to the list and finalises the settlement action by adding a timestamp. It then uses the three contract outputs from the Transfer action and builds the full Settlement transaction. Included in the Settlement Request action are the necessary fees and output addresses to be paid to the contract operators, and the Fiji by the Sea hotel contract uses these in its template.
-Once complete, it signs its own input and uses the Inter-Contract Messaging Fee to send the partially-signed transaction back to the TokenAir Frequent Flyer contract in a 'Signature Request' Message action.
-The TokenAir Airline Ticketing contract receives the partially-signed message and adds its own signature before passing it on to the TokenAir Frequent Flyer contract for the final signature.
+The TokenAir Frequent Flyer contract constructs a Settlement action and includes settlement balances of the frequent flyer points being transferred which it controls, and packages this into a 'Settlement Request' Message action, which it sends on to the TokenAir Airline Ticketing contract. As part of this message, the Intercontract Messaging Fee is used as the funding input, and its full remaining value is passed on as the only monetary output in the transaction. The TokenAir Booking contract adds a monetary input and the settlement balances for the flight tokens and hotel coupons to the partially built payload, signs its input and uses the Inter-Contract Messaging Fee to send the partially-signed transaction back to the TokenAir Frequent Flyer contract in a 'Signature Request' Message action.
 
 ![Dianne's Holiday Booking settlement creation process](https://raw.githubusercontent.com/tokenized/docs/master/images/diannes-holiday-multi-contract-settlement-process.svg?sanitize=true "Dianne's Holiday Booking settlement creation process") {.frame .centered .padded}
 
-Now that the transaction is fully complete, the TokenAir Frequent Flyer contract sends it onto the Bitcoin network for settlement.
+The TokenAir Frequent Flyer contract signs the final input and sends the transaction onto the Bitcoin network for settlement.
 
 ![Dianne's Holiday final settlement, fully signed](https://raw.githubusercontent.com/tokenized/docs/master/images/diannes-holiday-final-settlement.svg?sanitize=true "Dianne's Holiday final settlement, fully signed") {.frame .centered .padded}

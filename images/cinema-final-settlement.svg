@@ -4,7 +4,7 @@
       <rect width="357.499" height="504" stroke="none"/>
       <rect x="0.5" y="0.5" width="356.499" height="503" fill="none"/>
     </g>
-    <text id="_533.32_53332_cents_" data-name="$533.32 (53332 cents)" transform="translate(7855 -9942)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">$533.32 (53332 cents)</tspan></text>
+    <text id="_533.32_53332_cents_" data-name="$533.32 (53332 cents)" transform="translate(7892 -9942)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">$533.32 (53332 cents)</tspan></text>
     <g id="Rectangle_248" data-name="Rectangle 248" transform="translate(7576 -10702)" fill="#fcfcfc" stroke="#707070" stroke-width="1">
       <rect width="632" height="271" stroke="none"/>
       <rect x="0.5" y="0.5" width="631" height="270" fill="none"/>
@@ -17,8 +17,8 @@
     <text id="VALUE" transform="translate(7994 -10640)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">VALUE</tspan></text>
     <text id="Settlement_Action_Payload" data-name="Settlement Action Payload" transform="translate(7740 -10372)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Settlement Action Payload</tspan></text>
     <text id="Settlements" transform="translate(7752 -10299)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">Settlements</tspan></text>
-    <text id="_0_tickets" data-name="0 tickets" transform="translate(7866 -10279)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0 tickets</tspan></text>
-    <text id="_1_ticket" data-name="1 ticket" transform="translate(7791 -10261)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1 ticket</tspan></text>
+    <text id="_0_tickets" data-name="0 tickets" transform="translate(7976 -10279)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0 tickets</tspan></text>
+    <text id="_1_ticket" data-name="1 ticket" transform="translate(7982 -10261)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1 ticket</tspan></text>
     <text id="ASSETID:_TICC2S21A.._Funny_Movie_6:30_session_seat_21A" data-name="ASSETID: TICC2S21A.. Funny Movie, 6:30 session, seat 21A" transform="translate(7740 -10333)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">ASSETID: TICC2S21A.. Funny Movie, 6:30 session, seat 21A</tspan></text>
     <line id="Line_295" data-name="Line 295" y2="57" transform="translate(7745.5 -10313.5)" fill="none" stroke="#707070" stroke-width="1"/>
     <line id="Line_296" data-name="Line 296" y2="66" transform="translate(7863.5 -10465.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
@@ -57,12 +57,12 @@
     <text id="ASSETID:_TICC2S21C.._Funny_Movie_6:30_session_seat_21C" data-name="ASSETID: TICC2S21C.. Funny Movie, 6:30 session, seat 21C" transform="translate(7740 -10177)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">ASSETID: TICC2S21C.. Funny Movie, 6:30 session, seat 21C</tspan></text>
     <text id="ASSETID:_COUMedComb_Med_Popcorn_Combo_Self_Serve" data-name="ASSETID: COUMedComb… Med Popcorn Combo, Self Serve" transform="translate(7740 -10102)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">ASSETID: COUMedComb… Med Popcorn Combo, Self Serve</tspan></text>
     <text id="Settlements-2" data-name="Settlements" transform="translate(7752 -10222)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">Settlements</tspan></text>
-    <text id="_1_ticket-2" data-name="1 ticket" transform="translate(7788 -10184)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1 ticket</tspan></text>
+    <text id="_1_ticket-2" data-name="1 ticket" transform="translate(7982 -10184)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1 ticket</tspan></text>
     <text id="Settlements-3" data-name="Settlements" transform="translate(7752 -10147)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">Settlements</tspan></text>
-    <text id="_1_ticket-3" data-name="1 ticket" transform="translate(7792 -10109)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1 ticket</tspan></text>
-    <text id="_0_tickets-2" data-name="0 tickets" transform="translate(7867 -10205)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0 tickets</tspan></text>
+    <text id="_1_ticket-3" data-name="1 ticket" transform="translate(7982 -10109)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1 ticket</tspan></text>
+    <text id="_0_tickets-2" data-name="0 tickets" transform="translate(7976 -10205)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0 tickets</tspan></text>
     <text id="Cinema_Seating_:-2" data-name="Cinema (Seating):" transform="translate(7752 -10205)" fill="#19e134" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Cinema (Seating):</tspan></text>
-    <text id="_0_tickets-3" data-name="0 tickets" transform="translate(7866 -10129)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0 tickets</tspan></text>
+    <text id="_0_tickets-3" data-name="0 tickets" transform="translate(7976 -10129)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0 tickets</tspan></text>
     <text id="Cinema_Seating_:-3" data-name="Cinema (Seating):" transform="translate(7752 -10129)" fill="#19e134" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Cinema (Seating):</tspan></text>
     <text id="_5:_" data-name="5: " transform="translate(7801 -10510)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">5: </tspan></text>
     <text id="Dust_3" data-name="Dust " transform="translate(7995 -10510)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust </tspan></text>
@@ -73,17 +73,17 @@
     <line id="Line_297" data-name="Line 297" y2="57" transform="translate(7745.5 -10236.5)" fill="none" stroke="#707070" stroke-width="1"/>
     <line id="Line_298" data-name="Line 298" y2="57" transform="translate(7745.5 -10161.5)" fill="none" stroke="#707070" stroke-width="1"/>
     <text id="Settlements-4" data-name="Settlements" transform="translate(7752 -10071)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">Settlements</tspan></text>
-    <text id="_1_coupon" data-name="1 coupon" transform="translate(7791 -10032)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1 coupon</tspan></text>
+    <text id="_1_coupon" data-name="1 coupon" transform="translate(7969 -10032)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1 coupon</tspan></text>
     <text id="Cinema_Candybar_:" data-name="Cinema (Candybar):" transform="translate(7752 -10052)" fill="#19e134" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Cinema (Candybar):</tspan></text>
     <text id="Alice:-2" data-name="Alice:" transform="translate(7752 -10032)" fill="#00b0f0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Alice:</tspan></text>
-    <text id="_4021_coupons" data-name="4021 coupons" transform="translate(7882 -10052)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">4021 coupons</tspan></text>
+    <text id="_4021_coupons" data-name="4021 coupons" transform="translate(7940 -10052)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">4021 coupons</tspan></text>
     <line id="Line_299" data-name="Line 299" y2="57" transform="translate(7745.5 -10084.5)" fill="none" stroke="#707070" stroke-width="1"/>
     <text id="AUD_Contract_" data-name="AUD Contract " transform="translate(7740 -10005)" fill="#f13f3f" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">AUD Contract </tspan></text>
-    <text id="ASSETID:_CUR-eAUD2020..._Australian_Dollar_Cents_" data-name="ASSETID: CUR-eAUD2020... Australian Dollar (Cents)" transform="translate(7740 -9993)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">ASSETID: CUR-eAUD2020... Australian Dollar (Cents)</tspan></text>
+    <text id="ASSETID:_CURAUDx100c2020..._Australian_one_cent" data-name="ASSETID: CURAUDx100c2020... Australian one cent" transform="translate(7740 -9993)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">ASSETID: CURAUDx100c2020... Australian one cent</tspan></text>
     <text id="Settlements-5" data-name="Settlements" transform="translate(7752 -9962)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">Settlements</tspan></text>
     <line id="Line_300" data-name="Line 300" y2="57" transform="translate(7745.5 -9976.5)" fill="none" stroke="#707070" stroke-width="1"/>
     <text id="Cinema_s_eAUD_wallet:_" data-name="Cinema’s eAUD wallet: " transform="translate(7752 -9923)" fill="#002060" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Cinema’s eAUD wallet: </tspan></text>
     <text id="AUD_Exchange:_" data-name="AUD Exchange: " transform="translate(7752 -9942)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">AUD Exchange: </tspan></text>
-    <text id="_51.45_5145_cents_" data-name="$51.45 (5145 cents)" transform="translate(7898 -9923)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">$51.45 (5145 cents)</tspan></text>
+    <text id="_91.91_9191_cents_" data-name="$91.91 (9191 cents)" transform="translate(7908 -9923)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">$91.91 (9191 cents)</tspan></text>
   </g>
 </svg>
