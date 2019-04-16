@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="632" height="348" viewBox="0 0 632 348">
+  <g id="dominics-pizza-confiscation-action" transform="translate(-17613 823)">
+    <g id="Rectangle_281" data-name="Rectangle 281" transform="translate(17693 -612)" fill="#fcfcfc" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+      <rect width="245.499" height="137" stroke="none"/>
+      <rect x="0.5" y="0.5" width="244.499" height="136" fill="none"/>
+    </g>
+    <g id="Rectangle_282" data-name="Rectangle 282" transform="translate(17613 -823)" fill="#fcfcfc" stroke="#707070" stroke-width="1">
+      <rect width="632" height="177" stroke="none"/>
+      <rect x="0.5" y="0.5" width="631" height="176" fill="none"/>
+    </g>
+    <text id="Response_Transaction_Confiscation_" data-name="Response Transaction (Confiscation)" transform="translate(17628 -790)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Response Transaction (Confiscation)</tspan></text>
+    <line id="Line_343" data-name="Line 343" y2="84" transform="translate(17822.5 -762.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <text id="INPUTS" transform="translate(17628 -761)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">INPUTS</tspan></text>
+    <text id="OUTPUTS_" data-name="OUTPUTS " transform="translate(17838 -761)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">OUTPUTS </tspan></text>
+    <text id="_0:_" data-name="0: " transform="translate(17628 -726)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: </tspan></text>
+    <text id="VALUE" transform="translate(18031 -761)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">VALUE</tspan></text>
+    <text id="Confiscation_Action_Payload" data-name="Confiscation Action Payload" transform="translate(17704 -586)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Confiscation Action Payload</tspan></text>
+    <line id="Line_344" data-name="Line 344" y2="68" transform="translate(17900.5 -680.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
+    <text id="_0:_2" data-name="0: " transform="translate(17838 -726)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: </tspan></text>
+    <text id="Dust" transform="translate(18032 -726)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust</tspan></text>
+    <text id="Dominic_s_Pizza_Contract" data-name="Dominic&apos;s Pizza Contract" transform="translate(17646 -726)" fill="#7030a0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dominic&apos;s Pizza Contract</tspan></text>
+    <g id="Rectangle_283" data-name="Rectangle 283" transform="translate(17854 -699)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+      <rect width="125" height="18" stroke="none"/>
+      <rect x="0.5" y="0.5" width="124" height="17" fill="none"/>
+    </g>
+    <text id="N:_" data-name="N: " transform="translate(17838 -685)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N: </tspan></text>
+    <text id="Confiscation_Action" data-name="Confiscation Action" transform="translate(17856 -685)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Confiscation Action</tspan></text>
+    <text id="N_A" data-name="N/A" transform="translate(18032 -684)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N/A</tspan></text>
+    <text id="Not_Shown:_Contract_Fees" data-name="Not Shown: Contract Fees" transform="translate(18031 -663)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Not Shown: Contract Fees</tspan></text>
+    <text id="Jo-Anne_2_" data-name="Jo-Anne (2)" transform="translate(17856 -726)" fill="#ffc000" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Jo-Anne (2)</tspan></text>
+    <text id="Confiscation" transform="translate(17705 -575)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">Confiscation</tspan></text>
+    <path id="Path_162" data-name="Path 162" d="M0,0V19.5" transform="translate(17707.5 -558.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <text id="_1:_" data-name="1: " transform="translate(17838 -706)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1: </tspan></text>
+    <text id="Dust-2" data-name="Dust" transform="translate(18032 -706)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust</tspan></text>
+    <text id="Dominic_s_Pizza" data-name="Dominic&apos;s Pizza" transform="translate(17856 -705)" fill="#19e134" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dominic&apos;s Pizza</tspan></text>
+    <text id="_20_points" data-name="20 points" transform="translate(17855 -543)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">20 points</tspan></text>
+    <text id="_0:_Jo-Anne_2_" data-name="0: Jo-Anne (2)" transform="translate(17712 -543)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0:</tspan><tspan y="0" xml:space="preserve" fill="#ffc000"> Jo-Anne (2)</tspan></text>
+    <text id="Dominic_s_Pizza-2" data-name="Dominic&apos;s Pizza" transform="translate(17712 -500)" fill="#19e134" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dominic&apos;s Pizza</tspan></text>
+    <text id="_9713_points" data-name="9713 points" transform="translate(17855 -500)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">9713 points</tspan></text>
+    <text id="Deposit" transform="translate(17705 -532)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">Deposit</tspan></text>
+    <path id="Path_195" data-name="Path 195" d="M0,0V19.5" transform="translate(17707.5 -515.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <g id="Rectangle_401" data-name="Rectangle 401" transform="translate(17948 -612)" fill="#fff" stroke="#cf730b" stroke-width="4">
+      <rect width="260" height="137" stroke="none"/>
+      <rect x="2" y="2" width="256" height="133" fill="none"/>
+    </g>
+    <text id="Note:" transform="translate(17974 -606)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="17">Note:</tspan></text>
+    <text id="The_confiscation_action_gives_a_qty_for_the_tokens_being_confiscated_from_each_address_but_a_final_balance_to_the_deposit_address" data-name="The confiscation action gives a qty for the tokens being confiscated from each address, but a final balance to the deposit address" transform="translate(17960 -568.386)" fill="#707070" font-size="14" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="15">The confiscation action gives a qty </tspan><tspan x="0" y="34">for the tokens being confiscated </tspan><tspan x="0" y="53">from each address, but a final </tspan><tspan x="0" y="72">balance to the deposit address</tspan></text>
+  </g>
+</svg>

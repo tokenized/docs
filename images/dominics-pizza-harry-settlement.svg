@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="632" height="645" viewBox="0 0 632 645">
+  <g id="dominics-pizza-harry-settlement" transform="translate(-7576 10701)">
+    <g id="Rectangle_249" data-name="Rectangle 249" transform="translate(7729 -10442)" fill="#fcfcfc" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+      <rect width="357.499" height="386" stroke="none"/>
+      <rect x="0.5" y="0.5" width="356.499" height="385" fill="none"/>
+    </g>
+    <text id="_0.00_0_cents_" data-name="$0.00 (0 cents)" transform="translate(7921 -10135)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">$0.00 (0 cents)</tspan></text>
+    <g id="Rectangle_248" data-name="Rectangle 248" transform="translate(7576 -10701)" fill="#fcfcfc" stroke="#707070" stroke-width="1">
+      <rect width="632" height="230" stroke="none"/>
+      <rect x="0.5" y="0.5" width="631" height="229" fill="none"/>
+    </g>
+    <text id="Response_Transaction_Settlement_" data-name="Response Transaction (Settlement)" transform="translate(7597 -10669)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Response Transaction (Settlement)</tspan></text>
+    <line id="Line_294" data-name="Line 294" y2="136" transform="translate(7785.5 -10641.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <text id="INPUTS" transform="translate(7591 -10640)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">INPUTS</tspan></text>
+    <text id="OUTPUTS_" data-name="OUTPUTS " transform="translate(7801 -10640)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">OUTPUTS </tspan></text>
+    <text id="_0:_" data-name="0: " transform="translate(7591 -10605)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: </tspan></text>
+    <text id="VALUE" transform="translate(7994 -10640)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">VALUE</tspan></text>
+    <text id="Settlement_Action_Payload" data-name="Settlement Action Payload" transform="translate(7740 -10411)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Settlement Action Payload</tspan></text>
+    <text id="Settlements" transform="translate(7752 -10338)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">Settlements</tspan></text>
+    <text id="_99_coupons" data-name="99 coupons" transform="translate(7968 -10318)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">99 coupons</tspan></text>
+    <text id="_1_coupons" data-name="1 coupons" transform="translate(7968 -10300)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1 coupons</tspan></text>
+    <text id="ASSETID:_COUDOMsPIZZA01..._Free_Slice_Coupon" data-name="ASSETID: COUDOMsPIZZA01... Free Slice Coupon" transform="translate(7740 -10372)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">ASSETID: COUDOMsPIZZA01... Free Slice Coupon</tspan></text>
+    <line id="Line_295" data-name="Line 295" y2="57" transform="translate(7745.5 -10352.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <line id="Line_296" data-name="Line 296" y2="66" transform="translate(7863.5 -10504.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
+    <text id="_1:_" data-name="1: " transform="translate(7591 -10586)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1: </tspan></text>
+    <text id="AUD_Contract" data-name="AUD Contract" transform="translate(7609 -10586)" fill="#f13f3f" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">AUD Contract</tspan></text>
+    <text id="_0:_2" data-name="0: " transform="translate(7801 -10605)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: </tspan></text>
+    <text id="_1:_2" data-name="1: " transform="translate(7801 -10586)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1: </tspan></text>
+    <text id="_2:_" data-name="2: " transform="translate(7801 -10567)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">2: </tspan></text>
+    <text id="Dust" transform="translate(7995 -10605)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust</tspan></text>
+    <text id="Dust-2" data-name="Dust" transform="translate(7995 -10586)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust</tspan></text>
+    <text id="_3:_" data-name="3: " transform="translate(7801 -10548)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">3: </tspan></text>
+    <text id="Dominic_s_Pizza_1_" data-name="Dominic&apos;s Pizza (1)" transform="translate(7819 -10605)" fill="#19e134" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dominic&apos;s Pizza (1)</tspan></text>
+    <text id="_4:_" data-name="4: " transform="translate(7801 -10529)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">4: </tspan></text>
+    <text id="Harry_1_" data-name="Harry (1)" transform="translate(7819 -10586)" fill="#a5981e" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Harry (1)</tspan></text>
+    <text id="Harry_2_" data-name="Harry (2) " transform="translate(7819 -10567)" fill="#a5981e" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Harry (2) </tspan></text>
+    <text id="Harry_3_" data-name="Harry (3) " transform="translate(7819 -10529)" fill="#a5981e" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Harry (3) </tspan></text>
+    <text id="Dominic_s_Pizza_2_" data-name="Dominic&apos;s Pizza (2)" transform="translate(7819 -10548)" fill="#19e134" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dominic&apos;s Pizza (2)</tspan></text>
+    <text id="Dust-3" data-name="Dust" transform="translate(7995 -10567)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust</tspan></text>
+    <text id="Dust_" data-name="Dust " transform="translate(7995 -10548)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust </tspan></text>
+    <text id="Dust_2" data-name="Dust " transform="translate(7995 -10529)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust </tspan></text>
+    <text id="Dominic_s_Pizza_1_2" data-name="Dominic&apos;s Pizza (1)" transform="translate(7752 -10318)" fill="#19e134" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dominic&apos;s Pizza (1)</tspan></text>
+    <text id="Harry_3_:" data-name="Harry (3):" transform="translate(7752 -10300)" fill="#a5981e" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Harry (3):</tspan></text>
+    <text id="Harry_3_:-2" data-name="Harry (3):" transform="translate(7752 -10225)" fill="#a5981e" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Harry (3):</tspan></text>
+    <text id="Dominic_s_Pizza_Contract" data-name="Dominic&apos;s Pizza Contract" transform="translate(7609 -10605)" fill="#7030a0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dominic&apos;s Pizza Contract</tspan></text>
+    <g id="Rectangle_250" data-name="Rectangle 250" transform="translate(7817 -10523)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+      <rect width="115" height="18" stroke="none"/>
+      <rect x="0.5" y="0.5" width="114" height="17" fill="none"/>
+    </g>
+    <text id="N:_" data-name="N: " transform="translate(7801 -10510)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N: </tspan></text>
+    <text id="Settlement_Action" data-name="Settlement Action" transform="translate(7819 -10510)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Settlement Action</tspan></text>
+    <text id="N_A" data-name="N/A" transform="translate(7995 -10510)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N/A</tspan></text>
+    <text id="Not_Shown:_Contract_Fees" data-name="Not Shown: Contract Fees" transform="translate(7994 -10489)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Not Shown: Contract Fees</tspan></text>
+    <text id="Dominic_s_Pizza_Contract-2" data-name="Dominic&apos;s Pizza Contract" transform="translate(7740 -10384)" fill="#7030a0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dominic&apos;s Pizza Contract</tspan></text>
+    <text id="ASSETID:_LOYDOMsPIZZA02..._Loyalty_Points" data-name="ASSETID: LOYDOMsPIZZA02... Loyalty Points" transform="translate(7740 -10293)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">ASSETID: LOYDOMsPIZZA02... Loyalty Points</tspan></text>
+    <text id="Settlements-2" data-name="Settlements" transform="translate(7752 -10261)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">Settlements</tspan></text>
+    <text id="_7_points" data-name="7 points" transform="translate(7968 -10225)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">7 points</tspan></text>
+    <text id="_9993_points" data-name="9993 points" transform="translate(7968 -10244)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">9993 points</tspan></text>
+    <text id="Dominic_s_Pizza_1_3" data-name="Dominic&apos;s Pizza (1)" transform="translate(7752 -10244)" fill="#19e134" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dominic&apos;s Pizza (1)</tspan></text>
+    <line id="Line_297" data-name="Line 297" y2="55" transform="translate(7745.5 -10275.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <text id="AUD_Contract_" data-name="AUD Contract " transform="translate(7740 -10198)" fill="#f13f3f" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">AUD Contract </tspan></text>
+    <text id="ASSETID:_CURAUDx100c2020..._Australian_one_cent" data-name="ASSETID: CURAUDx100c2020... Australian one cent" transform="translate(7740 -10186)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">ASSETID: CURAUDx100c2020... Australian one cent</tspan></text>
+    <text id="Settlements-3" data-name="Settlements" transform="translate(7752 -10155)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">Settlements</tspan></text>
+    <line id="Line_300" data-name="Line 300" y2="96" transform="translate(7745.5 -10169.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <text id="Harry_2_2" data-name="Harry (2)" transform="translate(7752 -10116)" fill="#a5981e" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Harry (2)</tspan></text>
+    <text id="Harry_1_2" data-name="Harry (1)" transform="translate(7752 -10135)" fill="#a5981e" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Harry (1)</tspan></text>
+    <text id="_0.00_0_cents_2" data-name="$0.00 (0 cents)" transform="translate(7921 -10116)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">$0.00 (0 cents)</tspan></text>
+    <text id="Dominic_s_Pizza_2_2" data-name="Dominic&apos;s Pizza (2)" transform="translate(7752 -10097)" fill="#19e134" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dominic&apos;s Pizza (2)</tspan></text>
+    <text id="_44.00_4400_cents_" data-name="$44.00 (4400 cents)" transform="translate(7921 -10097)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">$44.00 (4400 cents)</tspan></text>
+    <text id="Harry_3_2" data-name="Harry (3)" transform="translate(7752 -10078)" fill="#a5981e" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Harry (3)</tspan></text>
+    <text id="_6.31_631_cents_" data-name="$6.31 (631 cents)" transform="translate(7921 -10078)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">$6.31 (631 cents)</tspan></text>
+  </g>
+</svg>

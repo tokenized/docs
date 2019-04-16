@@ -43,10 +43,10 @@ Once Dominic has finished entering the details he instructs his wallet to send t
 
 The smart contract receives the transaction and unpacks the details. After making sure that the details are valid, the smart contract responds with an Asset Creation action which generates the points and gives them to Dominic's wallet. He now has 10,000 loyalty points which he can hand out to customers. Because customers will give them back to him to redeem pizza, he only needs as many as might be outstanding at any time. The loyalty program is set to expire with the lease on his restaurant but Dominic plans to modify the asset when he extends so that the program is always in place.
 
-### Doing Business
+### First Customer
 Dominic opens his store to great fanfare, and has people lined up for his first night in business. 
 
-His first customer (Harry) asks to purchase a hawaiian pizza with extra pineapple and two pints of Dominic's locally sourced craft beer, and asks to pay in eAUD. The process uses a point of sale protocol specifically for use in retail. The image below details the order of operations:
+His first customer (Harry) asks to purchase a hawaiian pizza with extra pineapple and two pints of Dominic's locally sourced craft beer, and asks to pay in eAUD. The process uses a point of sale protocol and an NFC enabled cashpoint. The image below details the order of operations:
 
 ![Dominic's Pizza - Harry's transfer, order of operations](https://raw.githubusercontent.com/tokenized/docs/master/images/dominics-pizza-harry-transfer-order-of-operations.svg?sanitize=true "Dominic's Pizza - Harry's transfer, order of operations") {.frame .centered .padded}
 
@@ -56,7 +56,35 @@ This is the detail of the transfer operation which is sent to the network:
 
 The Dominic's Pizza contract sees the transaction arrive and unpacks it to make sure that it's valid. Seeing no issue, it creates a Settlement Action and sends it to the eAUD smart contract using a Message action. The eAUD smart contract checks Harry's balance and creates a transaction using the inputs sent to each contract in the transfer action, and sends this back to the Dominic's Pizza contract in a Signature Request message.
 
-insert image
-
 The Dominics pizza contract signs the transaction and sends it on to the network. Harry and Dominic's Pizza's wallets each see that the transaction has been settled and Harry is served his pizza.
 
+![Dominic's Pizza - Harry's Settlement](https://raw.githubusercontent.com/tokenized/docs/master/images/dominics-pizza-harry-settlement.svg?sanitize=true "Dominic's Pizza - Harry's Settlement") {.frame .centered .padded}
+
+### Later in the evening
+Dominic has had a great evening. He has sold out of almost every pizza and done huge trade in drinks and snacks. Customers are no longer waiting in line and he is able to catch up on dishes while the floor is quiet.
+Jo-Anne enters and approaches the counter. Dominic quickly walks to the sales point and takes her order.
+Jo-Anne is after 2 slices, one Hawaiian and one Margarita, and a bottle of sparkling water. Dominic enters her order in the till but inadvertently types in a quantity of 22 for loyalty points instead of 2.
+
+![Dominic's Pizza - Jo-Anne's transfer](https://raw.githubusercontent.com/tokenized/docs/master/images/dominics-pizza-jo-anne-transfer.svg?sanitize=true "Dominic's Pizza - Jo-Anne's transfer") {.frame .centered .padded}
+
+He asks Jo-Anne to tap her mobile wallet on the cashpoint and without paying too much attention, she signs for the transaction. and it settles.
+
+![Dominic's Pizza - Jo-Anne's settlement](https://raw.githubusercontent.com/tokenized/docs/master/images/dominics-pizza-jo-anne-settlement.svg?sanitize=true "Dominic's Pizza - Jo-Anne's settlement") {.frame .centered .padded}
+
+### The mistake is found
+Joanne looks at her wallet while Dominic puts her slices through the oven and sees that she's received 22 loyalty points. She quickly scans the flier that is on the wall and sees that it _clearly_ states that loyalty points are only handed out 1 per slice, and straight away recognises what's gone wrong.
+
+She gets Dominic's attention and shows him the mistake. He thanks her profusely and tells her not to worry and that he will fix the issue. A queue has formed behind her so he quickly writes a note on a post-it, then serves her the pizza and drink. Jo-Anne leaves the restaurant and forgets about the whole thing.
+
+At close, Dominic sees the note and remembers that he has to correct the accounting in his loyalty program.
+Using his desktop wallet, he goes into the 'Enforcement' menu and selects confiscate. He can see the address to which the 22 tokens were sent and uses it in the creation of an Order transaction.
+
+![Dominic's Pizza Order action (Confiscation)](https://raw.githubusercontent.com/tokenized/docs/master/images/dominics-pizza-order-confiscation.svg?sanitize=true "Dominic's Pizza Order action (confiscation)") {.frame .centered .padded}
+
+The smart contract unpacks the order action and sees that Dominic wants to confiscate 20 of Jo-Annes points back, leaving Jo-Anne with the correct quantity of 2 points. It creates a Confiscation action that takes 20 tokens from Jo-Anne's balance and gives them back to Dominic's Pizza.
+
+![Dominic's Pizza Confiscation action](https://raw.githubusercontent.com/tokenized/docs/master/images/dominics-pizza-confiscation-action.svg?sanitize=true "Dominic's Pizza Confiscation action") {.frame .centered .padded}
+
+The confiscation takes effect immediately. Dominic sees the balance update in his wallet, and the next time Jo-Anne looks at her Dominic's Pizza loyalty point balance, the correct quantity of 2 points will be shown.
+
+Dominic is very pleased with his new sysetem...

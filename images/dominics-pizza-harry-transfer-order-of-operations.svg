@@ -44,8 +44,8 @@
     </g>
     <text id="Dominic_uses_POS_to_build_transaction_template" data-name="Dominic uses POS to build transaction template" transform="translate(19966 -10449)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Dominic uses POS to build transaction template</tspan></text>
     <text id="STEP_2" data-name="STEP 2" transform="translate(20112 -10253)" fill="#707070" font-size="18" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">STEP 2</tspan></text>
-    <text id="Harry_connects_his_wallet_to_the_POS_device_using_the_NFC_touch_point" data-name="Harry connects his wallet to the POS device using the NFC
-touch point" transform="translate(20140 -10211)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="-210.672" y="0">Harry connects his wallet to the POS device using the NFC</tspan><tspan x="-42.152" y="21">touch point</tspan></text>
+    <text id="Harry_connects_his_wallet_to_the_POS_using_the_NFC_CashPoint" data-name="Harry connects his wallet to the POS using the NFC
+CashPoint" transform="translate(20140 -10211)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="-185.242" y="0">Harry connects his wallet to the POS using the NFC</tspan><tspan x="-36.082" y="21">CashPoint</tspan></text>
     <rect id="terminal" width="113" height="112" transform="translate(19959 -10166)" fill="url(#pattern)"/>
     <g id="chevron-pointing-to-the-left" transform="translate(20340.123 -10118.049)">
       <path id="Path_60" data-name="Path 60" d="M4.91,8.322l5.2-5.192a1.313,1.313,0,0,0,.4-.967,1.313,1.313,0,0,0-.4-.967l-.8-.8A1.383,1.383,0,0,0,7.37.4L.4,7.35a1.379,1.379,0,0,0,0,1.934L7.37,16.238a1.383,1.383,0,0,0,1.936,0l.8-.8a1.306,1.306,0,0,0,.4-.961,1.342,1.342,0,0,0-.4-.972Z" transform="translate(-224 0)"/>
