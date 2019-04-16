@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="628" height="716" viewBox="0 0 628 716">
+  <g id="dominics-pizza-contract-offer" transform="translate(-10799 901)">
+    <g id="Rectangle_316" data-name="Rectangle 316" transform="translate(10799 -901)" fill="#fcfcfc" stroke="#707070" stroke-width="1">
+      <rect width="628" height="164" stroke="none"/>
+      <rect x="0.5" y="0.5" width="627" height="163" fill="none"/>
+    </g>
+    <text id="Dominic_s_Pizza" data-name="Dominic&apos;s Pizza" transform="translate(10835 -801)" fill="#19e134" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dominic&apos;s Pizza</tspan></text>
+    <text id="Request_Transaction_Contract_Offer_" data-name="Request Transaction (Contract Offer)" transform="translate(10816 -868)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Request Transaction (Contract Offer)</tspan></text>
+    <line id="Line_378" data-name="Line 378" y2="86" transform="translate(11004.5 -840.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <text id="INPUTS" transform="translate(10816 -836)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">INPUTS</tspan></text>
+    <text id="OUTPUTS_" data-name="OUTPUTS " transform="translate(11020 -839)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">OUTPUTS </tspan></text>
+    <text id="_0:_" data-name="0: " transform="translate(10816 -801)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: </tspan></text>
+    <text id="VALUE" transform="translate(11213 -839)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">VALUE</tspan></text>
+    <text id="_0:_2" data-name="0: " transform="translate(11020 -801)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: </tspan></text>
+    <text id="Dominic_s_Pizza_Contract" data-name="Dominic&apos;s Pizza Contract" transform="translate(11039 -801)" fill="#7030a0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dominic&apos;s Pizza Contract</tspan></text>
+    <text id="Contract_Fees_Response_Cost_" data-name="Contract Fees + Response Cost " transform="translate(11213 -801)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Contract Fees + Response Cost </tspan></text>
+    <g id="Rectangle_317" data-name="Rectangle 317" transform="translate(11036 -796)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+      <rect width="138" height="18" stroke="none"/>
+      <rect x="0.5" y="0.5" width="137" height="17" fill="none"/>
+    </g>
+    <text id="N:_" data-name="N: " transform="translate(11020 -782)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N: </tspan></text>
+    <text id="Contract_Offer_Action" data-name="Contract Offer Action" transform="translate(11038 -782)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Contract Offer Action</tspan></text>
+    <text id="N_A" data-name="N/A" transform="translate(11213 -782)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N/A</tspan></text>
+    <g id="Rectangle_318" data-name="Rectangle 318" transform="translate(10816 -717)" fill="#fcfcfc" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+      <rect width="594.499" height="532" stroke="none"/>
+      <rect x="0.5" y="0.5" width="593.499" height="531" fill="none"/>
+    </g>
+    <text id="Contract_Offer_Action_Payload" data-name="Contract Offer Action Payload" transform="translate(10830 -684)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Contract Offer Action Payload</tspan></text>
+    <line id="Line_379" data-name="Line 379" y2="61" transform="translate(11080.5 -777.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
+    <text id="Not_Shown:_Change" data-name="Not Shown: Change" transform="translate(11213 -762)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Not Shown: Change</tspan></text>
+    <line id="Line_380" data-name="Line 380" y2="457" transform="translate(10832.5 -653.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <text id="DETAILS" transform="translate(10830 -672)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">DETAILS</tspan></text>
+    <text id="Contract_Name:_Dominic_s_Pizza_Loyalty_Program_Smart_Contract_Body_of_Agreement_Type:_SHA-256_Hash_Body_of_Agreement:_The_SHA-256_hash_of_Dominic_s_terms_and_conditions_Contract_Type:_Loyalty_Program_Supporting_Docs_File_Type:_7zip_Supporting_Docs:_A_7z" data-name="Contract Name:		Dominic&apos;s Pizza Loyalty Program Smart Contract
+Body of Agreement Type:	SHA-256 Hash
+Body of Agreement:	The SHA-256 hash of Dominic&apos;s terms and conditions
+Contract Type:		Loyalty Program
+Supporting Docs File Type:	7zip
+Supporting Docs:		A 7z" transform="translate(10840 -638)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0" xml:space="preserve">Contract Name:		Dominic&apos;s Pizza Loyalty Program Smart Contract</tspan><tspan x="0" y="19">Body of Agreement Type:	SHA-256 Hash</tspan><tspan x="0" y="38">Body of Agreement:	The SHA-256 hash of Dominic&apos;s terms and conditions</tspan><tspan x="0" y="57" xml:space="preserve">Contract Type:		Loyalty Program</tspan><tspan x="0" y="76">Supporting Docs File Type:	7zip</tspan><tspan x="0" y="95" xml:space="preserve">Supporting Docs:		A 7zip file containing supporting docs including the terms </tspan><tspan x="0" y="114" xml:space="preserve">			and conditions file and a flier detailing the initial program</tspan><tspan x="0" y="133" xml:space="preserve">Governing Law:		Australia</tspan><tspan x="0" y="152" xml:space="preserve">Jurisdiction:		Australia</tspan><tspan x="0" y="171">Contract Expiration:	Contract is set to operate for 2 years</tspan><tspan x="0" y="190" xml:space="preserve">Contract URI:		A link to Dominic&apos;s contract file</tspan><tspan x="0" y="209" xml:space="preserve">Issuer:			Dominic&apos;s Pizza Pty Ltd</tspan><tspan x="0" y="228" xml:space="preserve">	Address: 	Dominics pizza address</tspan><tspan x="0" y="247" xml:space="preserve">	Email: 		mail@dominicspizza.com</tspan><tspan x="0" y="266" xml:space="preserve">	Phone no: 	Dominic&apos;s Pizza phone number</tspan><tspan x="0" y="285" xml:space="preserve">	Administration -	CEO:		Dominic Spinner</tspan><tspan x="0" y="304" xml:space="preserve">			Manager:	Elton Walker</tspan><tspan x="0" y="323" xml:space="preserve">			Manager:	Fiona Temple</tspan><tspan x="0" y="342" xml:space="preserve">Company Logo:		URL to logo file</tspan><tspan x="0" y="361">Contract Operator?:	Yes</tspan><tspan x="0" y="380">Contract Operator:	Tokenized</tspan><tspan x="0" y="399" xml:space="preserve">Contract Flags:		Issuer can amend all fields. Referendums and</tspan><tspan x="0" y="418" xml:space="preserve">			initiatives are unable to be used.</tspan><tspan x="0" y="437" xml:space="preserve">Contract Fee:		As per the detail in the Tokenized operator agreement</tspan></text>
+    <text id="Tokenized" transform="translate(10835 -782)" fill="#e12719" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Tokenized</tspan></text>
+    <text id="_1:_" data-name="1: " transform="translate(10816 -782)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1: </tspan></text>
+  </g>
+</svg>

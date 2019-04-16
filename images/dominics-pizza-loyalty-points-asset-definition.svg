@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="628" height="491" viewBox="0 0 628 491">
+  <g id="dominics-pizza-loyalty-points-asset-definition" transform="translate(-4476 892)">
+    <g id="Rectangle_316" data-name="Rectangle 316" transform="translate(4476 -892)" fill="#fcfcfc" stroke="#707070" stroke-width="1">
+      <rect width="628" height="164" stroke="none"/>
+      <rect x="0.5" y="0.5" width="627" height="163" fill="none"/>
+    </g>
+    <text id="Dominic_s_Pizza" data-name="Dominic&apos;s Pizza" transform="translate(4512 -792)" fill="#19e134" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dominic&apos;s Pizza</tspan></text>
+    <text id="Request_Transaction_Asset_Definition_" data-name="Request Transaction (Asset Definition)" transform="translate(4493 -859)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Request Transaction (Asset Definition)</tspan></text>
+    <line id="Line_378" data-name="Line 378" y2="86" transform="translate(4681.5 -831.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <text id="INPUTS" transform="translate(4493 -827)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">INPUTS</tspan></text>
+    <text id="OUTPUTS_" data-name="OUTPUTS " transform="translate(4697 -830)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">OUTPUTS </tspan></text>
+    <text id="_0:_" data-name="0: " transform="translate(4493 -792)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: </tspan></text>
+    <text id="VALUE" transform="translate(4890 -830)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">VALUE</tspan></text>
+    <text id="_0:_2" data-name="0: " transform="translate(4697 -792)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: </tspan></text>
+    <text id="Dominic_s_Pizza_Contract" data-name="Dominic&apos;s Pizza Contract" transform="translate(4716 -792)" fill="#7030a0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dominic&apos;s Pizza Contract</tspan></text>
+    <text id="Contract_Fees_Response_Cost_" data-name="Contract Fees + Response Cost " transform="translate(4890 -792)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Contract Fees + Response Cost </tspan></text>
+    <g id="Rectangle_317" data-name="Rectangle 317" transform="translate(4713 -787)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+      <rect width="145" height="18" stroke="none"/>
+      <rect x="0.5" y="0.5" width="144" height="17" fill="none"/>
+    </g>
+    <text id="N:_" data-name="N: " transform="translate(4697 -773)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N: </tspan></text>
+    <text id="Asset_Definition_Action" data-name="Asset Definition Action" transform="translate(4715 -773)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Asset Definition Action</tspan></text>
+    <text id="N_A" data-name="N/A" transform="translate(4890 -773)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N/A</tspan></text>
+    <g id="Rectangle_318" data-name="Rectangle 318" transform="translate(4493 -708)" fill="#fcfcfc" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+      <rect width="594.499" height="307" stroke="none"/>
+      <rect x="0.5" y="0.5" width="593.499" height="306" fill="none"/>
+    </g>
+    <text id="Asset_Definition_Action_Payload" data-name="Asset Definition Action Payload" transform="translate(4509 -675)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Asset Definition Action Payload</tspan></text>
+    <line id="Line_379" data-name="Line 379" y2="61" transform="translate(4757.5 -768.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
+    <text id="Not_Shown:_Change" data-name="Not Shown: Change" transform="translate(4890 -753)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Not Shown: Change</tspan></text>
+    <line id="Line_380" data-name="Line 380" y2="229" transform="translate(4511.5 -644.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <text id="DETAILS" transform="translate(4509 -663)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">DETAILS</tspan></text>
+    <text id="Asset_Type:_LOY_Loyalty_Points_Asset_Code:_DOMsPIZZA0293bQswj5sjLPufanHl7NJ_Asset_Auth_Flags:_Issuer_can_amend_all_fields_Transfers_Permitted:_False_-_Users_can_only_send_tokens_to_issuer_controlled_addresses_Enforcement_orders:_True_-_Enabled_in_case" data-name="Asset Type:		LOY (Loyalty Points)
+Asset Code:		DOMsPIZZA0293bQswj5sjLPufanHl7NJ
+Asset Auth Flags:		Issuer can amend all fields
+Transfers Permitted:	False - Users can only send tokens to issuer controlled addresses
+Enforcement orders:	True - Enabled in case" transform="translate(4519 -629)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0" xml:space="preserve">Asset Type:		LOY (Loyalty Points)</tspan><tspan x="0" y="19" xml:space="preserve">Asset Code:		DOMsPIZZA0293bQswj5sjLPufanHl7NJ</tspan><tspan x="0" y="38" xml:space="preserve">Asset Auth Flags:		Issuer can amend all fields</tspan><tspan x="0" y="57">Transfers Permitted:	False - Users can only send tokens to issuer controlled addresses</tspan><tspan x="0" y="76">Enforcement orders:	True - Enabled in case of vouchers being incorrectly distributed</tspan><tspan x="0" y="95" xml:space="preserve">Token Qty:		10,000</tspan><tspan x="0" y="114">Asset Payload -	</tspan><tspan x="0" y="133" xml:space="preserve">	Version: 			0</tspan><tspan x="0" y="152" xml:space="preserve">	Redeeming entity:		Dominic&apos;s Pizza</tspan><tspan x="0" y="171" xml:space="preserve">	Issue Date:		Today&apos;s date</tspan><tspan x="0" y="190" xml:space="preserve">	Expiry Date:		2 years from today</tspan><tspan x="0" y="209" xml:space="preserve">	Description:		Loyalty tokens</tspan></text>
+  </g>
+</svg>
