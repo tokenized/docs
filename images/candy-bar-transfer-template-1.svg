@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="628.5" height="508" viewBox="0 0 628.5 508">
+  <g id="candy-bar-transfer-template" transform="translate(-5659 9519)">
+    <g id="Rectangle_204" data-name="Rectangle 204" transform="translate(5659 -9519)" fill="#fcfcfc" stroke="#707070" stroke-width="1">
+      <rect width="628" height="172" stroke="none"/>
+      <rect x="0.5" y="0.5" width="627" height="171" fill="none"/>
+    </g>
+    <text id="Request_Transaction_Transfer_" data-name="Request Transaction (Transfer)" transform="translate(5671 -9486)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Request Transaction (Transfer)</tspan></text>
+    <line id="Line_271" data-name="Line 271" y2="101" transform="translate(5853.5 -9457.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <text id="INPUTS" transform="translate(5672 -9457)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">INPUTS</tspan></text>
+    <text id="OUTPUTS_" data-name="OUTPUTS " transform="translate(5875 -9457)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">OUTPUTS </tspan></text>
+    <text id="_0:_" data-name="0: " transform="translate(5672 -9422)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: </tspan></text>
+    <text id="VALUE" transform="translate(6068 -9457)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">VALUE</tspan></text>
+    <text id="Empty_for_customer_" data-name="Empty (for customer) " transform="translate(5695 -9422)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Empty (for customer) </tspan></text>
+    <text id="_0:_2" data-name="0: " transform="translate(5876 -9422)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: </tspan></text>
+    <text id="_1:_" data-name="1: " transform="translate(5876 -9403)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1: </tspan></text>
+    <text id="AUD_Contract_" data-name="AUD Contract " transform="translate(5893 -9422)" fill="#f13f3f" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">AUD Contract </tspan></text>
+    <text id="Contract_Fees_Response_Cost_" data-name="Contract Fees + Response Cost " transform="translate(6069 -9422)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Contract Fees + Response Cost </tspan></text>
+    <text id="Dust" transform="translate(6069 -9403)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust</tspan></text>
+    <text id="Cinema_s_eAUD_wallet_" data-name="Cinema’s eAUD wallet " transform="translate(5893 -9403)" fill="#002060" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Cinema’s eAUD wallet </tspan></text>
+    <g id="Rectangle_205" data-name="Rectangle 205" transform="translate(5663 -9315)" fill="#fcfcfc" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+      <rect width="363.499" height="182" stroke="none"/>
+      <rect x="0.5" y="0.5" width="362.499" height="181" fill="none"/>
+    </g>
+    <text id="Transfer_Action_Payload" data-name="Transfer Action Payload" transform="translate(5674 -9280)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Transfer Action Payload</tspan></text>
+    <text id="Senders" transform="translate(5689 -9228)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">Senders</tspan></text>
+    <text id="Receivers" transform="translate(5689 -9197)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">Receivers</tspan></text>
+    <text id="ASSETID:_CURAUDx100c2020..._Australian_one_cent" data-name="ASSETID: CURAUDx100c2020... Australian one cent" transform="translate(5678 -9262)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">ASSETID: CURAUDx100c2020... Australian one cent</tspan></text>
+    <line id="Line_272" data-name="Line 272" y2="84" transform="translate(5679.5 -9240.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <line id="Line_273" data-name="Line 273" y2="22" transform="translate(5797.5 -9336.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
+    <g id="Rectangle_206" data-name="Rectangle 206" transform="translate(5892 -9378)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+      <rect width="103.503" height="18" stroke="none"/>
+      <rect x="0.5" y="0.5" width="102.503" height="17" fill="none"/>
+    </g>
+    <text id="N:_" data-name="N: " transform="translate(5873 -9364)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N: </tspan></text>
+    <text id="Transfer_Action" data-name="Transfer Action" transform="translate(5894 -9364)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Transfer Action</tspan></text>
+    <text id="Empty_for_customer_2" data-name="Empty (for customer) " transform="translate(5689 -9208)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Empty (for customer) </tspan></text>
+    <text id="Cinema_s_eAUD_wallet_2" data-name="Cinema’s eAUD wallet " transform="translate(5690 -9161)" fill="#002060" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Cinema’s eAUD wallet </tspan></text>
+    <text id="_29.95_2995_cents_" data-name="$29.95 (2995 cents)" transform="translate(5839 -9161)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">$29.95 (2995 cents)</tspan></text>
+    <text id="N_A" data-name="N/A" transform="translate(6069 -9364)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N/A</tspan></text>
+    <g id="Rectangle_290" data-name="Rectangle 290" transform="translate(6037 -9314)" fill="#fcfcfc" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+      <rect width="250.499" height="181" stroke="none"/>
+      <rect x="0.5" y="0.5" width="249.499" height="180" fill="none"/>
+    </g>
+    <line id="Line_349" data-name="Line 349" y2="73" transform="translate(6053.5 -9386.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
+    <text id="Message_Action_Payload" data-name="Message Action Payload" transform="translate(6050 -9276)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Message Action Payload</tspan></text>
+    <text id="Receipt:_Gigaplex_Cinemas_Time_and_Date" data-name="Receipt: Gigaplex Cinemas
+Time and Date" transform="translate(6053 -9264)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">Receipt: Gigaplex Cinemas</tspan><tspan x="0" y="29">Time and Date</tspan></text>
+    <line id="Line_350" data-name="Line 350" y2="80" transform="translate(6055.5 -9218.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <text id="Medium_Popcorn_Combo" data-name="Medium Popcorn Combo" transform="translate(6065 -9204)" fill="#707070" font-size="14" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Medium Popcorn Combo</tspan></text>
+    <text id="_19.97" data-name="$19.97" transform="translate(6227 -9204)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">$19.97</tspan></text>
+    <text id="Choc_Top" data-name="Choc Top" transform="translate(6065 -9184)" fill="#707070" font-size="14" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Choc Top</tspan></text>
+    <text id="_9.98" data-name="$9.98" transform="translate(6227 -9184)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">$9.98</tspan></text>
+    <text id="Total:" transform="translate(6188 -9164)" fill="#707070" font-size="14" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Total:</tspan></text>
+    <text id="_29.95" data-name="$29.95" transform="translate(6227 -9164)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">$29.95</tspan></text>
+    <text id="Settlement_via:_AUD_Contract" data-name="Settlement via: AUD Contract" transform="translate(6066 -9143)" fill="#707070" font-size="14" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Settlement via: AUD Contract</tspan></text>
+    <text id="Message_Action" data-name="Message Action" transform="translate(5894 -9384)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Message Action</tspan></text>
+    <text id="N-1:_" data-name="N-1: " transform="translate(5860 -9384)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N-1: </tspan></text>
+    <text id="N_A-2" data-name="N/A" transform="translate(6069 -9384)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N/A</tspan></text>
+    <line id="Line_483" data-name="Line 483" x2="107" transform="translate(5797.5 -9336.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
+    <line id="Line_484" data-name="Line 484" y2="23" transform="translate(5904.5 -9359.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
+    <g id="Rectangle_392" data-name="Rectangle 392" transform="translate(5892 -9398)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+      <rect width="103.503" height="18" stroke="none"/>
+      <rect x="0.5" y="0.5" width="102.503" height="17" fill="none"/>
+    </g>
+    <line id="Line_485" data-name="Line 485" x2="59" transform="translate(5994.5 -9386.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
+    <g id="Rectangle_393" data-name="Rectangle 393" transform="translate(5928 -9122)" fill="#fff" stroke="#cf730b" stroke-width="4">
+      <rect width="310" height="111" stroke="none"/>
+      <rect x="2" y="2" width="306" height="107" fill="none"/>
+    </g>
+    <text id="Notes:" transform="translate(5944 -9116)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="17">Notes:</tspan></text>
+    <text id="_1:_Request_actions_must_always_be_the_final_output_in_a_transaction_2:_Only_one_request_action_per_transaction" data-name="1: Request actions must always be the final output in a transaction
+2: Only one request action per transaction" transform="translate(5944 -9085)" fill="#707070" font-size="14" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="15">1: Request actions must always be the final </tspan><tspan x="0" y="34">output in a transaction</tspan><tspan x="0" y="53">2: Only one request action per transaction</tspan></text>
+    <line id="Line_486" data-name="Line 486" y2="238" transform="translate(5989.5 -9359.5)" fill="none" stroke="#cf730b" stroke-width="1" stroke-dasharray="3"/>
+  </g>
+</svg>

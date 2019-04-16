@@ -13,14 +13,14 @@
     <text id="VALUE" transform="translate(11213 -839)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">VALUE</tspan></text>
     <text id="_0:_2" data-name="0: " transform="translate(11020 -801)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: </tspan></text>
     <text id="Smart_Contract" data-name="Smart Contract" transform="translate(11039 -801)" fill="#7030a0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Smart Contract</tspan></text>
-    <text id="Contract_Fees_Response_Cost_" data-name="Contract Fees + Response Cost " transform="translate(11215 -801)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Contract Fees + Response Cost </tspan></text>
+    <text id="Contract_Fees_Response_Cost_" data-name="Contract Fees + Response Cost " transform="translate(11213 -801)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Contract Fees + Response Cost </tspan></text>
     <g id="Rectangle_317" data-name="Rectangle 317" transform="translate(11036 -796)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
       <rect width="138" height="18" stroke="none"/>
       <rect x="0.5" y="0.5" width="137" height="17" fill="none"/>
     </g>
     <text id="N:_" data-name="N: " transform="translate(11020 -782)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N: </tspan></text>
     <text id="Contract_Offer_Action" data-name="Contract Offer Action" transform="translate(11038 -782)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Contract Offer Action</tspan></text>
-    <text id="N_A" data-name="N/A" transform="translate(11214 -782)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N/A</tspan></text>
+    <text id="N_A" data-name="N/A" transform="translate(11213 -782)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N/A</tspan></text>
     <g id="Rectangle_318" data-name="Rectangle 318" transform="translate(10949 -717)" fill="#fcfcfc" stroke="#707070" stroke-width="1" stroke-dasharray="3">
       <rect width="387.499" height="404" stroke="none"/>
       <rect x="0.5" y="0.5" width="386.499" height="403" fill="none"/>

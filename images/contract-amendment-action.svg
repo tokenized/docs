@@ -13,14 +13,14 @@
     <text id="VALUE" transform="translate(12510 -839)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">VALUE</tspan></text>
     <text id="_0:_2" data-name="0: " transform="translate(12310 -801)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: </tspan></text>
     <text id="Smart_Contract" data-name="Smart Contract" transform="translate(12329 -801)" fill="#7030a0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Smart Contract</tspan></text>
-    <text id="Contract_Fees_Response_Cost_" data-name="Contract Fees + Response Cost " transform="translate(12512 -801)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Contract Fees + Response Cost </tspan></text>
+    <text id="Contract_Fees_Response_Cost_" data-name="Contract Fees + Response Cost " transform="translate(12510 -801)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Contract Fees + Response Cost </tspan></text>
     <g id="Rectangle_332" data-name="Rectangle 332" transform="translate(12326 -796)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
       <rect width="181" height="18" stroke="none"/>
       <rect x="0.5" y="0.5" width="180" height="17" fill="none"/>
     </g>
     <text id="N:_" data-name="N: " transform="translate(12310 -782)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N: </tspan></text>
     <text id="Contract_Amendment_Action" data-name="Contract Amendment Action" transform="translate(12328 -782)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Contract Amendment Action</tspan></text>
-    <text id="N_A" data-name="N/A" transform="translate(12511 -782)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N/A</tspan></text>
+    <text id="N_A" data-name="N/A" transform="translate(12510 -782)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N/A</tspan></text>
     <g id="Rectangle_333" data-name="Rectangle 333" transform="translate(12239 -717)" fill="#fcfcfc" stroke="#707070" stroke-width="1" stroke-dasharray="3">
       <rect width="473.499" height="186" stroke="none"/>
       <rect x="0.5" y="0.5" width="472.499" height="185" fill="none"/>
