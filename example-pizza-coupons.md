@@ -61,7 +61,7 @@ The Dominics pizza contract signs the transaction and sends it on to the network
 ![Dominic's Pizza - Harry's Settlement](https://raw.githubusercontent.com/tokenized/docs/master/images/dominics-pizza-harry-settlement.svg?sanitize=true "Dominic's Pizza - Harry's Settlement") {.frame .centered .padded}
 
 ### Later in the evening
-Dominic has had a great evening. He has sold out of almost every pizza and done huge trade in drinks and snacks. Customers are no longer waiting in line and he is able to catch up on dishes while the floor is quiet.
+Dominic has had a great evening. He has sold out of almost every pizza and done huge trade in drinks and snacks. He has already run out of the free slice coupons so is doing regular trade. It has quietened down and customers are no longer waiting in line and he is able to catch up on dishes.
 Jo-Anne enters and approaches the counter. Dominic quickly walks to the sales point and takes her order.
 Jo-Anne is after 2 slices, one Hawaiian and one Margarita, and a bottle of sparkling water. Dominic enters her order in the till but inadvertently types in a quantity of 22 for loyalty points instead of 2.
 
