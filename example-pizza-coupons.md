@@ -104,21 +104,29 @@ outputs:dominics pizza Contract 	(contract fees and response costs)
 		<receipt>
 		<transfer_action>
 
+_________________________________
+Transfer Action:
 Using 		135.32 eAUD			from 	Harry (1)
-transfer 	57.23	 			to 		Dominic's Pizza
-transfer 	78.09	 			to 		Harry (2)
+transfer 	44.00	 			to 		Dominic's Pizza
+transfer 	91.32	 			to 		Harry (2)
 
-Using 		10,000 DOMsPIZZA...	from 	Dominic's Pizza
+Using 		100 DOMsPIZZA01...	from 	Dominic's Pizza
 transfer 	1					to 		Harry (2)
-transfer 	9999 				to 		Dominic's Pizza
+transfer 	99 					to 		Dominic's Pizza
 
+Using 		10,000 DOMsPIZZA02...	from 	Dominic's Pizza
+transfer 	7					to 		Harry (2)
+transfer 	9999 				to 		Dominic's Pizza
+_________________________________
 Receipt:
 1 Hawaiian Pizza 		$25
 1 extra pineapple		$4
 2 Craft Beer pint 		$12
+1 Salted Crisps			$3
 
 1 Free Slice voucher 	Free
 7 Dom's Loyalty Points 	Free
+__________________________________
 
 Dominic's system now sends this to Harry's wallet in a 'Signature Request' message action. Harry's wallet automatically sees the transaction come in and notifies him of its arrival. He looks at the receipt and the amounts he is transferring and he accepts. The wallet signs his input and sends the transaction onto the network.
 
