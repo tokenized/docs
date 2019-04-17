@@ -48,7 +48,7 @@ A message that contains a bitcoin transaction that was accepted by the network o
         </td>
         <td>
             Timestamp in nanoseconds for when the message sender creates the transaction.
-             Example: 1551767413250187179
+            
         </td>
     </tr>
     <tr>
@@ -93,7 +93,7 @@ A message that contains all of the details required for an agreement to be forme
         </td>
         <td>
             Timestamp in nanoseconds for when the message sender created the offer.
-             Example: 1551767413250187179
+            
         </td>
     </tr>
     <tr>
@@ -138,7 +138,7 @@ Partially-signed transactions (Tokenized actions, Bitcoin, Multisig, Threshold S
         </td>
         <td>
             Timestamp in nanoseconds for when the message sender creates the transaction.
-             Example: 1551767413250187179
+            
         </td>
     </tr>
     <tr>
@@ -183,7 +183,7 @@ A message that contains a multi-contract settlement that needs settlement data a
         </td>
         <td>
             Timestamp in nanoseconds for when the message sender creates the transaction.
-             Example: 1551767413250187179
+            
         </td>
     </tr>
     <tr>
@@ -199,7 +199,7 @@ A message that contains a multi-contract settlement that needs settlement data a
     <tr>
         <td>ContractFees</td>
         <td>
-            <a href="field-types#type-target-address">TargetAddress[]</a>
+            <a href="field-types#type-target-address">TargetAddress[](8)</a>
         </td>
         <td>
             Contract fees (in bitcoin) and addresses(PKHs) where fees should be paid. Added by each contract as settlement data is added.
@@ -248,7 +248,7 @@ Generic public message or public announcement. Sent to an address(es).  Can be u
         </td>
         <td>
             Timestamp in nanoseconds for when the message sender creates the transaction.
-             Example: 1551767413250187179
+            
         </td>
     </tr>
     <tr>
@@ -293,7 +293,7 @@ Generic private message. Sent to another address(es). Encryption is to be used.
         </td>
         <td>
             Timestamp in nanoseconds for when the message sender creates the transaction.
-             Example: 1551767413250187179
+            
         </td>
     </tr>
     <tr>

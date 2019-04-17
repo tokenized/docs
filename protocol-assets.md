@@ -1,7 +1,7 @@
 # Protocol Assets
 
 - [Introduction](#introduction)
-- [Available Actions](#all-assets)
+- [Available Assets](#all-assets)
 
 <a name="introduction"></a>
 ## Introduction
@@ -23,7 +23,7 @@ Asset Types are used with reference to the `AssetPayload` field found in the Ass
 <a name="action-coupon"></a>
 #### Coupon
 
-A voucher entitling the holder to a discount off a particular product or service.
+A voucher entitling the holder to a discount on a particular product or service.
 
 <table>
     <tr>
@@ -84,10 +84,10 @@ A voucher entitling the holder to a discount off a particular product or service
     <tr>
         <td>Currency</td>
         <td>
-            Currency
+            CurrencyType
         </td>
         <td>
-            Currency for coupon. From resources/currency.
+            International Organization for Standardization code for Currency. Currency for coupon. From resources/currency.
              Example: AUD
         </td>
     </tr>
@@ -129,10 +129,10 @@ A Currency
     <tr>
         <td>ISOCode</td>
         <td>
-            Currency
+            CurrencyType
         </td>
         <td>
-            
+            International Organization for Standardization code for Currency. (Specification/Resources)
              Example: AUD
         </td>
     </tr>

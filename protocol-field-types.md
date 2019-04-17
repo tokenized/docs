@@ -106,11 +106,6 @@ The `size` does not need to be specified and is always 32 bytes.
 
 `Timestamp` represents a time. `size` does not need to be specified and is always 8 bytes.
 
-<a name="type-polity"></a>
-### Polity
-
-`Polity` represents a unique identifier for a nation/state/political entity. `size` does not need to be specified and is always 3 bytes.
-
 <a name="compound-types"></a>
 ## Compound Types
 
@@ -145,11 +140,11 @@ Administrator is used to refer to a Administration role in an Entity.
     <tr>
         <td>Type</td>
         <td>
-            Role
+            <a href="resources#resource-roles">Role</a>
         </td>
         <td>
             Chairman, Director, Managing Partner, etc.. Found in 'Roles' in Specification/Resources
-            7 - Chair Example: 7
+             Example: 7
         </td>
     </tr>
     <tr>
@@ -158,7 +153,7 @@ Administrator is used to refer to a Administration role in an Entity.
             varchar(8)
         </td>
         <td>
-            Length 0-255 bytes. 0 is valid. Name (eg. John Alexander Smith)
+            Length 0-255 bytes. 0 is valid.
              Example: Satoshi Nakamoto
         </td>
     </tr>
@@ -420,10 +415,10 @@ Entity represents the details of a legal Entity, such as a public or private com
     <tr>
         <td>Type</td>
         <td>
-            fixedchar(1)
+            <a href="resources#resource-entities">EntityType</a>
         </td>
         <td>
-            P - Public Company Limited by Shares, C - Private Company Limited by Shares, I - Individual, L - Limited Partnership, U -Unlimited Partnership, T - Sole Proprietorship, S - Statutory Company, O - Non-Profit Organization, N - Nation State, G - Government Agency, U - Unit Trust, D - Discretionary Trust.  Found in 'Entities' (Specification/Resources).
+            The type of entity. (i.e Public Company, Individual) (Specification/Resources).
              Example: P
         </td>
     </tr>
@@ -575,11 +570,11 @@ Manager is used to refer to a role that is responsible for the Management of an 
     <tr>
         <td>Type</td>
         <td>
-            Role
+            <a href="resources#resource-roles">Role</a>
         </td>
         <td>
             CEO, COO, CFO, etc. Found in 'Roles' in Specification/Resources
-            5 - CEO Example: 5
+             Example: 5
         </td>
     </tr>
     <tr>
@@ -588,7 +583,7 @@ Manager is used to refer to a role that is responsible for the Management of an 
             varchar(8)
         </td>
         <td>
-            Length 0-255 bytes. 0 is valid. Name (eg. John Alexander Smith)
+            Length 0-255 bytes. 0 is valid.
              Example: Satoshi Nakamoto
         </td>
     </tr>
@@ -793,7 +788,7 @@ A VotingSystem defines all details of a Voting System.
             fixedchar(1)
         </td>
         <td>
-            R - Relative Threshold, A - Absolute Threshold, P - Plurality,  (Relative Threshold means the number of counted votes must exceed the threshold % of total ballots cast.  Abstentations/spoiled votes do not detract from the liklihood of a vote passing as they are not included in the denominator.  Absolute Threshold requires the number of ballots counted to exceed the threshold value when compared to the total outstanding tokens.  Abstentations/spoiled votes detract from the liklihood of the vote passing.  For example, in an absolute threshold vote, if the threshold was 50% and 51% of the total outstanding tokens did not vote, then the vote cannot pass.  50% of all tokens would have had to vote for one vote option for the vote to be successful.
+            R - Relative Threshold, A - Absolute Threshold, P - Plurality,  (Relative Threshold means the number of counted votes must exceed the threshold % of total ballots cast.  Abstentations/spoiled votes do not detract from the liklihood of a vote passing as they are not included in the denominator.  Absolute Threshold requires the number of ballots counted to exceed the threshold value when compared to the total outstanding tokens.  Abstentations/spoiled votes detract from the liklihood of the vote passing.  For example, in an absolute threshold vote, if the threshold was 50% and 51% of the total outstanding tokens did not vote, then the vote cannot pass.  50% of all tokens would have had to vote for one vote option for the vote to be successful. Plurality means the most favoured option is selected, regardless of the number of votes cast or the percentage relative to other choices.
              Example: A
         </td>
     </tr>
