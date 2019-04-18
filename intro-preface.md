@@ -1,5 +1,10 @@
 # Preface
 
+- [Introduction](#introduction)
+	- [Key Components](#key-components)
+- [Specification](#specification)
+- [Support](#support)
+
 <a name="introduction"></a>
 ## Introduction
 
@@ -7,7 +12,7 @@ The Tokenized protocol is a system developed to enable businesses and users arou
 
 This documentation is intended to provide a clear and concise set of information on how to use the protocol. It also acts as the reference material for developers who wish to build their own implementation.
 
-<a name="concepts"></a>
+<a name="key-components"></a>
 ### Key Components
 
 The Tokenized protocol operates using two key components:

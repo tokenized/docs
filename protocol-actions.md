@@ -42,7 +42,7 @@ Each message should be prefixed with common header data. See the [Transactions a
 </div>
 
 <a name="action-asset-definition"></a>
-#### Asset Definition
+#### Asset Definition - [back](#all-actions)
 
 This action is used by the issuer to define the properties/characteristics of the asset (token) that it wants to create. An asset has a unique identifier called AssetID = AssetType + base58(AssetCode + checksum). An asset is always linked to a contract that is identified by the public address of the contract wallet.
 
@@ -230,7 +230,7 @@ This action is used by the issuer to define the properties/characteristics of th
 
 
 <a name="action-asset-creation"></a>
-#### Asset Creation
+#### Asset Creation - [back](#all-actions)
 
 This action creates an asset in response to the issuer's instructions in the Definition Action.
 
@@ -437,7 +437,7 @@ This action creates an asset in response to the issuer's instructions in the Def
 
 
 <a name="action-asset-modification"></a>
-#### Asset Modification
+#### Asset Modification - [back](#all-actions)
 
 Token Dilutions, Call Backs/Revocations, burning etc.
 
@@ -544,7 +544,7 @@ Token Dilutions, Call Backs/Revocations, burning etc.
 
 
 <a name="action-contract-offer"></a>
-#### Contract Offer
+#### Contract Offer - [back](#all-actions)
 
 Allows the issuer to tell the smart contract what they want the details (labels, data, T&C's, etc.) of the contract to be on-chain in a public and immutable way. The Contract Offer action 'initializes' a generic smart contract that has been spun up by either the smart contract operator or the issuer. This on-chain action allows for the positive response from the smart contract with either a contract Formation Action or a Rejection Action.
 
@@ -817,7 +817,7 @@ Allows the issuer to tell the smart contract what they want the details (labels,
 
 
 <a name="action-contract-formation"></a>
-#### Contract Formation
+#### Contract Formation - [back](#all-actions)
 
 This txn is created by the contract (smart contract/off-chain agent/token contract) upon receipt of a valid Contract Offer Action from the issuer.  The smart contract will execute on a server controlled by the issuer. or a smart contract operator on their behalf.
 
@@ -1105,7 +1105,7 @@ This txn is created by the contract (smart contract/off-chain agent/token contra
 
 
 <a name="action-contract-amendment"></a>
-#### Contract Amendment
+#### Contract Amendment - [back](#all-actions)
 
 The issuer can initiate an amendment to the contract establishment metadata. The ability to make an amendment to the contract is restricted by the Authorization Flag set on the current revision of Contract Formation action.
 
@@ -1217,7 +1217,7 @@ The issuer can initiate an amendment to the contract establishment metadata. The
 
 
 <a name="action-static-contract-formation"></a>
-#### Static Contract Formation
+#### Static Contract Formation - [back](#all-actions)
 
 Static Contract Formation Action
 
@@ -1412,7 +1412,7 @@ Static Contract Formation Action
 
 
 <a name="action-order"></a>
-#### Order
+#### Order - [back](#all-actions)
 
 Issuer to signal to the smart contract that the tokens that a particular public address(es) owns are to be confiscated, frozen, thawed or reconciled.
 
@@ -1629,7 +1629,7 @@ Issuer to signal to the smart contract that the tokens that a particular public 
 
 
 <a name="action-freeze"></a>
-#### Freeze
+#### Freeze - [back](#all-actions)
 
 To be used to comply with contractual/legal/issuer requirements.  The target public address(es) will be marked as frozen.  However the Freeze action publishes this fact to the public blockchain for transparency. The Contract will not respond to any actions requested by the frozen address.
 
@@ -1736,7 +1736,7 @@ To be used to comply with contractual/legal/issuer requirements.  The target pub
 
 
 <a name="action-thaw"></a>
-#### Thaw
+#### Thaw - [back](#all-actions)
 
 To be used to comply with contractual obligations or legal requirements.  The Alleged Offender's tokens will be unfrozen to allow them to resume normal exchange and governance activities.
 
@@ -1813,7 +1813,7 @@ To be used to comply with contractual obligations or legal requirements.  The Al
 
 
 <a name="action-confiscation"></a>
-#### Confiscation
+#### Confiscation - [back](#all-actions)
 
 To be used to comply with contractual obligations, legal and/or issuer requirements.
 
@@ -1925,7 +1925,7 @@ To be used to comply with contractual obligations, legal and/or issuer requireme
 
 
 <a name="action-reconciliation"></a>
-#### Reconciliation
+#### Reconciliation - [back](#all-actions)
 
 To be used at the direction of the issuer to fix record keeping errors with bitcoin and token balances.
 
@@ -2022,7 +2022,7 @@ To be used at the direction of the issuer to fix record keeping errors with bitc
 
 
 <a name="action-proposal"></a>
-#### Proposal
+#### Proposal - [back](#all-actions)
 
 Allows Issuers/Token Holders to propose a change (aka Initiative/Shareholder vote).  A significant cost - specified in the Contract Formation - can be attached to this action when sent from Token Holders to reduce spam, as the resulting vote will be put to all token owners.
 
@@ -2204,7 +2204,7 @@ Allows Issuers/Token Holders to propose a change (aka Initiative/Shareholder vot
 
 
 <a name="action-vote"></a>
-#### Vote
+#### Vote - [back](#all-actions)
 
 A vote is created by the Contract in response to a valid Proposal Action.
 
@@ -2271,7 +2271,7 @@ A vote is created by the Contract in response to a valid Proposal Action.
 
 
 <a name="action-ballot-cast"></a>
-#### Ballot Cast
+#### Ballot Cast - [back](#all-actions)
 
 Used by Token Owners to cast their ballot (vote) on proposals. 1 Vote per token unless a vote multiplier is specified in the relevant Asset Definition action.
 
@@ -2348,7 +2348,7 @@ Used by Token Owners to cast their ballot (vote) on proposals. 1 Vote per token 
 
 
 <a name="action-ballot-counted"></a>
-#### Ballot Counted
+#### Ballot Counted - [back](#all-actions)
 
 The smart contract will respond to a Ballot Cast action with a Ballot Counted action if the Ballot Cast is valid. If the Ballot Cast is not valid, then the smart contract will respond with a Rejection Action.
 
@@ -2445,7 +2445,7 @@ The smart contract will respond to a Ballot Cast action with a Ballot Counted ac
 
 
 <a name="action-result"></a>
-#### Result
+#### Result - [back](#all-actions)
 
 Once a vote has been completed the results are published. After the result is posted, it is up to the issuer to send a contract/asset amendement if appropriate.
 
@@ -2592,7 +2592,7 @@ Once a vote has been completed the results are published. After the result is po
 
 
 <a name="action-message"></a>
-#### Message
+#### Message - [back](#all-actions)
 
 The message action is a general purpose communication action. 'Twitter/SMS' for Issuers/Investors/Users. The message txn can also be used for passing partially signed txns on-chain, establishing private communication channels and EDI (receipting, invoices, PO, and private offers/bids). The messages are broken down by type for easy filtering in the a user's wallet. The Message Types are listed in the Message Types table.
 
@@ -2681,7 +2681,7 @@ The message action is a general purpose communication action. 'Twitter/SMS' for 
 
 
 <a name="action-rejection"></a>
-#### Rejection
+#### Rejection - [back](#all-actions)
 
 Used to reject request actions that do not comply with the Contract. If money is to be returned to a User then it is used in lieu of the Settlement Action to properly account for token balances. All Issuer/User request Actions must be responded to by the Contract with an Action.  The only exception to this rule is when there is not enough fees in the first Action for the Contract response action to remain revenue neutral.  If not enough fees are attached to pay for the Contract response then the Contract will not respond.
 
@@ -2788,7 +2788,7 @@ Used to reject request actions that do not comply with the Contract. If money is
 
 
 <a name="action-establishment"></a>
-#### Establishment
+#### Establishment - [back](#all-actions)
 
 Establishes an on-chain register.
 
@@ -2855,7 +2855,7 @@ Establishes an on-chain register.
 
 
 <a name="action-addition"></a>
-#### Addition
+#### Addition - [back](#all-actions)
 
 Adds an entry to the Register.
 
@@ -2922,7 +2922,7 @@ Adds an entry to the Register.
 
 
 <a name="action-alteration"></a>
-#### Alteration
+#### Alteration - [back](#all-actions)
 
 A register entry/record can be altered.
 
@@ -2999,7 +2999,7 @@ A register entry/record can be altered.
 
 
 <a name="action-removal"></a>
-#### Removal
+#### Removal - [back](#all-actions)
 
 Removes an entry/record from the Register.
 
@@ -3076,7 +3076,7 @@ Removes an entry/record from the Register.
 
 
 <a name="action-transfer"></a>
-#### Transfer
+#### Transfer - [back](#all-actions)
 
 A Token Owner(s) Sends, Exchanges or Swaps a token(s) or Bitcoin for a token(s) or Bitcoin.  Can be as simple as sending a single token to a receiver.  Or can be as complex as many senders sending many different assets - controlled by many different smart contracts - to a number of receivers.  This action also supports atomic swaps (tokens for tokens).  Since many parties and contracts can be involved in a transfer and the corresponding settlement action, the partially signed T1 and T2 actions will need to be passed around on-chain with an M1 action, or off-chain.
 
@@ -3178,7 +3178,7 @@ A Token Owner(s) Sends, Exchanges or Swaps a token(s) or Bitcoin for a token(s) 
 
 
 <a name="action-settlement"></a>
-#### Settlement
+#### Settlement - [back](#all-actions)
 
 Settles the transfer request of bitcoins and tokens from transfer (T1) actions.
 

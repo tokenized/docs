@@ -2,7 +2,14 @@
 
 - [Introduction](#introduction)
 - [Building a Transaction](#building-transaction)
+  - [Assembling OP_RETURN Packet](#assemble-opreturn)
+  - [Using PUSHDATA](#using-pushdata)
 - [Payload Breakdown](#payload-breakdown)
+  - [Protocol Identifier](#protocol-identifier)
+  - [Action Payload](#action-payload)
+- [Sample Code](#sample-code)
+  - [BitDB](#bitdb)
+- [Example](#example)
 
 <a name="introduction"></a>
 ## Introduction
@@ -20,12 +27,14 @@ Transactions that impact balances or the contract state always include a timesta
 
 Tokenized transaction messages are built by serializing the data (converting to binary) according to the protocol specification. There are many [different data formats](../protocol/field-types) used by each protocol action.
 
+<a name="assemble-opreturn"></a>
 ### Assembling OP_RETURN Packet
 
 To assemble an `OP_RETURN` packet, the first byte is always the `OP_RETURN` opcode (`0x6a`).
 
 The second byte is a `PUSHDATA` instruction. The `PUSHDATA` instruction can be variable depending on the number of bytes in the data packet being pushed into the output. It is possible to perform multiple pushes in a single `OP_RETURN` output, allowing the output to have multiple fields of different lengths. There are always 2 pushdata operations in a Tokenized operation. The first carries the "Tokenized" protocol identifer (**tokenized.com**), and the second carries the remainder of the data in the packet. This can be up to 99kB of data with the current BitcoinSV network capability, but as the Bitcoin protocol is returned to the Version 0.1 platform the removal of restrictions will allow contracts up to 4GB to be built.
 
+<a name="using-pushdata"></a>
 ### Using PUSHDATA
 
 For packets with less than 75 bytes of data, the pushdata instruction is simply a single byte containing the length of the packet. e.g. `0x6a 0x03 0x010203` is a `OP_RETURN` followed by a `PUSHDATA` instruction to push 3 bytes, and then 3 bytes of information.
@@ -47,15 +56,18 @@ For packets containing 65,536 - 4,294,967,295 bytes of data, `OP_PUSHDATA4` (`0x
 
 A Tokenized action output is always created with 2 separate push operations. The `OP_RETURN` output is broken down as follows:
 
+<a name="protocol-identifier"></a>
 ### Protocol Identifier
 
 The first push is 13 bytes long and contains only the Tokenized protocol identifier which is the string **tokenized.com**.
 
+<a name="action-payload"></a>
 ### Action Payload
 
 The next push is the action payload. The action payload starts with the protocol version, then the message/action type code, which is two characters that define the format of the rest of the data. The action payload is dependent on the action type and may include token specific information as required. It is important that the client and wallet must both know exactly what is expected in the remainder of the packet through a combination of the action prefix and version. If the packet does not conform to the contract agent's expectation of the operation being requested, it will respond with a rejection message.
 
-### Sample Code
+<a name="sample-code"></a>
+## Sample Code
 
 Here is some sample golang code that uses our reference golang protocol implementation to create a Tokenized `OP_RETURN` output.
 
@@ -108,6 +120,7 @@ if err != nil {
 offerTx.TxOut = append(offerTx.TxOut, wire.NewTxOut(0, script))
 ```
 
+<a name="bitdb"></a>
 ### BitDB
 
 This BitDB query can be used to query transactions containing Tokenized messages.
@@ -169,6 +182,7 @@ This BitDB query is for all responses from a specific contract.
 }
 ```
 
+<a name="example"></a>
 ## Example
 
 The following example shows a high-level overview of a transfer of tokens to highlight key components of the structure of Tokenized transactions.  The example shows one person, Mary, sending 15,000 tokens to Bill using the most basic form of a Transfer action.  The smart contract, upon validation of the Transfer action, responds with a Settlement action to complete the transfer of tokens.
