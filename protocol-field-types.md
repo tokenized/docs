@@ -118,6 +118,7 @@ The `size` does not need to be specified and is always 32 bytes.
 - [Entity](#type-entity)
 - [Manager](#type-manager)
 - [Oracle](#type-oracle)
+- [Output Tag](#type-output-tag)
 - [Quantity Index](#type-quantity-index)
 - [Target Address](#type-target-address)
 - [Token Receiver](#type-token-receiver)
@@ -629,6 +630,31 @@ A Oracle defines the details of a public Oracle.
         </td>
         <td>
             Length 0-255 bytes. 0 is not valid. Oracle Public Key (eg. Bitcoin Public key), used to confirm digital signed proofs for transfers.  Can also be the same public address that controls a Tokenized Oracle.
+            
+        </td>
+    </tr>
+</table>
+
+
+
+<a name="type-output-tag"></a>
+### Output Tag
+
+A tag or category of an output used to categorize and organize outputs from different transactions.
+
+<table>
+    <tr>
+        <th style="width:15%">Field</th>
+        <th style="width:15%">Type</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>Tag</td>
+        <td>
+            varchar(8)
+        </td>
+        <td>
+            The text of the tag.
             
         </td>
     </tr>

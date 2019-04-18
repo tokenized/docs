@@ -16,6 +16,7 @@ The Tokenized protocol features a complete messaging suite for all types of mess
 - [Offer](#message-offer)
 - [Signature Request](#message-signature-request)
 - [Settlement Request](#message-settlement-request)
+- [Output Metadata](#message-output-metadata)
 - [Public Message](#message-public-message)
 - [Private Message](#message-private-message)
 </div>
@@ -213,6 +214,51 @@ A message that contains a multi-contract settlement that needs settlement data a
         </td>
         <td>
             Serialized settlement OP_RETURN that needs data added by another contract.
+            
+        </td>
+    </tr>
+</table>
+
+
+
+<a name="message-output-metadata"></a>
+#### Output Metadata
+
+Metadata associated with the output. Aka Transaction details. It is used to describe the purpose of the transaction and add other relevant information. Often encrypted (DH, RSA) to make it private for one or more parties.  DH for b2b where multiple parties can see the description.  RSA or the like for descriptions only visible to one of the transacting parties. Optional
+
+<table>
+    <tr>
+        <th style="width:15%">Field</th>
+        <th style="width:15%">Type</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>Version</td>
+        <td>
+            uint(1)
+        </td>
+        <td>
+            Payload Version
+             Example: 0
+        </td>
+    </tr>
+    <tr>
+        <td>OutputDescription</td>
+        <td>
+            varchar(32)
+        </td>
+        <td>
+            A Description that accompanies the output. A transaction description.
+              Can be NULL Example: eg. Invoice 3024, Pay Mike back for camping.
+        </td>
+    </tr>
+    <tr>
+        <td>OutputTags</td>
+        <td>
+            <a href="field-types#type-output-tag">OutputTag[]</a>
+        </td>
+        <td>
+            Groceries, Moomba Gas Compressor Project, Cash Register 3, Fitness, Entertainment, Special, VIP Section, North Carolina Store, Waitress: Cindy Smith, etc.
             
         </td>
     </tr>

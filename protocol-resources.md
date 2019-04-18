@@ -493,6 +493,7 @@ Code/Text combinations returned in rejection messages when a request is not acce
 - ContractFrozen
 - ContractRevision
 - ContractNotPermitted
+- ContractBothOperatorsRequired
 - AssetCodeExists
 - AssetNotFound
 - AssetAuthFlags
