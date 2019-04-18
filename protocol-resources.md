@@ -194,7 +194,7 @@ Legal Entities & Ownership Structures. 1 character.
 [View Source File](https://github.com/tokenized/specification/blob/master/src/resources/develop/Entities.yaml)
 
 <div class="content-list collection-method-list" markdown="1">
-- individual
+- Individual
 - PublicCompany
 - PrivateCompany
 - LimitedPartnership

@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1250" height="1665" viewBox="0 0 1250 1665">
-  <g id="atomic-swap-process-order-of-operations" transform="translate(871 9325)">
+<svg xmlns="http://www.w3.org/2000/svg" width="1247.5" height="1665" viewBox="0 0 1247.5 1665">
+  <g id="atomic-swap-process-order-of-operations" transform="translate(868.5 9325)">
     <g id="Rectangle_105" data-name="Rectangle 105" transform="translate(-816 -9325)" fill="#fcfcfc" stroke="#707070" stroke-width="1">
       <rect width="536" height="149" stroke="none"/>
       <rect x="0.5" y="0.5" width="535" height="148" fill="none"/>
@@ -60,10 +60,7 @@ Not Shown: Change" transform="translate(177 -9243)" fill="#707070" font-size="14
     <text id="Participant_1" data-name="Participant 1" transform="translate(-178 -9036)" fill="#ef1818" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Participant 1</tspan></text>
     <line id="Line_174" data-name="Line 174" y2="37" transform="translate(-189.5 -9070.5)" fill="none" stroke="#707070" stroke-width="1"/>
     <text id="MESSAGE_PAYLOAD:_Transfer_Action" data-name="MESSAGE PAYLOAD: Transfer Action" transform="translate(-195 -9026)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">MESSAGE PAYLOAD: Transfer Action</tspan></text>
-    <line id="Line_189" data-name="Line 189" y1="0.686" x2="36.253" transform="translate(-265.5 -8061.187)" fill="none" stroke="#707070" stroke-width="7"/>
-    <g id="chevron-pointing-to-the-left" transform="translate(-219.193 -8045.149) rotate(179)">
-      <path id="Path_60" data-name="Path 60" d="M9.449,15.937l10-9.942a2.509,2.509,0,0,0,.762-1.852,2.508,2.508,0,0,0-.762-1.851L17.911.757a2.672,2.672,0,0,0-3.726,0L.762,14.075a2.631,2.631,0,0,0,0,3.7L14.184,31.1a2.671,2.671,0,0,0,3.726,0l1.544-1.534a2.5,2.5,0,0,0,.762-1.841,2.564,2.564,0,0,0-.762-1.861Z" transform="translate(0 0.004)" fill="#707070"/>
-    </g>
+    <line id="Line_189" data-name="Line 189" x2="38" transform="translate(-265.5 -8060.5)" fill="none" stroke="#707070" stroke-width="2"/>
     <g id="Rectangle_154" data-name="Rectangle 154" transform="translate(-590 -8848)" fill="#fcfcfc" stroke="#707070" stroke-width="1">
       <rect width="655" height="225" stroke="none"/>
       <rect x="0.5" y="0.5" width="654" height="224" fill="none"/>
@@ -257,37 +254,29 @@ N/A" transform="translate(-181 -8766)" fill="#707070" font-size="14" font-family
       <rect width="83" height="18" stroke="none"/>
       <rect x="0.5" y="0.5" width="82" height="17" fill="none"/>
     </g>
-    <line id="Line_216" data-name="Line 216" y1="0.686" x2="36.253" transform="translate(-265.5 -8061.187)" fill="none" stroke="#707070" stroke-width="7"/>
-    <g id="chevron-pointing-to-the-left-2" data-name="chevron-pointing-to-the-left" transform="translate(-219.193 -8045.149) rotate(179)">
-      <path id="Path_60-2" data-name="Path 60" d="M9.449,15.937l10-9.942a2.509,2.509,0,0,0,.762-1.852,2.508,2.508,0,0,0-.762-1.851L17.911.757a2.672,2.672,0,0,0-3.726,0L.762,14.075a2.631,2.631,0,0,0,0,3.7L14.184,31.1a2.671,2.671,0,0,0,3.726,0l1.544-1.534a2.5,2.5,0,0,0,.762-1.841,2.564,2.564,0,0,0-.762-1.861Z" transform="translate(0 0.004)" fill="#707070"/>
+    <line id="Line_218" data-name="Line 218" x2="39" transform="translate(-268.5 -9246.5)" fill="none" stroke="#707070" stroke-width="2"/>
+    <line id="Line_220" data-name="Line 220" x2="21" transform="translate(330.5 -9246.5)" fill="none" stroke="#707070" stroke-width="2"/>
+    <line id="Line_221" data-name="Line 221" y1="363" transform="translate(351.5 -9246.5)" fill="none" stroke="#707070" stroke-width="2"/>
+    <line id="Line_222" data-name="Line 222" x2="1041" transform="translate(-688.5 -8884.187)" fill="none" stroke="#707070" stroke-width="2"/>
+    <line id="Line_223" data-name="Line 223" y2="139" transform="translate(-687.5 -8884.5)" fill="none" stroke="#707070" stroke-width="2"/>
+    <line id="Line_224" data-name="Line 224" x2="91" transform="translate(-688.5 -8746.5)" fill="none" stroke="#707070" stroke-width="2"/>
+    <line id="Line_225" data-name="Line 225" x2="95" transform="translate(72.5 -8740.5)" fill="none" stroke="#707070" stroke-width="2"/>
+    <line id="Line_226" data-name="Line 226" y1="502" transform="translate(166.5 -8741.5)" fill="none" stroke="#707070" stroke-width="2"/>
+    <line id="Line_227" data-name="Line 227" x2="1036" transform="translate(-868.5 -8240.5)" fill="none" stroke="#707070" stroke-width="2"/>
+    <line id="Line_228" data-name="Line 228" y2="170" transform="translate(-867.5 -8241.5)" fill="none" stroke="#707070" stroke-width="2"/>
+    <path id="Path_196" data-name="Path 196" d="M36.253,0" transform="translate(-870.5 -8075.187)" fill="none" stroke="#707070" stroke-width="7"/>
+    <path id="Path_197" data-name="Path 197" d="M0,0H39" transform="translate(-868.5 -8071.5)" fill="none" stroke="#707070" stroke-width="2"/>
+    <g id="chevron-pointing-to-the-left" transform="translate(-141.496 -8050.261) rotate(-179)">
+      <path id="Path_60" data-name="Path 60" d="M86.993,8.333l5.2-5.2a1.316,1.316,0,0,0,.4-.968,1.316,1.316,0,0,0-.4-.968l-.8-.8a1.382,1.382,0,0,0-1.936,0L82.479,7.359a1.382,1.382,0,0,0,0,1.936l6.974,6.963a1.382,1.382,0,0,0,1.936,0l.8-.8a1.309,1.309,0,0,0,.4-.963,1.345,1.345,0,0,0-.4-.973Z" fill="#707070"/>
     </g>
-    <line id="Line_217" data-name="Line 217" y1="0.686" x2="36.253" transform="translate(-268.5 -9247.187)" fill="none" stroke="#707070" stroke-width="7"/>
-    <g id="chevron-pointing-to-the-left-3" data-name="chevron-pointing-to-the-left" transform="translate(-222.193 -9231.149) rotate(179)">
-      <path id="Path_60-3" data-name="Path 60" d="M9.449,15.937l10-9.942a2.509,2.509,0,0,0,.762-1.852,2.508,2.508,0,0,0-.762-1.851L17.911.757a2.672,2.672,0,0,0-3.726,0L.762,14.075a2.631,2.631,0,0,0,0,3.7L14.184,31.1a2.671,2.671,0,0,0,3.726,0l1.544-1.534a2.5,2.5,0,0,0,.762-1.841,2.564,2.564,0,0,0-.762-1.861Z" transform="translate(0 0.004)" fill="#707070"/>
+    <g id="chevron-pointing-to-the-left-2" data-name="chevron-pointing-to-the-left" transform="translate(-743.338 -8062.784) rotate(180)">
+      <path id="Path_60-2" data-name="Path 60" d="M86.993,8.333l5.2-5.2a1.316,1.316,0,0,0,.4-.968,1.316,1.316,0,0,0-.4-.968l-.8-.8a1.382,1.382,0,0,0-1.936,0L82.479,7.359a1.382,1.382,0,0,0,0,1.936l6.974,6.963a1.382,1.382,0,0,0,1.936,0l.8-.8a1.309,1.309,0,0,0,.4-.963,1.345,1.345,0,0,0-.4-.973Z" fill="#707070"/>
     </g>
-    <line id="Line_218" data-name="Line 218" y1="0.686" x2="36.253" transform="translate(-268.5 -9247.187)" fill="none" stroke="#707070" stroke-width="7"/>
-    <g id="chevron-pointing-to-the-left-4" data-name="chevron-pointing-to-the-left" transform="translate(-222.193 -9231.149) rotate(179)">
-      <path id="Path_60-4" data-name="Path 60" d="M9.449,15.937l10-9.942a2.509,2.509,0,0,0,.762-1.852,2.508,2.508,0,0,0-.762-1.851L17.911.757a2.672,2.672,0,0,0-3.726,0L.762,14.075a2.631,2.631,0,0,0,0,3.7L14.184,31.1a2.671,2.671,0,0,0,3.726,0l1.544-1.534a2.5,2.5,0,0,0,.762-1.841,2.564,2.564,0,0,0-.762-1.861Z" transform="translate(0 0.004)" fill="#707070"/>
+    <g id="chevron-pointing-to-the-left-3" data-name="chevron-pointing-to-the-left" transform="translate(-511.338 -8737.784) rotate(180)">
+      <path id="Path_60-3" data-name="Path 60" d="M86.993,8.333l5.2-5.2a1.316,1.316,0,0,0,.4-.968,1.316,1.316,0,0,0-.4-.968l-.8-.8a1.382,1.382,0,0,0-1.936,0L82.479,7.359a1.382,1.382,0,0,0,0,1.936l6.974,6.963a1.382,1.382,0,0,0,1.936,0l.8-.8a1.309,1.309,0,0,0,.4-.963,1.345,1.345,0,0,0-.4-.973Z" fill="#707070"/>
     </g>
-    <line id="Line_220" data-name="Line 220" x2="24" transform="translate(330.5 -9246.5)" fill="none" stroke="#707070" stroke-width="7"/>
-    <g id="chevron-pointing-to-the-left-5" data-name="chevron-pointing-to-the-left" transform="translate(-593.193 -8731.149) rotate(179)">
-      <path id="Path_60-5" data-name="Path 60" d="M9.449,15.937l10-9.942a2.509,2.509,0,0,0,.762-1.852,2.508,2.508,0,0,0-.762-1.851L17.911.757a2.672,2.672,0,0,0-3.726,0L.762,14.075a2.631,2.631,0,0,0,0,3.7L14.184,31.1a2.671,2.671,0,0,0,3.726,0l1.544-1.534a2.5,2.5,0,0,0,.762-1.841,2.564,2.564,0,0,0-.762-1.861Z" transform="translate(0 0.004)" fill="#707070"/>
-    </g>
-    <line id="Line_221" data-name="Line 221" y1="369" transform="translate(351.5 -9249.5)" fill="none" stroke="#707070" stroke-width="7"/>
-    <line id="Line_222" data-name="Line 222" x2="1044.253" transform="translate(-690.5 -8884.187)" fill="none" stroke="#707070" stroke-width="7"/>
-    <line id="Line_223" data-name="Line 223" y2="143" transform="translate(-687.5 -8886.5)" fill="none" stroke="#707070" stroke-width="7"/>
-    <line id="Line_224" data-name="Line 224" x2="92" transform="translate(-689.5 -8746.5)" fill="none" stroke="#707070" stroke-width="7"/>
-    <line id="Line_225" data-name="Line 225" x2="97" transform="translate(72.5 -8740.5)" fill="none" stroke="#707070" stroke-width="7"/>
-    <line id="Line_226" data-name="Line 226" y1="506" transform="translate(166.5 -8743.5)" fill="none" stroke="#707070" stroke-width="7"/>
-    <line id="Line_227" data-name="Line 227" x2="1040" transform="translate(-870.5 -8240.5)" fill="none" stroke="#707070" stroke-width="7"/>
-    <line id="Line_228" data-name="Line 228" y2="172" transform="translate(-867.5 -8243.5)" fill="none" stroke="#707070" stroke-width="7"/>
-    <line id="Line_229" data-name="Line 229" y1="0.686" x2="36.253" transform="translate(-870.5 -8075.187)" fill="none" stroke="#707070" stroke-width="7"/>
-    <g id="chevron-pointing-to-the-left-6" data-name="chevron-pointing-to-the-left" transform="translate(-824.193 -8059.149) rotate(179)">
-      <path id="Path_60-6" data-name="Path 60" d="M9.449,15.937l10-9.942a2.509,2.509,0,0,0,.762-1.852,2.508,2.508,0,0,0-.762-1.851L17.911.757a2.672,2.672,0,0,0-3.726,0L.762,14.075a2.631,2.631,0,0,0,0,3.7L14.184,31.1a2.671,2.671,0,0,0,3.726,0l1.544-1.534a2.5,2.5,0,0,0,.762-1.841,2.564,2.564,0,0,0-.762-1.861Z" transform="translate(0 0.004)" fill="#707070"/>
-    </g>
-    <line id="Line_230" data-name="Line 230" x2="39" transform="translate(-870.5 -8074.5)" fill="none" stroke="#707070" stroke-width="7"/>
-    <g id="chevron-pointing-to-the-left-7" data-name="chevron-pointing-to-the-left" transform="translate(-824.193 -8059.149) rotate(179)">
-      <path id="Path_60-7" data-name="Path 60" d="M9.449,15.937l10-9.942a2.509,2.509,0,0,0,.762-1.852,2.508,2.508,0,0,0-.762-1.851L17.911.757a2.672,2.672,0,0,0-3.726,0L.762,14.075a2.631,2.631,0,0,0,0,3.7L14.184,31.1a2.671,2.671,0,0,0,3.726,0l1.544-1.534a2.5,2.5,0,0,0,.762-1.841,2.564,2.564,0,0,0-.762-1.861Z" transform="translate(0 0.004)" fill="#707070"/>
+    <g id="chevron-pointing-to-the-left-4" data-name="chevron-pointing-to-the-left" transform="translate(-143.338 -9237.784) rotate(180)">
+      <path id="Path_60-4" data-name="Path 60" d="M86.993,8.333l5.2-5.2a1.316,1.316,0,0,0,.4-.968,1.316,1.316,0,0,0-.4-.968l-.8-.8a1.382,1.382,0,0,0-1.936,0L82.479,7.359a1.382,1.382,0,0,0,0,1.936l6.974,6.963a1.382,1.382,0,0,0,1.936,0l.8-.8a1.309,1.309,0,0,0,.4-.963,1.345,1.345,0,0,0-.4-.973Z" fill="#707070"/>
     </g>
   </g>
 </svg>
