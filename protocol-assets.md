@@ -84,7 +84,7 @@ A voucher entitling the holder to a discount on a particular product or service.
     <tr>
         <td>Currency</td>
         <td>
-            CurrencyType
+            <a href="resources#resource-currencies">CurrencyType</a>
         </td>
         <td>
             International Organization for Standardization code for Currency. Currency for coupon. From resources/currency.
@@ -129,7 +129,7 @@ A Currency
     <tr>
         <td>ISOCode</td>
         <td>
-            CurrencyType
+            <a href="resources#resource-currencies">CurrencyType</a>
         </td>
         <td>
             International Organization for Standardization code for Currency. (Specification/Resources)
