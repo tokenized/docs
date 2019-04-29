@@ -60,7 +60,7 @@ If the buyer is happy with the proposed exchange, they add appropriate Bitcoin i
 
 ![Transfer template sent in Message action to Merchant/Exchange for final signature](https://raw.githubusercontent.com/tokenized/docs/master/images/exchange-transfer-signature-request-message.svg?sanitize=true "Transfer template sent in Message action to Merchant/Exchange for final signature") {.frame .centered .padded}
 
-Once the seller-signed transatction has been received by the merchant/exchange, they have one final opportunity to verify that the contents remain in-line with what they agreed to with the buyer, and can sign and transmit the transaction to the Bitcoin network. 
+Once the seller-signed transaction has been received by the merchant/exchange, they have one final opportunity to verify that the contents remain in-line with what they agreed to with the buyer, and can sign and transmit the transaction to the Bitcoin network.
 
 ![Final Transfer request signed by buyer and seller](https://raw.githubusercontent.com/tokenized/docs/master/images/exchange-transfer-example.svg?sanitize=true "Final Transfer request signed by buyer and seller") {.frame .centered .padded}
 
@@ -86,11 +86,15 @@ The first user then countersigns and sends the transaction to the Bitcoin networ
 
 ![Atomic Swap Transfer Action](https://raw.githubusercontent.com/tokenized/docs/master/images/atomic-swap-transfer-action.svg?sanitize=true "Atomic Swap Transfer Action") {.frame .centered .padded}
 
-Once it is received by the smart contracts, the first contract listed in the Transfer action builds a settlement transaction template. Because it knows which UTXO the other smart contract is going to use, it can pre-sign the entire contract before sending it on, reducing the number of times it needs to be handled to just one. The transaction is exchanged using message type 1002 (Signature Request).
+Once it is received by the smart contracts, the first contract listed in the Transfer action builds a settlement action template. Since the first contract doesn't know the balances of the other contract it sends the incomplete settlement action data to the second contract in a message type 1003 (Settlement Request).
+
+![Atomic Swap Settlement Signature Request Exchange](https://raw.githubusercontent.com/tokenized/docs/master/images/atomic-swap-settlement-request-message.svg?sanitize=true "Atomic Swap Settlement Request Exchange") {.frame .centered .padded}
+
+The second contract then adds settlement data pertaining to it and since the data is now complete and it knows everything about the settlement, it creates the complete settlement tx (minus signatures), signs its inputs, and sends it back to the first contract in a message type 1002 (Signature Request).
 
 ![Atomic Swap Settlement Signature Request Exchange](https://raw.githubusercontent.com/tokenized/docs/master/images/atomic-swap-settlement-signature-request-message.svg?sanitize=true "Atomic Swap Settlement Signature Request Exchange") {.frame .centered .padded}
 
-The second smart contract receives the full settlement, signed by the first contract, and must only review that the token quantities in the Settlement action match what was agreed to in the Transfer action, and that the addresses and fees are all correct. It then signs the transaction and sends it onto the network, completing the swap.
-In this example, Participant 1 is is sending 100 of it's 150 Token 1 to Participant 2 (who previously had none) in exchange for 20 of its Token 2 (all of them). Participant 1 already has 10 of Token 2, leaving its final balance at 30.
+The first contract then double checks the settlement transaction to ensure the second contract didn't modify anything it wasn't supposed to, then signs it and transmits it to the Bitcoin network.
+In this example, Participant 1 is sending 100 of its 150 Token 1 to Participant 2 (who previously had none) in exchange for 20 of its Token 2 (all of them). Participant 1 already has 10 of Token 2, leaving its final balance at 30.
 
 ![Atomic Swap Settlement](https://raw.githubusercontent.com/tokenized/docs/master/images/atomic-swap-settlement-action.svg?sanitize=true "Atomic Swap Settlement") {.frame .centered .padded}

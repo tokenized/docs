@@ -59,7 +59,7 @@ A Tokenized action output is always created with 2 separate push operations. The
 <a name="protocol-identifier"></a>
 ### Protocol Identifier
 
-The first push is 13 bytes long and contains only the Tokenized protocol identifier which is the string **tokenized.com**.
+The first push is 13 bytes long and contains only the Tokenized protocol identifier which is the string **tokenized.com**.  For testing on Bitcoin SV's mainnet, **test.tokenized.com** can be used as the protocol identifier for test actions/messages.
 
 <a name="action-payload"></a>
 ### Action Payload
