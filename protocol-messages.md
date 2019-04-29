@@ -12,19 +12,130 @@ The Tokenized protocol features a complete messaging suite for all types of mess
 ## Available Messages
 
 <div class="content-list collection-method-list" markdown="1">
+- [Public Message](#message-public-message)
+- [Private Message](#message-private-message)
 - [Reverted Tx](#message-reverted-tx)
 - [Offer](#message-offer)
 - [Signature Request](#message-signature-request)
 - [Settlement Request](#message-settlement-request)
 - [Output Metadata](#message-output-metadata)
-- [Public Message](#message-public-message)
-- [Private Message](#message-private-message)
 </div>
+
+<a name="message-public-message"></a>
+#### Public Message
+
+Generic public message or public announcement. Sent to an address(es).  Can be used for an official issuer announcement.
+
+<table>
+    <tr>
+        <th style="width:15%">Message Code</th>
+        <td>0002</td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <th style="width:15%">Field</th>
+        <th style="width:15%">Type</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>Version</td>
+        <td>
+            uint(1)
+        </td>
+        <td>
+            Payload Version
+             Example: 0
+        </td>
+    </tr>
+    <tr>
+        <td>Timestamp</td>
+        <td>
+            <a href="field-types#type-timestamp">Timestamp</a>
+        </td>
+        <td>
+            Timestamp in nanoseconds for when the message sender creates the transaction.
+            
+        </td>
+    </tr>
+    <tr>
+        <td>PublicMessage</td>
+        <td>
+            varchar(32)
+        </td>
+        <td>
+            Tokenized Ltd. announces product launch.
+            
+        </td>
+    </tr>
+</table>
+
+
+
+<a name="message-private-message"></a>
+#### Private Message
+
+Generic private message. Sent to another address(es). Encryption is to be used.
+
+<table>
+    <tr>
+        <th style="width:15%">Message Code</th>
+        <td>0003</td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <th style="width:15%">Field</th>
+        <th style="width:15%">Type</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>Version</td>
+        <td>
+            uint(1)
+        </td>
+        <td>
+            Payload Version
+             Example: 0
+        </td>
+    </tr>
+    <tr>
+        <td>Timestamp</td>
+        <td>
+            <a href="field-types#type-timestamp">Timestamp</a>
+        </td>
+        <td>
+            Timestamp in nanoseconds for when the message sender creates the transaction.
+            
+        </td>
+    </tr>
+    <tr>
+        <td>PrivateMessage</td>
+        <td>
+            varbin(32)
+        </td>
+        <td>
+            Tokenized Ltd announces product launch.
+            
+        </td>
+    </tr>
+</table>
+
+
 
 <a name="message-reverted-tx"></a>
 #### Reverted Tx
 
 A message that contains a bitcoin transaction that was accepted by the network or an agent and then invalidated by a reorg, or zero conf double spend. This serves as on chain evidence of the sending party's signatures and approval for the given transaction.
+
+<table>
+    <tr>
+        <th style="width:15%">Message Code</th>
+        <td>0004</td>
+    </tr>
+</table>
 
 <table>
     <tr>
@@ -73,6 +184,13 @@ A message that contains all of the details required for an agreement to be forme
 
 <table>
     <tr>
+        <th style="width:15%">Message Code</th>
+        <td>1001</td>
+    </tr>
+</table>
+
+<table>
+    <tr>
         <th style="width:15%">Field</th>
         <th style="width:15%">Type</th>
         <th>Description</th>
@@ -118,6 +236,13 @@ Partially-signed transactions (Tokenized actions, Bitcoin, Multisig, Threshold S
 
 <table>
     <tr>
+        <th style="width:15%">Message Code</th>
+        <td>1002</td>
+    </tr>
+</table>
+
+<table>
+    <tr>
         <th style="width:15%">Field</th>
         <th style="width:15%">Type</th>
         <th>Description</th>
@@ -160,6 +285,13 @@ Partially-signed transactions (Tokenized actions, Bitcoin, Multisig, Threshold S
 #### Settlement Request
 
 A message that contains a multi-contract settlement that needs settlement data added by another contract. Sent to another contract to request data be added.
+
+<table>
+    <tr>
+        <th style="width:15%">Message Code</th>
+        <td>1003</td>
+    </tr>
+</table>
 
 <table>
     <tr>
@@ -228,6 +360,13 @@ Metadata associated with the output. Aka Transaction details. It is used to desc
 
 <table>
     <tr>
+        <th style="width:15%">Message Code</th>
+        <td>1004</td>
+    </tr>
+</table>
+
+<table>
+    <tr>
         <th style="width:15%">Field</th>
         <th style="width:15%">Type</th>
         <th>Description</th>
@@ -269,96 +408,6 @@ Metadata associated with the output. Aka Transaction details. It is used to desc
         </td>
         <td>
             Free form text fields for describing the output. Groceries, Moomba Gas Compressor Project, Cash Register 3, Fitness, Entertainment, Special, VIP Section, North Carolina Store, Waitress: Cindy Smith, etc.
-            
-        </td>
-    </tr>
-</table>
-
-
-
-<a name="message-public-message"></a>
-#### Public Message
-
-Generic public message or public announcement. Sent to an address(es).  Can be used for an official issuer announcement.
-
-<table>
-    <tr>
-        <th style="width:15%">Field</th>
-        <th style="width:15%">Type</th>
-        <th>Description</th>
-    </tr>
-    <tr>
-        <td>Version</td>
-        <td>
-            uint(1)
-        </td>
-        <td>
-            Payload Version
-             Example: 0
-        </td>
-    </tr>
-    <tr>
-        <td>Timestamp</td>
-        <td>
-            <a href="field-types#type-timestamp">Timestamp</a>
-        </td>
-        <td>
-            Timestamp in nanoseconds for when the message sender creates the transaction.
-            
-        </td>
-    </tr>
-    <tr>
-        <td>PublicMessage</td>
-        <td>
-            varchar(32)
-        </td>
-        <td>
-            Tokenized Ltd. announces product launch.
-            
-        </td>
-    </tr>
-</table>
-
-
-
-<a name="message-private-message"></a>
-#### Private Message
-
-Generic private message. Sent to another address(es). Encryption is to be used.
-
-<table>
-    <tr>
-        <th style="width:15%">Field</th>
-        <th style="width:15%">Type</th>
-        <th>Description</th>
-    </tr>
-    <tr>
-        <td>Version</td>
-        <td>
-            uint(1)
-        </td>
-        <td>
-            Payload Version
-             Example: 0
-        </td>
-    </tr>
-    <tr>
-        <td>Timestamp</td>
-        <td>
-            <a href="field-types#type-timestamp">Timestamp</a>
-        </td>
-        <td>
-            Timestamp in nanoseconds for when the message sender creates the transaction.
-            
-        </td>
-    </tr>
-    <tr>
-        <td>PrivateMessage</td>
-        <td>
-            varbin(32)
-        </td>
-        <td>
-            Tokenized Ltd announces product launch.
             
         </td>
     </tr>
