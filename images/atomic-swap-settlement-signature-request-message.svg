@@ -8,9 +8,9 @@
     <line id="Line_231" data-name="Line 231" y2="70" transform="translate(2839.5 -9267.5)" fill="none" stroke="#707070" stroke-width="1"/>
     <text id="INPUTS" transform="translate(2652 -9266)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">INPUTS</tspan></text>
     <text id="OUTPUTS_" data-name="OUTPUTS " transform="translate(2855 -9266)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">OUTPUTS </tspan></text>
-    <text id="_0:_Smart_Contract_1" data-name="0: Smart Contract 1" transform="translate(2652 -9246)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="15">0: Smart Contract 1</tspan></text>
-    <text id="_0:_Smart_Contract_2_N:_Message_Action" data-name="0: Smart Contract 2
-N: Message Action" transform="translate(2855 -9246)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="15">0: Smart Contract 2</tspan><tspan x="0" y="34">N: Message Action</tspan></text>
+    <text id="_0:_Smart_Contract_2" data-name="0: Smart Contract 2" transform="translate(2652 -9246)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="15">0: Smart Contract 2</tspan></text>
+    <text id="_0:_Smart_Contract_1_N:_Message_Action" data-name="0: Smart Contract 1
+N: Message Action" transform="translate(2855 -9246)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="15">0: Smart Contract 1</tspan><tspan x="0" y="34">N: Message Action</tspan></text>
     <text id="VALUE" transform="translate(3048 -9266)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">VALUE</tspan></text>
     <text id="Dust_0_Not_shown:_Change" data-name="Dust
 0
@@ -33,8 +33,8 @@ Not shown: Change" transform="translate(3048 -9246)" fill="#707070" font-size="1
     <line id="Line_233" data-name="Line 233" y2="144" transform="translate(2876.5 -8908.5)" fill="none" stroke="#707070" stroke-width="1"/>
     <text id="INPUTS-2" data-name="INPUTS" transform="translate(2679 -8907)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">INPUTS</tspan></text>
     <text id="OUTPUTS_2" data-name="OUTPUTS " transform="translate(2892 -8907)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">OUTPUTS </tspan></text>
-    <text id="_0:_Smart_Contract_1_signed_1:_Smart_Contract_2_unsigned_" data-name="0: Smart Contract 1 (signed)
-1: Smart Contract 2 (unsigned)" transform="translate(2679 -8887)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="15">0: Smart Contract 1 (signed)</tspan><tspan x="0" y="34">1: Smart Contract 2 (unsigned)</tspan><tspan x="0" y="53"></tspan></text>
+    <text id="_0:_Smart_Contract_1_Unsigned_1:_Smart_Contract_2_Signed_" data-name="0: Smart Contract 1 (Unsigned)
+1: Smart Contract 2 (Signed)" transform="translate(2679 -8887)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="15">0: Smart Contract 1 (Unsigned)</tspan><tspan x="0" y="34">1: Smart Contract 2 (Signed)</tspan><tspan x="0" y="53"></tspan></text>
     <text id="_0:_Participant_1_1_1:_Participant_2_3_2:_Participant_2_1_3:_Participant_1_3_N:_Transfer_Action" data-name="0: Participant 1 (1)
 1: Participant 2 (3)2: Participant 2 (1)3: Participant 1 (3)
 N: Transfer Action" transform="translate(2892 -8887)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="15">0: </tspan><tspan y="15" fill="#ef1818">Participant 1 (1)</tspan><tspan x="0" y="34">1: </tspan><tspan y="34" fill="#7b1adb">Participant 2 (3)</tspan><tspan y="34"></tspan><tspan x="0" y="53">2: </tspan><tspan y="53" fill="#7b1adb">Participant 2 (1)</tspan><tspan y="53"></tspan><tspan x="0" y="72">3: </tspan><tspan y="72" fill="#ef1818">Participant 1 (3)</tspan><tspan x="0" y="91">N: Transfer Action</tspan></text>
@@ -62,7 +62,7 @@ Not shown: Contract Fees" transform="translate(3085 -8887)" fill="#707070" font-
     <line id="Line_235" data-name="Line 235" y2="59" transform="translate(2944.5 -8794.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
     <text id="MESSAGE_TYPE:_1002_-_Signature_Request" data-name="MESSAGE TYPE: 1002 - Signature Request" transform="translate(2652 -9098)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">MESSAGE TYPE: 1002 - Signature Request</tspan></text>
     <text id="Message_Receivers" data-name="Message Receivers" transform="translate(2669 -9074)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">Message Receivers</tspan></text>
-    <text id="Smart_Contract_2" data-name="Smart Contract 2" transform="translate(2669 -9039)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Smart Contract 2</tspan></text>
+    <text id="Smart_Contract_1" data-name="Smart Contract 1" transform="translate(2669 -9039)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Smart Contract 1</tspan></text>
     <line id="Line_236" data-name="Line 236" y2="37" transform="translate(2657.5 -9073.5)" fill="none" stroke="#707070" stroke-width="1"/>
     <g id="Rectangle_181" data-name="Rectangle 181" transform="translate(2648 -9029)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
       <rect width="120" height="21" stroke="none"/>
