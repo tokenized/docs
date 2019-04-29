@@ -1,54 +1,47 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="628" height="461" viewBox="0 0 628 461">
+<svg xmlns="http://www.w3.org/2000/svg" width="628" height="423" viewBox="0 0 628 423">
   <g id="tbact-asset-transfer" transform="translate(-12718 10710)">
     <g id="Rectangle_307" data-name="Rectangle 307" transform="translate(12718 -10710)" fill="#fcfcfc" stroke="#707070" stroke-width="1">
-      <rect width="628" height="207" stroke="none"/>
-      <rect x="0.5" y="0.5" width="627" height="206" fill="none"/>
+      <rect width="628" height="162" stroke="none"/>
+      <rect x="0.5" y="0.5" width="627" height="161" fill="none"/>
     </g>
-    <line id="Line_366" data-name="Line 366" y2="118" transform="translate(12923.5 -10649.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <line id="Line_366" data-name="Line 366" y2="79" transform="translate(12923.5 -10649.5)" fill="none" stroke="#707070" stroke-width="1"/>
     <text id="INPUTS" transform="translate(12731 -10648)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">INPUTS</tspan></text>
     <text id="OUTPUTS_" data-name="OUTPUTS " transform="translate(12934 -10648)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">OUTPUTS </tspan></text>
     <text id="_0:_" data-name="0: " transform="translate(12731 -10613)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: </tspan></text>
     <text id="VALUE" transform="translate(13127 -10648)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">VALUE</tspan></text>
-    <g id="Rectangle_308" data-name="Rectangle 308" transform="translate(12863 -10467)" fill="#fcfcfc" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+    <g id="Rectangle_308" data-name="Rectangle 308" transform="translate(12863 -10505)" fill="#fcfcfc" stroke="#707070" stroke-width="1" stroke-dasharray="3">
       <rect width="313.499" height="218" stroke="none"/>
       <rect x="0.5" y="0.5" width="312.499" height="217" fill="none"/>
     </g>
-    <text id="Transfer_Action_Payload" data-name="Transfer Action Payload" transform="translate(12874 -10432)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Transfer Action Payload</tspan></text>
-    <line id="Line_367" data-name="Line 367" y2="66" transform="translate(12997.5 -10532.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
+    <text id="Transfer_Action_Payload" data-name="Transfer Action Payload" transform="translate(12874 -10470)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Transfer Action Payload</tspan></text>
+    <line id="Line_367" data-name="Line 367" y2="66" transform="translate(12997.5 -10570.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
     <text id="_0:_2" data-name="0: " transform="translate(12934 -10613)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: </tspan></text>
     <text id="TBACT_Smart_Contract" data-name="TBACT Smart Contract" transform="translate(12952 -10613)" fill="#7030a0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">TBACT Smart Contract</tspan></text>
     <text id="Contract_Fees_Response_Cost_" data-name="Contract Fees + Response Cost " transform="translate(13128 -10613)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Contract Fees + Response Cost </tspan></text>
-    <g id="Rectangle_309" data-name="Rectangle 309" transform="translate(12951 -10551)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+    <g id="Rectangle_309" data-name="Rectangle 309" transform="translate(12951 -10589)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
       <rect width="102" height="19" stroke="none"/>
       <rect x="0.5" y="0.5" width="101" height="18" fill="none"/>
     </g>
-    <text id="N:_" data-name="N: " transform="translate(12933 -10537)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N: </tspan></text>
-    <text id="Transfer_Action" data-name="Transfer Action" transform="translate(12953 -10537)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Transfer Action</tspan></text>
-    <text id="N_A" data-name="N/A" transform="translate(13129 -10537)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N/A</tspan></text>
-    <text id="TBACT" transform="translate(12749 -10613)" fill="#19e134" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">TBACT</tspan></text>
-    <text id="Not_Shown:_Change" data-name="Not Shown: Change" transform="translate(13129 -10518)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Not Shown: Change</tspan></text>
+    <text id="N:_" data-name="N: " transform="translate(12933 -10575)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N: </tspan></text>
+    <text id="Transfer_Action" data-name="Transfer Action" transform="translate(12953 -10575)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Transfer Action</tspan></text>
+    <text id="N_A" data-name="N/A" transform="translate(13129 -10575)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N/A</tspan></text>
+    <text id="TBACT_1_" data-name="TBACT (1)" transform="translate(12749 -10613)" fill="#19e134" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">TBACT (1)</tspan></text>
     <text id="Request_Transaction_Transfer_" data-name="Request Transaction (Transfer)" transform="translate(12730 -10677)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Request Transaction (Transfer)</tspan></text>
-    <line id="Line_368" data-name="Line 368" y2="114" transform="translate(12879.5 -10372.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <line id="Line_368" data-name="Line 368" y2="114" transform="translate(12879.5 -10410.5)" fill="none" stroke="#707070" stroke-width="1"/>
     <text id="_1:_" data-name="1: " transform="translate(12934 -10594)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1: </tspan></text>
-    <text id="_2:_" data-name="2: " transform="translate(12934 -10575)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">2: </tspan></text>
-    <text id="Dust" transform="translate(13128 -10594)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust</tspan></text>
-    <text id="_3:_" data-name="3: " transform="translate(12934 -10556)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">3: </tspan></text>
-    <text id="Bill" transform="translate(12952 -10594)" fill="#ffc000" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Bill</tspan></text>
-    <text id="Angela" transform="translate(12952 -10575)" fill="#b15f02" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Angela</tspan></text>
-    <text id="Chris" transform="translate(12952 -10556)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Chris</tspan></text>
-    <text id="Dust-2" data-name="Dust" transform="translate(13128 -10575)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust</tspan></text>
-    <text id="Dust_" data-name="Dust " transform="translate(13128 -10556)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust </tspan></text>
-    <text id="Bill:" transform="translate(12891 -10300)" fill="#ffc000" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Bill:</tspan></text>
-    <text id="_100_shares" data-name="100 shares" transform="translate(13012 -10300)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">100 shares</tspan></text>
-    <text id="TBACT_Smart_Contract-2" data-name="TBACT Smart Contract" transform="translate(12874 -10403)" fill="#7030a0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">TBACT Smart Contract</tspan></text>
-    <text id="ASSETID:_SHCTBACTjfn23..._TBACT_Shares" data-name="ASSETID:  SHCTBACTjfn23... TBACT Shares" transform="translate(12874 -10389)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13" xml:space="preserve">ASSETID:  SHCTBACTjfn23... TBACT Shares</tspan></text>
-    <text id="Senders" transform="translate(12890 -10373)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">Senders</tspan></text>
-    <text id="Receivers" transform="translate(12890 -10333)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">Receivers</tspan></text>
-    <text id="TBACT:" transform="translate(12890 -10338)" fill="#19e134" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">TBACT:</tspan></text>
-    <text id="_300_shares" data-name="300 shares" transform="translate(13010 -10338)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">300 shares</tspan></text>
-    <text id="Angela:" transform="translate(12890 -10282)" fill="#b15f02" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Angela:</tspan></text>
-    <text id="_100_shares-2" data-name="100 shares" transform="translate(13011 -10282)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">100 shares</tspan></text>
-    <text id="Chris:" transform="translate(12890 -10263)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Chris:</tspan></text>
-    <text id="_100_shares-3" data-name="100 shares" transform="translate(13011 -10263)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">100 shares</tspan></text>
+    <text id="Bitcoin_Change" data-name="Bitcoin Change" transform="translate(13128 -10594)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Bitcoin Change</tspan></text>
+    <text id="TBACT_2_" data-name="TBACT (2)" transform="translate(12952 -10594)" fill="#19e134" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">TBACT (2)</tspan></text>
+    <text id="Bill:" transform="translate(12891 -10338)" fill="#ffc000" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Bill:</tspan></text>
+    <text id="_100_shares" data-name="100 shares" transform="translate(13012 -10338)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">100 shares</tspan></text>
+    <text id="TBACT_Smart_Contract-2" data-name="TBACT Smart Contract" transform="translate(12874 -10441)" fill="#7030a0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">TBACT Smart Contract</tspan></text>
+    <text id="ASSETID:_SHCTBACTjfn23..._TBACT_Shares" data-name="ASSETID:  SHCTBACTjfn23... TBACT Shares" transform="translate(12874 -10427)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13" xml:space="preserve">ASSETID:  SHCTBACTjfn23... TBACT Shares</tspan></text>
+    <text id="Senders" transform="translate(12890 -10411)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">Senders</tspan></text>
+    <text id="Receivers" transform="translate(12890 -10371)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">Receivers</tspan></text>
+    <text id="TBACT:" transform="translate(12890 -10376)" fill="#19e134" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">TBACT:</tspan></text>
+    <text id="_300_shares" data-name="300 shares" transform="translate(13010 -10376)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">300 shares</tspan></text>
+    <text id="Angela:" transform="translate(12890 -10320)" fill="#b15f02" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Angela:</tspan></text>
+    <text id="_100_shares-2" data-name="100 shares" transform="translate(13011 -10320)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">100 shares</tspan></text>
+    <text id="Chris:" transform="translate(12890 -10301)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Chris:</tspan></text>
+    <text id="_100_shares-3" data-name="100 shares" transform="translate(13011 -10301)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">100 shares</tspan></text>
   </g>
 </svg>

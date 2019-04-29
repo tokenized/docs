@@ -9,10 +9,10 @@
     <text id="INPUTS" transform="translate(3547 -10624)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">INPUTS</tspan></text>
     <text id="OUTPUTS_" data-name="OUTPUTS " transform="translate(3750 -10624)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">OUTPUTS </tspan></text>
     <text id="_0:_Smart_Contract" data-name="0: Smart Contract" transform="translate(3547 -10604)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="15">0: Smart Contract</tspan></text>
-    <text id="_0:_Merchant_Exchange_1_1:_Buyer_2_2:_Merchant_Exchange_2_N:_Settlement_Action" data-name="0: Merchant/Exchange (1)
-1: Buyer (2)
-2: Merchant/Exchange (2)
-N: Settlement Action" transform="translate(3750 -10604)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="15">0: </tspan><tspan y="15" fill="#ef1818">Merchant/Exchange (1)</tspan><tspan x="0" y="34">1: </tspan><tspan y="34" fill="#7b1adb">Buyer (2)</tspan><tspan x="0" y="53">2: </tspan><tspan y="53" fill="#ef1818">Merchant/Exchange (2)</tspan><tspan x="0" y="72">N: Settlement Action</tspan></text>
+    <text id="_0:_Merchant_Exchange_1_1:_Buyer_3_2:_Merchant_Exchange_3_N:_Settlement_Action" data-name="0: Merchant/Exchange (1)
+1: Buyer (3)
+2: Merchant/Exchange (3)
+N: Settlement Action" transform="translate(3750 -10604)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="15">0: </tspan><tspan y="15" fill="#ef1818">Merchant/Exchange (1)</tspan><tspan x="0" y="34">1: </tspan><tspan y="34" fill="#7b1adb">Buyer (3)</tspan><tspan x="0" y="53">2: </tspan><tspan y="53" fill="#ef1818">Merchant/Exchange (3)</tspan><tspan x="0" y="72">N: Settlement Action</tspan></text>
     <text id="VALUE" transform="translate(3943 -10624)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">VALUE</tspan></text>
     <g id="Rectangle_77" data-name="Rectangle 77" transform="translate(3692 -10453)" fill="#fcfcfc" stroke="#707070" stroke-width="1" stroke-dasharray="3">
       <rect width="339.499" height="181" stroke="none"/>
@@ -21,8 +21,8 @@ N: Settlement Action" transform="translate(3750 -10604)" fill="#707070" font-siz
     <text id="Settlement_Action_Payload" data-name="Settlement Action Payload" transform="translate(3703 -10418)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Settlement Action Payload</tspan></text>
     <text id="Settlements" transform="translate(3718 -10381)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">Settlements</tspan></text>
     <text id="Merchant_Exchange_1_:_0_tokens" data-name="Merchant/Exchange (1): 0 tokens" transform="translate(3718 -10346)" fill="#ef1818" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Merchant/Exchange (1)</tspan><tspan y="0" fill="#707070">: 0 tokens</tspan></text>
-    <text id="Buyer_2_:_100_tokens_Merchant_Exchange_2_:_450_tokens_" data-name="Buyer (2): 100 tokens
-Merchant/Exchange (2): 450 tokens " transform="translate(3718 -10325)" fill="#7b1adb" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Buyer (2)</tspan><tspan y="0" fill="#707070">: 100 tokens</tspan><tspan fill="#ef1818"><tspan x="0" y="19">Merchant/Exchange (2):</tspan><tspan y="19" xml:space="preserve" fill="#707070"> 450 tokens </tspan></tspan></text>
+    <text id="Buyer_3_:_100_tokens_Merchant_Exchange_3_:_450_tokens_" data-name="Buyer (3): 100 tokens
+Merchant/Exchange (3): 450 tokens " transform="translate(3718 -10325)" fill="#7b1adb" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Buyer (3)</tspan><tspan y="0" fill="#707070">: 100 tokens</tspan><tspan fill="#ef1818"><tspan x="0" y="19">Merchant/Exchange (3):</tspan><tspan y="19" xml:space="preserve" fill="#707070"> 450 tokens </tspan></tspan></text>
     <text id="ASSETID:_SHC1BvBMSEYstWetqTFn5Au4m4GFg7xJ..." data-name="ASSETID: SHC1BvBMSEYstWetqTFn5Au4m4GFg7xJ..." transform="translate(3707 -10400)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">ASSETID: SHC1BvBMSEYstWetqTFn5Au4m4GFg7xJ...</tspan></text>
     <line id="Line_135" data-name="Line 135" y2="84" transform="translate(3708.5 -10378.5)" fill="none" stroke="#707070" stroke-width="1"/>
     <text id="_2_BSV_Dust_Dust_N_A_Not_shown:_Contract_Fee" data-name="2 BSV

@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="672" height="431" viewBox="0 0 672 431">
+<svg xmlns="http://www.w3.org/2000/svg" width="672" height="412" viewBox="0 0 672 412">
   <g id="bob-airmile-transfer-final" transform="translate(-15455 10713)">
     <g id="Rectangle_340" data-name="Rectangle 340" transform="translate(15455 -10713)" fill="#fcfcfc" stroke="#707070" stroke-width="1">
       <rect width="672" height="175" stroke="none"/>
@@ -13,36 +13,33 @@
     <text id="_0:_" data-name="0: " transform="translate(15680 -10616)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: </tspan></text>
     <text id="_1:_" data-name="1: " transform="translate(15680 -10597)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1: </tspan></text>
     <text id="Contract_fees_Response_cost" data-name="Contract fees + Response cost" transform="translate(15915 -10616)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Contract fees + Response cost</tspan></text>
-    <text id="Dust" transform="translate(15915 -10597)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust</tspan></text>
-    <text id="Dianne" transform="translate(15698 -10597)" fill="#002060" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dianne</tspan></text>
-    <text id="Change_BSV_and_Tokens_" data-name="Change (BSV and Tokens)" transform="translate(15915 -10578)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Change (BSV and Tokens)</tspan></text>
-    <text id="N_A" data-name="N/A" transform="translate(15915 -10559)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N/A</tspan></text>
+    <text id="Bitcoin_Change" data-name="Bitcoin Change" transform="translate(15915 -10597)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Bitcoin Change</tspan></text>
+    <text id="N_A" data-name="N/A" transform="translate(15915 -10578)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N/A</tspan></text>
     <text id="Bob_1_" data-name="Bob (1)" transform="translate(15488 -10616)" fill="#00b0f0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Bob (1)</tspan></text>
-    <g id="Rectangle_341" data-name="Rectangle 341" transform="translate(15585 -10505)" fill="#fcfcfc" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+    <g id="Rectangle_341" data-name="Rectangle 341" transform="translate(15585 -10524)" fill="#fcfcfc" stroke="#707070" stroke-width="1" stroke-dasharray="3">
       <rect width="382.499" height="223" stroke="none"/>
       <rect x="0.5" y="0.5" width="381.499" height="222" fill="none"/>
     </g>
-    <line id="Line_400" data-name="Line 400" y2="49" transform="translate(15742.5 -10554.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
-    <g id="Rectangle_342" data-name="Rectangle 342" transform="translate(15696 -10574)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+    <line id="Line_400" data-name="Line 400" y2="49" transform="translate(15742.5 -10573.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
+    <g id="Rectangle_342" data-name="Rectangle 342" transform="translate(15696 -10593)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
       <rect width="108" height="19" stroke="none"/>
       <rect x="0.5" y="0.5" width="107" height="18" fill="none"/>
     </g>
-    <text id="N:_" data-name="N: " transform="translate(15680 -10559)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N: </tspan></text>
-    <text id="Transfer_Action" data-name="Transfer Action" transform="translate(15698 -10559)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Transfer Action</tspan></text>
-    <text id="Transfer_Action_Payload" data-name="Transfer Action Payload" transform="translate(15597 -10467)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Transfer Action Payload</tspan></text>
-    <text id="Senders" transform="translate(15612 -10414)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">Senders</tspan></text>
-    <text id="Receivers" transform="translate(15612 -10384)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">Receivers</tspan></text>
-    <text id="ASSETID:_LOYTokAirBMSEY_TokenAir_Frequent_Flyer_Points" data-name="ASSETID: LOYTokAirBMSEY… TokenAir Frequent Flyer Points" transform="translate(15601 -10449)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">ASSETID: LOYTokAirBMSEY… TokenAir Frequent Flyer Points</tspan></text>
-    <text id="Dianne-2" data-name="Dianne" transform="translate(15612 -10349)" fill="#002060" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dianne</tspan></text>
-    <text id="Bob_1_2" data-name="Bob (1)" transform="translate(15612 -10395)" fill="#00b0f0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Bob (1)</tspan></text>
-    <text id="_2_000_000_points" data-name="2,000,000 points" transform="translate(15804 -10349)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">2,000,000 points</tspan></text>
-    <text id="_2:_" data-name="2: " transform="translate(15680 -10578)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">2: </tspan></text>
-    <text id="Bob_2_" data-name="Bob (2)" transform="translate(15698 -10578)" fill="#00b0f0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Bob (2)</tspan></text>
-    <text id="_4_139_332_points" data-name="4,139,332 points" transform="translate(15804 -10395)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">4,139,332 points</tspan></text>
-    <text id="_Registry_message_authorising_Dianne_as_Receiver_" data-name="+ Registry message authorising Dianne as Receiver " transform="translate(15612 -10328)" fill="#ffc000" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">+ Registry message authorising Dianne as Receiver </tspan></text>
-    <text id="Bob_2_2" data-name="Bob (2)" transform="translate(15612 -10307)" fill="#00b0f0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Bob (2)</tspan></text>
-    <text id="_2_139_332_points" data-name="2,139,332 points" transform="translate(15804 -10307)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">2,139,332 points</tspan></text>
-    <line id="Line_414" data-name="Line 414" y2="126" transform="translate(15601.5 -10428.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <text id="N:_" data-name="N: " transform="translate(15680 -10578)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N: </tspan></text>
+    <text id="Transfer_Action" data-name="Transfer Action" transform="translate(15698 -10578)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Transfer Action</tspan></text>
+    <text id="Transfer_Action_Payload" data-name="Transfer Action Payload" transform="translate(15597 -10486)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Transfer Action Payload</tspan></text>
+    <text id="Senders" transform="translate(15612 -10433)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">Senders</tspan></text>
+    <text id="Receivers" transform="translate(15612 -10403)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">Receivers</tspan></text>
+    <text id="ASSETID:_LOYTokAirBMSEY_TokenAir_Frequent_Flyer_Points" data-name="ASSETID: LOYTokAirBMSEY… TokenAir Frequent Flyer Points" transform="translate(15601 -10468)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">ASSETID: LOYTokAirBMSEY… TokenAir Frequent Flyer Points</tspan></text>
+    <text id="Dianne" transform="translate(15612 -10368)" fill="#002060" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dianne</tspan></text>
+    <text id="Bob_1_2" data-name="Bob (1)" transform="translate(15612 -10414)" fill="#00b0f0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Bob (1)</tspan></text>
+    <text id="_2_000_000_points" data-name="2,000,000 points" transform="translate(15804 -10368)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">2,000,000 points</tspan></text>
+    <text id="Bob_2_" data-name="Bob (2)" transform="translate(15698 -10597)" fill="#00b0f0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Bob (2)</tspan></text>
+    <text id="_4_139_332_points" data-name="4,139,332 points" transform="translate(15804 -10414)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">4,139,332 points</tspan></text>
+    <text id="_Registry_message_authorising_Dianne_as_Receiver_" data-name="+ Registry message authorising Dianne as Receiver " transform="translate(15612 -10347)" fill="#ffc000" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">+ Registry message authorising Dianne as Receiver </tspan></text>
+    <text id="Bob_3_" data-name="Bob (3)" transform="translate(15612 -10326)" fill="#00b0f0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Bob (3)</tspan></text>
+    <text id="_2_139_332_points" data-name="2,139,332 points" transform="translate(15804 -10326)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">2,139,332 points</tspan></text>
+    <line id="Line_414" data-name="Line 414" y2="126" transform="translate(15601.5 -10447.5)" fill="none" stroke="#707070" stroke-width="1"/>
     <text id="_0:_2" data-name="0: " transform="translate(15470 -10616)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: </tspan></text>
   </g>
 </svg>
