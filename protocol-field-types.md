@@ -113,6 +113,7 @@ The `size` does not need to be specified and is always 32 bytes.
 - [Administrator](#type-administrator)
 - [Age Restriction](#type-age-restriction)
 - [Amendment](#type-amendment)
+- [AssetReceiver](#type-asset-receiver)
 - [Asset Settlement](#type-asset-settlement)
 - [Asset Transfer](#type-asset-transfer)
 - [Entity](#type-entity)
@@ -121,7 +122,6 @@ The `size` does not need to be specified and is always 32 bytes.
 - [Output Tag](#type-output-tag)
 - [Quantity Index](#type-quantity-index)
 - [Target Address](#type-target-address)
-- [Token Receiver](#type-token-receiver)
 - [Voting System](#type-voting-system)
 </div>
 
@@ -272,6 +272,61 @@ An Amendment is used to describe the modification of a single field in a Contrac
 
 
 
+<a name="type-asset-receiver"></a>
+### AssetReceiver
+
+An AssetReceiver is a quantity, address, and oracle signature. The quantity could be used to describe a number of tokens, or a value. The address is where the asset will be sent.
+
+<table>
+    <tr>
+        <th style="width:15%">Field</th>
+        <th style="width:15%">Type</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>Address</td>
+        <td>
+            <a href="field-types#type-public-key-hash">PublicKeyHash</a>
+        </td>
+        <td>
+            The address receiving the tokens
+            
+        </td>
+    </tr>
+    <tr>
+        <td>Quantity</td>
+        <td>
+            uint(8)
+        </td>
+        <td>
+            Number of tokens to be received by address at Output X
+             Example: 100
+        </td>
+    </tr>
+    <tr>
+        <td>OracleSigAlgorithm</td>
+        <td>
+            uint(1)
+        </td>
+        <td>
+            0 = No Oracle-signed Message (OracleConfirmationSig skipped in serialization), 1 = ECDSA+secp256k1. If the contract for the asset being received has oracles, then a signature is required from one of them.
+             Example: 1
+        </td>
+    </tr>
+    <tr>
+        <td>OracleConfirmationSig</td>
+        <td>
+            varbin(8)
+        </td>
+        <td>
+            Length 0-255 bytes. If restricted to a oracle (whitelist) or has transfer restrictions (age, location, investor status): ECDSA+secp256k1 (or the like) signed message provided by an approved/trusted oracle through an API signature of the defined message. If no transfer restrictions(trade restriction/age restriction fields in the Asset Type payload. or restricted to a whitelist by the Contract Auth Flags, it is a NULL field.
+            
+        </td>
+    </tr>
+</table>
+
+
+
 <a name="type-asset-settlement"></a>
 ### Asset Settlement
 
@@ -381,10 +436,10 @@ AssetTransfer is the data required to transfer an asset.
     <tr>
         <td>AssetReceivers</td>
         <td>
-            <a href="field-types#type-token-receiver">TokenReceiver[]</a>
+            <a href="field-types#type-asset-receiver">AssetReceiver[]</a>
         </td>
         <td>
-            Each element has the value of tokens to be received by the output address, which is referred to by the index.
+            Each element has the value of tokens to be received, the address, and an oracle signature if required.
             
         </td>
     </tr>
@@ -665,7 +720,7 @@ A tag or category of an output used to categorize and organize outputs from diff
 <a name="type-quantity-index"></a>
 ### Quantity Index
 
-A QuantityIndex contains a quantity, and an index. The quantity could be used to describe a number of tokens, or a value. The index is used to refer to an input index position.
+A QuantityIndex contains a quantity, and an index. The quantity could be used to describe a number of tokens, or a value. The index is used to refer to an input or output index position.
 
 <table>
     <tr>
@@ -679,7 +734,7 @@ A QuantityIndex contains a quantity, and an index. The quantity could be used to
             uint(2)
         </td>
         <td>
-            The index of the input sending the tokens
+            The index of the input/output (depending on context) sending/receiving the tokens.
              Example: 0
         </td>
     </tr>
@@ -726,61 +781,6 @@ A TargetAddress defines a public address and quantity.
         <td>
             Qty of tokens to be frozen, thawed, confiscated or reconciled. For Contract-wide freezes 0 will be used.
              Example: 10000
-        </td>
-    </tr>
-</table>
-
-
-
-<a name="type-token-receiver"></a>
-### Token Receiver
-
-A TokenReceiver is contains a quantity, index, and oracle signature. The quantity could be used to describe a number of tokens, or a value. The index is used to refer to an input index position.
-
-<table>
-    <tr>
-        <th style="width:15%">Field</th>
-        <th style="width:15%">Type</th>
-        <th>Description</th>
-    </tr>
-    <tr>
-        <td>Index</td>
-        <td>
-            uint(2)
-        </td>
-        <td>
-            The index of the output receiving the tokens
-             Example: 0
-        </td>
-    </tr>
-    <tr>
-        <td>Quantity</td>
-        <td>
-            uint(8)
-        </td>
-        <td>
-            Number of tokens to be received by address at Output X
-             Example: 100
-        </td>
-    </tr>
-    <tr>
-        <td>OracleSigAlgorithm</td>
-        <td>
-            uint(1)
-        </td>
-        <td>
-            0 = No Oracle-signed Message (OracleConfirmationSig skipped in serialization), 1 = ECDSA+secp256k1. If the contract for the asset being received has oracles, then a signature is required from one of them.
-             Example: 1
-        </td>
-    </tr>
-    <tr>
-        <td>OracleConfirmationSig</td>
-        <td>
-            varbin(8)
-        </td>
-        <td>
-            Length 0-255 bytes. If restricted to a oracle (whitelist) or has transfer restrictions (age, location, investor status): ECDSA+secp256k1 (or the like) signed message provided by an approved/trusted oracle through an API signature of the defined message. If no transfer restrictions(trade restriction/age restriction fields in the Asset Type payload. or restricted to a whitelist by the Contract Auth Flags, it is a NULL field.
-            
         </td>
     </tr>
 </table>
