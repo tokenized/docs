@@ -34,14 +34,14 @@
     <text id="_4:_" data-name="4: " transform="translate(7801 -10529)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">4: </tspan></text>
     <text id="Harry_1_" data-name="Harry (1)" transform="translate(7819 -10586)" fill="#a5981e" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Harry (1)</tspan></text>
     <text id="Harry_2_" data-name="Harry (2) " transform="translate(7819 -10567)" fill="#a5981e" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Harry (2) </tspan></text>
-    <text id="Harry_3_" data-name="Harry (3) " transform="translate(7819 -10529)" fill="#a5981e" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Harry (3) </tspan></text>
+    <text id="Harry_4_" data-name="Harry (4) " transform="translate(7819 -10529)" fill="#a5981e" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Harry (4) </tspan></text>
     <text id="Dominic_s_Pizza_2_" data-name="Dominic&apos;s Pizza (2)" transform="translate(7819 -10548)" fill="#19e134" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dominic&apos;s Pizza (2)</tspan></text>
     <text id="Dust-3" data-name="Dust" transform="translate(7995 -10567)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust</tspan></text>
     <text id="Dust_" data-name="Dust " transform="translate(7995 -10548)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust </tspan></text>
     <text id="Dust_2" data-name="Dust " transform="translate(7995 -10529)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust </tspan></text>
     <text id="Dominic_s_Pizza_1_2" data-name="Dominic&apos;s Pizza (1)" transform="translate(7752 -10318)" fill="#19e134" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dominic&apos;s Pizza (1)</tspan></text>
-    <text id="Harry_3_:" data-name="Harry (3):" transform="translate(7752 -10300)" fill="#a5981e" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Harry (3):</tspan></text>
-    <text id="Harry_3_:-2" data-name="Harry (3):" transform="translate(7752 -10225)" fill="#a5981e" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Harry (3):</tspan></text>
+    <text id="Harry_4_:" data-name="Harry (4):" transform="translate(7752 -10300)" fill="#a5981e" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Harry (4):</tspan></text>
+    <text id="Harry_4_:-2" data-name="Harry (4):" transform="translate(7752 -10225)" fill="#a5981e" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Harry (4):</tspan></text>
     <text id="Dominic_s_Pizza_Contract" data-name="Dominic&apos;s Pizza Contract" transform="translate(7609 -10605)" fill="#7030a0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dominic&apos;s Pizza Contract</tspan></text>
     <g id="Rectangle_250" data-name="Rectangle 250" transform="translate(7817 -10523)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
       <rect width="115" height="18" stroke="none"/>
@@ -67,7 +67,7 @@
     <text id="_0.00_0_cents_2" data-name="$0.00 (0 cents)" transform="translate(7921 -10116)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">$0.00 (0 cents)</tspan></text>
     <text id="Dominic_s_Pizza_2_2" data-name="Dominic&apos;s Pizza (2)" transform="translate(7752 -10097)" fill="#19e134" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dominic&apos;s Pizza (2)</tspan></text>
     <text id="_44.00_4400_cents_" data-name="$44.00 (4400 cents)" transform="translate(7921 -10097)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">$44.00 (4400 cents)</tspan></text>
-    <text id="Harry_3_2" data-name="Harry (3)" transform="translate(7752 -10078)" fill="#a5981e" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Harry (3)</tspan></text>
+    <text id="Harry_5_" data-name="Harry (5)" transform="translate(7752 -10078)" fill="#a5981e" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Harry (5)</tspan></text>
     <text id="_6.31_631_cents_" data-name="$6.31 (631 cents)" transform="translate(7921 -10078)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">$6.31 (631 cents)</tspan></text>
   </g>
 </svg>

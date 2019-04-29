@@ -1,42 +1,39 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="628" height="405" viewBox="0 0 628 405">
+<svg xmlns="http://www.w3.org/2000/svg" width="628" height="386" viewBox="0 0 628 386">
   <g id="candy-bar-pre-paid-transfer-template" transform="translate(-5305 7604)">
     <g id="Rectangle_213" data-name="Rectangle 213" transform="translate(5305 -7604)" fill="#fcfcfc" stroke="#707070" stroke-width="1">
-      <rect width="628" height="158" stroke="none"/>
-      <rect x="0.5" y="0.5" width="627" height="157" fill="none"/>
+      <rect width="628" height="146" stroke="none"/>
+      <rect x="0.5" y="0.5" width="627" height="145" fill="none"/>
     </g>
     <text id="Request_Transaction_Transfer_" data-name="Request Transaction (Transfer)" transform="translate(5317 -7571)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Request Transaction (Transfer)</tspan></text>
-    <line id="Line_280" data-name="Line 280" x2="1" y2="81" transform="translate(5505.5 -7543.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <line id="Line_280" data-name="Line 280" y2="60" transform="translate(5505.5 -7543.5)" fill="none" stroke="#707070" stroke-width="1"/>
     <text id="INPUTS" transform="translate(5318 -7542)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">INPUTS</tspan></text>
     <text id="OUTPUTS_" data-name="OUTPUTS " transform="translate(5521 -7542)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">OUTPUTS </tspan></text>
     <text id="_0:_" data-name="0: " transform="translate(5318 -7507)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: </tspan></text>
     <text id="VALUE" transform="translate(5714 -7542)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">VALUE</tspan></text>
     <text id="_0:_2" data-name="0: " transform="translate(5521 -7507)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: </tspan></text>
-    <text id="_1:_" data-name="1: " transform="translate(5521 -7488)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1: </tspan></text>
     <text id="Contract_Fees_Response_Cost_" data-name="Contract Fees + Response Cost " transform="translate(5715 -7507)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Contract Fees + Response Cost </tspan></text>
-    <text id="Dust" transform="translate(5715 -7488)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust</tspan></text>
-    <text id="N_A" data-name="N/A" transform="translate(5715 -7469)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N/A</tspan></text>
-    <g id="Rectangle_214" data-name="Rectangle 214" transform="translate(5449 -7381)" fill="#fcfcfc" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+    <text id="N_A" data-name="N/A" transform="translate(5715 -7488)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N/A</tspan></text>
+    <g id="Rectangle_214" data-name="Rectangle 214" transform="translate(5449 -7400)" fill="#fcfcfc" stroke="#707070" stroke-width="1" stroke-dasharray="3">
       <rect width="390.499" height="182" stroke="none"/>
       <rect x="0.5" y="0.5" width="389.499" height="181" fill="none"/>
     </g>
-    <text id="Transfer_Action_Payload" data-name="Transfer Action Payload" transform="translate(5460 -7346)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Transfer Action Payload</tspan></text>
-    <text id="Senders" transform="translate(5475 -7294)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">Senders</tspan></text>
-    <text id="Receivers" transform="translate(5475 -7263)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">Receivers</tspan></text>
-    <text id="ASSETID:_COUSSmedCombotqTD_Self_Service_Medium_Combo" data-name="ASSETID: COUSSmedCombotqTD… Self Service Medium Combo" transform="translate(5464 -7328)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">ASSETID: COUSSmedCombotqTD… Self Service Medium Combo</tspan></text>
-    <line id="Line_281" data-name="Line 281" y2="84" transform="translate(5465.5 -7306.5)" fill="none" stroke="#707070" stroke-width="1"/>
-    <line id="Line_282" data-name="Line 282" y2="85" transform="translate(5583.5 -7465.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
-    <g id="Rectangle_215" data-name="Rectangle 215" transform="translate(5537 -7484)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+    <text id="Transfer_Action_Payload" data-name="Transfer Action Payload" transform="translate(5460 -7365)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Transfer Action Payload</tspan></text>
+    <text id="Senders" transform="translate(5475 -7313)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">Senders</tspan></text>
+    <text id="Receivers" transform="translate(5475 -7282)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">Receivers</tspan></text>
+    <text id="ASSETID:_COUSSmedCombotqTD_Self_Service_Medium_Combo" data-name="ASSETID: COUSSmedCombotqTD… Self Service Medium Combo" transform="translate(5464 -7347)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">ASSETID: COUSSmedCombotqTD… Self Service Medium Combo</tspan></text>
+    <line id="Line_281" data-name="Line 281" y2="84" transform="translate(5465.5 -7325.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <line id="Line_282" data-name="Line 282" y2="85" transform="translate(5583.5 -7484.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
+    <g id="Rectangle_215" data-name="Rectangle 215" transform="translate(5537 -7503)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
       <rect width="98" height="18" stroke="none"/>
       <rect x="0.5" y="0.5" width="97" height="17" fill="none"/>
     </g>
-    <text id="N:_" data-name="N: " transform="translate(5521 -7469)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N: </tspan></text>
-    <text id="Transfer_Action" data-name="Transfer Action" transform="translate(5539 -7469)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Transfer Action</tspan></text>
+    <text id="N:_" data-name="N: " transform="translate(5521 -7488)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N: </tspan></text>
+    <text id="Transfer_Action" data-name="Transfer Action" transform="translate(5539 -7488)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Transfer Action</tspan></text>
     <text id="Empty_for_Alice_" data-name="Empty (for Alice) " transform="translate(5336 -7507)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Empty (for Alice) </tspan></text>
     <text id="Cinema_Ticketing_Contract" data-name="Cinema Ticketing Contract" transform="translate(5539 -7507)" fill="#7030a0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Cinema Ticketing Contract</tspan></text>
-    <text id="Cinema" transform="translate(5539 -7488)" fill="#19e134" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Cinema</tspan></text>
-    <text id="Cinema-2" data-name="Cinema" transform="translate(5476 -7227)" fill="#19e134" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Cinema</tspan></text>
-    <text id="Alice" transform="translate(5476 -7274)" fill="#00b0f0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Alice</tspan></text>
-    <text id="_1_coupon" data-name="1 coupon" transform="translate(5588 -7227)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1 coupon</tspan></text>
-    <text id="_1_coupon-2" data-name="1 coupon" transform="translate(5588 -7274)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1 coupon</tspan></text>
+    <text id="Cinema_1_" data-name="Cinema (1)" transform="translate(5476 -7246)" fill="#19e134" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Cinema (1)</tspan></text>
+    <text id="___________" transform="translate(5476 -7293)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">___________</tspan></text>
+    <text id="_1_coupon" data-name="1 coupon" transform="translate(5588 -7246)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1 coupon</tspan></text>
+    <text id="_1_coupon-2" data-name="1 coupon" transform="translate(5588 -7293)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1 coupon</tspan></text>
   </g>
 </svg>

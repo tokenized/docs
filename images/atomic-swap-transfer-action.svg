@@ -16,11 +16,11 @@
 2: Participant 2 (2)
 N: Transfer Action" transform="translate(2181 -9246)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="15">0: Smart Contract 1</tspan><tspan x="0" y="34">1: Smart Contract 2</tspan><tspan x="0" y="53">1:</tspan><tspan y="53" xml:space="preserve" fill="#ef1818"> Participant 1 (2)</tspan><tspan y="53"></tspan><tspan x="0" y="72">2:</tspan><tspan y="72" xml:space="preserve" fill="#7b1adb"> Participant 2 (2)</tspan><tspan y="72"></tspan><tspan x="0" y="91">N: Transfer Action</tspan></text>
     <text id="VALUE" transform="translate(2374 -9266)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">VALUE</tspan></text>
-    <text id="Response_Costs_Contract_Fee_Response_Costs_Contract_Fee_Change_BSV_and_Tokens_Change_BSV_and_Tokens_N_A" data-name="Response Costs + Contract Fee
+    <text id="Response_Costs_Contract_Fee_Response_Costs_Contract_Fee_Bitcoin_Change_Bitcoin_Change_N_A" data-name="Response Costs + Contract Fee
 Response Costs + Contract Fee
-Change (BSV and Tokens)
-Change (BSV and Tokens)
-N/A" transform="translate(2374 -9246)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="15">Response Costs + Contract Fee</tspan><tspan x="0" y="34">Response Costs + Contract Fee</tspan><tspan x="0" y="53">Change (BSV and Tokens)</tspan><tspan x="0" y="72">Change (BSV and Tokens)</tspan><tspan x="0" y="91">N/A</tspan></text>
+Bitcoin Change
+Bitcoin Change
+N/A" transform="translate(2374 -9246)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="15">Response Costs + Contract Fee</tspan><tspan x="0" y="34">Response Costs + Contract Fee</tspan><tspan x="0" y="53">Bitcoin Change</tspan><tspan x="0" y="72">Bitcoin Change</tspan><tspan x="0" y="91">N/A</tspan></text>
     <g id="Rectangle_98" data-name="Rectangle 98" transform="translate(2197 -9168)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
       <rect width="98" height="17" stroke="none"/>
       <rect x="0.5" y="0.5" width="97" height="16" fill="none"/>
@@ -33,7 +33,7 @@ N/A" transform="translate(2374 -9246)" fill="#707070" font-size="14" font-family
     <text id="Senders" transform="translate(2143 -9040)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">Senders</tspan></text>
     <text id="Participant_1_1_:_300_shares" data-name="Participant 1 (1): 300 shares" transform="translate(2143 -9005)" fill="#ef1818" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Participant 1 (1)</tspan><tspan y="0" fill="#707070">: 300 shares</tspan></text>
     <text id="Receivers" transform="translate(2143 -8994)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">Receivers</tspan></text>
-    <text id="Participant_2_2_:_300_shares" data-name="Participant 2 (2): 300 shares" transform="translate(2143 -8958)" fill="#7b1adb" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Participant 2 (2)</tspan><tspan y="0" fill="#707070">: 300 shares</tspan></text>
+    <text id="Participant_2_3_:_300_shares" data-name="Participant 2 (3): 300 shares" transform="translate(2143 -8958)" fill="#7b1adb" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Participant 2 (3)</tspan><tspan y="0" fill="#707070">: 300 shares</tspan></text>
     <text id="ASSETID:_SHC1BvBMSJ..._Common_Shares" data-name="ASSETID: SHC1BvBMSJ... Common Shares" transform="translate(2132 -9059)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">ASSETID: SHC1BvBMSJ... Common Shares</tspan></text>
     <line id="Line_247" data-name="Line 247" y2="84" transform="translate(2133.5 -9037.5)" fill="none" stroke="#707070" stroke-width="1"/>
     <line id="Line_248" data-name="Line 248" y2="41" transform="translate(2237.5 -9152.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
@@ -41,7 +41,7 @@ N/A" transform="translate(2374 -9246)" fill="#707070" font-size="14" font-family
     <text id="Senders-2" data-name="Senders" transform="translate(2143 -8916)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">Senders</tspan></text>
     <text id="Participant_2_1_:_100_shares" data-name="Participant 2 (1): 100 shares" transform="translate(2143 -8881)" fill="#7b1adb" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Participant 2 (1)</tspan><tspan y="0" fill="#707070">: 100 shares</tspan></text>
     <text id="Receivers-2" data-name="Receivers" transform="translate(2143 -8866)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">Receivers</tspan></text>
-    <text id="Participant_1_2_:_100_shares" data-name="Participant 1 (2): 100 shares" transform="translate(2143 -8831)" fill="#ef1818" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Participant 1 (2)</tspan><tspan y="0" fill="#707070">: 100 shares</tspan></text>
+    <text id="Participant_1_3_:_100_shares" data-name="Participant 1 (3): 100 shares" transform="translate(2143 -8831)" fill="#ef1818" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Participant 1 (3)</tspan><tspan y="0" fill="#707070">: 100 shares</tspan></text>
     <line id="Line_249" data-name="Line 249" y2="91" transform="translate(2133.5 -8915.5)" fill="none" stroke="#707070" stroke-width="1"/>
   </g>
 </svg>
