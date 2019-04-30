@@ -1,25 +1,27 @@
 # Asset Transfers
 
 - [Introduction](#introduction)
-- [Transferring tokens to a single receiver](#single-receiver)
-- [Transferring tokens to a multiple receivers](#multiple-receiver)
-- [Purchasing tokens with bitcoin](#exchange)
-- [Cross contract atomic swaps](#atomic-swaps)
+- [Single Receiver](#single-receiver)
+- [Multiple Receivers](#multiple-receiver)
+- [Swap Tokens for Bitcoin](#exchange-bitcoins)
+- [Cross Contract Atomic Swaps](#atomic-swaps)
 
 <a name="introduction"></a>
 ## Introduction
 
-The Transfer action is the means by which all asset transfers (Outside of enforcement actions) are conducted. The action is versatile and allows assets to be transferred between multiple holders and across multiple smart contracts. The following outlines the main ways in which the Transfer action is used.
+The Transfer action is the means by which all asset transfers are conducted, with the exception of enforcement actions. The action is versatile and allows assets to be transferred between multiple holders and across multiple smart contracts. The following outlines the main ways in which the Transfer action is used.
 
-<a name="single-receiver"></a>
-## Transferring Tokens to a Single Receiver
-
-The act of transferring tokens can become fairly complicated when there are multiple parties and contracts involved, however, the final outcome is always captured in just two on-chain transactions:
+The act of transferring tokens can become complicated when there are multiple parties and contracts involved, however, the final outcome is always captured in just two on-chain transactions:
 
 1. Transfer action (Request)
 2. Settlement action (Response)
 
-In its simplest form, a transfer is an action between 2 parties which is validated by a smart contract.
+> **Note:** Unlike most other actions, the [Transfer action](../protocol/actions#action-transfer) places the participating addresses inside the message payload as an [Asset Transfer type](../protocol/field-types#type-asset-transfer) instead of using the transaction inputs and output. This means the recipient of a transfer will be unaware of the transfer until it has settled and helps reduce the number of dust outputs. The same structure applies to the [Enforcement actions](../concepts/enforcement).
+
+<a name="single-receiver"></a>
+## Single Receiver
+
+When transferring tokens to a single receiver the transfer is an action between 2 parties which is validated by a smart contract.
 
 In this example, a token issuer will send 100 tokens from its own balance to a receiver. This event is initiated by the issuer through the creation of a Transfer action detailing the receiver's address and the number of tokens they wish to send.
 
@@ -30,8 +32,9 @@ The smart contract receives the request into its wallet and validates that it me
 ![A basic transfer action](https://raw.githubusercontent.com/tokenized/docs/master/images/one-receiver-settlement-example.svg?sanitize=true "A basic transfer action") {.frame .centered .padded}
 
 <a name="multiple-receiver"></a>
-## Transferring Tokens to Multiple Receivers
-Similarly, for an issuer to distribute tokens to more than one person, the transfer is a 2 step process.
+## Multiple Receivers
+
+Similarly, when transferring tokens to multiple receivers--for an issuer to distribute tokens to more than one person--the transfer is a 2 step process.
 
 In this example, the issuer will now send an additional 100 tokens to the receiver from the example above (receiver 1), and 300 tokens to a second receiver (receiver 2).
 
@@ -44,10 +47,10 @@ Next, once the smart contract has checked everything is ok, it sends a settlemen
 
 ![A two receiver settlement action](https://raw.githubusercontent.com/tokenized/docs/master/images/two-receivers-settlement-example.svg?sanitize=true "A two receiver settlement action") {.frame .centered .padded}
 
-<a name="exchange"></a>
-## Purchasing Tokens with Bitcoin (Exchange via Transfer Action)
+<a name="exchange-bitcoins"></a>
+## Swap Tokens for Bitcoin
 
-The purchase of tokens with Bitcoin is a slightly more complicated interaction as it requires that the Transfer action be signed by two parties before it can be sent onto the network.
+The purchase of tokens with Bitcoin (token for bitcoin transfer) is a more complicated interaction as it requires that the Transfer action be signed by two parties before it can be sent onto the network.
 
 This would typically work by the token purchaser entering into an exchange interface or shopfront, and selecting the tokens that they wish to purchase. Typically, the interface will provide them with a cost for the tokens, with a time limit to finalize the purchase at the proposed price.
 
@@ -69,7 +72,8 @@ Because only one smart contract is involved, the exchange settlement can be buil
 ![Exchange settlement](https://raw.githubusercontent.com/tokenized/docs/master/images/exchange-settlement-example.svg?sanitize=true "Exchange settlement") {.frame .centered .padded}
 
 <a name="atomic-swaps"></a>
-## Atomic Swaps
+## Cross Contract Atomic Swaps
+
 Conducting an atomic swap (token for token transfer) using Tokenized is another more complicated transaction as it requires the holders of the tokens being exchanged to sign the Transfer action, and for both smart contracts to sign the Settlement action.
 
 ![Atomic Swap Transfer Order of Operations](https://raw.githubusercontent.com/tokenized/docs/master/images/atomic-swap-process-order-of-operations.svg?sanitize=true "Atomic Swap Transfer Order of Operations") {.frame .centered .padded}
