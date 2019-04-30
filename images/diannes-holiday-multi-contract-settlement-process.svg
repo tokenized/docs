@@ -23,10 +23,10 @@
       <text id="Note:" transform="translate(20014 -10299)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="17">Note:</tspan></text>
       <text id="The_Transfer_action_is_pushed_to_both._The_first_contract_looks_for_a_second_output_in_the_transaction_that_is_sent_to_its_address._This_is_the_Inter_Contract_Messaging_Coin_and_is_used_to_cover_the_cost_of_passing_messages_between_contracts_to_build_the" data-name="The Transfer action is pushed to both. The first contract looks for a second output in the transaction that is sent to its address. This is the &apos;Inter Contract Messaging Coin&apos; and is used to cover the cost of passing messages between contracts to build the" transform="translate(20014 -10268)" fill="#707070" font-size="14" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="15">The Transfer action is pushed to both. The </tspan><tspan x="0" y="34">first contract looks for a second output in </tspan><tspan x="0" y="53">the transaction that is sent to its address. </tspan><tspan x="0" y="72">This is the &apos;Inter Contract Messaging Coin&apos; </tspan><tspan x="0" y="91">and is used to cover the cost of passing </tspan><tspan x="0" y="110">messages between contracts to build the </tspan><tspan x="0" y="129">settlement action.</tspan></text>
     </g>
-    <text id="_0:_" data-name="0: " transform="translate(20086 -10599)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: </tspan></text>
-    <text id="_1_-_11:_" data-name="1 - 11: " transform="translate(20086 -10580)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1 - 11: </tspan></text>
-    <text id="Token_Air" data-name="Token Air" transform="translate(20104 -10599)" fill="#002060" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Token Air</tspan></text>
-    <text id="Dianne" transform="translate(20133 -10580)" fill="#cd18ef" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dianne</tspan></text>
+    <text id="_0-10:_" data-name="0-10: " transform="translate(20086 -10599)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0-10: </tspan></text>
+    <text id="_11_-_21:_" data-name="11 - 21: " transform="translate(20086 -10580)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">11 - 21: </tspan></text>
+    <text id="Token_Air" data-name="Token Air" transform="translate(20121 -10599)" fill="#002060" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Token Air</tspan></text>
+    <text id="Dianne" transform="translate(20136 -10580)" fill="#cd18ef" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dianne</tspan></text>
     <text id="_2-5:_Send_Receive_Addresses" data-name="2-5: Send &amp; Receive Addresses" transform="translate(20240 -10580)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">2-5: Send &amp; Receive Addresses</tspan></text>
     <text id="_6:_Inter-Contract_Messaging_Coin_sent_to_TokenAir_Frequent_Flyer_Contract_" data-name="6: Inter-Contract Messaging Coin
 (sent to TokenAir Frequent Flyer
@@ -118,10 +118,10 @@ N/A" transform="translate(20527 -9760)" fill="#707070" font-size="14" font-famil
         <line id="Line_454" data-name="Line 454" y2="117" transform="translate(19399.529 -9643.5)" fill="none" stroke="#707070" stroke-width="1"/>
         <text id="INPUTS-4" data-name="INPUTS" transform="translate(19106 -9642)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">INPUTS</tspan></text>
         <text id="OUTPUTS_4" data-name="OUTPUTS " transform="translate(19409.406 -9642)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">OUTPUTS </tspan></text>
-        <text id="_0:_2" data-name="0: " transform="translate(19106 -9607)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: </tspan></text>
+        <text id="_0:_" data-name="0: " transform="translate(19106 -9607)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: </tspan></text>
         <text id="VALUE-3" data-name="VALUE" transform="translate(19573.432 -9642)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">VALUE</tspan></text>
         <text id="_1:_" data-name="1: " transform="translate(19106 -9588)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1: </tspan></text>
-        <text id="_0:_3" data-name="0: " transform="translate(19407.766 -9607)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: </tspan></text>
+        <text id="_0:_2" data-name="0: " transform="translate(19407.766 -9607)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: </tspan></text>
         <text id="_1:_2" data-name="1: " transform="translate(19407.766 -9588)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1: </tspan></text>
         <text id="_2:_" data-name="2: " transform="translate(19407.766 -9569)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">2: </tspan></text>
         <text id="_3-12:_" data-name="3-12: " transform="translate(19407.766 -9550)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">3-12: </tspan></text>

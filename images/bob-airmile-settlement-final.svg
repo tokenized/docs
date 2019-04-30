@@ -4,7 +4,7 @@
       <rect width="672" height="191" stroke="none"/>
       <rect x="0.5" y="0.5" width="671" height="190" fill="none"/>
     </g>
-    <text id="Request_Transaction_Transfer_" data-name="Request Transaction (Transfer)" transform="translate(15476 -10680)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Request Transaction (Transfer)</tspan></text>
+    <text id="Response_Transaction_Settlement_" data-name="Response Transaction (Settlement)" transform="translate(15476 -10680)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Response Transaction (Settlement)</tspan></text>
     <line id="Line_399" data-name="Line 399" y2="98" transform="translate(15708.5 -10652.5)" fill="none" stroke="#707070" stroke-width="1"/>
     <text id="INPUTS" transform="translate(15470 -10651)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">INPUTS</tspan></text>
     <text id="OUTPUTS_" data-name="OUTPUTS " transform="translate(15729 -10651)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">OUTPUTS </tspan></text>
