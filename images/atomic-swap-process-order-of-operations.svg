@@ -114,8 +114,8 @@ Dust and/or Change (Token and BSV)
       <text id="INPUTS-4" data-name="INPUTS" transform="translate(-742 -8084)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">INPUTS</tspan></text>
       <text id="OUTPUTS_4" data-name="OUTPUTS " transform="translate(-597 -8084)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">OUTPUTS </tspan></text>
       <text id="_0:_Smart_Contract_2" data-name="0: Smart Contract 2" transform="translate(-742 -8064)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="15">0: Smart Contract 2</tspan></text>
-      <text id="_0:_Smart_Contract_2_N:_Message_Action" data-name="0: Smart Contract 2
-N: Message Action" transform="translate(-597 -8064)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="15">0: Smart Contract 2</tspan><tspan y="15" fill="#7b1adb"></tspan><tspan x="0" y="34">N: Message Action</tspan></text>
+      <text id="_0:_Smart_Contract_1_N:_Message_Action" data-name="0: Smart Contract 1
+N: Message Action" transform="translate(-597 -8064)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="15">0: Smart Contract 1</tspan><tspan y="15" fill="#7b1adb"></tspan><tspan x="0" y="34">N: Message Action</tspan></text>
       <text id="VALUE-4" data-name="VALUE" transform="translate(-452 -8084)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">VALUE</tspan></text>
       <text id="Dust_N_A_Not_Shown:_Change-3" data-name="Dust
 N/A
@@ -296,7 +296,7 @@ N/A" transform="translate(-181 -8766)" fill="#707070" font-size="14" font-family
       <text id="INPUTS-7" data-name="INPUTS" transform="translate(2709 -9269)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">INPUTS</tspan></text>
       <text id="OUTPUTS_7" data-name="OUTPUTS " transform="translate(2855 -9269)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">OUTPUTS </tspan></text>
       <text id="_0:_Smart_Contract_1" data-name="0: Smart Contract 1" transform="translate(2709 -9249)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="15">0: Smart Contract 1</tspan></text>
-      <text id="_0:_Smart_Contract_2_N:_Message_Action-2" data-name="0: Smart Contract 2
+      <text id="_0:_Smart_Contract_2_N:_Message_Action" data-name="0: Smart Contract 2
 N: Message Action" transform="translate(2855 -9249)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="15">0: Smart Contract 2</tspan><tspan x="0" y="34">N: Message Action</tspan></text>
       <text id="VALUE-7" data-name="VALUE" transform="translate(3006 -9269)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">VALUE</tspan></text>
       <text id="Dust_0_Not_shown:_Change" data-name="Dust
