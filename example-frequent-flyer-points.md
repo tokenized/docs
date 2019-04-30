@@ -14,8 +14,8 @@ Bob is a travelling salesman and a frequent flyer of TokenAir.  Over the last fe
 
 His sister Dianne has never been on a plane so Bob gifts her 2,000,000 frequent flyer points to spend on her first overseas holiday.
 
-<a name="oracle-registry"></a>
-## Oracle Registry
+<a name="identity-oracle"></a>
+## Identity Oracle
 
 TokenAir uses a smart contract to manage the frequent flyer points program and uses the Loyalty Points (LOY) asset type for its tokens.  The smart contract is called the TokenAir Frequent Flyer contract.  The conditions of the smart contract prevent Bob from transferring his points to addresses that have not been linked to verified real world identities and the contract uses an Identity Oracle to enforce the rule.
 
