@@ -86,12 +86,12 @@
     <text id="AUD_Exchange_1_" data-name="AUD Exchange (1) " transform="translate(7752 -9901)" fill="#0010f0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">AUD Exchange (1) </tspan></text>
     <text id="_91.91_9191_cents_" data-name="$91.91 (9191 cents)" transform="translate(7937 -9882)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">$91.91 (9191 cents)</tspan></text>
     <text id="_306.41_30641_cents_" data-name="$306.41 (30641 cents)" transform="translate(7937 -9863)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">$306.41 (30641 cents)</tspan></text>
-    <text id="AUD_Exchange_2_" data-name="AUD Exchange (2) " transform="translate(7752 -9863)" fill="#0010f0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">AUD Exchange (2) </tspan></text>
+    <text id="AUD_Exchange_4_" data-name="AUD Exchange (4) " transform="translate(7752 -9863)" fill="#0010f0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">AUD Exchange (4) </tspan></text>
     <text id="_7:_" data-name="7: " transform="translate(7801 -10472)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">7: </tspan></text>
     <text id="Dust_5" data-name="Dust " transform="translate(7995 -10472)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust </tspan></text>
     <text id="AUD_Exchange_1_2" data-name="AUD Exchange (1) " transform="translate(7819 -10472)" fill="#0010f0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">AUD Exchange (1) </tspan></text>
     <text id="_8:_" data-name="8: " transform="translate(7801 -10453)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">8: </tspan></text>
     <text id="Dust_6" data-name="Dust " transform="translate(7995 -10453)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust </tspan></text>
-    <text id="AUD_Exchange_2_2" data-name="AUD Exchange (2) " transform="translate(7819 -10453)" fill="#0010f0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">AUD Exchange (2) </tspan></text>
+    <text id="AUD_Exchange_4_2" data-name="AUD Exchange (4) " transform="translate(7819 -10453)" fill="#0010f0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">AUD Exchange (4) </tspan></text>
   </g>
 </svg>
