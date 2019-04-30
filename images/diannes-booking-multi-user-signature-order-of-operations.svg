@@ -74,8 +74,10 @@ Not shown: Change" transform="translate(19472 -10536)" fill="#707070" font-size=
         <text id="Bitcoin_Change-2" data-name="Bitcoin Change" transform="translate(19784.5 -9263)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Bitcoin Change</tspan></text>
         <text id="TokenAir_Frequent_Flyer_Contract-2" data-name="TokenAir Frequent Flyer Contract" transform="translate(19564.5 -9244)" fill="#f13f3f" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">TokenAir Frequent Flyer Contract</tspan></text>
         <text id="Inter-Contract_Messaging_Cost" data-name="Inter-Contract Messaging Cost" transform="translate(19784.5 -9244)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Inter-Contract Messaging Cost</tspan></text>
-        <text id="_11-21:_" data-name="11-21: " transform="translate(19330 -9301)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">11-21: </tspan></text>
-        <text id="Dianne_1-11_signed_" data-name="Dianne (1-11) (signed)" transform="translate(19373 -9301)" fill="#cd18ef" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dianne (1-11) (signed)</tspan></text>
+        <text id="_11:_" data-name="11: " transform="translate(19330 -9301)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">11: </tspan></text>
+        <text id="Dianne_1_signed_" data-name="Dianne (1) (signed)" transform="translate(19352 -9301)" fill="#cd18ef" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dianne (1) (signed)</tspan></text>
+        <text id="_12-21:_" data-name="12-21: " transform="translate(19330 -9282)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">12-21: </tspan></text>
+        <text id="Dianne_2-11_signed_" data-name="Dianne (2-11) (signed)" transform="translate(19373 -9282)" fill="#cd18ef" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dianne (2-11) (signed)</tspan></text>
       </g>
       <path id="Path_200" data-name="Path 200" d="M0,0V134" transform="translate(19311 -9621.5)" fill="none" stroke="#707070" stroke-width="1"/>
     </g>
@@ -130,8 +132,10 @@ Not shown: Change" transform="translate(19472 -10536)" fill="#707070" font-size=
         <text id="Bitcoin_Change-4" data-name="Bitcoin Change" transform="translate(19763.5 -9263)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Bitcoin Change</tspan></text>
         <text id="TokenAir_Frequent_Flyer_Contract-4" data-name="TokenAir Frequent Flyer Contract" transform="translate(19546.5 -9244)" fill="#f13f3f" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">TokenAir Frequent Flyer Contract</tspan></text>
         <text id="Inter-Contract_Messaging_Cost-2" data-name="Inter-Contract Messaging Cost" transform="translate(19763.5 -9244)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Inter-Contract Messaging Cost</tspan></text>
-        <text id="_11-21:_2" data-name="11-21: " transform="translate(19330 -9302)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">11-21: </tspan></text>
-        <text id="Dianne_1-11_" data-name="Dianne (1-11)" transform="translate(19370 -9302)" fill="#cd18ef" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dianne (1-11)</tspan></text>
+        <text id="_11:_2" data-name="11: " transform="translate(19330 -9302)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">11: </tspan></text>
+        <text id="Dianne_1_" data-name="Dianne (1)" transform="translate(19352 -9302)" fill="#cd18ef" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dianne (1)</tspan></text>
+        <text id="_12-21:_2" data-name="12-21: " transform="translate(19330 -9283)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">12-21: </tspan></text>
+        <text id="Dianne_2-11_" data-name="Dianne (2-11)" transform="translate(19373 -9283)" fill="#cd18ef" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dianne (2-11)</tspan></text>
       </g>
     </g>
     <line id="Line_481" data-name="Line 481" y2="66" transform="translate(19383.5 -9546.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
@@ -143,5 +147,18 @@ Not shown: Change" transform="translate(19472 -10536)" fill="#707070" font-size=
       </g>
     </g>
     <line id="Line_499" data-name="Line 499" y2="135" transform="translate(19277.5 -9681.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <g id="Rectangle_410" data-name="Rectangle 410" transform="translate(19455 -10434)" fill="#fff" stroke="#cf730b" stroke-width="4">
+      <rect width="308" height="155.5" stroke="none"/>
+      <rect x="2" y="2" width="304" height="151.5" fill="none"/>
+    </g>
+    <text id="Note:" transform="translate(19471 -10428)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="17">Note:</tspan></text>
+    <text id="Dianne_sends_her_air_miles_from_the_address_1_where_Bob_sent_them_but_her_Bitcoins_come_from_10_other_coins_she_holds_in_addresses_2-11" data-name="Dianne sends her air miles from the address 1, where Bob sent them, but her Bitcoins come from 10 other coins she holds in addresses 2-11" transform="translate(19471 -10397)" fill="#707070" font-size="14" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="15">Dianne sends her air miles from the </tspan><tspan x="0" y="34">address 1, where Bob sent them, but her </tspan><tspan x="0" y="53">Bitcoins come from 10 other coins she </tspan><tspan x="0" y="72">holds in addresses 2-11</tspan></text>
+    <g id="Rectangle_411" data-name="Rectangle 411" transform="translate(19090 -10140)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3 3">
+      <rect width="207" height="41" stroke="none"/>
+      <rect x="0.5" y="0.5" width="206" height="40" fill="none"/>
+    </g>
+    <line id="Line_511" data-name="Line 511" y1="64" transform="translate(19484.5 -10278.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3 3"/>
+    <path id="Path_201" data-name="Path 201" d="M0,0H188.082" transform="translate(19296.5 -10214.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3 3"/>
+    <line id="Line_513" data-name="Line 513" y1="76" transform="translate(19296.5 -10215.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3 3"/>
   </g>
 </svg>
