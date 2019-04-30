@@ -1,11 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="628.499" height="935" viewBox="0 0 628.499 935">
   <g id="cinema-transfer-template" transform="translate(-5375 10699)">
     <g id="Rectangle_192" data-name="Rectangle 192" transform="translate(5375 -10699)" fill="#fcfcfc" stroke="#707070" stroke-width="1">
-      <rect width="628" height="255" stroke="none"/>
-      <rect x="0.5" y="0.5" width="627" height="254" fill="none"/>
+      <rect width="628" height="237" stroke="none"/>
+      <rect x="0.5" y="0.5" width="627" height="236" fill="none"/>
     </g>
     <text id="Request_Transaction_Transfer_" data-name="Request Transaction (Transfer)" transform="translate(5387 -10666)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Request Transaction (Transfer)</tspan></text>
-    <line id="Line_259" data-name="Line 259" y2="174" transform="translate(5570.5 -10636.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <line id="Line_259" data-name="Line 259" y2="155" transform="translate(5570.5 -10636.5)" fill="none" stroke="#707070" stroke-width="1"/>
     <text id="INPUTS" transform="translate(5388 -10637)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">INPUTS</tspan></text>
     <text id="OUTPUTS_" data-name="OUTPUTS " transform="translate(5591 -10637)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">OUTPUTS </tspan></text>
     <text id="_0:_" data-name="0: " transform="translate(5388 -10602)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: </tspan></text>
@@ -80,7 +80,6 @@
     <text id="Cinema_Seating_1_" data-name="Cinema Seating (1)" transform="translate(5406 -10602)" fill="#19e134" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Cinema Seating (1)</tspan></text>
     <text id="Cinema_Candybar_1_2" data-name="Cinema Candybar (1)" transform="translate(5406 -10583)" fill="#00b050" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Cinema Candybar (1)</tspan></text>
     <text id="Cinema_Seating_2_" data-name="Cinema Seating (2)" transform="translate(5609 -10564)" fill="#19e134" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Cinema Seating (2)</tspan></text>
-    <text id="Not_Shown:_Change" data-name="Not Shown: Change" transform="translate(5785 -10467)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Not Shown: Change</tspan></text>
     <line id="Line_338" data-name="Line 338" y2="79" transform="translate(5390.5 -10322.5)" fill="none" stroke="#707070" stroke-width="1"/>
     <line id="Line_339" data-name="Line 339" y2="79" transform="translate(5390.5 -10217.5)" fill="none" stroke="#707070" stroke-width="1"/>
     <line id="Line_340" data-name="Line 340" y2="79" transform="translate(5390.5 -10112.5)" fill="none" stroke="#707070" stroke-width="1"/>

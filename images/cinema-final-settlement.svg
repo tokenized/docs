@@ -4,10 +4,10 @@
       <rect width="357.499" height="514" stroke="none"/>
       <rect x="0.5" y="0.5" width="356.499" height="513" fill="none"/>
     </g>
-    <text id="_398.33_39832_cents_" data-name="$398.33 (39832 cents)" transform="translate(7937 -9901)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">$398.33 (39832 cents)</tspan></text>
+    <text id="_0.00_0_cents_" data-name="$0.00 (0 cents)" transform="translate(7937 -9901)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">$0.00 (0 cents)</tspan></text>
     <g id="Rectangle_248" data-name="Rectangle 248" transform="translate(7576 -10702)" fill="#fcfcfc" stroke="#707070" stroke-width="1">
-      <rect width="632" height="303" stroke="none"/>
-      <rect x="0.5" y="0.5" width="631" height="302" fill="none"/>
+      <rect width="632" height="309" stroke="none"/>
+      <rect x="0.5" y="0.5" width="631" height="308" fill="none"/>
     </g>
     <text id="Response_Transaction_Settlement_" data-name="Response Transaction (Settlement)" transform="translate(7597 -10669)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Response Transaction (Settlement)</tspan></text>
     <line id="Line_294" data-name="Line 294" y2="231" transform="translate(7785.5 -10641.5)" fill="none" stroke="#707070" stroke-width="1"/>
@@ -68,13 +68,13 @@
     <text id="Dust_3" data-name="Dust " transform="translate(7995 -10510)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust </tspan></text>
     <text id="_6:_" data-name="6: " transform="translate(7801 -10491)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">6: </tspan></text>
     <text id="Dust_4" data-name="Dust " transform="translate(7995 -10491)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust </tspan></text>
-    <text id="Cinema_Candybar_1_" data-name="Cinema Candybar (1)" transform="translate(7819 -10510)" fill="#19e134" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Cinema Candybar (1)</tspan></text>
+    <text id="Cinema_Candybar_1_" data-name="Cinema Candybar (1)" transform="translate(7819 -10510)" fill="#00b050" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Cinema Candybar (1)</tspan></text>
     <text id="Cinema_eAUD_1_" data-name="Cinema eAUD (1)" transform="translate(7819 -10491)" fill="#19e134" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Cinema eAUD (1)</tspan></text>
     <line id="Line_297" data-name="Line 297" y2="57" transform="translate(7745.5 -10195.5)" fill="none" stroke="#707070" stroke-width="1"/>
     <line id="Line_298" data-name="Line 298" y2="57" transform="translate(7745.5 -10120.5)" fill="none" stroke="#707070" stroke-width="1"/>
     <text id="Settlements-4" data-name="Settlements" transform="translate(7752 -10030)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">Settlements</tspan></text>
     <text id="_1_coupon" data-name="1 coupon" transform="translate(7937 -9991)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1 coupon</tspan></text>
-    <text id="Cinema_Candybar_1_2" data-name="Cinema Candybar (1)" transform="translate(7752 -10011)" fill="#19e134" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Cinema Candybar (1)</tspan></text>
+    <text id="Cinema_Candybar_1_2" data-name="Cinema Candybar (1)" transform="translate(7752 -10011)" fill="#00b050" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Cinema Candybar (1)</tspan></text>
     <text id="Alice_4_2" data-name="Alice (4)" transform="translate(7752 -9991)" fill="#00b0f0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Alice (4)</tspan></text>
     <text id="_4021_coupons" data-name="4021 coupons" transform="translate(7937 -10011)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">4021 coupons</tspan></text>
     <line id="Line_299" data-name="Line 299" y2="57" transform="translate(7745.5 -10043.5)" fill="none" stroke="#707070" stroke-width="1"/>

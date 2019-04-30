@@ -32,8 +32,8 @@
     <text id="Empty_for_Alice_" data-name="Empty (for Alice) " transform="translate(5336 -7507)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Empty (for Alice) </tspan></text>
     <text id="Cinema_Ticketing_Contract" data-name="Cinema Ticketing Contract" transform="translate(5539 -7507)" fill="#7030a0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Cinema Ticketing Contract</tspan></text>
     <text id="Cinema_1_" data-name="Cinema (1)" transform="translate(5476 -7246)" fill="#19e134" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Cinema (1)</tspan></text>
-    <text id="___________" transform="translate(5476 -7293)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">___________</tspan></text>
-    <text id="_1_coupon" data-name="1 coupon" transform="translate(5588 -7246)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1 coupon</tspan></text>
-    <text id="_1_coupon-2" data-name="1 coupon" transform="translate(5588 -7293)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1 coupon</tspan></text>
+    <text id="Empty_for_customer_" data-name="Empty (for customer) " transform="translate(5476 -7293)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Empty (for customer) </tspan></text>
+    <text id="_1_coupon" data-name="1 coupon" transform="translate(5631 -7246)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1 coupon</tspan></text>
+    <text id="_1_coupon-2" data-name="1 coupon" transform="translate(5631 -7293)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1 coupon</tspan></text>
   </g>
 </svg>

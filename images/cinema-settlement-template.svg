@@ -1,15 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="632" height="856" viewBox="0 0 632 856">
   <g id="cinema-settlement-template" transform="translate(-6834 10702)">
     <g id="Rectangle_197" data-name="Rectangle 197" transform="translate(6834 -10702)" fill="#fcfcfc" stroke="#707070" stroke-width="1">
-      <rect width="632" height="300" stroke="none"/>
-      <rect x="0.5" y="0.5" width="631" height="299" fill="none"/>
+      <rect width="632" height="307" stroke="none"/>
+      <rect x="0.5" y="0.5" width="631" height="306" fill="none"/>
     </g>
     <text id="Response_Transaction_Settlement_" data-name="Response Transaction (Settlement)" transform="translate(6855 -10669)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Response Transaction (Settlement)</tspan></text>
-    <line id="Line_263" data-name="Line 263" y2="234" transform="translate(7043.5 -10641.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <line id="Line_263" data-name="Line 263" y2="234" transform="translate(7105.5 -10641.5)" fill="none" stroke="#707070" stroke-width="1"/>
     <text id="INPUTS" transform="translate(6849 -10640)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">INPUTS</tspan></text>
-    <text id="OUTPUTS_" data-name="OUTPUTS " transform="translate(7059 -10640)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">OUTPUTS </tspan></text>
+    <text id="OUTPUTS_" data-name="OUTPUTS " transform="translate(7121 -10640)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">OUTPUTS </tspan></text>
     <text id="_0:_" data-name="0: " transform="translate(6849 -10605)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: </tspan></text>
-    <text id="VALUE" transform="translate(7252 -10640)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">VALUE</tspan></text>
+    <text id="VALUE" transform="translate(7296 -10640)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">VALUE</tspan></text>
     <g id="Rectangle_198" data-name="Rectangle 198" transform="translate(6987 -10363)" fill="#fcfcfc" stroke="#707070" stroke-width="1" stroke-dasharray="3">
       <rect width="351.499" height="517" stroke="none"/>
       <rect x="0.5" y="0.5" width="350.499" height="516" fill="none"/>
@@ -20,26 +20,26 @@
     <text id="_1_ticket" data-name="1 ticket" transform="translate(7190 -10220)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1 ticket</tspan></text>
     <text id="ASSETID:_TICC2S21A.._Funny_Movie_6:30_session_seat_21A" data-name="ASSETID: TICC2S21A.. Funny Movie, 6:30 session, seat 21A" transform="translate(6998 -10293)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">ASSETID: TICC2S21A.. Funny Movie, 6:30 session, seat 21A</tspan></text>
     <line id="Line_264" data-name="Line 264" y2="57" transform="translate(7003.5 -10273.5)" fill="none" stroke="#707070" stroke-width="1"/>
-    <line id="Line_265" data-name="Line 265" y2="66" transform="translate(7121.5 -10428.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
+    <line id="Line_265" data-name="Line 265" y2="66" transform="translate(7183.5 -10428.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
     <text id="_1:_" data-name="1: " transform="translate(6849 -10586)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1: </tspan></text>
-    <text id="____________________________" transform="translate(6867 -10586)" fill="#f13f3f" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">____________________________</tspan></text>
-    <text id="_0:_2" data-name="0: " transform="translate(7059 -10605)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: </tspan></text>
-    <text id="Dust" transform="translate(7253 -10605)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust</tspan></text>
-    <text id="Alice_3_" data-name="Alice (3)" transform="translate(7077 -10605)" fill="#00b0f0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Alice (3)</tspan></text>
+    <text id="AUD_Contract_unsigned_" data-name="AUD Contract (unsigned)" transform="translate(6867 -10586)" fill="#f13f3f" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">AUD Contract (unsigned)</tspan></text>
+    <text id="_0:_2" data-name="0: " transform="translate(7121 -10605)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: </tspan></text>
+    <text id="Dust" transform="translate(7297 -10605)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust</tspan></text>
+    <text id="Alice_3_" data-name="Alice (3)" transform="translate(7139 -10605)" fill="#00b0f0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Alice (3)</tspan></text>
     <text id="Cinema_Seating_1_" data-name="Cinema Seating (1)" transform="translate(7010 -10239)" fill="#19e134" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Cinema Seating (1)</tspan></text>
     <text id="Alice_3_2" data-name="Alice (3)" transform="translate(7010 -10220)" fill="#00b0f0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Alice (3)</tspan></text>
     <text id="Bob_1_" data-name="Bob (1) " transform="translate(7010 -10146)" fill="#ffc000" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Bob (1) </tspan></text>
     <text id="Carol_1_" data-name="Carol (1)" transform="translate(7010 -10070)" fill="#b15f02" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Carol (1)</tspan></text>
-    <text id="Cinema_Ticketing_Contract" data-name="Cinema Ticketing Contract" transform="translate(6867 -10605)" fill="#7030a0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Cinema Ticketing Contract</tspan></text>
-    <g id="Rectangle_199" data-name="Rectangle 199" transform="translate(7075 -10446)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+    <text id="Cinema_Ticketing_Contract_signed_" data-name="Cinema Ticketing Contract (signed)" transform="translate(6867 -10605)" fill="#7030a0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Cinema Ticketing Contract (signed)</tspan></text>
+    <g id="Rectangle_199" data-name="Rectangle 199" transform="translate(7137 -10446)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
       <rect width="115" height="18" stroke="none"/>
       <rect x="0.5" y="0.5" width="114" height="17" fill="none"/>
     </g>
-    <text id="N:_" data-name="N: " transform="translate(7059 -10433)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N: </tspan></text>
-    <text id="Settlement_Action" data-name="Settlement Action" transform="translate(7077 -10433)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Settlement Action</tspan></text>
-    <text id="N_A" data-name="N/A" transform="translate(7253 -10433)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N/A</tspan></text>
-    <text id="Not_Shown:_Contract_Fees" data-name="Not Shown: Contract Fees" transform="translate(7252 -10412)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Not Shown: Contract Fees</tspan></text>
-    <text id="Cinema_Ticketing_Contract-2" data-name="Cinema Ticketing Contract" transform="translate(6998 -10305)" fill="#7030a0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Cinema Ticketing Contract</tspan></text>
+    <text id="N:_" data-name="N: " transform="translate(7121 -10433)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N: </tspan></text>
+    <text id="Settlement_Action" data-name="Settlement Action" transform="translate(7139 -10433)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Settlement Action</tspan></text>
+    <text id="N_A" data-name="N/A" transform="translate(7297 -10433)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N/A</tspan></text>
+    <text id="Not_Shown:_Contract_Fees" data-name="Not Shown: Contract Fees" transform="translate(7296 -10412)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Not Shown: Contract Fees</tspan></text>
+    <text id="Cinema_Ticketing_Contract" data-name="Cinema Ticketing Contract" transform="translate(6998 -10305)" fill="#7030a0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Cinema Ticketing Contract</tspan></text>
     <text id="ASSETID:_TICC2S21B.._Funny_Movie_6:30_session_seat_21B" data-name="ASSETID: TICC2S21B.. Funny Movie, 6:30 session, seat 21B" transform="translate(6998 -10214)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">ASSETID: TICC2S21B.. Funny Movie, 6:30 session, seat 21B</tspan></text>
     <text id="ASSETID:_TICC2S21C.._Funny_Movie_6:30_session_seat_21C" data-name="ASSETID: TICC2S21C.. Funny Movie, 6:30 session, seat 21C" transform="translate(6998 -10137)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">ASSETID: TICC2S21C.. Funny Movie, 6:30 session, seat 21C</tspan></text>
     <text id="ASSETID:_COUMedComb_Med_Popcorn_Combo_Self_Serve" data-name="ASSETID: COUMedComb… Med Popcorn Combo, Self Serve" transform="translate(6998 -10062)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">ASSETID: COUMedComb… Med Popcorn Combo, Self Serve</tspan></text>
@@ -51,14 +51,14 @@
     <text id="Cinema_Seating_1_2" data-name="Cinema Seating (1)" transform="translate(7010 -10165)" fill="#19e134" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Cinema Seating (1)</tspan></text>
     <text id="_0_tickets-3" data-name="0 tickets" transform="translate(7190 -10089)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0 tickets</tspan></text>
     <text id="Cinema_Seating_1_3" data-name="Cinema Seating (1)" transform="translate(7010 -10089)" fill="#19e134" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Cinema Seating (1)</tspan></text>
-    <text id="_6:_" data-name="6: " transform="translate(7059 -10491)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">6: </tspan></text>
-    <text id="Dust_" data-name="Dust " transform="translate(7253 -10491)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust </tspan></text>
-    <text id="Cinema_eAUD_1_" data-name="Cinema eAUD (1)" transform="translate(7077 -10491)" fill="#002060" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Cinema eAUD (1)</tspan></text>
+    <text id="_6:_" data-name="6: " transform="translate(7121 -10491)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">6: </tspan></text>
+    <text id="Dust_" data-name="Dust " transform="translate(7297 -10491)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust </tspan></text>
+    <text id="Cinema_eAUD_1_" data-name="Cinema eAUD (1)" transform="translate(7139 -10491)" fill="#002060" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Cinema eAUD (1)</tspan></text>
     <line id="Line_290" data-name="Line 290" y2="57" transform="translate(7003.5 -10196.5)" fill="none" stroke="#707070" stroke-width="1"/>
     <line id="Line_291" data-name="Line 291" y2="57" transform="translate(7003.5 -10121.5)" fill="none" stroke="#707070" stroke-width="1"/>
     <text id="Settlements-4" data-name="Settlements" transform="translate(7010 -10031)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">Settlements</tspan></text>
     <text id="_1_coupon" data-name="1 coupon" transform="translate(7190 -9993)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1 coupon</tspan></text>
-    <text id="Cinema_Candybar_1_" data-name="Cinema Candybar (1)" transform="translate(7010 -10012)" fill="#19e134" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Cinema Candybar (1)</tspan></text>
+    <text id="Cinema_Candybar_1_" data-name="Cinema Candybar (1)" transform="translate(7010 -10012)" fill="#00b050" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Cinema Candybar (1)</tspan></text>
     <text id="Alice_4_" data-name="Alice (4)" transform="translate(7010 -9993)" fill="#00b0f0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Alice (4)</tspan></text>
     <text id="_4021_coupons" data-name="4021 coupons" transform="translate(7190 -10012)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">4021 coupons</tspan></text>
     <path id="Path_198" data-name="Path 198" d="M0,0V57" transform="translate(7003.5 -10044.5)" fill="none" stroke="#707070" stroke-width="1"/>
@@ -68,29 +68,29 @@
     <line id="Line_293" data-name="Line 293" y2="77" transform="translate(7003.5 -9936.5)" fill="none" stroke="#707070" stroke-width="1"/>
     <text id="Cinema_eAUD_1_2" data-name="Cinema eAUD (1)" transform="translate(7010 -9883)" fill="#002060" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Cinema eAUD (1)</tspan></text>
     <text id="AUD_Exchange_1_" data-name="AUD Exchange (1) " transform="translate(7010 -9902)" fill="#0010f0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">AUD Exchange (1) </tspan></text>
-    <text id="_1:_2" data-name="1: " transform="translate(7059 -10586)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1: </tspan></text>
-    <text id="_2:_" data-name="2: " transform="translate(7059 -10567)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">2: </tspan></text>
-    <text id="Dust-2" data-name="Dust" transform="translate(7253 -10586)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust</tspan></text>
-    <text id="_3:_" data-name="3: " transform="translate(7059 -10548)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">3: </tspan></text>
-    <text id="_4:_" data-name="4: " transform="translate(7059 -10529)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">4: </tspan></text>
-    <text id="Bob_1_2" data-name="Bob (1) " transform="translate(7077 -10586)" fill="#ffc000" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Bob (1) </tspan></text>
-    <text id="Carol_1_2" data-name="Carol (1)" transform="translate(7077 -10567)" fill="#b15f02" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Carol (1)</tspan></text>
-    <text id="Cinema_Seating_1_4" data-name="Cinema Seating (1)" transform="translate(7077 -10529)" fill="#19e134" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Cinema Seating (1)</tspan></text>
-    <text id="Alice_4_2" data-name="Alice (4)" transform="translate(7077 -10548)" fill="#00b0f0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Alice (4)</tspan></text>
-    <text id="Dust-3" data-name="Dust" transform="translate(7253 -10567)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust</tspan></text>
-    <text id="Dust_2" data-name="Dust " transform="translate(7253 -10548)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust </tspan></text>
-    <text id="Dust_3" data-name="Dust " transform="translate(7253 -10529)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust </tspan></text>
-    <text id="_5:_" data-name="5: " transform="translate(7059 -10510)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">5: </tspan></text>
-    <text id="Dust_4" data-name="Dust " transform="translate(7253 -10510)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust </tspan></text>
-    <text id="Cinema_Candybar_1_2" data-name="Cinema Candybar (1)" transform="translate(7077 -10510)" fill="#00b050" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Cinema Candybar (1)</tspan></text>
-    <text id="_7:_" data-name="7: " transform="translate(7059 -10472)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">7: </tspan></text>
-    <text id="Dust_5" data-name="Dust " transform="translate(7253 -10472)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust </tspan></text>
-    <text id="AUD_Exchange_1_2" data-name="AUD Exchange (1) " transform="translate(7077 -10472)" fill="#0010f0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">AUD Exchange (1) </tspan></text>
-    <text id="_8:_" data-name="8: " transform="translate(7059 -10453)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">8: </tspan></text>
-    <text id="Dust_6" data-name="Dust " transform="translate(7253 -10453)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust </tspan></text>
-    <text id="AUD_Exchange_2_" data-name="AUD Exchange (2) " transform="translate(7077 -10453)" fill="#0010f0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">AUD Exchange (2) </tspan></text>
+    <text id="_1:_2" data-name="1: " transform="translate(7121 -10586)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1: </tspan></text>
+    <text id="_2:_" data-name="2: " transform="translate(7121 -10567)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">2: </tspan></text>
+    <text id="Dust-2" data-name="Dust" transform="translate(7297 -10586)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust</tspan></text>
+    <text id="_3:_" data-name="3: " transform="translate(7121 -10548)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">3: </tspan></text>
+    <text id="_4:_" data-name="4: " transform="translate(7121 -10529)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">4: </tspan></text>
+    <text id="Bob_1_2" data-name="Bob (1) " transform="translate(7139 -10586)" fill="#ffc000" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Bob (1) </tspan></text>
+    <text id="Carol_1_2" data-name="Carol (1)" transform="translate(7139 -10567)" fill="#b15f02" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Carol (1)</tspan></text>
+    <text id="Cinema_Seating_1_4" data-name="Cinema Seating (1)" transform="translate(7139 -10529)" fill="#19e134" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Cinema Seating (1)</tspan></text>
+    <text id="Alice_4_2" data-name="Alice (4)" transform="translate(7139 -10548)" fill="#00b0f0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Alice (4)</tspan></text>
+    <text id="Dust-3" data-name="Dust" transform="translate(7297 -10567)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust</tspan></text>
+    <text id="Dust_2" data-name="Dust " transform="translate(7297 -10548)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust </tspan></text>
+    <text id="Dust_3" data-name="Dust " transform="translate(7297 -10529)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust </tspan></text>
+    <text id="_5:_" data-name="5: " transform="translate(7121 -10510)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">5: </tspan></text>
+    <text id="Dust_4" data-name="Dust " transform="translate(7297 -10510)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust </tspan></text>
+    <text id="Cinema_Candybar_1_2" data-name="Cinema Candybar (1)" transform="translate(7139 -10510)" fill="#00b050" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Cinema Candybar (1)</tspan></text>
+    <text id="_7:_" data-name="7: " transform="translate(7121 -10472)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">7: </tspan></text>
+    <text id="Dust_5" data-name="Dust " transform="translate(7297 -10472)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust </tspan></text>
+    <text id="AUD_Exchange_1_2" data-name="AUD Exchange (1) " transform="translate(7139 -10472)" fill="#0010f0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">AUD Exchange (1) </tspan></text>
+    <text id="_8:_" data-name="8: " transform="translate(7121 -10453)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">8: </tspan></text>
+    <text id="Dust_6" data-name="Dust " transform="translate(7297 -10453)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust </tspan></text>
+    <text id="AUD_Exchange_2_" data-name="AUD Exchange (2) " transform="translate(7139 -10453)" fill="#0010f0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">AUD Exchange (2) </tspan></text>
     <text id="AUD_Exchange_2_2" data-name="AUD Exchange (2) " transform="translate(7010 -9864)" fill="#0010f0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">AUD Exchange (2) </tspan></text>
-    <text id="_398.33_39832_cents_" data-name="$398.33 (39832 cents)" transform="translate(7190 -9902)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">$398.33 (39832 cents)</tspan></text>
+    <text id="_0.00_0_cents_" data-name="$0.00 (0 cents)" transform="translate(7190 -9902)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">$0.00 (0 cents)</tspan></text>
     <text id="_91.91_9191_cents_" data-name="$91.91 (9191 cents)" transform="translate(7190 -9883)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">$91.91 (9191 cents)</tspan></text>
     <text id="_306.41_30641_cents_" data-name="$306.41 (30641 cents)" transform="translate(7190 -9864)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">$306.41 (30641 cents)</tspan></text>
   </g>

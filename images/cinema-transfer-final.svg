@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="631.356" height="960" viewBox="0 0 631.356 960">
   <g id="cinema-transfer-final" transform="translate(-6104 10694)">
     <g id="Rectangle_195" data-name="Rectangle 195" transform="translate(6104 -10694)" fill="#fcfcfc" stroke="#707070" stroke-width="1">
-      <rect width="630.857" height="278" stroke="none"/>
-      <rect x="0.5" y="0.5" width="629.857" height="277" fill="none"/>
+      <rect width="630.857" height="263" stroke="none"/>
+      <rect x="0.5" y="0.5" width="629.857" height="262" fill="none"/>
     </g>
     <text id="Cinema_Seating_1_" data-name="Cinema Seating (1)" transform="translate(6140 -10602)" fill="#19e134" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Cinema Seating (1)</tspan></text>
     <text id="AUD_Exchange_1_" data-name="AUD Exchange (1)" transform="translate(6140 -10545)" fill="#0010f0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">AUD Exchange (1)</tspan></text>
@@ -49,7 +49,6 @@
     </g>
     <text id="Transfer_Action_Payload" data-name="Transfer Action Payload" transform="translate(6114 -10367)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Transfer Action Payload</tspan></text>
     <line id="Line_267" data-name="Line 267" y2="47" transform="translate(6384.106 -10444.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
-    <text id="Not_Shown:_Change" data-name="Not Shown: Change" transform="translate(6516 -10430)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Not Shown: Change</tspan></text>
     <text id="Cinema_Candybar_1_" data-name="Cinema Candybar (1)" transform="translate(6140 -10583)" fill="#00b050" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Cinema Candybar (1)</tspan></text>
     <text id="Alice_1_" data-name="Alice (1)" transform="translate(6140 -10564)" fill="#00b0f0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Alice (1)</tspan></text>
     <text id="Senders" transform="translate(6131 -10307)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">Senders</tspan></text>
