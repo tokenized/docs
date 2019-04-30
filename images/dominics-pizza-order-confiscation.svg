@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="632" height="341" viewBox="0 0 632 341">
+  <g id="dominics-pizza-order-confiscation" transform="translate(-22127 8249)">
+    <g id="Rectangle_278" data-name="Rectangle 278" transform="translate(22174 -8059)" fill="#fcfcfc" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+      <rect width="480.499" height="151" stroke="none"/>
+      <rect x="0.5" y="0.5" width="479.499" height="150" fill="none"/>
+    </g>
+    <g id="Rectangle_279" data-name="Rectangle 279" transform="translate(22127 -8249)" fill="#fcfcfc" stroke="#707070" stroke-width="1">
+      <rect width="632" height="161" stroke="none"/>
+      <rect x="0.5" y="0.5" width="631" height="160" fill="none"/>
+    </g>
+    <text id="Request_Transaction_Order_-_Confiscate_" data-name="Request Transaction (Order - Confiscate)" transform="translate(22142 -8216)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Request Transaction (Order - Confiscate)</tspan></text>
+    <line id="Line_332" data-name="Line 332" y2="84" transform="translate(22336.5 -8188.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <text id="INPUTS" transform="translate(22142 -8187)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">INPUTS</tspan></text>
+    <text id="OUTPUTS_" data-name="OUTPUTS " transform="translate(22352 -8187)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">OUTPUTS </tspan></text>
+    <text id="VALUE" transform="translate(22545 -8187)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">VALUE</tspan></text>
+    <text id="Order_Confiscate_Action_Payload" data-name="Order (Confiscate) Action Payload" transform="translate(22185 -8033)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Order (Confiscate) Action Payload</tspan></text>
+    <line id="Line_333" data-name="Line 333" y2="68" transform="translate(22414.5 -8126.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
+    <text id="_0:_" data-name="0: " transform="translate(22352 -8152)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: </tspan></text>
+    <text id="Dust" transform="translate(22546 -8152)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust</tspan></text>
+    <text id="Dominic_s_Pizza_1_" data-name="Dominic&apos;s Pizza (1)" transform="translate(22160 -8152)" fill="#19e134" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dominic&apos;s Pizza (1)</tspan></text>
+    <g id="Rectangle_280" data-name="Rectangle 280" transform="translate(22368 -8146)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+      <rect width="87" height="18" stroke="none"/>
+      <rect x="0.5" y="0.5" width="86" height="17" fill="none"/>
+    </g>
+    <text id="N:_" data-name="N: " transform="translate(22352 -8131)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N: </tspan></text>
+    <text id="Order_Action" data-name="Order Action" transform="translate(22370 -8132)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Order Action</tspan></text>
+    <text id="N_A" data-name="N/A" transform="translate(22546 -8131)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N/A</tspan></text>
+    <text id="Not_Shown:_Contract_Fees" data-name="Not Shown: Contract Fees" transform="translate(22545 -8110)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Not Shown: Contract Fees</tspan></text>
+    <text id="Dominic_s_Pizza_Contract" data-name="Dominic&apos;s Pizza Contract" transform="translate(22370 -8152)" fill="#7030a0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dominic&apos;s Pizza Contract</tspan></text>
+    <text id="DETAILS" transform="translate(22186 -8022)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">DETAILS</tspan></text>
+    <path id="Path_161" data-name="Path 161" d="M0,0V76.5" transform="translate(22188.5 -8005.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <text id="AssetID:_ASSETID:_LOYDOMsPIZZA02..._Loyalty_Points_Target_Address_es_:_Jo-Anne_3_20_points_Deposit_Address:_Dominic_s_Pizza_Message:_Incorrect_number_of_points_given_sorry_" data-name="AssetID: 			ASSETID: LOYDOMsPIZZA02... Loyalty Points
+Target Address(es):	Jo-Anne (3) (20 points)
+Deposit Address:		Dominic&apos;s Pizza
+Message:		Incorrect number of points given sorry!!!" transform="translate(22195 -7990)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0" xml:space="preserve">AssetID: 			ASSETID: LOYDOMsPIZZA02... Loyalty Points</tspan><tspan x="0" y="19">Target Address(es):	</tspan><tspan y="19" fill="#ffc000">Jo-Anne (3) </tspan><tspan y="19">(20 points)</tspan><tspan x="0" y="38" xml:space="preserve">Deposit Address:		Dominic&apos;s Pizza</tspan><tspan x="0" y="57" xml:space="preserve">Message:		Incorrect number of points given sorry!!!</tspan></text>
+    <text id="_0:_2" data-name="0: " transform="translate(22142 -8152)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: </tspan></text>
+  </g>
+</svg>
