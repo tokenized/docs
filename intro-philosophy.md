@@ -4,7 +4,7 @@
 - [Incentives](#incentives)
 - [Rule of Law](#rule-of-law)
 - [Trust](#trust)
-- [Economic Freedom] (#economic-freedom)
+- [Economic Freedom](#economic-freedom)
 
 <a name="introduction"></a>
 ## Introduction
