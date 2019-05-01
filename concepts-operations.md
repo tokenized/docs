@@ -14,7 +14,7 @@
 <a name="introduction"></a>
 ## Introduction
 
-The Tokenized protocol operates on a _request and response_ mechanism whereby operations are carried out in 2 steps called [actions](../protocol/actions#action-actions).  The only exceptions to this rule are the [Message](../protocol/actions#action-actions#action-message) action and the [Registery](../protocol/actions#action-actions#action-addition) actions where each action does not work on the request and response model. They are 1 step actions where no response is required.
+The Tokenized Protocol operates on a _request and response_ mechanism whereby operations are carried out in 2 steps called [actions](../protocol/actions#action-actions).  The only exceptions to this rule are the [Message](../protocol/actions#action-actions#action-message) action and the [Registery](../protocol/actions#action-actions#action-addition) actions where each action does not work on the request and response model. They are 1 step actions where no response is required.
 
 The request and response actions are always initiated by two different classes of actors, the requester and the responder, and the definitions are as follows:
 
@@ -34,7 +34,7 @@ A response action is a 3-step process which is as follows:
 
 Responses to messages are also sent on-chain. A response is either a confirmation of the action requested, or a Rejection message. All confirmation actions result in some change to the state, rules or terms of the contract.  All response actions also have a timestamp embedded in the payload that represents the time that the smart contract first saw and processed the corresponding request action.  These timestamps can be used for rebuilding the contract's state from the blockchain, even if there have been block reorganizations. 
 
-When the contract finds that a request is in breach of the rules/T&C's that govern that contract, it will respond with a Rejection message. At this point it is up to the user's wallet to notify them of the rejection and for them to re-attempt the action in accordance with the rules. Most wallets that are configured to work with the Tokenized protocol, will be able to prevent users from sending actions that do not meet the contract's requirement. For this reason, Rejection messages are expected to be rare.
+When the contract finds that a request is in breach of the rules/T&C's that govern that contract, it will respond with a Rejection message. At this point it is up to the user's wallet to notify them of the rejection and for them to re-attempt the action in accordance with the rules. Most wallets that are configured to work with the Tokenized Protocol, will be able to prevent users from sending actions that do not meet the contract's requirement. For this reason, Rejection messages are expected to be rare.
 
 <a name="all-operations"></a>
 ## All Operations

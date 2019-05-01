@@ -16,7 +16,7 @@
 <a name="introduction"></a>
 ## Introduction
 
-The Tokenized protocol includes a rich and expressive set of messaging actions which allow issuers, operators and users the flexibility to correspond in a way that gives wallets, account management and audit software the ability to record a full set of transactional actions.
+The Tokenized Protocol includes a rich and expressive set of messaging actions which allow issuers, operators and users the flexibility to correspond in a way that gives wallets, account management and audit software the ability to record a full set of transactional actions.
 Messaging actions are split into two types, the Message action and Rejection action.
 
 <a name="message-action"></a>
@@ -36,12 +36,12 @@ Message actions are for general purpose messaging between users. The protocol ha
 - Public (cleartext) messages
 - And many other types
 
-Message actions do not, generally, involve a smart contract and only serve to record communication data to the blockchain. The message action format is standardised to ensure that any wallets which follow the Tokenized protocol will be able to identify, parse and categorize messages.
+Message actions do not, generally, involve a smart contract and only serve to record communication data to the blockchain. The message action format is standardised to ensure that any wallets which follow the Tokenized Protocol will be able to identify, parse and categorize messages.
 A message may be sent to many addresses at once by appending multiple outputs to the transaction which contains the Message action.
 
 ![Message action](https://raw.githubusercontent.com/tokenized/docs/master/images/message-action.svg?sanitize=true "Message action") {.frame .centered .padded}
 
-There are 4 Message types currently defined in the Tokenized protocol:
+There are 4 Message types currently defined in the Tokenized Protocol:
 
 - Public message: Message #0002 - A generic public message or public announcement. Sent to an address(es).  Can be used for an official issuer announcement.
 
@@ -55,7 +55,7 @@ There are 4 Message types currently defined in the Tokenized protocol:
 
 - Settlement Request message: Message #1003 - A message that contains a multi-contract settlement that needs settlement data added by another contract. Sent to another contract to request data be added.
 
-As the Tokenized protocol matures, it is expected that many more message types will be introduced which enable new and exciting functionality to be handled simply and easily.
+As the Tokenized Protocol matures, it is expected that many more message types will be introduced which enable new and exciting functionality to be handled simply and easily.
 
 <a name="rejection-action"></a>
 ## Rejection action

@@ -6,7 +6,7 @@
 <a name="introduction"></a>
 ## Introduction
 
-The following actions break down the construction of a Tokenized protocol message. The action is constructed by building a single string from each of the elements in order. Each field within the action is given a specific type, including standard types and compound types.
+The following actions break down the construction of a Tokenized Protocol message. The action is constructed by building a single string from each of the elements in order. Each field within the action is given a specific type, including standard types and compound types.
 
 Each message should be prefixed with common header data. See the [Transactions article](../concepts/transactions) for details on how to construct a header.
 
