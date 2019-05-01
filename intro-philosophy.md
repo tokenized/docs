@@ -63,6 +63,7 @@ This example serves to highlight how much trust is typically placed on the issue
 
 It is with this nuanced understanding of the realities of trust in our society that the Tokenized system chooses to place such strong emphasis on the benefits of using a token system based upon off-chain smart contracts for which the issuer takes full responsibility of the basic management.  The main reason that trust is placed on the issuer is simply due to the nature of what a token is and the fact that adding more trust to the equation through the responsible management of the smart contract does not meaningfully increase the risk of token ownership.  For the token system to work, it must be trivial to prove that either the issuer or the user has acted in contradiction to the terms and conditions of the contract.  The Tokenized trust-but-verify model satisfies this requirement and is a fair, practical, low-cost and simple way to create usable tokens that are suitable for mainstream global adoption. 
 
+<a name="economic-freedom"></a>
 ## Economic Freedom
 
 > “No one may threaten or commit violence ('aggress') against another man's person or property. Violence may be employed only against the man who commits such violence; that is, only defensively against the aggressive violence of another. In short, no violence may be employed against a nonaggressor. Here is the fundamental rule from which can be deduced the entire corpus of libertarian theory.” -Murray N. Rothbard from War, Peace, and the State
