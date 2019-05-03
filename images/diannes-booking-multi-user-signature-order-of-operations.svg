@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="721" height="1240" viewBox="0 0 721 1240">
+<svg xmlns="http://www.w3.org/2000/svg" width="721" height="1215" viewBox="0 0 721 1215">
   <g id="diannes-booking-multi-user-signature-order-of-operations" transform="translate(-19061 10618)">
     <g id="Rectangle_89" data-name="Rectangle 89" transform="translate(19061 -10618)" fill="#fcfcfc" stroke="#707070" stroke-width="1">
       <rect width="721" height="153" stroke="none"/>
@@ -8,26 +8,27 @@
     <line id="Line_149" data-name="Line 149" y2="70" transform="translate(19263.5 -10557.5)" fill="none" stroke="#707070" stroke-width="1"/>
     <text id="INPUTS" transform="translate(19076 -10556)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">INPUTS</tspan></text>
     <text id="OUTPUTS_" data-name="OUTPUTS " transform="translate(19279 -10556)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">OUTPUTS </tspan></text>
-    <text id="_0:_Dianne" data-name="0: Dianne" transform="translate(19076 -10536)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="15">0: </tspan><tspan y="15" fill="#cd18ef">Dianne</tspan></text>
-    <text id="_0:_Token_Air_N:_Message_Action" data-name="0: Token Air
-N: Message Action" transform="translate(19279 -10536)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="15">0: </tspan><tspan y="15" fill="#002060">Token Air</tspan><tspan x="0" y="34">N: Message Action</tspan></text>
+    <text id="_0:_Dianne_1_" data-name="0: Dianne (1)" transform="translate(19076 -10536)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="15">0: </tspan><tspan y="15" fill="#cd18ef">Dianne (1)</tspan></text>
+    <text id="_0:_Token_Air_1_1:_Dianne_2_2:_Message_Action" data-name="0: Token Air (1)
+1: Dianne (2)
+2: Message Action" transform="translate(19279 -10536)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="15">0: Token Air (1)</tspan><tspan x="0" y="34">1: </tspan><tspan y="34" fill="#cd18ef">Dianne (2)</tspan><tspan x="0" y="53">2: Message Action</tspan></text>
     <text id="VALUE" transform="translate(19472 -10556)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">VALUE</tspan></text>
-    <text id="Inter-User_Messaging_Cost_N_A_Not_shown:_Change" data-name="Inter-User Messaging Cost
-N/A
-Not shown: Change" transform="translate(19472 -10536)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="15">Inter-User Messaging Cost</tspan><tspan x="0" y="34">N/A</tspan><tspan x="0" y="53">Not shown: Change</tspan></text>
-    <g id="Rectangle_90" data-name="Rectangle 90" transform="translate(19294 -10516)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+    <text id="Dust_Bitcoin_Change_N_A" data-name="Dust
+Bitcoin Change
+N/A" transform="translate(19472 -10536)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="15">Dust</tspan><tspan x="0" y="34">Bitcoin Change</tspan><tspan x="0" y="53">N/A</tspan></text>
+    <g id="Rectangle_90" data-name="Rectangle 90" transform="translate(19291 -10496)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
       <rect width="103" height="18" stroke="none"/>
       <rect x="0.5" y="0.5" width="102" height="17" fill="none"/>
     </g>
-    <g id="Rectangle_91" data-name="Rectangle 91" transform="translate(19061 -10457)" fill="#fcfcfc" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+    <g id="Rectangle_91" data-name="Rectangle 91" transform="translate(19061 -10448)" fill="#fcfcfc" stroke="#707070" stroke-width="1" stroke-dasharray="3">
       <rect width="721" height="601.866" stroke="none"/>
       <rect x="0.5" y="0.5" width="720" height="600.866" fill="none"/>
     </g>
     <text id="Message_Action_Payload" data-name="Message Action Payload" transform="translate(19076 -10409)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Message Action Payload</tspan></text>
-    <line id="Line_150" data-name="Line 150" y2="49" transform="translate(19333.5 -10497.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
+    <line id="Line_150" data-name="Line 150" y2="30" transform="translate(19333.5 -10478.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
     <text id="MESSAGE_TYPE:_1002_-_Signature_Request" data-name="MESSAGE TYPE: 1002 - Signature Request" transform="translate(19076 -10388)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">MESSAGE TYPE: 1002 - Signature Request</tspan></text>
     <text id="Message_Receivers" data-name="Message Receivers" transform="translate(19093 -10364)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">Message Receivers</tspan></text>
-    <text id="Token_Air" data-name="Token Air" transform="translate(19093 -10329)" fill="#002060" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Token Air</tspan></text>
+    <text id="Token_Air_1_" data-name="Token Air (1)" transform="translate(19093 -10329)" fill="#002060" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Token Air (1)</tspan></text>
     <line id="Line_154" data-name="Line 154" y2="37" transform="translate(19081.5 -10363.5)" fill="none" stroke="#707070" stroke-width="1"/>
     <g id="Rectangle_95" data-name="Rectangle 95" transform="translate(19072 -10319)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
       <rect width="127" height="21" stroke="none"/>
@@ -57,11 +58,11 @@ Not shown: Change" transform="translate(19472 -10536)" fill="#707070" font-size=
         <text id="Token_Air_2_" data-name="Token Air (2)" transform="translate(19564.5 -9301)" fill="#002060" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Token Air (2)</tspan></text>
         <text id="_5:_" data-name="5: " transform="translate(19543.633 -9244)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">5: </tspan></text>
         <text id="Token_Air_3_" data-name="Token Air (3)" transform="translate(19564.5 -9282)" fill="#002060" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Token Air (3)</tspan></text>
-        <g id="Rectangle_363" data-name="Rectangle 363" transform="translate(19563.324 -9239)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+        <g id="Rectangle_363" data-name="Rectangle 363" transform="translate(19561.324 -9239)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
           <rect width="98" height="18" stroke="none"/>
           <rect x="0.5" y="0.5" width="97" height="17" fill="none"/>
         </g>
-        <text id="N:_" data-name="N: " transform="translate(19542.637 -9225)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N: </tspan></text>
+        <text id="_6:_" data-name="6: " transform="translate(19543.637 -9225)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">6: </tspan></text>
         <text id="Transfer_Action" data-name="Transfer Action" transform="translate(19564.5 -9225)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Transfer Action</tspan></text>
         <text id="Bitcoin_Change" data-name="Bitcoin Change" transform="translate(19784.5 -9301)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Bitcoin Change</tspan></text>
         <text id="_0.2324_BSV_From_Dianne_" data-name="0.2324 BSV (From Dianne)" transform="translate(19784.5 -9282)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0.2324 BSV (From Dianne)</tspan></text>
@@ -88,12 +89,12 @@ Not shown: Change" transform="translate(19472 -10536)" fill="#707070" font-size=
     <text id="Transfer_Action_Payload" data-name="Transfer Action Payload" transform="translate(19256 -9944)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Transfer Action Payload</tspan></text>
     <line id="Line_432" data-name="Line 432" y2="66" transform="translate(19379.5 -10044.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
     <text id="Unchanged_from_Transfer_Action_Template" data-name="Unchanged from Transfer Action Template" transform="translate(19256 -9907)" fill="#707070" font-size="18" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">Unchanged from Transfer Action Template</tspan></text>
-    <g id="Rectangle_390" data-name="Rectangle 390" transform="translate(19249 -9481)" fill="#fcfcfc" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+    <g id="Rectangle_390" data-name="Rectangle 390" transform="translate(19249 -9506)" fill="#fcfcfc" stroke="#707070" stroke-width="1" stroke-dasharray="3">
       <rect width="398.499" height="103" stroke="none"/>
       <rect x="0.5" y="0.5" width="397.499" height="102" fill="none"/>
     </g>
-    <text id="Transfer_Action_Payload-2" data-name="Transfer Action Payload" transform="translate(19260 -9446)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Transfer Action Payload</tspan></text>
-    <g id="Group_93" data-name="Group 93" transform="translate(-10.5 -57)">
+    <text id="Transfer_Action_Payload-2" data-name="Transfer Action Payload" transform="translate(19260 -9471)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Transfer Action Payload</tspan></text>
+    <g id="Group_93" data-name="Group 93" transform="translate(-10.5 -82)">
       <g id="Group_92-2" data-name="Group 92" transform="translate(-225 -270)">
         <g id="Rectangle_362-2" data-name="Rectangle 362" transform="translate(19317 -9436)" fill="#fcfcfc" stroke="#707070" stroke-width="1">
           <rect width="683.807" height="238" stroke="none"/>
@@ -115,18 +116,18 @@ Not shown: Change" transform="translate(19472 -10536)" fill="#707070" font-size=
         <text id="Token_Air_2_2" data-name="Token Air (2)" transform="translate(19546.5 -9301)" fill="#002060" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Token Air (2)</tspan></text>
         <text id="_5:_2" data-name="5: " transform="translate(19525.633 -9244)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">5: </tspan></text>
         <text id="Token_Air_3_2" data-name="Token Air (3)" transform="translate(19546.5 -9282)" fill="#002060" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Token Air (3)</tspan></text>
-        <g id="Rectangle_363-2" data-name="Rectangle 363" transform="translate(19545.324 -9239)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+        <g id="Rectangle_363-2" data-name="Rectangle 363" transform="translate(19543.324 -9239)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
           <rect width="98" height="18" stroke="none"/>
           <rect x="0.5" y="0.5" width="97" height="17" fill="none"/>
         </g>
-        <text id="N:_2" data-name="N: " transform="translate(19524.637 -9225)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N: </tspan></text>
+        <text id="_6:_2" data-name="6: " transform="translate(19525.637 -9225)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">6: </tspan></text>
         <text id="Transfer_Action-2" data-name="Transfer Action" transform="translate(19546.5 -9225)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Transfer Action</tspan></text>
         <text id="Bitcoin_Change-3" data-name="Bitcoin Change" transform="translate(19763.5 -9301)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Bitcoin Change</tspan></text>
         <text id="_0.2324_BSV_From_Dianne_2" data-name="0.2324 BSV (From Dianne)" transform="translate(19763.5 -9282)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0.2324 BSV (From Dianne)</tspan></text>
         <text id="N_A-2" data-name="N/A" transform="translate(19763.5 -9225)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N/A</tspan></text>
         <text id="_1-10:_2" data-name="1-10: " transform="translate(19330 -9320)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1-10: </tspan></text>
         <text id="Token_Air_4-13_" data-name="Token Air (4-13)" transform="translate(19370 -9320)" fill="#002060" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Token Air (4-13)</tspan></text>
-        <text id="Token_Air_1_" data-name="Token Air (1)" transform="translate(19348 -9339)" fill="#002060" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Token Air (1)</tspan></text>
+        <text id="Token_Air_1_2" data-name="Token Air (1)" transform="translate(19348 -9339)" fill="#002060" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Token Air (1)</tspan></text>
         <text id="_4:_2" data-name="4: " transform="translate(19525.633 -9263)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">4: </tspan></text>
         <text id="Dianne_12_2" data-name="Dianne (12)" transform="translate(19546.5 -9263)" fill="#cd18ef" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dianne (12)</tspan></text>
         <text id="Bitcoin_Change-4" data-name="Bitcoin Change" transform="translate(19763.5 -9263)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Bitcoin Change</tspan></text>
@@ -138,15 +139,15 @@ Not shown: Change" transform="translate(19472 -10536)" fill="#707070" font-size=
         <text id="Dianne_2-11_" data-name="Dianne (2-11)" transform="translate(19373 -9283)" fill="#cd18ef" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dianne (2-11)</tspan></text>
       </g>
     </g>
-    <line id="Line_481" data-name="Line 481" y2="66" transform="translate(19383.5 -9546.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
-    <text id="Unchanged_from_Transfer_Action_Template-2" data-name="Unchanged from Transfer Action Template" transform="translate(19260 -9409)" fill="#707070" font-size="18" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">Unchanged from Transfer Action Template</tspan></text>
-    <g id="Group_81" data-name="Group 81" transform="translate(-1214 725)">
+    <line id="Line_481" data-name="Line 481" y2="66" transform="translate(19383.5 -9571.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
+    <text id="Unchanged_from_Transfer_Action_Template-2" data-name="Unchanged from Transfer Action Template" transform="translate(19260 -9434)" fill="#707070" font-size="18" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">Unchanged from Transfer Action Template</tspan></text>
+    <g id="Group_81" data-name="Group 81" transform="translate(-1214 700)">
       <line id="Line_307" data-name="Line 307" x2="20" transform="translate(20634.09 -10527.808) rotate(90)" fill="none" stroke="#707070" stroke-width="3"/>
       <g id="chevron-pointing-to-the-left" transform="translate(20625.809 -10504.952) rotate(-91)">
         <path id="Path_60" data-name="Path 60" d="M6.15,8.276l6.607-5.2a1.205,1.205,0,0,0,.509-.965,1.168,1.168,0,0,0-.489-.961l-1-.795a1.887,1.887,0,0,0-1.216-.389,1.934,1.934,0,0,0-1.225.4L.469,7.327a1.206,1.206,0,0,0-.509.965,1.169,1.169,0,0,0,.489.961l8.721,6.9a1.888,1.888,0,0,0,1.217.389,1.931,1.931,0,0,0,1.224-.4l1.019-.8a1.179,1.179,0,0,0,.02-1.926Z" transform="translate(0 0)" fill="#707070"/>
       </g>
     </g>
-    <line id="Line_499" data-name="Line 499" y2="135" transform="translate(19277.5 -9681.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <line id="Line_499" data-name="Line 499" y2="135" transform="translate(19277.5 -9706.5)" fill="none" stroke="#707070" stroke-width="1"/>
     <g id="Rectangle_410" data-name="Rectangle 410" transform="translate(19455 -10434)" fill="#fff" stroke="#cf730b" stroke-width="4">
       <rect width="308" height="155.5" stroke="none"/>
       <rect x="2" y="2" width="304" height="151.5" fill="none"/>

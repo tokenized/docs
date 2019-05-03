@@ -14,20 +14,19 @@
     <text id="_0:_2" data-name="0: " transform="translate(5417 -789)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: </tspan></text>
     <text id="Smart_Contract-2" data-name="Smart Contract" transform="translate(5436 -789)" fill="#7030a0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Smart Contract</tspan></text>
     <text id="Dust" transform="translate(5610 -789)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust</tspan></text>
-    <g id="Rectangle_322" data-name="Rectangle 322" transform="translate(5433 -784)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+    <g id="Rectangle_322" data-name="Rectangle 322" transform="translate(5433 -765)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
       <rect width="140" height="18" stroke="none"/>
       <rect x="0.5" y="0.5" width="139" height="17" fill="none"/>
     </g>
-    <text id="N:_" data-name="N: " transform="translate(5417 -770)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N: </tspan></text>
-    <text id="Asset_Creation_Action" data-name="Asset Creation Action" transform="translate(5435 -770)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Asset Creation Action</tspan></text>
-    <text id="N_A" data-name="N/A" transform="translate(5610 -770)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N/A</tspan></text>
+    <text id="_1:_" data-name="1: " transform="translate(5417 -770)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1: </tspan></text>
+    <text id="Contract_Operator" data-name="Contract Operator" transform="translate(5435 -770)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Contract Operator</tspan></text>
+    <text id="Contract_Fees" data-name="Contract Fees" transform="translate(5610 -770)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Contract Fees</tspan></text>
     <g id="Rectangle_323" data-name="Rectangle 323" transform="translate(5346 -705)" fill="#fcfcfc" stroke="#707070" stroke-width="1" stroke-dasharray="3">
       <rect width="387.499" height="324" stroke="none"/>
       <rect x="0.5" y="0.5" width="386.499" height="323" fill="none"/>
     </g>
     <text id="Asset_Creation_Action_Payload" data-name="Asset Creation Action Payload" transform="translate(5357 -672)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Asset Creation Action Payload</tspan></text>
-    <line id="Line_383" data-name="Line 383" y2="61" transform="translate(5477.5 -765.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
-    <text id="Not_Shown:_Change" data-name="Not Shown: Change" transform="translate(5610 -750)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Not Shown: Change</tspan></text>
+    <line id="Line_383" data-name="Line 383" y2="42" transform="translate(5477.5 -746.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
     <line id="Line_384" data-name="Line 384" y2="248" transform="translate(5359.5 -641.5)" fill="none" stroke="#707070" stroke-width="1"/>
     <text id="DETAILS" transform="translate(5357 -660)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">DETAILS</tspan></text>
     <text id="_-_Asset_Type_-_Asset_Code_-_Contract_Type_-_Asset_Authorization_Flags_-_Transfer_Permissions_-_Trade_Restrictions_-_Enforcement_Permissions_-_Asset_Voting_Rights_and_Multiplier_-_Modification_Processes_and_Governance_-_Quantity_of_Tokens_to_Create_-_Asset_" data-name="- Asset Type
@@ -52,5 +51,8 @@
       <rect x="0.5" y="0.5" width="101" height="41" fill="none"/>
     </g>
     <line id="Line_385" data-name="Line 385" y2="41" transform="translate(5403.5 -390.5)" fill="none" stroke="#cf730b" stroke-width="1" stroke-dasharray="3"/>
+    <text id="_2:_" data-name="2: " transform="translate(5417 -751)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">2: </tspan></text>
+    <text id="Asset_Creation_Action" data-name="Asset Creation Action" transform="translate(5435 -751)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Asset Creation Action</tspan></text>
+    <text id="N_A" data-name="N/A" transform="translate(5610 -751)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N/A</tspan></text>
   </g>
 </svg>

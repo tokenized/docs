@@ -1,33 +1,33 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="628" height="714" viewBox="0 0 628 714">
-  <g id="tbact-contract-formation" transform="translate(-10284 10715)">
-    <g id="Rectangle_298" data-name="Rectangle 298" transform="translate(10284 -10715)" fill="#fcfcfc" stroke="#707070" stroke-width="1">
-      <rect width="628" height="154" stroke="none"/>
-      <rect x="0.5" y="0.5" width="627" height="153" fill="none"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="628" height="711" viewBox="0 0 628 711">
+  <g id="tbact-contract-formation" transform="translate(-10280 10711)">
+    <g id="Rectangle_298" data-name="Rectangle 298" transform="translate(10280 -10711)" fill="#fcfcfc" stroke="#707070" stroke-width="1">
+      <rect width="628" height="151" stroke="none"/>
+      <rect x="0.5" y="0.5" width="627" height="150" fill="none"/>
     </g>
     <line id="Line_357" data-name="Line 357" x2="1" y2="60" transform="translate(10489.5 -10654.5)" fill="none" stroke="#707070" stroke-width="1"/>
     <text id="INPUTS" transform="translate(10297 -10653)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">INPUTS</tspan></text>
     <text id="OUTPUTS_" data-name="OUTPUTS " transform="translate(10500 -10653)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">OUTPUTS </tspan></text>
     <text id="_0:_" data-name="0: " transform="translate(10297 -10618)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: </tspan></text>
     <text id="VALUE" transform="translate(10693 -10653)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">VALUE</tspan></text>
-    <g id="Rectangle_299" data-name="Rectangle 299" transform="translate(10428 -10529)" fill="#fcfcfc" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+    <g id="Rectangle_299" data-name="Rectangle 299" transform="translate(10392 -10528)" fill="#fcfcfc" stroke="#707070" stroke-width="1" stroke-dasharray="3">
       <rect width="421.499" height="520" stroke="none"/>
       <rect x="0.5" y="0.5" width="420.499" height="519" fill="none"/>
     </g>
-    <text id="Contract_Offer_Action_Payload" data-name="Contract Offer Action Payload" transform="translate(10439 -10494)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Contract Offer Action Payload</tspan></text>
-    <line id="Line_358" data-name="Line 358" y2="66" transform="translate(10562.5 -10594.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
+    <text id="Contract_Formation_Action_Payload" data-name="Contract Formation Action Payload" transform="translate(10403 -10493)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Contract Formation Action Payload</tspan></text>
+    <line id="Line_358" data-name="Line 358" y2="47" transform="translate(10606.5 -10575.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
     <text id="_0:_2" data-name="0: " transform="translate(10500 -10618)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: </tspan></text>
-    <text id="TBACT_Smart_Contract" data-name="TBACT Smart Contract" transform="translate(10518 -10618)" fill="#7030a0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">TBACT Smart Contract</tspan></text>
+    <text id="TBACT_Smart_Contract" data-name="TBACT Smart Contract" transform="translate(10516 -10618)" fill="#7030a0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">TBACT Smart Contract</tspan></text>
     <text id="Dust" transform="translate(10694 -10618)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust</tspan></text>
-    <g id="Rectangle_300" data-name="Rectangle 300" transform="translate(10516 -10613)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+    <g id="Rectangle_300" data-name="Rectangle 300" transform="translate(10513 -10594)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
       <rect width="170" height="18" stroke="none"/>
       <rect x="0.5" y="0.5" width="169" height="17" fill="none"/>
     </g>
-    <text id="N:_" data-name="N: " transform="translate(10498 -10599)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N: </tspan></text>
-    <text id="Contract_Definition_Action" data-name="Contract Definition Action" transform="translate(10518 -10599)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Contract Definition Action</tspan></text>
-    <text id="N_A" data-name="N/A" transform="translate(10694 -10599)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N/A</tspan></text>
-    <text id="Not_Shown:_Contract_Fees" data-name="Not Shown: Contract Fees" transform="translate(10694 -10580)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Not Shown: Contract Fees</tspan></text>
-    <text id="Response_Transaction_Contract_Definition_" data-name="Response Transaction (Contract Definition)" transform="translate(10296 -10682)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Response Transaction (Contract Definition)</tspan></text>
-    <text id="Contract_details:" data-name="Contract details:" transform="translate(10439 -10485)" fill="#707070" font-size="14" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="15">Contract details:</tspan></text>
+    <text id="_2:_" data-name="2: " transform="translate(10500 -10580)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">2: </tspan></text>
+    <text id="Contract_Formation_Action" data-name="Contract Formation Action" transform="translate(10516 -10580)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Contract Formation Action</tspan></text>
+    <text id="Contract_Fees" data-name="Contract Fees" transform="translate(10694 -10599)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Contract Fees</tspan></text>
+    <text id="N_A" data-name="N/A" transform="translate(10694 -10580)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N/A</tspan></text>
+    <text id="Response_Transaction_Contract_Formation_" data-name="Response Transaction (Contract Formation)" transform="translate(10296 -10682)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Response Transaction (Contract Formation)</tspan></text>
+    <text id="Contract_details:" data-name="Contract details:" transform="translate(10403 -10484)" fill="#707070" font-size="14" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="15">Contract details:</tspan></text>
     <text id="The_BillAngelaChris_Trust_Link_to_contract_hash_Issuer_details:_Name_TBACT_Beneficiaries_Bill_Angela_Chris_Lawyer_Daniel_Address_Phone_no._Regulatory_information:_Governing_law_Australia_Jurisdiction_Australia_Queensland_Contract_Operator_Toke" data-name="The BillAngelaChris Trust
 Link to contract hash
 Issuer details:
@@ -40,8 +40,10 @@ Regulatory information:
 	Governing law	Australia
 	Jurisdiction	Australia Queensland
 Contract Operator
-	Toke" transform="translate(10456 -10466)" fill="#707070" font-size="14" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="15">The BillAngelaChris Trust</tspan><tspan x="0" y="34">Link to contract hash</tspan><tspan x="0" y="53">Issuer details:</tspan><tspan x="0" y="72" xml:space="preserve">	Name		TBACT</tspan><tspan x="0" y="91" xml:space="preserve">	Beneficiaries	Bill, Angela, Chris</tspan><tspan x="0" y="110" xml:space="preserve">	Lawyer 		Daniel</tspan><tspan x="0" y="129" xml:space="preserve">	Address</tspan><tspan x="0" y="148" xml:space="preserve">	Phone no.</tspan><tspan x="0" y="167">Regulatory information:</tspan><tspan x="0" y="186" xml:space="preserve">	Governing law	Australia</tspan><tspan x="0" y="205" xml:space="preserve">	Jurisdiction	Australia Queensland</tspan><tspan x="0" y="224">Contract Operator</tspan><tspan x="0" y="243" xml:space="preserve">	Tokenized</tspan><tspan x="0" y="262">Contract rules:</tspan><tspan x="0" y="281" xml:space="preserve">	Authorisation Flags</tspan><tspan x="0" y="300" xml:space="preserve">	voting systems</tspan><tspan x="0" y="319" xml:space="preserve">	transfer restrictions</tspan><tspan x="0" y="338" xml:space="preserve">	registry</tspan><tspan x="0" y="357">Issuer Proposal:</tspan><tspan x="0" y="376" xml:space="preserve">	No asset holders who are not listed as beneficiaries</tspan><tspan x="0" y="395"></tspan><tspan x="0" y="414">Version 0</tspan><tspan x="0" y="433">Timestamp</tspan></text>
-    <line id="Line_359" data-name="Line 359" x2="3" y2="436" transform="translate(10445.5 -10465.5)" fill="none" stroke="#707070" stroke-width="1"/>
+	Toke" transform="translate(10420 -10465)" fill="#707070" font-size="14" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="15">The BillAngelaChris Trust</tspan><tspan x="0" y="34">Link to contract hash</tspan><tspan x="0" y="53">Issuer details:</tspan><tspan x="0" y="72" xml:space="preserve">	Name		TBACT</tspan><tspan x="0" y="91" xml:space="preserve">	Beneficiaries	Bill, Angela, Chris</tspan><tspan x="0" y="110" xml:space="preserve">	Lawyer 		Daniel</tspan><tspan x="0" y="129" xml:space="preserve">	Address</tspan><tspan x="0" y="148" xml:space="preserve">	Phone no.</tspan><tspan x="0" y="167">Regulatory information:</tspan><tspan x="0" y="186" xml:space="preserve">	Governing law	Australia</tspan><tspan x="0" y="205" xml:space="preserve">	Jurisdiction	Australia Queensland</tspan><tspan x="0" y="224">Contract Operator</tspan><tspan x="0" y="243" xml:space="preserve">	Tokenized</tspan><tspan x="0" y="262">Contract rules:</tspan><tspan x="0" y="281" xml:space="preserve">	Authorisation Flags</tspan><tspan x="0" y="300" xml:space="preserve">	voting systems</tspan><tspan x="0" y="319" xml:space="preserve">	transfer restrictions</tspan><tspan x="0" y="338" xml:space="preserve">	registry</tspan><tspan x="0" y="357">Issuer Proposal:</tspan><tspan x="0" y="376" xml:space="preserve">	No asset holders who are not listed as beneficiaries</tspan><tspan x="0" y="395"></tspan><tspan x="0" y="414">Version 0</tspan><tspan x="0" y="433">Timestamp</tspan></text>
+    <line id="Line_359" data-name="Line 359" x2="3" y2="436" transform="translate(10409.5 -10464.5)" fill="none" stroke="#707070" stroke-width="1"/>
     <text id="TBACT_Smart_Contract-2" data-name="TBACT Smart Contract" transform="translate(10315 -10618)" fill="#7030a0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">TBACT Smart Contract</tspan></text>
+    <text id="_1:_" data-name="1: " transform="translate(10500 -10599)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1: </tspan></text>
+    <text id="TBACT_Contract_Operator" data-name="TBACT Contract Operator" transform="translate(10516 -10599)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">TBACT Contract Operator</tspan></text>
   </g>
 </svg>

@@ -4,7 +4,7 @@
       <rect width="632" height="161" stroke="none"/>
       <rect x="0.5" y="0.5" width="631" height="160" fill="none"/>
     </g>
-    <text id="Response_Transaction_Settlement_" data-name="Response Transaction (Settlement)" transform="translate(6075 -7574)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Response Transaction (Settlement)</tspan></text>
+    <text id="Request_Transaction_Transfer_" data-name="Request Transaction (Transfer)" transform="translate(6075 -7574)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Request Transaction (Transfer)</tspan></text>
     <line id="Line_283" data-name="Line 283" y2="78" transform="translate(6263.5 -7546.5)" fill="none" stroke="#707070" stroke-width="1"/>
     <text id="INPUTS" transform="translate(6069 -7545)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">INPUTS</tspan></text>
     <text id="OUTPUTS_" data-name="OUTPUTS " transform="translate(6279 -7545)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">OUTPUTS </tspan></text>
@@ -24,12 +24,12 @@
       <rect width="98" height="18" stroke="none"/>
       <rect x="0.5" y="0.5" width="97" height="17" fill="none"/>
     </g>
-    <text id="N:_" data-name="N: " transform="translate(6279 -7472)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N: </tspan></text>
+    <text id="_2:_" data-name="2: " transform="translate(6279 -7472)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">2: </tspan></text>
     <text id="Transfer_Action" data-name="Transfer Action" transform="translate(6297 -7472)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Transfer Action</tspan></text>
     <text id="Transfer_Action_Payload" data-name="Transfer Action Payload" transform="translate(6219 -7365)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Transfer Action Payload</tspan></text>
     <text id="Senders" transform="translate(6234 -7313)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">Senders</tspan></text>
     <text id="Receivers" transform="translate(6234 -7282)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">Receivers</tspan></text>
-    <text id="ASSETID:_COUSSmedCombotqTD_Self_Service_Medium_Combo" data-name="ASSETID: COUSSmedCombotqTD… Self Service Medium Combo" transform="translate(6223 -7347)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">ASSETID: COUSSmedCombotqTD… Self Service Medium Combo</tspan></text>
+    <text id="ASSETID:_COUdWmW30d_Med_Popcorn_Combo_Self_Serve" data-name="ASSETID: COUdWmW30d… Med Popcorn Combo, Self Serve" transform="translate(6223 -7347)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">ASSETID: COUdWmW30d… Med Popcorn Combo, Self Serve</tspan></text>
     <line id="Line_285" data-name="Line 285" y2="84" transform="translate(6224.5 -7325.5)" fill="none" stroke="#707070" stroke-width="1"/>
     <text id="Alice_1_" data-name="Alice (1)" transform="translate(6087 -7510)" fill="#00b0f0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Alice (1)</tspan></text>
     <text id="Cinema_Ticketing_Contract" data-name="Cinema Ticketing Contract" transform="translate(6297 -7510)" fill="#7030a0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Cinema Ticketing Contract</tspan></text>

@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="628.5" height="734" viewBox="0 0 628.5 734">
   <g id="dominics-pizza-harry-transfer" transform="translate(-5375 10699)">
     <g id="Rectangle_192" data-name="Rectangle 192" transform="translate(5375 -10699)" fill="#fcfcfc" stroke="#707070" stroke-width="1">
-      <rect width="628" height="226" stroke="none"/>
-      <rect x="0.5" y="0.5" width="627" height="225" fill="none"/>
+      <rect width="628" height="218" stroke="none"/>
+      <rect x="0.5" y="0.5" width="627" height="217" fill="none"/>
     </g>
     <text id="Request_Transaction_Transfer_" data-name="Request Transaction (Transfer)" transform="translate(5387 -10666)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Request Transaction (Transfer)</tspan></text>
     <line id="Line_259" data-name="Line 259" y2="136" transform="translate(5570.5 -10636.5)" fill="none" stroke="#707070" stroke-width="1"/>
@@ -33,7 +33,7 @@
       <rect width="98" height="18" stroke="none"/>
       <rect x="0.5" y="0.5" width="97" height="17" fill="none"/>
     </g>
-    <text id="N:_" data-name="N: " transform="translate(5591 -10505)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N: </tspan></text>
+    <text id="_5:_" data-name="5: " transform="translate(5591 -10507)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">5: </tspan></text>
     <text id="Transfer_Action" data-name="Transfer Action" transform="translate(5609 -10507)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Transfer Action</tspan></text>
     <text id="Bitcoin_Change-2" data-name="Bitcoin Change" transform="translate(5785 -10545)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Bitcoin Change</tspan></text>
     <text id="N_A" data-name="N/A" transform="translate(5785 -10507)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N/A</tspan></text>
@@ -61,7 +61,6 @@
     <text id="Dominic_s_Pizza_1_3" data-name="Dominic&apos;s Pizza (1)" transform="translate(5406 -10602)" fill="#19e134" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dominic&apos;s Pizza (1)</tspan></text>
     <text id="Harry_1_2" data-name="Harry (1)" transform="translate(5406 -10583)" fill="#a5981e" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Harry (1)</tspan></text>
     <text id="Dominic_s_Pizza_2_" data-name="Dominic&apos;s Pizza (2)" transform="translate(5609 -10564)" fill="#19e134" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dominic&apos;s Pizza (2)</tspan></text>
-    <text id="Not_Shown:_Change" data-name="Not Shown: Change" transform="translate(5785 -10488)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Not Shown: Change</tspan></text>
     <line id="Line_338" data-name="Line 338" y2="79" transform="translate(5390.5 -10341.5)" fill="none" stroke="#707070" stroke-width="1"/>
     <line id="Line_339" data-name="Line 339" y2="79" transform="translate(5390.5 -10236.5)" fill="none" stroke="#707070" stroke-width="1"/>
     <line id="Line_342" data-name="Line 342" y2="123" transform="translate(5390.5 -10101.5)" fill="none" stroke="#707070" stroke-width="1"/>
@@ -80,7 +79,7 @@ Time and Date" transform="translate(5769 -10385)" fill="#707070" font-size="12" 
     <text id="_44.00" data-name="$44.00" transform="translate(5953 -10205)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">$44.00</tspan></text>
     <text id="Settlement_via:_AUD_Contract" data-name="Settlement via: AUD Contract" transform="translate(5782 -10184)" fill="#707070" font-size="14" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Settlement via: AUD Contract</tspan></text>
     <text id="Message_Action" data-name="Message Action" transform="translate(5609 -10526)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Message Action</tspan></text>
-    <text id="N-1:_" data-name="N-1: " transform="translate(5575 -10526)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N-1: </tspan></text>
+    <text id="_4:_" data-name="4: " transform="translate(5591 -10525)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">4: </tspan></text>
     <g id="Rectangle_397" data-name="Rectangle 397" transform="translate(5607 -10540)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
       <rect width="103.503" height="18" stroke="none"/>
       <rect x="0.5" y="0.5" width="102.503" height="17" fill="none"/>

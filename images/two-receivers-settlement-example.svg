@@ -9,20 +9,21 @@
     <text id="OUTPUTS_" data-name="OUTPUTS " transform="translate(1007 -10628)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">OUTPUTS </tspan></text>
     <text id="_0:_Smart_Contract_" data-name="0: Smart Contract
 " transform="translate(804 -10608)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="15">0: Smart Contract</tspan><tspan x="0" y="34"></tspan></text>
-    <text id="_0:_John_1_0:_John_2_1:_Bill_2:_Angela_3:_John_4_N:_Settlement_Action" data-name="0: John (1)
+    <text id="_0:_John_1_0:_John_2_1:_Bill_2:_Angela_3:_John_4_4:_Contract_Operator_5:_Settlement_Action" data-name="0: John (1)
 0: John (2)
 1: Bill
 2: Angela
 3: John (4)
-N: Settlement Action" transform="translate(1007 -10608)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="15">0: </tspan><tspan y="15" fill="#ef1818">John (1)</tspan><tspan x="0" y="34">0: </tspan><tspan y="34" fill="#ef1818">John (2)</tspan><tspan x="0" y="53">1:</tspan><tspan y="53" fill="#cd18ef"> </tspan><tspan y="53" fill="#19e134">Bill</tspan><tspan x="0" y="72">2:</tspan><tspan y="72" fill="#ef1818"> </tspan><tspan y="72" fill="#cd18ef">Angela</tspan><tspan x="0" y="91">3:</tspan><tspan y="91" xml:space="preserve" fill="#ef1818"> John (4)</tspan><tspan x="0" y="110">N: Settlement Action</tspan></text>
+4: Contract Operator
+5: Settlement Action" transform="translate(1007 -10608)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="15">0: </tspan><tspan y="15" fill="#ef1818">John (1)</tspan><tspan x="0" y="34">0: </tspan><tspan y="34" fill="#ef1818">John (2)</tspan><tspan x="0" y="53">1:</tspan><tspan y="53" fill="#cd18ef"> </tspan><tspan y="53" fill="#19e134">Bill</tspan><tspan x="0" y="72">2:</tspan><tspan y="72" fill="#ef1818"> </tspan><tspan y="72" fill="#cd18ef">Angela</tspan><tspan x="0" y="91">3:</tspan><tspan y="91" xml:space="preserve" fill="#ef1818"> John (4)</tspan><tspan x="0" y="110">4: Contract Operator</tspan><tspan x="0" y="129">5: Settlement Action</tspan></text>
     <text id="VALUE" transform="translate(1180 -10628)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">VALUE</tspan></text>
-    <text id="Dust_Dust_Dust_Dust_Dust_N_A_Not_shown:_Contract_Fee" data-name="Dust
+    <text id="Dust_Dust_Dust_Dust_Dust_Contract_Fees_Optional_N_A" data-name="Dust
 Dust
 Dust
 Dust
 Dust
-N/A
-Not shown: Contract Fee" transform="translate(1180 -10608)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="15">Dust</tspan><tspan x="0" y="34">Dust</tspan><tspan x="0" y="53">Dust</tspan><tspan x="0" y="72">Dust</tspan><tspan x="0" y="91">Dust</tspan><tspan x="0" y="110">N/A</tspan><tspan x="0" y="129">Not shown: Contract Fee</tspan></text>
+Contract Fees (Optional)
+N/A" transform="translate(1180 -10608)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="15">Dust</tspan><tspan x="0" y="34">Dust</tspan><tspan x="0" y="53">Dust</tspan><tspan x="0" y="72">Dust</tspan><tspan x="0" y="91">Dust</tspan><tspan x="0" y="110">Contract Fees (Optional)</tspan><tspan x="0" y="129">N/A</tspan></text>
     <g id="Rectangle_56" data-name="Rectangle 56" transform="translate(914 -10438)" fill="#fcfcfc" stroke="#707070" stroke-width="1" stroke-dasharray="3">
       <rect width="331.499" height="199" stroke="none"/>
       <rect x="0.5" y="0.5" width="330.499" height="198" fill="none"/>
@@ -34,11 +35,11 @@ Not shown: Contract Fee" transform="translate(1180 -10608)" fill="#707070" font-
     <text id="Bill:_100_shares" data-name="Bill: 100 shares" transform="translate(939 -10292)" fill="#19e134" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Bill</tspan><tspan y="0" fill="#707070">: 100 shares</tspan></text>
     <text id="Angela:_100_shares_John_4_:_100_shares" data-name="Angela: 100 sharesJohn (4): 100 shares" transform="translate(939 -10273)" fill="#cd18ef" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Angela</tspan><tspan y="0" fill="#707070">: 100 shares</tspan><tspan fill="#ef1818"><tspan x="0" y="19">John (4): </tspan><tspan y="19" fill="#707070">100 shares</tspan></tspan></text>
     <line id="Line_109" data-name="Line 109" x1="1" y2="113" transform="translate(928.5 -10362.5)" fill="none" stroke="#707070" stroke-width="1"/>
-    <g id="Rectangle_58" data-name="Rectangle 58" transform="translate(1021 -10512)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+    <g id="Rectangle_58" data-name="Rectangle 58" transform="translate(1019 -10493)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
       <rect width="117" height="18" stroke="none"/>
       <rect x="0.5" y="0.5" width="116" height="17" fill="none"/>
     </g>
-    <line id="Line_111" data-name="Line 111" y2="56" transform="translate(1080.5 -10493.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
+    <line id="Line_111" data-name="Line 111" y2="37" transform="translate(1080.5 -10474.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
     <text id="ASSETID:_SHC1BvBMSJ..._Common_Shares" data-name="ASSETID: SHC1BvBMSJ... Common Shares" transform="translate(926 -10386)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">ASSETID: SHC1BvBMSJ... Common Shares</tspan></text>
     <text id="John_2_:_0_shares" data-name="John (2): 0 shares" transform="translate(939 -10311)" fill="#ef1818" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">John (2)</tspan><tspan y="0" fill="#707070">: 0 shares</tspan></text>
   </g>

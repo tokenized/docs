@@ -20,14 +20,14 @@
     <text id="Transfer_Action_Payload" data-name="Transfer Action Payload" transform="translate(5460 -7365)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Transfer Action Payload</tspan></text>
     <text id="Senders" transform="translate(5475 -7313)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">Senders</tspan></text>
     <text id="Receivers" transform="translate(5475 -7282)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">Receivers</tspan></text>
-    <text id="ASSETID:_COUSSmedCombotqTD_Self_Service_Medium_Combo" data-name="ASSETID: COUSSmedCombotqTD… Self Service Medium Combo" transform="translate(5464 -7347)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">ASSETID: COUSSmedCombotqTD… Self Service Medium Combo</tspan></text>
+    <text id="ASSETID:_COUdWmW30d_Med_Popcorn_Combo_Self_Serve" data-name="ASSETID: COUdWmW30d… Med Popcorn Combo, Self Serve" transform="translate(5464 -7347)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">ASSETID: COUdWmW30d… Med Popcorn Combo, Self Serve</tspan></text>
     <line id="Line_281" data-name="Line 281" y2="84" transform="translate(5465.5 -7325.5)" fill="none" stroke="#707070" stroke-width="1"/>
     <line id="Line_282" data-name="Line 282" y2="85" transform="translate(5583.5 -7484.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
     <g id="Rectangle_215" data-name="Rectangle 215" transform="translate(5537 -7503)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
       <rect width="98" height="18" stroke="none"/>
       <rect x="0.5" y="0.5" width="97" height="17" fill="none"/>
     </g>
-    <text id="N:_" data-name="N: " transform="translate(5521 -7488)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N: </tspan></text>
+    <text id="_1:_" data-name="1: " transform="translate(5521 -7488)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1: </tspan></text>
     <text id="Transfer_Action" data-name="Transfer Action" transform="translate(5539 -7488)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Transfer Action</tspan></text>
     <text id="Empty_for_Alice_" data-name="Empty (for Alice) " transform="translate(5336 -7507)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Empty (for Alice) </tspan></text>
     <text id="Cinema_Ticketing_Contract" data-name="Cinema Ticketing Contract" transform="translate(5539 -7507)" fill="#7030a0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Cinema Ticketing Contract</tspan></text>

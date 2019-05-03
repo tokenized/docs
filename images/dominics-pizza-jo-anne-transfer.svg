@@ -31,7 +31,7 @@
       <rect width="98" height="18" stroke="none"/>
       <rect x="0.5" y="0.5" width="97" height="17" fill="none"/>
     </g>
-    <text id="N:_" data-name="N: " transform="translate(5591 -10505)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N: </tspan></text>
+    <text id="_5:_" data-name="5: " transform="translate(5591 -10507)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">5: </tspan></text>
     <text id="Transfer_Action" data-name="Transfer Action" transform="translate(5609 -10507)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Transfer Action</tspan></text>
     <text id="Bitcoin_Change-2" data-name="Bitcoin Change" transform="translate(5785 -10545)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Bitcoin Change</tspan></text>
     <text id="N_A" data-name="N/A" transform="translate(5785 -10507)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N/A</tspan></text>
@@ -69,7 +69,7 @@ Time and Date" transform="translate(5769 -10385)" fill="#707070" font-size="12" 
     <text id="_11.00" data-name="$11.00" transform="translate(5953 -10247)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">$11.00</tspan></text>
     <text id="Settlement_via:_AUD_Contract" data-name="Settlement via: AUD Contract" transform="translate(5782 -10226)" fill="#707070" font-size="14" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Settlement via: AUD Contract</tspan></text>
     <text id="Message_Action" data-name="Message Action" transform="translate(5609 -10526)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Message Action</tspan></text>
-    <text id="N-1:_" data-name="N-1: " transform="translate(5575 -10526)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N-1: </tspan></text>
+    <text id="_4:_" data-name="4: " transform="translate(5591 -10526)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">4: </tspan></text>
     <g id="Rectangle_397" data-name="Rectangle 397" transform="translate(5607 -10540)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
       <rect width="103.503" height="18" stroke="none"/>
       <rect x="0.5" y="0.5" width="102.503" height="17" fill="none"/>

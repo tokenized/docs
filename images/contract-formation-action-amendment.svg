@@ -14,20 +14,20 @@
     <text id="_0:_2" data-name="0: " transform="translate(12943 -801)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: </tspan></text>
     <text id="Smart_Contract-2" data-name="Smart Contract" transform="translate(12962 -801)" fill="#7030a0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Smart Contract</tspan></text>
     <text id="Dust" transform="translate(13136 -801)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust</tspan></text>
-    <g id="Rectangle_327" data-name="Rectangle 327" transform="translate(12959 -796)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+    <g id="Rectangle_327" data-name="Rectangle 327" transform="translate(12959 -777)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
       <rect width="168" height="18" stroke="none"/>
       <rect x="0.5" y="0.5" width="167" height="17" fill="none"/>
     </g>
-    <text id="N:_" data-name="N: " transform="translate(12943 -782)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N: </tspan></text>
-    <text id="Contract_Formation_Action" data-name="Contract Formation Action" transform="translate(12961 -782)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Contract Formation Action</tspan></text>
-    <text id="N_A" data-name="N/A" transform="translate(13136 -782)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N/A</tspan></text>
+    <text id="_2:_" data-name="2: " transform="translate(12943 -763)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">2: </tspan></text>
+    <text id="Contract_Formation_Action" data-name="Contract Formation Action" transform="translate(12961 -763)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Contract Formation Action</tspan></text>
+    <text id="Bitcoin_Change" data-name="Bitcoin Change" transform="translate(13136 -782)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Bitcoin Change</tspan></text>
     <g id="Rectangle_328" data-name="Rectangle 328" transform="translate(12872 -717)" fill="#fcfcfc" stroke="#707070" stroke-width="1" stroke-dasharray="3">
       <rect width="387.499" height="445" stroke="none"/>
       <rect x="0.5" y="0.5" width="386.499" height="444" fill="none"/>
     </g>
     <text id="Contract_Formation_Action_Payload" data-name="Contract Formation Action Payload" transform="translate(12883 -684)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Contract Formation Action Payload</tspan></text>
-    <line id="Line_387" data-name="Line 387" y2="61" transform="translate(13003.5 -777.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
-    <text id="Not_Shown:_Change" data-name="Not Shown: Change" transform="translate(13136 -762)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Not Shown: Change</tspan></text>
+    <line id="Line_387" data-name="Line 387" y2="42" transform="translate(13003.5 -758.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
+    <text id="N_A" data-name="N/A" transform="translate(13136 -763)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N/A</tspan></text>
     <line id="Line_388" data-name="Line 388" y2="362" transform="translate(12885.5 -653.5)" fill="none" stroke="#707070" stroke-width="1"/>
     <text id="DETAILS" transform="translate(12883 -672)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">DETAILS</tspan></text>
     <text id="_-_Contract_Name_-_Body_of_Agreement_hash_or_full_text_-_Contract_Type_-_Supporting_Docs_7z_compressed_volume_-_Governing_Law_-_Jurisdiction_-_Contract_Expiration_-_URI_-_Issuer_Identifying_Details_Name_LEI_address_etc._-_Issuer_Logo_-_Contract_Ope" data-name="- Contract Name
@@ -52,5 +52,7 @@
       <rect width="101" height="42" stroke="none"/>
       <rect x="0.5" y="0.5" width="100" height="41" fill="none"/>
     </g>
+    <text id="_1:_" data-name="1: " transform="translate(12943 -782)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1: </tspan></text>
+    <text id="Contract_Operator" data-name="Contract Operator" transform="translate(12961 -782)" fill="#ef1818" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Contract Operator</tspan></text>
   </g>
 </svg>

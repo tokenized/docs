@@ -13,30 +13,32 @@
     <text id="INPUTS" transform="translate(16349 -762)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">INPUTS</tspan></text>
     <text id="OUTPUTS_" data-name="OUTPUTS " transform="translate(16559 -762)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">OUTPUTS </tspan></text>
     <text id="_0:_" data-name="0: " transform="translate(16349 -727)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: </tspan></text>
-    <text id="VALUE" transform="translate(16752 -762)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">VALUE</tspan></text>
+    <text id="VALUE" transform="translate(16754 -762)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">VALUE</tspan></text>
     <text id="Thaw_Action_Payload" data-name="Thaw Action Payload" transform="translate(16519 -568)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Thaw Action Payload</tspan></text>
-    <line id="Line_330" data-name="Line 330" y2="68" transform="translate(16621.5 -661.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
-    <text id="_0:_2" data-name="0: " transform="translate(16559 -727)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: </tspan></text>
-    <text id="Dust" transform="translate(16753 -727)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust</tspan></text>
+    <line id="Line_330" data-name="Line 330" y2="49" transform="translate(16637.5 -643.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
+    <text id="_0:_2" data-name="0: " transform="translate(16559 -725)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: </tspan></text>
+    <text id="Dust" transform="translate(16754 -725)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust</tspan></text>
     <text id="Smart_Contract" data-name="Smart Contract" transform="translate(16367 -727)" fill="#7030a0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Smart Contract</tspan></text>
-    <g id="Rectangle_275" data-name="Rectangle 275" transform="translate(16575 -681)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+    <g id="Rectangle_275" data-name="Rectangle 275" transform="translate(16595 -662)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
       <rect width="84" height="18" stroke="none"/>
       <rect x="0.5" y="0.5" width="83" height="17" fill="none"/>
     </g>
-    <text id="N:_" data-name="N: " transform="translate(16559 -667)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N: </tspan></text>
-    <text id="Thaw_Action" data-name="Thaw Action" transform="translate(16577 -667)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Thaw Action</tspan></text>
-    <text id="N_A" data-name="N/A" transform="translate(16753 -666)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N/A</tspan></text>
-    <text id="Not_Shown:_Contract_Fees" data-name="Not Shown: Contract Fees" transform="translate(16752 -645)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Not Shown: Contract Fees</tspan></text>
-    <text id="Target_Address_1" data-name="Target Address 1" transform="translate(16577 -727)" fill="#e1b219" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Target Address 1</tspan></text>
+    <text id="N_2:_" data-name="N+2: " transform="translate(16559 -649)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N+2: </tspan></text>
+    <text id="Thaw_Action" data-name="Thaw Action" transform="translate(16597 -649)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Thaw Action</tspan></text>
+    <text id="Contract_Fees" data-name="Contract Fees" transform="translate(16753 -668)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Contract Fees</tspan></text>
+    <text id="N_A" data-name="N/A" transform="translate(16753 -649)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N/A</tspan></text>
+    <text id="Target_Address_1" data-name="Target Address 1" transform="translate(16576 -725)" fill="#e1b219" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Target Address 1</tspan></text>
     <text id="DETAILS" transform="translate(16520 -557)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">DETAILS</tspan></text>
     <path id="Path_160" data-name="Path 160" d="M0,0V38.5" transform="translate(16522.5 -540.5)" fill="none" stroke="#707070" stroke-width="1"/>
     <text id="_-_Tx-ID_of_Target_Freeze_Action_-_Timestamp" data-name="- Tx-ID of Target Freeze Action
 - Timestamp" transform="translate(16529 -525)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">- Tx-ID of Target Freeze Action</tspan><tspan x="0" y="19">- Timestamp</tspan></text>
-    <text id="_1:_" data-name="1: " transform="translate(16559 -707)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1: </tspan></text>
-    <text id="Dust-2" data-name="Dust" transform="translate(16753 -707)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust</tspan></text>
-    <text id="Target_Address_2" data-name="Target Address 2" transform="translate(16577 -707)" fill="#e1b219" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Target Address 2</tspan></text>
-    <text id="M:_" data-name="M: " transform="translate(16559 -687)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">M: </tspan></text>
+    <text id="_1:_" data-name="1: " transform="translate(16559 -706)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1: </tspan></text>
+    <text id="Dust-2" data-name="Dust" transform="translate(16753 -706)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust</tspan></text>
+    <text id="Target_Address_2" data-name="Target Address 2" transform="translate(16576 -706)" fill="#e1b219" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Target Address 2</tspan></text>
+    <text id="N:_" data-name="N: " transform="translate(16559 -687)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N: </tspan></text>
     <text id="Dust-3" data-name="Dust" transform="translate(16753 -687)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust</tspan></text>
-    <text id="Target_Address_M" data-name="Target Address M" transform="translate(16577 -687)" fill="#e1b219" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Target Address M</tspan></text>
+    <text id="Target_Address_N_1" data-name="Target Address N+1" transform="translate(16576 -687)" fill="#e1b219" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Target Address N+1</tspan></text>
+    <text id="N_1:_" data-name="N+1: " transform="translate(16559 -668)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N+1: </tspan></text>
+    <text id="Contract_Operator" data-name="Contract Operator" transform="translate(16597 -668)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Contract Operator</tspan></text>
   </g>
 </svg>

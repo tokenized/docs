@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="628.5" height="566" viewBox="0 0 628.5 566">
+  <g id="concert-venue-edison-transfer" transform="translate(-5375 10699)">
+    <g id="Rectangle_192" data-name="Rectangle 192" transform="translate(5375 -10699)" fill="#fcfcfc" stroke="#707070" stroke-width="1">
+      <rect width="628" height="218" stroke="none"/>
+      <rect x="0.5" y="0.5" width="627" height="217" fill="none"/>
+    </g>
+    <text id="Request_Transaction_Transfer_" data-name="Request Transaction (Transfer)" transform="translate(5387 -10666)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Request Transaction (Transfer)</tspan></text>
+    <line id="Line_259" data-name="Line 259" y2="136" transform="translate(5570.5 -10636.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <text id="INPUTS" transform="translate(5388 -10637)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">INPUTS</tspan></text>
+    <text id="OUTPUTS_" data-name="OUTPUTS " transform="translate(5591 -10637)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">OUTPUTS </tspan></text>
+    <text id="_0:_" data-name="0: " transform="translate(5388 -10602)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: </tspan></text>
+    <text id="VALUE" transform="translate(5784 -10637)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">VALUE</tspan></text>
+    <g id="Rectangle_193" data-name="Rectangle 193" transform="translate(5375 -10435)" fill="#fcfcfc" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+      <rect width="363.499" height="302" stroke="none"/>
+      <rect x="0.5" y="0.5" width="362.499" height="301" fill="none"/>
+    </g>
+    <text id="Transfer_Action_Payload" data-name="Transfer Action Payload" transform="translate(5386 -10400)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Transfer Action Payload</tspan></text>
+    <text id="Senders" transform="translate(5401 -10342)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">Senders</tspan></text>
+    <text id="Receivers" transform="translate(5401 -10302)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">Receivers</tspan></text>
+    <line id="Line_261" data-name="Line 261" y2="66" transform="translate(5653.5 -10500.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
+    <text id="_1:_" data-name="1: " transform="translate(5388 -10583)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1: </tspan></text>
+    <text id="_0:_2" data-name="0: " transform="translate(5591 -10602)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: </tspan></text>
+    <text id="_1:_2" data-name="1: " transform="translate(5591 -10583)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1: </tspan></text>
+    <text id="Concert_Venue_Contract" data-name="Concert Venue Contract" transform="translate(5609 -10602)" fill="#7030a0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Concert Venue Contract</tspan></text>
+    <text id="_2:_" data-name="2: " transform="translate(5591 -10564)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">2: </tspan></text>
+    <text id="Concert_Venue_2_" data-name="Concert Venue (2)" transform="translate(5609 -10583)" fill="#19e134" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Concert Venue (2)</tspan></text>
+    <text id="Contract_Fees_Response_Cost_" data-name="Contract Fees + Response Cost " transform="translate(5785 -10602)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Contract Fees + Response Cost </tspan></text>
+    <text id="Bitcoin_Change" data-name="Bitcoin Change" transform="translate(5785 -10583)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Bitcoin Change</tspan></text>
+    <text id="_0.451BSV_Ticket_price_" data-name="0.451BSV (Ticket price)" transform="translate(5785 -10564)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0.451BSV (Ticket price)</tspan></text>
+    <text id="_3:_" data-name="3: " transform="translate(5591 -10545)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">3: </tspan></text>
+    <text id="Edison_3_" data-name="Edison (3)" transform="translate(5609 -10545)" fill="#a5981e" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Edison (3)</tspan></text>
+    <g id="Rectangle_194" data-name="Rectangle 194" transform="translate(5607 -10521)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+      <rect width="98" height="18" stroke="none"/>
+      <rect x="0.5" y="0.5" width="97" height="17" fill="none"/>
+    </g>
+    <text id="_5:_" data-name="5: " transform="translate(5591 -10507)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">5: </tspan></text>
+    <text id="Transfer_Action" data-name="Transfer Action" transform="translate(5610 -10507)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Transfer Action</tspan></text>
+    <text id="Bitcoin_Change-2" data-name="Bitcoin Change" transform="translate(5785 -10545)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Bitcoin Change</tspan></text>
+    <text id="N_A" data-name="N/A" transform="translate(5785 -10507)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N/A</tspan></text>
+    <text id="Concert_Venue_1_" data-name="Concert Venue (1)" transform="translate(5401 -10307)" fill="#19e134" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Concert Venue (1)</tspan></text>
+    <text id="Edison_4_" data-name="Edison (4)" transform="translate(5401 -10267)" fill="#a5981e" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Edison (4)</tspan></text>
+    <text id="Edison_4_2" data-name="Edison (4)" transform="translate(5401 -10162)" fill="#a5981e" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Edison (4)</tspan></text>
+    <text id="ASSETID:_TICa3dfmKLma3..._Wiggles_Concert_Entry" data-name="ASSETID: TICa3dfmKLma3... Wiggles Concert Entry" transform="translate(5387 -10359)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">ASSETID: TICa3dfmKLma3... Wiggles Concert Entry</tspan></text>
+    <text id="Concert_Venue_Contract-2" data-name="Concert Venue Contract" transform="translate(5387 -10371)" fill="#7030a0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Concert Venue Contract</tspan></text>
+    <text id="_1_Ticket" data-name="1 Ticket" transform="translate(5611 -10307)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1 Ticket</tspan></text>
+    <text id="_1_Ticket-2" data-name="1 Ticket" transform="translate(5611 -10267)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1 Ticket</tspan></text>
+    <text id="Senders-2" data-name="Senders" transform="translate(5401 -10238)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">Senders</tspan></text>
+    <text id="Receivers-2" data-name="Receivers" transform="translate(5401 -10198)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">Receivers</tspan></text>
+    <text id="Concert_Venue_1_2" data-name="Concert Venue (1)" transform="translate(5401 -10203)" fill="#19e134" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Concert Venue (1)</tspan></text>
+    <text id="ASSETID:_TICd03mD4gaa3sf..._Back_Stage_Pass" data-name="ASSETID: TICd03mD4gaa3sf... Back Stage Pass" transform="translate(5387 -10255)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">ASSETID: TICd03mD4gaa3sf... Back Stage Pass</tspan></text>
+    <text id="_1_Ticket-3" data-name="1 Ticket" transform="translate(5611 -10203)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1 Ticket</tspan></text>
+    <text id="_1_Ticket-4" data-name="1 Ticket" transform="translate(5611 -10162)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1 Ticket</tspan></text>
+    <text id="Concert_Venue_1_3" data-name="Concert Venue (1)" transform="translate(5406 -10602)" fill="#19e134" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Concert Venue (1)</tspan></text>
+    <text id="Edison_1_" data-name="Edison (1)" transform="translate(5406 -10583)" fill="#a5981e" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Edison (1)</tspan></text>
+    <text id="Concert_Venue_3_" data-name="Concert Venue (3)" transform="translate(5609 -10564)" fill="#19e134" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Concert Venue (3)</tspan></text>
+    <line id="Line_338" data-name="Line 338" y2="79" transform="translate(5390.5 -10341.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <line id="Line_339" data-name="Line 339" y2="79" transform="translate(5390.5 -10236.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <text id="N_A-2" data-name="N/A" transform="translate(5785 -10526)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N/A</tspan></text>
+    <g id="Rectangle_396" data-name="Rectangle 396" transform="translate(5753 -10435)" fill="#fcfcfc" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+      <rect width="250.499" height="169" stroke="none"/>
+      <rect x="0.5" y="0.5" width="249.499" height="168" fill="none"/>
+    </g>
+    <line id="Line_490" data-name="Line 490" y2="94" transform="translate(5768.5 -10528.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
+    <text id="Message_Action_Payload" data-name="Message Action Payload" transform="translate(5766 -10397)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Message Action Payload</tspan></text>
+    <text id="Receipt:_Rad_Concert_Venue_Time_and_Date" data-name="Receipt: Rad Concert Venue
+Time and Date" transform="translate(5769 -10385)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">Receipt: Rad Concert Venue</tspan><tspan x="0" y="29">Time and Date</tspan></text>
+    <text id="Total:" transform="translate(5890 -10289)" fill="#707070" font-size="14" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Total:</tspan></text>
+    <text id="_0.451BSV" data-name="0.451BSV" transform="translate(5939 -10289)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0.451BSV</tspan></text>
+    <text id="Message_Action" data-name="Message Action" transform="translate(5609 -10526)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Message Action</tspan></text>
+    <text id="_4:_" data-name="4: " transform="translate(5591 -10526)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">4: </tspan></text>
+    <g id="Rectangle_397" data-name="Rectangle 397" transform="translate(5607 -10540)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+      <rect width="103.503" height="18" stroke="none"/>
+      <rect x="0.5" y="0.5" width="102.503" height="17" fill="none"/>
+    </g>
+    <line id="Line_491" data-name="Line 491" x2="59" transform="translate(5709.5 -10528.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
+    <text id="_0.231BSV" data-name="0.231BSV" transform="translate(5939 -10310)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0.231BSV</tspan></text>
+    <text id="_1_Wiggles_concert_entry" data-name="1 Wiggles concert entry" transform="translate(5762 -10331)" fill="#707070" font-size="14" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">1 Wiggles concert entry</tspan></text>
+    <text id="_0.22BSV" data-name="0.22BSV" transform="translate(5939 -10331)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0.22BSV</tspan></text>
+    <text id="_1_Back_stage_pass" data-name="1 Back stage pass" transform="translate(5762 -10310)" fill="#707070" font-size="14" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">1 Back stage pass</tspan></text>
+    <text id="_2:_2" data-name="2: " transform="translate(5388 -10564)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">2: </tspan></text>
+    <text id="Edison_2_" data-name="Edison (2)" transform="translate(5406 -10564)" fill="#a5981e" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Edison (2)</tspan></text>
+  </g>
+</svg>

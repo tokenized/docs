@@ -24,7 +24,7 @@
       <rect width="98" height="18" stroke="none"/>
       <rect x="0.5" y="0.5" width="97" height="17" fill="none"/>
     </g>
-    <text id="N:_" data-name="N: " transform="translate(18451 -10518)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N: </tspan></text>
+    <text id="_5:_" data-name="5: " transform="translate(18452 -10518)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">5: </tspan></text>
     <text id="Transfer_Action" data-name="Transfer Action" transform="translate(18469 -10518)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Transfer Action</tspan></text>
     <text id="Bitcoin_Change" data-name="Bitcoin Change" transform="translate(18684 -10575)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Bitcoin Change</tspan></text>
     <text id="_0.2324_BSV_From_Dianne_" data-name="0.2324 BSV (From Dianne)" transform="translate(18684 -10556)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0.2324 BSV (From Dianne)</tspan></text>
@@ -42,7 +42,7 @@
       <text id="Receivers" transform="translate(18445 -10255)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">Receivers</tspan></text>
       <line id="Line_408" data-name="Line 408" y2="66" transform="translate(18528.713 -10456.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
       <text id="__________" transform="translate(18445 -10260)" fill="#cd18ef" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">__________</tspan></text>
-      <text id="ASSETID:_LOYTokAirBMSEY_TokenAir_Air_Miles" data-name="ASSETID: LOYTokAirBMSEY… TokenAir Air Miles" transform="translate(18431 -10314)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">ASSETID: LOYTokAirBMSEY… TokenAir Air Miles</tspan></text>
+      <text id="ASSETID:_LOYea3189e09068_TokenAir_Frequent_Flyer_Points" data-name="ASSETID: LOYea3189e09068… TokenAir Frequent Flyer Points" transform="translate(18431 -10314)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">ASSETID: LOYea3189e09068… TokenAir Frequent Flyer Points</tspan></text>
       <text id="TokenAir_Frequent_Flyer_Contract" data-name="TokenAir Frequent Flyer Contract" transform="translate(18431 -10327)" fill="#ef1818" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">TokenAir Frequent Flyer Contract</tspan></text>
       <text id="_2_000_000_miles" data-name="2,000,000 miles" transform="translate(18599.082 -10260)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">2,000,000 miles</tspan></text>
       <line id="Line_409" data-name="Line 409" y2="104" transform="translate(18434.5 -10294.5)" fill="none" stroke="#707070" stroke-width="1"/>

@@ -10,33 +10,35 @@
     <text id="OUTPUTS_" data-name="OUTPUTS " transform="translate(7077 -7545)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">OUTPUTS </tspan></text>
     <text id="_0:_" data-name="0: " transform="translate(6867 -7510)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: </tspan></text>
     <text id="VALUE" transform="translate(7270 -7545)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">VALUE</tspan></text>
-    <text id="_0:_2" data-name="0: " transform="translate(7077 -7510)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: </tspan></text>
-    <text id="_1:_" data-name="1: " transform="translate(7077 -7491)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1: </tspan></text>
+    <text id="_0:_2" data-name="0: " transform="translate(7076 -7509)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: </tspan></text>
+    <text id="_1:_" data-name="1: " transform="translate(7076 -7490)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1: </tspan></text>
     <text id="Dust" transform="translate(7270 -7509)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust</tspan></text>
     <text id="Dust-2" data-name="Dust" transform="translate(7270 -7490)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust</tspan></text>
-    <text id="N_A" data-name="N/A" transform="translate(7270 -7471)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N/A</tspan></text>
+    <text id="Contract_Fee" data-name="Contract Fee" transform="translate(7270 -7471)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Contract Fee</tspan></text>
     <g id="Rectangle_220" data-name="Rectangle 220" transform="translate(7004 -7402)" fill="#fcfcfc" stroke="#707070" stroke-width="1" stroke-dasharray="3">
       <rect width="389.499" height="152" stroke="none"/>
       <rect x="0.5" y="0.5" width="388.499" height="151" fill="none"/>
     </g>
     <text id="Settlement_Action_Payload" data-name="Settlement Action Payload" transform="translate(7015 -7367)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Settlement Action Payload</tspan></text>
     <text id="Settlements" transform="translate(7030 -7315)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">Settlements</tspan></text>
-    <text id="ASSETID:_COUSSmedCombotqTD_Self_Service_Medium_Combo" data-name="ASSETID: COUSSmedCombotqTD… Self Service Medium Combo" transform="translate(7019 -7349)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">ASSETID: COUSSmedCombotqTD… Self Service Medium Combo</tspan></text>
+    <text id="ASSETID:_COUdWmW30d_Med_Popcorn_Combo_Self_Serve" data-name="ASSETID: COUdWmW30d… Med Popcorn Combo, Self Serve" transform="translate(7019 -7349)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">ASSETID: COUdWmW30d… Med Popcorn Combo, Self Serve</tspan></text>
     <line id="Line_287" data-name="Line 287" y2="55" transform="translate(7020.5 -7327.5)" fill="none" stroke="#707070" stroke-width="1"/>
-    <line id="Line_288" data-name="Line 288" y2="66" transform="translate(7138.5 -7467.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
-    <g id="Rectangle_221" data-name="Rectangle 221" transform="translate(7092 -7486)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
-      <rect width="98" height="18" stroke="none"/>
-      <rect x="0.5" y="0.5" width="97" height="17" fill="none"/>
-    </g>
-    <text id="N:_" data-name="N: " transform="translate(7076 -7471)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N: </tspan></text>
-    <text id="Transfer_Action" data-name="Transfer Action" transform="translate(7094 -7471)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Transfer Action</tspan></text>
+    <line id="Line_288" data-name="Line 288" y2="48" transform="translate(7138.5 -7449.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
+    <text id="_2:_" data-name="2: " transform="translate(7076 -7471)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">2: </tspan></text>
+    <text id="Cinema_Contract_Operator" data-name="Cinema Contract Operator" transform="translate(7094 -7471)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Cinema Contract Operator</tspan></text>
     <text id="Cinema_Ticketing_Contract" data-name="Cinema Ticketing Contract" transform="translate(6885 -7510)" fill="#7030a0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Cinema Ticketing Contract</tspan></text>
-    <text id="Alice_1_" data-name="Alice (1)" transform="translate(7094 -7509)" fill="#00b0f0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Alice (1)</tspan></text>
+    <text id="Alice_1_" data-name="Alice (1)" transform="translate(7094 -7510)" fill="#00b0f0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Alice (1)</tspan></text>
     <text id="Cinema_1_" data-name="Cinema (1)" transform="translate(7094 -7490)" fill="#19e134" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Cinema (1)</tspan></text>
     <text id="Alice_1_2" data-name="Alice (1)" transform="translate(7031 -7296)" fill="#00b0f0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Alice (1)</tspan></text>
     <text id="Cinema_1_2" data-name="Cinema (1)" transform="translate(7031 -7277)" fill="#19e134" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Cinema (1)</tspan></text>
     <text id="_0_coupon" data-name="0 coupon" transform="translate(7202 -7296)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0 coupon</tspan></text>
     <text id="_4106_coupons" data-name="4106 coupons" transform="translate(7202 -7277)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">4106 coupons</tspan></text>
-    <text id="Not_Shown:_Contract_Fee" data-name="Not Shown: Contract Fee" transform="translate(7270 -7452)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Not Shown: Contract Fee</tspan></text>
+    <text id="Contract_Fee-2" data-name="Contract Fee" transform="translate(7270 -7452)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Contract Fee</tspan></text>
+    <g id="Rectangle_426" data-name="Rectangle 426" transform="translate(7092 -7467)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+      <rect width="118" height="18" stroke="none"/>
+      <rect x="0.5" y="0.5" width="117" height="17" fill="none"/>
+    </g>
+    <text id="_3:_" data-name="3: " transform="translate(7076 -7452)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">3: </tspan></text>
+    <text id="Settlement_Action" data-name="Settlement Action" transform="translate(7094 -7452)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Settlement Action</tspan></text>
   </g>
 </svg>

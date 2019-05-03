@@ -22,15 +22,15 @@
     </g>
     <line id="Line_400" data-name="Line 400" y2="49" transform="translate(15742.5 -10573.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
     <g id="Rectangle_342" data-name="Rectangle 342" transform="translate(15696 -10593)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
-      <rect width="108" height="19" stroke="none"/>
-      <rect x="0.5" y="0.5" width="107" height="18" fill="none"/>
+      <rect width="100" height="19" stroke="none"/>
+      <rect x="0.5" y="0.5" width="99" height="18" fill="none"/>
     </g>
-    <text id="N:_" data-name="N: " transform="translate(15680 -10578)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N: </tspan></text>
+    <text id="_2:_" data-name="2: " transform="translate(15680 -10578)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">2: </tspan></text>
     <text id="Transfer_Action" data-name="Transfer Action" transform="translate(15698 -10578)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Transfer Action</tspan></text>
     <text id="Transfer_Action_Payload" data-name="Transfer Action Payload" transform="translate(15597 -10486)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Transfer Action Payload</tspan></text>
     <text id="Senders" transform="translate(15612 -10433)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">Senders</tspan></text>
     <text id="Receivers" transform="translate(15612 -10403)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">Receivers</tspan></text>
-    <text id="ASSETID:_LOYTokAirBMSEY_TokenAir_Frequent_Flyer_Points" data-name="ASSETID: LOYTokAirBMSEY… TokenAir Frequent Flyer Points" transform="translate(15601 -10468)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">ASSETID: LOYTokAirBMSEY… TokenAir Frequent Flyer Points</tspan></text>
+    <text id="ASSETID:_LOYea3189e09068_TokenAir_Frequent_Flyer_Points" data-name="ASSETID: LOYea3189e09068… TokenAir Frequent Flyer Points" transform="translate(15601 -10468)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">ASSETID: LOYea3189e09068… TokenAir Frequent Flyer Points</tspan></text>
     <text id="Dianne" transform="translate(15612 -10368)" fill="#002060" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dianne</tspan></text>
     <text id="Bob_1_2" data-name="Bob (1)" transform="translate(15612 -10414)" fill="#00b0f0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Bob (1)</tspan></text>
     <text id="_2_000_000_points" data-name="2,000,000 points" transform="translate(15804 -10368)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">2,000,000 points</tspan></text>

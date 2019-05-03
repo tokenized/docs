@@ -27,7 +27,7 @@
     <text id="N_A" data-name="N/A" transform="translate(13941 -10537)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N/A</tspan></text>
     <text id="TBACT_Smart_Contract" data-name="TBACT Smart Contract" transform="translate(13561 -10613)" fill="#7b1adb" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">TBACT Smart Contract</tspan></text>
     <text id="Not_Shown:_Contract_Fee" data-name="Not Shown: Contract Fee" transform="translate(13941 -10518)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Not Shown: Contract Fee</tspan></text>
-    <text id="Request_Transaction_Settlement_" data-name="Request Transaction (Settlement)" transform="translate(13542 -10677)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Request Transaction (Settlement)</tspan></text>
+    <text id="Response_Transaction_Settlement_" data-name="Response Transaction (Settlement)" transform="translate(13542 -10677)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Response Transaction (Settlement)</tspan></text>
     <text id="_1:_" data-name="1: " transform="translate(13746 -10594)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1: </tspan></text>
     <text id="_2:_" data-name="2: " transform="translate(13746 -10575)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">2: </tspan></text>
     <text id="Dust-2" data-name="Dust" transform="translate(13940 -10594)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust</tspan></text>

@@ -4,7 +4,7 @@
       <rect width="628" height="164" stroke="none"/>
       <rect x="0.5" y="0.5" width="627" height="163" fill="none"/>
     </g>
-    <text id="Issuer" transform="translate(12125 -801)" fill="#19e134" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Issuer</tspan></text>
+    <text id="Administration" transform="translate(12125 -801)" fill="#19e134" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Administration</tspan></text>
     <text id="Request_Transaction_Contract_Amendment_" data-name="Request Transaction (Contract Amendment)" transform="translate(12106 -868)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Request Transaction (Contract Amendment)</tspan></text>
     <line id="Line_390" data-name="Line 390" y2="86" transform="translate(12294.5 -840.5)" fill="none" stroke="#707070" stroke-width="1"/>
     <text id="INPUTS" transform="translate(12106 -836)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">INPUTS</tspan></text>
@@ -14,20 +14,20 @@
     <text id="_0:_2" data-name="0: " transform="translate(12310 -801)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: </tspan></text>
     <text id="Smart_Contract" data-name="Smart Contract" transform="translate(12329 -801)" fill="#7030a0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Smart Contract</tspan></text>
     <text id="Contract_Fees_Response_Cost_" data-name="Contract Fees + Response Cost " transform="translate(12510 -801)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Contract Fees + Response Cost </tspan></text>
-    <g id="Rectangle_332" data-name="Rectangle 332" transform="translate(12326 -796)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+    <g id="Rectangle_332" data-name="Rectangle 332" transform="translate(12326 -777)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
       <rect width="181" height="18" stroke="none"/>
       <rect x="0.5" y="0.5" width="180" height="17" fill="none"/>
     </g>
-    <text id="N:_" data-name="N: " transform="translate(12310 -782)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N: </tspan></text>
-    <text id="Contract_Amendment_Action" data-name="Contract Amendment Action" transform="translate(12328 -782)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Contract Amendment Action</tspan></text>
-    <text id="N_A" data-name="N/A" transform="translate(12510 -782)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N/A</tspan></text>
+    <text id="_2:_" data-name="2: " transform="translate(12310 -763)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">2: </tspan></text>
+    <text id="Contract_Amendment_Action" data-name="Contract Amendment Action" transform="translate(12328 -763)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Contract Amendment Action</tspan></text>
+    <text id="Bitcoin_Change" data-name="Bitcoin Change" transform="translate(12510 -782)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Bitcoin Change</tspan></text>
     <g id="Rectangle_333" data-name="Rectangle 333" transform="translate(12239 -717)" fill="#fcfcfc" stroke="#707070" stroke-width="1" stroke-dasharray="3">
       <rect width="473.499" height="186" stroke="none"/>
       <rect x="0.5" y="0.5" width="472.499" height="185" fill="none"/>
     </g>
     <text id="Contract_Amendment_Action_Payload" data-name="Contract Amendment Action Payload" transform="translate(12250 -684)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Contract Amendment Action Payload</tspan></text>
-    <line id="Line_391" data-name="Line 391" y2="61" transform="translate(12370.5 -777.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
-    <text id="Not_Shown:_Change" data-name="Not Shown: Change" transform="translate(12510 -762)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Not Shown: Change</tspan></text>
+    <line id="Line_391" data-name="Line 391" y2="42" transform="translate(12370.5 -758.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
+    <text id="N_A" data-name="N/A" transform="translate(12510 -763)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N/A</tspan></text>
     <line id="Line_392" data-name="Line 392" y2="106" transform="translate(12252.5 -653.5)" fill="none" stroke="#707070" stroke-width="1"/>
     <text id="DETAILS" transform="translate(12250 -672)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">DETAILS</tspan></text>
     <text id="_-_Change_Issuer_Address_optional_-_Change_Operator_Address_optional_-_Updated_Contract_Revision_Must_be_sequential_from_last_valid_revision_-_Amendments_-_Ref_Tx-ID_only_for_governance_related_amendments_" data-name="- Change Issuer Address (optional)
@@ -35,5 +35,7 @@
 - Updated Contract Revision (Must be sequential from last valid revision)
 - Amendments
 - Ref Tx-ID (only for governance related amendments)" transform="translate(12260 -638)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">- Change Issuer Address (optional)</tspan><tspan x="0" y="19">- Change Operator Address (optional)</tspan><tspan x="0" y="38">- Updated Contract Revision (Must be sequential from last valid revision)</tspan><tspan x="0" y="57">- Amendments</tspan><tspan x="0" y="76">- Ref Tx-ID (only for governance related amendments)</tspan></text>
+    <text id="_1:_" data-name="1: " transform="translate(12310 -782)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1: </tspan></text>
+    <text id="Administration-2" data-name="Administration" transform="translate(12328 -782)" fill="#19e134" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Administration</tspan></text>
   </g>
 </svg>

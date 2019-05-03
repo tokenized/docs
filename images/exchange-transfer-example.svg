@@ -11,10 +11,10 @@
     <text id="_0:_Merchant_Exchange_1_unsigned_1:_Buyer_1_signed_" data-name="0: Merchant/Exchange (1)
 (unsigned)
 1: Buyer (1) (signed)" transform="translate(2875 -10604)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="15">0: </tspan><tspan y="15" fill="#ef1818">Merchant/Exchange (1)</tspan><tspan fill="#ef1818"><tspan x="0" y="34">(unsigned)</tspan><tspan y="34" fill="#7b1adb"></tspan></tspan><tspan fill="#7b1adb"><tspan x="0" y="53">1: Buyer (1) (signed</tspan><tspan y="53" fill="#ef1818">)</tspan></tspan></text>
-    <text id="_0:_Smart_Contract_1:_Merchant_Exchange_2_2:_Buyer_2_N:_Transfer_Action" data-name="0: Smart Contract
+    <text id="_0:_Smart_Contract_1:_Merchant_Exchange_2_2:_Buyer_2_3:_Transfer_Action" data-name="0: Smart Contract
 1: Merchant/Exchange (2)
 2: Buyer (2)
-N: Transfer Action" transform="translate(3078 -10604)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="15">0: Smart Contract</tspan><tspan x="0" y="34">1: </tspan><tspan y="34" fill="#ef1818">Merchant/Exchange (2)</tspan><tspan x="0" y="53">2: </tspan><tspan y="53" fill="#7b1adb">Buyer (2)</tspan><tspan x="0" y="72">N: Transfer Action</tspan></text>
+3: Transfer Action" transform="translate(3078 -10604)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="15">0: Smart Contract</tspan><tspan x="0" y="34">1: </tspan><tspan y="34" fill="#ef1818">Merchant/Exchange (2)</tspan><tspan x="0" y="53">2: </tspan><tspan y="53" fill="#7b1adb">Buyer (2)</tspan><tspan x="0" y="72">3: Transfer Action</tspan></text>
     <text id="VALUE" transform="translate(3271 -10624)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">VALUE</tspan></text>
     <g id="Rectangle_74" data-name="Rectangle 74" transform="translate(3011 -10454)" fill="#fcfcfc" stroke="#707070" stroke-width="1" stroke-dasharray="3">
       <rect width="339.499" height="337" stroke="none"/>
@@ -32,7 +32,7 @@ Merchant/Exchange (3): 450 tokens " transform="translate(3046 -10299)" fill="#7b
 Bitcoin Change
 Bitcoin Change
 N/A" transform="translate(3271 -10604)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="15">2 BSV + Response Costs + Contract Fee</tspan><tspan x="0" y="34">Bitcoin Change</tspan><tspan x="0" y="53">Bitcoin Change</tspan><tspan x="0" y="72">N/A</tspan></text>
-    <g id="Rectangle_75" data-name="Rectangle 75" transform="translate(3094 -10545)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+    <g id="Rectangle_75" data-name="Rectangle 75" transform="translate(3090 -10545)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
       <rect width="98" height="17" stroke="none"/>
       <rect x="0.5" y="0.5" width="97" height="16" fill="none"/>
     </g>

@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="628" height="562" viewBox="0 0 628 562">
+<svg xmlns="http://www.w3.org/2000/svg" width="628" height="500.749" viewBox="0 0 628 500.749">
   <g id="one-receiver-transfer-example" transform="translate(1094 10683)">
     <g id="Rectangle_46" data-name="Rectangle 46" transform="translate(-1094 -10683)" fill="#fcfcfc" stroke="#707070" stroke-width="1">
       <rect width="628" height="166" stroke="none"/>
@@ -8,24 +8,23 @@
     <line id="Line_80" data-name="Line 80" y2="103" transform="translate(-893.5 -10622.5)" fill="none" stroke="#707070" stroke-width="1"/>
     <text id="INPUTS" transform="translate(-1081 -10621)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">INPUTS</tspan></text>
     <text id="OUTPUTS_" data-name="OUTPUTS " transform="translate(-878 -10621)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">OUTPUTS </tspan></text>
-    <text id="_0:_Issuer_1_1:_Issuer_2_" data-name="0: Issuer(1)
-1: Issuer (2)" transform="translate(-1081 -10601)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="15">0: </tspan><tspan y="15" fill="#ef1818">Issuer(1)</tspan><tspan x="0" y="34">1:</tspan><tspan y="34" xml:space="preserve" fill="#ef1818"> Issuer (2)</tspan></text>
-    <text id="_0:_Smart_Contract_1:_Issuer_3_N:_Transfer_Action" data-name="0: Smart Contract
-1: Issuer(3)
-N: Transfer Action" transform="translate(-878 -10601)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="15">0: Smart Contract</tspan><tspan x="0" y="34">1: </tspan><tspan y="34" fill="#ef1818">Issuer(3)</tspan><tspan x="0" y="53">N: Transfer Action</tspan></text>
+    <text id="_0:_Administration_1_1:_Administration_2_" data-name="0: Administration (1)
+1: Administration (2)" transform="translate(-1081 -10601)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="15">0: </tspan><tspan y="15" fill="#ef1818">Administration (1)</tspan><tspan x="0" y="34">1:</tspan><tspan y="34" xml:space="preserve" fill="#ef1818"> Administration (2)</tspan></text>
+    <text id="_0:_Smart_Contract_1:_Administration_3_N:_Transfer_Action" data-name="0: Smart Contract
+1: Administration (3)
+N: Transfer Action" transform="translate(-878 -10601)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="15">0: Smart Contract</tspan><tspan x="0" y="34">1: </tspan><tspan y="34" fill="#ef1818">Administration (3)</tspan><tspan x="0" y="53">N: Transfer Action</tspan></text>
     <text id="VALUE" transform="translate(-685 -10621)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">VALUE</tspan></text>
     <g id="Rectangle_47" data-name="Rectangle 47" transform="translate(-916 -10477)" fill="#fcfcfc" stroke="#707070" stroke-width="1" stroke-dasharray="3">
-      <rect width="280.499" height="198" stroke="none"/>
-      <rect x="0.5" y="0.5" width="279.499" height="197" fill="none"/>
+      <rect width="280.499" height="177" stroke="none"/>
+      <rect x="0.5" y="0.5" width="279.499" height="176" fill="none"/>
     </g>
     <text id="Transfer_Action_Payload" data-name="Transfer Action Payload" transform="translate(-905 -10442)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Transfer Action Payload</tspan></text>
     <text id="Senders" transform="translate(-890 -10405)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">Senders</tspan></text>
-    <text id="Issuer_1_:_110_shares" data-name="Issuer(1): 110 shares" transform="translate(-890 -10370)" fill="#ef1818" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Issuer(1)</tspan><tspan y="0" fill="#707070">: 110 shares</tspan></text>
+    <text id="Administration_1_:_100_shares" data-name="Administration (1): 100 shares" transform="translate(-890 -10370)" fill="#ef1818" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Administration (1)</tspan><tspan y="0" fill="#707070">: 100 shares</tspan></text>
     <text id="Receivers" transform="translate(-890 -10359)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">Receivers</tspan></text>
-    <text id="Bill:_100_shares_Issuer_4_:_10_shares" data-name="Bill: 100 shares
-Issuer(4): 10 shares" transform="translate(-890 -10323)" fill="#19e134" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Bill</tspan><tspan y="0" fill="#707070">: 100 shares</tspan><tspan fill="#ef1818"><tspan x="0" y="19">Issuer(4):</tspan><tspan y="19" xml:space="preserve" fill="#707070"> 10 shares</tspan></tspan></text>
+    <text id="Bill:_100_shares" data-name="Bill: 100 shares" transform="translate(-890 -10323)" fill="#19e134" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Bill</tspan><tspan y="0" fill="#707070">: 100 shares</tspan></text>
     <text id="ASSETID:_SHC1BvBMSJ..._Common_Shares" data-name="ASSETID: SHC1BvBMSJ... Common Shares" transform="translate(-901 -10424)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">ASSETID: SHC1BvBMSJ... Common Shares</tspan></text>
-    <line id="Line_82" data-name="Line 82" y2="101" transform="translate(-900.5 -10400.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <line id="Line_82" data-name="Line 82" y2="82" transform="translate(-900.5 -10400.5)" fill="none" stroke="#707070" stroke-width="1"/>
     <text id="Response_Costs_Contract_Fees_Bitcoin_Change_N_A" data-name="Response Costs + Contract Fees
 Bitcoin Change
 N/A" transform="translate(-685 -10601)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="15">Response Costs + Contract Fees</tspan><tspan x="0" y="34">Bitcoin Change</tspan><tspan x="0" y="53">N/A</tspan></text>
@@ -48,33 +47,26 @@ Both addresses are owned by the issuer." transform="translate(-1077 -10437)" fil
     <text id="Note:-3" data-name="Note:" transform="translate(-620 -10477)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="17">Note:</tspan></text>
     <text id="Exchange:_100_tokens_for_300_tokens-2" data-name="Exchange: 100 tokens for 300 tokens" transform="translate(-620 -10446)" fill="#707070" font-size="14" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="15">Exchange: </tspan><tspan x="0" y="34">100 tokens for 300 </tspan><tspan x="0" y="53">tokens</tspan></text>
     <g id="Rectangle_405" data-name="Rectangle 405" transform="translate(-625 -10483)" fill="#fff" stroke="#cf730b" stroke-width="4">
-      <rect width="159" height="188" stroke="none"/>
-      <rect x="2" y="2" width="155" height="184" fill="none"/>
+      <rect width="159" height="129" stroke="none"/>
+      <rect x="2" y="2" width="155" height="125" fill="none"/>
     </g>
     <text id="Note:-4" data-name="Note:" transform="translate(-613.43 -10477)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="17">Note:</tspan></text>
-    <text id="Issuer_3_is_the_Bitcoin_change_address_for_the_Bitcoin_spent_from_Issuer_2_Issuer_4_is_the_token_change_address." data-name="Issuer(3) is the Bitcoin change address for the Bitcoin spent from Issuer(2)
-
-Issuer(4) is the token change address." transform="translate(-613.43 -10446)" fill="#707070" font-size="14" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="15">Issuer(3) is the Bitcoin </tspan><tspan x="0" y="34">change address for </tspan><tspan x="0" y="53">the Bitcoin spent </tspan><tspan x="0" y="72">from Issuer(2)</tspan><tspan x="0" y="91"></tspan><tspan x="0" y="110">Issuer(4) is the token </tspan><tspan x="0" y="129">change address.</tspan></text>
-    <line id="Line_501" data-name="Line 501" x2="144" transform="translate(-768.5 -10307.5)" fill="none" stroke="#cf730b" stroke-width="1" stroke-dasharray="3"/>
-    <line id="Line_502" data-name="Line 502" y1="1" x2="89" transform="translate(-805.5 -10571.5)" fill="none" stroke="#cf730b" stroke-width="1" stroke-dasharray="3"/>
+    <text id="Issuer_3_is_the_Bitcoin_change_address_for_the_Bitcoin_spent_from_Issuer_2_" data-name="Issuer(3) is the Bitcoin change address for the Bitcoin spent from Issuer(2)" transform="translate(-613.43 -10446)" fill="#707070" font-size="14" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="15">Issuer(3) is the Bitcoin </tspan><tspan x="0" y="34">change address for </tspan><tspan x="0" y="53">the Bitcoin spent </tspan><tspan x="0" y="72">from Issuer(2)</tspan></text>
+    <line id="Line_502" data-name="Line 502" x2="31" transform="translate(-747.5 -10571.5)" fill="none" stroke="#cf730b" stroke-width="1" stroke-dasharray="3"/>
     <line id="Line_503" data-name="Line 503" y1="78" transform="translate(-716.5 -10570.5)" fill="none" stroke="#cf730b" stroke-width="1" stroke-dasharray="3"/>
     <line id="Line_504" data-name="Line 504" x1="122" transform="translate(-716.5 -10492.5)" fill="none" stroke="#cf730b" stroke-width="1" stroke-dasharray="3"/>
     <line id="Line_505" data-name="Line 505" y2="11" transform="translate(-594.5 -10492.5)" fill="none" stroke="#cf730b" stroke-width="1" stroke-dasharray="3"/>
-    <g id="Rectangle_406" data-name="Rectangle 406" transform="translate(-893 -10319)" fill="none" stroke="#cf730b" stroke-width="1" stroke-dasharray="3">
-      <rect width="124" height="22" stroke="none"/>
-      <rect x="0.5" y="0.5" width="123" height="21" fill="none"/>
-    </g>
     <g id="Rectangle_407" data-name="Rectangle 407" transform="translate(-867 -10580)" fill="none" stroke="#cf730b" stroke-width="1" stroke-dasharray="3">
-      <rect width="61" height="16" stroke="none"/>
-      <rect x="0.5" y="0.5" width="60" height="15" fill="none"/>
+      <rect width="120" height="16" stroke="none"/>
+      <rect x="0.5" y="0.5" width="119" height="15" fill="none"/>
     </g>
-    <text id="Note:-5" data-name="Note:" transform="translate(-910 -10259)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="17">Note:</tspan></text>
-    <text id="Exchange:_100_tokens_for_300_tokens-3" data-name="Exchange: 100 tokens for 300 tokens" transform="translate(-910 -10228)" fill="#707070" font-size="14" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="15">Exchange: </tspan><tspan x="0" y="34">100 tokens for 300 </tspan><tspan x="0" y="53">tokens</tspan></text>
-    <g id="Rectangle_408" data-name="Rectangle 408" transform="translate(-915 -10265)" fill="#fff" stroke="#cf730b" stroke-width="4">
-      <rect width="255" height="144" stroke="none"/>
-      <rect x="2" y="2" width="251" height="140" fill="none"/>
+    <text id="Note:-5" data-name="Note:" transform="translate(-910 -10282)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="17">Note:</tspan></text>
+    <text id="Exchange:_100_tokens_for_300_tokens-3" data-name="Exchange: 100 tokens for 300 tokens" transform="translate(-910 -10267.268)" fill="#707070" font-size="14" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="15">Exchange: </tspan><tspan x="0" y="34">100 tokens for 300 </tspan><tspan x="0" y="53">tokens</tspan></text>
+    <g id="Rectangle_408" data-name="Rectangle 408" transform="translate(-915 -10288)" fill="#fff" stroke="#cf730b" stroke-width="4">
+      <rect width="442" height="105.749" stroke="none"/>
+      <rect x="2" y="2" width="438" height="101.749" fill="none"/>
     </g>
-    <text id="Note:-6" data-name="Note:" transform="translate(-903.43 -10259)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="17">Note:</tspan></text>
-    <text id="Token_sending_public_keys_are_always_in_the_inputs_of_a_transaction._Token_receiving_addresses_pkh_are_always_in_the_OP_RETURN_payload_for_the_Transfer_action." data-name="Token sending public keys are always in the inputs of a transaction.  Token receiving addresses (pkh) are always in the OP_RETURN payload for the Transfer action." transform="translate(-903.43 -10228)" fill="#707070" font-size="14" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="15">Token sending public keys are </tspan><tspan x="0" y="34" xml:space="preserve">always in the inputs of a transaction.  </tspan><tspan x="0" y="53">Token receiving addresses (pkh) are </tspan><tspan x="0" y="72">always in the OP_RETURN payload </tspan><tspan x="0" y="91">for the Transfer action.</tspan></text>
+    <text id="Note:-6" data-name="Note:" transform="translate(-903.43 -10282)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="17">Note:</tspan></text>
+    <text id="Token_sending_public_keys_are_always_in_the_inputs_of_a_transaction._Token_receiving_addresses_pkh_are_always_in_the_OP_RETURN_payload_for_the_Transfer_action." data-name="Token sending public keys are always in the inputs of a transaction.  Token receiving addresses (pkh) are always in the OP_RETURN payload for the Transfer action." transform="translate(-903.43 -10251)" fill="#707070" font-size="14" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="15">Token sending public keys are always in the inputs of a </tspan><tspan x="0" y="34" xml:space="preserve">transaction.  Token receiving addresses (pkh) are always in the </tspan><tspan x="0" y="53">OP_RETURN payload for the Transfer action.</tspan></text>
   </g>
 </svg>

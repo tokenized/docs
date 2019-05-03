@@ -23,7 +23,7 @@
       <rect width="135" height="18" stroke="none"/>
       <rect x="0.5" y="0.5" width="134" height="17" fill="none"/>
     </g>
-    <text id="N:_" data-name="N: " transform="translate(15025 -5586)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N: </tspan></text>
+    <text id="_1:_" data-name="1: " transform="translate(15025 -5586)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1: </tspan></text>
     <text id="Addition_Action" data-name="Addition Action" transform="translate(15043 -5586)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Addition Action</tspan></text>
     <text id="N_A" data-name="N/A" transform="translate(15219 -5586)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N/A</tspan></text>
     <text id="Register-2" data-name="Register" transform="translate(15043 -5607)" fill="#ef1818" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Register</tspan></text>

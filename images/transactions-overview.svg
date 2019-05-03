@@ -205,22 +205,24 @@ N: Transfer Action" transform="translate(-314 469)" fill="#707070" font-size="14
     <text id="OUTPUTS_2" data-name="OUTPUTS " transform="translate(30 1390)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">OUTPUTS </tspan></text>
     <text id="_0:_Smart_Contract_" data-name="0: Smart Contract
 " transform="translate(-173 1410)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="15">0: Smart Contract</tspan><tspan x="0" y="34"></tspan></text>
-    <text id="_0:_Mary_1_1:_Bill_2:_Mary_3_3:_Settlement_Action" data-name="0: Mary (1)
+    <text id="_0:_Mary_1_1:_Bill_2:_Mary_3_3:_Contract_Operator_4:_Settlement_Action" data-name="0: Mary (1)
 1: Bill
 2: Mary (3)
-3: Settlement Action" transform="translate(30 1410)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="15">0: </tspan><tspan y="15" fill="#ef1818">Mary (1)</tspan><tspan x="0" y="34">1: Bill</tspan><tspan x="0" y="53">2: </tspan><tspan y="53" fill="#ef1818">Mary (3)</tspan><tspan fill="#c89c0b"><tspan x="0" y="72">3</tspan><tspan y="72" fill="#707070">: Settlement Action</tspan></tspan></text>
+3: Contract Operator
+4: Settlement Action" transform="translate(30 1410)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="15">0: </tspan><tspan y="15" fill="#ef1818">Mary (1)</tspan><tspan x="0" y="34">1: Bill</tspan><tspan x="0" y="53">2: </tspan><tspan y="53" fill="#ef1818">Mary (3)</tspan><tspan x="0" y="72">3: Contract Operator</tspan><tspan x="0" y="91">4: Settlement Action</tspan></text>
     <text id="VALUE-2" data-name="VALUE" transform="translate(173 1390)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">VALUE</tspan></text>
-    <text id="Dust_Dust_Dust_0" data-name="Dust
+    <text id="Dust_Dust_Dust_Contract_Fees_N_A" data-name="Dust
 Dust
 Dust
-0" transform="translate(173 1410)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="15">Dust</tspan><tspan x="0" y="34">Dust</tspan><tspan x="0" y="53">Dust</tspan><tspan x="0" y="72">0</tspan></text>
+Contract Fees
+N/A" transform="translate(173 1410)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="15">Dust</tspan><tspan x="0" y="34">Dust</tspan><tspan x="0" y="53">Dust</tspan><tspan x="0" y="72">Contract Fees</tspan><tspan x="0" y="91">N/A</tspan></text>
     <g id="Rectangle_29" data-name="Rectangle 29" transform="translate(-173 1580)" fill="#fcfcfc" stroke="#707070" stroke-width="1" stroke-dasharray="3">
       <rect width="295.499" height="172" stroke="none"/>
       <rect x="0.5" y="0.5" width="294.499" height="171" fill="none"/>
     </g>
     <text id="Settlement_Action_Details" data-name="Settlement Action Details" transform="translate(-161 1615)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Settlement Action Details</tspan></text>
-    <line id="Line_29" data-name="Line 29" y2="92" transform="translate(72.5 1488.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
-    <g id="Rectangle_30" data-name="Rectangle 30" transform="translate(43 1468)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+    <line id="Line_29" data-name="Line 29" y2="75" transform="translate(72.5 1505.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
+    <g id="Rectangle_30" data-name="Rectangle 30" transform="translate(41 1486)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
       <rect width="119" height="19" stroke="none"/>
       <rect x="0.5" y="0.5" width="118" height="18" fill="none"/>
     </g>

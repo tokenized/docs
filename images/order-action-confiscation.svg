@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1272" height="415" viewBox="0 0 1272 415">
+<svg xmlns="http://www.w3.org/2000/svg" width="1271" height="415" viewBox="0 0 1271 415">
   <g id="order-action-confiscation" transform="translate(-16973 823)">
     <g id="Rectangle_278" data-name="Rectangle 278" transform="translate(17133 -633)" fill="#fcfcfc" stroke="#707070" stroke-width="1" stroke-dasharray="3">
       <rect width="267.499" height="220" stroke="none"/>
@@ -14,18 +14,18 @@
     <text id="OUTPUTS_" data-name="OUTPUTS " transform="translate(17198 -761)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">OUTPUTS </tspan></text>
     <text id="VALUE" transform="translate(17391 -761)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">VALUE</tspan></text>
     <text id="Order_Confiscate_Action_Payload" data-name="Order (Confiscate) Action Payload" transform="translate(17144 -607)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Order (Confiscate) Action Payload</tspan></text>
-    <line id="Line_333" data-name="Line 333" y2="68" transform="translate(17260.5 -700.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
+    <line id="Line_333" data-name="Line 333" y2="51" transform="translate(17260.5 -683.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
     <text id="_0:_" data-name="0: " transform="translate(17198 -726)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: </tspan></text>
-    <text id="Dust" transform="translate(17392 -726)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust</tspan></text>
-    <text id="Issuer" transform="translate(17006 -726)" fill="#19e134" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Issuer</tspan></text>
-    <g id="Rectangle_280" data-name="Rectangle 280" transform="translate(17214 -720)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+    <text id="Contract_Fees_Response_Cost" data-name="Contract Fees + Response Cost" transform="translate(17391 -726)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Contract Fees + Response Cost</tspan></text>
+    <text id="Administration" transform="translate(17006 -726)" fill="#19e134" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Administration</tspan></text>
+    <g id="Rectangle_280" data-name="Rectangle 280" transform="translate(17214 -702)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
       <rect width="87" height="18" stroke="none"/>
       <rect x="0.5" y="0.5" width="86" height="17" fill="none"/>
     </g>
-    <text id="N:_" data-name="N: " transform="translate(17198 -705)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N: </tspan></text>
-    <text id="Order_Action" data-name="Order Action" transform="translate(17216 -706)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Order Action</tspan></text>
-    <text id="N_A" data-name="N/A" transform="translate(17392 -705)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N/A</tspan></text>
-    <text id="Not_Shown:_Contract_Fees" data-name="Not Shown: Contract Fees" transform="translate(17391 -684)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Not Shown: Contract Fees</tspan></text>
+    <text id="_2:_" data-name="2: " transform="translate(17198 -688)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">2: </tspan></text>
+    <text id="Order_Action" data-name="Order Action" transform="translate(17216 -688)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Order Action</tspan></text>
+    <text id="Bitcoin_Change" data-name="Bitcoin Change" transform="translate(17391 -707)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Bitcoin Change</tspan></text>
+    <text id="N_A" data-name="N/A" transform="translate(17391 -688)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N/A</tspan></text>
     <text id="Smart_Contract" data-name="Smart Contract" transform="translate(17216 -726)" fill="#7030a0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Smart Contract</tspan></text>
     <text id="DETAILS" transform="translate(17145 -596)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">DETAILS</tspan></text>
     <path id="Path_161" data-name="Path 161" d="M0,0V155.361" transform="translate(17147.5 -579.5)" fill="none" stroke="#707070" stroke-width="1"/>
@@ -44,7 +44,7 @@
         <rect width="245.499" height="137" stroke="none"/>
         <rect x="0.5" y="0.5" width="244.499" height="136" fill="none"/>
       </g>
-      <g id="Rectangle_282" data-name="Rectangle 282" transform="translate(17613 -823)" fill="#fcfcfc" stroke="#707070" stroke-width="1">
+      <g id="Rectangle_282" data-name="Rectangle 282" transform="translate(17612 -823)" fill="#fcfcfc" stroke="#707070" stroke-width="1">
         <rect width="632" height="193" stroke="none"/>
         <rect x="0.5" y="0.5" width="631" height="192" fill="none"/>
       </g>
@@ -55,30 +55,34 @@
       <text id="_0:_3" data-name="0: " transform="translate(17628 -726)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: </tspan></text>
       <text id="VALUE-2" data-name="VALUE" transform="translate(18031 -761)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">VALUE</tspan></text>
       <text id="Confiscation_Action_Payload" data-name="Confiscation Action Payload" transform="translate(17798 -567)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Confiscation Action Payload</tspan></text>
-      <line id="Line_344" data-name="Line 344" y2="68" transform="translate(17900.5 -660.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
+      <line id="Line_344" data-name="Line 344" y2="53" transform="translate(17900.5 -645.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
       <text id="_0:_4" data-name="0: " transform="translate(17838 -726)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: </tspan></text>
-      <text id="Dust-2" data-name="Dust" transform="translate(18032 -726)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust</tspan></text>
+      <text id="Dust" transform="translate(18033 -726)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust</tspan></text>
       <text id="Smart_Contract-2" data-name="Smart Contract" transform="translate(17646 -726)" fill="#7030a0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Smart Contract</tspan></text>
-      <g id="Rectangle_283" data-name="Rectangle 283" transform="translate(17854 -680)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+      <g id="Rectangle_283" data-name="Rectangle 283" transform="translate(17870 -664)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
         <rect width="125" height="18" stroke="none"/>
         <rect x="0.5" y="0.5" width="124" height="17" fill="none"/>
       </g>
-      <text id="N:_2" data-name="N: " transform="translate(17838 -665)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N: </tspan></text>
-      <text id="Confiscation_Action" data-name="Confiscation Action" transform="translate(17856 -666)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Confiscation Action</tspan></text>
-      <text id="N_A-2" data-name="N/A" transform="translate(18032 -665)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N/A</tspan></text>
-      <text id="Not_Shown:_Contract_Fees-2" data-name="Not Shown: Contract Fees" transform="translate(18031 -644)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Not Shown: Contract Fees</tspan></text>
+      <text id="N_2:_" data-name="N+2: " transform="translate(17838 -650)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N+2: </tspan></text>
+      <text id="Confiscation_Action" data-name="Confiscation Action" transform="translate(17872 -650)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Confiscation Action</tspan></text>
+      <text id="Contract_Fees" data-name="Contract Fees" transform="translate(18033 -669)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Contract Fees</tspan></text>
+      <text id="N_A-2" data-name="N/A" transform="translate(18033 -650)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N/A</tspan></text>
       <text id="Target_Address_1" data-name="Target Address 1" transform="translate(17856 -726)" fill="#e1b219" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Target Address 1</tspan></text>
       <text id="DETAILS-2" data-name="DETAILS" transform="translate(17799 -556)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">DETAILS</tspan></text>
       <path id="Path_162" data-name="Path 162" d="M0,0V59.179" transform="translate(17801.5 -539.5)" fill="none" stroke="#707070" stroke-width="1"/>
       <text id="_-_AssetID_-_Quantities_-_Deposit_Quantity" data-name="- AssetID
 - Quantities
 - Deposit Quantity" transform="translate(17808 -524)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">- AssetID</tspan><tspan x="0" y="19">- Quantities</tspan><tspan x="0" y="38">- Deposit Quantity</tspan></text>
-      <text id="_1:_" data-name="1: " transform="translate(17838 -706)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1: </tspan></text>
-      <text id="Dust-3" data-name="Dust" transform="translate(18032 -706)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust</tspan></text>
-      <text id="Target_Address_2" data-name="Target Address 2" transform="translate(17856 -706)" fill="#e1b219" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Target Address 2</tspan></text>
-      <text id="M:_" data-name="M: " transform="translate(17838 -686)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">M: </tspan></text>
-      <text id="Dust-4" data-name="Dust" transform="translate(18032 -686)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust</tspan></text>
-      <text id="Target_Address_M_1" data-name="Target Address M+1" transform="translate(17856 -686)" fill="#e1b219" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Target Address M+1</tspan></text>
+      <text id="_1:_" data-name="1: " transform="translate(17838 -707)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1: </tspan></text>
+      <text id="Dust-2" data-name="Dust" transform="translate(18033 -707)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust</tspan></text>
+      <text id="Target_Address_2" data-name="Target Address 2" transform="translate(17856 -707)" fill="#e1b219" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Target Address 2</tspan></text>
+      <text id="N:_" data-name="N: " transform="translate(17838 -688)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N: </tspan></text>
+      <text id="Dust-3" data-name="Dust" transform="translate(18033 -688)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust</tspan></text>
+      <text id="Target_Address_N_1" data-name="Target Address N+1" transform="translate(17856 -688)" fill="#e1b219" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Target Address N+1</tspan></text>
+      <text id="N_1:_" data-name="N+1: " transform="translate(17838 -669)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N+1: </tspan></text>
+      <text id="Contract_Operator" data-name="Contract Operator" transform="translate(17872 -669)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Contract Operator</tspan></text>
     </g>
+    <text id="_1:_2" data-name="1: " transform="translate(17198 -707)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1: </tspan></text>
+    <text id="Administration-2" data-name="Administration" transform="translate(17216 -707)" fill="#19e134" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Administration</tspan></text>
   </g>
 </svg>

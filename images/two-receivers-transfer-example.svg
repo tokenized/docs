@@ -10,9 +10,9 @@
     <text id="OUTPUTS_" data-name="OUTPUTS " transform="translate(365 -10622)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">OUTPUTS </tspan></text>
     <text id="_0:_John_1_0:_John_2_" data-name="0: John (1)
 0: John (2)" transform="translate(162 -10602)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="15">0: </tspan><tspan y="15" fill="#ef1818">John (1)</tspan><tspan x="0" y="34">0:</tspan><tspan y="34" xml:space="preserve" fill="#ef1818"> John (2)</tspan></text>
-    <text id="_0:_Smart_Contract_1:_John_3_N:_Transfer_Action" data-name="0: Smart Contract
+    <text id="_0:_Smart_Contract_1:_John_3_2:_Transfer_Action" data-name="0: Smart Contract
 1: John (3)
-N: Transfer Action" transform="translate(365 -10602)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="15">0: Smart Contract</tspan><tspan x="0" y="34">1: </tspan><tspan y="34" fill="#ef1818">John (3)</tspan><tspan x="0" y="53">N: Transfer Action</tspan></text>
+2: Transfer Action" transform="translate(365 -10602)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="15">0: Smart Contract</tspan><tspan x="0" y="34">1: </tspan><tspan y="34" fill="#ef1818">John (3)</tspan><tspan x="0" y="53">2: Transfer Action</tspan></text>
     <text id="VALUE" transform="translate(558 -10622)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">VALUE</tspan></text>
     <g id="Rectangle_54" data-name="Rectangle 54" transform="translate(373 -10461)" fill="#fcfcfc" stroke="#707070" stroke-width="1" stroke-dasharray="3">
       <rect width="339.499" height="222" stroke="none"/>
@@ -31,7 +31,7 @@ John (4): 100 shares" transform="translate(399 -10275)" fill="#cd18ef" font-size
     <text id="Response_Costs_Contract_Fees_Bitcoin_Change_N_A" data-name="Response Costs + Contract Fees
 Bitcoin Change
 N/A" transform="translate(558 -10602)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="15">Response Costs + Contract Fees</tspan><tspan x="0" y="34">Bitcoin Change</tspan><tspan x="0" y="53">N/A</tspan></text>
-    <g id="Rectangle_57" data-name="Rectangle 57" transform="translate(381 -10562)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+    <g id="Rectangle_57" data-name="Rectangle 57" transform="translate(377 -10562)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
       <rect width="98" height="18" stroke="none"/>
       <rect x="0.5" y="0.5" width="97" height="17" fill="none"/>
     </g>

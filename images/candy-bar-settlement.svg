@@ -16,22 +16,18 @@
     <text id="Dust" transform="translate(7285 -8784)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust</tspan></text>
     <text id="Dust-2" data-name="Dust" transform="translate(7285 -8765)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust</tspan></text>
     <text id="Dust-3" data-name="Dust" transform="translate(7285 -8746)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust</tspan></text>
-    <text id="N_A" data-name="N/A" transform="translate(7285 -8727)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N/A</tspan></text>
+    <text id="Contract_Fee" data-name="Contract Fee" transform="translate(7285 -8727)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Contract Fee</tspan></text>
     <g id="Rectangle_211" data-name="Rectangle 211" transform="translate(7019 -8658)" fill="#fcfcfc" stroke="#707070" stroke-width="1" stroke-dasharray="3">
       <rect width="366.499" height="161" stroke="none"/>
       <rect x="0.5" y="0.5" width="365.499" height="160" fill="none"/>
     </g>
     <text id="Settlement_Action_Payload" data-name="Settlement Action Payload" transform="translate(7030 -8623)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Settlement Action Payload</tspan></text>
     <text id="Settlements" transform="translate(7045 -8571)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">Settlements</tspan></text>
-    <text id="ASSETID:_CURAUDx100c2020..._Australian_one_cent" data-name="ASSETID: CURAUDx100c2020... Australian one cent" transform="translate(7034 -8605)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">ASSETID: CURAUDx100c2020... Australian one cent</tspan></text>
+    <text id="ASSETID:_CURAUD100cfe94..._Australian_one_cent" data-name="ASSETID: CURAUD100cfe94... Australian one cent" transform="translate(7034 -8605)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">ASSETID: CURAUD100cfe94... Australian one cent</tspan></text>
     <line id="Line_278" data-name="Line 278" y2="77" transform="translate(7035.5 -8583.5)" fill="none" stroke="#707070" stroke-width="1"/>
-    <line id="Line_279" data-name="Line 279" y2="66" transform="translate(7153.5 -8723.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
-    <g id="Rectangle_212" data-name="Rectangle 212" transform="translate(7107 -8742)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
-      <rect width="98" height="18" stroke="none"/>
-      <rect x="0.5" y="0.5" width="97" height="17" fill="none"/>
-    </g>
-    <text id="N:_" data-name="N: " transform="translate(7091 -8727)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N: </tspan></text>
-    <text id="Transfer_Action" data-name="Transfer Action" transform="translate(7109 -8727)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Transfer Action</tspan></text>
+    <line id="Line_279" data-name="Line 279" y2="49" transform="translate(7153.5 -8706.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
+    <text id="_3:_" data-name="3: " transform="translate(7091 -8727)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">3: </tspan></text>
+    <text id="AUD_Contract_Operator" data-name="AUD Contract Operator" transform="translate(7109 -8727)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">AUD Contract Operator</tspan></text>
     <text id="AUD_Contract_" data-name="AUD Contract " transform="translate(6899 -8784)" fill="#f13f3f" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">AUD Contract </tspan></text>
     <text id="Cinema_s_eAUD_wallet_" data-name="Cinema’s eAUD wallet " transform="translate(7046 -8531)" fill="#002060" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Cinema’s eAUD wallet </tspan></text>
     <text id="Carol_s_AUD_Account_1_" data-name="Carol’s AUD Account (1) " transform="translate(7045 -8551)" fill="#7030a0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Carol’s AUD Account (1) </tspan></text>
@@ -42,6 +38,12 @@
     <text id="Cinema_s_eAUD_wallet_2" data-name="Cinema’s eAUD wallet " transform="translate(7109 -8765)" fill="#002060" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Cinema’s eAUD wallet </tspan></text>
     <text id="Carol_s_AUD_Account_1_2" data-name="Carol’s AUD Account (1) " transform="translate(7109 -8784)" fill="#7030a0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Carol’s AUD Account (1) </tspan></text>
     <text id="Carol_s_AUD_Account_3_2" data-name="Carol’s AUD Account (3) " transform="translate(7109 -8746)" fill="#7030a0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Carol’s AUD Account (3) </tspan></text>
-    <text id="Not_Shown:_Contract_Fee" data-name="Not Shown: Contract Fee" transform="translate(7285 -8709)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Not Shown: Contract Fee</tspan></text>
+    <text id="N_A" data-name="N/A" transform="translate(7285 -8709)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N/A</tspan></text>
+    <g id="Rectangle_425" data-name="Rectangle 425" transform="translate(7107 -8722)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+      <rect width="116" height="16" stroke="none"/>
+      <rect x="0.5" y="0.5" width="115" height="15" fill="none"/>
+    </g>
+    <text id="_4:_" data-name="4: " transform="translate(7091 -8709)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">4: </tspan></text>
+    <text id="Settlement_Action" data-name="Settlement Action" transform="translate(7109 -8709)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Settlement Action</tspan></text>
   </g>
 </svg>
