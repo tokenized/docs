@@ -13,7 +13,7 @@
 <a name="introduction"></a>
 ## Introduction
 
-The Tokenized protocol includes a complete governance system that allows for organizational governance to be carried out on-chain and within the rules of the organiztion and within the laws and regulations of any jurisdiction.  The governance tools allow for expressive control over almost any field of data, which can be modified, for a contract or asset. The governance model also extends to organizational matters/proposals that exist outside of the blockchain (eg. a shareholder votes on a company matter).  These settings are all controlled by authorisation flags that are specified in the most recent revision of the Contract Formation or Asset Creation actions issued by the contract.
+The Tokenized Protocol includes a complete governance system that allows for organizational governance to be carried out on-chain and within the rules of the organiztion and within the laws and regulations of any jurisdiction.  The governance tools allow for expressive control over almost any field of data, which can be modified, for a contract or asset. The governance model also extends to organizational matters/proposals that exist outside of the blockchain (eg. a shareholder votes on a company matter).  These settings are all controlled by authorisation flags that are specified in the most recent revision of the Contract Formation or Asset Creation actions issued by the contract.
 
 Where a field in a Contract Formation or Asset Creation has been set to allow for 'unilateral' changes to be made, then the issuer may make changes to this field without needing the authority of affected token holders through a vote process. This means that the fields can be changed at any time without restriction.
 

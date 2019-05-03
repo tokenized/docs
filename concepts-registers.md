@@ -9,7 +9,7 @@
 
 <a name="introduction"></a>
 ## Introduction
-The Tokenized protocol has a full set of register actions that are able to support a wide range of general purpose register functions such as whitelisting, blacklisting, and more. Registers do not need to be operated by Tokenized smart contracts.
+The Tokenized Protocol has a full set of register actions that are able to support a wide range of general purpose register functions such as whitelisting, blacklisting, and more. Registers do not need to be operated by Tokenized smart contracts.
 
 <a name="register-actions"></a>
 ## Register Actions

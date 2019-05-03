@@ -17,7 +17,7 @@
 <a name="introduction"></a>
 ## Introduction
 
-The Tokenized protocol includes a complete set of enforcement capabilities including the ability to:
+The Tokenized Protocol includes a complete set of enforcement capabilities including the ability to:
 
 - Freeze tokens
 - Thaw tokens
