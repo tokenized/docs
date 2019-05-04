@@ -23,7 +23,7 @@
       <rect width="134" height="18" stroke="none"/>
       <rect x="0.5" y="0.5" width="133" height="17" fill="none"/>
     </g>
-    <text id="N_2:_" data-name="N+2: " transform="translate(19118 -648)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N+2: </tspan></text>
+    <text id="N_1:_" data-name="N+1: " transform="translate(19118 -648)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N+1: </tspan></text>
     <text id="Reconciliation_Action" data-name="Reconciliation Action" transform="translate(19152 -648)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Reconciliation Action</tspan></text>
     <text id="Contract_Fees" data-name="Contract Fees" transform="translate(19315 -667)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Contract Fees</tspan></text>
     <text id="Not_Shown:_Contract_Fees" data-name="Not Shown: Contract Fees" transform="translate(19315 -648)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Not Shown: Contract Fees</tspan></text>
@@ -36,10 +36,10 @@
     <text id="_1:_" data-name="1: " transform="translate(19118 -705)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1: </tspan></text>
     <text id="Dust-2" data-name="Dust" transform="translate(19315 -705)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust</tspan></text>
     <text id="Target_Address_2" data-name="Target Address 2" transform="translate(19139 -705)" fill="#e1b219" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Target Address 2</tspan></text>
-    <text id="N:_" data-name="N: " transform="translate(19118 -686)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N: </tspan></text>
+    <text id="N-1:_" data-name="N-1: " transform="translate(19118 -686)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N-1: </tspan></text>
     <text id="Dust-3" data-name="Dust" transform="translate(19315 -686)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust</tspan></text>
-    <text id="Thawed_Address_N_1" data-name="Thawed Address N+1" transform="translate(19139 -686)" fill="#e1b219" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Thawed Address N+1</tspan></text>
-    <text id="N_1:_" data-name="N+1: " transform="translate(19118 -667)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N+1: </tspan></text>
+    <text id="Thawed_Address_N" data-name="Thawed Address N" transform="translate(19150 -686)" fill="#e1b219" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Thawed Address N</tspan></text>
+    <text id="N:_" data-name="N: " transform="translate(19118 -667)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N: </tspan></text>
     <text id="Contract_Operator" data-name="Contract Operator" transform="translate(19152 -667)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Contract Operator</tspan></text>
   </g>
 </svg>

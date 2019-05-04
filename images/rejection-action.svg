@@ -9,7 +9,7 @@
       <rect x="0.5" y="0.5" width="631" height="214" fill="none"/>
     </g>
     <text id="Transaction_Rejection_" data-name="Transaction (Rejection)" transform="translate(5444 -5683)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Transaction (Rejection)</tspan></text>
-    <line id="Line_332" data-name="Line 332" y2="135" transform="translate(5638.5 -5655.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <line id="Line_332" data-name="Line 332" y2="135" transform="translate(5641.5 -5657.5)" fill="none" stroke="#707070" stroke-width="1"/>
     <text id="INPUTS" transform="translate(5444 -5654)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">INPUTS</tspan></text>
     <text id="OUTPUTS_" data-name="OUTPUTS " transform="translate(5654 -5654)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">OUTPUTS </tspan></text>
     <text id="_0:_" data-name="0: " transform="translate(5444 -5619)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: </tspan></text>
@@ -23,10 +23,10 @@
       <rect width="108" height="18" stroke="none"/>
       <rect x="0.5" y="0.5" width="107" height="17" fill="none"/>
     </g>
-    <text id="N_1:_" data-name="N+1: " transform="translate(5654 -5527)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N+1: </tspan></text>
+    <text id="N:_" data-name="N: " transform="translate(5654 -5527)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N: </tspan></text>
     <text id="Rejection_Action" data-name="Rejection Action" transform="translate(5692 -5527)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Rejection Action</tspan></text>
     <text id="N_A" data-name="N/A" transform="translate(5848 -5527)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N/A</tspan></text>
-    <text id="Message_Receiver_1" data-name="Message Receiver 1" transform="translate(5672 -5619)" fill="#ffc000" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Message Receiver 1</tspan></text>
+    <text id="Message_Receiver_1" data-name="Message Receiver 1" transform="translate(5692 -5619)" fill="#ffc000" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Message Receiver 1</tspan></text>
     <text id="DETAILS" transform="translate(5562 -5418)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">DETAILS</tspan></text>
     <path id="Path_161" data-name="Path 161" d="M0,0V95.5" transform="translate(5564.5 -5401.5)" fill="none" stroke="#707070" stroke-width="1"/>
     <text id="_-_Rejection_Receiver_List_-_Rejection_Address_Index_Source_of_rejection_-_Rejection_Type_-_Rejection_Message_Specific_to_rejection_type_-_Timestamp" data-name="- Rejection Receiver List
@@ -36,15 +36,15 @@
 - Timestamp" transform="translate(5571 -5386)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">- Rejection Receiver List</tspan><tspan x="0" y="19">- Rejection Address Index (Source of rejection)</tspan><tspan x="0" y="38">- Rejection Type</tspan><tspan x="0" y="57">- Rejection Message (Specific to rejection type)</tspan><tspan x="0" y="76">- Timestamp</tspan></text>
     <text id="_1:_" data-name="1: " transform="translate(5654 -5600)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1: </tspan></text>
     <text id="Refund_value-2" data-name="Refund value" transform="translate(5848 -5600)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Refund value</tspan></text>
-    <text id="Message_Receiver_2" data-name="Message Receiver 2" transform="translate(5672 -5600)" fill="#ffc000" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Message Receiver 2</tspan></text>
+    <text id="Message_Receiver_2" data-name="Message Receiver 2" transform="translate(5692 -5600)" fill="#ffc000" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Message Receiver 2</tspan></text>
     <text id="_2:_" data-name="2: " transform="translate(5654 -5581)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">2: </tspan></text>
     <text id="Refund_value-3" data-name="Refund value" transform="translate(5848 -5581)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Refund value</tspan></text>
-    <text id="Message_Receiver_3" data-name="Message Receiver 3" transform="translate(5672 -5581)" fill="#ffc000" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Message Receiver 3</tspan></text>
-    <text id="N:_" data-name="N: " transform="translate(5654 -5546)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N: </tspan></text>
+    <text id="Message_Receiver_3" data-name="Message Receiver 3" transform="translate(5692 -5581)" fill="#ffc000" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Message Receiver 3</tspan></text>
+    <text id="N-1:_" data-name="N-1: " transform="translate(5654 -5546)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N-1: </tspan></text>
     <text id="Refund_value-4" data-name="Refund value" transform="translate(5848 -5546)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Refund value</tspan></text>
-    <text id="Message_Receiver_N_1" data-name="Message Receiver N+1" transform="translate(5672 -5546)" fill="#ffc000" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Message Receiver N+1</tspan></text>
-    <text id="_" data-name=" ⋮" transform="translate(5652 -5578)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="15"> </tspan><tspan y="15" font-family="SegoeUISymbol, Segoe UI Symbol">⋮</tspan></text>
-    <text id="_2" data-name=" ⋮" transform="translate(5709 -5578)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="15"> </tspan><tspan y="15" font-family="SegoeUISymbol, Segoe UI Symbol">⋮</tspan></text>
+    <text id="Message_Receiver_N" data-name="Message Receiver N" transform="translate(5692 -5546)" fill="#ffc000" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Message Receiver N</tspan></text>
+    <text id="_" data-name=" ⋮" transform="translate(5657 -5578)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="15"> </tspan><tspan y="15" font-family="SegoeUISymbol, Segoe UI Symbol">⋮</tspan></text>
+    <text id="_2" data-name=" ⋮" transform="translate(5729 -5578)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="15"> </tspan><tspan y="15" font-family="SegoeUISymbol, Segoe UI Symbol">⋮</tspan></text>
     <text id="_3" data-name=" ⋮" transform="translate(5854 -5578)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="15"> </tspan><tspan y="15" font-family="SegoeUISymbol, Segoe UI Symbol">⋮</tspan></text>
   </g>
 </svg>
