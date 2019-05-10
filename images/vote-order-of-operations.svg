@@ -1,27 +1,29 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1490" height="449" viewBox="0 0 1490 449">
   <g id="vote-order-of-operations" transform="translate(675 5717)">
     <g id="Rectangle_251" data-name="Rectangle 251" transform="translate(-675 -5623)" fill="#fcfcfc" stroke="#707070" stroke-width="1">
-      <rect width="320" height="131" stroke="none"/>
-      <rect x="0.5" y="0.5" width="319" height="130" fill="none"/>
+      <rect width="320" height="144" stroke="none"/>
+      <rect x="0.5" y="0.5" width="319" height="143" fill="none"/>
     </g>
     <text id="Proposal" transform="translate(-658 -5591)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Proposal</tspan></text>
     <text id="INPUTS" transform="translate(-658 -5568)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">INPUTS</tspan></text>
     <text id="OUTPUTS_" data-name="OUTPUTS " transform="translate(-452 -5568)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">OUTPUTS </tspan></text>
     <line id="Line_301" data-name="Line 301" y2="51" transform="translate(-472.5 -5566.5)" fill="none" stroke="#707070" stroke-width="1"/>
-    <text id="_0:_Issuer_or_a_Token_Holder_" data-name="0: Issuer or a Token Holder " transform="translate(-658 -5536)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: Issuer or a Token Holder </tspan></text>
+    <text id="_0:_Administration_or_any_holder_of_a_token_with_voting_rights" data-name="0: Administration or 
+    any holder of a token with
+    voting rights" transform="translate(-658 -5536)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: Administration or </tspan><tspan x="0" y="19" xml:space="preserve">    any holder of a token with</tspan><tspan x="0" y="38" xml:space="preserve">    voting rights</tspan></text>
     <text id="_0:_Contract_" data-name="0: Contract " transform="translate(-452 -5536)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: Contract </tspan></text>
     <g id="Rectangle_252" data-name="Rectangle 252" transform="translate(-319 -5623)" fill="#fcfcfc" stroke="#707070" stroke-width="1">
-      <rect width="325" height="151" stroke="none"/>
-      <rect x="0.5" y="0.5" width="324" height="150" fill="none"/>
+      <rect width="336" height="144" stroke="none"/>
+      <rect x="0.5" y="0.5" width="335" height="143" fill="none"/>
     </g>
     <text id="Vote" transform="translate(-306 -5591)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Vote</tspan></text>
     <text id="INPUTS-2" data-name="INPUTS" transform="translate(-306 -5568)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">INPUTS</tspan></text>
     <text id="OUTPUTS_2" data-name="OUTPUTS " transform="translate(-190 -5568)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">OUTPUTS </tspan></text>
     <line id="Line_302" data-name="Line 302" y2="75" transform="translate(-210.5 -5566.5)" fill="none" stroke="#707070" stroke-width="1"/>
     <text id="_0:_Contract" data-name="0: Contract" transform="translate(-306 -5536)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: Contract</tspan></text>
-    <text id="_0:_Contract_UTXO_for_Vote_1:_Contract_UTXO_for_Result_2:_Issuer_Initiative_Only_" data-name="0: Contract (UTXO for Vote)
+    <text id="_0:_Contract_UTXO_for_Vote_1:_Contract_UTXO_for_Result_2:_Administration_Initiative_Only_" data-name="0: Contract (UTXO for Vote)
 1: Contract (UTXO for Result)
-2: Issuer (Initiative Only)" transform="translate(-190 -5536)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: Contract (UTXO for Vote)</tspan><tspan x="0" y="19">1: Contract (UTXO for Result)</tspan><tspan x="0" y="38">2: Issuer (Initiative Only)</tspan></text>
+2: Administration (Initiative Only)" transform="translate(-190 -5536)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: Contract (UTXO for Vote)</tspan><tspan x="0" y="19">1: Contract (UTXO for Result)</tspan><tspan x="0" y="38">2: Administration (Initiative Only)</tspan></text>
     <g id="Rectangle_253" data-name="Rectangle 253" transform="translate(24 -5717)" fill="#fcfcfc" stroke="#707070" stroke-width="1">
       <rect width="266.357" height="120" stroke="none"/>
       <rect x="0.5" y="0.5" width="265.357" height="119" fill="none"/>
@@ -63,7 +65,7 @@
     <text id="_0:_Contract-6" data-name="0: Contract" transform="translate(345 -5407)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: Contract</tspan></text>
     <text id="_0:_Contract-7" data-name="0: Contract" transform="translate(461 -5407)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: Contract</tspan></text>
     <line id="Line_307" data-name="Line 307" x2="20" transform="translate(-347.5 -5547.5)" fill="none" stroke="#707070" stroke-width="3"/>
-    <line id="Line_308" data-name="Line 308" x2="551.836" transform="translate(16.5 -5545.5)" fill="none" stroke="#707070" stroke-width="3"/>
+    <line id="Line_308" data-name="Line 308" x2="543.836" transform="translate(24.5 -5545.5)" fill="none" stroke="#707070" stroke-width="3"/>
     <g id="chevron-pointing-to-the-left" transform="translate(570.096 -5537.133) rotate(179)">
       <path id="Path_60" data-name="Path 60" d="M6.232,8.306l6.65-5.194a1.2,1.2,0,0,0,.512-.965,1.166,1.166,0,0,0-.493-.961L11.892.391A1.908,1.908,0,0,0,10.668,0,1.955,1.955,0,0,0,9.435.4L.513,7.357A1.2,1.2,0,0,0,0,8.322a1.167,1.167,0,0,0,.493.961l8.78,6.9a1.909,1.909,0,0,0,1.225.39,1.952,1.952,0,0,0,1.232-.4l1.026-.8a1.174,1.174,0,0,0,.02-1.926Z" transform="translate(0 0)" fill="#707070"/>
     </g>

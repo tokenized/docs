@@ -4,7 +4,7 @@
       <rect width="628" height="164" stroke="none"/>
       <rect x="0.5" y="0.5" width="627" height="163" fill="none"/>
     </g>
-    <text id="Issuer" transform="translate(14453 -723)" fill="#19e134" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Issuer</tspan></text>
+    <text id="Administration" transform="translate(14453 -723)" fill="#19e134" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Administration</tspan></text>
     <text id="Request_Transaction_Order_-_Freeze_" data-name="Request Transaction (Order - Freeze)" transform="translate(14434 -790)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Request Transaction (Order - Freeze)</tspan></text>
     <line id="Line_318" data-name="Line 318" y2="86" transform="translate(14622.5 -762.5)" fill="none" stroke="#707070" stroke-width="1"/>
     <text id="INPUTS" transform="translate(14434 -758)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">INPUTS</tspan></text>
@@ -40,6 +40,6 @@
 - Freeze Period (optional)
 - Me" transform="translate(14588 -560)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">- AssetID</tspan><tspan x="0" y="19">- Target Address(es)</tspan><tspan x="0" y="38">- Qty of tokens being frozen for each address</tspan><tspan x="0" y="57">- Name of the Authority who issued the order (optional)</tspan><tspan x="0" y="76">- Public Key of Authority (Optional)</tspan><tspan x="0" y="95">- Authority Signature (Optional)</tspan><tspan x="0" y="114">- Supporting Evidence</tspan><tspan x="0" y="133">- Freeze Period (optional)</tspan><tspan x="0" y="152">- Message</tspan></text>
     <text id="_1:_" data-name="1: " transform="translate(14638 -704)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1: </tspan></text>
-    <text id="Issuer-2" data-name="Issuer" transform="translate(14656 -704)" fill="#19e134" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Issuer</tspan></text>
+    <text id="Administration-2" data-name="Administration" transform="translate(14656 -704)" fill="#19e134" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Administration</tspan></text>
   </g>
 </svg>

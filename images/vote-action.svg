@@ -20,7 +20,7 @@
     <text id="_1:_" data-name="1: " transform="translate(1793 -5602)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1: </tspan></text>
     <text id="Dust" transform="translate(1986 -5620)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust</tspan></text>
     <text id="Initiative_Cost" data-name="Initiative Cost" transform="translate(1986 -5601)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Initiative Cost</tspan></text>
-    <text id="Issuer" transform="translate(1811 -5602)" fill="#19e134" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Issuer</tspan></text>
+    <text id="Administration" transform="translate(1811 -5602)" fill="#19e134" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Administration</tspan></text>
     <text id="Smart_Contract" data-name="Smart Contract" transform="translate(1601 -5621)" fill="#7030a0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Smart Contract</tspan></text>
     <g id="Rectangle_265" data-name="Rectangle 265" transform="translate(1809 -5577)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
       <rect width="78" height="18" stroke="none"/>

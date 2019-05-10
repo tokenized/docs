@@ -30,11 +30,11 @@
     <text id="N_A" data-name="N/A" transform="translate(12510 -763)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N/A</tspan></text>
     <line id="Line_392" data-name="Line 392" y2="106" transform="translate(12252.5 -653.5)" fill="none" stroke="#707070" stroke-width="1"/>
     <text id="DETAILS" transform="translate(12250 -672)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">DETAILS</tspan></text>
-    <text id="_-_Change_Issuer_Address_optional_-_Change_Operator_Address_optional_-_Updated_Contract_Revision_Must_be_sequential_from_last_valid_revision_-_Amendments_-_Ref_Tx-ID_only_for_governance_related_amendments_" data-name="- Change Issuer Address (optional)
+    <text id="_-_Change_Administration_Address_optional_-_Change_Operator_Address_optional_-_Updated_Contract_Revision_Must_be_sequential_from_last_valid_revision_-_Amendments_-_Ref_Tx-ID_only_for_governance_related_amendments_" data-name="- Change Administration Address (optional)
 - Change Operator Address (optional)
 - Updated Contract Revision (Must be sequential from last valid revision)
 - Amendments
-- Ref Tx-ID (only for governance related amendments)" transform="translate(12260 -638)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">- Change Issuer Address (optional)</tspan><tspan x="0" y="19">- Change Operator Address (optional)</tspan><tspan x="0" y="38">- Updated Contract Revision (Must be sequential from last valid revision)</tspan><tspan x="0" y="57">- Amendments</tspan><tspan x="0" y="76">- Ref Tx-ID (only for governance related amendments)</tspan></text>
+- Ref Tx-ID (only for governance related amendments)" transform="translate(12260 -638)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">- Change Administration Address (optional)</tspan><tspan x="0" y="19">- Change Operator Address (optional)</tspan><tspan x="0" y="38">- Updated Contract Revision (Must be sequential from last valid revision)</tspan><tspan x="0" y="57">- Amendments</tspan><tspan x="0" y="76">- Ref Tx-ID (only for governance related amendments)</tspan></text>
     <text id="_1:_" data-name="1: " transform="translate(12310 -782)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1: </tspan></text>
     <text id="Administration-2" data-name="Administration" transform="translate(12328 -782)" fill="#19e134" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Administration</tspan></text>
   </g>

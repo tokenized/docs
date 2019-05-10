@@ -28,7 +28,7 @@
     <text id="Change-3" data-name="Change" transform="translate(13827 -762)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Change</tspan></text>
     <line id="Line_395" data-name="Line 395" y2="256" transform="translate(13536.5 -642.5)" fill="none" stroke="#707070" stroke-width="1"/>
     <text id="DETAILS" transform="translate(13534 -661)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">DETAILS</tspan></text>
-    <text id="_-_Contract_Name_-_ContractCode_-_Body_of_Agreement_hash_or_full_text_-_Contract_Type_-_Supporting_Docs_7z_compressed_volume_-_Governing_Law_-_Jurisdiction_-_Effective_Date_-_Contract_Expiration_-_URI_-_PrevRevTxID_-_Revision_-_Entities" data-name="- Contract Name
+    <text id="_-_Contract_Name_-_ContractCode_-_Body_of_Agreement_hash_or_full_text_-_Contract_Type_-_Supporting_Docs_7z_compressed_volume_-_Governing_Law_-_Jurisdiction_-_Effective_Date_-_Contract_Expiration_-_Contract_URI_-_PrevRevTxID_-_Revision_-_Entities" data-name="- Contract Name
 - ContractCode
 - Body of Agreement (hash or full text)
 - Contract Type
@@ -37,10 +37,10 @@
 - Jurisdiction
 - Effective Date
 - Contract Expiration
-- URI
+- Contract URI
 - PrevRevTxID
 - Revision
-- Entities" transform="translate(13544 -627)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">- Contract Name</tspan><tspan x="0" y="19">- ContractCode</tspan><tspan x="0" y="38">- Body of Agreement (hash or full text)</tspan><tspan x="0" y="57">- Contract Type</tspan><tspan x="0" y="76">- Supporting Docs (7z compressed volume)</tspan><tspan x="0" y="95">- Governing Law</tspan><tspan x="0" y="114">- Jurisdiction</tspan><tspan x="0" y="133">- Effective Date</tspan><tspan x="0" y="152">- Contract Expiration</tspan><tspan x="0" y="171">- URI</tspan><tspan x="0" y="190">- PrevRevTxID</tspan><tspan x="0" y="209">- Revision</tspan><tspan x="0" y="228">- Entities</tspan></text>
+- Entities" transform="translate(13544 -627)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">- Contract Name</tspan><tspan x="0" y="19">- ContractCode</tspan><tspan x="0" y="38">- Body of Agreement (hash or full text)</tspan><tspan x="0" y="57">- Contract Type</tspan><tspan x="0" y="76">- Supporting Docs (7z compressed volume)</tspan><tspan x="0" y="95">- Governing Law</tspan><tspan x="0" y="114">- Jurisdiction</tspan><tspan x="0" y="133">- Effective Date</tspan><tspan x="0" y="152">- Contract Expiration</tspan><tspan x="0" y="171">- Contract URI</tspan><tspan x="0" y="190">- PrevRevTxID</tspan><tspan x="0" y="209">- Revision</tspan><tspan x="0" y="228">- Entities</tspan></text>
     <text id="Contracting_Party_2" data-name="Contracting Party 2" transform="translate(13409 -781)" fill="#8a30a0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Contracting Party 2</tspan></text>
     <text id="_1:_" data-name="1: " transform="translate(13390 -781)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1: </tspan></text>
     <text id="Contracting_Party_M_1" data-name="Contracting Party M+1" transform="translate(13409 -761)" fill="#d9380f" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Contracting Party M+1</tspan></text>

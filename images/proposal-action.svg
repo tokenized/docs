@@ -4,7 +4,7 @@
       <rect width="628" height="164" stroke="none"/>
       <rect x="0.5" y="0.5" width="627" height="163" fill="none"/>
     </g>
-    <text id="Issuer" transform="translate(968 -5618)" fill="#19e134" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Issuer</tspan></text>
+    <text id="Administration" transform="translate(968 -5618)" fill="#19e134" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Administration</tspan></text>
     <text id="Request_Transaction_Proposal_" data-name="Request Transaction (Proposal)" transform="translate(949 -5685)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Request Transaction (Proposal)</tspan></text>
     <line id="Line_318" data-name="Line 318" y2="86" transform="translate(1137.5 -5657.5)" fill="none" stroke="#707070" stroke-width="1"/>
     <text id="INPUTS" transform="translate(949 -5653)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">INPUTS</tspan></text>
@@ -30,23 +30,23 @@
     <text id="N_A" data-name="N/A" transform="translate(1346 -5579)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N/A</tspan></text>
     <line id="Line_320" data-name="Line 320" y2="172" transform="translate(1175.5 -5470.5)" fill="none" stroke="#707070" stroke-width="1"/>
     <text id="DETAILS" transform="translate(1173 -5489)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">DETAILS</tspan></text>
-    <text id="_-Action_initiator_Issuer_or_User_Address_-Is_this_an_asset_specific_vote_If_yes_what_is_the_asset_-Will_this_vote_decide_an_on-chain_action_that_changes_the_contract_or_one_of_its_assets_-What_are_the_proposed_changes_-Voting_Options_multiple_choic" data-name="-Action initiator (Issuer or User Address)
+    <text id="_-Action_initiator_Administration_or_User_Address_-Is_this_an_asset_specific_vote_If_yes_what_is_the_asset_-Will_this_vote_decide_an_on-chain_action_that_changes_the_contract_or_one_of_its_assets_-What_are_the_proposed_changes_-Voting_Options_multip" data-name="-Action initiator (Administration or User Address)
 -Is this an asset specific vote? If yes, what is the asset?
 -Will this vote decide an on-chain action that changesthe contract or one of its assets?
 -What are the proposed changes?
--Voting Options (multiple choic" transform="translate(1183 -5455)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">-Action initiator (Issuer or User Address)</tspan><tspan x="0" y="19">-Is this an asset specific vote? If yes, what is the asset?</tspan><tspan x="0" y="38">-Will this vote decide an on-chain action that changes</tspan><tspan x="0" y="57">the contract or one of its assets?</tspan><tspan x="0" y="76">-What are the proposed changes?</tspan><tspan x="0" y="95">-Voting Options (multiple choice, yes/no)</tspan><tspan x="0" y="114">-A description of the proposal</tspan><tspan x="0" y="133">-A hash of the document containing the proposal</tspan><tspan x="0" y="152">-The end time of the vote</tspan></text>
+-Voting Options (multip" transform="translate(1183 -5455)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">-Action initiator (Administration or User Address)</tspan><tspan x="0" y="19">-Is this an asset specific vote? If yes, what is the asset?</tspan><tspan x="0" y="38">-Will this vote decide an on-chain action that changes</tspan><tspan x="0" y="57">the contract or one of its assets?</tspan><tspan x="0" y="76">-What are the proposed changes?</tspan><tspan x="0" y="95">-Voting Options (multiple choice, yes/no)</tspan><tspan x="0" y="114">-A description of the proposal</tspan><tspan x="0" y="133">-A hash of the document containing the proposal</tspan><tspan x="0" y="152">-The end time of the vote</tspan></text>
     <g id="Rectangle_268" data-name="Rectangle 268" transform="translate(949 -5521)" fill="#fff" stroke="#cf730b" stroke-width="4">
-      <rect width="151" height="108" stroke="none"/>
-      <rect x="2" y="2" width="147" height="104" fill="none"/>
+      <rect width="195" height="114" stroke="none"/>
+      <rect x="2" y="2" width="191" height="110" fill="none"/>
     </g>
     <text id="Note:" transform="translate(965 -5515)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="17">Note:</tspan></text>
-    <text id="Can_be_issuer-initiated_or_token_holder-initiated." data-name="Can be issuer-initiated or token holder-initiated." transform="translate(965 -5487)" fill="#707070" font-size="14" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="15">Can be issuer-</tspan><tspan x="0" y="34">initiated or token </tspan><tspan x="0" y="53">holder-initiated.</tspan></text>
+    <text id="Can_be_Administration-initiated_or_token_holder-initiated." data-name="Can be Administration-initiated or token holder-initiated." transform="translate(965 -5487)" fill="#707070" font-size="14" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="15">Can be Administration-</tspan><tspan x="0" y="34">initiated or token holder-</tspan><tspan x="0" y="53">initiated.</tspan></text>
     <g id="Rectangle_269" data-name="Rectangle 269" transform="translate(963 -5631)" fill="none" stroke="#cf730b" stroke-width="1" stroke-dasharray="3">
-      <rect width="56" height="18" stroke="none"/>
-      <rect x="0.5" y="0.5" width="55" height="17" fill="none"/>
+      <rect width="101" height="18" stroke="none"/>
+      <rect x="0.5" y="0.5" width="100" height="17" fill="none"/>
     </g>
     <line id="Line_326" data-name="Line 326" y2="93" transform="translate(1004.5 -5613.5)" fill="none" stroke="#cf730b" stroke-width="1" stroke-dasharray="3"/>
     <text id="_1:_" data-name="1: " transform="translate(1153 -5599)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1: </tspan></text>
-    <text id="Issuer-2" data-name="Issuer" transform="translate(1171 -5599)" fill="#19e134" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Issuer</tspan></text>
+    <text id="Administration-2" data-name="Administration" transform="translate(1171 -5599)" fill="#19e134" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Administration</tspan></text>
   </g>
 </svg>

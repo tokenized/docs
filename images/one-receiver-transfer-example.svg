@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="628" height="500.749" viewBox="0 0 628 500.749">
+<svg xmlns="http://www.w3.org/2000/svg" width="628" height="501" viewBox="0 0 628 501">
   <g id="one-receiver-transfer-example" transform="translate(1094 10683)">
     <g id="Rectangle_46" data-name="Rectangle 46" transform="translate(-1094 -10683)" fill="#fcfcfc" stroke="#707070" stroke-width="1">
       <rect width="628" height="166" stroke="none"/>
@@ -36,26 +36,24 @@ N/A" transform="translate(-685 -10601)" fill="#707070" font-size="14" font-famil
     <text id="Note:" transform="translate(-1077 -10468)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="17">Note:</tspan></text>
     <text id="Exchange:_100_tokens_for_300_tokens" data-name="Exchange: 100 tokens for 300 tokens" transform="translate(-1077 -10437)" fill="#707070" font-size="14" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="15">Exchange: </tspan><tspan x="0" y="34">100 tokens for 300 </tspan><tspan x="0" y="53">tokens</tspan></text>
     <g id="Rectangle_403" data-name="Rectangle 403" transform="translate(-1089 -10474)" fill="#fff" stroke="#cf730b" stroke-width="4">
-      <rect width="166" height="239" stroke="none"/>
-      <rect x="2" y="2" width="162" height="235" fill="none"/>
+      <rect width="166" height="292" stroke="none"/>
+      <rect x="2" y="2" width="162" height="288" fill="none"/>
     </g>
     <text id="Note:-2" data-name="Note:" transform="translate(-1077 -10468)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="17">Note:</tspan></text>
-    <text id="Issuer_2_pays_for_the_response_costs_contract_fees_and_mining_fees._Issuer_1_holds_the_tokens_being_sent._Both_addresses_are_owned_by_the_issuer." data-name="Issuer(2) pays for the response costs, contract fees and mining fees. Issuer(1) holds the tokens being sent.
-
-Both addresses are owned by the issuer." transform="translate(-1077 -10437)" fill="#707070" font-size="14" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="15">Issuer(2) pays for the </tspan><tspan x="0" y="34">response costs, </tspan><tspan x="0" y="53">contract fees and </tspan><tspan x="0" y="72">mining fees. </tspan><tspan x="0" y="91"></tspan><tspan x="0" y="110">Issuer(1) holds the </tspan><tspan x="0" y="129">tokens being sent.</tspan><tspan x="0" y="148"></tspan><tspan x="0" y="167">Both addresses are </tspan><tspan x="0" y="186">owned by the issuer.</tspan></text>
+    <text id="Administration_2_pays_for_the_response_costs_contract_fees_and_mining_fees._" data-name="Administration (2) pays for the response costs, contract fees and mining fees. " transform="translate(-1077 -10437)" fill="#707070" font-size="14" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="15">Administration (2) </tspan><tspan x="0" y="34">pays for the response </tspan><tspan x="0" y="53">costs, contract fees </tspan><tspan x="0" y="72">and mining fees. </tspan><tspan x="0" y="91"></tspan><tspan x="0" y="110">Administration (1) </tspan><tspan x="0" y="129">holds the tokens being </tspan><tspan x="0" y="148">sent.</tspan><tspan x="0" y="167"></tspan><tspan x="0" y="186">Both addresses are </tspan><tspan x="0" y="205">owned by the issuer.</tspan></text>
     <line id="Line_500" data-name="Line 500" y2="89" transform="translate(-1038.5 -10560.5)" fill="none" stroke="#cf730b" stroke-width="1" stroke-dasharray="3"/>
     <text id="Note:-3" data-name="Note:" transform="translate(-620 -10477)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="17">Note:</tspan></text>
     <text id="Exchange:_100_tokens_for_300_tokens-2" data-name="Exchange: 100 tokens for 300 tokens" transform="translate(-620 -10446)" fill="#707070" font-size="14" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="15">Exchange: </tspan><tspan x="0" y="34">100 tokens for 300 </tspan><tspan x="0" y="53">tokens</tspan></text>
-    <g id="Rectangle_405" data-name="Rectangle 405" transform="translate(-625 -10483)" fill="#fff" stroke="#cf730b" stroke-width="4">
-      <rect width="159" height="129" stroke="none"/>
-      <rect x="2" y="2" width="155" height="125" fill="none"/>
+    <g id="Rectangle_405" data-name="Rectangle 405" transform="translate(-625 -10477)" fill="#fff" stroke="#cf730b" stroke-width="4">
+      <rect width="159" height="177" stroke="none"/>
+      <rect x="2" y="2" width="155" height="173" fill="none"/>
     </g>
-    <text id="Note:-4" data-name="Note:" transform="translate(-613.43 -10477)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="17">Note:</tspan></text>
-    <text id="Issuer_3_is_the_Bitcoin_change_address_for_the_Bitcoin_spent_from_Issuer_2_" data-name="Issuer(3) is the Bitcoin change address for the Bitcoin spent from Issuer(2)" transform="translate(-613.43 -10446)" fill="#707070" font-size="14" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="15">Issuer(3) is the Bitcoin </tspan><tspan x="0" y="34">change address for </tspan><tspan x="0" y="53">the Bitcoin spent </tspan><tspan x="0" y="72">from Issuer(2)</tspan></text>
+    <text id="Note:-4" data-name="Note:" transform="translate(-613.43 -10468)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="17">Note:</tspan></text>
+    <text id="Administration_3_is_the_Bitcoin_change_address_for_the_Bitcoin_spent_from_Administration_2_" data-name="Administration (3) is the Bitcoin change address for the Bitcoin spent from Administration (2)" transform="translate(-613.43 -10437)" fill="#707070" font-size="14" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="15">Administration (3) is </tspan><tspan x="0" y="34">the Bitcoin change </tspan><tspan x="0" y="53">address for the </tspan><tspan x="0" y="72">Bitcoin spent from </tspan><tspan x="0" y="91">Administration (2)</tspan></text>
     <line id="Line_502" data-name="Line 502" x2="31" transform="translate(-747.5 -10571.5)" fill="none" stroke="#cf730b" stroke-width="1" stroke-dasharray="3"/>
     <line id="Line_503" data-name="Line 503" y1="78" transform="translate(-716.5 -10570.5)" fill="none" stroke="#cf730b" stroke-width="1" stroke-dasharray="3"/>
     <line id="Line_504" data-name="Line 504" x1="122" transform="translate(-716.5 -10492.5)" fill="none" stroke="#cf730b" stroke-width="1" stroke-dasharray="3"/>
-    <line id="Line_505" data-name="Line 505" y2="11" transform="translate(-594.5 -10492.5)" fill="none" stroke="#cf730b" stroke-width="1" stroke-dasharray="3"/>
+    <line id="Line_505" data-name="Line 505" y2="16" transform="translate(-594.5 -10492.5)" fill="none" stroke="#cf730b" stroke-width="1" stroke-dasharray="3"/>
     <g id="Rectangle_407" data-name="Rectangle 407" transform="translate(-867 -10580)" fill="none" stroke="#cf730b" stroke-width="1" stroke-dasharray="3">
       <rect width="120" height="16" stroke="none"/>
       <rect x="0.5" y="0.5" width="119" height="15" fill="none"/>
