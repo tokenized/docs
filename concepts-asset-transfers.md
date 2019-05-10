@@ -23,7 +23,7 @@ The act of transferring tokens can become complicated when there are multiple pa
 
 When transferring tokens to a single receiver the transfer is an action between 2 parties which is validated by a smart contract.
 
-In this example, a token issuer will send 100 tokens from its own balance to a receiver. This event is initiated by the issuer through the creation of a Transfer action detailing the receiver's address and the number of tokens they wish to send.
+In this example, a token issuer will send 100 tokens from its own balance to a receiver. This event is initiated by the the administration of the contract issuer through the creation of a Transfer action detailing the receiver's address and the number of tokens they wish to send.
 
 ![A basic transfer action](https://raw.githubusercontent.com/tokenized/docs/master/images/one-receiver-transfer-example.svg?sanitize=true "A basic transfer action") {.frame .centered .padded}
 
@@ -39,7 +39,7 @@ Similarly, when transferring tokens to multiple receivers--for an issuer to dist
 In this example, the issuer will now send an additional 100 tokens to the receiver from the example above (receiver 1), and 300 tokens to a second receiver (receiver 2).
 
 Note that the transfer action deals with the number of tokens being sent, but the settlement transaction deals with the final balances of each account.
-First, the issuer builds a transfer request detailing the number of tokens to be sent and the addresses to send them to:
+First, the administration builds a transfer request detailing the number of tokens to be sent and the addresses to send them to:
 
 ![A two receiver transfer action](https://raw.githubusercontent.com/tokenized/docs/master/images/two-receivers-transfer-example.svg?sanitize=true "A two receiver transfer action") {.frame .centered .padded}
 

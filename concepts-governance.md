@@ -15,7 +15,7 @@
 
 The Tokenized Protocol includes a complete governance system that allows for organizational governance to be carried out on-chain and within the rules of the organiztion and within the laws and regulations of any jurisdiction.  The governance tools allow for expressive control over almost any field of data, which can be modified, for a contract or asset. The governance model also extends to organizational matters/proposals that exist outside of the blockchain (eg. a shareholder votes on a company matter).  These settings are all controlled by authorisation flags that are specified in the most recent revision of the Contract Formation or Asset Creation actions issued by the contract.
 
-Where a field in a Contract Formation or Asset Creation has been set to allow for 'unilateral' changes to be made, then the issuer may make changes to this field without needing the authority of affected token holders through a vote process. This means that the fields can be changed at any time without restriction.
+Where a field in a Contract Formation or Asset Creation has been set to allow for 'unilateral' changes to be made, then the administration may make changes to this field without needing the authority of affected token holders through a vote process. This means that the fields can be changed at any time without restriction.
 
 Where a field in a Contract Formation or Asset Creation has been set to require a positive outcome from a Referendum, the Contract Amendment or Asset Modification action that contains the change will need to contain a TXID that references a Result action that counts the votes in a link to the modification of that parameter. 
 
@@ -24,8 +24,8 @@ Where a field in a Contract Formation or Asset Creation has been set to require 
 
 When a contract or asset is created, there are a set of authorisation flags which are defined in the Contract Offer or Asset Definition action. These flags determine for each parameter that can be changed what the minimum requirement for making a change is. Each field has three flags, which each define whether or not a particular governance mechanism can be used to modify that field. To enable the mechanism related to each flag they must be set to 'True' (binary 1). The three flags correspond to the enablement of the following change mechanisms:
 
-1. Issuer can change unilaterally
-2. Issuer must hold a token holder vote leading to a postive result in line with voting systems (Issuer initiates the proposal)
+1. Administration can change unilaterally
+2. Administration must hold a token holder vote leading to a postive result in line with voting systems (administration initiates the proposal)
 3. Parameter can only be changed after a token holder requested vote leads to a postive result as defined by voting systems (A token holder initiates the proposal)
 
 Each parameter has a set of three flags which are represented as a sequential set of three bits within the Authorisation Flags element of the contract or asset. Where parameters are a variable length array type, the flag settings apply to the whole array.
@@ -71,7 +71,7 @@ A Proposal is the means by which a vote action which is called. Proposals can be
 
 #### Referendum
 
-A Referendum is called by sending a Proposal action to the smart contract with the issuer signing and sending the action from its public address. Referendums can be called at any time and the cost is only the contract fees needed for the vote, and any transaction fees.
+A Referendum is called by sending a Proposal action to the smart contract with the administration signing and sending the action from its public address. Referendums can be called at any time and the cost is only the contract fees needed for the vote, and any transaction fees.
 
 #### Initiative
 
@@ -86,7 +86,7 @@ Once the smart contract receives the valid Proposal action, it creates a Vote ac
 
 The Vote action itself is very simple, and contains only the timestamp when the vote was created. The action is created by spending the UTXO associated with the Proposal action it is creating the vote for. Wallets refer back to the Proposal action to build the voting interface for the user.
 
-There is no restriction on the number of Vote actions that can be active at once however the contract will reject a vote for a change to a field in a contract or asset that is already under an active Vote action, or which has had a successful Vote action that stipulates a change that has not yet been made. The vote results themselves do not activate any changes to the smart contract. It is still up to the issuer to create and send an Asset Modification or Contract Amendment action that implements the changes that have been voted on. If a Vote action results in the successful passage of an amendment order, the contract will not allow further votes on that field until the changes.
+There is no restriction on the number of Vote actions that can be active at once however the contract will reject a vote for a change to a field in a contract or asset that is already under an active Vote action, or which has had a successful Vote action that stipulates a change that has not yet been made. The vote results themselves do not activate any changes to the smart contract. It is still up to the administration to create and send an Asset Modification or Contract Amendment action that implements the changes that have been voted on. If a Vote action results in the successful passage of an amendment order, the contract will not allow further votes on that field until the changes.
 
 ![A Vote action](https://raw.githubusercontent.com/tokenized/docs/master/images/vote-action.svg?sanitize=true "A Vote action") {.frame .centered .padded}
 
@@ -111,4 +111,4 @@ When the time elapses on the vote, the smart contract tallies the ballots cast a
 
 ![A Result action](https://raw.githubusercontent.com/tokenized/docs/master/images/result-action.svg?sanitize=true "A Result action") {.frame .centered .padded}
 
-Once the result action has been published, the Vote is concluded and the issuer can act on the amendments that have passed.
+Once the result action has been published, the Vote is concluded and the administration can act on the amendments that have passed.

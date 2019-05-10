@@ -16,12 +16,12 @@ There are a number of fields that are likely to be subject to an amendment/modif
 
 The authorization flags are represented by 3 bits (XYZ) plus an array of bits per field. The array of bits represent all of the Voting Systems specified in the Contract Formation action of the contract.
 
-The first bit (X) specifies whether unilateral changes by the issuer are permitted to the field. 1 = Permitted, 0 = Not Permitted.
+The first bit (X) specifies whether unilateral changes by the administration of the contract issuer are permitted to the field. 1 = Permitted, 0 = Not Permitted.
 
-The second bit (Y) specifies whether a successful issuer initiated vote will permit a change to the field. 1 = Issuer Proposals are Permitted, 0 = Issuer Proposals are not Permitted.
+The second bit (Y) specifies whether a successful administration initiated vote will permit a change to the field. 1 = administration Proposals are Permitted, 0 = administration Proposals are not Permitted.
 
 The third bit (Z) specifies whether a successful token holder initiated vote will permit a change to the field. 1 = Token Holder Proposals are Permitted, 0 = Token Holder Proposals are not Permitted.
-
+so 
 The booleans that make up the array of M represent a voting system (by index) and a value of 1 = that voting system may control the field, 0 = that voting system does not control that field. If a proposal is made to vote on a change for a field, one of the voting systems enabled for that field would have to be used, otherwise the smart contract will reject it.
 
     For Field[N]:
@@ -30,7 +30,7 @@ The booleans that make up the array of M represent a voting system (by index) an
 
     AssetAuthFlags = XYZM[]
 
-where X = Permitted, Y = Issuer Proposal, Z = Token Holder Proposal and N = the index of the field within the action, M[] = an array of booleans equal to the # of voting systems in the contract. If Y and Z are false, then M is empty (zero length).
+where X = Permitted, Y = administration Proposal, Z = Token Holder Proposal and N = the index of the field within the action, M[] = an array of booleans equal to the # of voting systems in the contract. If Y and Z are false, then M is empty (zero length).
 
 When you parse the authorization flags, you get an array of permission objects containing XYZM[] that has a length corresponding the the number of fields in the contract or asset. The Contract Offer and Asset Creation is used to determine the indexes of the fields. Index 0 is the field after the header.
 

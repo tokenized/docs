@@ -14,9 +14,9 @@
 <a name="introduction"></a>
 ## Introduction
 
-All Tokenized transactions are normal Bitcoin transactions that use P2PKH addresses.  The main feature that defines a Tokenized transaction is an `OP_RETURN` output that contains a Tokenized action. Bitcoin (BSV) is always used to pay network fees and all outputs, except `OP_RETURN`, require dust amounts of Bitcoin, at a minimum, to be valid.  The protocol also identifies roles (smart contract, issuer, token senders/receivers, etc.) by the position (index of the inputs and outputs) of public address(es) in the transaction.
+All Tokenized transactions are normal Bitcoin transactions that use P2PKH addresses.  The main feature that defines a Tokenized transaction is an `OP_RETURN` output that contains a Tokenized action. Bitcoin (BSV) is always used to pay network fees and all outputs, except `OP_RETURN`, require dust amounts of Bitcoin, at a minimum, to be valid.  The protocol also identifies roles (smart contract, administration, token senders/receivers, etc.) by the position (index of the inputs and outputs) of public address(es) in the transaction.
 
-All user and issuer driven actions are initiated by sending a request to the smart contract, via the blockchain, to perform a certain action. If the request is valid, the smart contract will respond by sending a response transaction containing updated information about the contract or asset (new balances, updated revision data, etc).  Response actions will always be addressed to either the contract, issuer, operator, or user address(es). As well as contract related and other fees being sent to the appropriate addresses.  The smart contract sends back to itself in what are known as contract-wide actions that affect the contract or asset as a whole.
+All user and administration driven actions are initiated by sending a request to the smart contract, via the blockchain, to perform a certain action. If the request is valid, the smart contract will respond by sending a response transaction containing updated information about the contract or asset (new balances, updated revision data, etc). Response actions will always be addressed to either the contract, administration, operator, or user address(es). As well as contract related and other fees being sent to the appropriate addresses.  The smart contract sends back to itself in what are known as contract-wide actions that affect the contract or asset as a whole.
 
 Some transactions (eg. [Static Contract](../protocol/actions#static-contracts), [Transfer](../protocol/actions#action-transfer) action) may require multiple inputs that are signed by different parties to be recognised by the contract.
 
@@ -89,8 +89,8 @@ offerData := protocol.ContractOffer{
 // Define permissions for contract fields
 permissions := make([]protocol.Permission, 21)
 for i, _ := range permissions {
-	permissions[i].Permitted = false      // Issuer can't update field without proposal
-	permissions[i].IssuerProposal = false // Issuer can update field with a proposal
+	permissions[i].Permitted = false      // administration can't update field without proposal
+	permissions[i].AdministrationProposal = false // administration can update field with a proposal
 	permissions[i].HolderProposal = false // Holder's can initiate proposals to update field
 
 	permissions[i].VotingSystemsAllowed = make([]bool, len(offerData.VotingSystems))
@@ -106,7 +106,7 @@ if err != nil {
 // Build offer transaction
 offerTx := wire.NewMsgTx(2)
 
-// Add input spending P2PKH output to issuer's identifying public key hash
+// Add input spending P2PKH output to administration's identifying public key hash
 ...
 
 // Add P2PKH output to contract's public key hash

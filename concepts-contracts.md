@@ -44,11 +44,11 @@ The contract operator has permission to act on behalf of the issuer for the init
 <a name="contract-create"></a>
 ### Creating a Contract
 
-A Tokenized contract is formed when a token issuer presents a valid [Contract Offer](../protocol/actions#action-contract-offer) action to a smart contract. The smart contract checks only that the rules proposed in the offer are compliant with its logic, but the legal and regulatory aspects of dealing with the assets being created must be pre-determined and managed by the issuer to ensure the contract operates within all applicable laws and regulations.
+A Tokenized contract is formed when the administration of a token issuer presents a valid [Contract Offer](../protocol/actions#action-contract-offer) action to a smart contract. The smart contract checks only that the rules proposed in the offer are compliant with its logic, but the legal and regulatory aspects of dealing with the assets being created must be pre-determined and managed by the administration to ensure the contract operates within all applicable laws and regulations.
 
 #### Contract Offer
 
-To create a [Contract Offer](../protocol/actions#action-contract-offer), the Contract issuer must prepare an action that contains all of the required information such as:
+To create a [Contract Offer](../protocol/actions#action-contract-offer), the Contract administration must prepare an action that contains all of the required information such as:
 
 - Contract name
 - Governing Law
@@ -56,11 +56,11 @@ To create a [Contract Offer](../protocol/actions#action-contract-offer), the Con
 - Contract rules, voting systems
 - Detail of the issuing entity/entities including key personnel, addresses etc.
 
-The Contract Offer action must be signed by both the issuer and the smart contract operator, so the issuer first builds a template transaction which it sends to the smart contract operator:
+The Contract Offer action must be signed by both the administration and the smart contract operator, so the administration first builds a template transaction which it sends to the smart contract operator:
 
 ![A contract offer action template](https://raw.githubusercontent.com/tokenized/docs/master/images/contract-offer-action-template.svg?sanitize=true "Contract Offer Action Template") {.frame .centered .padded}
 
-If the contract meets the smart contract operator's requirements, they will add an input from their own wallet, add the change outputs they need and sign the Contract Offer using `SIGHASH_ALL` before sending it back to the issuer. Once the issuer has reviewed the smart contract operator's changes, they can sign their own input (or inputs) using `SIGHASH_ALL` and send the transaction onto the network.
+If the contract meets the smart contract operator's requirements, they will add an input from their own wallet, add the change outputs they need and sign the Contract Offer using `SIGHASH_ALL` before sending it back to the administration. Once the administration has reviewed the smart contract operator's changes, they can sign their own input (or inputs) using `SIGHASH_ALL` and send the transaction onto the network.
 
 ![Final contract offer action](https://raw.githubusercontent.com/tokenized/docs/master/images/contract-offer-action.svg?sanitize=true "Contract Offer Action Transaction") {.frame .centered .padded}
 
@@ -120,7 +120,7 @@ The static contract framework simply provides an easy and low-cost way for inscr
 <a name="contract-law"></a>
 ## Contract Law
 
-The Tokenized Protocol ensures that all valid contracts follow the principles and conventions of contract law.  While there is some variation worldwide the basic core concepts of a contract are fairly universal.  For the purposes of the analysis in this document, the Tokenized Protocol has been examined using Australian contract law as the model, which is based on English common law. Issuer's should always seek proper legal advice to ensure that they comply with the laws in their jurisdiction.
+The Tokenized Protocol ensures that all valid contracts follow the principles and conventions of contract law.  While there is some variation worldwide the basic core concepts of a contract are fairly universal.  For the purposes of the analysis in this document, the Tokenized Protocol has been examined using Australian contract law as the model, which is based on English common law. Contract administrations should always seek proper legal advice to ensure that they comply with the laws in their jurisdiction.
 
 <a name="contract-formation"></a>
 ### Contract Formation
@@ -148,7 +148,7 @@ Capacity will be handled by the smart contracts and the use of Identity Oralces 
 
 <a name="intention"></a>
 #### Intention
-Intention is traditionally handled by context, language and a signature by all relevant contracting parties.  For most token use cases the context will be supplied by the actual written agreement, and the descriptions and labels of the token.  Generally, a contracting party who is looking to buy a share in a company recognizes that the share is part of a commercial-agreement.  The Tokenized Protocol also uses carefully chosen terminology for the various actions and metadata fields to make the intention of the actions extremely clear to all that use it.  The language is precise and adheres to the concept of terms having their ordinary meaning to remove the potential for misunderstanding.  Most tokens will be accompanied by a written agreement and/or supporting documentation that will have handwritten signatures of the issuer and any relevant contracting parties.  However, most token owners will signal their intent to be bound to a legally-binding contract using a digital signature generated by their private key that is associated with the public key that holds the tokens.  The Tokenized Protocol recognizes the digital signatures of the contracting parties - in the input addresses of the Bitcoin transaction that contains the Tokenized action - as intent by the contracting parties.
+Intention is traditionally handled by context, language and a signature by all relevant contracting parties.  For most token use cases the context will be supplied by the actual written agreement, and the descriptions and labels of the token.  Generally, a contracting party who is looking to buy a share in a company recognizes that the share is part of a commercial-agreement.  The Tokenized Protocol also uses carefully chosen terminology for the various actions and metadata fields to make the intention of the actions extremely clear to all that use it.  The language is precise and adheres to the concept of terms having their ordinary meaning to remove the potential for misunderstanding.  Most tokens will be accompanied by a written agreement and/or supporting documentation that will have handwritten signatures of the administration of the contract issuer and any relevant contracting parties.  However, most token owners will signal their intent to be bound to a legally-binding contract using a digital signature generated by their private key that is associated with the public key that holds the tokens.  The Tokenized Protocol recognizes the digital signatures of the contracting parties - in the input addresses of the Bitcoin transaction that contains the Tokenized action - as intent by the contracting parties.
 
 <a name="certainty"></a>
 #### Certainty

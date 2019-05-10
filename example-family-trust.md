@@ -41,7 +41,7 @@ Issuer:							Discretionary Trust: The BillAngelaChris Trust
 													Beneficiary:	Chris
 Contract Operator Included?:	Yes
 Contract Operator:				Tokenized
-Contract Authorisation Flags:	Issuer can amend all fields. Referendums and initiatives are unable to be used.
+Contract Authorisation Flags:	Administration can amend all fields. Referendums and initiatives are unable to be used.
 Contract Fee:					As per the detail in the Tokenized operator agreement
 
 Once the contract Contract Offer is created it is double checked by Daniel to ensure it will pass the contract validation process used by Tokenized. Daniel creates a Bitcoin address where the contract will receive it's instructions and directs the output of the Contract Offer to this address. He then sends the Contract Offer to Tokenized using the operator endpoint given in the app. Tokenized signs the transaction and the Contract Offer is sent with the necessary fees attached to the smart contract address.

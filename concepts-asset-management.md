@@ -17,17 +17,18 @@
 
 <a name="introduction"></a>
 ## Introduction
+
 Tokenized has a full and rich set of commands for the creation and modification of assets under a smart contract. A single smart contract can be used to manage a very large number of assets, each of which can be represented by different quantitiy of tokens. It is also possible to create non-fungible tokens by creating an asset with quantity 1, and metadata specific to that asset.
 
 <a name="asset-create"></a>
 ## Creating an Asset
 
-A Tokenized asset is generated when a token issuer presents a valid 'Asset Definition' action to a smart contract. The smart contract checks only that the rules proposed in the offer are compliant with its logic, but the legal and regulatory aspects of distributing and managing the assets must be managed by the issuer to ensure that assets are transacted within all applicable laws and regulations.
+A Tokenized asset is generated when a the administration of a token issuer presents a valid 'Asset Definition' action to a smart contract. The smart contract checks only that the rules proposed in the offer are compliant with its logic, but the legal and regulatory aspects of distributing and managing the assets must be managed by the administration of the contract issuer to ensure that assets are transacted within all applicable laws and regulations.
 
 <a name="asset-definition"></a>
 ### Asset Definition
 
-To create an 'Asset Definition', the Contract issuer must prepare an action that contains all of the required information such as:
+To create an 'Asset Definition', the administration of the contract issuer must prepare an action that contains all of the required information such as:
 
 - Asset type
 - Asset rules (flags, trading restrictions, voting and governance)
@@ -35,7 +36,7 @@ To create an 'Asset Definition', the Contract issuer must prepare an action that
 - Fee rules for trading that asset
 - The asset specific details in the Asset Payload (Each asset type has a different payload structure)
 
-The Asset Definition action is built and signed by the issuer before being sent to the smart contract Operator:
+The Asset Definition action is built and signed by the administration of the contract issuer before being sent to the smart contract Operator:
 
 ![An Asset Definition action](https://raw.githubusercontent.com/tokenized/docs/master/images/asset-definition-action.svg?sanitize=true "An Asset Definition action") {.frame .centered .padded}
 
@@ -55,7 +56,7 @@ The contract also adds four additional fields
 <a name="asset-update"></a>
 ## Updating an Asset
 
-To modify a Tokenized asset, the issuer must first build an 'Asset Modification' action which contains the necessary infomration required for the smart contract to authorise and issue responses that update the asset properties.
+To modify a Tokenized asset, the administration of the contract issuer must first build an 'Asset Modification' action which contains the necessary infomration required for the smart contract to authorise and issue responses that update the asset properties.
 
 <a name="asset-modification"></a>
 ### Asset Modification

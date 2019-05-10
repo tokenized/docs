@@ -26,9 +26,9 @@ The Tokenized Protocol includes a complete set of enforcement capabilities inclu
 
 These actions allow token issuers to manage their outstanding tokens for compliance with internal policies, contract terms and conditions, or lawful orders from enforcement or regulatory agencies. 
 
-To enact an enforcement order, the issuer uses the 'Order' action. In the action, the issuer specifies the asset the order is to be enacted on, what type of order it is and any other specific information relating to that order. There is also a field in the action that allows a hash or copy of an enforcecment order issued by a legal/law enforcement authority (court order, warrant, etc.) or decision which relates to the action being performed.  
+To enact an enforcement order, the administration of the contract issuer uses the 'Order' action. In the action, the administration specifies the asset the order is to be enacted on, what type of order it is and any other specific information relating to that order. There is also a field in the action that allows a hash or copy of an enforcecment order issued by a legal/law enforcement authority (court order, warrant, etc.) or decision which relates to the action being performed.  
 
-There are also fields that allow for an legal/law enforcement authority to sign a message (ECDSA) of the addresses, assets and quantities that are to be frozen, thawed, or confiscated.  This allows for issuers to comply with legal authorities with signed on-chain proof, and for the pseudonymity of token holders to be preserved as issuers/contract opertors won't be able to link real world identities with addresses, if that is desired for some use cases.
+There are also fields that allow for an legal/law enforcement authority to sign a message (ECDSA) of the addresses, assets and quantities that are to be frozen, thawed, or confiscated.  This allows for issuers to comply with legal authorities with signed on-chain proof, and for the pseudonymity of token holders to be preserved as administrations/contract opertors won't be able to link real world identities with addresses, if that is desired for some use cases.
 
 <a name="freeze-tokens"></a>
 ## Freezing Tokens
@@ -52,7 +52,7 @@ If the Freeze order is applied to an asset but the contract's address is the giv
 ### Freeze
 
 After the smart contract has determined that the freeze order is valid, it responds by issuing a Freeze action. The action is sent to all addresses that the freeze order applies to. Once the Freeze action has been issued, any transfer orders that try to move frozen tokens will be rejected.
-An issuer can place multiple freeze orders on a single address. In this case, the number of tokens frozen is the aggregate count of froz
+An issuer can place multiple freeze orders on a single address. In this case, the number of tokens frozen is the aggregate count of freeze orders on the address.
 
 ![Freeze action](https://raw.githubusercontent.com/tokenized/docs/master/images/freeze-action.svg?sanitize=true "Freeze action") {.frame .centered .padded}
 
@@ -103,7 +103,7 @@ A Reconciliation action is needed when there has been a break in a chain of toke
 
 This is considered to be an extremely rare event, and the risk can be further reduced with different smart contract fee policies, response timing rules, double spend detection algorithms and sampling mempools of other nodes in the network to confirm the acceptance of transactions.
 
-The Reconciliation action decrements the balance of tokens at the target address(es).  This action effectively removes those tokens from existance and is basically a correction to the ledger. There can also be a discrepency with bitcoin when a break in the token chain occurs, if the parent transaction that was dropped was an exchange of tokens for bitcoin.  The bitcoin discrepency will have to be dealt with at a commercial level by the issuer or the contract operator.
+The Reconciliation action decrements the balance of tokens at the target address(es).  This action effectively removes those tokens from existance and is basically a correction to the ledger. There can also be a discrepency with bitcoin when a break in the token chain occurs, if the parent transaction that was dropped was an exchange of tokens for bitcoin.  The bitcoin discrepency will have to be dealt with at a commercial level by the administration or the contract operator.
 
 Reconciliation is a two step process.
 
