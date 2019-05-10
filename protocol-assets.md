@@ -108,7 +108,7 @@ A voucher entitling the holder to a discount on a particular product or service.
 <a name="action-currency"></a>
 #### Currency
 
-A Currency
+Currency, fiat money, cash.  Issued by a monetary authority (eg. Reserve Bank of Australia, ECB, Bank of England).  Currency is free of counterparty risk except for the risks associated with the management of the currency by the monetary authority and its recognition as acceptable legal tender by the market and associated government(s).  Custody of currency must be backed by a 1:1 ratio, or a full reserve. A currency asset type should be considered the digital equivalent of physical cash.
 
 <table>
     <tr>

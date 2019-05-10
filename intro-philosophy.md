@@ -2,7 +2,6 @@
 
 - [Introduction](#introduction)
 - [Incentives](#incentives)
-- [Rule of Law](#rule-of-law)
 - [Trust](#trust)
 - [Economic Freedom](#economic-freedom)
 
@@ -28,9 +27,6 @@ A token system, like Bitcoin itself, is as much an economic system as it is a te
 A strong focus on optimizing for maximum utility is the core design philosophy of the Tokenized Protocol, and is what separates Tokenized from competing token solutions.  Tokenized is unabashed in its design choice to use off-chain smart contracts to keep as much processing and data off-chain as possible.  Only as much data as is necessary to ensure that property ownership can be recognized and rights enforced will be stored on-chain, allowing the Tokenized Protocol to foster a compelling token ecosystem for the lowest possible cost to users.  The Tokenized model aims to win market share by servicing the majority of use cases and creating powerful economic incentives for rapid adoption in a diverse set of marketplaces.
 
 The Tokenized system operates in full recognition that decentralization, cryptographic techniques and clever protocols are simply tools used by Satoshi Nakamoto to allow the Bitcoin network to provide its users with an immutable, uncensorable, public, reliable and global ledger.  It is these properties that give the ledger value. The tools that create this value are irrelevant and can be changed, as long as these essential properties and the incentives are not affected. The Bitcoin protocol leverages these valuable properties to create digital money which is Bitcoin’s first ‘killer app’ - and which is intrinsic to the Bitcoin system as it provides the incentive framework necessary to secure and perpetuate the network through time.  This money has incredible utility as a medium of exchange, can’t be manipulated and has a fixed supply, making it an excellent store of value.  The Tokenized system leverages the value-giving properties of the Bitcoin network to create a standard system for all of the world’s contracts, financial transactions and commercial records.
-
-<a name="rule-of-law"></a>
-## Rule of Law
 
 While it is important to place the interests of users and issuers at the forefront of the design philosophy, it is also necessary to consider the interests and concerns of all stakeholders that play a part in the success of Bitcoin.  The Bitcoin system is primarily composed of users and miners, but it also relies on legal institutions to recognize Bitcoin transactions as legitimate forms of voluntary exchange and on law enforcement organizations to enforce property rights.  Legal institutions and law enforcement organizations are critical because Bitcoin may be protected by effectively unbreakable cryptography, but its users are not protected from the logic of violence in the real world.  With this in mind, one of the most important design features is to provide functionality to allow authorities some control over property to protect Bitcoin users, and it is unlikely that legal authorities will recognize a digital token system to be a legitimate record of ownership if the token system does not afford them the ability to confiscate assets.  In conclusion, it is important to understand and respect the concerns and interests of legal and law enforcement institutions for the benefit of both Bitcoin and token owners.  
 
