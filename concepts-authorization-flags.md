@@ -44,4 +44,4 @@ In practice, authorization flag settings for Contracts and Assets won't vary too
 
 The contract authorization flags for a typical private company's shareholder agreement might look something like this:
 
-![Order of Operations](https://raw.githubusercontent.com/tokenized/docs/master/images/authorization-flags.svg?sanitize=true "Order of Operations") {.frame .centered .padded}
+![Authorization Flags](https://raw.githubusercontent.com/tokenized/docs/master/images/authorization-flags.svg?sanitize=true "Authorization Flags") {.frame .centered .padded}

@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="654.5" height="492" viewBox="0 0 654.5 492">
-  <g id="dominics-pizza-loyalty-points-asset-definition" transform="translate(-4465 892)">
+<svg xmlns="http://www.w3.org/2000/svg" width="628" height="491" viewBox="0 0 628 491">
+  <g id="dominics-pizza-loyalty-points-asset-definition" transform="translate(-4476 892)">
     <g id="Rectangle_316" data-name="Rectangle 316" transform="translate(4476 -892)" fill="#fcfcfc" stroke="#707070" stroke-width="1">
       <rect width="628" height="164" stroke="none"/>
       <rect x="0.5" y="0.5" width="627" height="163" fill="none"/>
@@ -21,16 +21,20 @@
     <text id="_2:_" data-name="2: " transform="translate(4697 -754)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">2: </tspan></text>
     <text id="Asset_Definition_Action" data-name="Asset Definition Action" transform="translate(4715 -754)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Asset Definition Action</tspan></text>
     <text id="Change" transform="translate(4890 -773)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Change</tspan></text>
-    <g id="Rectangle_318" data-name="Rectangle 318" transform="translate(4465 -707)" fill="#fcfcfc" stroke="#707070" stroke-width="1" stroke-dasharray="3">
-      <rect width="654.499" height="307" stroke="none"/>
-      <rect x="0.5" y="0.5" width="653.499" height="306" fill="none"/>
+    <g id="Rectangle_318" data-name="Rectangle 318" transform="translate(4493 -708)" fill="#fcfcfc" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+      <rect width="594.499" height="307" stroke="none"/>
+      <rect x="0.5" y="0.5" width="593.499" height="306" fill="none"/>
     </g>
-    <text id="Asset_Definition_Action_Payload" data-name="Asset Definition Action Payload" transform="translate(4481 -674)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Asset Definition Action Payload</tspan></text>
+    <text id="Asset_Definition_Action_Payload" data-name="Asset Definition Action Payload" transform="translate(4509 -675)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Asset Definition Action Payload</tspan></text>
     <line id="Line_379" data-name="Line 379" y2="42" transform="translate(4757.5 -749.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
     <text id="N_A" data-name="N/A" transform="translate(4890 -754)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N/A</tspan></text>
-    <line id="Line_380" data-name="Line 380" y2="229" transform="translate(4483.5 -643.5)" fill="none" stroke="#707070" stroke-width="1"/>
-    <text id="DETAILS" transform="translate(4481 -662)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">DETAILS</tspan></text>
-    <text id="Asset_Type:_LOY_Loyalty_Points_Asset_Code:_ef5fd20FF3Dka20293bQswj5nHl7NJ_Asset_Auth_Flags:_Administration_can_amend_all_fields_Transfers_Permitted:_False_-_Users_can_only_send_tokens_to_Administration_controlled_addresses_Enforcement_orders:_True_-_Enabled_i" data-name="Asset Type:		LOY (Loyalty Points) Asset Code:		ef5fd20FF3Dka20293bQswj5nHl7NJ Asset Auth Flags:		Administration can amend all fields Transfers Permitted:	False - Users can only send tokens to Administration controlled addresses Enforcement orders:	True - Enabled i" transform="translate(4491 -628)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0" xml:space="preserve">Asset Type:		LOY (Loyalty Points)</tspan><tspan x="0" y="19" xml:space="preserve">Asset Code:		ef5fd20FF3Dka20293bQswj5nHl7NJ</tspan><tspan x="0" y="38" xml:space="preserve">Asset Auth Flags:		Administration can amend all fields</tspan><tspan x="0" y="57">Transfers Permitted:	False - Users can only send tokens to Administration controlled addresses</tspan><tspan x="0" y="76">Enforcement orders:	True - Enabled in case of vouchers being incorrectly distributed</tspan><tspan x="0" y="95" xml:space="preserve">Token Qty:		10,000</tspan><tspan x="0" y="114">Asset Payload -	</tspan><tspan x="0" y="133" xml:space="preserve">	Version: 			0</tspan><tspan x="0" y="152" xml:space="preserve">	Redeeming entity:		Dominic&apos;s Pizza</tspan><tspan x="0" y="171" xml:space="preserve">	Issue Date:		Today&apos;s date</tspan><tspan x="0" y="190" xml:space="preserve">	Expiry Date:		2 years from today</tspan><tspan x="0" y="209" xml:space="preserve">	Description:		Loyalty tokens</tspan></text>
+    <line id="Line_380" data-name="Line 380" y2="229" transform="translate(4511.5 -644.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <text id="DETAILS" transform="translate(4509 -663)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">DETAILS</tspan></text>
+    <text id="Asset_Type:_LOY_Loyalty_Points_Asset_Code:_DOMsPIZZA0293bQswj5sjLPufanHl7NJ_Asset_Auth_Flags:_Issuer_can_amend_all_fields_Transfers_Permitted:_False_-_Users_can_only_send_tokens_to_issuer_controlled_addresses_Enforcement_orders:_True_-_Enabled_in_case" data-name="Asset Type:		LOY (Loyalty Points)
+Asset Code:		DOMsPIZZA0293bQswj5sjLPufanHl7NJ
+Asset Auth Flags:		Issuer can amend all fields
+Transfers Permitted:	False - Users can only send tokens to issuer controlled addresses
+Enforcement orders:	True - Enabled in case" transform="translate(4519 -629)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0" xml:space="preserve">Asset Type:		LOY (Loyalty Points)</tspan><tspan x="0" y="19" xml:space="preserve">Asset Code:		DOMsPIZZA0293bQswj5sjLPufanHl7NJ</tspan><tspan x="0" y="38" xml:space="preserve">Asset Auth Flags:		Issuer can amend all fields</tspan><tspan x="0" y="57">Transfers Permitted:	False - Users can only send tokens to issuer controlled addresses</tspan><tspan x="0" y="76">Enforcement orders:	True - Enabled in case of vouchers being incorrectly distributed</tspan><tspan x="0" y="95" xml:space="preserve">Token Qty:		10,000</tspan><tspan x="0" y="114">Asset Payload -	</tspan><tspan x="0" y="133" xml:space="preserve">	Version: 			0</tspan><tspan x="0" y="152" xml:space="preserve">	Redeeming entity:		Dominic&apos;s Pizza</tspan><tspan x="0" y="171" xml:space="preserve">	Issue Date:		Today&apos;s date</tspan><tspan x="0" y="190" xml:space="preserve">	Expiry Date:		2 years from today</tspan><tspan x="0" y="209" xml:space="preserve">	Description:		Loyalty tokens</tspan></text>
     <text id="_1:_" data-name="1: " transform="translate(4697 -773)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1: </tspan></text>
     <text id="Dominic_s_Pizza-2" data-name="Dominic&apos;s Pizza" transform="translate(4716 -773)" fill="#19e134" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dominic&apos;s Pizza</tspan></text>
   </g>
