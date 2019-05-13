@@ -32,7 +32,7 @@ Tokenized transaction messages are built by serializing the data (converting to 
 
 To assemble an `OP_RETURN` packet, the first byte is always the `OP_RETURN` opcode (`0x6a`).
 
-The second byte is a `PUSHDATA` instruction. The `PUSHDATA` instruction can be variable depending on the number of bytes in the data packet being pushed into the output. It is possible to perform multiple pushes in a single `OP_RETURN` output, allowing the output to have multiple fields of different lengths. There are always 2 pushdata operations in a Tokenized operation. The first carries the "Tokenized" protocol identifer (**tokenized.com**), and the second carries the remainder of the data in the packet. This can be up to 99kB of data with the current BitcoinSV network capability, but as the Bitcoin protocol is returned to the Version 0.1 platform the removal of restrictions will allow contracts up to 4GB to be built.
+The second byte is a `PUSHDATA` instruction. The `PUSHDATA` instruction can be variable depending on the number of bytes in the data packet being pushed into the output. It is possible to perform multiple pushes in a single `OP_RETURN` output, allowing the output to have multiple fields of different lengths. There are always 2 pushdata operations in a Tokenized operation. The first carries the "Tokenized" protocol identifer `tokenized`, and the second carries the remainder of the data in the packet. This can be up to 99kB of data with the current BitcoinSV network capability, but as the Bitcoin protocol is returned to the Version 0.1 platform the removal of restrictions will allow contracts up to 4GB to be built.
 
 <a name="using-pushdata"></a>
 ### Using PUSHDATA
@@ -59,7 +59,7 @@ A Tokenized action output is always created with 2 separate push operations. The
 <a name="protocol-identifier"></a>
 ### Protocol Identifier
 
-The first push is 13 bytes long and contains only the Tokenized Protocol identifier which is the string **tokenized.com**.  For testing on Bitcoin SV's mainnet, **test.tokenized.com** can be used as the protocol identifier for test actions/messages.
+The first push is 13 bytes long and contains only the Tokenized Protocol identifier which is the string `tokenized`.  For testing on Bitcoin SV's mainnet, `test.tokenized` can be used as the protocol identifier for test actions/messages.
 
 <a name="action-payload"></a>
 ### Action Payload
@@ -130,7 +130,7 @@ This BitDB query can be used to query transactions containing Tokenized messages
   "q": {
     "find": {
       "out.b0": { "op": 106 },
-      "out.s1": "tokenized.com"
+      "out.s1": "tokenized"
     },
     "limit": 10
   }
@@ -144,7 +144,7 @@ This BitDB query can be used to query transactions containing Tokenized messages
   "q": {
     "find": {
       "out.b0": { "op": 106 },
-      "out.s1": "tokenized.com",
+      "out.s1": "tokenized",
 	  "out.s2": { "$regex": "^.C1"}
     },
     "limit": 10
@@ -159,7 +159,7 @@ This BitDB query is for all requests to a specific contract.
   "q": {
     "find": {
       "out.b0": { "op": 106 },
-      "out.s1": "tokenized.com",
+      "out.s1": "tokenized",
       "out.e.a": "<ContractAddress>"
     },
     "limit": 10
@@ -174,7 +174,7 @@ This BitDB query is for all responses from a specific contract.
   "q": {
     "find": {
       "out.b0": { "op": 106 },
-      "out.s1": "tokenized.com",
+      "out.s1": "tokenized",
       "in.e.a": "<ContractAddress>"
     },
     "limit": 10
