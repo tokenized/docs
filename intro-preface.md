@@ -13,7 +13,7 @@ The Tokenized Protocol is a system developed to enable businesses and users arou
 This documentation is intended to provide a clear and concise set of information on how to use the protocol. It also acts as the reference material for developers who wish to build their own implementation.
 
 <a name="key-components"></a>
-#### Key Components
+### Key Components
 
 The Tokenized Protocol operates using two key components:
 
