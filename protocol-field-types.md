@@ -323,6 +323,16 @@ An AssetReceiver is a quantity, address, and oracle signature. The quantity coul
             
         </td>
     </tr>
+    <tr>
+        <td>OracleSigBlockHeight</td>
+        <td>
+            uint(4)
+        </td>
+        <td>
+            The block height of the block hash used in the oracle signature.
+            
+        </td>
+    </tr>
 </table>
 
 
