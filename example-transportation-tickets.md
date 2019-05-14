@@ -2,9 +2,9 @@
 
 - [Introduction](#introduction)
 - [Private Line](#private-line)
-	- [Buying Private Line Tickets](#buying-private-line-tickets)
-	- [Boarding The Private Line Train](#boarding-private-line-train)
-	- [Ticket Inspection](#ticket-inspection)
+  - [Buying Private Line Tickets](#buying-private-line-tickets)
+  - [Boarding The Private Line Train](#boarding-private-line-train)
+  - [Ticket Inspection](#ticket-inspection)
 - [The Metro](#the-metro)
 
 <a name="introduction"></a>

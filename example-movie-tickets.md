@@ -2,14 +2,14 @@
 
 - [Introduction](#introduction)
 - [Booking](#booking)
-	- [Pre-paid Ticket Transfer](#pre-paid-ticket-transfer)
-	- [Pre-paid Ticket Settlement](#pre-paid-ticket-settlement)
+  - [Pre-paid Ticket Transfer](#pre-paid-ticket-transfer)
+  - [Pre-paid Ticket Settlement](#pre-paid-ticket-settlement)
 - [Candy Bar](#candy-bar)
-	- [Candy Bar Transfer](#candy-bar-transfer)
-	- [Candy Bar Settlement](#candy-bar-settlement)
+  - [Candy Bar Transfer](#candy-bar-transfer)
+  - [Candy Bar Settlement](#candy-bar-settlement)
 - [Pre-paid Item Redemption](#pre-paid-item-redemption)
-	- [Pre-paid Item Transfer](#pre-paid-transfer)
-	- [Pre-paid Item Settlement](#pre-paid-settlement)
+  - [Pre-paid Item Transfer](#pre-paid-transfer)
+  - [Pre-paid Item Settlement](#pre-paid-settlement)
 
 <a name="introduction"></a>
 ## Introduction
