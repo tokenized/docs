@@ -332,7 +332,7 @@ A message that contains a multi-contract settlement that needs settlement data a
     <tr>
         <td>ContractFees</td>
         <td>
-            <a href="field-types#type-target-address">TargetAddress[](8)</a>
+            <a href="field-types#type-target-address">TargetAddress[8]</a>
         </td>
         <td>
             Contract fees (in bitcoin) and addresses(PKHs) where fees should be paid. Added by each contract as settlement data is added.
@@ -394,7 +394,7 @@ Metadata associated with the output. Aka Transaction details. It is used to desc
     <tr>
         <td>Tags</td>
         <td>
-            <a href="resources#resource-tags">Tag[]</a>
+            <a href="resources#resource-tags">Tag[8]</a>
         </td>
         <td>
             Predefined values for describing the output.
@@ -404,7 +404,7 @@ Metadata associated with the output. Aka Transaction details. It is used to desc
     <tr>
         <td>CustomTags</td>
         <td>
-            <a href="field-types#type-output-tag">OutputTag[]</a>
+            <a href="field-types#type-output-tag">OutputTag[8]</a>
         </td>
         <td>
             Free form text fields for describing the output. Groceries, Moomba Gas Compressor Project, Cash Register 3, Fitness, Entertainment, Special, VIP Section, North Carolina Store, Waitress: Cindy Smith, etc.

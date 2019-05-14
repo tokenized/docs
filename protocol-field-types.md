@@ -371,7 +371,7 @@ AssetSettlement is the data required to settle an asset transfer.
     <tr>
         <td>Settlements</td>
         <td>
-            <a href="field-types#type-quantity-index">QuantityIndex[]</a>
+            <a href="field-types#type-quantity-index">QuantityIndex[8]</a>
         </td>
         <td>
             Each element contains the resulting token balance of Asset X for the output Address, which is referred to by the index.
@@ -426,7 +426,7 @@ AssetTransfer is the data required to transfer an asset.
     <tr>
         <td>AssetSenders</td>
         <td>
-            <a href="field-types#type-quantity-index">QuantityIndex[]</a>
+            <a href="field-types#type-quantity-index">QuantityIndex[8]</a>
         </td>
         <td>
             Each element has the value of tokens to be spent from the input address, which is referred to by the index.
@@ -436,7 +436,7 @@ AssetTransfer is the data required to transfer an asset.
     <tr>
         <td>AssetReceivers</td>
         <td>
-            <a href="field-types#type-asset-receiver">AssetReceiver[]</a>
+            <a href="field-types#type-asset-receiver">AssetReceiver[8]</a>
         </td>
         <td>
             Each element has the value of tokens to be received, the address, and an oracle signature if required.
@@ -591,7 +591,7 @@ Entity represents the details of a legal Entity, such as a public or private com
     <tr>
         <td>Administration</td>
         <td>
-            <a href="field-types#type-administrator">Administrator[]</a>
+            <a href="field-types#type-administrator">Administrator[8]</a>
         </td>
         <td>
             A list of people that are in Administrative Roles for the Entity.  eg. Chair, Director, Managing Partner, etc.
@@ -601,7 +601,7 @@ Entity represents the details of a legal Entity, such as a public or private com
     <tr>
         <td>Management</td>
         <td>
-            <a href="field-types#type-manager">Manager[]</a>
+            <a href="field-types#type-manager">Manager[8]</a>
         </td>
         <td>
             A list of people in Management Roles for the Entity. e.g CEO, COO, CTO, CFO, Secretary, Executive, etc.

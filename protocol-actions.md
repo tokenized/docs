@@ -95,7 +95,7 @@ This action is used by the administration to define the properties/characteristi
     <tr>
         <td>TradeRestrictions</td>
         <td>
-            <a href="resources#resource-polities">Polity[](16)</a>
+            <a href="resources#resource-polities">Polity[16]</a>
         </td>
         <td>
             If specified, the asset can only be traded within the specified trade restriction zone. For example, AUS would restrict to Australian residents only.
@@ -292,7 +292,7 @@ This action creates an asset in response to the administration's instructions in
     <tr>
         <td>TradeRestrictions</td>
         <td>
-            <a href="resources#resource-polities">Polity[](16)</a>
+            <a href="resources#resource-polities">Polity[16]</a>
         </td>
         <td>
             If specified, the asset can only be traded within the specified trade restriction zone. For example, AUS would restrict to Australian residents only.
@@ -489,7 +489,7 @@ Token Dilutions, Call Backs/Revocations, burning etc.
     <tr>
         <td>Amendments</td>
         <td>
-            <a href="field-types#type-amendment">Amendment[]</a>
+            <a href="field-types#type-amendment">Amendment[8]</a>
         </td>
         <td>
             A collection of modifications to perform on this asset.
@@ -650,7 +650,7 @@ Allows the administration to tell the smart contract what they want the details 
             <a href="field-types#type-timestamp">Timestamp</a>
         </td>
         <td>
-            All actions related to the contract will cease to work after this timestamp. The smart contract will stop running.  This will allow many token use cases to be able to calculate total smart contract running costs for the entire life of the contract. Eg. an administration is creating tickets for an event on the 5th of June 2018.  The smart contract will facilitate exchange and send transactions up until the 6th of June.  Wallets can use this to forget tokens that are no longer valid - or at least store them in an 'Expired' folder.
+            All actions related to the contract will cease to work after this timestamp. The smart contract will stop running.  This will allow many token use cases to be able to calculate total smart contract running costs for the entire life of the contract. Eg. an issuer is creating tickets for an event on the 5th of June 2018.  The smart contract will facilitate exchange and send transactions up until the 6th of June.  Wallets can use this to forget tokens that are no longer valid - or at least store them in an 'Expired' folder.
             Contract Expiration - Amendments can be restricted to a vote. Example: Wed May 09 2018 00:00:00 GMT+1000 (AEST)
         </td>
     </tr>
@@ -727,7 +727,7 @@ Allows the administration to tell the smart contract what they want the details 
     <tr>
         <td>VotingSystems</td>
         <td>
-            <a href="field-types#type-voting-system">VotingSystem[]</a>
+            <a href="field-types#type-voting-system">VotingSystem[8]</a>
         </td>
         <td>
             A list of voting systems.
@@ -767,7 +767,7 @@ Allows the administration to tell the smart contract what they want the details 
     <tr>
         <td>Oracles</td>
         <td>
-            <a href="field-types#type-oracle">Oracle[]</a>
+            <a href="field-types#type-oracle">Oracle[8]</a>
         </td>
         <td>
             A list of oracles that provide approval for all token transfers for all assets under the contract.
@@ -933,7 +933,7 @@ This txn is created by the contract (smart contract/off-chain agent/token contra
             <a href="field-types#type-timestamp">Timestamp</a>
         </td>
         <td>
-            All actions related to the contract will cease to work after this timestamp. The smart contract will stop running.  This will allow many token use cases to be able to calculate smart contract running costs. Eg. an administration is creating tickets for an event on the 5th of June 2018.  The smart contract will facilitate exchange and send transactions up until the 6th of June.  Wallets can use this to forget tokens that are no longer valid - or at least store them in an 'Expired' folder.
+            All actions related to the contract will cease to work after this timestamp. The smart contract will stop running.  This will allow many token use cases to be able to calculate smart contract running costs. Eg. an issuer is creating tickets for an event on the 5th of June 2018.  The smart contract will facilitate exchange and send transactions up until the 6th of June.  Wallets can use this to forget tokens that are no longer valid - or at least store them in an 'Expired' folder.
             Contract Expiration - Amendments can be restricted to a vote. Example: Wed May 09 2018 00:00:00 GMT+1000 (AEST)
         </td>
     </tr>
@@ -1010,7 +1010,7 @@ This txn is created by the contract (smart contract/off-chain agent/token contra
     <tr>
         <td>VotingSystems</td>
         <td>
-            <a href="field-types#type-voting-system">VotingSystem[]</a>
+            <a href="field-types#type-voting-system">VotingSystem[8]</a>
         </td>
         <td>
             A list voting systems.
@@ -1050,7 +1050,7 @@ This txn is created by the contract (smart contract/off-chain agent/token contra
     <tr>
         <td>Oracles</td>
         <td>
-            <a href="field-types#type-oracle">Oracle[]</a>
+            <a href="field-types#type-oracle">Oracle[8]</a>
         </td>
         <td>
             A list of oracles that provide approval for all token transfers for all assets under the contract.
@@ -1177,7 +1177,7 @@ The administration can initiate an amendment to the contract establishment metad
     <tr>
         <td>Amendments</td>
         <td>
-            <a href="field-types#type-amendment">Amendment[]</a>
+            <a href="field-types#type-amendment">Amendment[8]</a>
         </td>
         <td>
             A collection of modifications to perform on this contract.
@@ -1373,7 +1373,7 @@ Static Contract Formation Action
             <a href="field-types#type-timestamp">Timestamp</a>
         </td>
         <td>
-            All actions related to the contract will cease to work after this timestamp. The smart contract will stop running.  This will allow many token use cases to be able to calculate smart contract running costs. Eg. an administration is creating tickets for an event on the 5th of June 2018.  The smart contract will facilitate exchange and send transactions up until the 6th of June.  Wallets can use this to forget tokens that are no longer valid - or at least store them in an 'Expired' folder.
+            All actions related to the contract will cease to work after this timestamp. The smart contract will stop running.  This will allow many token use cases to be able to calculate smart contract running costs. Eg. an issuer is creating tickets for an event on the 5th of June 2018.  The smart contract will facilitate exchange and send transactions up until the 6th of June.  Wallets can use this to forget tokens that are no longer valid - or at least store them in an 'Expired' folder.
             
         </td>
     </tr>
@@ -1400,7 +1400,7 @@ Static Contract Formation Action
     <tr>
         <td>Entities</td>
         <td>
-            <a href="field-types#type-entity">Entity[]</a>
+            <a href="field-types#type-entity">Entity[8]</a>
         </td>
         <td>
             A list of legal entities associated with this contract.
@@ -1567,7 +1567,7 @@ Used by the administration to signal to the smart contract that the tokens that 
     <tr>
         <td>TargetAddresses</td>
         <td>
-            <a href="field-types#type-target-address">TargetAddress[](16)</a>
+            <a href="field-types#type-target-address">TargetAddress[16]</a>
         </td>
         <td>
             The holders and quantities that are effected by the order. For a contract or asset wide freeze only the contract address is specified. Zero quantities are invalid unless it is for the contract address in an asset wide or contract wide freeze. In a thaw order this field is not serialized, because the entire freeze from the FreezeTxId freeze action will be thawed.
@@ -1677,7 +1677,7 @@ Used by the administration to signal to the smart contract that the tokens that 
     <tr>
         <td>BitcoinDispersions</td>
         <td>
-            <a href="field-types#type-quantity-index">QuantityIndex[](16)</a>
+            <a href="field-types#type-quantity-index">QuantityIndex[16]</a>
         </td>
         <td>
             Index of address in TargetAddresses and amount of bitcoin (in satoshis) they are receiving in exchange for their tokens.
@@ -1775,7 +1775,7 @@ The contract responding to an Order action to freeze assets. To be used to compl
     <tr>
         <td>Quantities</td>
         <td>
-            <a href="field-types#type-quantity-index">QuantityIndex[](16)</a>
+            <a href="field-types#type-quantity-index">QuantityIndex[16]</a>
         </td>
         <td>
             Indices to addresses in outputs and the quantities being frozen. If the only address is the contract address and the asset code is zeros, then it is a contract wide freeze. If the only address is the contract address and the asset code is specified, then it is an asset wide freeze.
@@ -1961,7 +1961,7 @@ The contract responding to an Order action to confiscate assets. To be used to c
     <tr>
         <td>Quantities</td>
         <td>
-            <a href="field-types#type-quantity-index">QuantityIndex[](16)</a>
+            <a href="field-types#type-quantity-index">QuantityIndex[16]</a>
         </td>
         <td>
             The holders effected by the confiscation and their balance remaining.
@@ -2074,7 +2074,7 @@ The contract responding to an Order action to reconcile assets. To be used at th
     <tr>
         <td>Quantities</td>
         <td>
-            <a href="field-types#type-quantity-index">QuantityIndex[](16)</a>
+            <a href="field-types#type-quantity-index">QuantityIndex[16]</a>
         </td>
         <td>
             The holders effected by the reconciliation and their balance remaining.
@@ -2211,7 +2211,7 @@ Allows the Administration/Token Holders to propose a change (aka Initiative/Shar
     <tr>
         <td>ProposedAmendments</td>
         <td>
-            <a href="field-types#type-amendment">Amendment[]</a>
+            <a href="field-types#type-amendment">Amendment[8]</a>
         </td>
         <td>
             Each element contains details of which fields to modify, or delete. Because the number of fields in a Contract and Asset is dynamic due to some fields being able to be repeated, the index value of the field needs to be calculated against the Contract or Asset the changes are to apply to. In the event of a Vote being created from this Initiative, the changes will be applied to the version of the Contract or Asset at that time.
@@ -2614,7 +2614,7 @@ Once a vote has been completed the results are published. After the result is po
     <tr>
         <td>ProposedAmendments</td>
         <td>
-            <a href="field-types#type-amendment">Amendment[]</a>
+            <a href="field-types#type-amendment">Amendment[8]</a>
         </td>
         <td>
             Each element contains details of which fields to modify, or delete. Because the number of fields in a Contract and Asset is dynamic due to some fields being able to be repeated, the index value of the field needs to be calculated against the Contract or Asset the changes are to apply to. In the event of a Vote being created from this Initiative, the changes will be applied to the version of the Contract or Asset at that time.
@@ -2634,7 +2634,7 @@ Once a vote has been completed the results are published. After the result is po
     <tr>
         <td>OptionTally</td>
         <td>
-            uint64[](8)
+            uint64[8]
         </td>
         <td>
             List of number of valid votes counted for each vote option. Length is encoded like a regular list object, but must match the length of VoteOptions from the Proposal action.
@@ -2722,7 +2722,7 @@ The message action is a general purpose communication action. 'Twitter/SMS' for 
     <tr>
         <td>AddressIndexes</td>
         <td>
-            uint16[]
+            uint16[8]
         </td>
         <td>
             Associates the message to a particular output by the index.
@@ -2810,7 +2810,7 @@ Used to reject request actions that do not comply with the Contract. If money is
     <tr>
         <td>AddressIndexes</td>
         <td>
-            uint16[]
+            uint16[8]
         </td>
         <td>
             Associates the message to a particular output by the index.
@@ -2854,7 +2854,7 @@ Used to reject request actions that do not comply with the Contract. If money is
         </td>
         <td>
             Timestamp in nanoseconds of when the smart contract created the action.
-            Cannot be changed by issuer, operator. Smart contract controls.
+            Cannot be changed by the administration, operator. Smart contract controls.
         </td>
     </tr>
 </table>
@@ -3205,7 +3205,7 @@ A Token Owner(s) Sends, Exchanges or Swaps a token(s) or Bitcoin for a token(s) 
     <tr>
         <td>Assets</td>
         <td>
-            <a href="field-types#type-asset-transfer">AssetTransfer[]</a>
+            <a href="field-types#type-asset-transfer">AssetTransfer[8]</a>
         </td>
         <td>
             The Assets involved in the Transfer Action.
@@ -3302,7 +3302,7 @@ Settles the transfer request of bitcoins and tokens from transfer (T1) actions.
     <tr>
         <td>Assets</td>
         <td>
-            <a href="field-types#type-asset-settlement">AssetSettlement[]</a>
+            <a href="field-types#type-asset-settlement">AssetSettlement[8]</a>
         </td>
         <td>
             The Assets settled by the transfer action.
