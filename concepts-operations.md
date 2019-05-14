@@ -2,13 +2,13 @@
 
 - [Introduction](#introduction)
 - [All Operations](#all-operations)
-    - [Contract Operations](#contract-operations)
-    - [Asset Operations](#asset-operations)
-    - [Transfer Operations](#transfer-operations)
-    - [Governance Operations](#governance-operations)
-    - [Enforcement Operations](#enforcement-operations)
-    - [Registry Operations](#registry-operations)
-    - [Message Operations](#message-operations)
+  - [Contract Operations](#contract-operations)
+  - [Asset Operations](#asset-operations)
+  - [Transfer Operations](#transfer-operations)
+  - [Governance Operations](#governance-operations)
+  - [Enforcement Operations](#enforcement-operations)
+  - [Registry Operations](#registry-operations)
+  - [Message Operations](#message-operations)
 - [Order of Operations](#operation-order)
 
 <a name="introduction"></a>
