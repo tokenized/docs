@@ -116,6 +116,7 @@ The `size` does not need to be specified and is always 32 bytes.
 - [AssetReceiver](#type-asset-receiver)
 - [Asset Settlement](#type-asset-settlement)
 - [Asset Transfer](#type-asset-transfer)
+- [Document](#type-document)
 - [Entity](#type-entity)
 - [Manager](#type-manager)
 - [Oracle](#type-oracle)
@@ -450,6 +451,61 @@ AssetTransfer is the data required to transfer an asset.
         </td>
         <td>
             Each element has the value of tokens to be received, the address, and an oracle signature if required.
+            
+        </td>
+    </tr>
+</table>
+
+
+
+<a name="type-document"></a>
+### Document
+
+A file containing data.
+
+<table>
+    <tr>
+        <th style="width:15%">Field</th>
+        <th style="width:15%">Type</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>Name</td>
+        <td>
+            varchar(8)
+        </td>
+        <td>
+            Full name, including file extension, of the file. Length 0-255 bytes. 0 is valid.
+             Example: Agreement.pdf
+        </td>
+    </tr>
+    <tr>
+        <td>Type</td>
+        <td>
+            varchar(8)
+        </td>
+        <td>
+            MIME type of the file. Length 0-255 bytes. 0 is valid. 
+             Example: application/pdf
+        </td>
+    </tr>
+    <tr>
+        <td>Algorithm</td>
+        <td>
+            uint(1)
+        </td>
+        <td>
+            Compression/encryption algorithm used on file contents. Compression is encoded before encryption, and the reverse for decoding. 0 is no compression or encryption, 1 is AES256 encryption with no compression, 2 is LZMA2 with no encryption, 3 is LZMA2 with AES256 encryption, 4 is Deflate with no encryption, 5 is LZMA2 with AES256 encryption.
+            
+        </td>
+    </tr>
+    <tr>
+        <td>Contents</td>
+        <td>
+            varbin(32)
+        </td>
+        <td>
+            The contents of the file.
             
         </td>
     </tr>
