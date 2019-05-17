@@ -3,14 +3,6 @@ Intro:
     intro/preface: "Preface"
     intro/philosophy: "Philosophy"
 
-Specification:
-  pages:
-    protocol/actions: "Actions"
-    protocol/assets: "Assets"
-    protocol/messages: "Messages"
-    protocol/resources: "Resources"
-    protocol/field-types: "Field Types"
-
 Concepts:
   pages:
     concepts/contracts: "Contracts"
@@ -26,6 +18,14 @@ Concepts:
     concepts/oracles: "Oracles"
     concepts/registers: "Registers"
     concepts/messaging: "Messaging"
+
+Specification:
+  pages:
+    protocol/actions: "Actions"
+    protocol/assets: "Assets"
+    protocol/messages: "Messages"
+    protocol/resources: "Resources"
+    protocol/field-types: "Field Types"
 
 Examples:
   pages:
