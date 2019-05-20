@@ -315,6 +315,16 @@ An AssetReceiver is a quantity, address, and oracle signature. The quantity coul
         </td>
     </tr>
     <tr>
+        <td>OracleIndex</td>
+        <td>
+            uint(1)
+        </td>
+        <td>
+            Specifies the index into the list of oracles in the contract offer that was used to authorize this transfer.
+            
+        </td>
+    </tr>
+    <tr>
         <td>OracleConfirmationSig</td>
         <td>
             varbin(8)
