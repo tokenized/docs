@@ -486,6 +486,7 @@ Code/Text combinations returned in rejection messages when a request is not acce
 - TxMalformed
 - Timeout
 - ContractMoved
+- DoubleSpend
 - ContractExists
 - ContractNotDynamic
 - ContractAssetQtyReduction
