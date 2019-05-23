@@ -792,8 +792,8 @@ Allows the administration to tell the smart contract what they want the details 
     </tr>
    <tr>
         <td class="text-center">1</td>
-        <td>Contract Operator's Public Address (Optional). Can also be used as a cold storage backup for the administration.  This is important if the administration wants to be able to change their address as changes to the administration or operator pkh in an amendment require signatures from both the administration and the operator pkhs.</td>
-        <td>The one exception to the rule above.  The Contract Operator can nominate a secondary controlling public address that can act on behalf of the administration for administration related requests. Typically this will be the Smart Contract Operator. (Optional)</td>
+        <td>Contract Operator's Public Address (Optional).</td>
+        <td>Can also be used as a cold storage backup for the administration.  This is important if the administration wants to be able to change their address as changes to the administration or operator pkh in an amendment require signatures from both the administration and the operator pkhs. The one exception to the rule above.  The Contract Operator can nominate a secondary controlling public address that can act on behalf of the administration for administration related requests. Typically this will be the Smart Contract Operator. (Optional)</td>
     </tr>
 </table>
 
