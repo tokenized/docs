@@ -126,11 +126,11 @@ The Tokenized Protocol ensures that all valid contracts follow the principles an
 ### Contract Formation
 
 There are five essential elements necessary for legally binding Contract Formation:
-- Agreement between the parties;
-- Consideration (a bargain requirement: generally, the supply of money, property or services or a promise to undertake, or not undertake a particular act in exchange for something of value);
-- Capacity to enter legal relations (e.g. of sound mind and legal age);
-- Intention by the parties to enter into legal relations (private non-commercial agreements between family members may not indicate intention to enter a legally binding contract and therefore may not be enforceable); and
-Certainty (the contract has to complete, certain, clear and binding).
+- Agreement between the parties
+- Consideration (a bargain requirement: generally, the supply of money, property or services or a promise to undertake, or not undertake a particular act in exchange for something of value)
+- Capacity to enter legal relations (e.g. of sound mind and legal age)
+- Intention by the parties to enter into legal relations (private non-commercial agreements between family members may not indicate intention to enter a legally binding contract and therefore may not be enforceable)
+- Certainty (the contract has to complete, certain, clear and binding)
 
 Reference: J W Carter, LexisNexis, Carter on Contract (at July 2013) [Chapter 1]
 
@@ -144,7 +144,7 @@ Consideration will always be present in an exchange or swap type of Transfer act
 
 <a name="capacity"></a>
 #### Capacity
-Capacity will be handled by the smart contracts and the use of Identity Oralces that contain whitelisted public addresses.  These whitelisted addresses get added to the whitelist only when KYC/AML compliance checks have been completed.  The smart contract will not allow any transactions to go through that break the terms and conditions of the contract which are created in accordance with the choice of law selected for the contract.  Other capacity issues relating to being ‘of sound mind’ (e.g. intoxication) cannot be effectively managed by the Tokenized Protocol, but that is true of any online commercial interaction.
+Capacity will be handled by the smart contracts and the use of Identity Oracles that contain whitelisted public addresses.  These whitelisted addresses get added to the whitelist only when KYC/AML compliance checks have been completed.  The smart contract will not allow any transactions to go through that break the terms and conditions of the contract which are created in accordance with the choice of law selected for the contract.  Other capacity issues relating to being ‘of sound mind’ (e.g. intoxication) cannot be effectively managed by the Tokenized Protocol, but that is true of any online commercial interaction.
 
 <a name="intention"></a>
 #### Intention
