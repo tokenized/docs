@@ -44,12 +44,13 @@ Our modern economies rely on legal frameworks to create and strengthen incentive
 With these thoughts in mind, it is important to note that trusting the issuer is an intrinsic and inextricable property of all tokens, and that many disputes relating to an issuer failing to honour their obligations can be impractical and/or expensive to enforce.  
 
 Examples include:
-Movie/concert tickets
-Financial products (e.g. shares, derivatives, bonds)
-Loyalty points
-Lottery tickets
-Train/bus passes
-Memberships (e.g. gym, club)
+
+- Movie/concert tickets
+- Financial products (e.g. shares, derivatives, bonds)
+- Loyalty points
+- Lottery tickets
+- Train/bus passes
+- Memberships (e.g. gym, club)
 
 All of these forms of value require the liable parties in the contract - the issuer - to honour the terms and conditions of the contract.  The value may be derived from a promise by the issuer to provide access to a service, or perform a certain set of actions over time.   
 
