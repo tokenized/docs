@@ -17,7 +17,7 @@ This documentation is intended to provide a clear and concise set of information
 
 The Tokenized Protocol operates using two key components:
 
-- [Smart Contract](https://github.com/tokenized/smart-contract): An autonomous agent service, hosted by the issuer or a third party provider.
+- [Smart Contract](https://github.com/tokenized/smart-contract): An autonomous agent service, hosted by the issuer or a third party provider on behalf of the issuer.
 
 - [Tokenized Wallet](https://github.com/tokenized/wallet): An enhanced bitcoin wallet, operated by the user or administration of the contract issuer.
 
