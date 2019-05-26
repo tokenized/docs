@@ -8,7 +8,7 @@
 <a name="introduction"></a>
 ## Introduction
 
-The Tokenized Protocol is a system developed to enable businesses and users around the world to create, issue and manage tokens of all kinds using the low-friction and high-reliability of the Bitcoin network as the backbone of their infrastructure.
+The Tokenized Protocol is a system developed to enable organizations and users around the world to create, issue and manage tokens of all kinds using the low-friction and high-reliability of the Bitcoin network as the backbone of their infrastructure.
 
 This documentation is intended to provide a clear and concise set of information on how to use the protocol. It also acts as the reference material for developers who wish to build an implementation.
 
