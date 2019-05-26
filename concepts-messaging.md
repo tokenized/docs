@@ -41,7 +41,7 @@ A message may be sent to many addresses at once by appending multiple outputs to
 
 ![Message action](https://raw.githubusercontent.com/tokenized/docs/master/images/message-action.svg?sanitize=true "Message action") {.frame .centered .padded}
 
-There are 4 Message types currently defined in the Tokenized Protocol:
+There are 6 Message types currently defined in the Tokenized Protocol:
 
 - Public message: Message #0002 - A generic public message or public announcement. Sent to an address(es).  Can be used for an official issuer announcement.
 
