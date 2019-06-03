@@ -64,7 +64,9 @@ The first push is 13 bytes long and contains only the Tokenized Protocol identif
 <a name="action-payload"></a>
 ### Action Payload
 
-The next push is the action payload. The action payload starts with the protocol version, then the message/action type code, which is two characters that define the format of the rest of the data. The action payload is dependent on the action type and may include token specific information as required. It is important that the client and wallet must both know exactly what is expected in the remainder of the packet through a combination of the action prefix and version. If the packet does not conform to the contract agent's expectation of the operation being requested, it will respond with a rejection message.
+The next push is the complete action payload. The action payload contains the [header information](../protocol/actions#header-fields) and the [action contents](../protocol/actions#all-actions). The header is a requirement that specifies information on how to format the rest of the data, including the protocol version and action code.
+
+The action payload is dependent on the action type and may include token specific information as required. It is important that the client and wallet must both know exactly what is expected in the remainder of the packet through a combination of the action code and version. If the packet does not conform to the contract agent's expectation of the operation being requested, it will respond with a rejection message.
 
 <a name="sample-code"></a>
 ## Sample Code
