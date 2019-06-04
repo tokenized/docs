@@ -9,7 +9,7 @@
 
 The Tokenized Protocol allows smart contracts to use oracles.
 
-An oracle, in the context of blockchains and smart contracts, is an agent that monitors, manages and verifies real-world events/people/information (off-chain data) and provides a trusted data feed to a smart contract.  Oracles provide the necessary link from the block chain to the real-world. Without this, block chain can't be used to represent/facilitate anything except ownership of bitcoin. The smart contract uses the data feed to manage the performance and administrative tasks of the contract with respect to its terms and conditions.
+An oracle, in the context of blockchains and smart contracts, is an agent that monitors, manages and verifies real-world events/people/information (off-chain data) and provides a trusted data feed to a smart contract.  Oracles provide the necessary link from the blockchain to the real-world. Without this, blockchain can't be used to represent/facilitate anything except ownership of bitcoin. The smart contract uses the data feed to manage the performance and administrative tasks of the contract with respect to its terms and conditions.
 
 Currently, the protocol only supports Identity Oracles, but will support other types of oracles in the future.  A user's wallet will send a request message to the oracle and the oracle will respond with a signature (eg. ECDSA) for the parts of the message containing the data or instructions that are relevant to the oracle.
 
