@@ -116,18 +116,18 @@
     <text id="STEP_5" data-name="STEP 5" transform="translate(9999 -3661.32)" fill="#707070" font-size="18" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="0" y="0">STE</tspan><tspan y="0" letter-spacing="-0.02em">P</tspan><tspan y="0" xml:space="preserve"> 5</tspan></text>
     <rect id="Rectangle_457" data-name="Rectangle 457" width="211" height="160" transform="translate(10136.98 -4473.74)" fill="#fff"/>
     <rect id="Rectangle_458" data-name="Rectangle 458" width="209" height="159" transform="translate(10138.98 -4471.74)" fill="none" stroke="#cf730b" stroke-width="4"/>
-    <text id="Note:" transform="translate(10152.98 -4455.74)" fill="#707070" font-size="16" font-family="ArialMT, Arial"><tspan x="0" y="0">Note:</tspan></text>
-    <text id="Oracle_s_Public_Key_is_found" data-name="Oracle&apos;s Public Key is found" transform="translate(10152.98 -4425.74)" fill="#707070" font-size="14" font-family="ArialMT, Arial"><tspan x="0" y="0">Oracle&apos;s Public Key is found</tspan></text>
-    <text id="in_the_Contract_Formation" data-name="in the Contract Formation" transform="translate(10152.98 -4408.74)" fill="#707070" font-size="14" font-family="ArialMT, Arial"><tspan x="0" y="0">in the Contract Formation</tspan></text>
-    <text id="metadata._The_public_key_is" data-name="metadata. The public key is" transform="translate(10152.98 -4391.74)" fill="#707070" font-size="14" font-family="ArialMT, Arial"><tspan x="0" y="0">metadata. The public key is</tspan></text>
-    <text id="used_with_the_Message_OSR_" data-name="used with the Message(OSR)" transform="translate(10152.98 -4374.74)" fill="#707070" font-size="14" font-family="ArialMT, Arial"><tspan x="0" y="0">used with the Message(OSR)</tspan></text>
-    <text id="to_validate_the_Oracle" data-name="to validate the Oracle" transform="translate(10152.98 -4357.74)" fill="#707070" font-size="14" font-family="ArialMT, Arial"><tspan x="0" y="0">to validate the Oracle</tspan></text>
-    <text id="Signature" transform="translate(10152.98 -4340.74)" fill="#707070" font-size="14" font-family="ArialMT, Arial"><tspan x="0" y="0">Signature</tspan></text>
+    <text id="Note:" transform="translate(10152.98 -4445.74)" fill="#707070" font-size="16" font-family="ArialMT, Arial"><tspan x="0" y="0">Note:</tspan></text>
+    <text id="Oracle_s_Public_Key_is_found" data-name="Oracle&apos;s Public Key is found" transform="translate(10152.98 -4419.74)" fill="#707070" font-size="14" font-family="ArialMT, Arial"><tspan x="0" y="0">Oracle&apos;s Public Key is found</tspan></text>
+    <text id="in_the_Contract_Formation" data-name="in the Contract Formation" transform="translate(10152.98 -4402.74)" fill="#707070" font-size="14" font-family="ArialMT, Arial"><tspan x="0" y="0">in the Contract Formation</tspan></text>
+    <text id="metadata._The_public_key_is" data-name="metadata. The public key is" transform="translate(10152.98 -4385.74)" fill="#707070" font-size="14" font-family="ArialMT, Arial"><tspan x="0" y="0">metadata. The public key is</tspan></text>
+    <text id="used_with_the_Message_OSR_" data-name="used with the Message(OSR)" transform="translate(10152.98 -4368.74)" fill="#707070" font-size="14" font-family="ArialMT, Arial"><tspan x="0" y="0">used with the Message(OSR)</tspan></text>
+    <text id="to_validate_the_Oracle" data-name="to validate the Oracle" transform="translate(10152.98 -4351.74)" fill="#707070" font-size="14" font-family="ArialMT, Arial"><tspan x="0" y="0">to validate the Oracle</tspan></text>
+    <text id="Signature" transform="translate(10152.98 -4334.74)" fill="#707070" font-size="14" font-family="ArialMT, Arial"><tspan x="0" y="0">Signature</tspan></text>
     <rect id="Rectangle_459" data-name="Rectangle 459" width="157" height="105" transform="translate(10260 -3453.74)" fill="#fff"/>
     <rect id="Rectangle_460" data-name="Rectangle 460" width="155" height="101" transform="translate(10262 -3451.74)" fill="none" stroke="#cf730b" stroke-width="4"/>
-    <text id="Note:-2" data-name="Note:" transform="translate(10276 -3435.74)" fill="#707070" font-size="16" font-family="ArialMT, Arial"><tspan x="0" y="0">Note:</tspan></text>
-    <text id="New_balances_after" data-name="New balances after" transform="translate(10276 -3405.74)" fill="#707070" font-size="14" font-family="ArialMT, Arial"><tspan x="0" y="0">New balances after</tspan></text>
-    <text id="settlement." transform="translate(10276 -3388.74)" fill="#707070" font-size="14" font-family="ArialMT, Arial"><tspan x="0" y="0">settlement.</tspan></text>
+    <text id="Note:-2" data-name="Note:" transform="translate(10276 -3425.74)" fill="#707070" font-size="16" font-family="ArialMT, Arial"><tspan x="0" y="0">Note:</tspan></text>
+    <text id="New_balances_after" data-name="New balances after" transform="translate(10276 -3400.74)" fill="#707070" font-size="14" font-family="ArialMT, Arial"><tspan x="0" y="0">New balances after</tspan></text>
+    <text id="settlement." transform="translate(10276 -3383.74)" fill="#707070" font-size="14" font-family="ArialMT, Arial"><tspan x="0" y="0">settlement.</tspan></text>
     <text id="Receiver" transform="translate(9880 -5673.74)" fill="#0070c0" font-size="22" font-family="ArialMT, Arial"><tspan x="0" y="0">Receiver</tspan></text>
     <text id="Sender" transform="translate(9875 -5426.74)" fill="#7030a0" font-size="22" font-family="ArialMT, Arial"><tspan x="0" y="0">Sender</tspan></text>
     <text id="Sender-2" data-name="Sender" transform="translate(9882 -5123.74)" fill="#7030a0" font-size="22" font-family="ArialMT, Arial"><tspan x="0" y="0">Sender</tspan></text>
