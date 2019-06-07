@@ -7,14 +7,14 @@
   - [Transfer Operations](#transfer-operations)
   - [Governance Operations](#governance-operations)
   - [Enforcement Operations](#enforcement-operations)
-  - [Registry Operations](#registry-operations)
+  - [Register Operations](#register-operations)
   - [Message Operations](#message-operations)
 - [Order of Operations](#operation-order)
 
 <a name="introduction"></a>
 ## Introduction
 
-The Tokenized Protocol operates on a _request and response_ mechanism whereby operations are carried out in 2 steps called [actions](../protocol/actions#action-actions).  The only exceptions to this rule are the [Message](../protocol/actions#action-actions#action-message) action and the [Registery](../protocol/actions#action-actions#action-addition) actions where each action does not work on the request and response model. They are 1 step actions where no response is required.
+The Tokenized Protocol operates on a _request and response_ mechanism whereby operations are carried out in 2 steps called [actions](../protocol/actions#action-actions).  The only exceptions to this rule are the [Message](../protocol/actions#action-actions#action-message) action and the [Register](../protocol/actions#action-actions#action-addition) actions where each action does not work on the request and response model. They are 1 step actions where no response is required.
 
 The request and response actions are always initiated by two different classes of actors, the requester and the responder, and the definitions are as follows:
 
@@ -90,10 +90,10 @@ Enforcement operations provide the issuer the tools required to carry out enforc
 * [Confiscation](../protocol/actions#action-confiscation) (Action Code: E4)
 * [Reconciliation](../protocol/actions#action-reconciliation) (Action Code: E5)
 
-<a name="registry-operations"></a>
-### Registry Operations
+<a name="register-operations"></a>
+### Register Operations
 
-Registry operations allow a user or issuer to set up and manage on-chain registers which can be used for any purpose.  Registers do not require a smart contract.
+Register operations allow a user or issuer to set up and manage on-chain registers which can be used for any purpose.  Registers do not require a smart contract.
 
 * [Establishment](../protocol/actions#action-establishment) (Action Code: R1)
 * [Addition](../protocol/actions#action-addition) (Action Code: R2)
