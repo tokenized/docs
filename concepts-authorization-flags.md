@@ -20,7 +20,7 @@ The authorization flags are represented by 3 bits (XYZ) plus an array of bits pe
 
 The first bit (X) specifies whether unilateral changes by the administration of the contract issuer are permitted to the field. 1 = Permitted, 0 = Not Permitted.
 
-The second bit (Y) specifies whether a successful administration initiated vote will permit a change to the field. 1 = administration Proposals are Permitted, 0 = administration Proposals are not Permitted.
+The second bit (Y) specifies whether a successful administration initiated vote will permit a change to the field. 1 = Administration Proposals are Permitted, 0 = Administration Proposals are not Permitted.
 
 The third bit (Z) specifies whether a successful token holder initiated vote will permit a change to the field. 1 = Token Holder Proposals are Permitted, 0 = Token Holder Proposals are not Permitted.
 so 
@@ -32,7 +32,7 @@ The booleans that make up the array of M represent a voting system (by index) an
 
     AssetAuthFlags = XYZM[]
 
-where X = Permitted, Y = administration Proposal, Z = Token Holder Proposal and N = the index of the field within the action, M[] = an array of booleans equal to the # of voting systems in the contract. If Y and Z are false, then M is empty (zero length).
+where X = Permitted, Y = Administration Proposal, Z = Token Holder Proposal and N = the index of the field within the action, M[] = an array of booleans equal to the # of voting systems in the contract. If Y and Z are false, then M is empty (zero length).
 
 When you parse the authorization flags, you get an array of permission objects containing XYZM[] that has a length corresponding the the number of fields in the contract or asset. The Contract Offer and Asset Creation is used to determine the indexes of the fields. Index 0 is the field after the header.
 
