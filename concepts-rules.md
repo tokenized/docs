@@ -7,7 +7,7 @@
 - [Governance Operations](#governance-operations)
 - [Enforcement Operations](#enforcement-operations)
 - [Message Operations](#message-operations)
-- [Registry Operations](#registry-operations)
+- [Register Operations](#register-operations)
 
 The following lays out a set of rules applicable to different aspects of the tokenized protocol.
 
@@ -89,10 +89,10 @@ The following lays out a set of rules applicable to different aspects of the tok
 1. Message actions can be from any address to any other address(es).
 2. Rejection actions are the negative response from a smart contract to indicate that another action is not valid. Actions that have a Rejection action as a response are ignored by the protocol.
 
-<a name="registry-operations"></a>
-## Registry Operations
+<a name="register-operations"></a>
+## Register Operations
 
-1. All Registry operations that come before an Establishment action are ignored.
+1. All Register operations that come before an Establishment action are ignored.
 2. All Addition actions must be preceded by an associated Establishment action.
 3. All Alteration actions must be preceded by an associated Addition action.
 4. All Removal actions must be preceded by an associated Addition action.
