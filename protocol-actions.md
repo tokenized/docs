@@ -1,6 +1,7 @@
 # Protocol Actions
 
 - [Introduction](#introduction)
+- [Header Fields](#header-fields)
 - [Available Actions](#all-actions)
 
 <a name="introduction"></a>
@@ -8,7 +9,38 @@
 
 The following actions break down the construction of a Tokenized protocol message. The action is constructed by building a single string from each of the elements in order. Each field within the action is given a specific type, including standard types and compound types.
 
-Each message should be prefixed with common header data. See the [Transactions article](../concepts/transactions) for details on how to construct a header.
+See the [Transactions article](../concepts/transactions) for details on how to construct a complete transaction.
+
+<a name="header-fields"></a>
+## Header Fields
+
+Every protocol action is prepended with a header that specifies the necessary details about the subsequent action contents.
+
+<table>
+    <tr>
+        <th style="width:15%">Field</th>
+        <th style="width:15%">Type</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>Version</td>
+        <td>
+            uint(1)
+        </td>
+        <td>
+            The version number that determines the structure of the action payload and field definitions.
+        </td>
+    </tr>
+    <tr>
+        <td>ActionCode</td>
+        <td>
+            fixedchar(2)
+        </td>
+        <td>
+            The Action Code that determines the expected contents of the action payload. Example: C1
+        </td>
+    </tr>
+</table>
 
 <a name="all-actions"></a>
 ## Available Actions
@@ -792,8 +824,9 @@ Allows the administration to tell the smart contract what they want the details 
     </tr>
    <tr>
         <td class="text-center">1</td>
-        <td>Contract Operator's Public Address (Optional). Can also be used as a cold storage backup for the administration.  This is important if the administration wants to be able to change their address as changes to the administration or operator pkh in an amendment require signatures from both the administration and the operator pkhs.</td>
-        <td>The one exception to the rule above.  The Contract Operator can nominate a secondary controlling public address that can act on behalf of the administration for administration related requests. Typically this will be the Smart Contract Operator. (Optional)</td>
+        <td>Contract Operator's Public Address (Optional)</td>
+        <td>Can also be used as a cold storage backup for the issuer. This is important if the issuer wants to be able to change their address as changes to the issuer or operator pkh in an amendment require signatures from both the issuer and the operator pkhs. The one exception to this rule, the Contract Operator can nominate a secondary controlling public address that can act on behalf of the issuer for issuer related requests. Typically this will be the Smart Contract Operator.
+</td>
     </tr>
 </table>
 

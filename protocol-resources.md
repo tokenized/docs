@@ -488,7 +488,6 @@ Code/Text combinations returned in rejection messages when a request is not acce
 - ContractMoved
 - DoubleSpend
 - ContractExists
-- ContractNotDynamic
 - ContractAssetQtyReduction
 - ContractFixedQuantity
 - ContractAuthFlags
