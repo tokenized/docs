@@ -5,6 +5,7 @@
 - [Token Identification](#token-identification)
 - [Token Fungibility](#token-fungibility)
 - [Modifying Tokens](#modifying-tokens)
+- [Token Balances](#token-balances)
 
 <a name="introduction"></a>
 ## Introduction
@@ -13,7 +14,7 @@ A token is defined, in this context, as a digital record of ownership that is ma
 
 With Tokenized tokens, the owner of the asset is the entity that possesses the associated token by controlling the private keys to the Bitcoin public address that the token is held at. For the ownership of the asset to change, the token must be transferred to the new owners. 
 
-A token is created by a smart contract at the request of the administration of a contract issuer by way of the Asset Definition action. The administration specifies what rules/terms the smart contract uses to control the token(s) and the smart contract will adhere to these terms, but only if they are in accordance with the rules of the protocol. Tokens can only be transferred from one address to another by way of a Settlement or Confiscation action published to the blockchain by the smart contract in response to a valid request action.
+A token is created by a smart contract with an Asset Creation action, at the request of the administration of a contract issuer by way of the Asset Definition action. The administration specifies what rules/terms the smart contract uses to control the token(s) and the smart contract will adhere to these terms, but only if they are in accordance with the rules of the protocol. Tokens can only be transferred from one pkh to another by way of a Settlement, or Confiscation action published to the blockchain by the smart contract in response to a valid request action.  Tokens can only be created or destroyed by an Asset Creation action or a Reconciliation action.
 
 It is up to the administration to ensure that the rules under which tokens are managed and exchanged are in-line with the legal and regulatory requirements of the jurisdiction that they are subject to. The protocol provides enough expressiveness and functionality to cover all the administration's compliance requirements.
 
@@ -44,3 +45,8 @@ It is possible to create non-fungible tokens by creating tokens that have unique
 Depending on the rules of the asset and smart contract, most tokens can have their metadata modified using on-chain messages to the smart contract.
 
 Modifications can be made to any individual field (within rules) but modifications to the payload require the full data encapsulated within the payload to be overwritten.
+
+<a name="token-balances"></a>
+## Token Balances
+
+Token balances are held at Bitcoin public key hashes (PKH).  Token balances at a PKH are only incremented or decremented by Asset Creation, Settlement, Confiscation, and Reconciliation actions.  Settlement and Confiscation actions transfer tokens from a PKH(s) to another PKH(s).  Tokens can only be created or destroyed by an Asset Creation action or a Reconciliation action.  A PKH can hold any number of tokens, up to the max value of uint64, from an unlimited amount of smart contracts.
