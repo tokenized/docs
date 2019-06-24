@@ -49,4 +49,11 @@ Modifications can be made to any individual field (within rules) but modificatio
 <a name="token-balances"></a>
 ## Token Balances
 
-Token balances are held at Bitcoin public key hashes (PKH).  Token balances at a PKH are only incremented or decremented by Asset Creation, Settlement, Confiscation, and Reconciliation actions.  Settlement and Confiscation actions transfer tokens from a PKH(s) to another PKH(s).  Tokens can only be created or destroyed by an Asset Creation action or a Reconciliation action.  A PKH can hold any number of tokens, up to the max value of uint64, from an unlimited amount of smart contracts.
+Token balances are held at Bitcoin public key hashes (PKH). Token balances at a PKH are only incremented or decremented by the following actions:
+
+- [Asset Creation](../protocol/actions#action-asset-creation)
+- [Settlement](../protocol/actions#action-settlement)
+- [Confiscation](../protocol/actions#action-confiscation)
+- [Reconciliation](../protocol/actions#action-reconciliation)
+
+Settlement and Confiscation actions transfer tokens from a PKH(s) to another PKH(s). Tokens can only be created or destroyed by an Asset Creation action or a Reconciliation action. A PKH can hold any number of tokens, up to the max value of uint64, from an unlimited amount of smart contracts.

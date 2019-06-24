@@ -20,7 +20,7 @@ All user and administration driven actions are initiated by sending a request to
 
 Some transactions (eg. [Static Contract](../protocol/actions#static-contracts), [Transfer](../protocol/actions#action-transfer) action) may require multiple inputs that are signed by different parties to be recognised by the contract.
 
-Transactions that impact balances or the contract state always include a timestamp to ensure that even in the event of a block re-organisation that the contract actions can be restored in the correct order.
+Transactions that [impact balances](../concepts/tokens#token-balances) or the contract state always include a timestamp to ensure that even in the event of a block re-organisation that the contract actions can be restored in the correct order.
 
 <a name="building-transaction"></a>
 ## Building a Transaction
