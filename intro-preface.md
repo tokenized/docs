@@ -8,7 +8,7 @@
 <a name="introduction"></a>
 ## Introduction
 
-The Tokenized Protocol is an open source application layer protocol that utilizes the Bitcoin SV network for passing and storing messages. The protocol focuses on data (aka records) captured from financial, legal, commercial and accounting activities for all types of legal entities and ownership structures. It aims to replace current financial messaging (eg. bank to bank (SWIFT), security exchanges (FIX) and fiat payment systems (credit cards, e-money, etc.), as well as other EDI standards like X12, etc.
+The Tokenized Protocol is an open source application layer protocol that utilizes the Bitcoin SV network for passing and storing messages. The protocol focuses on data (aka records) captured from financial, legal, commercial and accounting activities for all types of legal entities and ownership structures. It aims to replace current financial messaging (eg. bank to bank (SWIFT), security exchanges (FIX) and fiat payment systems (credit cards, e-money, etc.), as well as other EDI standards like X12, etc.  However, it also provides the framework for issuing any kind of token for any type of use case.
 
 The protocol utilizes smart contracts, tokens, registers and messages as the building blocks to provide users and issuers with all of the tools required to manage their financial and legal lives in a more secure, private and low-cost way - while at the same time providing a streamlined user experience.
 
