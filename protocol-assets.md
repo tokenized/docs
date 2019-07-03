@@ -343,7 +343,7 @@ A Membership
 <a name="action-share-common"></a>
 #### Share - Common
 
-Common stock represents ownership interests in corporations.
+Common stock represents ownership interests in companies.
 
 <table>
     <tr>

@@ -120,6 +120,7 @@ The `size` does not need to be specified and is always 32 bytes.
 - [Entity](#type-entity)
 - [Manager](#type-manager)
 - [Oracle](#type-oracle)
+- [Output](#type-output)
 - [Output Tag](#type-output-tag)
 - [Quantity Index](#type-quantity-index)
 - [Target Address](#type-target-address)
@@ -500,16 +501,6 @@ A file containing data.
         </td>
     </tr>
     <tr>
-        <td>Algorithm</td>
-        <td>
-            uint(1)
-        </td>
-        <td>
-            Compression/encryption algorithm used on file contents. Compression is encoded before encryption, and the reverse for decoding. 0 is no compression or encryption, 1 is AES256 encryption with no compression, 2 is LZMA2 with no encryption, 3 is LZMA2 with AES256 encryption, 4 is Deflate with no encryption, 5 is LZMA2 with AES256 encryption.
-            
-        </td>
-    </tr>
-    <tr>
         <td>Contents</td>
         <td>
             varbin(32)
@@ -761,6 +752,41 @@ A Oracle defines the details of a public Oracle.
         </td>
         <td>
             Length 0-255 bytes. 0 is not valid. Oracle Public Key (eg. Bitcoin Public key), used to confirm digital signed proofs for transfers.  Can also be the same public address that controls a Tokenized Oracle.
+            
+        </td>
+    </tr>
+</table>
+
+
+
+<a name="type-output"></a>
+### Output
+
+Reference to a bitcoin transaction output.
+
+<table>
+    <tr>
+        <th style="width:15%">Field</th>
+        <th style="width:15%">Type</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>TxId</td>
+        <td>
+            <a href="field-types#type-tx-id">TxId</a>
+        </td>
+        <td>
+            
+            
+        </td>
+    </tr>
+    <tr>
+        <td>OutputIndex</td>
+        <td>
+            uint(4)
+        </td>
+        <td>
+            The index of the output within the referenced transaction.
             
         </td>
     </tr>

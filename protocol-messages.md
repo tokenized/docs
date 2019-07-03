@@ -60,12 +60,42 @@ Generic public message or public announcement. Sent to an address(es).  Can be u
         </td>
     </tr>
     <tr>
+        <td>Subject</td>
+        <td>
+            varchar(16)
+        </td>
+        <td>
+            The subject / topic of the message.
+            
+        </td>
+    </tr>
+    <tr>
+        <td>Regarding</td>
+        <td>
+            <a href="field-types#type-output">Output</a>
+        </td>
+        <td>
+            The output of the message that this message is regarding (responding to).
+            
+        </td>
+    </tr>
+    <tr>
         <td>PublicMessage</td>
         <td>
-            varchar(32)
+            <a href="field-types#type-document">Document</a>
         </td>
         <td>
             Tokenized Ltd. announces product launch.
+            
+        </td>
+    </tr>
+    <tr>
+        <td>Attachments</td>
+        <td>
+            <a href="field-types#type-document">Document[32]</a>
+        </td>
+        <td>
+            Documents attached to the message.
             
         </td>
     </tr>
@@ -112,12 +142,42 @@ Generic private message. Sent to another address(es). Encryption is to be used.
         </td>
     </tr>
     <tr>
+        <td>Subject</td>
+        <td>
+            varchar(16)
+        </td>
+        <td>
+            The subject / topic of the message.
+            
+        </td>
+    </tr>
+    <tr>
+        <td>Regarding</td>
+        <td>
+            <a href="field-types#type-output">Output</a>
+        </td>
+        <td>
+            The output of the message that this message is regarding (responding to).
+            
+        </td>
+    </tr>
+    <tr>
         <td>PrivateMessage</td>
         <td>
-            varbin(32)
+            <a href="field-types#type-document">Document</a>
         </td>
         <td>
             Tokenized Ltd announces product launch.
+            
+        </td>
+    </tr>
+    <tr>
+        <td>Attachments</td>
+        <td>
+            <a href="field-types#type-document">Document[32]</a>
+        </td>
+        <td>
+            Documents attached to the message.
             
         </td>
     </tr>
