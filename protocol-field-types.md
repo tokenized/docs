@@ -14,9 +14,9 @@ Each field in a protocol action is assigned with a data type. Standard scalar ty
         <th style="width:15%">Type</th>
         <th>Description</th>
    </tr>
-    <tr><td>int</td><td>A signed integer. <code>size</code> is the number of bits for the integer. Valid values for <code>size</code> are 8, 16, 32, 64.</td></tr>
-    <tr><td>uint</td><td>An unsigned integer. <code>size</code> is the number of bits for the integer. Valid values for <code>size</code> are 8, 16, 32, 64.</td></tr>
-    <tr><td>float</td><td>A floating point number. <code>size</code> is the number of bits for the float. Valid values for <code>size</code> are 32 and 64.</td></tr>
+    <tr><td>int</td><td>A signed integer. <code>size</code> is the number of bytes for the integer. Valid values for <code>size</code> are 1, 2, 4, 8.</td></tr>
+    <tr><td>uint</td><td>An unsigned integer. <code>size</code> is the number of bytes for the integer. Valid values for <code>size</code> are 1, 2, 4, 8.</td></tr>
+    <tr><td>float</td><td>A floating point number. <code>size</code> is the number of bytes for the float. Valid values for <code>size</code> are 4 and 8.</td></tr>
     <tr><td>bool</td><td>A boolean stored as 1 byte.</td></tr>
     <tr><td>bin</td><td>Fixed length binary data. <code>size</code> is the length in bytes of the data.</td></tr>
     <tr>
