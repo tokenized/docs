@@ -22,7 +22,7 @@ The request and response actions are always initiated by two different classes o
 
 - **Responder**: the smart contract instance
 
-The smart contract is an autonomous agent that listens to the Bitcoin (BSV) network for commands (request actions) addressed to it from users and issuers. It does not publish any actions to the blockchain without first being prompted by a request action from the requesting party. Each request action that is sent to the blockchain by a user or issuer, must be subsequently confirmed as valid, or invalid (rejected) by the smart contract. The smart contract is the only entity with the ability to directly modify the contract or the assets it controls. 
+The smart contract is an autonomous agent that listens to the Bitcoin (BSV) network for commands (request actions) addressed to it from users and issuers. It does not publish any actions to the blockchain without first being prompted by a request action from the requesting party. Each request action that is sent to the blockchain by a user or issuer, must be subsequently confirmed as valid, or invalid (rejected) by the smart contract. The smart contract is the only entity with the ability to directly modify the contract or the assets it controls.
 
 A response action is a 3-step process which is as follows:
 
@@ -32,7 +32,7 @@ A response action is a 3-step process which is as follows:
 
 3. Create and send response
 
-Responses to messages are also sent on-chain. A response is either a confirmation of the action requested, or a Rejection message. All confirmation actions result in some change to the state, rules or terms of the contract.  All response actions also have a timestamp embedded in the payload that represents the time that the smart contract first saw and processed the corresponding request action.  These timestamps can be used for rebuilding the contract's state from the blockchain, even if there have been block reorganizations. 
+Responses to messages are also sent on-chain. A response is either a confirmation of the action requested, or a Rejection message. All confirmation actions result in some change to the state, rules or terms of the contract.  All response actions also have a timestamp embedded in the payload that represents the time that the smart contract first saw and processed the corresponding request action.  These timestamps can be used for rebuilding the contract's state from the blockchain, even if there have been block reorganizations.
 
 When the contract finds that a request is in breach of the rules/T&C's that govern that contract, it will respond with a Rejection message. At this point it is up to the user's wallet to notify them of the rejection and for them to re-attempt the action in accordance with the rules. Most wallets that are configured to work with the Tokenized Protocol, will be able to prevent users from sending actions that do not meet the contract's requirement. For this reason, Rejection messages are expected to be rare.
 
@@ -50,6 +50,7 @@ Contract operations are used to establish and modify smart contracts that are op
 * [Contract Formation](../protocol/actions#action-contract-formation) (Action Code: C2)
 * [Contract Amendment](../protocol/actions#action-contract-amendment) (Action Code: C3)
 * [Static Contract Formation](../protocol/actions#action-static-contract-formation) (Action Code: C4)
+* [Contract Address Change](../protocol/actions#action-contract-address-change) (Action Code: C5)
 
 <a name="asset-operations"></a>
 ### Asset Operations

@@ -5,6 +5,7 @@
     - [Contract Operator](#contract-operator)
     - [Creating a Contract](#contract-create)
     - [Updating a Contract](#contract-update)
+    - [Contract Address Change](#contract-address-change)
 - [Static Contracts](#static-contracts)
 - [Contract Law](#contract-law)
     - [Contract Formation](#contract-formation)
@@ -101,12 +102,19 @@ For amendments that require a vote to be passed, the TXID of a Result action sho
 
 #### Contract Formation
 
-When the contract sees the [Contract Amendment](../protocol/actions#action-contract-amendment) action land in its wallet, it evaluates the action and looks to ensure that the modifications are valid. 
+When the contract sees the [Contract Amendment](../protocol/actions#action-contract-amendment) action land in its wallet, it evaluates the action and looks to ensure that the modifications are valid.
 If the contract determines that the amendment is valid, it issues a full [Contract Formation](../protocol/actions#action-contract-formation) action including the full details of the contract, the updated version number and a new timestamp.
 
 From this moment, all transaction requests to the contract must abide by the amended rules.
 
 ![Updated Contract Formation action](https://raw.githubusercontent.com/tokenized/docs/master/images/contract-formation-action-amendment.svg?sanitize=true "Contract Formation Action Transaction") {.frame .centered .padded}
+
+<a name="contract-address-change"></a>
+### Contract Address Change
+
+It is very important when hosting a smart contract that the private key is not compromised. If it is, then someone could break the rules of the contract, steal tokens, and just generally wreak havoc on all participants.
+
+In the worst case scenario, in which the private key of the contract is compromised, there is a recovery option. This requires changing the contract private key and thereby changing the address. This requires that the contract was created with a "master" address specified. The private key for the "master" address should be kept in cold storage because if it is compromised, then there is no recovery. A [Contract Address Change](../protocol/actions#action-contract-address-change) message signed by the "master" key can be sent to the current contract address. This message specifies a new contract address that will be required for all future request messages.
 
 <a name="static-contracts"></a>
 ## Static Contracts
@@ -153,5 +161,3 @@ Intention is traditionally handled by context, language and a signature by all r
 <a name="certainty"></a>
 #### Certainty
 Certainty is captured in the formalized and standardized metadata of the Tokenized actions.  All of the important aspects of the contract are detailed and must be included for it to be considered a valid Tokenized action.  The Tokenized Protocol does not have control over the actual written agreement and there can be some uncertainty as to whether the written agreement is legally binding in this capacity, but this may be true of all contracts.  Users will have to be vigilant with the contracts they enter into and should always seek professional legal advice if they are uncertain of a contract’s effect.
-
-
