@@ -1,12 +1,16 @@
 # Protocol Introduction
 
-The Tokenized Protocol provides a fairly simple system for defining message types, contents, and encoding. Using the methods described below everything is defined. Then code is generated to read and write those messages. Then smart agents and wallets can use that code to operate on the protocol.
-
+- [Introduction](#introduction)
 - [Envelope](#envelope)
 - [Data Types](#data-types)
     - [Primitive Types](#primitive-types)
     - [List Types](#list-types)
     - [Variable Sizes](#variable-sizes)
+
+<a name="introduction"></a>
+## Introduction
+
+The Tokenized Protocol provides a fairly simple system for defining message types, contents, and encoding. Using the methods described below everything is defined. Then code is generated to read and write those messages. Then smart agents and wallets can use that code to operate on the protocol.
 
 <a name="envelope"></a>
 ## Envelope
