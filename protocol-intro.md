@@ -1,4 +1,6 @@
-# Protocol Field Types
+# Protocol Introduction
+
+The Tokenized Protocol provides a fairly simple system for defining message types, contents, and encoding. Using the methods described below everything is defined. Then code is generated to read and write those messages. Then smart agents and wallets can use that code to operate on the protocol.
 
 - [Envelope](#envelope)
 - [Data Types](#data-types)
@@ -46,17 +48,17 @@ Each field in a protocol message is defined with a data type. Standard scalar ty
 
 <table>
 <tr>
-<td>Primitive</td>
+<th style="width:15%">Primitive</th>
 <td>Primitive types are the actual raw data types defined below. All of the other types are defined from primitive types.</td>
 </tr>
 
 <tr>
-<td>Alias</td>
+<th style="width:15%">Alias</th>
 <td>Alias types are references to other types. They can reference a primitive type that is used for a specific purpose. For example, an Address is a `varbin(small)`, but has a special encoding that is more strict than `varbin(small)`. They can also reference resource codes. For example, a `RejectionCode` is a code for an item in the rejection resource.</td>
 </tr>
 
 <tr>
-<td>Field</td>
+<th style="width:15%">Field</th>
 <td>Field types are composites of other types. They have multiple fields within them that can be primitive, alias, or other field types.</td>
 </tr>
 </table>
