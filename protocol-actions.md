@@ -1,7 +1,6 @@
 # Protocol Actions
 
 - [Introduction](#introduction)
-- [Header Fields](#header-fields)
 - [Available Actions](#all-actions)
 - [Field Types](#field-types)
 - [Field Aliases](#field-aliases)
@@ -12,37 +11,6 @@
 The following actions break down the construction of a Tokenized protocol message. The action is constructed by building a single string from each of the elements in order. Each field within the action is given a specific type, including standard types and compound types.
 
 See the [Transactions article](../concepts/transactions) for details on how to construct a complete transaction.
-
-<a name="header-fields"></a>
-## Header Fields
-
-Every protocol action is prepended with a header that specifies the necessary details about the subsequent action contents.
-
-<table>
-    <tr>
-        <th style="width:15%">Field</th>
-        <th style="width:15%">Type</th>
-        <th>Description</th>
-    </tr>
-    <tr>
-        <td>Version</td>
-        <td>
-            uint(1)
-        </td>
-        <td>
-            The version number that determines the structure of the action payload and field definitions.
-        </td>
-    </tr>
-    <tr>
-        <td>ActionCode</td>
-        <td>
-            fixedchar(2)
-        </td>
-        <td>
-            The Action Code that determines the expected contents of the action payload. Example: C1
-        </td>
-    </tr>
-</table>
 
 <a name="all-actions"></a>
 ## Available Actions
@@ -4432,7 +4400,7 @@ A VotingSystem defines all details of a Voting System.
 
 
 
-<a name="field-alises"></a>
+<a name="field-aliases"></a>
 ## Field Aliases
 
 <table>
@@ -4527,7 +4495,7 @@ A VotingSystem defines all details of a Voting System.
                 bin(32)
             </td>
             <td>
-                
+                Represents a unique identifier for an asset/token.
                  Example: 0102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f20
             </td>
         </tr>
@@ -4537,7 +4505,7 @@ A VotingSystem defines all details of a Voting System.
                 uint(8)
             </td>
             <td>
-                
+                Represents a time, encoded as a 64 bit unsigned integer representing the number of nanoseconds since the Unix epoch.
                  Example: Wed May 09 2018 00:00:00 GMT&#43;1000 (AEST)
             </td>
         </tr>
@@ -4557,7 +4525,7 @@ A VotingSystem defines all details of a Voting System.
                 bin(32)
             </td>
             <td>
-                
+                Represents a Bitcoin transaction ID, the double SHA256 hash of the serialized transaction.
                  Example: 9d1ef0b1201c1dec3c1eb1caf758a988205226173e988e7a04afb4ea9977f506
             </td>
         </tr>

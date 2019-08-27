@@ -1,14 +1,50 @@
 # Protocol Field Types
 
-- [Primitive Types](#primitive-types)
-- [List Types](#list-types)
-- [Variable Sizes](#variable-sizes)
-- [Basic Types](#basic-types)
+- [Envelope Fields](#envelope-fields)
+- [Common Field Types](#common-field-types)
+    - [Primitive Types](#primitive-types)
+    - [List Types](#list-types)
+    - [Variable Sizes](#variable-sizes)
+    - [Basic Types](#basic-types)
+
+<a name="header-fields"></a>
+## Envelope Fields
+
+Every protocol action is prepended with a header that specifies the necessary details about the subsequent action contents.
+
+<table>
+    <tr>
+        <th style="width:15%">Field</th>
+        <th style="width:15%">Type</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>PayloadVersion</td>
+        <td>
+            uint(1)
+        </td>
+        <td>
+            The version number that determines the structure of the action payload and field definitions.
+        </td>
+    </tr>
+    <tr>
+        <td>PayloadIdentifier</td>
+        <td>
+            fixedchar(2)
+        </td>
+        <td>
+            The Action Code that determines the expected contents of the action payload. Example: C1
+        </td>
+    </tr>
+</table>
+
+<a name="common-field-types"></a>
+## Common Field Types
 
 Each field in a protocol action is assigned with a data type. Standard scalar types have a single value, these include primitive and basic types. Fields can also be defined to be a list of objects.
 
 <a name="primitive-types"></a>
-## Primitive Types
+### Primitive Types
 
 <table>
    <tr>
@@ -46,14 +82,14 @@ Each field in a protocol action is assigned with a data type. Standard scalar ty
 </table>
 
 <a name="list-types"></a>
-## List Types
+### List Types
 
 Fields within the Tokenized protocol can be defined as a list of a specified data type.
 This is done by adding a `[]` to the end of the `type` value.
 The maximum number of elements in a list are defined by `listSize` as defined in <a href="#variable-sizes">Variable Sizes</a>.
 
 <a name="variable-sizes"></a>
-## Variable Sizes
+### Variable Sizes
 
 Fields within the Tokenized protocol can be lists of objects or variable length objects.
 The maximum number of elements in a list are defined by `listSize`.
@@ -83,57 +119,3 @@ If no value is specified for `listSize` or `varSize` then `tiny` is used.
         <td>Defines a max size of 2^64^-1 or approximately 1.8x10^19^.</td>
     </tr>
 </table>
-
-<a name="basic-types"></a>
-## Basic Types
-
-<a name="type-action"></a>
-### Action
-
-`Action` implements a base interface for all message types.
-
-Provides the ability to serialize the data as a Bitcoin OP_RETURN script.
-
-<a name="type-asset"></a>
-### Asset
-
-`Asset` is the interface for asset payloads.
-
-Provides the ability to serialize asset data.
-
-<a name="type-message"></a>
-### Message
-
-`Message` is the interface for message payloads.
-
-Provides the ability to serialize message data.
-
-<a name="type-tx-id"></a>
-### Tx Id
-
-`TxId` represents a Bitcoin transaction ID.
-
-It is the double SHA256 hash of the serialized transaction.
-
-`size` does not need to be specified and is always 32 bytes.
-
-<a name="type-asset-code"></a>
-### Asset Code
-
-`AssetCode` represents a unique identifier for an asset/token.
-
-`size` does not need to be specified and is always 32 bytes.
-
-<a name="type-contract-code"></a>
-### Contract Code
-
-`ContractCode` represents a unique identifier for a static contract.
-
-The `size` does not need to be specified and is always 32 bytes.
-
-<a name="type-timestamp"></a>
-### Timestamp
-
-`Timestamp` represents a time. It is encoded as a 64 bit unsigned integer representing the number of nanoseconds since the Unix epoch.
-
-The `size` does not need to be specified and is always 8 bytes.

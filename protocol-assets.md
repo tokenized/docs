@@ -614,7 +614,7 @@ Age restriction is used to specify required ages for asset ownership.
 
 
 
-<a name="field-alises"></a>
+<a name="field-aliases"></a>
 ## Field Aliases
 
 <table>
@@ -639,7 +639,7 @@ Age restriction is used to specify required ages for asset ownership.
                 uint(8)
             </td>
             <td>
-                
+                Represents a time, encoded as a 64 bit unsigned integer representing the number of nanoseconds since the Unix epoch.
                 
             </td>
         </tr>
