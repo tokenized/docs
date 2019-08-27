@@ -12,16 +12,16 @@ The Tokenized protocol features a complete messaging suite for all types of mess
 ## Available Messages
 
 <div class="content-list collection-method-list" markdown="1">
-- [Public Message](#message-public-message)
-- [Private Message](#message-private-message)
-- [Reverted Tx](#message-reverted-tx)
-- [Offer](#message-offer)
-- [Signature Request](#message-signature-request)
-- [Settlement Request](#message-settlement-request)
-- [Output Metadata](#message-output-metadata)
+- [Public Message](#public-message)
+- [Private Message](#private-message)
+- [Reverted Tx](#reverted-tx)
+- [Offer](#offer)
+- [Signature Request](#signature-request)
+- [Settlement Request](#settlement-request)
+- [Output Metadata](#output-metadata)
 </div>
 
-<a name="message-public-message"></a>
+<a name="public-message"></a>
 #### Public Message
 
 Generic public message or public announcement. Sent to an address(es).  Can be used for an official issuer announcement.
@@ -39,71 +39,61 @@ Generic public message or public announcement. Sent to an address(es).  Can be u
         <th style="width:15%">Type</th>
         <th>Description</th>
     </tr>
-    <tr>
-        <td>Version</td>
-        <td>
-            uint(1)
-        </td>
-        <td>
-            Payload Version
-             Example: 0
-        </td>
-    </tr>
-    <tr>
-        <td>Timestamp</td>
-        <td>
-            <a href="field-types#type-timestamp">Timestamp</a>
-        </td>
-        <td>
-            Timestamp in nanoseconds for when the message sender creates the transaction.
-            
-        </td>
-    </tr>
-    <tr>
-        <td>Subject</td>
-        <td>
-            varchar(16)
-        </td>
-        <td>
-            The subject / topic of the message.
-            
-        </td>
-    </tr>
-    <tr>
-        <td>Regarding</td>
-        <td>
-            <a href="field-types#type-output">Output</a>
-        </td>
-        <td>
-            The output of the message that this message is regarding (responding to).
-            
-        </td>
-    </tr>
-    <tr>
-        <td>PublicMessage</td>
-        <td>
-            <a href="field-types#type-document">Document</a>
-        </td>
-        <td>
-            Tokenized Ltd. announces product launch.
-            
-        </td>
-    </tr>
-    <tr>
-        <td>Attachments</td>
-        <td>
-            <a href="field-types#type-document">Document[32]</a>
-        </td>
-        <td>
-            Documents attached to the message.
-            
-        </td>
-    </tr>
+        <tr>
+            <td>Timestamp</td>
+            <td>
+                <a href="#alias-uint">Timestamp</a>
+            </td>
+            <td>
+                Timestamp in nanoseconds for when the message sender creates the transaction.
+                
+            </td>
+        </tr>
+        <tr>
+            <td>Subject</td>
+            <td>
+                varchar
+            </td>
+            <td>
+                The subject / topic of the message.
+                
+            </td>
+        </tr>
+        <tr>
+            <td>Regarding</td>
+            <td>
+                <a href="#type-outpoint">Outpoint</a>
+            </td>
+            <td>
+                The output of the message that this message is regarding (responding to).
+                
+            </td>
+        </tr>
+        <tr>
+            <td>PublicMessage</td>
+            <td>
+                <a href="#type-document">Document</a>
+            </td>
+            <td>
+                Tokenized Ltd. announces product launch.
+                
+            </td>
+        </tr>
+        <tr>
+            <td>Attachments</td>
+            <td>
+                <a href="#type-document">Document[0]</a>
+            </td>
+            <td>
+                Documents attached to the message.
+                
+            </td>
+        </tr>
 </table>
 
 
 
-<a name="message-private-message"></a>
+<a name="private-message"></a>
 #### Private Message
 
 Generic private message. Sent to another address(es). Encryption is to be used.
@@ -121,74 +111,64 @@ Generic private message. Sent to another address(es). Encryption is to be used.
         <th style="width:15%">Type</th>
         <th>Description</th>
     </tr>
-    <tr>
-        <td>Version</td>
-        <td>
-            uint(1)
-        </td>
-        <td>
-            Payload Version
-             Example: 0
-        </td>
-    </tr>
-    <tr>
-        <td>Timestamp</td>
-        <td>
-            <a href="field-types#type-timestamp">Timestamp</a>
-        </td>
-        <td>
-            Timestamp in nanoseconds for when the message sender creates the transaction.
-            
-        </td>
-    </tr>
-    <tr>
-        <td>Subject</td>
-        <td>
-            varchar(16)
-        </td>
-        <td>
-            The subject / topic of the message.
-            
-        </td>
-    </tr>
-    <tr>
-        <td>Regarding</td>
-        <td>
-            <a href="field-types#type-output">Output</a>
-        </td>
-        <td>
-            The output of the message that this message is regarding (responding to).
-            
-        </td>
-    </tr>
-    <tr>
-        <td>PrivateMessage</td>
-        <td>
-            <a href="field-types#type-document">Document</a>
-        </td>
-        <td>
-            Tokenized Ltd announces product launch.
-            
-        </td>
-    </tr>
-    <tr>
-        <td>Attachments</td>
-        <td>
-            <a href="field-types#type-document">Document[32]</a>
-        </td>
-        <td>
-            Documents attached to the message.
-            
-        </td>
-    </tr>
+        <tr>
+            <td>Timestamp</td>
+            <td>
+                <a href="#alias-uint">Timestamp</a>
+            </td>
+            <td>
+                Timestamp in nanoseconds for when the message sender creates the transaction.
+                
+            </td>
+        </tr>
+        <tr>
+            <td>Subject</td>
+            <td>
+                varchar
+            </td>
+            <td>
+                The subject / topic of the message.
+                
+            </td>
+        </tr>
+        <tr>
+            <td>Regarding</td>
+            <td>
+                <a href="#type-outpoint">Outpoint</a>
+            </td>
+            <td>
+                The output of the message that this message is regarding (responding to).
+                
+            </td>
+        </tr>
+        <tr>
+            <td>PrivateMessage</td>
+            <td>
+                <a href="#type-document">Document</a>
+            </td>
+            <td>
+                Tokenized Ltd announces product launch.
+                
+            </td>
+        </tr>
+        <tr>
+            <td>Attachments</td>
+            <td>
+                <a href="#type-document">Document[0]</a>
+            </td>
+            <td>
+                Documents attached to the message.
+                
+            </td>
+        </tr>
 </table>
 
 
 
-<a name="message-reverted-tx"></a>
+<a name="reverted-tx"></a>
 #### Reverted Tx
 
-A message that contains a bitcoin transaction that was accepted by the network or an agent and then invalidated by a reorg, or zero conf double spend. This serves as on chain evidence of the sending party's signatures and approval for the given transaction.
+A message that contains a bitcoin transaction that was accepted by the network or an agent and then invalidated by a reorg, or zero conf double spend. This serves as on chain evidence of the sending party&#39;s signatures and approval for the given transaction.
 
 <table>
     <tr>
@@ -203,44 +183,34 @@ A message that contains a bitcoin transaction that was accepted by the network o
         <th style="width:15%">Type</th>
         <th>Description</th>
     </tr>
-    <tr>
-        <td>Version</td>
-        <td>
-            uint(1)
-        </td>
-        <td>
-            Payload Version
-             Example: 0
-        </td>
-    </tr>
-    <tr>
-        <td>Timestamp</td>
-        <td>
-            <a href="field-types#type-timestamp">Timestamp</a>
-        </td>
-        <td>
-            Timestamp in nanoseconds for when the message sender creates the transaction.
-            
-        </td>
-    </tr>
-    <tr>
-        <td>Transaction</td>
-        <td>
-            varbin(32)
-        </td>
-        <td>
-            Serialized bitcoin transaction that was reverted/invalidated after being accepted.
-            
-        </td>
-    </tr>
+        <tr>
+            <td>Timestamp</td>
+            <td>
+                <a href="#alias-uint">Timestamp</a>
+            </td>
+            <td>
+                Timestamp in nanoseconds for when the message sender creates the transaction.
+                
+            </td>
+        </tr>
+        <tr>
+            <td>Transaction</td>
+            <td>
+                varbin
+            </td>
+            <td>
+                Serialized bitcoin transaction that was reverted/invalidated after being accepted.
+                
+            </td>
+        </tr>
 </table>
 
 
 
-<a name="message-offer"></a>
+<a name="offer"></a>
 #### Offer
 
-A message that contains all of the details required for an agreement to be formed. Sent to an address(es). The Offer should have all, or nearly all, of the details required for the receiving party to accept the offer.  The Offer shall be in the form of a partially formed Bitcoin transaction with all of the relevent details (offer, consideration, offeror's payment/receipt details, etc.).  The Offer message is different to a Signature Request message in that it is missing the offeree's payment/receipt details (eg. UTXOs). If the Offer message is well received by the offeree, then the offeree can add their relevent details (eg. inputs/outputs) and sign the transaction.  If an additional signature is required from the offeror at this point, then the partially-signed transaction can be sent to the offeror by way of a Signature Request message.
+A message that contains all of the details required for an agreement to be formed. Sent to an address(es). The Offer should have all, or nearly all, of the details required for the receiving party to accept the offer.  The Offer shall be in the form of a partially formed Bitcoin transaction with all of the relevent details (offer, consideration, offeror&#39;s payment/receipt details, etc.).  The Offer message is different to a Signature Request message in that it is missing the offeree&#39;s payment/receipt details (eg. UTXOs). If the Offer message is well received by the offeree, then the offeree can add their relevent details (eg. inputs/outputs) and sign the transaction.  If an additional signature is required from the offeror at this point, then the partially-signed transaction can be sent to the offeror by way of a Signature Request message.
 
 <table>
     <tr>
@@ -255,41 +225,31 @@ A message that contains all of the details required for an agreement to be forme
         <th style="width:15%">Type</th>
         <th>Description</th>
     </tr>
-    <tr>
-        <td>Version</td>
-        <td>
-            uint(1)
-        </td>
-        <td>
-            Payload Version
-             Example: 0
-        </td>
-    </tr>
-    <tr>
-        <td>Timestamp</td>
-        <td>
-            <a href="field-types#type-timestamp">Timestamp</a>
-        </td>
-        <td>
-            Timestamp in nanoseconds for when the message sender created the offer.
-            
-        </td>
-    </tr>
-    <tr>
-        <td>Payload</td>
-        <td>
-            varbin(32)
-        </td>
-        <td>
-            Serialized Tokenized OP_RETURN message. The message needs data added by another party upon acceptance of offer.
-            
-        </td>
-    </tr>
+        <tr>
+            <td>Timestamp</td>
+            <td>
+                <a href="#alias-uint">Timestamp</a>
+            </td>
+            <td>
+                Timestamp in nanoseconds for when the message sender created the offer.
+                
+            </td>
+        </tr>
+        <tr>
+            <td>Payload</td>
+            <td>
+                varbin
+            </td>
+            <td>
+                Serialized Tokenized OP_RETURN message. The message needs data added by another party upon acceptance of offer.
+                
+            </td>
+        </tr>
 </table>
 
 
 
-<a name="message-signature-request"></a>
+<a name="signature-request"></a>
 #### Signature Request
 
 Partially-signed transactions (Tokenized actions, Bitcoin, Multisig, Threshold Signatures, etc.) can be passed around on-chain to the parties (including Smart Contracts) that still have to sign the transaction.
@@ -307,41 +267,31 @@ Partially-signed transactions (Tokenized actions, Bitcoin, Multisig, Threshold S
         <th style="width:15%">Type</th>
         <th>Description</th>
     </tr>
-    <tr>
-        <td>Version</td>
-        <td>
-            uint(1)
-        </td>
-        <td>
-            Payload Version
-             Example: 0
-        </td>
-    </tr>
-    <tr>
-        <td>Timestamp</td>
-        <td>
-            <a href="field-types#type-timestamp">Timestamp</a>
-        </td>
-        <td>
-            Timestamp in nanoseconds for when the message sender creates the transaction.
-            
-        </td>
-    </tr>
-    <tr>
-        <td>Payload</td>
-        <td>
-            varbin(32)
-        </td>
-        <td>
-            Full serialized bitcoin tx with multiple inputs from different wallets/users.
-            
-        </td>
-    </tr>
+        <tr>
+            <td>Timestamp</td>
+            <td>
+                <a href="#alias-uint">Timestamp</a>
+            </td>
+            <td>
+                Timestamp in nanoseconds for when the message sender creates the transaction.
+                
+            </td>
+        </tr>
+        <tr>
+            <td>Payload</td>
+            <td>
+                varbin
+            </td>
+            <td>
+                Full serialized bitcoin tx with multiple inputs from different wallets/users.
+                
+            </td>
+        </tr>
 </table>
 
 
 
-<a name="message-settlement-request"></a>
+<a name="settlement-request"></a>
 #### Settlement Request
 
 A message that contains a multi-contract settlement that needs settlement data added by another contract. Sent to another contract to request data be added.
@@ -359,61 +309,51 @@ A message that contains a multi-contract settlement that needs settlement data a
         <th style="width:15%">Type</th>
         <th>Description</th>
     </tr>
-    <tr>
-        <td>Version</td>
-        <td>
-            uint(1)
-        </td>
-        <td>
-            Payload Version
-             Example: 0
-        </td>
-    </tr>
-    <tr>
-        <td>Timestamp</td>
-        <td>
-            <a href="field-types#type-timestamp">Timestamp</a>
-        </td>
-        <td>
-            Timestamp in nanoseconds for when the message sender creates the transaction.
-            
-        </td>
-    </tr>
-    <tr>
-        <td>TransferTxId</td>
-        <td>
-            <a href="field-types#type-tx-id">TxId</a>
-        </td>
-        <td>
-            Tx Id of the transfer request transaction that triggered this message.
-            
-        </td>
-    </tr>
-    <tr>
-        <td>ContractFees</td>
-        <td>
-            <a href="field-types#type-target-address">TargetAddress[8]</a>
-        </td>
-        <td>
-            Contract fees (in bitcoin) and addresses(PKHs) where fees should be paid. Added by each contract as settlement data is added.
-            
-        </td>
-    </tr>
-    <tr>
-        <td>Settlement</td>
-        <td>
-            varbin(32)
-        </td>
-        <td>
-            Serialized settlement OP_RETURN that needs data added by another contract.
-            
-        </td>
-    </tr>
+        <tr>
+            <td>Timestamp</td>
+            <td>
+                <a href="#alias-uint">Timestamp</a>
+            </td>
+            <td>
+                Timestamp in nanoseconds for when the message sender creates the transaction.
+                
+            </td>
+        </tr>
+        <tr>
+            <td>TransferTxId</td>
+            <td>
+                <a href="#alias-bin">TxId</a>
+            </td>
+            <td>
+                Tx Id of the transfer request transaction that triggered this message.
+                
+            </td>
+        </tr>
+        <tr>
+            <td>ContractFees</td>
+            <td>
+                <a href="#type-target-address">TargetAddress[0]</a>
+            </td>
+            <td>
+                Contract fees (in bitcoin) and addresses(PKHs) where fees should be paid. Added by each contract as settlement data is added.
+                
+            </td>
+        </tr>
+        <tr>
+            <td>Settlement</td>
+            <td>
+                varbin
+            </td>
+            <td>
+                Serialized settlement OP_RETURN that needs data added by another contract.
+                
+            </td>
+        </tr>
 </table>
 
 
 
-<a name="message-output-metadata"></a>
+<a name="output-metadata"></a>
 #### Output Metadata
 
 Metadata associated with the output. Aka Transaction details. It is used to describe the purpose of the transaction and add other relevant information. Often encrypted (DH, RSA) to make it private for one or more parties.  DH for b2b where multiple parties can see the description.  RSA or the like for descriptions only visible to one of the transacting parties. Optional
@@ -431,46 +371,36 @@ Metadata associated with the output. Aka Transaction details. It is used to desc
         <th style="width:15%">Type</th>
         <th>Description</th>
     </tr>
-    <tr>
-        <td>Version</td>
-        <td>
-            uint(1)
-        </td>
-        <td>
-            Payload Version
-             Example: 0
-        </td>
-    </tr>
-    <tr>
-        <td>OutputDescription</td>
-        <td>
-            varchar(32)
-        </td>
-        <td>
-            A Description that accompanies the output. A transaction description.
-              Can be NULL Example: eg. Invoice 3024, Pay Mike back for camping.
-        </td>
-    </tr>
-    <tr>
-        <td>Tags</td>
-        <td>
-            <a href="resources#resource-tags">Tag[8]</a>
-        </td>
-        <td>
-            Predefined values for describing the output.
-            
-        </td>
-    </tr>
-    <tr>
-        <td>CustomTags</td>
-        <td>
-            <a href="field-types#type-output-tag">OutputTag[8]</a>
-        </td>
-        <td>
-            Free form text fields for describing the output. Groceries, Moomba Gas Compressor Project, Cash Register 3, Fitness, Entertainment, Special, VIP Section, North Carolina Store, Waitress: Cindy Smith, etc.
-            
-        </td>
-    </tr>
+        <tr>
+            <td>OutputDescription</td>
+            <td>
+                varchar
+            </td>
+            <td>
+                A Description that accompanies the output. A transaction description.
+                  Can be NULL Example: eg. Invoice 3024, Pay Mike back for camping.
+            </td>
+        </tr>
+        <tr>
+            <td>Tags</td>
+            <td>
+                <a href="#alias-uint">uint[0]</a>
+            </td>
+            <td>
+                Predefined values for describing the output.
+                
+            </td>
+        </tr>
+        <tr>
+            <td>CustomTags</td>
+            <td>
+                <a href="#type-output-tag">OutputTag[0]</a>
+            </td>
+            <td>
+                Free form text fields for describing the output. Groceries, Moomba Gas Compressor Project, Cash Register 3, Fitness, Entertainment, Special, VIP Section, North Carolina Store, Waitress: Cindy Smith, etc.
+                
+            </td>
+        </tr>
 </table>
 
 

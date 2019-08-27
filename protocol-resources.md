@@ -62,7 +62,6 @@ International Organization for Standardization code for Currency. 3 character co
 - ColombianPeso
 - CostaRicanColon
 - CubanConvertiblePeso
-- CubanConvertiblePeso
 - CapeVerdeanEscudo
 - CzechKoruna
 - DjiboutianFranc
@@ -172,7 +171,6 @@ International Organization for Standardization code for Currency. 3 character co
 - UgandanShilling
 - UnitedStatesDollar
 - UruguayanPeso
-- UruguayanPeso
 - UzbekistaniSom
 - VenezuelanBolivarSoberano
 - VietlabelseDong
@@ -190,7 +188,7 @@ International Organization for Standardization code for Currency. 3 character co
 <a name="resource-entities"></a>
 #### Entities
 
-Legal Entities & Ownership Structures. 1 character.
+Legal Entities &amp; Ownership Structures. 1 character.
 
 [View Source File](https://github.com/tokenized/specification/blob/master/src/resources/develop/Entities.yaml)
 
@@ -566,6 +564,7 @@ Roles that entities play in relation to their interactions with other entities. 
 #### Tags
 
 Predefined tags for output metadata. Multiple values can be assigned to an output to describe a tx output.
+
 
 [View Source File](https://github.com/tokenized/specification/blob/master/src/resources/develop/Tags.yaml)
 
