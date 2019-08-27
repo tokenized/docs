@@ -1,13 +1,10 @@
-
-
-
-
 # Protocol Actions
 
 - [Introduction](#introduction)
 - [Header Fields](#header-fields)
 - [Available Actions](#all-actions)
 - [Field Types](#field-types)
+- [Field Aliases](#field-aliases)
 
 <a name="introduction"></a>
 ## Introduction
@@ -98,247 +95,271 @@ Allows the administration to tell the smart contract what they want the details 
         <th style="width:15%">Type</th>
         <th>Description</th>
     </tr>
-        <tr>
-            <td>ContractName</td>
-            <td>
-                varchar(tiny)
-            </td>
-            <td>
-                Can be any unique identifying string, including human readable names for branding/vanity purposes. Contract identifier (instance) is the bitcoin public key hash address. If the public address is lost, then the administration will have to reissue the entire contract, Asset Definition and tokens with the new public address. Smart contracts can be branded and specialized to suit any terms and conditions.
+    <tr>
+        <td>ContractName</td>
+        <td>
+            varchar(tiny)
+        </td>
+        <td>
+            Can be any unique identifying string, including human readable names for branding/vanity purposes. Contract identifier (instance) is the bitcoin public key hash address. If the public address is lost, then the administration will have to reissue the entire contract, Asset Definition and tokens with the new public address. Smart contracts can be branded and specialized to suit any terms and conditions.
 
-                 Example: Tesla - Shareholder Agreement
-            </td>
-        </tr>
-        <tr>
-            <td>BodyOfAgreementType</td>
-            <td>
-                uint(1)
-            </td>
-            <td>
-                1 - SHA-256 Hash, 2 - Tokenized Body of Agreement Format
-                Body of Agreement - Amendments can be restricted to a vote. Example: 1
-            </td>
-        </tr>
-        <tr>
-            <td>BodyOfAgreement</td>
-            <td>
-                varbin(medium)
-            </td>
-            <td>
-                SHA-256 hash of the body of the agreement (full contract in pdf format or the like) or the full terms and conditions of an agreement in the Tokenized Body of Agreement format.  This is specific to the smart contract and relevant Assets.  Legal and technical information.
-                
-            </td>
-        </tr>
-        <tr>
-            <td>ContractType</td>
-            <td>
-                varchar(tiny)
-            </td>
-            <td>
-                Describes the purpose of the contract.
-                 Example: Shareholder Agreement
-            </td>
-        </tr>
-        <tr>
-            <td>SupportingDocs</td>
-            <td>
-                <a href="#type-document">Document[tiny]</a>
-            </td>
-            <td>
-                Supporting documents that are important to the contract.
-                
-            </td>
-        </tr>
-        <tr>
-            <td>GoverningLaw</td>
-            <td>
-                fixedchar(5)
-            </td>
-            <td>
-                5 Letter Code to identify which governing law the contract will adhere to.  Disputes are to be settled by this law in the jurisdiction specified below. Private dispute resolution organizations can be used as well.  A custom code just needs to be defined.
-                Governing Law - Amendments can be restricted to a vote. Example: USA
-            </td>
-        </tr>
-        <tr>
-            <td>Jurisdiction</td>
-            <td>
-                fixedchar(5)
-            </td>
-            <td>
-                Legal proceedings/arbitration will take place using the specified Governing Law in this location.
-                Jurisdiction - Amendments can be restricted to a vote. Example: US-CA
-            </td>
-        </tr>
-        <tr>
-            <td>ContractExpiration</td>
-            <td>
-                <a href="#alias-uint">uint(8)</a>
-            </td>
-            <td>
-                All actions related to the contract will cease to work after this timestamp. The smart contract will stop running.  This will allow many token use cases to be able to calculate total smart contract running costs for the entire life of the contract. Eg. an issuer is creating tickets for an event on the 5th of June 2018.  The smart contract will facilitate exchange and send transactions up until the 6th of June.  Wallets can use this to forget tokens that are no longer valid - or at least store them in an &#39;Expired&#39; folder.
-                Contract Expiration - Amendments can be restricted to a vote.
-            </td>
-        </tr>
-        <tr>
-            <td>ContractURI</td>
-            <td>
-                varchar(tiny)
-            </td>
-            <td>
-                Points to an information page that also has a copy of the Contract.  Anyone can go to the website to have a look at the price/token, information about the issuer (company), information about the asset, legal information, etc.  There will also be a way for token owners to vote on this page and contact details with the issuer/tokenized companies. Could be a IPv6/IPv4, or txn-id for on-chain information or even a public address (DNS).
-                 Example: https://tokenized.com/Contract/3qeoSCg7JmfSnJesJFojj
-            </td>
-        </tr>
-        <tr>
-            <td>Issuer</td>
-            <td>
-                <a href="#type-entity">Entity</a>
-            </td>
-            <td>
-                The issuer of this contract.
-                
-            </td>
-        </tr>
-        <tr>
-            <td>IssuerLogoURL</td>
-            <td>
-                varchar(tiny)
-            </td>
-            <td>
-                The URL of the issuer&#39;s logo.
-                 Example: https://example.com/images/logo.png
-            </td>
-        </tr>
-        <tr>
-            <td>ContractOperatorIncluded</td>
-            <td>
-                bool
-            </td>
-            <td>
-                If true, then the second input is a contract operator. If false, then all additional inputs are just funding and &#34;includes&#34; fields are skipped in serialization.
-                
-            </td>
-        </tr>
-        <tr>
-            <td>ContractOperator</td>
-            <td>
-                <a href="#type-entity">Entity</a>
-            </td>
-            <td>
-                An additional entity with operator access to the contract.
-                
-            </td>
-        </tr>
-        <tr>
-            <td>AdminOracle</td>
-            <td>
-                <a href="#type-oracle">Oracle</a>
-            </td>
-            <td>
-                The oracle that provided the signature used to verify the administration&#39;s identity.
-                
-            </td>
-        </tr>
-        <tr>
-            <td>AdminOracleSignature</td>
-            <td>
-                varbin(tiny)
-            </td>
-            <td>
-                The ECDSA signature provided by the oracle specified. The first input must correspond to the administration entity and, if a contract operator is included, the second input must correspond to the contract operator entity.
-                
-            </td>
-        </tr>
-        <tr>
-            <td>AdminOracleSigBlockHeight</td>
-            <td>
-                uint(4)
-            </td>
-            <td>
-                The block height of the block hash used in the oracle signature.
-                
-            </td>
-        </tr>
-        <tr>
-            <td>ContractFee</td>
-            <td>
-                uint(8)
-            </td>
-            <td>
-                Satoshis required to be paid to the contract for each asset action.
-                
-            </td>
-        </tr>
-        <tr>
-            <td>VotingSystems</td>
-            <td>
-                <a href="#type-voting-system">VotingSystem[tiny]</a>
-            </td>
-            <td>
-                A list of voting systems.
-                
-            </td>
-        </tr>
-        <tr>
-            <td>ContractAuthFlags</td>
-            <td>
-                varbin(small)
-            </td>
-            <td>
-                A set of switches that define the authorization rules for this contract. See the Authorization Flags documentation for more detail. Other terms and conditions that are out of the smart contract&#39;s control should be listed in the Body of Agreement.
-                Contract Flags - Amendments can be restricted to a vote.  Specified in the Voting System.
-            </td>
-        </tr>
-        <tr>
-            <td>RestrictedQtyAssets</td>
-            <td>
-                uint(8)
-            </td>
-            <td>
-                Number of Assets (non-fungible) permitted on this contract. 0 if unlimited which will display an infinity symbol in UI
-                Qty of Assets - Amendments can be restricted to a vote. Example: 1
-            </td>
-        </tr>
-        <tr>
-            <td>AdministrationProposal</td>
-            <td>
-                bool
-            </td>
-            <td>
-                Set to true if the administration is permitted to make proposals outside of the smart contract scope.
-                General Governance Example: true
-            </td>
-        </tr>
-        <tr>
-            <td>HolderProposal</td>
-            <td>
-                bool
-            </td>
-            <td>
-                Set to true if a holder is permitted to make proposals outside of the smart contract scope.
-                 Example: true
-            </td>
-        </tr>
-        <tr>
-            <td>Oracles</td>
-            <td>
-                <a href="#type-oracle">Oracle[tiny]</a>
-            </td>
-            <td>
-                A list of oracles that provide approval for all token transfers for all assets under the contract.
-                
-            </td>
-        </tr>
-        <tr>
-            <td>MasterPKH</td>
-            <td>
-                <a href="#alias-varbin">varbin(tiny)</a>
-            </td>
-            <td>
-                The public key hash of the contract&#39;s master key. This key has the ability to change the active contract address in case of a security failure with the active contract key.
-                
-            </td>
-        </tr>
+             Example: Tesla - Shareholder Agreement
+        </td>
+    </tr>
+
+    <tr>
+        <td>BodyOfAgreementType</td>
+        <td>
+            uint(1)
+        </td>
+        <td>
+            1 - SHA-256 Hash, 2 - Tokenized Body of Agreement Format
+            Body of Agreement - Amendments can be restricted to a vote. Example: 1
+        </td>
+    </tr>
+
+    <tr>
+        <td>BodyOfAgreement</td>
+        <td>
+            varbin(medium)
+        </td>
+        <td>
+            SHA-256 hash of the body of the agreement (full contract in pdf format or the like) or the full terms and conditions of an agreement in the Tokenized Body of Agreement format.  This is specific to the smart contract and relevant Assets.  Legal and technical information.
+            
+        </td>
+    </tr>
+
+    <tr>
+        <td>ContractType</td>
+        <td>
+            varchar(tiny)
+        </td>
+        <td>
+            Describes the purpose of the contract.
+             Example: Shareholder Agreement
+        </td>
+    </tr>
+
+    <tr>
+        <td>SupportingDocs</td>
+        <td>
+            <a href="#type-document">Document[tiny]</a>
+        </td>
+        <td>
+            Supporting documents that are important to the contract.
+            
+        </td>
+    </tr>
+
+    <tr>
+        <td>GoverningLaw</td>
+        <td>
+            fixedchar(5)
+        </td>
+        <td>
+            5 Letter Code to identify which governing law the contract will adhere to.  Disputes are to be settled by this law in the jurisdiction specified below. Private dispute resolution organizations can be used as well.  A custom code just needs to be defined.
+            Governing Law - Amendments can be restricted to a vote. Example: USA
+        </td>
+    </tr>
+
+    <tr>
+        <td>Jurisdiction</td>
+        <td>
+            fixedchar(5)
+        </td>
+        <td>
+            Legal proceedings/arbitration will take place using the specified Governing Law in this location.
+            Jurisdiction - Amendments can be restricted to a vote. Example: US-CA
+        </td>
+    </tr>
+
+    <tr>
+        <td>ContractExpiration</td>
+        <td>
+            <a href="#alias-timestamp">Timestamp</a>
+        </td>
+        <td>
+            All actions related to the contract will cease to work after this timestamp. The smart contract will stop running.  This will allow many token use cases to be able to calculate total smart contract running costs for the entire life of the contract. Eg. an issuer is creating tickets for an event on the 5th of June 2018.  The smart contract will facilitate exchange and send transactions up until the 6th of June.  Wallets can use this to forget tokens that are no longer valid - or at least store them in an &#39;Expired&#39; folder.
+            Contract Expiration - Amendments can be restricted to a vote.
+        </td>
+    </tr>
+
+    <tr>
+        <td>ContractURI</td>
+        <td>
+            varchar(tiny)
+        </td>
+        <td>
+            Points to an information page that also has a copy of the Contract.  Anyone can go to the website to have a look at the price/token, information about the issuer (company), information about the asset, legal information, etc.  There will also be a way for token owners to vote on this page and contact details with the issuer/tokenized companies. Could be a IPv6/IPv4, or txn-id for on-chain information or even a public address (DNS).
+             Example: https://tokenized.com/Contract/3qeoSCg7JmfSnJesJFojj
+        </td>
+    </tr>
+
+    <tr>
+        <td>Issuer</td>
+        <td>
+            <a href="#type-entity">Entity</a>
+        </td>
+        <td>
+            The issuer of this contract.
+            
+        </td>
+    </tr>
+
+    <tr>
+        <td>IssuerLogoURL</td>
+        <td>
+            varchar(tiny)
+        </td>
+        <td>
+            The URL of the issuer&#39;s logo.
+             Example: https://example.com/images/logo.png
+        </td>
+    </tr>
+
+    <tr>
+        <td>ContractOperatorIncluded</td>
+        <td>
+            bool
+        </td>
+        <td>
+            If true, then the second input is a contract operator. If false, then all additional inputs are just funding and &#34;includes&#34; fields are skipped in serialization.
+            
+        </td>
+    </tr>
+
+    <tr>
+        <td>ContractOperator</td>
+        <td>
+            <a href="#type-entity">Entity</a>
+        </td>
+        <td>
+            An additional entity with operator access to the contract.
+            
+        </td>
+    </tr>
+
+    <tr>
+        <td>AdminOracle</td>
+        <td>
+            <a href="#type-oracle">Oracle</a>
+        </td>
+        <td>
+            The oracle that provided the signature used to verify the administration&#39;s identity.
+            
+        </td>
+    </tr>
+
+    <tr>
+        <td>AdminOracleSignature</td>
+        <td>
+            varbin(tiny)
+        </td>
+        <td>
+            The ECDSA signature provided by the oracle specified. The first input must correspond to the administration entity and, if a contract operator is included, the second input must correspond to the contract operator entity.
+            
+        </td>
+    </tr>
+
+    <tr>
+        <td>AdminOracleSigBlockHeight</td>
+        <td>
+            uint(4)
+        </td>
+        <td>
+            The block height of the block hash used in the oracle signature.
+            
+        </td>
+    </tr>
+
+    <tr>
+        <td>ContractFee</td>
+        <td>
+            uint(8)
+        </td>
+        <td>
+            Satoshis required to be paid to the contract for each asset action.
+            
+        </td>
+    </tr>
+
+    <tr>
+        <td>VotingSystems</td>
+        <td>
+            <a href="#type-voting-system">VotingSystem[tiny]</a>
+        </td>
+        <td>
+            A list of voting systems.
+            
+        </td>
+    </tr>
+
+    <tr>
+        <td>ContractAuthFlags</td>
+        <td>
+            varbin(small)
+        </td>
+        <td>
+            A set of switches that define the authorization rules for this contract. See the Authorization Flags documentation for more detail. Other terms and conditions that are out of the smart contract&#39;s control should be listed in the Body of Agreement.
+            Contract Flags - Amendments can be restricted to a vote.  Specified in the Voting System.
+        </td>
+    </tr>
+
+    <tr>
+        <td>RestrictedQtyAssets</td>
+        <td>
+            uint(8)
+        </td>
+        <td>
+            Number of Assets (non-fungible) permitted on this contract. 0 if unlimited which will display an infinity symbol in UI
+            Qty of Assets - Amendments can be restricted to a vote. Example: 1
+        </td>
+    </tr>
+
+    <tr>
+        <td>AdministrationProposal</td>
+        <td>
+            bool
+        </td>
+        <td>
+            Set to true if the administration is permitted to make proposals outside of the smart contract scope.
+            General Governance Example: true
+        </td>
+    </tr>
+
+    <tr>
+        <td>HolderProposal</td>
+        <td>
+            bool
+        </td>
+        <td>
+            Set to true if a holder is permitted to make proposals outside of the smart contract scope.
+             Example: true
+        </td>
+    </tr>
+
+    <tr>
+        <td>Oracles</td>
+        <td>
+            <a href="#type-oracle">Oracle[tiny]</a>
+        </td>
+        <td>
+            A list of oracles that provide approval for all token transfers for all assets under the contract.
+            
+        </td>
+    </tr>
+
+    <tr>
+        <td>MasterPKH</td>
+        <td>
+            <a href="#alias-public-key-hash">PublicKeyHash</a>
+        </td>
+        <td>
+            The public key hash of the contract&#39;s master key. This key has the ability to change the active contract address in case of a security failure with the active contract key.
+            
+        </td>
+    </tr>
+
 </table>
 
 ##### Transaction Summary
@@ -402,257 +423,282 @@ This txn is created by the contract (smart contract/off-chain agent/token contra
         <th style="width:15%">Type</th>
         <th>Description</th>
     </tr>
-        <tr>
-            <td>ContractName</td>
-            <td>
-                varchar(tiny)
-            </td>
-            <td>
-                Can be any unique identifying string, including human readable names for branding/vanity purposes. Contract identifier (instance) is the bitcoin public key hash address. If the public address is lost, then the administration will have to reissue the entire contract, asset definition and tokens with the new public address. Smart contracts can be branded and specialized to suit any terms and conditions.
+    <tr>
+        <td>ContractName</td>
+        <td>
+            varchar(tiny)
+        </td>
+        <td>
+            Can be any unique identifying string, including human readable names for branding/vanity purposes. Contract identifier (instance) is the bitcoin public key hash address. If the public address is lost, then the administration will have to reissue the entire contract, asset definition and tokens with the new public address. Smart contracts can be branded and specialized to suit any terms and conditions.
 
-                 Example: Tesla - Shareholder Agreement
-            </td>
-        </tr>
-        <tr>
-            <td>BodyOfAgreementType</td>
-            <td>
-                uint(1)
-            </td>
-            <td>
-                1 - SHA-256 Hash, 2 - Tokenized Body of Agreement Format
-                Body of Agreement - Amendments can be restricted to a vote. Example: 1
-            </td>
-        </tr>
-        <tr>
-            <td>BodyOfAgreement</td>
-            <td>
-                varbin(medium)
-            </td>
-            <td>
-                SHA-256 hash of the body of the agreement (full contract in pdf format or the like) or the full terms and conditions of an agreement in the Tokenized Body of Agreement format.  This is specific to the smart contract and relevant Assets.  Legal and technical information.
-                
-            </td>
-        </tr>
-        <tr>
-            <td>ContractType</td>
-            <td>
-                varchar(tiny)
-            </td>
-            <td>
-                Describes the purpose of the contract.
-                 Example: Shareholder Agreement
-            </td>
-        </tr>
-        <tr>
-            <td>SupportingDocs</td>
-            <td>
-                <a href="#type-document">Document[tiny]</a>
-            </td>
-            <td>
-                Supporting documents that are important to the contract.
-                
-            </td>
-        </tr>
-        <tr>
-            <td>GoverningLaw</td>
-            <td>
-                fixedchar(5)
-            </td>
-            <td>
-                5 Letter Code to identify which governing law the contract will adhere to.  Disputes are to be settled by this law in the jurisdiction specified below. Private dispute resolution organizations can be used as well.  A custom code just needs to be defined.
-                Governing Law - Amendments can be restricted to a vote. Example: USA
-            </td>
-        </tr>
-        <tr>
-            <td>Jurisdiction</td>
-            <td>
-                fixedchar(5)
-            </td>
-            <td>
-                Legal proceedings/arbitration will take place using the specified Governing Law in this location.
-                Jurisdiction - Amendments can be restricted to a vote. Example: US-CA
-            </td>
-        </tr>
-        <tr>
-            <td>ContractExpiration</td>
-            <td>
-                <a href="#alias-uint">uint(8)</a>
-            </td>
-            <td>
-                All actions related to the contract will cease to work after this timestamp. The smart contract will stop running.  This will allow many token use cases to be able to calculate smart contract running costs. Eg. an issuer is creating tickets for an event on the 5th of June 2018.  The smart contract will facilitate exchange and send transactions up until the 6th of June.  Wallets can use this to forget tokens that are no longer valid - or at least store them in an &#39;Expired&#39; folder.
-                Contract Expiration - Amendments can be restricted to a vote. Example: Wed May 09 2018 00:00:00 GMT&#43;1000 (AEST)
-            </td>
-        </tr>
-        <tr>
-            <td>ContractURI</td>
-            <td>
-                varchar(tiny)
-            </td>
-            <td>
-                Length 0-255 bytes.  0 is valid. Points to an information page that also has a copy of the Contract.  Anyone can go to the website to have a look at the price/token, information about the Issuer (company), information about the Asset, legal information, etc.  There will also be a way for Token Owners to vote on this page and contact details with the Issuer/tokenized companies. Could be a IPv6/IPv4, an IPFS address (hash) or txn-id for on chain information or even a public address (DNS).
-                 Example: https://tokenized.com/Contract/3qeoSCg7JmfSnJesJFojj
-            </td>
-        </tr>
-        <tr>
-            <td>Issuer</td>
-            <td>
-                <a href="#type-entity">Entity</a>
-            </td>
-            <td>
-                The issuer of this contract.
-                
-            </td>
-        </tr>
-        <tr>
-            <td>IssuerLogoURL</td>
-            <td>
-                varchar(tiny)
-            </td>
-            <td>
-                The URL of the issuer&#39;s logo.
-                 Example: https://example.tld/images/logo.png
-            </td>
-        </tr>
-        <tr>
-            <td>ContractOperator</td>
-            <td>
-                <a href="#type-entity">Entity</a>
-            </td>
-            <td>
-                An additional entity with operator access to the contract.
-                
-            </td>
-        </tr>
-        <tr>
-            <td>AdminOracle</td>
-            <td>
-                <a href="#type-oracle">Oracle</a>
-            </td>
-            <td>
-                The oracle that provided the signature used to verify the administration&#39;s identity.
-                
-            </td>
-        </tr>
-        <tr>
-            <td>AdminOracleSignature</td>
-            <td>
-                varbin(tiny)
-            </td>
-            <td>
-                The ECDSA signature provided by the oracle specified. The first input must correspond to the administration entity and, if a contract operator is included, the second input must correspond to the contract operator entity.
-                
-            </td>
-        </tr>
-        <tr>
-            <td>AdminOracleSigBlockHeight</td>
-            <td>
-                uint(4)
-            </td>
-            <td>
-                The block height of the block hash used in the oracle signature.
-                
-            </td>
-        </tr>
-        <tr>
-            <td>ContractFee</td>
-            <td>
-                uint(8)
-            </td>
-            <td>
-                Satoshis required to be paid to the contract for each asset action.
-                
-            </td>
-        </tr>
-        <tr>
-            <td>VotingSystems</td>
-            <td>
-                <a href="#type-voting-system">VotingSystem[tiny]</a>
-            </td>
-            <td>
-                A list voting systems.
-                
-            </td>
-        </tr>
-        <tr>
-            <td>ContractAuthFlags</td>
-            <td>
-                varbin(small)
-            </td>
-            <td>
-                A set of switches that define the authorization rules for this contract. See the Authorization Flags documentation for more detail. Other terms and conditions that are out of the smart contract&#39;s control should be listed in the Body of Agreement
-                Contract Flags - Amendments can be restricted to a vote.  Specified in the Voting System.
-            </td>
-        </tr>
-        <tr>
-            <td>RestrictedQtyAssets</td>
-            <td>
-                uint(8)
-            </td>
-            <td>
-                Number of Assets (non-fungible) permitted on this contract. 0 if unlimited which will display an infinity symbol in UI
-                Qty of Assets - Amendments can be restricted to a vote. Example: 1
-            </td>
-        </tr>
-        <tr>
-            <td>AdministrationProposal</td>
-            <td>
-                bool
-            </td>
-            <td>
-                Set to true if the administration is permitted to make proposals outside of the smart contract scope.
-                General Governance Example: true
-            </td>
-        </tr>
-        <tr>
-            <td>HolderProposal</td>
-            <td>
-                bool
-            </td>
-            <td>
-                Set to true if a holder is permitted to make proposals outside of the smart contract scope.
-                 Example: true
-            </td>
-        </tr>
-        <tr>
-            <td>Oracles</td>
-            <td>
-                <a href="#type-oracle">Oracle[tiny]</a>
-            </td>
-            <td>
-                A list of oracles that provide approval for all token transfers for all assets under the contract.
-                
-            </td>
-        </tr>
-        <tr>
-            <td>MasterPKH</td>
-            <td>
-                <a href="#alias-varbin">varbin(tiny)</a>
-            </td>
-            <td>
-                The public key hash of the contract&#39;s master key. This key has the ability to change the active contract address in case of a security failure with the active contract key.
-                
-            </td>
-        </tr>
-        <tr>
-            <td>ContractRevision</td>
-            <td>
-                uint(4)
-            </td>
-            <td>
-                A counter for the number of times this contract has been revised using an amendment action.
-                Can&#39;t be changed by the administration or smart contract operator. Example: 0
-            </td>
-        </tr>
-        <tr>
-            <td>Timestamp</td>
-            <td>
-                <a href="#alias-uint">uint(8)</a>
-            </td>
-            <td>
-                Timestamp in nanoseconds of when the smart contract created the action.
-                Cannot be changed by the administration, operator. Smart contract controls.
-            </td>
-        </tr>
+             Example: Tesla - Shareholder Agreement
+        </td>
+    </tr>
+
+    <tr>
+        <td>BodyOfAgreementType</td>
+        <td>
+            uint(1)
+        </td>
+        <td>
+            1 - SHA-256 Hash, 2 - Tokenized Body of Agreement Format
+            Body of Agreement - Amendments can be restricted to a vote. Example: 1
+        </td>
+    </tr>
+
+    <tr>
+        <td>BodyOfAgreement</td>
+        <td>
+            varbin(medium)
+        </td>
+        <td>
+            SHA-256 hash of the body of the agreement (full contract in pdf format or the like) or the full terms and conditions of an agreement in the Tokenized Body of Agreement format.  This is specific to the smart contract and relevant Assets.  Legal and technical information.
+            
+        </td>
+    </tr>
+
+    <tr>
+        <td>ContractType</td>
+        <td>
+            varchar(tiny)
+        </td>
+        <td>
+            Describes the purpose of the contract.
+             Example: Shareholder Agreement
+        </td>
+    </tr>
+
+    <tr>
+        <td>SupportingDocs</td>
+        <td>
+            <a href="#type-document">Document[tiny]</a>
+        </td>
+        <td>
+            Supporting documents that are important to the contract.
+            
+        </td>
+    </tr>
+
+    <tr>
+        <td>GoverningLaw</td>
+        <td>
+            fixedchar(5)
+        </td>
+        <td>
+            5 Letter Code to identify which governing law the contract will adhere to.  Disputes are to be settled by this law in the jurisdiction specified below. Private dispute resolution organizations can be used as well.  A custom code just needs to be defined.
+            Governing Law - Amendments can be restricted to a vote. Example: USA
+        </td>
+    </tr>
+
+    <tr>
+        <td>Jurisdiction</td>
+        <td>
+            fixedchar(5)
+        </td>
+        <td>
+            Legal proceedings/arbitration will take place using the specified Governing Law in this location.
+            Jurisdiction - Amendments can be restricted to a vote. Example: US-CA
+        </td>
+    </tr>
+
+    <tr>
+        <td>ContractExpiration</td>
+        <td>
+            <a href="#alias-timestamp">Timestamp</a>
+        </td>
+        <td>
+            All actions related to the contract will cease to work after this timestamp. The smart contract will stop running.  This will allow many token use cases to be able to calculate smart contract running costs. Eg. an issuer is creating tickets for an event on the 5th of June 2018.  The smart contract will facilitate exchange and send transactions up until the 6th of June.  Wallets can use this to forget tokens that are no longer valid - or at least store them in an &#39;Expired&#39; folder.
+            Contract Expiration - Amendments can be restricted to a vote. Example: Wed May 09 2018 00:00:00 GMT&#43;1000 (AEST)
+        </td>
+    </tr>
+
+    <tr>
+        <td>ContractURI</td>
+        <td>
+            varchar(tiny)
+        </td>
+        <td>
+            Length 0-255 bytes.  0 is valid. Points to an information page that also has a copy of the Contract.  Anyone can go to the website to have a look at the price/token, information about the Issuer (company), information about the Asset, legal information, etc.  There will also be a way for Token Owners to vote on this page and contact details with the Issuer/tokenized companies. Could be a IPv6/IPv4, an IPFS address (hash) or txn-id for on chain information or even a public address (DNS).
+             Example: https://tokenized.com/Contract/3qeoSCg7JmfSnJesJFojj
+        </td>
+    </tr>
+
+    <tr>
+        <td>Issuer</td>
+        <td>
+            <a href="#type-entity">Entity</a>
+        </td>
+        <td>
+            The issuer of this contract.
+            
+        </td>
+    </tr>
+
+    <tr>
+        <td>IssuerLogoURL</td>
+        <td>
+            varchar(tiny)
+        </td>
+        <td>
+            The URL of the issuer&#39;s logo.
+             Example: https://example.tld/images/logo.png
+        </td>
+    </tr>
+
+    <tr>
+        <td>ContractOperator</td>
+        <td>
+            <a href="#type-entity">Entity</a>
+        </td>
+        <td>
+            An additional entity with operator access to the contract.
+            
+        </td>
+    </tr>
+
+    <tr>
+        <td>AdminOracle</td>
+        <td>
+            <a href="#type-oracle">Oracle</a>
+        </td>
+        <td>
+            The oracle that provided the signature used to verify the administration&#39;s identity.
+            
+        </td>
+    </tr>
+
+    <tr>
+        <td>AdminOracleSignature</td>
+        <td>
+            varbin(tiny)
+        </td>
+        <td>
+            The ECDSA signature provided by the oracle specified. The first input must correspond to the administration entity and, if a contract operator is included, the second input must correspond to the contract operator entity.
+            
+        </td>
+    </tr>
+
+    <tr>
+        <td>AdminOracleSigBlockHeight</td>
+        <td>
+            uint(4)
+        </td>
+        <td>
+            The block height of the block hash used in the oracle signature.
+            
+        </td>
+    </tr>
+
+    <tr>
+        <td>ContractFee</td>
+        <td>
+            uint(8)
+        </td>
+        <td>
+            Satoshis required to be paid to the contract for each asset action.
+            
+        </td>
+    </tr>
+
+    <tr>
+        <td>VotingSystems</td>
+        <td>
+            <a href="#type-voting-system">VotingSystem[tiny]</a>
+        </td>
+        <td>
+            A list voting systems.
+            
+        </td>
+    </tr>
+
+    <tr>
+        <td>ContractAuthFlags</td>
+        <td>
+            varbin(small)
+        </td>
+        <td>
+            A set of switches that define the authorization rules for this contract. See the Authorization Flags documentation for more detail. Other terms and conditions that are out of the smart contract&#39;s control should be listed in the Body of Agreement
+            Contract Flags - Amendments can be restricted to a vote.  Specified in the Voting System.
+        </td>
+    </tr>
+
+    <tr>
+        <td>RestrictedQtyAssets</td>
+        <td>
+            uint(8)
+        </td>
+        <td>
+            Number of Assets (non-fungible) permitted on this contract. 0 if unlimited which will display an infinity symbol in UI
+            Qty of Assets - Amendments can be restricted to a vote. Example: 1
+        </td>
+    </tr>
+
+    <tr>
+        <td>AdministrationProposal</td>
+        <td>
+            bool
+        </td>
+        <td>
+            Set to true if the administration is permitted to make proposals outside of the smart contract scope.
+            General Governance Example: true
+        </td>
+    </tr>
+
+    <tr>
+        <td>HolderProposal</td>
+        <td>
+            bool
+        </td>
+        <td>
+            Set to true if a holder is permitted to make proposals outside of the smart contract scope.
+             Example: true
+        </td>
+    </tr>
+
+    <tr>
+        <td>Oracles</td>
+        <td>
+            <a href="#type-oracle">Oracle[tiny]</a>
+        </td>
+        <td>
+            A list of oracles that provide approval for all token transfers for all assets under the contract.
+            
+        </td>
+    </tr>
+
+    <tr>
+        <td>MasterPKH</td>
+        <td>
+            <a href="#alias-public-key-hash">PublicKeyHash</a>
+        </td>
+        <td>
+            The public key hash of the contract&#39;s master key. This key has the ability to change the active contract address in case of a security failure with the active contract key.
+            
+        </td>
+    </tr>
+
+    <tr>
+        <td>ContractRevision</td>
+        <td>
+            uint(4)
+        </td>
+        <td>
+            A counter for the number of times this contract has been revised using an amendment action.
+            Can&#39;t be changed by the administration or smart contract operator. Example: 0
+        </td>
+    </tr>
+
+    <tr>
+        <td>Timestamp</td>
+        <td>
+            <a href="#alias-timestamp">Timestamp</a>
+        </td>
+        <td>
+            Timestamp in nanoseconds of when the smart contract created the action.
+            Cannot be changed by the administration, operator. Smart contract controls.
+        </td>
+    </tr>
+
 </table>
 
 ##### Transaction Summary
@@ -710,56 +756,61 @@ The administration can initiate an amendment to the contract establishment metad
         <th style="width:15%">Type</th>
         <th>Description</th>
     </tr>
-        <tr>
-            <td>ChangeAdministrationAddress</td>
-            <td>
-                bool
-            </td>
-            <td>
-                Used to change the administration address.  The new administration address must be in the input[1] position. A change of the administration or operator address requires both the operator and the administration address to be in the inputs (both signatures) of the Contract Amendment action.
-                 Example: 1
-            </td>
-        </tr>
-        <tr>
-            <td>ChangeOperatorAddress</td>
-            <td>
-                bool
-            </td>
-            <td>
-                Used to change the smart contract operator address.  The new operator address must be in the input[1] position, unless the administration is being changed too, then it is in input[2]. A change of the administration or operator address requires both the operator and the administration address to be in the inputs (both signatures) of the Contract Amendment action.
-                 Example: 1
-            </td>
-        </tr>
-        <tr>
-            <td>ContractRevision</td>
-            <td>
-                uint(4)
-            </td>
-            <td>
-                Counter 0 to (2^32)-1
-                 Example: 42
-            </td>
-        </tr>
-        <tr>
-            <td>Amendments</td>
-            <td>
-                <a href="#type-amendment">Amendment[tiny]</a>
-            </td>
-            <td>
-                A collection of modifications to perform on this contract.
-                
-            </td>
-        </tr>
-        <tr>
-            <td>RefTxID</td>
-            <td>
-                <a href="#alias-bin">bin(32)</a>
-            </td>
-            <td>
-                The Bitcoin transaction ID of the associated result action that permitted the modifications. See Governance for more details.
-                
-            </td>
-        </tr>
+    <tr>
+        <td>ChangeAdministrationAddress</td>
+        <td>
+            bool
+        </td>
+        <td>
+            Used to change the administration address.  The new administration address must be in the input[1] position. A change of the administration or operator address requires both the operator and the administration address to be in the inputs (both signatures) of the Contract Amendment action.
+             Example: 1
+        </td>
+    </tr>
+
+    <tr>
+        <td>ChangeOperatorAddress</td>
+        <td>
+            bool
+        </td>
+        <td>
+            Used to change the smart contract operator address.  The new operator address must be in the input[1] position, unless the administration is being changed too, then it is in input[2]. A change of the administration or operator address requires both the operator and the administration address to be in the inputs (both signatures) of the Contract Amendment action.
+             Example: 1
+        </td>
+    </tr>
+
+    <tr>
+        <td>ContractRevision</td>
+        <td>
+            uint(4)
+        </td>
+        <td>
+            Counter 0 to (2^32)-1
+             Example: 42
+        </td>
+    </tr>
+
+    <tr>
+        <td>Amendments</td>
+        <td>
+            <a href="#type-amendment">Amendment[tiny]</a>
+        </td>
+        <td>
+            A collection of modifications to perform on this contract.
+            
+        </td>
+    </tr>
+
+    <tr>
+        <td>RefTxID</td>
+        <td>
+            <a href="#alias-tx-id">TxId</a>
+        </td>
+        <td>
+            The Bitcoin transaction ID of the associated result action that permitted the modifications. See Governance for more details.
+            
+        </td>
+    </tr>
+
 </table>
 
 ##### Transaction Summary
@@ -822,177 +873,194 @@ Static Contract Formation Action
         <th style="width:15%">Type</th>
         <th>Description</th>
     </tr>
-        <tr>
-            <td>ContractName</td>
-            <td>
-                varchar(tiny)
-            </td>
-            <td>
-                Can be any unique identifying string, including human readable names for branding/vanity purposes. Contract identifier (instance) is the bitcoin public address. If the public address is lost, then the administration will have to reissue the entire contract, Asset Definition and tokens with the new public address. Smart contracts can be branded and specialized to suit any terms and conditions.
+    <tr>
+        <td>ContractName</td>
+        <td>
+            varchar(tiny)
+        </td>
+        <td>
+            Can be any unique identifying string, including human readable names for branding/vanity purposes. Contract identifier (instance) is the bitcoin public address. If the public address is lost, then the administration will have to reissue the entire contract, Asset Definition and tokens with the new public address. Smart contracts can be branded and specialized to suit any terms and conditions.
 
-                 Example: Tesla - Shareholder Agreement
-            </td>
-        </tr>
-        <tr>
-            <td>ContractCode</td>
-            <td>
-                <a href="#alias-bin">bin(32)</a>
-            </td>
-            <td>
-                32 randomly generated bytes. Each Contract Code should be unique. The Contract ID will be human facing and will be the Contract Code, with a checksum, encoded in base58 and prefixed by &#39;CON&#39;. Contract ID = CON &#43; base58(ContractCode &#43; checksum).  Eg. Contract ID = &#39;CON18RDoKK7Ed5zid2FkKVy7q3rULr4tgfjr4&#39;
-                
-            </td>
-        </tr>
-        <tr>
-            <td>BodyOfAgreementType</td>
-            <td>
-                uint(1)
-            </td>
-            <td>
-                1 - SHA-256 Hash, 2 - Tokenized Body of Agreement Format
-                Body of Agreement - Amendments can be restricted to a vote. Example: 1
-            </td>
-        </tr>
-        <tr>
-            <td>BodyOfAgreement</td>
-            <td>
-                varbin(medium)
-            </td>
-            <td>
-                SHA-256 hash of the body of the agreement (full contract in pdf format or the like) or the full terms and conditions of an agreement in the Tokenized Body of Agreement format.  This is specific to the smart contract and relevant Assets.  Legal and technical information.
-                
-            </td>
-        </tr>
-        <tr>
-            <td>ContractType</td>
-            <td>
-                varchar(tiny)
-            </td>
-            <td>
-                Describes the purpose of the contract.
-                 Example: Non-Disclosure Agreement
-            </td>
-        </tr>
-        <tr>
-            <td>SupportingDocs</td>
-            <td>
-                <a href="#type-document">Document[tiny]</a>
-            </td>
-            <td>
-                Supporting documents that are important to the contract.
-                
-            </td>
-        </tr>
-        <tr>
-            <td>ContractRevision</td>
-            <td>
-                uint(4)
-            </td>
-            <td>
-                Counter 0 to (2^32)-1
-                 Example: 0
-            </td>
-        </tr>
-        <tr>
-            <td>GoverningLaw</td>
-            <td>
-                fixedchar(5)
-            </td>
-            <td>
-                5 Letter Code to identify which governing law the contract will adhere to.  Disputes are to be settled by this law in the jurisdiction specified below. Private dispute resolution organizations can be used as well.  A custom code just needs to be defined.
-                 Example: USA
-            </td>
-        </tr>
-        <tr>
-            <td>Jurisdiction</td>
-            <td>
-                fixedchar(5)
-            </td>
-            <td>
-                Legal proceedings/arbitration will take place using the specified Governing Law in this location.
-                 Example: US-CA
-            </td>
-        </tr>
-        <tr>
-            <td>EffectiveDate</td>
-            <td>
-                <a href="#alias-uint">uint(8)</a>
-            </td>
-            <td>
-                Start date of the contract.
-                
-            </td>
-        </tr>
-        <tr>
-            <td>ContractExpiration</td>
-            <td>
-                <a href="#alias-uint">uint(8)</a>
-            </td>
-            <td>
-                All actions related to the contract will cease to work after this timestamp. The smart contract will stop running.  This will allow many token use cases to be able to calculate smart contract running costs. Eg. an issuer is creating tickets for an event on the 5th of June 2018.  The smart contract will facilitate exchange and send transactions up until the 6th of June.  Wallets can use this to forget tokens that are no longer valid - or at least store them in an &#39;Expired&#39; folder.
-                
-            </td>
-        </tr>
-        <tr>
-            <td>ContractURI</td>
-            <td>
-                varchar(tiny)
-            </td>
-            <td>
-                Length 0-255 bytes. Points to an information page that also has a copy of the Contract.  Anyone can go to the website to have a look at the price/token, information about the issuer (company), information about the Asset, legal information, etc.  There will also be a way for token owners to vote on this page and contact details with the issuer/tokenized companies. Could be a IPv6/IPv4, or txn-id for on chain information or even a public address (DNS).
-                 Example: https://tokenized.com/Contract/3qeoSCg7JmfSnJesJFojj
-            </td>
-        </tr>
-        <tr>
-            <td>PrevRevTxID</td>
-            <td>
-                <a href="#alias-bin">bin(32)</a>
-            </td>
-            <td>
-                The Tx-ID of the previous contract revision.
-                
-            </td>
-        </tr>
-        <tr>
-            <td>Entities</td>
-            <td>
-                <a href="#type-entity">Entity[tiny]</a>
-            </td>
-            <td>
-                A list of legal entities associated with this contract.
-                
-            </td>
-        </tr>
-        <tr>
-            <td>EntityOracle</td>
-            <td>
-                <a href="#type-oracle">Oracle</a>
-            </td>
-            <td>
-                The oracle that provided the signature used to verify the entity&#39;s identity.
-                
-            </td>
-        </tr>
-        <tr>
-            <td>EntityOracleSignature</td>
-            <td>
-                varbin(tiny)
-            </td>
-            <td>
-                The ECDSA signature provided by the oracle specified. For N entities, the first N inputs must correspond with those entities.
-                
-            </td>
-        </tr>
-        <tr>
-            <td>EntityOracleSigBlockHeight</td>
-            <td>
-                uint(4)
-            </td>
-            <td>
-                The block height of the block hash used in the oracle signature.
-                
-            </td>
-        </tr>
+             Example: Tesla - Shareholder Agreement
+        </td>
+    </tr>
+
+    <tr>
+        <td>ContractCode</td>
+        <td>
+            <a href="#alias-contract-code">ContractCode</a>
+        </td>
+        <td>
+            32 randomly generated bytes. Each Contract Code should be unique. The Contract ID will be human facing and will be the Contract Code, with a checksum, encoded in base58 and prefixed by &#39;CON&#39;. Contract ID = CON &#43; base58(ContractCode &#43; checksum).  Eg. Contract ID = &#39;CON18RDoKK7Ed5zid2FkKVy7q3rULr4tgfjr4&#39;
+            
+        </td>
+    </tr>
+
+    <tr>
+        <td>BodyOfAgreementType</td>
+        <td>
+            uint(1)
+        </td>
+        <td>
+            1 - SHA-256 Hash, 2 - Tokenized Body of Agreement Format
+            Body of Agreement - Amendments can be restricted to a vote. Example: 1
+        </td>
+    </tr>
+
+    <tr>
+        <td>BodyOfAgreement</td>
+        <td>
+            varbin(medium)
+        </td>
+        <td>
+            SHA-256 hash of the body of the agreement (full contract in pdf format or the like) or the full terms and conditions of an agreement in the Tokenized Body of Agreement format.  This is specific to the smart contract and relevant Assets.  Legal and technical information.
+            
+        </td>
+    </tr>
+
+    <tr>
+        <td>ContractType</td>
+        <td>
+            varchar(tiny)
+        </td>
+        <td>
+            Describes the purpose of the contract.
+             Example: Non-Disclosure Agreement
+        </td>
+    </tr>
+
+    <tr>
+        <td>SupportingDocs</td>
+        <td>
+            <a href="#type-document">Document[tiny]</a>
+        </td>
+        <td>
+            Supporting documents that are important to the contract.
+            
+        </td>
+    </tr>
+
+    <tr>
+        <td>ContractRevision</td>
+        <td>
+            uint(4)
+        </td>
+        <td>
+            Counter 0 to (2^32)-1
+             Example: 0
+        </td>
+    </tr>
+
+    <tr>
+        <td>GoverningLaw</td>
+        <td>
+            fixedchar(5)
+        </td>
+        <td>
+            5 Letter Code to identify which governing law the contract will adhere to.  Disputes are to be settled by this law in the jurisdiction specified below. Private dispute resolution organizations can be used as well.  A custom code just needs to be defined.
+             Example: USA
+        </td>
+    </tr>
+
+    <tr>
+        <td>Jurisdiction</td>
+        <td>
+            fixedchar(5)
+        </td>
+        <td>
+            Legal proceedings/arbitration will take place using the specified Governing Law in this location.
+             Example: US-CA
+        </td>
+    </tr>
+
+    <tr>
+        <td>EffectiveDate</td>
+        <td>
+            <a href="#alias-timestamp">Timestamp</a>
+        </td>
+        <td>
+            Start date of the contract.
+            
+        </td>
+    </tr>
+
+    <tr>
+        <td>ContractExpiration</td>
+        <td>
+            <a href="#alias-timestamp">Timestamp</a>
+        </td>
+        <td>
+            All actions related to the contract will cease to work after this timestamp. The smart contract will stop running.  This will allow many token use cases to be able to calculate smart contract running costs. Eg. an issuer is creating tickets for an event on the 5th of June 2018.  The smart contract will facilitate exchange and send transactions up until the 6th of June.  Wallets can use this to forget tokens that are no longer valid - or at least store them in an &#39;Expired&#39; folder.
+            
+        </td>
+    </tr>
+
+    <tr>
+        <td>ContractURI</td>
+        <td>
+            varchar(tiny)
+        </td>
+        <td>
+            Length 0-255 bytes. Points to an information page that also has a copy of the Contract.  Anyone can go to the website to have a look at the price/token, information about the issuer (company), information about the Asset, legal information, etc.  There will also be a way for token owners to vote on this page and contact details with the issuer/tokenized companies. Could be a IPv6/IPv4, or txn-id for on chain information or even a public address (DNS).
+             Example: https://tokenized.com/Contract/3qeoSCg7JmfSnJesJFojj
+        </td>
+    </tr>
+
+    <tr>
+        <td>PrevRevTxID</td>
+        <td>
+            <a href="#alias-tx-id">TxId</a>
+        </td>
+        <td>
+            The Tx-ID of the previous contract revision.
+            
+        </td>
+    </tr>
+
+    <tr>
+        <td>Entities</td>
+        <td>
+            <a href="#type-entity">Entity[tiny]</a>
+        </td>
+        <td>
+            A list of legal entities associated with this contract.
+            
+        </td>
+    </tr>
+
+    <tr>
+        <td>EntityOracle</td>
+        <td>
+            <a href="#type-oracle">Oracle</a>
+        </td>
+        <td>
+            The oracle that provided the signature used to verify the entity&#39;s identity.
+            
+        </td>
+    </tr>
+
+    <tr>
+        <td>EntityOracleSignature</td>
+        <td>
+            varbin(tiny)
+        </td>
+        <td>
+            The ECDSA signature provided by the oracle specified. For N entities, the first N inputs must correspond with those entities.
+            
+        </td>
+    </tr>
+
+    <tr>
+        <td>EntityOracleSigBlockHeight</td>
+        <td>
+            uint(4)
+        </td>
+        <td>
+            The block height of the block hash used in the oracle signature.
+            
+        </td>
+    </tr>
+
 </table>
 
 ##### Transaction Summary
@@ -1037,26 +1105,28 @@ This txn is signed by the master contract key defined in the contract formation 
         <th style="width:15%">Type</th>
         <th>Description</th>
     </tr>
-        <tr>
-            <td>NewContractAddress</td>
-            <td>
-                varbin(small)
-            </td>
-            <td>
-                The address to be used by all future requests/responses for the contract.
-                
-            </td>
-        </tr>
-        <tr>
-            <td>Timestamp</td>
-            <td>
-                <a href="#alias-uint">uint(8)</a>
-            </td>
-            <td>
-                Timestamp in nanoseconds of when the action was created.
-                
-            </td>
-        </tr>
+    <tr>
+        <td>NewContractAddress</td>
+        <td>
+            varbin(small)
+        </td>
+        <td>
+            The address to be used by all future requests/responses for the contract.
+            
+        </td>
+    </tr>
+
+    <tr>
+        <td>Timestamp</td>
+        <td>
+            <a href="#alias-timestamp">Timestamp</a>
+        </td>
+        <td>
+            Timestamp in nanoseconds of when the action was created.
+            
+        </td>
+    </tr>
+
 </table>
 
 ##### Transaction Summary
@@ -1120,126 +1190,138 @@ This action is used by the administration to define the properties/characteristi
         <th style="width:15%">Type</th>
         <th>Description</th>
     </tr>
-        <tr>
-            <td>AssetAuthFlags</td>
-            <td>
-                varbin(small)
-            </td>
-            <td>
-                A set of switches that define the authorization rules for this asset. See the Authorization Flags documentation for more detail.
-                 Example: 0101000
-            </td>
-        </tr>
-        <tr>
-            <td>TransfersPermitted</td>
-            <td>
-                bool
-            </td>
-            <td>
-                Set to true if transfers are permitted between two parties, otherwise set to false to prevent peer-to-peer transfers.
-                 Example: 1
-            </td>
-        </tr>
-        <tr>
-            <td>TradeRestrictions</td>
-            <td>
-                <a href="#alias-fixedchar">fixedchar(3)[small]</a>
-            </td>
-            <td>
-                If specified, the asset can only be traded within the specified trade restriction zone. For example, AUS would restrict to Australian residents only.
-                
-            </td>
-        </tr>
-        <tr>
-            <td>EnforcementOrdersPermitted</td>
-            <td>
-                bool
-            </td>
-            <td>
-                Set to true if the administration is permitted to make enforcement orders on user tokens and balances, otherwise set to false to disable this feature.
-                 Example: 1
-            </td>
-        </tr>
-        <tr>
-            <td>VotingRights</td>
-            <td>
-                bool
-            </td>
-            <td>
-                When false holders of this asset will not be able to vote for tokens of this asset even on voting systems in which vote multiplers are not permitted.
-                 Example: true
-            </td>
-        </tr>
-        <tr>
-            <td>VoteMultiplier</td>
-            <td>
-                uint(1)
-            </td>
-            <td>
-                Multiplies a vote by the specified integer. Where 1 token is equal to 1 vote with a 1 for vote multipler (normal), 1 token = 3 votes with a multiplier of 3, for example. If zero, then holders of this asset don&#39;t get any votes for their tokens.
-                 Example: 3
-            </td>
-        </tr>
-        <tr>
-            <td>AdministrationProposal</td>
-            <td>
-                bool
-            </td>
-            <td>
-                Set to true if the administration is permitted to make proposals outside of the smart contract scope.
-                General Governance Example: true
-            </td>
-        </tr>
-        <tr>
-            <td>HolderProposal</td>
-            <td>
-                bool
-            </td>
-            <td>
-                Set to true if a holder is permitted to make proposals outside of the smart contract scope.
-                 Example: true
-            </td>
-        </tr>
-        <tr>
-            <td>AssetModificationGovernance</td>
-            <td>
-                uint(1)
-            </td>
-            <td>
-                Supported values: 1 - Contract-wide Asset Governance. 0 - Asset-wide Asset Governance.  If a referendum or initiative is used to propose a modification to a subfield controlled by the asset auth flags, then the vote will either be a contract-wide vote (all assets vote on the referendum/initiative) or an asset-wide vote (only this asset votes on the referendum/initiative) depending on the value in this subfield.  The voting system specifies the voting rules.
-                 Example: 1
-            </td>
-        </tr>
-        <tr>
-            <td>TokenQty</td>
-            <td>
-                uint(8)
-            </td>
-            <td>
-                The number of tokens to issue with this asset. Set to greater than zero for fungible tokens. If the value is 1 then it becomes a non-fungible token, where the contract would have many assets. Set to 0 to represent a placeholder asset, where tokens are to be issued later, or to represent a decomissioned asset where all tokens have been revoked.
-                 Example: 1000000
-            </td>
-        </tr>
-        <tr>
-            <td>AssetType</td>
-            <td>
-                <a href="#alias-fixedchar">fixedchar(3)</a>
-            </td>
-            <td>
-                A code representing the type of asset and the structure of the payload.
-                
-            </td>
-        </tr>
-        <tr>
-            <td>AssetPayload</td>
-            <td>
-                varbin(small)
-            </td>
-            <td>
-                A custom payload that contains meta data about this asset. Payload structure and length is dependent on the asset type chosen. See asset documentation for more details.
-                
-            </td>
-        </tr>
+    <tr>
+        <td>AssetAuthFlags</td>
+        <td>
+            varbin(small)
+        </td>
+        <td>
+            A set of switches that define the authorization rules for this asset. See the Authorization Flags documentation for more detail.
+             Example: 0101000
+        </td>
+    </tr>
+
+    <tr>
+        <td>TransfersPermitted</td>
+        <td>
+            bool
+        </td>
+        <td>
+            Set to true if transfers are permitted between two parties, otherwise set to false to prevent peer-to-peer transfers.
+             Example: 1
+        </td>
+    </tr>
+
+    <tr>
+        <td>TradeRestrictions</td>
+        <td>
+            <a href="#alias-fixedchar">Polity[small]</a>
+        </td>
+        <td>
+            If specified, the asset can only be traded within the specified trade restriction zone. For example, AUS would restrict to Australian residents only.
+            
+        </td>
+    </tr>
+
+    <tr>
+        <td>EnforcementOrdersPermitted</td>
+        <td>
+            bool
+        </td>
+        <td>
+            Set to true if the administration is permitted to make enforcement orders on user tokens and balances, otherwise set to false to disable this feature.
+             Example: 1
+        </td>
+    </tr>
+
+    <tr>
+        <td>VotingRights</td>
+        <td>
+            bool
+        </td>
+        <td>
+            When false holders of this asset will not be able to vote for tokens of this asset even on voting systems in which vote multiplers are not permitted.
+             Example: true
+        </td>
+    </tr>
+
+    <tr>
+        <td>VoteMultiplier</td>
+        <td>
+            uint(1)
+        </td>
+        <td>
+            Multiplies a vote by the specified integer. Where 1 token is equal to 1 vote with a 1 for vote multipler (normal), 1 token = 3 votes with a multiplier of 3, for example. If zero, then holders of this asset don&#39;t get any votes for their tokens.
+             Example: 3
+        </td>
+    </tr>
+
+    <tr>
+        <td>AdministrationProposal</td>
+        <td>
+            bool
+        </td>
+        <td>
+            Set to true if the administration is permitted to make proposals outside of the smart contract scope.
+            General Governance Example: true
+        </td>
+    </tr>
+
+    <tr>
+        <td>HolderProposal</td>
+        <td>
+            bool
+        </td>
+        <td>
+            Set to true if a holder is permitted to make proposals outside of the smart contract scope.
+             Example: true
+        </td>
+    </tr>
+
+    <tr>
+        <td>AssetModificationGovernance</td>
+        <td>
+            uint(1)
+        </td>
+        <td>
+            Supported values: 1 - Contract-wide Asset Governance. 0 - Asset-wide Asset Governance.  If a referendum or initiative is used to propose a modification to a subfield controlled by the asset auth flags, then the vote will either be a contract-wide vote (all assets vote on the referendum/initiative) or an asset-wide vote (only this asset votes on the referendum/initiative) depending on the value in this subfield.  The voting system specifies the voting rules.
+             Example: 1
+        </td>
+    </tr>
+
+    <tr>
+        <td>TokenQty</td>
+        <td>
+            uint(8)
+        </td>
+        <td>
+            The number of tokens to issue with this asset. Set to greater than zero for fungible tokens. If the value is 1 then it becomes a non-fungible token, where the contract would have many assets. Set to 0 to represent a placeholder asset, where tokens are to be issued later, or to represent a decomissioned asset where all tokens have been revoked.
+             Example: 1000000
+        </td>
+    </tr>
+
+    <tr>
+        <td>AssetType</td>
+        <td>
+            <a href="#alias-asset-type">AssetType</a>
+        </td>
+        <td>
+            A code representing the type of asset and the structure of the payload.
+            
+        </td>
+    </tr>
+
+    <tr>
+        <td>AssetPayload</td>
+        <td>
+            varbin(small)
+        </td>
+        <td>
+            A custom payload that contains meta data about this asset. Payload structure and length is dependent on the asset type chosen. See asset documentation for more details.
+            
+        </td>
+    </tr>
+
 </table>
 
 ##### Transaction Summary
@@ -1297,166 +1379,182 @@ This action creates an asset in response to the administration&#39;s instruction
         <th style="width:15%">Type</th>
         <th>Description</th>
     </tr>
-        <tr>
-            <td>AssetCode</td>
-            <td>
-                <a href="#alias-bin">bin(32)</a>
-            </td>
-            <td>
-                A unique code that is used to identify the asset. It is generated by hashing the contract public key hash and the asset index. SHA256(contract PKH &#43; asset index)
-                Cannot be changed by the administration, operator or smart contract.
-            </td>
-        </tr>
-        <tr>
-            <td>AssetIndex</td>
-            <td>
-                uint(8)
-            </td>
-            <td>
-                The index of the asset within the contract. First asset is zero, second is one. Used to derive the asset code.
-                 Example: 0
-            </td>
-        </tr>
-        <tr>
-            <td>AssetAuthFlags</td>
-            <td>
-                varbin(small)
-            </td>
-            <td>
-                A set of switches that define the authorization rules for this asset. See the Authorization Flags documentation for more detail.
-                 Example: 0101000
-            </td>
-        </tr>
-        <tr>
-            <td>TransfersPermitted</td>
-            <td>
-                bool
-            </td>
-            <td>
-                Set to true if transfers are permitted between two parties, otherwise set to false to prevent peer-to-peer transfers.
-                 Example: 1
-            </td>
-        </tr>
-        <tr>
-            <td>TradeRestrictions</td>
-            <td>
-                <a href="#alias-fixedchar">fixedchar(3)[small]</a>
-            </td>
-            <td>
-                If specified, the asset can only be traded within the specified trade restriction zone. For example, AUS would restrict to Australian residents only.
-                
-            </td>
-        </tr>
-        <tr>
-            <td>EnforcementOrdersPermitted</td>
-            <td>
-                bool
-            </td>
-            <td>
-                Set to true if the administration is permitted to make enforcement orders on user tokens and balances, otherwise set to false to disable this feature.
-                 Example: 1
-            </td>
-        </tr>
-        <tr>
-            <td>VotingRights</td>
-            <td>
-                bool
-            </td>
-            <td>
-                When false holders of this asset will not be able to vote for tokens of this asset even on voting systems in which vote multiplers are not permitted.
-                 Example: true
-            </td>
-        </tr>
-        <tr>
-            <td>VoteMultiplier</td>
-            <td>
-                uint(1)
-            </td>
-            <td>
-                Multiplies a vote by the specified integer. Where 1 token is equal to 1 vote with a 1 for vote multipler (normal), 1 token = 3 votes with a multiplier of 3, for example. If zero, then holders of this asset don&#39;t get any votes for their tokens.
-                 Example: 3
-            </td>
-        </tr>
-        <tr>
-            <td>AdministrationProposal</td>
-            <td>
-                bool
-            </td>
-            <td>
-                Set to true if the administration is permitted to make proposals outside of the smart contract scope.
-                General Governance Example: true
-            </td>
-        </tr>
-        <tr>
-            <td>HolderProposal</td>
-            <td>
-                bool
-            </td>
-            <td>
-                Set to true if a holder is permitted to make proposals outside of the smart contract scope.
-                 Example: true
-            </td>
-        </tr>
-        <tr>
-            <td>AssetModificationGovernance</td>
-            <td>
-                uint(1)
-            </td>
-            <td>
-                Supported values: 1 - Contract-wide Asset Governance.  0 - Asset-wide Asset Governance.  If a referendum or initiative is used to propose a modification to a subfield controlled by the asset auth flags, then the vote will either be a contract-wide vote (all assets vote on the referendum/initiative) or an asset-wide vote (only this asset votes on the referendum/initiative) depending on the value in this subfield.  The voting system specifies the voting rules.
-                 Example: 1
-            </td>
-        </tr>
-        <tr>
-            <td>TokenQty</td>
-            <td>
-                uint(8)
-            </td>
-            <td>
-                The number of tokens to issue with this asset. Set to greater than zero for fungible tokens. If the value is 1 then it becomes a non-fungible token, where the contract would have many assets. Set to 0 to represent a placeholder asset, where tokens are to be issued later, or to represent a decomissioned asset where all tokens have been revoked.
-                 Example: 1000000
-            </td>
-        </tr>
-        <tr>
-            <td>AssetType</td>
-            <td>
-                <a href="#alias-fixedchar">fixedchar(3)</a>
-            </td>
-            <td>
-                A code representing the type of asset and the structure of the payload.
-                
-            </td>
-        </tr>
-        <tr>
-            <td>AssetPayload</td>
-            <td>
-                varbin(small)
-            </td>
-            <td>
-                A custom payload that contains meta data about this asset. Payload structure and length is dependent on the asset type chosen. See asset documentation for more details.
-                
-            </td>
-        </tr>
-        <tr>
-            <td>AssetRevision</td>
-            <td>
-                uint(4)
-            </td>
-            <td>
-                A counter for the number of times this asset has been revised using a modification action.
-                 Example: 456789
-            </td>
-        </tr>
-        <tr>
-            <td>Timestamp</td>
-            <td>
-                <a href="#alias-uint">uint(8)</a>
-            </td>
-            <td>
-                Timestamp in nanoseconds of when the smart contract created the action.
-                Cannot be changed by the administration or operator. Smart contract controls.
-            </td>
-        </tr>
+    <tr>
+        <td>AssetCode</td>
+        <td>
+            <a href="#alias-asset-code">AssetCode</a>
+        </td>
+        <td>
+            A unique code that is used to identify the asset. It is generated by hashing the contract public key hash and the asset index. SHA256(contract PKH &#43; asset index)
+            Cannot be changed by the administration, operator or smart contract.
+        </td>
+    </tr>
+
+    <tr>
+        <td>AssetIndex</td>
+        <td>
+            uint(8)
+        </td>
+        <td>
+            The index of the asset within the contract. First asset is zero, second is one. Used to derive the asset code.
+             Example: 0
+        </td>
+    </tr>
+
+    <tr>
+        <td>AssetAuthFlags</td>
+        <td>
+            varbin(small)
+        </td>
+        <td>
+            A set of switches that define the authorization rules for this asset. See the Authorization Flags documentation for more detail.
+             Example: 0101000
+        </td>
+    </tr>
+
+    <tr>
+        <td>TransfersPermitted</td>
+        <td>
+            bool
+        </td>
+        <td>
+            Set to true if transfers are permitted between two parties, otherwise set to false to prevent peer-to-peer transfers.
+             Example: 1
+        </td>
+    </tr>
+
+    <tr>
+        <td>TradeRestrictions</td>
+        <td>
+            <a href="#alias-fixedchar">Polity[small]</a>
+        </td>
+        <td>
+            If specified, the asset can only be traded within the specified trade restriction zone. For example, AUS would restrict to Australian residents only.
+            
+        </td>
+    </tr>
+
+    <tr>
+        <td>EnforcementOrdersPermitted</td>
+        <td>
+            bool
+        </td>
+        <td>
+            Set to true if the administration is permitted to make enforcement orders on user tokens and balances, otherwise set to false to disable this feature.
+             Example: 1
+        </td>
+    </tr>
+
+    <tr>
+        <td>VotingRights</td>
+        <td>
+            bool
+        </td>
+        <td>
+            When false holders of this asset will not be able to vote for tokens of this asset even on voting systems in which vote multiplers are not permitted.
+             Example: true
+        </td>
+    </tr>
+
+    <tr>
+        <td>VoteMultiplier</td>
+        <td>
+            uint(1)
+        </td>
+        <td>
+            Multiplies a vote by the specified integer. Where 1 token is equal to 1 vote with a 1 for vote multipler (normal), 1 token = 3 votes with a multiplier of 3, for example. If zero, then holders of this asset don&#39;t get any votes for their tokens.
+             Example: 3
+        </td>
+    </tr>
+
+    <tr>
+        <td>AdministrationProposal</td>
+        <td>
+            bool
+        </td>
+        <td>
+            Set to true if the administration is permitted to make proposals outside of the smart contract scope.
+            General Governance Example: true
+        </td>
+    </tr>
+
+    <tr>
+        <td>HolderProposal</td>
+        <td>
+            bool
+        </td>
+        <td>
+            Set to true if a holder is permitted to make proposals outside of the smart contract scope.
+             Example: true
+        </td>
+    </tr>
+
+    <tr>
+        <td>AssetModificationGovernance</td>
+        <td>
+            uint(1)
+        </td>
+        <td>
+            Supported values: 1 - Contract-wide Asset Governance.  0 - Asset-wide Asset Governance.  If a referendum or initiative is used to propose a modification to a subfield controlled by the asset auth flags, then the vote will either be a contract-wide vote (all assets vote on the referendum/initiative) or an asset-wide vote (only this asset votes on the referendum/initiative) depending on the value in this subfield.  The voting system specifies the voting rules.
+             Example: 1
+        </td>
+    </tr>
+
+    <tr>
+        <td>TokenQty</td>
+        <td>
+            uint(8)
+        </td>
+        <td>
+            The number of tokens to issue with this asset. Set to greater than zero for fungible tokens. If the value is 1 then it becomes a non-fungible token, where the contract would have many assets. Set to 0 to represent a placeholder asset, where tokens are to be issued later, or to represent a decomissioned asset where all tokens have been revoked.
+             Example: 1000000
+        </td>
+    </tr>
+
+    <tr>
+        <td>AssetType</td>
+        <td>
+            <a href="#alias-asset-type">AssetType</a>
+        </td>
+        <td>
+            A code representing the type of asset and the structure of the payload.
+            
+        </td>
+    </tr>
+
+    <tr>
+        <td>AssetPayload</td>
+        <td>
+            varbin(small)
+        </td>
+        <td>
+            A custom payload that contains meta data about this asset. Payload structure and length is dependent on the asset type chosen. See asset documentation for more details.
+            
+        </td>
+    </tr>
+
+    <tr>
+        <td>AssetRevision</td>
+        <td>
+            uint(4)
+        </td>
+        <td>
+            A counter for the number of times this asset has been revised using a modification action.
+             Example: 456789
+        </td>
+    </tr>
+
+    <tr>
+        <td>Timestamp</td>
+        <td>
+            <a href="#alias-timestamp">Timestamp</a>
+        </td>
+        <td>
+            Timestamp in nanoseconds of when the smart contract created the action.
+            Cannot be changed by the administration or operator. Smart contract controls.
+        </td>
+    </tr>
+
 </table>
 
 ##### Transaction Summary
@@ -1514,56 +1612,61 @@ Token Dilutions, Call Backs/Revocations, burning etc.
         <th style="width:15%">Type</th>
         <th>Description</th>
     </tr>
-        <tr>
-            <td>AssetType</td>
-            <td>
-                fixedchar(3)
-            </td>
-            <td>
-                Three letter character that specifies the asset type.
-                 Example: SHC
-            </td>
-        </tr>
-        <tr>
-            <td>AssetCode</td>
-            <td>
-                <a href="#alias-bin">bin(32)</a>
-            </td>
-            <td>
-                A unique code that is used to identify the asset. It is generated by hashing the contract public key hash and the asset index. SHA256(contract PKH &#43; asset index)
-                Cannot be changed by the administration, operator or smart contract.
-            </td>
-        </tr>
-        <tr>
-            <td>AssetRevision</td>
-            <td>
-                uint(4)
-            </td>
-            <td>
-                The current revision figure to ensure the modification provided is based on the latest version.
-                Cannot be Amended Example: 0
-            </td>
-        </tr>
-        <tr>
-            <td>Amendments</td>
-            <td>
-                <a href="#type-amendment">Amendment[tiny]</a>
-            </td>
-            <td>
-                A collection of modifications to perform on this asset.
-                
-            </td>
-        </tr>
-        <tr>
-            <td>RefTxID</td>
-            <td>
-                <a href="#alias-bin">bin(32)</a>
-            </td>
-            <td>
-                The Bitcoin transaction ID of the associated result action that permitted the modifications. See Governance for more details.
-                
-            </td>
-        </tr>
+    <tr>
+        <td>AssetType</td>
+        <td>
+            fixedchar(3)
+        </td>
+        <td>
+            Three letter character that specifies the asset type.
+             Example: SHC
+        </td>
+    </tr>
+
+    <tr>
+        <td>AssetCode</td>
+        <td>
+            <a href="#alias-asset-code">AssetCode</a>
+        </td>
+        <td>
+            A unique code that is used to identify the asset. It is generated by hashing the contract public key hash and the asset index. SHA256(contract PKH &#43; asset index)
+            Cannot be changed by the administration, operator or smart contract.
+        </td>
+    </tr>
+
+    <tr>
+        <td>AssetRevision</td>
+        <td>
+            uint(4)
+        </td>
+        <td>
+            The current revision figure to ensure the modification provided is based on the latest version.
+            Cannot be Amended Example: 0
+        </td>
+    </tr>
+
+    <tr>
+        <td>Amendments</td>
+        <td>
+            <a href="#type-amendment">Amendment[tiny]</a>
+        </td>
+        <td>
+            A collection of modifications to perform on this asset.
+            
+        </td>
+    </tr>
+
+    <tr>
+        <td>RefTxID</td>
+        <td>
+            <a href="#alias-tx-id">TxId</a>
+        </td>
+        <td>
+            The Bitcoin transaction ID of the associated result action that permitted the modifications. See Governance for more details.
+            
+        </td>
+    </tr>
+
 </table>
 
 ##### Transaction Summary
@@ -1621,46 +1724,50 @@ A Token Owner(s) Sends, Exchanges or Swaps a token(s) or Bitcoin for a token(s) 
         <th style="width:15%">Type</th>
         <th>Description</th>
     </tr>
-        <tr>
-            <td>Assets</td>
-            <td>
-                <a href="#type-asset-transfer">AssetTransfer[tiny]</a>
-            </td>
-            <td>
-                The Assets involved in the Transfer Action.
-                
-            </td>
-        </tr>
-        <tr>
-            <td>OfferExpiry</td>
-            <td>
-                <a href="#alias-uint">uint(8)</a>
-            </td>
-            <td>
-                This prevents any party from holding on to the partially signed message as a form of an option.  Eg. the exchange at this price is valid for 30 mins.
-                
-            </td>
-        </tr>
-        <tr>
-            <td>ExchangeFee</td>
-            <td>
-                uint(8)
-            </td>
-            <td>
-                Fixed amount of bitcoin being paid to an exchange for facilitating a transfer.
-                 Example: 0.01
-            </td>
-        </tr>
-        <tr>
-            <td>ExchangeFeeAddress</td>
-            <td>
-                <a href="#alias-varbin">varbin(tiny)</a>
-            </td>
-            <td>
-                Identifies the public address that the exchange fee should be paid to.
-                
-            </td>
-        </tr>
+    <tr>
+        <td>Assets</td>
+        <td>
+            <a href="#type-asset-transfer">AssetTransfer[tiny]</a>
+        </td>
+        <td>
+            The Assets involved in the Transfer Action.
+            
+        </td>
+    </tr>
+
+    <tr>
+        <td>OfferExpiry</td>
+        <td>
+            <a href="#alias-timestamp">Timestamp</a>
+        </td>
+        <td>
+            This prevents any party from holding on to the partially signed message as a form of an option.  Eg. the exchange at this price is valid for 30 mins.
+            
+        </td>
+    </tr>
+
+    <tr>
+        <td>ExchangeFee</td>
+        <td>
+            uint(8)
+        </td>
+        <td>
+            Fixed amount of bitcoin being paid to an exchange for facilitating a transfer.
+             Example: 0.01
+        </td>
+    </tr>
+
+    <tr>
+        <td>ExchangeFeeAddress</td>
+        <td>
+            <a href="#alias-public-key-hash">PublicKeyHash</a>
+        </td>
+        <td>
+            Identifies the public address that the exchange fee should be paid to.
+            
+        </td>
+    </tr>
+
 </table>
 
 ##### Transaction Summary
@@ -1718,26 +1825,28 @@ Settles the transfer request of bitcoins and tokens from transfer (T1) actions.
         <th style="width:15%">Type</th>
         <th>Description</th>
     </tr>
-        <tr>
-            <td>Assets</td>
-            <td>
-                <a href="#type-asset-settlement">AssetSettlement[tiny]</a>
-            </td>
-            <td>
-                The Assets settled by the transfer action.
-                
-            </td>
-        </tr>
-        <tr>
-            <td>Timestamp</td>
-            <td>
-                <a href="#alias-uint">uint(8)</a>
-            </td>
-            <td>
-                Timestamp in nanoseconds of when the smart contract created the action.
-                Cannot be changed by the administration, operator. Smart contract controls.
-            </td>
-        </tr>
+    <tr>
+        <td>Assets</td>
+        <td>
+            <a href="#type-asset-settlement">AssetSettlement[tiny]</a>
+        </td>
+        <td>
+            The Assets settled by the transfer action.
+            
+        </td>
+    </tr>
+
+    <tr>
+        <td>Timestamp</td>
+        <td>
+            <a href="#alias-timestamp">Timestamp</a>
+        </td>
+        <td>
+            Timestamp in nanoseconds of when the smart contract created the action.
+            Cannot be changed by the administration, operator. Smart contract controls.
+        </td>
+    </tr>
+
 </table>
 
 ##### Transaction Summary
@@ -1795,126 +1904,138 @@ Allows the Administration/Token Holders to propose a change (aka Initiative/Shar
         <th style="width:15%">Type</th>
         <th>Description</th>
     </tr>
-        <tr>
-            <td>Initiator</td>
-            <td>
-                uint(1)
-            </td>
-            <td>
-                Who initiated the proposal. Supported values: 0 - Administration, 1 - Holder
-                
-            </td>
-        </tr>
-        <tr>
-            <td>AssetSpecificVote</td>
-            <td>
-                bool
-            </td>
-            <td>
-                When true this proposal is specific to an asset and the asset type and asset code fields are serialized.
-                
-            </td>
-        </tr>
-        <tr>
-            <td>AssetType</td>
-            <td>
-                fixedchar(3)
-            </td>
-            <td>
-                Three letter character that specifies the asset type.
-                 Example: SHC
-            </td>
-        </tr>
-        <tr>
-            <td>AssetCode</td>
-            <td>
-                <a href="#alias-bin">bin(32)</a>
-            </td>
-            <td>
-                A unique code that is used to identify the asset. It is generated by hashing the contract public key hash and the asset index. SHA256(contract PKH &#43; asset index)
-                Cannot be changed by the administration, operator or smart contract.
-            </td>
-        </tr>
-        <tr>
-            <td>VoteSystem</td>
-            <td>
-                uint(1)
-            </td>
-            <td>
-                X for Vote System X. (1-255, 0 is not valid.)
-                 Example: 1
-            </td>
-        </tr>
-        <tr>
-            <td>Specific</td>
-            <td>
-                bool
-            </td>
-            <td>
-                When true the ProposedAmendments field is included and specifies the exact changes to make to the contract/asset on chain. When false this is just a general proposal like a strategy/direction and doesn&#39;t result in any on chain update.
-                
-            </td>
-        </tr>
-        <tr>
-            <td>ProposedAmendments</td>
-            <td>
-                <a href="#type-amendment">Amendment[tiny]</a>
-            </td>
-            <td>
-                Each element contains details of which fields to modify, or delete. Because the number of fields in a Contract and Asset is dynamic due to some fields being able to be repeated, the index value of the field needs to be calculated against the Contract or Asset the changes are to apply to. In the event of a Vote being created from this Initiative, the changes will be applied to the version of the Contract or Asset at that time.
-                
-            </td>
-        </tr>
-        <tr>
-            <td>VoteOptions</td>
-            <td>
-                varchar(tiny)
-            </td>
-            <td>
-                Length 1-255 bytes. 0 is not valid. Each byte allows for a different vote option. Typical votes will likely be multiple choice or Y/N. Vote instances are identified by the Tx-ID. AB would be used for Y/N (binary) type votes. When Specific is true, only AB is a valid value.
-                 Example: ABCDEFGHIJKLMNO
-            </td>
-        </tr>
-        <tr>
-            <td>VoteMax</td>
-            <td>
-                uint(1)
-            </td>
-            <td>
-                Range: 1-X. How many selections can a voter make in a Ballot Cast. 1 is selected for Y/N (binary). When Specific is true, only 1 is a valid value.
-                 Example: 15
-            </td>
-        </tr>
-        <tr>
-            <td>ProposalDescription</td>
-            <td>
-                varchar(medium)
-            </td>
-            <td>
-                Length restricted by the Bitcoin protocol. 0 is valid. Description or details of the vote
-                 Example: Change the name of the Contract.
-            </td>
-        </tr>
-        <tr>
-            <td>ProposalDocumentHash</td>
-            <td>
-                bin(32)
-            </td>
-            <td>
-                SHA256 Hash of the proposal document to be distributed to voters.
-                 Example: 77201b0094f50df309f0343e4f44dae64d0de503c91038faf2c6b039f9f18aec
-            </td>
-        </tr>
-        <tr>
-            <td>VoteCutOffTimestamp</td>
-            <td>
-                <a href="#alias-uint">uint(8)</a>
-            </td>
-            <td>
-                Ballot casts after this timestamp will not be included. The vote has finished.
-                
-            </td>
-        </tr>
+    <tr>
+        <td>Initiator</td>
+        <td>
+            uint(1)
+        </td>
+        <td>
+            Who initiated the proposal. Supported values: 0 - Administration, 1 - Holder
+            
+        </td>
+    </tr>
+
+    <tr>
+        <td>AssetSpecificVote</td>
+        <td>
+            bool
+        </td>
+        <td>
+            When true this proposal is specific to an asset and the asset type and asset code fields are serialized.
+            
+        </td>
+    </tr>
+
+    <tr>
+        <td>AssetType</td>
+        <td>
+            fixedchar(3)
+        </td>
+        <td>
+            Three letter character that specifies the asset type.
+             Example: SHC
+        </td>
+    </tr>
+
+    <tr>
+        <td>AssetCode</td>
+        <td>
+            <a href="#alias-asset-code">AssetCode</a>
+        </td>
+        <td>
+            A unique code that is used to identify the asset. It is generated by hashing the contract public key hash and the asset index. SHA256(contract PKH &#43; asset index)
+            Cannot be changed by the administration, operator or smart contract.
+        </td>
+    </tr>
+
+    <tr>
+        <td>VoteSystem</td>
+        <td>
+            uint(1)
+        </td>
+        <td>
+            X for Vote System X. (1-255, 0 is not valid.)
+             Example: 1
+        </td>
+    </tr>
+
+    <tr>
+        <td>Specific</td>
+        <td>
+            bool
+        </td>
+        <td>
+            When true the ProposedAmendments field is included and specifies the exact changes to make to the contract/asset on chain. When false this is just a general proposal like a strategy/direction and doesn&#39;t result in any on chain update.
+            
+        </td>
+    </tr>
+
+    <tr>
+        <td>ProposedAmendments</td>
+        <td>
+            <a href="#type-amendment">Amendment[tiny]</a>
+        </td>
+        <td>
+            Each element contains details of which fields to modify, or delete. Because the number of fields in a Contract and Asset is dynamic due to some fields being able to be repeated, the index value of the field needs to be calculated against the Contract or Asset the changes are to apply to. In the event of a Vote being created from this Initiative, the changes will be applied to the version of the Contract or Asset at that time.
+            
+        </td>
+    </tr>
+
+    <tr>
+        <td>VoteOptions</td>
+        <td>
+            varchar(tiny)
+        </td>
+        <td>
+            Length 1-255 bytes. 0 is not valid. Each byte allows for a different vote option. Typical votes will likely be multiple choice or Y/N. Vote instances are identified by the Tx-ID. AB would be used for Y/N (binary) type votes. When Specific is true, only AB is a valid value.
+             Example: ABCDEFGHIJKLMNO
+        </td>
+    </tr>
+
+    <tr>
+        <td>VoteMax</td>
+        <td>
+            uint(1)
+        </td>
+        <td>
+            Range: 1-X. How many selections can a voter make in a Ballot Cast. 1 is selected for Y/N (binary). When Specific is true, only 1 is a valid value.
+             Example: 15
+        </td>
+    </tr>
+
+    <tr>
+        <td>ProposalDescription</td>
+        <td>
+            varchar(medium)
+        </td>
+        <td>
+            Length restricted by the Bitcoin protocol. 0 is valid. Description or details of the vote
+             Example: Change the name of the Contract.
+        </td>
+    </tr>
+
+    <tr>
+        <td>ProposalDocumentHash</td>
+        <td>
+            bin(32)
+        </td>
+        <td>
+            SHA256 Hash of the proposal document to be distributed to voters.
+             Example: 77201b0094f50df309f0343e4f44dae64d0de503c91038faf2c6b039f9f18aec
+        </td>
+    </tr>
+
+    <tr>
+        <td>VoteCutOffTimestamp</td>
+        <td>
+            <a href="#alias-timestamp">Timestamp</a>
+        </td>
+        <td>
+            Ballot casts after this timestamp will not be included. The vote has finished.
+            
+        </td>
+    </tr>
+
 </table>
 
 ##### Transaction Summary
@@ -1977,16 +2098,17 @@ A vote is created by the Contract in response to a valid Proposal Action.
         <th style="width:15%">Type</th>
         <th>Description</th>
     </tr>
-        <tr>
-            <td>Timestamp</td>
-            <td>
-                <a href="#alias-uint">uint(8)</a>
-            </td>
-            <td>
-                Timestamp in nanoseconds of when the smart contract created the action.
-                Cannot be changed by the administration, operator. Smart contract controls.
-            </td>
-        </tr>
+    <tr>
+        <td>Timestamp</td>
+        <td>
+            <a href="#alias-timestamp">Timestamp</a>
+        </td>
+        <td>
+            Timestamp in nanoseconds of when the smart contract created the action.
+            Cannot be changed by the administration, operator. Smart contract controls.
+        </td>
+    </tr>
+
 </table>
 
 ##### Transaction Summary
@@ -2044,26 +2166,28 @@ Used by Token Owners to cast their ballot (vote) on proposals. 1 Vote per token 
         <th style="width:15%">Type</th>
         <th>Description</th>
     </tr>
-        <tr>
-            <td>VoteTxId</td>
-            <td>
-                <a href="#alias-bin">bin(32)</a>
-            </td>
-            <td>
-                Tx ID of the Vote the Ballot Cast is being made for.
-                
-            </td>
-        </tr>
-        <tr>
-            <td>Vote</td>
-            <td>
-                varchar(tiny)
-            </td>
-            <td>
-                Length 1-255 bytes. 0 is not valid. Max length is the VoteMax value from the Proposal action. Accept, Reject, Abstain, Spoiled, Multiple Choice, or Preference List. 15 options total. Order of preference. 1st position = 1st choice. 2nd position = 2nd choice, etc. A is always Accept and B is always reject in a Y/N votes.
-                 Example: A
-            </td>
-        </tr>
+    <tr>
+        <td>VoteTxId</td>
+        <td>
+            <a href="#alias-tx-id">TxId</a>
+        </td>
+        <td>
+            Tx ID of the Vote the Ballot Cast is being made for.
+            
+        </td>
+    </tr>
+
+    <tr>
+        <td>Vote</td>
+        <td>
+            varchar(tiny)
+        </td>
+        <td>
+            Length 1-255 bytes. 0 is not valid. Max length is the VoteMax value from the Proposal action. Accept, Reject, Abstain, Spoiled, Multiple Choice, or Preference List. 15 options total. Order of preference. 1st position = 1st choice. 2nd position = 2nd choice, etc. A is always Accept and B is always reject in a Y/N votes.
+             Example: A
+        </td>
+    </tr>
+
 </table>
 
 ##### Transaction Summary
@@ -2121,46 +2245,50 @@ The smart contract will respond to a Ballot Cast action with a Ballot Counted ac
         <th style="width:15%">Type</th>
         <th>Description</th>
     </tr>
-        <tr>
-            <td>VoteTxId</td>
-            <td>
-                <a href="#alias-bin">bin(32)</a>
-            </td>
-            <td>
-                Tx ID of the Vote the Ballot Cast is being made for.
-                
-            </td>
-        </tr>
-        <tr>
-            <td>Vote</td>
-            <td>
-                varchar(tiny)
-            </td>
-            <td>
-                Length 1-255 bytes. 0 is not valid. Max length is the VoteMax value from the Proposal action. Accept, Reject, Abstain, Spoiled, Multiple Choice, or Preference List. 15 options total. Order of preference. 1st position = 1st choice. 2nd position = 2nd choice, etc. A is always Accept and B is always reject in a Y/N votes.
-                 Example: A
-            </td>
-        </tr>
-        <tr>
-            <td>Quantity</td>
-            <td>
-                uint(8)
-            </td>
-            <td>
-                Number of votes counted for this ballot. Factors in vote multipliers if there are any allowed, otherwise it is just quantity of tokens held.
-                
-            </td>
-        </tr>
-        <tr>
-            <td>Timestamp</td>
-            <td>
-                <a href="#alias-uint">uint(8)</a>
-            </td>
-            <td>
-                Timestamp in nanoseconds of when the smart contract created the action.
-                Cannot be changed by the administration, operator. Smart contract controls.
-            </td>
-        </tr>
+    <tr>
+        <td>VoteTxId</td>
+        <td>
+            <a href="#alias-tx-id">TxId</a>
+        </td>
+        <td>
+            Tx ID of the Vote the Ballot Cast is being made for.
+            
+        </td>
+    </tr>
+
+    <tr>
+        <td>Vote</td>
+        <td>
+            varchar(tiny)
+        </td>
+        <td>
+            Length 1-255 bytes. 0 is not valid. Max length is the VoteMax value from the Proposal action. Accept, Reject, Abstain, Spoiled, Multiple Choice, or Preference List. 15 options total. Order of preference. 1st position = 1st choice. 2nd position = 2nd choice, etc. A is always Accept and B is always reject in a Y/N votes.
+             Example: A
+        </td>
+    </tr>
+
+    <tr>
+        <td>Quantity</td>
+        <td>
+            uint(8)
+        </td>
+        <td>
+            Number of votes counted for this ballot. Factors in vote multipliers if there are any allowed, otherwise it is just quantity of tokens held.
+            
+        </td>
+    </tr>
+
+    <tr>
+        <td>Timestamp</td>
+        <td>
+            <a href="#alias-timestamp">Timestamp</a>
+        </td>
+        <td>
+            Timestamp in nanoseconds of when the smart contract created the action.
+            Cannot be changed by the administration, operator. Smart contract controls.
+        </td>
+    </tr>
+
 </table>
 
 ##### Transaction Summary
@@ -2218,96 +2346,105 @@ Once a vote has been completed the results are published. After the result is po
         <th style="width:15%">Type</th>
         <th>Description</th>
     </tr>
-        <tr>
-            <td>AssetSpecificVote</td>
-            <td>
-                bool
-            </td>
-            <td>
-                When true this proposal is specific to an asset and the asset type and asset code fields are serialized.
-                
-            </td>
-        </tr>
-        <tr>
-            <td>AssetType</td>
-            <td>
-                fixedchar(3)
-            </td>
-            <td>
-                Three letter character that specifies the asset type.
-                 Example: SHC
-            </td>
-        </tr>
-        <tr>
-            <td>AssetCode</td>
-            <td>
-                <a href="#alias-bin">bin(32)</a>
-            </td>
-            <td>
-                A unique code that is used to identify the asset. It is generated by hashing the contract public key hash and the asset index. SHA256(contract PKH &#43; asset index)
-                Cannot be changed by the administration, operator or smart contract.
-            </td>
-        </tr>
-        <tr>
-            <td>Specific</td>
-            <td>
-                bool
-            </td>
-            <td>
-                When true the ProposedAmendments field is included and specifies the exact changes to make to the Contract/Asset on chain. When false this is just a general proposal like a strategy/direction and doesn&#39;t result in any on chain update.
-                
-            </td>
-        </tr>
-        <tr>
-            <td>ProposedAmendments</td>
-            <td>
-                <a href="#type-amendment">Amendment[tiny]</a>
-            </td>
-            <td>
-                Each element contains details of which fields to modify, or delete. Because the number of fields in a Contract and Asset is dynamic due to some fields being able to be repeated, the index value of the field needs to be calculated against the Contract or Asset the changes are to apply to. In the event of a Vote being created from this Initiative, the changes will be applied to the version of the Contract or Asset at that time.
-                
-            </td>
-        </tr>
-        <tr>
-            <td>VoteTxId</td>
-            <td>
-                <a href="#alias-bin">bin(32)</a>
-            </td>
-            <td>
-                Link to the Vote Action txn.
-                
-            </td>
-        </tr>
-        <tr>
-            <td>OptionTally</td>
-            <td>
-                uint(8)[tiny]
-            </td>
-            <td>
-                List of number of valid votes counted for each vote option. Length is encoded like a regular list object, but must match the length of VoteOptions from the Proposal action.
-                
-            </td>
-        </tr>
-        <tr>
-            <td>Result</td>
-            <td>
-                varchar(tiny)
-            </td>
-            <td>
-                Length 1-255 bytes. 0 is not valid. The Option with the most votes. In the event of a draw for 1st place, all winning options are listed.
-                
-            </td>
-        </tr>
-        <tr>
-            <td>Timestamp</td>
-            <td>
-                <a href="#alias-uint">uint(8)</a>
-            </td>
-            <td>
-                Timestamp in nanoseconds of when the smart contract created the action.
-                Cannot be changed by the administration, operator. Smart contract controls.
-            </td>
-        </tr>
+    <tr>
+        <td>AssetSpecificVote</td>
+        <td>
+            bool
+        </td>
+        <td>
+            When true this proposal is specific to an asset and the asset type and asset code fields are serialized.
+            
+        </td>
+    </tr>
+
+    <tr>
+        <td>AssetType</td>
+        <td>
+            fixedchar(3)
+        </td>
+        <td>
+            Three letter character that specifies the asset type.
+             Example: SHC
+        </td>
+    </tr>
+
+    <tr>
+        <td>AssetCode</td>
+        <td>
+            <a href="#alias-asset-code">AssetCode</a>
+        </td>
+        <td>
+            A unique code that is used to identify the asset. It is generated by hashing the contract public key hash and the asset index. SHA256(contract PKH &#43; asset index)
+            Cannot be changed by the administration, operator or smart contract.
+        </td>
+    </tr>
+
+    <tr>
+        <td>Specific</td>
+        <td>
+            bool
+        </td>
+        <td>
+            When true the ProposedAmendments field is included and specifies the exact changes to make to the Contract/Asset on chain. When false this is just a general proposal like a strategy/direction and doesn&#39;t result in any on chain update.
+            
+        </td>
+    </tr>
+
+    <tr>
+        <td>ProposedAmendments</td>
+        <td>
+            <a href="#type-amendment">Amendment[tiny]</a>
+        </td>
+        <td>
+            Each element contains details of which fields to modify, or delete. Because the number of fields in a Contract and Asset is dynamic due to some fields being able to be repeated, the index value of the field needs to be calculated against the Contract or Asset the changes are to apply to. In the event of a Vote being created from this Initiative, the changes will be applied to the version of the Contract or Asset at that time.
+            
+        </td>
+    </tr>
+
+    <tr>
+        <td>VoteTxId</td>
+        <td>
+            <a href="#alias-tx-id">TxId</a>
+        </td>
+        <td>
+            Link to the Vote Action txn.
+            
+        </td>
+    </tr>
+
+    <tr>
+        <td>OptionTally</td>
+        <td>
+            uint(8)[tiny]
+        </td>
+        <td>
+            List of number of valid votes counted for each vote option. Length is encoded like a regular list object, but must match the length of VoteOptions from the Proposal action.
+            
+        </td>
+    </tr>
+
+    <tr>
+        <td>Result</td>
+        <td>
+            varchar(tiny)
+        </td>
+        <td>
+            Length 1-255 bytes. 0 is not valid. The Option with the most votes. In the event of a draw for 1st place, all winning options are listed.
+            
+        </td>
+    </tr>
+
+    <tr>
+        <td>Timestamp</td>
+        <td>
+            <a href="#alias-timestamp">Timestamp</a>
+        </td>
+        <td>
+            Timestamp in nanoseconds of when the smart contract created the action.
+            Cannot be changed by the administration, operator. Smart contract controls.
+        </td>
+    </tr>
+
 </table>
 
 ##### Transaction Summary
@@ -2365,166 +2502,182 @@ Used by the administration to signal to the smart contract that the tokens that 
         <th style="width:15%">Type</th>
         <th>Description</th>
     </tr>
-        <tr>
-            <td>ComplianceAction</td>
-            <td>
-                fixedchar(1)
-            </td>
-            <td>
-                Freeze (F), Thaw (T), Confiscate (C), Reconcile (R)
-                 Example: F
-            </td>
-        </tr>
-        <tr>
-            <td>AssetType</td>
-            <td>
-                fixedchar(3)
-            </td>
-            <td>
-                Three letter character that specifies the asset type.
-                 Example: SHC
-            </td>
-        </tr>
-        <tr>
-            <td>AssetCode</td>
-            <td>
-                <a href="#alias-bin">bin(32)</a>
-            </td>
-            <td>
-                A unique code that is used to identify the asset. It is generated by hashing the contract public key hash and the asset index. SHA256(contract PKH &#43; asset index)
-                Cannot be changed by the administration, operator or smart contract.
-            </td>
-        </tr>
-        <tr>
-            <td>TargetAddresses</td>
-            <td>
-                <a href="#type-target-address">TargetAddress[medium]</a>
-            </td>
-            <td>
-                The holders and quantities that are effected by the order. For a contract or asset wide freeze only the contract address is specified. Zero quantities are invalid unless it is for the contract address in an asset wide or contract wide freeze. In a thaw order this field is not serialized, because the entire freeze from the FreezeTxId freeze action will be thawed.
-                
-            </td>
-        </tr>
-        <tr>
-            <td>FreezeTxId</td>
-            <td>
-                <a href="#alias-bin">bin(32)</a>
-            </td>
-            <td>
-                The tx id of the freeze action that is being thawed. Only serialized for thaw orders.
-                
-            </td>
-        </tr>
-        <tr>
-            <td>FreezePeriod</td>
-            <td>
-                <a href="#alias-uint">uint(8)</a>
-            </td>
-            <td>
-                Used for a &#39;time out&#39;.  Tokens are automatically unfrozen after the expiration timestamp without requiring a Thaw Action. Null value for Thaw, Confiscation and Reconciallitaion orders.
-                 Example: Tue Oct 09 2018 05:00:00 GMT&#43;1000 (AEST)
-            </td>
-        </tr>
-        <tr>
-            <td>DepositAddress</td>
-            <td>
-                <a href="#alias-varbin">varbin(tiny)</a>
-            </td>
-            <td>
-                The public address for confiscated tokens to be deposited in.  Null for Freeze, Thaw, actions.
-                Eventually the supporting evidence/explanation can be supported by a Subfield that has the public address (and a signed message) owned by a legal authority for ID verification/certification purposes.
-            </td>
-        </tr>
-        <tr>
-            <td>AuthorityIncluded</td>
-            <td>
-                bool
-            </td>
-            <td>
-                Specifies if an authority signature is included. For Reconcialitaion actions all authority signature related fields are skipped during serialization.
-                
-            </td>
-        </tr>
-        <tr>
-            <td>AuthorityName</td>
-            <td>
-                varchar(tiny)
-            </td>
-            <td>
-                Length 0-255 bytes. Enforcement Authority Name (eg. Issuer, Queensland Police Service, Tokenized, etc.)
-                 Example: Supreme and District Courts Brisbane
-            </td>
-        </tr>
-        <tr>
-            <td>AuthorityPublicKey</td>
-            <td>
-                varbin(tiny)
-            </td>
-            <td>
-                Length 0-255 bytes. Public Key associated with the Enforcement Authority
-                
-            </td>
-        </tr>
-        <tr>
-            <td>SignatureAlgorithm</td>
-            <td>
-                uint(1)
-            </td>
-            <td>
-                Algorithm used for order signature. Only valid value is currently 1 = ECDSA&#43;secp256k1
-                 Example: 1
-            </td>
-        </tr>
-        <tr>
-            <td>OrderSignature</td>
-            <td>
-                varbin(tiny)
-            </td>
-            <td>
-                Length 0-255 bytes. Signature for a message that lists out the target addresses and deposit address. Signature of (Contract PKH, Compliance Action, Authority Name, Asset Code, Supporting Evidence Hash, FreezePeriod, TargetAddresses, and DepositAddress)
-                
-            </td>
-        </tr>
-        <tr>
-            <td>SupportingEvidenceHash</td>
-            <td>
-                bin(32)
-            </td>
-            <td>
-                SHA-256: warrant, court order, etc.
-                
-            </td>
-        </tr>
-        <tr>
-            <td>RefTxs</td>
-            <td>
-                varbin(medium)
-            </td>
-            <td>
-                The request/response actions that were dropped.  The entire txn for both actions is included as evidence that the actions were accepted into the mempool at one point and that the senders (token/Bitcoin) signed their intent to transfer.  The management of this record keeping is off-chain and managed by the administration or operator to preserve the integrity of the state of the tokens. Only applicable for reconcilliation actions.  No subfield when F, T, R is selected as the Compliance Action subfield.
-                Can be null.  Dropped actions that require a reconciliation action to fix the break in the chain are considered to be an extremely rare event.
-            </td>
-        </tr>
-        <tr>
-            <td>BitcoinDispersions</td>
-            <td>
-                <a href="#type-quantity-index">QuantityIndex[small]</a>
-            </td>
-            <td>
-                Index of address in TargetAddresses and amount of bitcoin (in satoshis) they are receiving in exchange for their tokens.
-                
-            </td>
-        </tr>
-        <tr>
-            <td>Message</td>
-            <td>
-                varchar(medium)
-            </td>
-            <td>
-                A message to include with the enforcement order.
-                 Example: Compelled by a court order.
-            </td>
-        </tr>
+    <tr>
+        <td>ComplianceAction</td>
+        <td>
+            fixedchar(1)
+        </td>
+        <td>
+            Freeze (F), Thaw (T), Confiscate (C), Reconcile (R)
+             Example: F
+        </td>
+    </tr>
+
+    <tr>
+        <td>AssetType</td>
+        <td>
+            fixedchar(3)
+        </td>
+        <td>
+            Three letter character that specifies the asset type.
+             Example: SHC
+        </td>
+    </tr>
+
+    <tr>
+        <td>AssetCode</td>
+        <td>
+            <a href="#alias-asset-code">AssetCode</a>
+        </td>
+        <td>
+            A unique code that is used to identify the asset. It is generated by hashing the contract public key hash and the asset index. SHA256(contract PKH &#43; asset index)
+            Cannot be changed by the administration, operator or smart contract.
+        </td>
+    </tr>
+
+    <tr>
+        <td>TargetAddresses</td>
+        <td>
+            <a href="#type-target-address">TargetAddress[medium]</a>
+        </td>
+        <td>
+            The holders and quantities that are effected by the order. For a contract or asset wide freeze only the contract address is specified. Zero quantities are invalid unless it is for the contract address in an asset wide or contract wide freeze. In a thaw order this field is not serialized, because the entire freeze from the FreezeTxId freeze action will be thawed.
+            
+        </td>
+    </tr>
+
+    <tr>
+        <td>FreezeTxId</td>
+        <td>
+            <a href="#alias-tx-id">TxId</a>
+        </td>
+        <td>
+            The tx id of the freeze action that is being thawed. Only serialized for thaw orders.
+            
+        </td>
+    </tr>
+
+    <tr>
+        <td>FreezePeriod</td>
+        <td>
+            <a href="#alias-timestamp">Timestamp</a>
+        </td>
+        <td>
+            Used for a &#39;time out&#39;.  Tokens are automatically unfrozen after the expiration timestamp without requiring a Thaw Action. Null value for Thaw, Confiscation and Reconciallitaion orders.
+             Example: Tue Oct 09 2018 05:00:00 GMT&#43;1000 (AEST)
+        </td>
+    </tr>
+
+    <tr>
+        <td>DepositAddress</td>
+        <td>
+            <a href="#alias-public-key-hash">PublicKeyHash</a>
+        </td>
+        <td>
+            The public address for confiscated tokens to be deposited in.  Null for Freeze, Thaw, actions.
+            Eventually the supporting evidence/explanation can be supported by a Subfield that has the public address (and a signed message) owned by a legal authority for ID verification/certification purposes.
+        </td>
+    </tr>
+
+    <tr>
+        <td>AuthorityIncluded</td>
+        <td>
+            bool
+        </td>
+        <td>
+            Specifies if an authority signature is included. For Reconcialitaion actions all authority signature related fields are skipped during serialization.
+            
+        </td>
+    </tr>
+
+    <tr>
+        <td>AuthorityName</td>
+        <td>
+            varchar(tiny)
+        </td>
+        <td>
+            Length 0-255 bytes. Enforcement Authority Name (eg. Issuer, Queensland Police Service, Tokenized, etc.)
+             Example: Supreme and District Courts Brisbane
+        </td>
+    </tr>
+
+    <tr>
+        <td>AuthorityPublicKey</td>
+        <td>
+            varbin(tiny)
+        </td>
+        <td>
+            Length 0-255 bytes. Public Key associated with the Enforcement Authority
+            
+        </td>
+    </tr>
+
+    <tr>
+        <td>SignatureAlgorithm</td>
+        <td>
+            uint(1)
+        </td>
+        <td>
+            Algorithm used for order signature. Only valid value is currently 1 = ECDSA&#43;secp256k1
+             Example: 1
+        </td>
+    </tr>
+
+    <tr>
+        <td>OrderSignature</td>
+        <td>
+            varbin(tiny)
+        </td>
+        <td>
+            Length 0-255 bytes. Signature for a message that lists out the target addresses and deposit address. Signature of (Contract PKH, Compliance Action, Authority Name, Asset Code, Supporting Evidence Hash, FreezePeriod, TargetAddresses, and DepositAddress)
+            
+        </td>
+    </tr>
+
+    <tr>
+        <td>SupportingEvidenceHash</td>
+        <td>
+            bin(32)
+        </td>
+        <td>
+            SHA-256: warrant, court order, etc.
+            
+        </td>
+    </tr>
+
+    <tr>
+        <td>RefTxs</td>
+        <td>
+            varbin(medium)
+        </td>
+        <td>
+            The request/response actions that were dropped.  The entire txn for both actions is included as evidence that the actions were accepted into the mempool at one point and that the senders (token/Bitcoin) signed their intent to transfer.  The management of this record keeping is off-chain and managed by the administration or operator to preserve the integrity of the state of the tokens. Only applicable for reconcilliation actions.  No subfield when F, T, R is selected as the Compliance Action subfield.
+            Can be null.  Dropped actions that require a reconciliation action to fix the break in the chain are considered to be an extremely rare event.
+        </td>
+    </tr>
+
+    <tr>
+        <td>BitcoinDispersions</td>
+        <td>
+            <a href="#type-quantity-index">QuantityIndex[small]</a>
+        </td>
+        <td>
+            Index of address in TargetAddresses and amount of bitcoin (in satoshis) they are receiving in exchange for their tokens.
+            
+        </td>
+    </tr>
+
+    <tr>
+        <td>Message</td>
+        <td>
+            varchar(medium)
+        </td>
+        <td>
+            A message to include with the enforcement order.
+             Example: Compelled by a court order.
+        </td>
+    </tr>
+
 </table>
 
 ##### Transaction Summary
@@ -2583,56 +2736,61 @@ The contract responding to an Order action to freeze assets. To be used to compl
         <th style="width:15%">Type</th>
         <th>Description</th>
     </tr>
-        <tr>
-            <td>AssetType</td>
-            <td>
-                fixedchar(3)
-            </td>
-            <td>
-                Three letter character that specifies the asset type.
-                 Example: SHC
-            </td>
-        </tr>
-        <tr>
-            <td>AssetCode</td>
-            <td>
-                <a href="#alias-bin">bin(32)</a>
-            </td>
-            <td>
-                A unique code that is used to identify the asset. It is generated by hashing the contract public key hash and the asset index. SHA256(contract PKH &#43; asset index)
-                Cannot be changed by the administration, operator or smart contract.
-            </td>
-        </tr>
-        <tr>
-            <td>Quantities</td>
-            <td>
-                <a href="#type-quantity-index">QuantityIndex[small]</a>
-            </td>
-            <td>
-                Indices to addresses in outputs and the quantities being frozen. If the only address is the contract address and the asset code is zeros, then it is a contract wide freeze. If the only address is the contract address and the asset code is specified, then it is an asset wide freeze.
-                
-            </td>
-        </tr>
-        <tr>
-            <td>FreezePeriod</td>
-            <td>
-                <a href="#alias-uint">uint(8)</a>
-            </td>
-            <td>
-                Used for a &#39;time out&#39;.  Tokens are automatically unfrozen after the expiration timestamp without requiring a Thaw Action.
-                
-            </td>
-        </tr>
-        <tr>
-            <td>Timestamp</td>
-            <td>
-                <a href="#alias-uint">uint(8)</a>
-            </td>
-            <td>
-                Timestamp in nanoseconds of when the smart contract created the action.
-                Cannot be changed by the administration, operator. Smart contract controls.
-            </td>
-        </tr>
+    <tr>
+        <td>AssetType</td>
+        <td>
+            fixedchar(3)
+        </td>
+        <td>
+            Three letter character that specifies the asset type.
+             Example: SHC
+        </td>
+    </tr>
+
+    <tr>
+        <td>AssetCode</td>
+        <td>
+            <a href="#alias-asset-code">AssetCode</a>
+        </td>
+        <td>
+            A unique code that is used to identify the asset. It is generated by hashing the contract public key hash and the asset index. SHA256(contract PKH &#43; asset index)
+            Cannot be changed by the administration, operator or smart contract.
+        </td>
+    </tr>
+
+    <tr>
+        <td>Quantities</td>
+        <td>
+            <a href="#type-quantity-index">QuantityIndex[small]</a>
+        </td>
+        <td>
+            Indices to addresses in outputs and the quantities being frozen. If the only address is the contract address and the asset code is zeros, then it is a contract wide freeze. If the only address is the contract address and the asset code is specified, then it is an asset wide freeze.
+            
+        </td>
+    </tr>
+
+    <tr>
+        <td>FreezePeriod</td>
+        <td>
+            <a href="#alias-timestamp">Timestamp</a>
+        </td>
+        <td>
+            Used for a &#39;time out&#39;.  Tokens are automatically unfrozen after the expiration timestamp without requiring a Thaw Action.
+            
+        </td>
+    </tr>
+
+    <tr>
+        <td>Timestamp</td>
+        <td>
+            <a href="#alias-timestamp">Timestamp</a>
+        </td>
+        <td>
+            Timestamp in nanoseconds of when the smart contract created the action.
+            Cannot be changed by the administration, operator. Smart contract controls.
+        </td>
+    </tr>
+
 </table>
 
 ##### Transaction Summary
@@ -2691,26 +2849,28 @@ The contract responding to an Order action to thaw assets. To be used to comply 
         <th style="width:15%">Type</th>
         <th>Description</th>
     </tr>
-        <tr>
-            <td>FreezeTxId</td>
-            <td>
-                <a href="#alias-bin">bin(32)</a>
-            </td>
-            <td>
-                The tx id of the freeze action that is being reversed.
-                
-            </td>
-        </tr>
-        <tr>
-            <td>Timestamp</td>
-            <td>
-                <a href="#alias-uint">uint(8)</a>
-            </td>
-            <td>
-                Timestamp in nanoseconds of when the smart contract created the action.
-                Cannot be changed by the administration, operator. Smart contract controls.
-            </td>
-        </tr>
+    <tr>
+        <td>FreezeTxId</td>
+        <td>
+            <a href="#alias-tx-id">TxId</a>
+        </td>
+        <td>
+            The tx id of the freeze action that is being reversed.
+            
+        </td>
+    </tr>
+
+    <tr>
+        <td>Timestamp</td>
+        <td>
+            <a href="#alias-timestamp">Timestamp</a>
+        </td>
+        <td>
+            Timestamp in nanoseconds of when the smart contract created the action.
+            Cannot be changed by the administration, operator. Smart contract controls.
+        </td>
+    </tr>
+
 </table>
 
 ##### Transaction Summary
@@ -2769,56 +2929,61 @@ The contract responding to an Order action to confiscate assets. To be used to c
         <th style="width:15%">Type</th>
         <th>Description</th>
     </tr>
-        <tr>
-            <td>AssetType</td>
-            <td>
-                fixedchar(3)
-            </td>
-            <td>
-                Three letter character that specifies the asset type.
-                 Example: SHC
-            </td>
-        </tr>
-        <tr>
-            <td>AssetCode</td>
-            <td>
-                <a href="#alias-bin">bin(32)</a>
-            </td>
-            <td>
-                A unique code that is used to identify the asset. It is generated by hashing the contract public key hash and the asset index. SHA256(contract PKH &#43; asset index)
-                Cannot be changed by the administration, operator or smart contract.
-            </td>
-        </tr>
-        <tr>
-            <td>Quantities</td>
-            <td>
-                <a href="#type-quantity-index">QuantityIndex[small]</a>
-            </td>
-            <td>
-                The holders effected by the confiscation and their balance remaining.
-                
-            </td>
-        </tr>
-        <tr>
-            <td>DepositQty</td>
-            <td>
-                uint(8)
-            </td>
-            <td>
-                Deposit address&#39;s token balance after confiscation.
-                 Example: 10000
-            </td>
-        </tr>
-        <tr>
-            <td>Timestamp</td>
-            <td>
-                <a href="#alias-uint">uint(8)</a>
-            </td>
-            <td>
-                Timestamp in nanoseconds of when the smart contract created the action.
-                Cannot be changed by the administration, operator. Smart contract controls.
-            </td>
-        </tr>
+    <tr>
+        <td>AssetType</td>
+        <td>
+            fixedchar(3)
+        </td>
+        <td>
+            Three letter character that specifies the asset type.
+             Example: SHC
+        </td>
+    </tr>
+
+    <tr>
+        <td>AssetCode</td>
+        <td>
+            <a href="#alias-asset-code">AssetCode</a>
+        </td>
+        <td>
+            A unique code that is used to identify the asset. It is generated by hashing the contract public key hash and the asset index. SHA256(contract PKH &#43; asset index)
+            Cannot be changed by the administration, operator or smart contract.
+        </td>
+    </tr>
+
+    <tr>
+        <td>Quantities</td>
+        <td>
+            <a href="#type-quantity-index">QuantityIndex[small]</a>
+        </td>
+        <td>
+            The holders effected by the confiscation and their balance remaining.
+            
+        </td>
+    </tr>
+
+    <tr>
+        <td>DepositQty</td>
+        <td>
+            uint(8)
+        </td>
+        <td>
+            Deposit address&#39;s token balance after confiscation.
+             Example: 10000
+        </td>
+    </tr>
+
+    <tr>
+        <td>Timestamp</td>
+        <td>
+            <a href="#alias-timestamp">Timestamp</a>
+        </td>
+        <td>
+            Timestamp in nanoseconds of when the smart contract created the action.
+            Cannot be changed by the administration, operator. Smart contract controls.
+        </td>
+    </tr>
+
 </table>
 
 ##### Transaction Summary
@@ -2882,46 +3047,50 @@ The contract responding to an Order action to reconcile assets. To be used at th
         <th style="width:15%">Type</th>
         <th>Description</th>
     </tr>
-        <tr>
-            <td>AssetType</td>
-            <td>
-                fixedchar(3)
-            </td>
-            <td>
-                Three letter character that specifies the asset type.
-                 Example: SHC
-            </td>
-        </tr>
-        <tr>
-            <td>AssetCode</td>
-            <td>
-                <a href="#alias-bin">bin(32)</a>
-            </td>
-            <td>
-                A unique code that is used to identify the asset. It is generated by hashing the contract public key hash and the asset index. SHA256(contract PKH &#43; asset index)
-                Cannot be changed by the administration, operator or smart contract.
-            </td>
-        </tr>
-        <tr>
-            <td>Quantities</td>
-            <td>
-                <a href="#type-quantity-index">QuantityIndex[small]</a>
-            </td>
-            <td>
-                The holders effected by the reconciliation and their balance remaining.
-                
-            </td>
-        </tr>
-        <tr>
-            <td>Timestamp</td>
-            <td>
-                <a href="#alias-uint">uint(8)</a>
-            </td>
-            <td>
-                Timestamp in nanoseconds of when the smart contract created the action.
-                Cannot be changed by the administration, operator. Smart contract controls.
-            </td>
-        </tr>
+    <tr>
+        <td>AssetType</td>
+        <td>
+            fixedchar(3)
+        </td>
+        <td>
+            Three letter character that specifies the asset type.
+             Example: SHC
+        </td>
+    </tr>
+
+    <tr>
+        <td>AssetCode</td>
+        <td>
+            <a href="#alias-asset-code">AssetCode</a>
+        </td>
+        <td>
+            A unique code that is used to identify the asset. It is generated by hashing the contract public key hash and the asset index. SHA256(contract PKH &#43; asset index)
+            Cannot be changed by the administration, operator or smart contract.
+        </td>
+    </tr>
+
+    <tr>
+        <td>Quantities</td>
+        <td>
+            <a href="#type-quantity-index">QuantityIndex[small]</a>
+        </td>
+        <td>
+            The holders effected by the reconciliation and their balance remaining.
+            
+        </td>
+    </tr>
+
+    <tr>
+        <td>Timestamp</td>
+        <td>
+            <a href="#alias-timestamp">Timestamp</a>
+        </td>
+        <td>
+            Timestamp in nanoseconds of when the smart contract created the action.
+            Cannot be changed by the administration, operator. Smart contract controls.
+        </td>
+    </tr>
+
 </table>
 
 ##### Transaction Summary
@@ -2979,16 +3148,17 @@ Establishes an on-chain register.
         <th style="width:15%">Type</th>
         <th>Description</th>
     </tr>
-        <tr>
-            <td>Message</td>
-            <td>
-                varchar(medium)
-            </td>
-            <td>
-                A custom message to include with this action.
-                 Example: North America Whitelist
-            </td>
-        </tr>
+    <tr>
+        <td>Message</td>
+        <td>
+            varchar(medium)
+        </td>
+        <td>
+            A custom message to include with this action.
+             Example: North America Whitelist
+        </td>
+    </tr>
+
 </table>
 
 ##### Transaction Summary
@@ -3046,16 +3216,17 @@ Adds an entry to the Register.
         <th style="width:15%">Type</th>
         <th>Description</th>
     </tr>
-        <tr>
-            <td>Message</td>
-            <td>
-                varchar(medium)
-            </td>
-            <td>
-                A custom message to include with this action.
-                 Example: username
-            </td>
-        </tr>
+    <tr>
+        <td>Message</td>
+        <td>
+            varchar(medium)
+        </td>
+        <td>
+            A custom message to include with this action.
+             Example: username
+        </td>
+    </tr>
+
 </table>
 
 ##### Transaction Summary
@@ -3113,26 +3284,28 @@ A register entry/record can be altered.
         <th style="width:15%">Type</th>
         <th>Description</th>
     </tr>
-        <tr>
-            <td>EntryTxID</td>
-            <td>
-                <a href="#alias-bin">bin(32)</a>
-            </td>
-            <td>
-                Transaction ID of the register entry to be altered.
-                
-            </td>
-        </tr>
-        <tr>
-            <td>Message</td>
-            <td>
-                varchar(medium)
-            </td>
-            <td>
-                A custom message to include with this action.
-                 Example: Changed Country of Residence
-            </td>
-        </tr>
+    <tr>
+        <td>EntryTxID</td>
+        <td>
+            <a href="#alias-tx-id">TxId</a>
+        </td>
+        <td>
+            Transaction ID of the register entry to be altered.
+            
+        </td>
+    </tr>
+
+    <tr>
+        <td>Message</td>
+        <td>
+            varchar(medium)
+        </td>
+        <td>
+            A custom message to include with this action.
+             Example: Changed Country of Residence
+        </td>
+    </tr>
+
 </table>
 
 ##### Transaction Summary
@@ -3190,26 +3363,28 @@ Removes an entry/record from the Register.
         <th style="width:15%">Type</th>
         <th>Description</th>
     </tr>
-        <tr>
-            <td>EntryTxID</td>
-            <td>
-                <a href="#alias-bin">bin(32)</a>
-            </td>
-            <td>
-                Transaction ID of the register entry to be altered.
-                
-            </td>
-        </tr>
-        <tr>
-            <td>Message</td>
-            <td>
-                varchar(medium)
-            </td>
-            <td>
-                A custom message to include with this action.
-                 Example: Removed due to violation of company policy.
-            </td>
-        </tr>
+    <tr>
+        <td>EntryTxID</td>
+        <td>
+            <a href="#alias-tx-id">TxId</a>
+        </td>
+        <td>
+            Transaction ID of the register entry to be altered.
+            
+        </td>
+    </tr>
+
+    <tr>
+        <td>Message</td>
+        <td>
+            varchar(medium)
+        </td>
+        <td>
+            A custom message to include with this action.
+             Example: Removed due to violation of company policy.
+        </td>
+    </tr>
+
 </table>
 
 ##### Transaction Summary
@@ -3268,37 +3443,40 @@ The message action is a general purpose communication action. &#39;Twitter/SMS&#
         <th style="width:15%">Type</th>
         <th>Description</th>
     </tr>
-        <tr>
-            <td>AddressIndexes</td>
-            <td>
-                uint(4)[tiny]
-            </td>
-            <td>
-                Associates the message to a particular output by the index.
-                
-            </td>
-        </tr>
-        <tr>
-            <td>MessageCode</td>
-            <td>
-                uint(2)
-            </td>
-            <td>
-                
-                
-            </td>
-        </tr>
-        <tr>
-            <td>MessagePayload</td>
-            <td>
-                varbin(medium)
-            </td>
-            <td>
-                Public or private (RSA public key, Diffie-Hellman). Issuers/Contracts can send the signifying amount of satoshis to themselves for public announcements or private &#39;notes&#39; if encrypted. See Message Types for a full list of potential use cases.
+    <tr>
+        <td>AddressIndexes</td>
+        <td>
+            uint(4)[tiny]
+        </td>
+        <td>
+            Associates the message to a particular output by the index.
+            
+        </td>
+    </tr>
 
-                 Example: Hello world!
-            </td>
-        </tr>
+    <tr>
+        <td>MessageCode</td>
+        <td>
+            uint(2)
+        </td>
+        <td>
+            
+            
+        </td>
+    </tr>
+
+    <tr>
+        <td>MessagePayload</td>
+        <td>
+            varbin(medium)
+        </td>
+        <td>
+            Public or private (RSA public key, Diffie-Hellman). Issuers/Contracts can send the signifying amount of satoshis to themselves for public announcements or private &#39;notes&#39; if encrypted. See Message Types for a full list of potential use cases.
+
+             Example: Hello world!
+        </td>
+    </tr>
+
 </table>
 
 ##### Transaction Summary
@@ -3356,56 +3534,61 @@ Used to reject request actions that do not comply with the Contract. If money is
         <th style="width:15%">Type</th>
         <th>Description</th>
     </tr>
-        <tr>
-            <td>AddressIndexes</td>
-            <td>
-                uint(4)[tiny]
-            </td>
-            <td>
-                Associates the message to a particular output by the index.
-                
-            </td>
-        </tr>
-        <tr>
-            <td>RejectAddressIndex</td>
-            <td>
-                uint(2)
-            </td>
-            <td>
-                The address which is believed to have caused the rejection.
-                
-            </td>
-        </tr>
-        <tr>
-            <td>RejectionCode</td>
-            <td>
-                <a href="#alias-uint">uint(1)</a>
-            </td>
-            <td>
-                Classifies the rejection by a type.
-                 Example: 1
-            </td>
-        </tr>
-        <tr>
-            <td>Message</td>
-            <td>
-                varchar(small)
-            </td>
-            <td>
-                Length 0-65,535 bytes. Message that explains the reasoning for a rejection, if needed.  Most rejection types will be captured by the Rejection Type Subfield.
-                 Example: Sorry, you don&#39;t have enough tokens.
-            </td>
-        </tr>
-        <tr>
-            <td>Timestamp</td>
-            <td>
-                <a href="#alias-uint">uint(8)</a>
-            </td>
-            <td>
-                Timestamp in nanoseconds of when the smart contract created the action.
-                Cannot be changed by the administration, operator. Smart contract controls.
-            </td>
-        </tr>
+    <tr>
+        <td>AddressIndexes</td>
+        <td>
+            uint(4)[tiny]
+        </td>
+        <td>
+            Associates the message to a particular output by the index.
+            
+        </td>
+    </tr>
+
+    <tr>
+        <td>RejectAddressIndex</td>
+        <td>
+            uint(2)
+        </td>
+        <td>
+            The address which is believed to have caused the rejection.
+            
+        </td>
+    </tr>
+
+    <tr>
+        <td>RejectionCode</td>
+        <td>
+            <a href="#alias-rejection-code">RejectionCode</a>
+        </td>
+        <td>
+            Classifies the rejection by a type.
+             Example: 1
+        </td>
+    </tr>
+
+    <tr>
+        <td>Message</td>
+        <td>
+            varchar(small)
+        </td>
+        <td>
+            Length 0-65,535 bytes. Message that explains the reasoning for a rejection, if needed.  Most rejection types will be captured by the Rejection Type Subfield.
+             Example: Sorry, you don&#39;t have enough tokens.
+        </td>
+    </tr>
+
+    <tr>
+        <td>Timestamp</td>
+        <td>
+            <a href="#alias-timestamp">Timestamp</a>
+        </td>
+        <td>
+            Timestamp in nanoseconds of when the smart contract created the action.
+            Cannot be changed by the administration, operator. Smart contract controls.
+        </td>
+    </tr>
+
 </table>
 
 ##### Transaction Summary
@@ -3444,8 +3627,6 @@ Used to reject request actions that do not comply with the Contract. If money is
 
 
 
-
-
 <a name="field-types"></a>
 ## Field Types
 
@@ -3477,26 +3658,28 @@ Administrator is used to refer to a Administration role in an Entity.
         <th style="width:15%">Type</th>
         <th>Description</th>
     </tr>
-        <tr>
-            <td>Type</td>
-            <td>
-                <a href="#alias-uint">uint(1)</a>
-            </td>
-            <td>
-                Chairman, Director, Managing Partner, etc.. Found in &#39;Roles&#39; in Specification/Resources
-                 Example: 7
-            </td>
-        </tr>
-        <tr>
-            <td>Name</td>
-            <td>
-                varchar(tiny)
-            </td>
-            <td>
-                Length 0-255 bytes. 0 is valid.
-                 Example: Satoshi Nakamoto
-            </td>
-        </tr>
+    <tr>
+        <td>Type</td>
+        <td>
+            <a href="#alias-role">Role</a>
+        </td>
+        <td>
+            Chairman, Director, Managing Partner, etc.. Found in &#39;Roles&#39; in Specification/Resources
+             Example: 7
+        </td>
+    </tr>
+
+    <tr>
+        <td>Name</td>
+        <td>
+            varchar(tiny)
+        </td>
+        <td>
+            Length 0-255 bytes. 0 is valid.
+             Example: Satoshi Nakamoto
+        </td>
+    </tr>
+
 </table>
 
 
@@ -3512,66 +3695,72 @@ An Amendment is used to describe the modification of a single field in a Contrac
         <th style="width:15%">Type</th>
         <th>Description</th>
     </tr>
-        <tr>
-            <td>FieldIndex</td>
-            <td>
-                uint(1)
-            </td>
-            <td>
-                Index of the field to be amended.
-                A field with a complex array type uses the same FieldIndex value for all elements. For example, in C1 the VotingSystems field is FieldIndex 16. Indexes are zero based. Example: 2
-            </td>
-        </tr>
-        <tr>
-            <td>Element</td>
-            <td>
-                uint(2)
-            </td>
-            <td>
-                Specifies the element of the complex array type to be amended. This only applies to array types, and has no meaning for a simple type such as uint64, string, byte or byte[]. Specifying a value &gt; 0 for a simple type will result in a Rejection.
-                To specify the 3rd VotingSystem of a Contract, the value 2 would be given. Indexes are zero based. Example: 0
-            </td>
-        </tr>
-        <tr>
-            <td>SubfieldIndex</td>
-            <td>
-                uint(1)
-            </td>
-            <td>
-                Index of the subfield to be amended. This only applies to specific fields containing complex types with subfields. This is used to specify which field of the object the amendment applies to.
-                For example to specify the 2nd field of a VotingSystem, value 1 would be given. Example: 1
-            </td>
-        </tr>
-        <tr>
-            <td>SubfieldElement</td>
-            <td>
-                uint(2)
-            </td>
-            <td>
-                Specifies the element of the complex array type to be amended. This only applies to array types, and has no meaning for a simple type such as uint64, string, byte or byte[]. Specifying a value &gt; 0 for a simple type will result in a Rejection.
-                For example to specify the 2nd field of a VotingSystem, value 1 would be given. Example: 1
-            </td>
-        </tr>
-        <tr>
-            <td>Operation</td>
-            <td>
-                uint(1)
-            </td>
-            <td>
-                0 = Modify. 1 = Add an element to the data to the array of elements. 2 = Delete the element listed in the Element field. The Add and Delete operations only apply to a particilar element of a complex array type. For example, it could be used to remove a particular VotingSystem from a Contract.
-                 Example: 0
-            </td>
-        </tr>
-        <tr>
-            <td>Data</td>
-            <td>
-                varbin(medium)
-            </td>
-            <td>
-                New data for the amended subfield. Data type depends on the the type of the field being amended. The value should be serialize as defined by the protocol.
-                The bytes should be in an format appropriate for the field being modified.
-            </td>
-        </tr>
+    <tr>
+        <td>FieldIndex</td>
+        <td>
+            uint(1)
+        </td>
+        <td>
+            Index of the field to be amended.
+            A field with a complex array type uses the same FieldIndex value for all elements. For example, in C1 the VotingSystems field is FieldIndex 16. Indexes are zero based. Example: 2
+        </td>
+    </tr>
+
+    <tr>
+        <td>Element</td>
+        <td>
+            uint(2)
+        </td>
+        <td>
+            Specifies the element of the complex array type to be amended. This only applies to array types, and has no meaning for a simple type such as uint64, string, byte or byte[]. Specifying a value &gt; 0 for a simple type will result in a Rejection.
+            To specify the 3rd VotingSystem of a Contract, the value 2 would be given. Indexes are zero based. Example: 0
+        </td>
+    </tr>
+
+    <tr>
+        <td>SubfieldIndex</td>
+        <td>
+            uint(1)
+        </td>
+        <td>
+            Index of the subfield to be amended. This only applies to specific fields containing complex types with subfields. This is used to specify which field of the object the amendment applies to.
+            For example to specify the 2nd field of a VotingSystem, value 1 would be given. Example: 1
+        </td>
+    </tr>
+
+    <tr>
+        <td>SubfieldElement</td>
+        <td>
+            uint(2)
+        </td>
+        <td>
+            Specifies the element of the complex array type to be amended. This only applies to array types, and has no meaning for a simple type such as uint64, string, byte or byte[]. Specifying a value &gt; 0 for a simple type will result in a Rejection.
+            For example to specify the 2nd field of a VotingSystem, value 1 would be given. Example: 1
+        </td>
+    </tr>
+
+    <tr>
+        <td>Operation</td>
+        <td>
+            uint(1)
+        </td>
+        <td>
+            0 = Modify. 1 = Add an element to the data to the array of elements. 2 = Delete the element listed in the Element field. The Add and Delete operations only apply to a particilar element of a complex array type. For example, it could be used to remove a particular VotingSystem from a Contract.
+             Example: 0
+        </td>
+    </tr>
+
+    <tr>
+        <td>Data</td>
+        <td>
+            varbin(medium)
+        </td>
+        <td>
+            New data for the amended subfield. Data type depends on the the type of the field being amended. The value should be serialize as defined by the protocol.
+            The bytes should be in an format appropriate for the field being modified.
+        </td>
+    </tr>
+
 </table>
 
 
@@ -3587,66 +3776,72 @@ An AssetReceiver is a quantity, address, and oracle signature. The quantity coul
         <th style="width:15%">Type</th>
         <th>Description</th>
     </tr>
-        <tr>
-            <td>Address</td>
-            <td>
-                <a href="#alias-varbin">varbin(tiny)</a>
-            </td>
-            <td>
-                The address receiving the tokens
-                
-            </td>
-        </tr>
-        <tr>
-            <td>Quantity</td>
-            <td>
-                uint(8)
-            </td>
-            <td>
-                Number of tokens to be received by address at Output X
-                 Example: 100
-            </td>
-        </tr>
-        <tr>
-            <td>OracleSigAlgorithm</td>
-            <td>
-                uint(1)
-            </td>
-            <td>
-                0 = No Oracle-signed Message (OracleConfirmationSig skipped in serialization), 1 = ECDSA&#43;secp256k1. If the contract for the asset being received has oracles, then a signature is required from one of them.
-                 Example: 1
-            </td>
-        </tr>
-        <tr>
-            <td>OracleIndex</td>
-            <td>
-                uint(1)
-            </td>
-            <td>
-                Specifies the index into the list of oracles in the contract offer that was used to authorize this transfer.
-                
-            </td>
-        </tr>
-        <tr>
-            <td>OracleConfirmationSig</td>
-            <td>
-                varbin(tiny)
-            </td>
-            <td>
-                Length 0-255 bytes. If restricted to a oracle (whitelist) or has transfer restrictions (age, location, investor status): ECDSA&#43;secp256k1 (or the like) signed message provided by an approved/trusted oracle through an API signature of the defined message. If no transfer restrictions(trade restriction/age restriction fields in the Asset Type payload. or restricted to a whitelist by the Contract Auth Flags, it is a NULL field.
-                
-            </td>
-        </tr>
-        <tr>
-            <td>OracleSigBlockHeight</td>
-            <td>
-                uint(4)
-            </td>
-            <td>
-                The block height of the block hash used in the oracle signature.
-                
-            </td>
-        </tr>
+    <tr>
+        <td>Address</td>
+        <td>
+            <a href="#alias-public-key-hash">PublicKeyHash</a>
+        </td>
+        <td>
+            The address receiving the tokens
+            
+        </td>
+    </tr>
+
+    <tr>
+        <td>Quantity</td>
+        <td>
+            uint(8)
+        </td>
+        <td>
+            Number of tokens to be received by address at Output X
+             Example: 100
+        </td>
+    </tr>
+
+    <tr>
+        <td>OracleSigAlgorithm</td>
+        <td>
+            uint(1)
+        </td>
+        <td>
+            0 = No Oracle-signed Message (OracleConfirmationSig skipped in serialization), 1 = ECDSA&#43;secp256k1. If the contract for the asset being received has oracles, then a signature is required from one of them.
+             Example: 1
+        </td>
+    </tr>
+
+    <tr>
+        <td>OracleIndex</td>
+        <td>
+            uint(1)
+        </td>
+        <td>
+            Specifies the index into the list of oracles in the contract offer that was used to authorize this transfer.
+            
+        </td>
+    </tr>
+
+    <tr>
+        <td>OracleConfirmationSig</td>
+        <td>
+            varbin(tiny)
+        </td>
+        <td>
+            Length 0-255 bytes. If restricted to a oracle (whitelist) or has transfer restrictions (age, location, investor status): ECDSA&#43;secp256k1 (or the like) signed message provided by an approved/trusted oracle through an API signature of the defined message. If no transfer restrictions(trade restriction/age restriction fields in the Asset Type payload. or restricted to a whitelist by the Contract Auth Flags, it is a NULL field.
+            
+        </td>
+    </tr>
+
+    <tr>
+        <td>OracleSigBlockHeight</td>
+        <td>
+            uint(4)
+        </td>
+        <td>
+            The block height of the block hash used in the oracle signature.
+            
+        </td>
+    </tr>
+
 </table>
 
 
@@ -3662,46 +3857,50 @@ AssetSettlement is the data required to settle an asset transfer.
         <th style="width:15%">Type</th>
         <th>Description</th>
     </tr>
-        <tr>
-            <td>ContractIndex</td>
-            <td>
-                uint(2)
-            </td>
-            <td>
-                Index of input containing the contract&#39;s address for this offset
-                
-            </td>
-        </tr>
-        <tr>
-            <td>AssetType</td>
-            <td>
-                fixedchar(3)
-            </td>
-            <td>
-                Three letter character that specifies the asset type. Example: COU
-                 Example: SHC
-            </td>
-        </tr>
-        <tr>
-            <td>AssetCode</td>
-            <td>
-                <a href="#alias-bin">bin(32)</a>
-            </td>
-            <td>
-                A unique code that is used to identify the asset. It is generated by hashing the contract public key hash and the asset index. SHA256(contract PKH &#43; asset index)
-                Cannot be changed by the administration, operator or smart contract.
-            </td>
-        </tr>
-        <tr>
-            <td>Settlements</td>
-            <td>
-                <a href="#type-quantity-index">QuantityIndex[tiny]</a>
-            </td>
-            <td>
-                Each element contains the resulting token balance of Asset X for the output Address, which is referred to by the index.
-                
-            </td>
-        </tr>
+    <tr>
+        <td>ContractIndex</td>
+        <td>
+            uint(2)
+        </td>
+        <td>
+            Index of input containing the contract&#39;s address for this offset
+            
+        </td>
+    </tr>
+
+    <tr>
+        <td>AssetType</td>
+        <td>
+            fixedchar(3)
+        </td>
+        <td>
+            Three letter character that specifies the asset type. Example: COU
+             Example: SHC
+        </td>
+    </tr>
+
+    <tr>
+        <td>AssetCode</td>
+        <td>
+            <a href="#alias-asset-code">AssetCode</a>
+        </td>
+        <td>
+            A unique code that is used to identify the asset. It is generated by hashing the contract public key hash and the asset index. SHA256(contract PKH &#43; asset index)
+            Cannot be changed by the administration, operator or smart contract.
+        </td>
+    </tr>
+
+    <tr>
+        <td>Settlements</td>
+        <td>
+            <a href="#type-quantity-index">QuantityIndex[tiny]</a>
+        </td>
+        <td>
+            Each element contains the resulting token balance of Asset X for the output Address, which is referred to by the index.
+            
+        </td>
+    </tr>
+
 </table>
 
 
@@ -3717,56 +3916,61 @@ AssetTransfer is the data required to transfer an asset.
         <th style="width:15%">Type</th>
         <th>Description</th>
     </tr>
-        <tr>
-            <td>ContractIndex</td>
-            <td>
-                uint(2)
-            </td>
-            <td>
-                Index of output containing the contract&#39;s address for this offset
-                
-            </td>
-        </tr>
-        <tr>
-            <td>AssetType</td>
-            <td>
-                fixedchar(3)
-            </td>
-            <td>
-                Three letter character that specifies the asset type. Example: COU
-                 Example: SHC
-            </td>
-        </tr>
-        <tr>
-            <td>AssetCode</td>
-            <td>
-                <a href="#alias-bin">bin(32)</a>
-            </td>
-            <td>
-                A unique code that is used to identify the asset. It is generated by hashing the contract public key hash and the asset index. SHA256(contract PKH &#43; asset index)
-                Cannot be changed by the administration, operator or smart contract.
-            </td>
-        </tr>
-        <tr>
-            <td>AssetSenders</td>
-            <td>
-                <a href="#type-quantity-index">QuantityIndex[tiny]</a>
-            </td>
-            <td>
-                Each element has the value of tokens to be spent from the input address, which is referred to by the index.
-                
-            </td>
-        </tr>
-        <tr>
-            <td>AssetReceivers</td>
-            <td>
-                <a href="#type-asset-receiver">AssetReceiver[tiny]</a>
-            </td>
-            <td>
-                Each element has the value of tokens to be received, the address, and an oracle signature if required.
-                
-            </td>
-        </tr>
+    <tr>
+        <td>ContractIndex</td>
+        <td>
+            uint(2)
+        </td>
+        <td>
+            Index of output containing the contract&#39;s address for this offset
+            
+        </td>
+    </tr>
+
+    <tr>
+        <td>AssetType</td>
+        <td>
+            fixedchar(3)
+        </td>
+        <td>
+            Three letter character that specifies the asset type. Example: COU
+             Example: SHC
+        </td>
+    </tr>
+
+    <tr>
+        <td>AssetCode</td>
+        <td>
+            <a href="#alias-asset-code">AssetCode</a>
+        </td>
+        <td>
+            A unique code that is used to identify the asset. It is generated by hashing the contract public key hash and the asset index. SHA256(contract PKH &#43; asset index)
+            Cannot be changed by the administration, operator or smart contract.
+        </td>
+    </tr>
+
+    <tr>
+        <td>AssetSenders</td>
+        <td>
+            <a href="#type-quantity-index">QuantityIndex[tiny]</a>
+        </td>
+        <td>
+            Each element has the value of tokens to be spent from the input address, which is referred to by the index.
+            
+        </td>
+    </tr>
+
+    <tr>
+        <td>AssetReceivers</td>
+        <td>
+            <a href="#type-asset-receiver">AssetReceiver[tiny]</a>
+        </td>
+        <td>
+            Each element has the value of tokens to be received, the address, and an oracle signature if required.
+            
+        </td>
+    </tr>
+
 </table>
 
 
@@ -3782,36 +3986,39 @@ A file containing data.
         <th style="width:15%">Type</th>
         <th>Description</th>
     </tr>
-        <tr>
-            <td>Name</td>
-            <td>
-                varchar(tiny)
-            </td>
-            <td>
-                Full name, including file extension, of the file. Length 0-255 bytes. 0 is valid.
-                 Example: Agreement.pdf
-            </td>
-        </tr>
-        <tr>
-            <td>Type</td>
-            <td>
-                varchar(tiny)
-            </td>
-            <td>
-                MIME type of the file. Length 0-255 bytes. 0 is valid. 
-                 Example: application/pdf
-            </td>
-        </tr>
-        <tr>
-            <td>Contents</td>
-            <td>
-                varbin(medium)
-            </td>
-            <td>
-                The contents of the file.
-                
-            </td>
-        </tr>
+    <tr>
+        <td>Name</td>
+        <td>
+            varchar(tiny)
+        </td>
+        <td>
+            Full name, including file extension, of the file. Length 0-255 bytes. 0 is valid.
+             Example: Agreement.pdf
+        </td>
+    </tr>
+
+    <tr>
+        <td>Type</td>
+        <td>
+            varchar(tiny)
+        </td>
+        <td>
+            MIME type of the file. Length 0-255 bytes. 0 is valid. 
+             Example: application/pdf
+        </td>
+    </tr>
+
+    <tr>
+        <td>Contents</td>
+        <td>
+            varbin(medium)
+        </td>
+        <td>
+            The contents of the file.
+            
+        </td>
+    </tr>
+
 </table>
 
 
@@ -3827,146 +4034,160 @@ Entity represents the details of a legal Entity, such as a public or private com
         <th style="width:15%">Type</th>
         <th>Description</th>
     </tr>
-        <tr>
-            <td>Name</td>
-            <td>
-                varchar(tiny)
-            </td>
-            <td>
-                Length 1-255 bytes (0 is not valid). Issuing entity (company, organization, individual).  Can be any unique identifying string, including human readable names for branding/vanity purposes. 
-                 Example: Tesla Inc.
-            </td>
-        </tr>
-        <tr>
-            <td>Type</td>
-            <td>
-                <a href="#alias-fixedchar">fixedchar(1)</a>
-            </td>
-            <td>
-                The type of entity. (i.e Public Company, Individual) (Specification/Resources).
-                 Example: P
-            </td>
-        </tr>
-        <tr>
-            <td>LEI</td>
-            <td>
-                fixedchar(20)
-            </td>
-            <td>
-                Null is valid. A Legal Entity Identifier (or LEI) is an international identifier made up of a 20-character identifier that identifies distinct legal entities that engage in financial transactions. It is defined by ISO 17442.[1] Natural persons are not required to have an LEI; they’re eligible to have one issued, however, but only if they act in an independent business capacity.[2] The LEI is a global standard, designed to be non-proprietary data that is freely accessible to all.[3] As of December 2018, over 1,300,000 legal entities from more than 200 countries have now been issued with LEIs.
-                ISO 17442 - https://en.wikipedia.org/wiki/Legal_Entity_Identifier Example: 54930084UKLVMY22DS16
-            </td>
-        </tr>
-        <tr>
-            <td>UnitNumber</td>
-            <td>
-                varchar(tiny)
-            </td>
-            <td>
-                Issuer/Entity/Contracting Party X Address Details (eg. HQ)
-                 Example: 2
-            </td>
-        </tr>
-        <tr>
-            <td>BuildingNumber</td>
-            <td>
-                varchar(tiny)
-            </td>
-            <td>
-                
-                 Example: 13577
-            </td>
-        </tr>
-        <tr>
-            <td>Street</td>
-            <td>
-                varchar(small)
-            </td>
-            <td>
-                
-                 Example: Fairmont Ave
-            </td>
-        </tr>
-        <tr>
-            <td>SuburbCity</td>
-            <td>
-                varchar(tiny)
-            </td>
-            <td>
-                
-                 Example: Robinoh
-            </td>
-        </tr>
-        <tr>
-            <td>TerritoryStateProvinceCode</td>
-            <td>
-                fixedchar(5)
-            </td>
-            <td>
-                
-                 Example: BC
-            </td>
-        </tr>
-        <tr>
-            <td>CountryCode</td>
-            <td>
-                fixedchar(3)
-            </td>
-            <td>
-                
-                 Example: USA
-            </td>
-        </tr>
-        <tr>
-            <td>PostalZIPCode</td>
-            <td>
-                fixedchar(12)
-            </td>
-            <td>
-                
-                 Example: 50210
-            </td>
-        </tr>
-        <tr>
-            <td>EmailAddress</td>
-            <td>
-                varchar(tiny)
-            </td>
-            <td>
-                Length 0-255 bytes. Address for text-based communication: eg. email address, Bitcoin address
-                 Example: satoshi@tokenized.com
-            </td>
-        </tr>
-        <tr>
-            <td>PhoneNumber</td>
-            <td>
-                varchar(tiny)
-            </td>
-            <td>
-                Length 0-50 bytes. 0 is valid. Phone Number for Entity.
-                 Example: 0448484848
-            </td>
-        </tr>
-        <tr>
-            <td>Administration</td>
-            <td>
-                <a href="#type-administrator">Administrator[tiny]</a>
-            </td>
-            <td>
-                A list of people that are in Administrative Roles for the Entity.  eg. Chair, Director, Managing Partner, etc.
-                
-            </td>
-        </tr>
-        <tr>
-            <td>Management</td>
-            <td>
-                <a href="#type-manager">Manager[tiny]</a>
-            </td>
-            <td>
-                A list of people in Management Roles for the Entity. e.g CEO, COO, CTO, CFO, Secretary, Executive, etc.
-                
-            </td>
-        </tr>
+    <tr>
+        <td>Name</td>
+        <td>
+            varchar(tiny)
+        </td>
+        <td>
+            Length 1-255 bytes (0 is not valid). Issuing entity (company, organization, individual).  Can be any unique identifying string, including human readable names for branding/vanity purposes. 
+             Example: Tesla Inc.
+        </td>
+    </tr>
+
+    <tr>
+        <td>Type</td>
+        <td>
+            <a href="#alias-entity-type">EntityType</a>
+        </td>
+        <td>
+            The type of entity. (i.e Public Company, Individual) (Specification/Resources).
+             Example: P
+        </td>
+    </tr>
+
+    <tr>
+        <td>LEI</td>
+        <td>
+            fixedchar(20)
+        </td>
+        <td>
+            Null is valid. A Legal Entity Identifier (or LEI) is an international identifier made up of a 20-character identifier that identifies distinct legal entities that engage in financial transactions. It is defined by ISO 17442.[1] Natural persons are not required to have an LEI; they’re eligible to have one issued, however, but only if they act in an independent business capacity.[2] The LEI is a global standard, designed to be non-proprietary data that is freely accessible to all.[3] As of December 2018, over 1,300,000 legal entities from more than 200 countries have now been issued with LEIs.
+            ISO 17442 - https://en.wikipedia.org/wiki/Legal_Entity_Identifier Example: 54930084UKLVMY22DS16
+        </td>
+    </tr>
+
+    <tr>
+        <td>UnitNumber</td>
+        <td>
+            varchar(tiny)
+        </td>
+        <td>
+            Issuer/Entity/Contracting Party X Address Details (eg. HQ)
+             Example: 2
+        </td>
+    </tr>
+
+    <tr>
+        <td>BuildingNumber</td>
+        <td>
+            varchar(tiny)
+        </td>
+        <td>
+            
+             Example: 13577
+        </td>
+    </tr>
+
+    <tr>
+        <td>Street</td>
+        <td>
+            varchar(small)
+        </td>
+        <td>
+            
+             Example: Fairmont Ave
+        </td>
+    </tr>
+
+    <tr>
+        <td>SuburbCity</td>
+        <td>
+            varchar(tiny)
+        </td>
+        <td>
+            
+             Example: Robinoh
+        </td>
+    </tr>
+
+    <tr>
+        <td>TerritoryStateProvinceCode</td>
+        <td>
+            fixedchar(5)
+        </td>
+        <td>
+            
+             Example: BC
+        </td>
+    </tr>
+
+    <tr>
+        <td>CountryCode</td>
+        <td>
+            fixedchar(3)
+        </td>
+        <td>
+            
+             Example: USA
+        </td>
+    </tr>
+
+    <tr>
+        <td>PostalZIPCode</td>
+        <td>
+            fixedchar(12)
+        </td>
+        <td>
+            
+             Example: 50210
+        </td>
+    </tr>
+
+    <tr>
+        <td>EmailAddress</td>
+        <td>
+            varchar(tiny)
+        </td>
+        <td>
+            Length 0-255 bytes. Address for text-based communication: eg. email address, Bitcoin address
+             Example: satoshi@tokenized.com
+        </td>
+    </tr>
+
+    <tr>
+        <td>PhoneNumber</td>
+        <td>
+            varchar(tiny)
+        </td>
+        <td>
+            Length 0-50 bytes. 0 is valid. Phone Number for Entity.
+             Example: 0448484848
+        </td>
+    </tr>
+
+    <tr>
+        <td>Administration</td>
+        <td>
+            <a href="#type-administrator">Administrator[tiny]</a>
+        </td>
+        <td>
+            A list of people that are in Administrative Roles for the Entity.  eg. Chair, Director, Managing Partner, etc.
+            
+        </td>
+    </tr>
+
+    <tr>
+        <td>Management</td>
+        <td>
+            <a href="#type-manager">Manager[tiny]</a>
+        </td>
+        <td>
+            A list of people in Management Roles for the Entity. e.g CEO, COO, CTO, CFO, Secretary, Executive, etc.
+            
+        </td>
+    </tr>
+
 </table>
 
 
@@ -3982,26 +4203,28 @@ Manager is used to refer to a role that is responsible for the Management of an 
         <th style="width:15%">Type</th>
         <th>Description</th>
     </tr>
-        <tr>
-            <td>Type</td>
-            <td>
-                <a href="#alias-uint">uint(1)</a>
-            </td>
-            <td>
-                CEO, COO, CFO, etc. Found in &#39;Roles&#39; in Specification/Resources
-                 Example: 5
-            </td>
-        </tr>
-        <tr>
-            <td>Name</td>
-            <td>
-                varchar(tiny)
-            </td>
-            <td>
-                Length 0-255 bytes. 0 is valid.
-                 Example: Satoshi Nakamoto
-            </td>
-        </tr>
+    <tr>
+        <td>Type</td>
+        <td>
+            <a href="#alias-role">Role</a>
+        </td>
+        <td>
+            CEO, COO, CFO, etc. Found in &#39;Roles&#39; in Specification/Resources
+             Example: 5
+        </td>
+    </tr>
+
+    <tr>
+        <td>Name</td>
+        <td>
+            varchar(tiny)
+        </td>
+        <td>
+            Length 0-255 bytes. 0 is valid.
+             Example: Satoshi Nakamoto
+        </td>
+    </tr>
+
 </table>
 
 
@@ -4017,36 +4240,39 @@ A Oracle defines the details of a public Oracle.
         <th style="width:15%">Type</th>
         <th>Description</th>
     </tr>
-        <tr>
-            <td>Name</td>
-            <td>
-                varchar(tiny)
-            </td>
-            <td>
-                Length 0-255 bytes. 0 is valid. Oracle X Name (eg. Coinbase, Tokenized, etc.)
-                 Example: Tokenized
-            </td>
-        </tr>
-        <tr>
-            <td>URL</td>
-            <td>
-                varchar(tiny)
-            </td>
-            <td>
-                Length 0-255 bytes. 0 is valid. If applicable: URL for REST/RPC Endpoint
-                 Example: http://oracle.tokenized.com/api/3650d9/version2010
-            </td>
-        </tr>
-        <tr>
-            <td>PublicKey</td>
-            <td>
-                varbin(tiny)
-            </td>
-            <td>
-                Length 0-255 bytes. 0 is not valid. Oracle Public Key (eg. Bitcoin Public key), used to confirm digital signed proofs for transfers.  Can also be the same public address that controls a Tokenized Oracle.
-                
-            </td>
-        </tr>
+    <tr>
+        <td>Name</td>
+        <td>
+            varchar(tiny)
+        </td>
+        <td>
+            Length 0-255 bytes. 0 is valid. Oracle X Name (eg. Coinbase, Tokenized, etc.)
+             Example: Tokenized
+        </td>
+    </tr>
+
+    <tr>
+        <td>URL</td>
+        <td>
+            varchar(tiny)
+        </td>
+        <td>
+            Length 0-255 bytes. 0 is valid. If applicable: URL for REST/RPC Endpoint
+             Example: http://oracle.tokenized.com/api/3650d9/version2010
+        </td>
+    </tr>
+
+    <tr>
+        <td>PublicKey</td>
+        <td>
+            varbin(tiny)
+        </td>
+        <td>
+            Length 0-255 bytes. 0 is not valid. Oracle Public Key (eg. Bitcoin Public key), used to confirm digital signed proofs for transfers.  Can also be the same public address that controls a Tokenized Oracle.
+            
+        </td>
+    </tr>
+
 </table>
 
 
@@ -4062,26 +4288,28 @@ A QuantityIndex contains a quantity, and an index. The quantity could be used to
         <th style="width:15%">Type</th>
         <th>Description</th>
     </tr>
-        <tr>
-            <td>Index</td>
-            <td>
-                uint(2)
-            </td>
-            <td>
-                The index of the input/output (depending on context) sending/receiving the tokens.
-                 Example: 0
-            </td>
-        </tr>
-        <tr>
-            <td>Quantity</td>
-            <td>
-                uint(8)
-            </td>
-            <td>
-                Number of tokens being sent
-                 Example: 100
-            </td>
-        </tr>
+    <tr>
+        <td>Index</td>
+        <td>
+            uint(2)
+        </td>
+        <td>
+            The index of the input/output (depending on context) sending/receiving the tokens.
+             Example: 0
+        </td>
+    </tr>
+
+    <tr>
+        <td>Quantity</td>
+        <td>
+            uint(8)
+        </td>
+        <td>
+            Number of tokens being sent
+             Example: 100
+        </td>
+    </tr>
+
 </table>
 
 
@@ -4097,26 +4325,28 @@ A TargetAddress defines a public address and quantity.
         <th style="width:15%">Type</th>
         <th>Description</th>
     </tr>
-        <tr>
-            <td>Address</td>
-            <td>
-                <a href="#alias-varbin">varbin(tiny)</a>
-            </td>
-            <td>
-                Public address where the token balance will be changed.
-                
-            </td>
-        </tr>
-        <tr>
-            <td>Quantity</td>
-            <td>
-                uint(8)
-            </td>
-            <td>
-                Qty of tokens to be frozen, thawed, confiscated or reconciled. For Contract-wide freezes 0 will be used.
-                 Example: 10000
-            </td>
-        </tr>
+    <tr>
+        <td>Address</td>
+        <td>
+            <a href="#alias-public-key-hash">PublicKeyHash</a>
+        </td>
+        <td>
+            Public address where the token balance will be changed.
+            
+        </td>
+    </tr>
+
+    <tr>
+        <td>Quantity</td>
+        <td>
+            uint(8)
+        </td>
+        <td>
+            Qty of tokens to be frozen, thawed, confiscated or reconciled. For Contract-wide freezes 0 will be used.
+             Example: 10000
+        </td>
+    </tr>
+
 </table>
 
 
@@ -4132,66 +4362,204 @@ A VotingSystem defines all details of a Voting System.
         <th style="width:15%">Type</th>
         <th>Description</th>
     </tr>
-        <tr>
-            <td>Name</td>
+    <tr>
+        <td>Name</td>
+        <td>
+            varchar(tiny)
+        </td>
+        <td>
+            eg. Special Resolutions, Ordinary Resolutions, Fundamental Matters, General Matters, Directors&#39; Vote, Poll, etc.
+             Example: Special Resolutions
+        </td>
+    </tr>
+
+    <tr>
+        <td>VoteType</td>
+        <td>
+            fixedchar(1)
+        </td>
+        <td>
+            R - Relative Threshold, A - Absolute Threshold, P - Plurality,  (Relative Threshold means the number of counted votes must exceed the threshold % of total ballots cast.  Abstentations/spoiled votes do not detract from the liklihood of a vote passing as they are not included in the denominator.  Absolute Threshold requires the number of ballots counted to exceed the threshold value when compared to the total outstanding tokens.  Abstentations/spoiled votes detract from the liklihood of the vote passing.  For example, in an absolute threshold vote, if the threshold was 50% and 51% of the total outstanding tokens did not vote, then the vote cannot pass.  50% of all tokens would have had to vote for one vote option for the vote to be successful. Plurality means the most favoured option is selected, regardless of the number of votes cast or the percentage relative to other choices.
+             Example: A
+        </td>
+    </tr>
+
+    <tr>
+        <td>TallyLogic</td>
+        <td>
+            uint(1)
+        </td>
+        <td>
+            0 - Standard Scoring (&#43;1 * # of tokens owned), 1 - Weighted Scoring (1st choice * Vote Max * # of tokens held, 2nd choice * Vote Max-1 * # of tokens held,..etc.) 
+             Example: 0
+        </td>
+    </tr>
+
+    <tr>
+        <td>ThresholdPercentage</td>
+        <td>
+            uint(1)
+        </td>
+        <td>
+            This field is ignored when VoteType is P (Plurality). Otherwise it is the percentage of ballots required for a proposal to pass. Valid values are greater than 0 and less than 100. 75 means 75% and greater.  Only applicable to Relative and Absolute Threshold vote methods.  The Plurality vote method requires no threshold value (NULL), as the successful vote option is simply selected on the basis of highest ballots cast for it.
+             Example: 75
+        </td>
+    </tr>
+
+    <tr>
+        <td>VoteMultiplierPermitted</td>
+        <td>
+            bool
+        </td>
+        <td>
+            Where an asset has a vote multiplier, true must be set here for the vote multiplier to count, otherwise votes are simply treated as 1x per token.
+            
+        </td>
+    </tr>
+
+    <tr>
+        <td>HolderProposalFee</td>
+        <td>
+            uint(8)
+        </td>
+        <td>
+            Token Owners must pay the fee amount to broadcast a valid Proposal.  If the Proposal action is valid, the smart contract will start a vote. 0 is valid.
+             Example: 100
+        </td>
+    </tr>
+
+</table>
+
+
+
+<a name="field-alises"></a>
+## Field Aliases
+
+<table>
+    <tr>
+        <th style="width:15%">Field</th>
+        <th style="width:15%">Type</th>
+        <th>Description</th>
+    </tr>
+        <tr id="alias-role">
+            <td>Role</td>
             <td>
-                varchar(tiny)
+                uint(1)
             </td>
             <td>
-                eg. Special Resolutions, Ordinary Resolutions, Fundamental Matters, General Matters, Directors&#39; Vote, Poll, etc.
-                 Example: Special Resolutions
+                
+                
             </td>
         </tr>
-        <tr>
-            <td>VoteType</td>
+        <tr id="alias-entity-type">
+            <td>EntityType</td>
             <td>
                 fixedchar(1)
             </td>
             <td>
-                R - Relative Threshold, A - Absolute Threshold, P - Plurality,  (Relative Threshold means the number of counted votes must exceed the threshold % of total ballots cast.  Abstentations/spoiled votes do not detract from the liklihood of a vote passing as they are not included in the denominator.  Absolute Threshold requires the number of ballots counted to exceed the threshold value when compared to the total outstanding tokens.  Abstentations/spoiled votes detract from the liklihood of the vote passing.  For example, in an absolute threshold vote, if the threshold was 50% and 51% of the total outstanding tokens did not vote, then the vote cannot pass.  50% of all tokens would have had to vote for one vote option for the vote to be successful. Plurality means the most favoured option is selected, regardless of the number of votes cast or the percentage relative to other choices.
-                 Example: A
-            </td>
-        </tr>
-        <tr>
-            <td>TallyLogic</td>
-            <td>
-                uint(1)
-            </td>
-            <td>
-                0 - Standard Scoring (&#43;1 * # of tokens owned), 1 - Weighted Scoring (1st choice * Vote Max * # of tokens held, 2nd choice * Vote Max-1 * # of tokens held,..etc.) 
-                 Example: 0
-            </td>
-        </tr>
-        <tr>
-            <td>ThresholdPercentage</td>
-            <td>
-                uint(1)
-            </td>
-            <td>
-                This field is ignored when VoteType is P (Plurality). Otherwise it is the percentage of ballots required for a proposal to pass. Valid values are greater than 0 and less than 100. 75 means 75% and greater.  Only applicable to Relative and Absolute Threshold vote methods.  The Plurality vote method requires no threshold value (NULL), as the successful vote option is simply selected on the basis of highest ballots cast for it.
-                 Example: 75
-            </td>
-        </tr>
-        <tr>
-            <td>VoteMultiplierPermitted</td>
-            <td>
-                bool
-            </td>
-            <td>
-                Where an asset has a vote multiplier, true must be set here for the vote multiplier to count, otherwise votes are simply treated as 1x per token.
+                
                 
             </td>
         </tr>
-        <tr>
-            <td>HolderProposalFee</td>
+        <tr id="alias-polity">
+            <td>Polity</td>
+            <td>
+                fixedchar(3)
+            </td>
+            <td>
+                
+                 Example: GBR
+            </td>
+        </tr>
+        <tr id="alias-rejection-code">
+            <td>RejectionCode</td>
+            <td>
+                uint(1)
+            </td>
+            <td>
+                
+                
+            </td>
+        </tr>
+        <tr id="alias-tag">
+            <td>Tag</td>
+            <td>
+                uint(1)
+            </td>
+            <td>
+                
+                
+            </td>
+        </tr>
+        <tr id="alias-address">
+            <td>Address</td>
+            <td>
+                varbin(tiny)
+            </td>
+            <td>
+                
+                
+            </td>
+        </tr>
+        <tr id="alias-contract-code">
+            <td>ContractCode</td>
+            <td>
+                bin(32)
+            </td>
+            <td>
+                
+                
+            </td>
+        </tr>
+        <tr id="alias-asset-type">
+            <td>AssetType</td>
+            <td>
+                fixedchar(3)
+            </td>
+            <td>
+                
+                
+            </td>
+        </tr>
+        <tr id="alias-asset-code">
+            <td>AssetCode</td>
+            <td>
+                bin(32)
+            </td>
+            <td>
+                
+                 Example: 0102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f20
+            </td>
+        </tr>
+        <tr id="alias-timestamp">
+            <td>Timestamp</td>
             <td>
                 uint(8)
             </td>
             <td>
-                Token Owners must pay the fee amount to broadcast a valid Proposal.  If the Proposal action is valid, the smart contract will start a vote. 0 is valid.
-                 Example: 100
+                
+                 Example: Wed May 09 2018 00:00:00 GMT&#43;1000 (AEST)
+            </td>
+        </tr>
+        <tr id="alias-public-key-hash">
+            <td>PublicKeyHash</td>
+            <td>
+                varbin(tiny)
+            </td>
+            <td>
+                
+                
+            </td>
+        </tr>
+        <tr id="alias-tx-id">
+            <td>TxId</td>
+            <td>
+                bin(32)
+            </td>
+            <td>
+                
+                 Example: 9d1ef0b1201c1dec3c1eb1caf758a988205226173e988e7a04afb4ea9977f506
             </td>
         </tr>
 </table>
-
 
