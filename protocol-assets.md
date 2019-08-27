@@ -629,8 +629,8 @@ Age restriction is used to specify required ages for asset ownership.
                 fixedchar(3)
             </td>
             <td>
-                
-                
+                International Organization for Standardization code for Currency. 3 character code.
+                 Example: AUD
             </td>
         </tr>
         <tr id="alias-timestamp">
@@ -640,7 +640,7 @@ Age restriction is used to specify required ages for asset ownership.
             </td>
             <td>
                 Represents a time, encoded as a 64 bit unsigned integer representing the number of nanoseconds since the Unix epoch.
-                
+                 Example: Wed May 09 2018 00:00:00 GMT&#43;1000 (AEST)
             </td>
         </tr>
 </table>
