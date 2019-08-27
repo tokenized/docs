@@ -1,16 +1,17 @@
 # Protocol Field Types
 
-- [Envelope Fields](#envelope-fields)
-- [Common Field Types](#common-field-types)
+- [Envelope](#envelope)
+- [Data Types](#data-types)
     - [Primitive Types](#primitive-types)
     - [List Types](#list-types)
     - [Variable Sizes](#variable-sizes)
-    - [Basic Types](#basic-types)
 
-<a name="header-fields"></a>
-## Envelope Fields
+<a name="envelope"></a>
+## Envelope
 
-Every protocol action is prepended with a header that specifies the necessary details about the subsequent action contents.
+The Tokenized Protocol uses the [envelope](https://github.com/tokenized/envelope) protocol to wrap and encode its messages. The envelope protocol provides a common method for Tokenized and other protocols to identify which protocol is being used, its version, and other meta data about a payload. It also enables a common method of encryption and providing MetaNet information. The envelope protocol is responsible for encoding the "header" data and the payload within an OP_RETURN payload.
+
+The Tokenized Protocol uses the following fields of the envelope protocol to specify the message contained. The payload is then encoded using [protobuf](https://developers.google.com/protocol-buffers/), which provides a common method of encoding binary and ascii fields within a predefined data structure.
 
 <table>
     <tr>
@@ -38,10 +39,27 @@ Every protocol action is prepended with a header that specifies the necessary de
     </tr>
 </table>
 
-<a name="common-field-types"></a>
-## Common Field Types
+<a name="data-types"></a>
+## Data Types
 
-Each field in a protocol action is assigned with a data type. Standard scalar types have a single value, these include primitive and basic types. Fields can also be defined to be a list of objects.
+Each field in a protocol message is defined with a data type. Standard scalar types have a single value, these include primitive, alias types, and field types. Fields can also be defined as a list of one of those types.
+
+<table>
+<tr>
+<td>Primitive</td>
+<td>Primitive types are the actual raw data types defined below. All of the other types are defined from primitive types.</td>
+</tr>
+
+<tr>
+<td>Alias</td>
+<td>Alias types are references to other types. They can reference a primitive type that is used for a specific purpose. For example, an Address is a `varbin(small)`, but has a special encoding that is more strict than `varbin(small)`. They can also reference resource codes. For example, a `RejectionCode` is a code for an item in the rejection resource.</td>
+</tr>
+
+<tr>
+<td>Field</td>
+<td>Field types are composites of other types. They have multiple fields within them that can be primitive, alias, or other field types.</td>
+</tr>
+</table>
 
 <a name="primitive-types"></a>
 ### Primitive Types
