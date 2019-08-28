@@ -30,43 +30,16 @@ Tokenized transaction messages are built by serializing the data (converting to 
 <a name="assemble-opreturn"></a>
 ### Assembling OP_RETURN Packet
 
-To assemble an `OP_RETURN` packet, the first byte is always the `OP_RETURN` opcode (`0x6a`).
+Tokenized assembles OP_RETURN scripts using the [envelope](https://github.com/tokenized/envelope) protocol. The [Data Structure](https://github.com/tokenized/envelope#data-structure) section describes the actual format of the OP_RETURN script.
 
-The second byte is a `PUSHDATA` instruction. The `PUSHDATA` instruction can be variable depending on the number of bytes in the data packet being pushed into the output. It is possible to perform multiple pushes in a single `OP_RETURN` output, allowing the output to have multiple fields of different lengths. There are always 2 pushdata operations in a Tokenized operation. The first carries the "Tokenized" protocol identifer `tokenized`, and the second carries the remainder of the data in the packet. This can be up to 99kB of data with the current BitcoinSV network capability, but as the Bitcoin protocol is returned to the Version 0.1 platform the removal of restrictions will allow contracts up to 4GB to be built.
-
-<a name="using-pushdata"></a>
-### Using PUSHDATA
-
-For packets with less than 75 bytes of data, the pushdata instruction is simply a single byte containing the length of the packet. e.g. `0x6a 0x03 0x010203` is a `OP_RETURN` followed by a `PUSHDATA` instruction to push 3 bytes, and then 3 bytes of information.
-
-For packets containing 76 - 255 bytes of data, the pushdata instruction is the `OP_PUSHDATA1` opcode (`0x4c`) followed by a single byte unsigned integer containing the number of bytes to push in the instruction. For example:
-
-```
-0x6a 0x4C 0xD2 <210 bytes of ascii data>
-```
-
-This is `OP_RETURN` followed by `OP_PUSHDATA1` followed by `0xD2` which is a hexadecimal representation of 210, then an uninterrupted 210 byte long string of hexadecimal data.
-
-For packets containing 256 - 65,535 bytes of data, `OP_PUSHDATA2` (`0x4d`) is used, followed by a 2 byte representation of the length of the data packet following.
-
-For packets containing 65,536 - 4,294,967,295 bytes of data, `OP_PUSHDATA4` (`0x4e`) is used, followed by a 4 byte represenation of the length of the data packet following.
-
-<a name="payload-breakdown"></a>
-## Payload Breakdown
-
-A Tokenized action output is always created with 2 separate push operations. The `OP_RETURN` output is broken down as follows:
-
-<a name="protocol-identifier"></a>
-### Protocol Identifier
-
-The first push is 13 bytes long and contains only the Tokenized Protocol identifier which is the string `tokenized`.  For testing on Bitcoin SV's mainnet, `test.tokenized` can be used as the protocol identifier for test actions/messages.
+Tokenized uses an envelope `PayloadProtocol` of "tokenized" or "test.tokenized" depending if test mode is activated. The envelop `PayloadIdentifier` is used to specify the action type of the message.
 
 <a name="action-payload"></a>
 ### Action Payload
 
-The next push is the complete action payload. The action payload contains the [header information](../protocol/actions#header-fields) and the [action contents](../protocol/actions#all-actions). The header is a requirement that specifies information on how to format the rest of the data, including the protocol version and action code.
+The payload of the envelope is the "action" payload. The action payload contains the [action contents](../protocol/actions#all-actions).
 
-The action payload is dependent on the action type and may include token specific information as required. It is important that the client and wallet must both know exactly what is expected in the remainder of the packet through a combination of the action code and version. If the packet does not conform to the contract agent's expectation of the operation being requested, it will respond with a rejection message.
+The action payload is dependent on the action type and may include token specific information as required. It is encoded using [protobuf](https://developers.google.com/protocol-buffers/) If the payload does not conform to the contract agent's expectation of the operation being requested, it will respond with a rejection message.
 
 <a name="sample-code"></a>
 ## Sample Code
@@ -80,16 +53,16 @@ import (
 )
 
 // Create Offer message
-offerData := protocol.ContractOffer{
+offerData := actions.ContractOffer{
 	ContractName: "Test Name",
-	Issuer: protocol.Entity{Administration: []protocol.Administrator{
-		protocol.Administrator{Type: 1, Name: "John Smith"},
+	Issuer: actions.EntityField{Administration: []actions.AdministratorField{
+		actions.AdministratorField{Type: 1, Name: "John Smith"},
 	}},
-	VotingSystems: []protocol.VotingSystem{protocol.VotingSystem{Name: "Relative 50", VoteType: 'R', ThresholdPercentage: 50, HolderProposalFee: 50000}},
+	VotingSystems: []*actions.VotingSystemField{&actions.VotingSystemField{Name: "Relative 50", VoteType: "R", ThresholdPercentage: 50, HolderProposalFee: 50000}},
 }
 
 // Define permissions for contract fields
-permissions := make([]protocol.Permission, 21)
+permissions := make([]protocol.Permission, actions.ContractFieldCount)
 for i, _ := range permissions {
 	permissions[i].Permitted = false      // administration can't update field without proposal
 	permissions[i].AdministrationProposal = false // administration can update field with a proposal
@@ -115,7 +88,7 @@ offerTx := wire.NewMsgTx(2)
 ...
 
 // Add Tokenized OP_RETURN message output.
-script, err := protocol.Serialize(&offerData)
+script, err := protocol.Serialize(&offerData, isTest)
 if err != nil {
 	return errors.Wrap(err, "Failed to serialize OP_RETURN")
 }
@@ -126,28 +99,18 @@ offerTx.TxOut = append(offerTx.TxOut, wire.NewTxOut(0, script))
 ### BitDB
 
 This BitDB query can be used to query transactions containing Tokenized messages.
-```
-{
-  "v": 3,
-  "q": {
-    "find": {
-      "out.b0": { "op": 106 },
-      "out.s1": "tokenized"
-    },
-    "limit": 10
-  }
-}
-```
 
-This BitDB query can be used to query transactions containing Tokenized messages with a specific action code. The example is for Contract Offer (C1) actions. Just swap out the C1 for other action codes as needed.
+`"out.b2": "vQA="`` represents the envelope protocol ID 0xbd00.
+
 ```
 {
   "v": 3,
   "q": {
     "find": {
-      "out.b0": { "op": 106 },
-      "out.s1": "tokenized",
-	  "out.s2": { "$regex": "^.C1"}
+      "out.b0": { "op" : 0 },
+      "out.b1": { "op": 106 },
+      "out.b2": "vQA=",
+      "out.s3": "tokenized"
     },
     "limit": 10
   }
@@ -160,8 +123,10 @@ This BitDB query is for all requests to a specific contract.
   "v": 3,
   "q": {
     "find": {
-      "out.b0": { "op": 106 },
-      "out.s1": "tokenized",
+      "out.b0": { "op" : 0 },
+      "out.b1": { "op": 106 },
+      "out.b2": "vQA=",
+      "out.s3": "tokenized"
       "out.e.a": "<ContractAddress>"
     },
     "limit": 10
@@ -175,8 +140,10 @@ This BitDB query is for all responses from a specific contract.
   "v": 3,
   "q": {
     "find": {
-      "out.b0": { "op": 106 },
-      "out.s1": "tokenized",
+      "out.b0": { "op" : 0 },
+      "out.b1": { "op": 106 },
+      "out.b2": "vQA=",
+      "out.s3": "tokenized"
       "in.e.a": "<ContractAddress>"
     },
     "limit": 10
