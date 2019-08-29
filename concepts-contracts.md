@@ -138,7 +138,7 @@ There are five essential elements necessary for legally binding Contract Formati
 - Consideration (a bargain requirement: generally, the supply of money, property or services or a promise to undertake, or not undertake a particular act in exchange for something of value)
 - Capacity to enter legal relations (e.g. of sound mind and legal age)
 - Intention by the parties to enter into legal relations (private non-commercial agreements between family members may not indicate intention to enter a legally binding contract and therefore may not be enforceable)
-- Certainty (the contract has to complete, certain, clear and binding)
+- Certainty (the contract has to be complete, certain, clear and binding)
 
 Reference: J W Carter, LexisNexis, Carter on Contract (at July 2013) [Chapter 1]
 
