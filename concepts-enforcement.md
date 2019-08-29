@@ -103,7 +103,7 @@ A Reconciliation action is needed when there has been a break in a chain of toke
 
 This is considered to be an extremely rare event, and the risk can be further reduced with different smart contract fee policies, response timing rules, double spend detection algorithms and sampling mempools of other nodes in the network to confirm the acceptance of transactions.
 
-The Reconciliation action decrements the balance of tokens at the target address(es).  This action effectively removes those tokens from existance and is basically a correction to the ledger. There can also be a discrepency with bitcoin when a break in the token chain occurs, if the parent transaction that was dropped was an exchange of tokens for bitcoin.  The bitcoin discrepency will have to be dealt with at a commercial level by the administration or the contract operator.
+The Reconciliation action decrements the balance of tokens at the target address(es).  This action effectively removes those tokens from existence and is basically a correction to the ledger. There can also be a discrepancy with bitcoin when a break in the token chain occurs, if the parent transaction that was dropped was an exchange of tokens for bitcoin.  The bitcoin discrepancy will have to be dealt with at a commercial level by the administration or the contract operator.
 
 Reconciliation is a two step process.
 
