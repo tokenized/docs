@@ -116,6 +116,8 @@ It is very important when hosting a smart contract that the private key is not c
 
 In the worst case scenario, in which the private key of the contract is compromised, there is a recovery option. This requires changing the contract private key and thereby changing the address. This requires that the contract was created with a "master" address specified. The private key for the "master" address should be kept in cold storage because if it is compromised, then there is no recovery. A [Contract Address Change](../protocol/actions#action-contract-address-change) message signed by the "master" key can be sent to the current contract address. This message specifies a new contract address that will be required for all future request messages.
 
+![A contract address change action template](https://raw.githubusercontent.com/tokenized/docs/master/images/contract-address-change-action.svg?sanitize=true "Contract Address Change Action Template") {.frame .centered .padded}
+
 <a name="static-contracts"></a>
 ## Static Contracts
 
