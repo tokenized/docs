@@ -29,7 +29,7 @@ There are two types of contracts supported by the Tokenized system. [Smart contr
 <a name="smart-contracts"></a>
 ## Smart Contracts
 
-A smart contract is a dynamic contract that is managed by an autonomous agent (off-chain daemon) using the Tokenized Protocol. The smart contract operates on behalf of the issuer for all administrative tasks associated with maintaining and updating the contract's on-chain records.  The smart contract is responsible for monitoring the state of the contract and for controlling actions that affect the terms and state of the contract with respect to the terms and state of the contract, at the time the request action was received.  The smart contract can also work with other autonomous agents working on behalf of the issuer or other contracting parties to fully automate all the various processes and tasks associated with the formation and performance of a contract.
+A smart contract is a dynamic contract that is managed by an autonomous agent (off-chain daemon) using the Tokenized Protocol. The smart contract operates on behalf of the issuer for all administrative tasks associated with maintaining and updating the contract's on-chain records.  The smart contract service is responsible for monitoring data that effect the state of the smart contract and for incorporating those changes into the contract.  The smart contract can also work with other autonomous agents working on behalf of the issuer or other contracting parties to fully automate all the various processes and tasks associated with the formation and performance of a contract.
 
 The smart contract can only respond to instructions it receives as Tokenized transactions into its own wallet. All responses from the smart contract are sent onto the blockchain as per the order of operations needed for the action taking place.
 
@@ -112,16 +112,18 @@ From this moment, all transaction requests to the contract must abide by the ame
 <a name="contract-address-change"></a>
 ### Contract Address Change
 
-It is very important when hosting a smart contract that the private key is not compromised. If it is, then someone could break the rules of the contract, steal tokens, and just generally wreak havoc on all participants.
+When hosting a smart contract, it is very important that the private key is never compromised. If it is, then someone could break the rules of the contract, steal tokens, and just generally wreak havoc on all participants.
 
-In the worst case scenario, in which the private key of the contract is compromised, there is a recovery option. This requires changing the contract private key and thereby changing the address. This requires that the contract was created with a "master" address specified. The private key for the "master" address should be kept in cold storage because if it is compromised, then there is no recovery. A [Contract Address Change](../protocol/actions#action-contract-address-change) message signed by the "master" key can be sent to the current contract address. This message specifies a new contract address that will be required for all future request messages.
+In the worst case scenario, in which the private key of the contract is compromised, there is a recovery option that is relatively painless. This requires changing the contract private key and thereby changing the address. This requires that the contract was created with a "master" address specified. The private key for the "master" address should be kept in cold storage because if it is compromised, then there is no recovery. A [Contract Address Change](../protocol/actions#action-contract-address-change) message signed by the "master" key can be sent to the current contract address. This message specifies a new contract address that will be required for all future request messages.
+
+![A contract address change action template](https://raw.githubusercontent.com/tokenized/docs/master/images/contract-address-change-action.svg?sanitize=true "Contract Address Change Action Template") {.frame .centered .padded}
 
 <a name="static-contracts"></a>
 ## Static Contracts
 
 A static contract is a legal contract similar to that which one would enter into today for the undertaking of a scope of work, to enter into a non-disclosure agreement, or to manage the sale of an off-chain asset that has not been tokenized. A static contract uses the [Static Contract Formation](../protocol/actions#action-static-contract-formation) action.
 
-The static contract framework simply provides an easy and low-cost way for inscribing the details of these contracts onto the public ledger so the contracting parties benefit from the value of the Bitcoin network. Static contracts require only a single action to be established and do not require a Tokenized smart contract to operate.  Each of the contracting parties simply sends a small amount of Bitcoin back to themselves all on the same transaction that has the static contract formation action in it, to allow for their signatures (intention) to be recorded to the contract.
+The static contract framework simply provides an easy and low-cost way for inscribing the details of these contracts onto the public ledger so the contracting parties benefit from the value of the Bitcoin network. Static contracts require only a single action to be established and do not require a Tokenized smart contract to operate.  Each of the contracting parties adds a signed input to the same transaction that has the static contract formation action in it, to allow for their signatures (intention) to be recorded to the contract.
 
 ![Updated Static Contract Formation action](https://raw.githubusercontent.com/tokenized/docs/master/images/static-contract-formation-action.svg?sanitize=true) {.frame .centered .padded}
 
@@ -138,7 +140,7 @@ There are five essential elements necessary for legally binding Contract Formati
 - Consideration (a bargain requirement: generally, the supply of money, property or services or a promise to undertake, or not undertake a particular act in exchange for something of value)
 - Capacity to enter legal relations (e.g. of sound mind and legal age)
 - Intention by the parties to enter into legal relations (private non-commercial agreements between family members may not indicate intention to enter a legally binding contract and therefore may not be enforceable)
-- Certainty (the contract has to complete, certain, clear and binding)
+- Certainty (the contract has to be complete, certain, clear and binding)
 
 Reference: J W Carter, LexisNexis, Carter on Contract (at July 2013) [Chapter 1]
 
