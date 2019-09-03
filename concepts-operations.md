@@ -112,6 +112,6 @@ Message operations allow entities to communicate with each other on-chain. No re
 <a name="operation-order"></a>
 ## Order of Operations
 
-For a complete list of the different action types, and the applicable responses, please see the image below.
+For a complete list of the different smart contract request action types, and the applicable responses, please see the image below.
 
 ![Order of Operations](https://raw.githubusercontent.com/tokenized/docs/master/images/order-of-operations.svg?sanitize=true) {.frame .centered}
