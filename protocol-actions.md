@@ -1126,11 +1126,6 @@ This txn is signed by the master contract key defined in the contract formation 
         <td>Contract Public Address</td>
         <td>Currently active, and soon to be deactivated, contract address.</td>
     </tr>
-   <tr>
-        <td class="text-center">1</td>
-        <td>New Contract Public Address</td>
-        <td>The address the contract will use from this point forward.</td>
-    </tr>
 </table>
 
 

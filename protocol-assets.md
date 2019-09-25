@@ -532,6 +532,17 @@ Casino Chip
     </tr>
 
     <tr>
+        <td>UseType</td>
+        <td>
+            fixedchar(1)
+        </td>
+        <td>
+            Real Money (R), Social (S), Free Play (F)
+             Example: R
+        </td>
+    </tr>
+
+    <tr>
         <td>AgeRestriction</td>
         <td>
             <a href="#type-age-restriction">AgeRestriction</a>

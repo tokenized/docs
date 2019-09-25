@@ -241,7 +241,7 @@ A message that contains all of the details required for an agreement to be forme
                 varbin
             </td>
             <td>
-                Serialized Tokenized OP_RETURN message. The message needs data added by another party upon acceptance of offer.
+                Serialized Bitcoin transaction. The transaction needs data added by another party upon acceptance of offer.
                 
             </td>
         </tr>
