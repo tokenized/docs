@@ -25,7 +25,7 @@ Transactions that [impact balances](../concepts/tokens#token-balances) or the co
 <a name="building-transaction"></a>
 ## Building a Transaction
 
-Tokenized transaction messages are built by serializing the data (converting to binary) according to the protocol specification. There are many [different data formats](../protocol/field-types) used by each protocol action.
+Tokenized transaction messages are built by serializing the data (converting to binary) according to the protocol specification. There are many [different data formats](../protocol/actions#field-types) used by each protocol action.
 
 <a name="assemble-opreturn"></a>
 ### Assembling OP_RETURN Packet

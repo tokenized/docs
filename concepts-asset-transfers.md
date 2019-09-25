@@ -16,7 +16,7 @@ The act of transferring tokens can become complicated when there are multiple pa
 1. Transfer action (Request)
 2. Settlement action (Response)
 
-> **Note:** Unlike most other actions, the [Transfer action](../protocol/actions#action-transfer) places the participating addresses inside the message payload as an [Asset Transfer type](../protocol/field-types#type-asset-transfer) instead of using the transaction inputs and output. This means the recipient of a transfer will be unaware of the transfer until it has settled and helps reduce the number of dust outputs. The same structure applies to the [Enforcement actions](../concepts/enforcement).
+> **Note:** Unlike most other actions, the [Transfer action](../protocol/actions#action-transfer) places the participating addresses inside the message payload as an [Asset Transfer type](../protocol/actions#type-asset-transfer) instead of using the transaction inputs and output. This means the recipient of a transfer will be unaware of the transfer until it has settled and helps reduce the number of dust outputs. The same structure applies to the [Enforcement actions](../concepts/enforcement).
 
 <a name="single-receiver"></a>
 ## Single Receiver
