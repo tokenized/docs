@@ -24,7 +24,7 @@ The second bit (X) specifies whether a successful administration initiated vote 
 
 The third bit (Y) specifies whether a successful token holder initiated vote will permit a change to the field. 1 = Token Holder Proposals are Permitted, 0 = Token Holder Proposals are not Permitted.
 
-The fourth bit (Z) specifies whether a successful administrative vote will permit a change to the field. 1 = Administrative Votes are Permitted, 0 = Administrative Votes are not Permitted. An administrative vote only allows holders of special Membership tokens where MembershipClass is Owner or Administrator. Only one such asset is allowed per contract. This allows votes by board members or whatever group of people control the contract.
+The fourth bit (Z) specifies whether a successful administrative matter will permit a change to the field. 1 = Administrative Matters are Permitted, 0 = Administrative Matters are not Permitted. An administrative matter only allows holders of special Membership tokens where MembershipClass is Administrator. Only one such asset is allowed per contract. This allows votes by board members or whatever group of people control the contract.
 
 The booleans that make up the array of (M) represent a voting system (by index) and a value of 1 = that voting system may control the field, 0 = that voting system does not control that field. If a proposal is made to vote on a change for a field, one of the voting systems enabled for that field would have to be used, otherwise the smart contract will reject it.
 
@@ -38,9 +38,9 @@ Each field is represented by a list of indexes specifying the path to the field.
 
     AssetPermissions = (WXYZMF[])[]
 
-where W = Permitted, X = Administration Proposal, Y = Token Holder Proposal, Z = Administrative Vote, and N = the index of the field within the action, M[] = an array of booleans equal to the # of voting systems in the contract. If X, Y, and Z are false, then M is empty (zero length).
+where W = Permitted, X = Administration Proposal, Y = Token Holder Proposal, Z = Administrative Matter, and N = the index of the field within the action, M[] = an array of booleans equal to the # of voting systems in the contract. If X, Y, and Z are false, then M is empty (zero length).
 
-When you parse the permissions, you get an array of permission objects containing (XYZMF[])[]. The Contract Offer and Asset Creation is used to determine the indexes of the fields. Index 1 is the field after the header.
+When you parse the permissions, you get an array of permission objects containing (XYZMF[])[]. The Contract Formation and Asset Creation is used to determine the indexes of the fields. Index 1 is the field after the header.
 
 <a name="reference"></a>
 ## Reference
