@@ -263,13 +263,13 @@ Allows the administration to tell the smart contract what they want the details 
     </tr>
 
     <tr>
-        <td>ContractAuthFlags</td>
+        <td>ContractPermissions</td>
         <td>
             varbin(small)
         </td>
         <td>
-            A set of switches that define the authorization rules for this contract. See the Authorization Flags documentation for more detail. Other terms and conditions that are out of the smart contract&#39;s control should be listed in the Body of Agreement.
-            Contract Flags - Amendments can be restricted to a vote.  Specified in the Voting System.
+            A set of permission objects containing switches and field references that define the permissions for modifying this contract. See the Permission documentation for more detail.
+            
         </td>
     </tr>
 
@@ -580,13 +580,13 @@ This txn is created by the contract (smart contract/off-chain agent/token contra
     </tr>
 
     <tr>
-        <td>ContractAuthFlags</td>
+        <td>ContractPermissions</td>
         <td>
             varbin(small)
         </td>
         <td>
-            A set of switches that define the authorization rules for this contract. See the Authorization Flags documentation for more detail. Other terms and conditions that are out of the smart contract&#39;s control should be listed in the Body of Agreement
-            Contract Flags - Amendments can be restricted to a vote.  Specified in the Voting System.
+            A set of permission objects containing switches and field references that define the permissions for modifying this contract. See the Permission documentation for more detail.
+            
         </td>
     </tr>
 
@@ -1154,13 +1154,13 @@ This action is used by the administration to define the properties/characteristi
         <th>Description</th>
     </tr>
     <tr>
-        <td>AssetAuthFlags</td>
+        <td>AssetPermissions</td>
         <td>
             varbin(small)
         </td>
         <td>
-            A set of switches that define the authorization rules for this asset. See the Authorization Flags documentation for more detail.
-             Example: 0101000
+            A set of permission objects containing switches and field references that define the permissions for modifying this asset. See the Permission documentation for more detail.
+            
         </td>
     </tr>
 
@@ -1247,7 +1247,7 @@ This action is used by the administration to define the properties/characteristi
             uint(1)
         </td>
         <td>
-            Supported values: 1 - Contract-wide Asset Governance. 0 - Asset-wide Asset Governance.  If a referendum or initiative is used to propose a modification to a subfield controlled by the asset auth flags, then the vote will either be a contract-wide vote (all assets vote on the referendum/initiative) or an asset-wide vote (only this asset votes on the referendum/initiative) depending on the value in this subfield.  The voting system specifies the voting rules.
+            Supported values: 1 - Contract-wide Asset Governance. 0 - Asset-wide Asset Governance.  If a referendum or initiative is used to propose a modification to a subfield controlled by the asset permissions, then the vote will either be a contract-wide vote (all assets vote on the referendum/initiative) or an asset-wide vote (only this asset votes on the referendum/initiative) depending on the value in this subfield.  The voting system specifies the voting rules.
              Example: 1
         </td>
     </tr>
@@ -1365,13 +1365,13 @@ This action creates an asset in response to the administration&#39;s instruction
     </tr>
 
     <tr>
-        <td>AssetAuthFlags</td>
+        <td>AssetPermissions</td>
         <td>
             varbin(small)
         </td>
         <td>
-            A set of switches that define the authorization rules for this asset. See the Authorization Flags documentation for more detail.
-             Example: 0101000
+            A set of permission objects containing switches and field references that define the permissions for modifying this asset. See the Permission documentation for more detail.
+            
         </td>
     </tr>
 
@@ -1458,7 +1458,7 @@ This action creates an asset in response to the administration&#39;s instruction
             uint(1)
         </td>
         <td>
-            Supported values: 1 - Contract-wide Asset Governance.  0 - Asset-wide Asset Governance.  If a referendum or initiative is used to propose a modification to a subfield controlled by the asset auth flags, then the vote will either be a contract-wide vote (all assets vote on the referendum/initiative) or an asset-wide vote (only this asset votes on the referendum/initiative) depending on the value in this subfield.  The voting system specifies the voting rules.
+            Supported values: 1 - Contract-wide Asset Governance.  0 - Asset-wide Asset Governance.  If a referendum or initiative is used to propose a modification to a subfield controlled by the asset permissions, then the vote will either be a contract-wide vote (all assets vote on the referendum/initiative) or an asset-wide vote (only this asset votes on the referendum/initiative) depending on the value in this subfield.  The voting system specifies the voting rules.
              Example: 1
         </td>
     </tr>
@@ -1868,23 +1868,16 @@ Allows the Administration/Token Holders to propose a change (aka Initiative/Shar
         <th>Description</th>
     </tr>
     <tr>
-        <td>Initiator</td>
+        <td>Type</td>
         <td>
             uint(1)
         </td>
         <td>
-            Who initiated the proposal. Supported values: 0 - Administration, 1 - Holder
-            
-        </td>
-    </tr>
+            Type of proposal. Supported values:
+  0 Referendum / Administration Initiates / Members Vote
+  1 Initiative / Members Initiate / Members Vote
+  2 AdministrativeMatter / Administration Initiates / Administrators Vote
 
-    <tr>
-        <td>AssetSpecificVote</td>
-        <td>
-            bool
-        </td>
-        <td>
-            When true this proposal is specific to an asset and the asset type and asset code fields are serialized.
             
         </td>
     </tr>
@@ -1919,17 +1912,6 @@ Allows the Administration/Token Holders to propose a change (aka Initiative/Shar
         <td>
             X for Vote System X. (1-255, 0 is not valid.)
              Example: 1
-        </td>
-    </tr>
-
-    <tr>
-        <td>Specific</td>
-        <td>
-            bool
-        </td>
-        <td>
-            When true the ProposedAmendments field is included and specifies the exact changes to make to the contract/asset on chain. When false this is just a general proposal like a strategy/direction and doesn&#39;t result in any on chain update.
-            
         </td>
     </tr>
 
@@ -2310,17 +2292,6 @@ Once a vote has been completed the results are published. After the result is po
         <th>Description</th>
     </tr>
     <tr>
-        <td>AssetSpecificVote</td>
-        <td>
-            bool
-        </td>
-        <td>
-            When true this proposal is specific to an asset and the asset type and asset code fields are serialized.
-            
-        </td>
-    </tr>
-
-    <tr>
         <td>AssetType</td>
         <td>
             fixedchar(3)
@@ -2339,17 +2310,6 @@ Once a vote has been completed the results are published. After the result is po
         <td>
             A unique code that is used to identify the asset. It is generated by hashing the contract public key hash and the asset index. SHA256(contract PKH &#43; asset index)
             Cannot be changed by the administration, operator or smart contract.
-        </td>
-    </tr>
-
-    <tr>
-        <td>Specific</td>
-        <td>
-            bool
-        </td>
-        <td>
-            When true the ProposedAmendments field is included and specifies the exact changes to make to the Contract/Asset on chain. When false this is just a general proposal like a strategy/direction and doesn&#39;t result in any on chain update.
-            
         </td>
     </tr>
 
@@ -2539,17 +2499,6 @@ Used by the administration to signal to the smart contract that the tokens that 
         <td>
             The public address for confiscated tokens to be deposited in.  Null for Freeze, Thaw, actions.
             Eventually the supporting evidence/explanation can be supported by a Subfield that has the public address (and a signed message) owned by a legal authority for ID verification/certification purposes.
-        </td>
-    </tr>
-
-    <tr>
-        <td>AuthorityIncluded</td>
-        <td>
-            bool
-        </td>
-        <td>
-            Specifies if an authority signature is included. For Reconcialitaion actions all authority signature related fields are skipped during serialization.
-            
         </td>
     </tr>
 
@@ -3407,12 +3356,23 @@ The message action is a general purpose communication action. &#39;Twitter/SMS&#
         <th>Description</th>
     </tr>
     <tr>
-        <td>AddressIndexes</td>
+        <td>SenderIndexes</td>
         <td>
             uint(4)[tiny]
         </td>
         <td>
-            Associates the message to a particular output by the index.
+            Associates the message to a particular input by the index. If none are specified then the first input is assumed.
+            
+        </td>
+    </tr>
+
+    <tr>
+        <td>ReceiverIndexes</td>
+        <td>
+            uint(4)[tiny]
+        </td>
+        <td>
+            Associates the message to a particular output by the index. If none are specified then the first output is assumed.
             
         </td>
     </tr>
@@ -3659,46 +3619,13 @@ An Amendment is used to describe the modification of a single field in a Contrac
         <th>Description</th>
     </tr>
     <tr>
-        <td>FieldIndex</td>
+        <td>FieldIndexPath</td>
         <td>
-            uint(1)
+            varbin(tiny)
         </td>
         <td>
-            Index of the field to be amended.
-            A field with a complex array type uses the same FieldIndex value for all elements. For example, in C1 the VotingSystems field is FieldIndex 16. Indexes are zero based. Example: 2
-        </td>
-    </tr>
-
-    <tr>
-        <td>Element</td>
-        <td>
-            uint(2)
-        </td>
-        <td>
-            Specifies the element of the complex array type to be amended. This only applies to array types, and has no meaning for a simple type such as uint64, string, byte or byte[]. Specifying a value &gt; 0 for a simple type will result in a Rejection.
-            To specify the 3rd VotingSystem of a Contract, the value 2 would be given. Indexes are zero based. Example: 0
-        </td>
-    </tr>
-
-    <tr>
-        <td>SubfieldIndex</td>
-        <td>
-            uint(1)
-        </td>
-        <td>
-            Index of the subfield to be amended. This only applies to specific fields containing complex types with subfields. This is used to specify which field of the object the amendment applies to.
-            For example to specify the 2nd field of a VotingSystem, value 1 would be given. Example: 1
-        </td>
-    </tr>
-
-    <tr>
-        <td>SubfieldElement</td>
-        <td>
-            uint(2)
-        </td>
-        <td>
-            Specifies the element of the complex array type to be amended. This only applies to array types, and has no meaning for a simple type such as uint64, string, byte or byte[]. Specifying a value &gt; 0 for a simple type will result in a Rejection.
-            For example to specify the 2nd field of a VotingSystem, value 1 would be given. Example: 1
+            List of indices that identify the field/sub-field to be amended.
+            The index path of the field being modified. Encoded as a list of base 128 var ints. Each index is an index into the current object, top level being the ContractFormation or AssetCreation. Indexes are defined by protobuf messages. If the current level is a list, then the index is a zero based offset to the element in the list.
         </td>
     </tr>
 
@@ -3720,7 +3647,7 @@ An Amendment is used to describe the modification of a single field in a Contrac
         </td>
         <td>
             New data for the amended subfield. Data type depends on the the type of the field being amended. The value should be serialize as defined by the protocol.
-            The bytes should be in an format appropriate for the field being modified.
+            The bytes must be encoded in the format of the field being modified.
         </td>
     </tr>
 
@@ -4055,7 +3982,7 @@ Entity represents the details of a legal Entity, such as a public or private com
     <tr>
         <td>Street</td>
         <td>
-            varchar(small)
+            varchar(tiny)
         </td>
         <td>
             
@@ -4124,7 +4051,7 @@ Entity represents the details of a legal Entity, such as a public or private com
             varchar(tiny)
         </td>
         <td>
-            Length 0-50 bytes. 0 is valid. Phone Number for Entity.
+            Length 0-255 bytes. 0 is valid. Phone Number for Entity.
              Example: 0448484848
         </td>
     </tr>
@@ -4148,6 +4075,17 @@ Entity represents the details of a legal Entity, such as a public or private com
         <td>
             A list of people in Management Roles for the Entity. e.g CEO, COO, CTO, CFO, Secretary, Executive, etc.
             
+        </td>
+    </tr>
+
+    <tr>
+        <td>DomainName</td>
+        <td>
+            varchar(tiny)
+        </td>
+        <td>
+            Domain name owned by this entity. Length 0-255 bytes. 0 is valid.
+             Example: tokenized.com
         </td>
     </tr>
 
@@ -4204,13 +4142,13 @@ A Oracle defines the details of a public Oracle.
         <th>Description</th>
     </tr>
     <tr>
-        <td>Name</td>
+        <td>Entity</td>
         <td>
-            varchar(tiny)
+            <a href="#type-entity">Entity</a>
         </td>
         <td>
-            Length 0-255 bytes. 0 is valid. Oracle X Name (eg. Coinbase, Tokenized, etc.)
-             Example: Tokenized
+            Identifying information about the oracle.
+            
         </td>
     </tr>
 
