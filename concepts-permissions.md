@@ -18,13 +18,13 @@ There are a number of fields that are likely to be subject to an amendment/modif
 
 The permissions are represented by 4 bits (WXYZ) plus an array of bits (M). The array of bits represent all of the Voting Systems specified in the Contract Formation action of the contract.
 
-The first bit (W) specifies whether unilateral changes by the Administration of the contract issuer are permitted to the field. 1 = Permitted, 0 = Not Permitted.
+The first bit (W) specifies whether unilateral changes by the administration of the contract issuer are permitted to the field. 1 = Permitted, 0 = Not Permitted.
 
-The second bit (X) specifies whether a successful Referendum (aka Administration Proposals, defined to mean when the Administration puts forward a proposal for the Members to vote on) will permit a change to the field. 1 = Administration Proposals are Permitted, 0 = Administration Proposals are not Permitted.
+The second bit (X) specifies whether a successful Referendum (aka Administration Proposals, defined to mean when the administration puts forward a proposal for the members to vote on) will permit a change to the field. 1 = Administration Proposals are Permitted, 0 = Administration Proposals are not Permitted.
 
 The third bit (Y) specifies whether a successful Initiative (aka Token Holder Proposals, defined to mean when a Member puts forward a proposal for the Members to vote on) will permit a change to the field. 1 = Token Holder Proposals are Permitted, 0 = Token Holder Proposals are not Permitted.
 
-The fourth bit (Z) specifies whether a successful vote on an Administrative Matter (defined to mean when the Administration puts forward a proposal for the Administrators to vote on) will permit a change to the field. 1 = Administrative Matters are Permitted, 0 = Administrative Matters are not Permitted. An Administrative Matter only allows holders of special Membership tokens, where MembershipClass is Administrator, to cast a ballot. Only one such asset is allowed per contract. This allows votes by board members or whatever group of people control the contract.
+The fourth bit (Z) specifies whether a successful vote on an Administrative Matter (defined to mean when the administration puts forward a proposal for the administrators to vote on) will permit a change to the field. 1 = Administrative Matters are Permitted, 0 = Administrative Matters are not Permitted. An Administrative Matter only allows holders of special Membership tokens, where MembershipClass is Administrator, to cast a ballot. Only one such asset is allowed per contract. This allows votes by board members or whatever group of people control the contract.
 
 The booleans that make up the array of (M) represent a voting system (by index) and a value of 1 = that voting system may control the field, 0 = that voting system does not control that field. If a proposal is made to vote on a change for a field, one of the voting systems enabled for that field would have to be used, otherwise the smart contract will reject it.
 
