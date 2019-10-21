@@ -14,7 +14,7 @@ Concepts:
     concepts/asset-transfers: "Asset Transfers"
     concepts/governance: "Governance"
     concepts/enforcement: "Enforcement"
-    concepts/authorization-flags: "Authorization Flags"
+    concepts/permissions: "Permissions"
     concepts/oracles: "Oracles"
     concepts/registers: "Registers"
     concepts/messaging: "Messaging"
