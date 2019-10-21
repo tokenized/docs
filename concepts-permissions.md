@@ -28,7 +28,7 @@ The fourth bit (Z) specifies whether a successful vote on an Administrative Matt
 
 The booleans that make up the array of (M) represent a voting system (by index) and a value of 1 = that voting system may control the field, 0 = that voting system does not control that field. If a proposal is made to vote on a change for a field, one of the voting systems enabled for that field would have to be used, otherwise the smart contract will reject it.
 
-Each WXYZM value defines a permission. Each permission is then followed by a list of fields (F[]) that it applies to. The list of fields is encoded with "base 128 var ints" as defined [here](https://developers.google.com/protocol-buffers/docs/encoding#varints). These values can represent very large numbers, but only use as many bytes as necessary. So smaller values only use one byte, while still leaving the option to specify larger numbers. The first value represents how many fields are associated with the permission, then each field is encoded after that.
+Each WXYZM value defines a permission. Each permission is then followed by a list of fields (F[]) that it applies to. The list of fields is encoded with "base 128 var ints" as defined by [Protobuf Base 128 Varints](https://developers.google.com/protocol-buffers/docs/encoding#varints). These values can represent very large numbers, but only use as many bytes as necessary. So smaller values only use one byte, while still leaving the option to specify larger numbers. The first value represents how many fields are associated with the permission, then each field is encoded after that.
 
 Each field is represented by a list of indexes specifying the path to the field. The first index is the index of the field in the top level object like the contract or asset. Then, if that field is "complex" (containing multiple fields within it), the next index is a index of a field in that object. This can be continued for as deep as the structure is. The first value in a field index is the number of indexes that it specifies, or its depth. Then each index value follows.
 
@@ -47,8 +47,12 @@ When you parse the permissions, you get an array of permission objects containin
 
 Helper functions for serializing, field indexes, and templates are provided as part of the reference implementation. 
 
-Serializing functions are in [permission.go](https://github.com/tokenized/specification/blob/master/dist/golang/actions/permission.go)
+- [Serializing functions](https://github.com/tokenized/specification/blob/master/dist/golang/actions/permission.go)
+- [Field indexes](https://github.com/tokenized/specification/blob/master/dist/golang/actions/amendments.go) - the same values are used for specifying fields in amendments.
 
-The field indexes are in [amendments.go](https://github.com/tokenized/specification/blob/master/dist/golang/actions/amendments.go). The same values are used for specifying fields in amendments.
+In practice, permission settings for Contracts and Assets won't vary too much. Laws require companies to manage certain aspects of the company in certain ways. For example, in the UK, changes to the name of a company require a special resolution (shareholder vote) and a minimum approval threshold of 75% to be lawful.
 
-In practice, permission settings for Contracts and Assets won't vary too much. Laws require companies to manage certain aspects of the company in certain ways. For example, in the UK, changes to the name of a company require a special resolution (shareholder vote) and a minimum approval threshold of 75% to be lawful. Permission templates are defined in yaml in [templates/develop](https://github.com/tokenized/specification/tree/master/src/templates/develop) and represented in go structures in [permission_templates.go](https://github.com/tokenized/specification/blob/master/dist/golang/actions/permission_templates.go).
+Permission templates are defined in the following files:
+
+- [YAML source](https://github.com/tokenized/specification/tree/master/src/templates/develop)
+- [Go structures](https://github.com/tokenized/specification/blob/master/dist/golang/actions/permission_templates.go)
