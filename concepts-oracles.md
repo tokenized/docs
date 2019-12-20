@@ -15,6 +15,8 @@ Currently, the protocol only supports Identity Oracles, but will support other t
 
 Oracles are included in a smart contract by the administration of the contract issuer in the Contract Offer action.  The administration includes the oracle's name, hostname:port and public key in the Contract Offer, and these will be found in the Contract Formation action for future reference by users and the smart contract.  Wallets can use the hostname:port to request signatures from the oracle, and the smart contract will use the public key to verify the signatures.
 
+Recent block hashes are often included in the signature data to provide an expiration mechanism. The hash for the current tip minus four is used to prevent small reorgs from invalidating signatures. The default behaviour is that when that block is one hour old the signature is no longer valid.
+
 <a name="identity-oracles"></a>
 ## Identity Oracles
 
@@ -24,15 +26,62 @@ A single smart contract can use many Identity Oracles at the same time, giving t
 
 The use of Identity Oracles can provide smart contracts with the following capabilities:
 
-• Restrict transfers to ID verified users only to meet KYC, AML, GDPR, compliance obligations
+- Restrict transfers to ID verified users only to meet KYC, AML, GDPR, compliance obligations
+- Restrict transfers to accredited investors
+- Restrict transfers to users within a certain age group (eg. 18+, 13-15, 21+, etc)
+- Only permit transfers to users that are resident to certain countries or regions
+- Any combination of the above
 
-• Restrict transfers to accredited investors
 
-• Restrict transfers to users within a certain age group (eg. 18+, 13-15, 21+, etc)
+<a name="signatures"></a>
+### Signatures
 
-• Only permit transfers to users that are resident to certain countries or regions
+Signed data is encoded in a specific way. It is binary. Numbers are encoded in little endian. Bitcoin addresses are encoded as defined in the specification and implemented in the reference implementation packages.
 
-• Any combination of the above
+<a name="contract"></a>
+#### Contract Approval
+
+A contract approval signature is needed in a contract offer action to verify the identity of the contract administrator. It verifies that the administrator key belongs to the entity listed in the issuer. The identity oracle information, public key, and signature is included in the contract offer and contract formation actions.
+
+The signature hash contains the following data in this order.
+
+- Administrator Addresses
+- Entities (protobuf encoded Entity structure defined in specification)
+- Recent Block Hash
+- Approved Flag (8 bit unsigned integer, 1 = approved, 0 = denied)
+
+This encoded binary data is then hashed with SHA256, then the hash is signed by the identity oracles private key. User's wallet software can verify this signature before interacting with this smart contract.
+
+<a name="transfer"></a>
+#### Transfer Approval
+
+A transfer approval signature is needed in a transfer action for assets with identity oracles defined in their contract. They are needed to approve the receiving address as belonging to an identity that meets the ownership requirements of the asset.
+
+The signature hash contains the following data in this order.
+
+- Receiver Address
+- Contract Address
+- Asset Code
+- Quantity (64 bit unsigned integer, number of tokens)
+- Recent Block Hash
+- Approved Flag (8 bit unsigned integer, 1 = approved, 0 = denied)
+
+
+This encoded binary data is then hashed with SHA256, then the hash is signed by the identity oracles private key. The smart contract will then verify this signature in the transfer action with the identity oracle public key in the contract formation before approving the transfer of tokens.
+
+<a name="identity"></a>
+#### Identity Verification
+
+An identity verification signature can be provided when establishing relationships or in any scenario where identity is needed. A message can be given to another party that includes the entity information, a public key or extended public key, and identity oracle information with the signature.
+
+The signature hash contains the following data in this order.
+
+- Entity (protobuf encoded Entity structure defined in specification)
+- Public Key or Extended Public Key
+- Recent Block Hash
+- Approved Flag (8 bit unsigned integer, 1 = approved, 0 = denied)
+
+This encoded binary data is then hashed with SHA256, then the hash is signed by the identity oracles private key. The message receiver can then verify the signature with the data provided to be confident they are dealing with the appropriate entity.
 
 <a name="example"></a>
 ### Example
