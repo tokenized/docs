@@ -186,17 +186,6 @@ Common stock represents ownership interests in companies.
         <th>Description</th>
     </tr>
     <tr>
-        <td>TransferLockout</td>
-        <td>
-            <a href="#alias-uint">Timestamp</a>
-        </td>
-        <td>
-            A period of time where the asset is unable to be transferred.  After the transfer lockout period, the assets can be transferred.
-             Example: 11/4/2019 18:00:00
-        </td>
-    </tr>
-
-    <tr>
         <td>Ticker</td>
         <td>
             fixedchar(5)

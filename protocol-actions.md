@@ -3463,7 +3463,7 @@ Used to reject request actions that do not comply with the Contract. If money is
             uint(4)[tiny]
         </td>
         <td>
-            Associates the message to a particular output by the index.
+            Associates the message to a particular output by the index. If none are specified then the first output is assumed.
             
         </td>
     </tr>
