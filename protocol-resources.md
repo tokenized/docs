@@ -214,7 +214,6 @@ Legal Entities &amp; Ownership Structures. 1 character.
 
 Polities (eg. Countries/Nation-States (ISO-3166 Alpha-3), Political Unions, International Organizations, etc.). Based on a 3 character code.
 
-
 [View Source File](https://github.com/tokenized/specification/blob/master/src/resources/develop/Polities.yaml)
 
 <div class="content-list collection-method-list" markdown="1">
@@ -276,7 +275,7 @@ Polities (eg. Countries/Nation-States (ISO-3166 Alpha-3), Political Unions, Inte
 - Costa Rica
 - Croatia
 - Cuba
-- Curacao
+- Curacao (Netherlands Antilles)
 - Cyprus
 - Czech Republic
 - Denmark
@@ -330,7 +329,7 @@ Polities (eg. Countries/Nation-States (ISO-3166 Alpha-3), Political Unions, Inte
 - Isle of Man
 - Israel
 - Italy
-- Ivory Coast
+- Cote D&#39;Ivoire (Former Ivory Coast)
 - Jamaica
 - Japan
 - Jersey
@@ -504,6 +503,7 @@ Code/Text combinations returned in rejection messages when a request is not acce
 - TransferSelf
 - TransferExpired
 - HoldingsFrozen
+- HoldingsLocked
 - HolderProposalProhibited
 - ProposalConflicts
 - VoteNotFound
