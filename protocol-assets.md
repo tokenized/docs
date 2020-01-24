@@ -170,6 +170,17 @@ Currency, fiat money, cash.  Issued by a monetary authority (eg. Reserve Bank of
         </td>
     </tr>
 
+    <tr>
+        <td>Precision</td>
+        <td>
+            uint(8)
+        </td>
+        <td>
+            Required field to specify the decimal precision of a currency. It will normally be the &#34;precision&#34; value associated with the CurrencyCode. It is the number of decimal places between the number of tokens and the common unit of measure. For example, in AUD, the common unit is the dollar, but a token would only be worth a penny. So the precision should be 2 for the two decimal places in a dollar amount &#34;$1.00&#34;. In this scenario 100 tokens are worth $1.
+             Example: 100
+        </td>
+    </tr>
+
 </table>
 
 
@@ -296,6 +307,17 @@ A voucher entitling the holder to a discount on a particular product or service.
         <td>
             
              Example: Gift Card
+        </td>
+    </tr>
+
+    <tr>
+        <td>Precision</td>
+        <td>
+            uint(8)
+        </td>
+        <td>
+            Required field to specify the decimal precision of a currency. It will normally be the &#34;precision&#34; value associated with the Currency. It is the number of decimal places between the number of tokens and the common unit of measure. For example, in AUD, the common unit is the dollar, but a token would only be worth a penny. So the precision should be 2 for the two decimal places in a dollar amount &#34;$1.00&#34;. In this scenario 100 tokens are worth $1.
+             Example: 100
         </td>
     </tr>
 
@@ -561,6 +583,17 @@ Casino Chip
         <td>
             
              Example: Fri Nov 09 2018 09:00:00 GMT&#43;1000 (AEST)
+        </td>
+    </tr>
+
+    <tr>
+        <td>Precision</td>
+        <td>
+            uint(8)
+        </td>
+        <td>
+            Required field to specify the decimal precision of a currency. It will normally be the &#34;precision&#34; value associated with the CurrencyCode. It is the number of decimal places between the number of tokens and the common unit of measure. For example, in AUD, the common unit is the dollar, but a token would only be worth a penny. So the precision should be 2 for the two decimal places in a dollar amount &#34;$1.00&#34;. In this scenario 100 tokens are worth $1.
+             Example: 100
         </td>
     </tr>
 
