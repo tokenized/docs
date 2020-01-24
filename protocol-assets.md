@@ -170,6 +170,17 @@ Currency, fiat money, cash.  Issued by a monetary authority (eg. Reserve Bank of
         </td>
     </tr>
 
+    <tr>
+        <td>Precision</td>
+        <td>
+            uint(8)
+        </td>
+        <td>
+            This can be used to override the standard precision based on the currency code above. When not specified the value associated with the CurrencyCode is used.
+            
+        </td>
+    </tr>
+
 </table>
 
 
