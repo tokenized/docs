@@ -118,7 +118,7 @@ A Membership
         </td>
         <td>
             
-             Example: Rights and duties listed.
+             This field is always required.  Example: Rights and duties listed.
         </td>
     </tr>
 
@@ -144,7 +144,7 @@ Currency, fiat money, cash.  Issued by a monetary authority (eg. Reserve Bank of
         </td>
         <td>
             International Organization for Standardization code for Currency. (Specification/Resources)
-             Example: AUD
+             This field is always required.  Example: AUD
         </td>
     </tr>
 
@@ -160,12 +160,10 @@ Currency, fiat money, cash.  Issued by a monetary authority (eg. Reserve Bank of
     </tr>
 
     <tr>
-        <td>Description</td>
+        <td>(Deprecated)Description</td>
+        <td>deprecated</td>
         <td>
-            varchar(small)
-        </td>
-        <td>
-            
+            Deprecated because the currency asset should be distinguished by its meta data and contract.
              Example: Australian dollar
         </td>
     </tr>
@@ -177,7 +175,7 @@ Currency, fiat money, cash.  Issued by a monetary authority (eg. Reserve Bank of
         </td>
         <td>
             Required field to specify the decimal precision of a currency. It will normally be the &#34;precision&#34; value associated with the CurrencyCode. It is the number of decimal places between the number of tokens and the common unit of measure. For example, in AUD, the common unit is the dollar, but a token would only be worth a penny. So the precision should be 2 for the two decimal places in a dollar amount &#34;$1.00&#34;. In this scenario 100 tokens are worth $1.
-             Example: 100
+             This field is always required.  Example: 100
         </td>
     </tr>
 
@@ -225,7 +223,7 @@ Common stock represents ownership interests in companies.
         </td>
         <td>
             
-             Example: Class C
+             This field is always required.  Example: Class C
         </td>
     </tr>
 
@@ -295,7 +293,9 @@ A voucher entitling the holder to a discount on a particular product or service.
         </td>
         <td>
             International Organization for Standardization code for Currency. Currency for coupon. From resources/currency.
-             Example: AUD
+            
+            This field is required when the field Value is specified.
+            This field is only valid when the field Value is specified. Example: AUD
         </td>
     </tr>
 
@@ -306,7 +306,7 @@ A voucher entitling the holder to a discount on a particular product or service.
         </td>
         <td>
             
-             Example: Gift Card
+             This field is always required.  Example: Gift Card
         </td>
     </tr>
 
@@ -317,7 +317,9 @@ A voucher entitling the holder to a discount on a particular product or service.
         </td>
         <td>
             Required field to specify the decimal precision of a currency. It will normally be the &#34;precision&#34; value associated with the Currency. It is the number of decimal places between the number of tokens and the common unit of measure. For example, in AUD, the common unit is the dollar, but a token would only be worth a penny. So the precision should be 2 for the two decimal places in a dollar amount &#34;$1.00&#34;. In this scenario 100 tokens are worth $1.
-             Example: 100
+            
+            This field is required when the field Value is specified.
+            This field is only valid when the field Value is specified. Example: 100
         </td>
     </tr>
 
@@ -387,7 +389,7 @@ A Loyalty Point
         </td>
         <td>
             
-             Example: Coingeek Conference - London (November 2018).
+             This field is always required.  Example: Coingeek Conference - London (November 2018).
         </td>
     </tr>
 
@@ -512,7 +514,7 @@ Admission ticket
         </td>
         <td>
             
-             Example: Coingeek Conference - London (November 2018).
+             This field is always required.  Example: Coingeek Conference - London (November 2018).
         </td>
     </tr>
 
@@ -538,7 +540,7 @@ Casino Chip
         </td>
         <td>
             International Organization for Standardization code for Currency. (Specification/Resources)
-             Example: AUD
+             This field is always required.  Example: AUD
         </td>
     </tr>
 
@@ -593,7 +595,7 @@ Casino Chip
         </td>
         <td>
             Required field to specify the decimal precision of a currency. It will normally be the &#34;precision&#34; value associated with the CurrencyCode. It is the number of decimal places between the number of tokens and the common unit of measure. For example, in AUD, the common unit is the dollar, but a token would only be worth a penny. So the precision should be 2 for the two decimal places in a dollar amount &#34;$1.00&#34;. In this scenario 100 tokens are worth $1.
-             Example: 100
+             This field is always required.  Example: 100
         </td>
     </tr>
 

@@ -1,3 +1,5 @@
+
+
 # Protocol Messages
 
 - [Introduction](#introduction)
@@ -19,6 +21,11 @@ The Tokenized protocol features a complete messaging suite for all types of mess
 - [Signature Request](#signature-request)
 - [Settlement Request](#settlement-request)
 - [Output Metadata](#output-metadata)
+- [Initiate Relationship](#initiate-relationship)
+- [Pending Accept Relationship](#pending-accept-relationship)
+- [Accept Relationship](#accept-relationship)
+- [Relationship Amendment](#relationship-amendment)
+- [Initiate Thread](#initiate-thread)
 </div>
 
 <a name="public-message"></a>
@@ -398,6 +405,286 @@ Metadata associated with the output. Aka Transaction details. It is used to desc
             </td>
             <td>
                 Free form text fields for describing the output. Groceries, Moomba Gas Compressor Project, Cash Register 3, Fitness, Entertainment, Special, VIP Section, North Carolina Store, Waitress: Cindy Smith, etc.
+                
+            </td>
+        </tr>
+</table>
+
+
+
+<a name="initiate-relationship"></a>
+#### Initiate Relationship
+
+A message used to initiate a new relationship between 2 or more parties. The M1 container specifies the sender tx input and requested participant tx outputs. If there are more than 2 parties the encryption secret provided in the envelope protocol is used as the base encryption secret. If there are only 2 parties, then the ECDH secret of each key pair is used to encrypt each message.
+
+<table>
+    <tr>
+        <th style="width:15%">Message Code</th>
+        <td>2001</td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <th style="width:15%">Field</th>
+        <th style="width:15%">Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+            <td>Type</td>
+            <td>
+                uint(1)
+            </td>
+            <td>
+                The type or purposed of the relationship. 0 - Conversation (direct messages), 1 - Channel (entity/business to entity/business)
+                
+            </td>
+        </tr>
+        <tr>
+            <td>Seed</td>
+            <td>
+                varbin
+            </td>
+            <td>
+                The seed used to derive keys for the relationship.
+                
+            </td>
+        </tr>
+        <tr>
+            <td>Flag</td>
+            <td>
+                varbin
+            </td>
+            <td>
+                The flag can optionally be used to identify messages in the relationship so that all members don&#39;t have to be tagged in each message. It isn&#39;t needed for two party relationships, but is recommended for relationships with more members. It will be included in it&#39;s own op return for all message transactions. It is recommended to be a random 20 byte value similar to public key hashes. The flag will be the Payload of an Envelope protocol message with a Payload Protocol ID of &#34;F&#34;. If this value is not specified then there must be an output to the next key in the relationship chain for every member in the group.
+                
+            </td>
+        </tr>
+        <tr>
+            <td>EncryptionType</td>
+            <td>
+                uint(1)
+            </td>
+            <td>
+                Type of encryption used for messages within the relationship. 0 - Encryption keys embedded in envelope protocol. 1 - Encryption key embedded in this message is used as base key for future messages. Used for relationships with more than 2 members so the encryption key doesn&#39;t have to be encrypted to each member in every message.
+                
+            </td>
+        </tr>
+        <tr>
+            <td>ProofOfIdentityType</td>
+            <td>
+                <a href="#alias-uint">ProofOfIdentityType</a>
+            </td>
+            <td>
+                The type/format of the sender&#39;s proof of identity.
+                
+            </td>
+        </tr>
+        <tr>
+            <td>ProofOfIdentity</td>
+            <td>
+                varbin
+            </td>
+            <td>
+                Sender&#39;s proof of identity.
+                
+            </td>
+        </tr>
+        <tr>
+            <td>ChannelParties</td>
+            <td>
+                <a href="#type-channel-party">ChannelParty[0]</a>
+            </td>
+            <td>
+                Information about the entities in the channel. Not included if this is not a channel initiation. These represent the companies in a channel. A channel is recommended to have 2 entities and several individual members per party. The individual members can discuss terms while the parties are used for official actions.
+                
+            </td>
+        </tr>
+</table>
+
+
+
+<a name="pending-accept-relationship"></a>
+#### Pending Accept Relationship
+
+A pending accept to a relationship that provides information about a requested participant.
+
+<table>
+    <tr>
+        <th style="width:15%">Message Code</th>
+        <td>2002</td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <th style="width:15%">Field</th>
+        <th style="width:15%">Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+            <td>ProofOfIdentityType</td>
+            <td>
+                <a href="#alias-uint">ProofOfIdentityType</a>
+            </td>
+            <td>
+                The type/format of the sender&#39;s proof of identity.
+                
+            </td>
+        </tr>
+        <tr>
+            <td>ProofOfIdentity</td>
+            <td>
+                varbin
+            </td>
+            <td>
+                Sender&#39;s proof of identity.
+                
+            </td>
+        </tr>
+</table>
+
+
+
+<a name="accept-relationship"></a>
+#### Accept Relationship
+
+Accept a relationship.
+
+<table>
+    <tr>
+        <th style="width:15%">Message Code</th>
+        <td>2003</td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <th style="width:15%">Field</th>
+        <th style="width:15%">Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+            <td>ProofOfIdentityType</td>
+            <td>
+                <a href="#alias-uint">ProofOfIdentityType</a>
+            </td>
+            <td>
+                The type/format of the sender&#39;s proof of identity.
+                
+            </td>
+        </tr>
+        <tr>
+            <td>ProofOfIdentity</td>
+            <td>
+                varbin
+            </td>
+            <td>
+                Sender&#39;s proof of identity.
+                
+            </td>
+        </tr>
+</table>
+
+
+
+<a name="relationship-amendment"></a>
+#### Relationship Amendment
+
+Amend a relationship. Add/Remove members. Modify permissions. This is encrypted with the current base encryption secret, but can provide a new base encryption secret that starts after this message.
+
+<table>
+    <tr>
+        <th style="width:15%">Message Code</th>
+        <td>2004</td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <th style="width:15%">Field</th>
+        <th style="width:15%">Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+            <td>Seed</td>
+            <td>
+                varbin
+            </td>
+            <td>
+                The new seed used to derive keys for the relationship after this message.
+                
+            </td>
+        </tr>
+        <tr>
+            <td>BaseEncryptionSecret</td>
+            <td>
+                varbin
+            </td>
+            <td>
+                The new base encryption secret used to derive encryption secrets for the relationship after this message. Each time a message is sent, the current seed hash is added to the base encryption secret and that value is used to encrypt the message.
+                
+            </td>
+        </tr>
+        <tr>
+            <td>AddMemberIndexes</td>
+            <td>
+                uint(4)
+            </td>
+            <td>
+                Indexes to the outputs of the members that are being added to the group.
+                
+            </td>
+        </tr>
+        <tr>
+            <td>DropMemberIndexes</td>
+            <td>
+                uint(4)
+            </td>
+            <td>
+                Indexes to the outputs of the members that are being removed from the group.
+                
+            </td>
+        </tr>
+</table>
+
+
+
+<a name="initiate-thread"></a>
+#### Initiate Thread
+
+Start a thread from within a conversation or channel.
+
+<table>
+    <tr>
+        <th style="width:15%">Message Code</th>
+        <td>2005</td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <th style="width:15%">Field</th>
+        <th style="width:15%">Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+            <td>Flag</td>
+            <td>
+                varbin
+            </td>
+            <td>
+                The flag is required to identify messages in the thread so that all members don&#39;t have to be tagged in each message. It is recommended to be a random 20 byte value similar to public key hashes. The flag will be the Payload of an Envelope protocol message with a Payload Protocol ID of &#34;F&#34;
+                
+            </td>
+        </tr>
+        <tr>
+            <td>Seed</td>
+            <td>
+                varbin
+            </td>
+            <td>
+                The seed used to derive keys for the thread. If this value is not specified, then the original seed value from the parent conversation or channel is used.
                 
             </td>
         </tr>
