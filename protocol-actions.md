@@ -21,6 +21,9 @@ See the [Transactions article](../concepts/transactions) for details on how to c
 - [Contract Amendment](#action-contract-amendment)
 - [Static Contract Formation](#action-static-contract-formation)
 - [Contract Address Change](#action-contract-address-change)
+- [Body Of Agreement Offer](#action-body-of-agreement-offer)
+- [Body Of Agreement Formation](#action-body-of-agreement-formation)
+- [Body Of Agreement Amendment](#action-body-of-agreement-amendment)
 - [Asset Definition](#action-asset-definition)
 - [Asset Creation](#action-asset-creation)
 - [Asset Modification](#action-asset-modification)
@@ -69,8 +72,7 @@ Allows the administration to tell the smart contract what they want the details 
             varchar(tiny)
         </td>
         <td>
-            Can be any unique identifying string, including human readable names for branding/vanity purposes. Contract identifier (instance) is the bitcoin public key hash address. If the public address is lost, then the administration will have to reissue the entire contract, Asset Definition and tokens with the new public address. Smart contracts can be branded and specialized to suit any terms and conditions.
-
+            The name/title of the contract.
              Example: Tesla - Shareholder Agreement
         </td>
     </tr>
@@ -81,7 +83,8 @@ Allows the administration to tell the smart contract what they want the details 
             uint(1)
         </td>
         <td>
-            0 - No Body of agreement included, 1 - SHA-256 Hash, 2 - Tokenized Body of Agreement Format
+            0 - No Body of agreement included 1 - SHA-256 Hash 2 - Tokenized Body of Agreement Format where the agreement is specified with a separate C6/C7 action
+
             Body of Agreement - Amendments can be restricted to a vote. Example: 1
         </td>
     </tr>
@@ -92,8 +95,10 @@ Allows the administration to tell the smart contract what they want the details 
             varbin(medium)
         </td>
         <td>
-            SHA-256 hash of the body of the agreement (full contract in pdf format or the like) or the full terms and conditions of an agreement in the Tokenized Body of Agreement format.  This is specific to the smart contract and relevant Assets.  Legal and technical information.
+            SHA-256 hash of the body of the agreement (full contract in pdf format or the like) or the full agreement. If BodyOfAgreementType is 2 then this field is empty and the agreement is specified in a C6/C7 action. This is specific to the smart contract and relevant Assets. Legal and technical information.
+
             
+            This field is only valid when the field BodyOfAgreementType equals 1.
         </td>
     </tr>
 
@@ -118,23 +123,19 @@ Allows the administration to tell the smart contract what they want the details 
     </tr>
 
     <tr>
-        <td>GoverningLaw</td>
+        <td>(Deprecated)GoverningLaw</td>
+        <td>deprecated</td>
         <td>
-            fixedchar(5)
-        </td>
-        <td>
-            5 Letter Code to identify which governing law the contract will adhere to.  Disputes are to be settled by this law in the jurisdiction specified below. Private dispute resolution organizations can be used as well.  A custom code just needs to be defined.
-            Governing Law - Amendments can be restricted to a vote. Example: USA
+            Deprecated to remove fixed size. 5 Letter Code to identify which governing law the contract will adhere to.  Disputes are to be settled by this law in the jurisdiction specified below. Private dispute resolution organizations can be used as well.  A custom code just needs to be defined.
+            Governing Legal System - Amendments can be restricted to a vote. Example: USA
         </td>
     </tr>
 
     <tr>
-        <td>Jurisdiction</td>
+        <td>(Deprecated)Jurisdiction</td>
+        <td>deprecated</td>
         <td>
-            fixedchar(5)
-        </td>
-        <td>
-            Legal proceedings/arbitration will take place using the specified Governing Law in this location.
+            Deprecated to remove fixed size. Legal proceedings/arbitration will take place using the specified Governing Law in this location.
             Jurisdiction - Amendments can be restricted to a vote. Example: US-CA
         </td>
     </tr>
@@ -376,6 +377,28 @@ Allows the administration to tell the smart contract what they want the details 
         </td>
     </tr>
 
+    <tr>
+        <td>GoverningLaw</td>
+        <td>
+            <a href="#alias-legal-system">LegalSystem</a>
+        </td>
+        <td>
+            5 Letter Code to identify which governing law the contract will adhere to.  Disputes are to be settled by this law in the jurisdiction specified below. Private dispute resolution organizations can be used as well.  A custom code just needs to be defined.
+            Governing Legal System - Amendments can be restricted to a vote. Example: USA
+        </td>
+    </tr>
+
+    <tr>
+        <td>Jurisdiction</td>
+        <td>
+            <a href="#alias-polity">Polity</a>
+        </td>
+        <td>
+            Legal proceedings/arbitration will take place using the specified Governing Law in this location.
+            Jurisdiction - Amendments can be restricted to a vote. Example: US-CA
+        </td>
+    </tr>
+
 </table>
 
 ##### Transaction Summary
@@ -445,8 +468,7 @@ This txn is created by the contract (smart contract/off-chain agent/token contra
             varchar(tiny)
         </td>
         <td>
-            Can be any unique identifying string, including human readable names for branding/vanity purposes. Contract identifier (instance) is the bitcoin public key hash address. If the public address is lost, then the administration will have to reissue the entire contract, asset definition and tokens with the new public address. Smart contracts can be branded and specialized to suit any terms and conditions.
-
+            The name/title of the contract.
              Example: Tesla - Shareholder Agreement
         </td>
     </tr>
@@ -457,7 +479,8 @@ This txn is created by the contract (smart contract/off-chain agent/token contra
             uint(1)
         </td>
         <td>
-            0 - No Body of agreement included, 1 - SHA-256 Hash, 2 - Tokenized Body of Agreement Format
+            0 - No Body of agreement included 1 - SHA-256 Hash 2 - Tokenized Body of Agreement Format where the agreement is specified with a separate C6/C7 action
+
             Body of Agreement - Amendments can be restricted to a vote. Example: 1
         </td>
     </tr>
@@ -468,8 +491,10 @@ This txn is created by the contract (smart contract/off-chain agent/token contra
             varbin(medium)
         </td>
         <td>
-            SHA-256 hash of the body of the agreement (full contract in pdf format or the like) or the full terms and conditions of an agreement in the Tokenized Body of Agreement format.  This is specific to the smart contract and relevant Assets.  Legal and technical information.
+            SHA-256 hash of the body of the agreement (full contract in pdf format or the like) or the full agreement. If BodyOfAgreementType is 2 then this field is empty and the agreement is specified in a C6/C7 action. This is specific to the smart contract and relevant Assets. Legal and technical information.
+
             
+            This field is only valid when the field BodyOfAgreementType equals 1.
         </td>
     </tr>
 
@@ -494,23 +519,19 @@ This txn is created by the contract (smart contract/off-chain agent/token contra
     </tr>
 
     <tr>
-        <td>GoverningLaw</td>
+        <td>(Deprecated)GoverningLaw</td>
+        <td>deprecated</td>
         <td>
-            fixedchar(5)
-        </td>
-        <td>
-            5 Letter Code to identify which governing law the contract will adhere to.  Disputes are to be settled by this law in the jurisdiction specified below. Private dispute resolution organizations can be used as well.  A custom code just needs to be defined.
-            Governing Law - Amendments can be restricted to a vote. Example: USA
+            Deprecated to remove fixed size. 5 Letter Code to identify which governing law the contract will adhere to.  Disputes are to be settled by this law in the jurisdiction specified below. Private dispute resolution organizations can be used as well.  A custom code just needs to be defined.
+            Governing Legal System - Amendments can be restricted to a vote. Example: USA
         </td>
     </tr>
 
     <tr>
-        <td>Jurisdiction</td>
+        <td>(Deprecated)Jurisdiction</td>
+        <td>deprecated</td>
         <td>
-            fixedchar(5)
-        </td>
-        <td>
-            Legal proceedings/arbitration will take place using the specified Governing Law in this location.
+            Deprecated to remove fixed size. Legal proceedings/arbitration will take place using the specified Governing Law in this location.
             Jurisdiction - Amendments can be restricted to a vote. Example: US-CA
         </td>
     </tr>
@@ -768,7 +789,7 @@ This txn is created by the contract (smart contract/off-chain agent/token contra
             <a href="#alias-address">Address</a>
         </td>
         <td>
-            The address of the contract&#39;s administrator. This is not contained in the contract offer  payload, but determined by the inputs of the contract offer transaction and included here by  the smart contract agent as a convenience.
+            The address of the contract&#39;s administrator. This is not contained in the contract offer payload, but determined by the inputs of the contract offer transaction and included here by the smart contract agent as a convenience.
 
             
         </td>
@@ -780,9 +801,31 @@ This txn is created by the contract (smart contract/off-chain agent/token contra
             <a href="#alias-address">Address</a>
         </td>
         <td>
-            The address of the contract&#39;s operator. This is not contained in the contract offer payload,  but determined by the inputs of the contract offer transaction and included here by the  smart contract agent as a convenience.&#34;
+            The address of the contract&#39;s operator. This is not contained in the contract offer payload, but determined by the inputs of the contract offer transaction and included here by the smart contract agent as a convenience.&#34;
 
             
+        </td>
+    </tr>
+
+    <tr>
+        <td>GoverningLaw</td>
+        <td>
+            <a href="#alias-legal-system">LegalSystem</a>
+        </td>
+        <td>
+            5 Letter Code to identify which governing law the contract will adhere to.  Disputes are to be settled by this law in the jurisdiction specified below. Private dispute resolution organizations can be used as well.  A custom code just needs to be defined.
+            Governing Legal System - Amendments can be restricted to a vote. Example: USA
+        </td>
+    </tr>
+
+    <tr>
+        <td>Jurisdiction</td>
+        <td>
+            <a href="#alias-polity">Polity</a>
+        </td>
+        <td>
+            Legal proceedings/arbitration will take place using the specified Governing Law in this location.
+            Jurisdiction - Amendments can be restricted to a vote. Example: US-CA
         </td>
     </tr>
 
@@ -1039,23 +1082,19 @@ Static Contract Formation Action
     </tr>
 
     <tr>
-        <td>GoverningLaw</td>
+        <td>(Deprecated)GoverningLawDeprecated</td>
+        <td>deprecated</td>
         <td>
-            fixedchar(5)
-        </td>
-        <td>
-            5 Letter Code to identify which governing law the contract will adhere to.  Disputes are to be settled by this law in the jurisdiction specified below. Private dispute resolution organizations can be used as well.  A custom code just needs to be defined.
+            Deprecated to remove fixed size. 5 Letter Code to identify which governing law the contract will adhere to.  Disputes are to be settled by this law in the jurisdiction specified below. Private dispute resolution organizations can be used as well.  A custom code just needs to be defined.
              Example: USA
         </td>
     </tr>
 
     <tr>
-        <td>Jurisdiction</td>
+        <td>(Deprecated)JurisdictionDeprecated</td>
+        <td>deprecated</td>
         <td>
-            fixedchar(5)
-        </td>
-        <td>
-            Legal proceedings/arbitration will take place using the specified Governing Law in this location.
+            Deprecated to remove fixed size. Legal proceedings/arbitration will take place using the specified Governing Law in this location.
              Example: US-CA
         </td>
     </tr>
@@ -1145,6 +1184,28 @@ Static Contract Formation Action
         <td>
             The block height of the block hash used in the oracle signature.
             
+        </td>
+    </tr>
+
+    <tr>
+        <td>GoverningLaw</td>
+        <td>
+            <a href="#alias-legal-system">LegalSystem</a>
+        </td>
+        <td>
+            5 Letter Code to identify which governing law the contract will adhere to.  Disputes are to be settled by this law in the jurisdiction specified below. Private dispute resolution organizations can be used as well.  A custom code just needs to be defined.
+            Governing Legal System - Amendments can be restricted to a vote. Example: USA
+        </td>
+    </tr>
+
+    <tr>
+        <td>Jurisdiction</td>
+        <td>
+            <a href="#alias-polity">Polity</a>
+        </td>
+        <td>
+            Legal proceedings/arbitration will take place using the specified Governing Law in this location.
+            Jurisdiction - Amendments can be restricted to a vote. Example: US-CA
         </td>
     </tr>
 
@@ -1252,6 +1313,276 @@ This txn is signed by the master contract key defined in the contract formation 
 
 
 
+<a name="action-body-of-agreement-offer"></a>
+#### Body Of Agreement Offer
+
+Allows the administration to define the agreement for the contract.
+
+<table>
+    <tr>
+        <th style="width:15%">Action Code</th>
+        <td>C6</td>
+    </tr>
+</table>
+
+
+<table>
+    <tr>
+        <th style="width:15%">Field</th>
+        <th style="width:15%">Type</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>Chapters</td>
+        <td>
+            <a href="#type-chapter">Chapter[tiny]</a>
+        </td>
+        <td>
+            A list of chapters for the agreement.
+            
+        </td>
+    </tr>
+
+    <tr>
+        <td>Definitions</td>
+        <td>
+            <a href="#type-defined-term">DefinedTerm[tiny]</a>
+        </td>
+        <td>
+            Definition of values within the agreement.
+            
+        </td>
+    </tr>
+
+</table>
+
+##### Transaction Summary
+
+
+<table>
+   <tr>
+        <th style="width:5%" class="text-center">Index</th>
+        <th style="width:30%">Input</th>
+        <th>Description</th>
+   </tr>
+   <tr>
+        <td class="text-center">0</td>
+        <td>Administration&#39;s Public Address</td>
+        <td></td>
+    </tr>
+</table>
+
+
+
+<table>
+   <tr>
+        <th style="width:5%" class="text-center">Index</th>
+        <th style="width:30%">Output</th>
+        <th>Description</th>
+   </tr>
+   <tr>
+        <td class="text-center">0</td>
+        <td>Contract Public Address</td>
+        <td></td>
+    </tr>
+</table>
+
+
+<hr />
+
+
+
+<a name="action-body-of-agreement-formation"></a>
+#### Body Of Agreement Formation
+
+Provides the current version of the body of agreement for the contract.
+
+<table>
+    <tr>
+        <th style="width:15%">Action Code</th>
+        <td>C7</td>
+    </tr>
+</table>
+
+
+<table>
+    <tr>
+        <th style="width:15%">Field</th>
+        <th style="width:15%">Type</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>Chapters</td>
+        <td>
+            <a href="#type-chapter">Chapter[tiny]</a>
+        </td>
+        <td>
+            A list of chapters for the agreement.
+            
+        </td>
+    </tr>
+
+    <tr>
+        <td>Definitions</td>
+        <td>
+            <a href="#type-defined-term">DefinedTerm[tiny]</a>
+        </td>
+        <td>
+            Definition of terms within the agreement.
+            
+        </td>
+    </tr>
+
+    <tr>
+        <td>Revision</td>
+        <td>
+            uint(4)
+        </td>
+        <td>
+            A counter for the number of times this agreement has been revised using a modification action.
+            Can&#39;t be changed by the administration, operator. Smart contract controls. Example: 0
+        </td>
+    </tr>
+
+    <tr>
+        <td>Timestamp</td>
+        <td>
+            <a href="#alias-timestamp">Timestamp</a>
+        </td>
+        <td>
+            Timestamp in nanoseconds of when the smart contract created the action.
+            Can&#39;t be changed by the administration, operator. Smart contract controls.
+        </td>
+    </tr>
+
+</table>
+
+##### Transaction Summary
+
+
+<table>
+   <tr>
+        <th style="width:5%" class="text-center">Index</th>
+        <th style="width:30%">Input</th>
+        <th>Description</th>
+   </tr>
+   <tr>
+        <td class="text-center">0</td>
+        <td>Contract Public Address</td>
+        <td></td>
+    </tr>
+</table>
+
+
+
+<table>
+   <tr>
+        <th style="width:5%" class="text-center">Index</th>
+        <th style="width:30%">Output</th>
+        <th>Description</th>
+   </tr>
+   <tr>
+        <td class="text-center">0</td>
+        <td>Contract Public Address</td>
+        <td></td>
+    </tr>
+</table>
+
+
+<hr />
+
+
+
+<a name="action-body-of-agreement-amendment"></a>
+#### Body Of Agreement Amendment
+
+Allows the administration to modify the agreement for the contract.
+
+<table>
+    <tr>
+        <th style="width:15%">Action Code</th>
+        <td>C8</td>
+    </tr>
+</table>
+
+
+<table>
+    <tr>
+        <th style="width:15%">Field</th>
+        <th style="width:15%">Type</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>Revision</td>
+        <td>
+            uint(4)
+        </td>
+        <td>
+            The current revision figure to ensure the modification provided is based on the latest version.
+            Cannot be Amended Example: 0
+        </td>
+    </tr>
+
+    <tr>
+        <td>Amendments</td>
+        <td>
+            <a href="#type-amendment">Amendment[tiny]</a>
+        </td>
+        <td>
+            A collection of modifications to perform on this asset.
+            
+        </td>
+    </tr>
+
+    <tr>
+        <td>RefTxID</td>
+        <td>
+            <a href="#alias-tx-id">TxId</a>
+        </td>
+        <td>
+            The Bitcoin transaction ID of the associated result action that permitted the modifications. See Governance for more details.
+            
+        </td>
+    </tr>
+
+</table>
+
+##### Transaction Summary
+
+
+<table>
+   <tr>
+        <th style="width:5%" class="text-center">Index</th>
+        <th style="width:30%">Input</th>
+        <th>Description</th>
+   </tr>
+   <tr>
+        <td class="text-center">0</td>
+        <td>Administration&#39;s Public Address</td>
+        <td></td>
+    </tr>
+</table>
+
+
+
+<table>
+   <tr>
+        <th style="width:5%" class="text-center">Index</th>
+        <th style="width:30%">Output</th>
+        <th>Description</th>
+   </tr>
+   <tr>
+        <td class="text-center">0</td>
+        <td>Contract Public Address</td>
+        <td></td>
+    </tr>
+</table>
+
+
+<hr />
+
+
+
 <a name="action-asset-definition"></a>
 #### Asset Definition
 
@@ -1284,23 +1615,19 @@ This action is used by the administration to define the properties/characteristi
     </tr>
 
     <tr>
-        <td>TransfersPermitted</td>
+        <td>(Deprecated)TransfersPermitted</td>
+        <td>deprecated</td>
         <td>
-            bool
-        </td>
-        <td>
-            Set to true if transfers are permitted between two parties, otherwise set to false to prevent peer-to-peer transfers.
-             Example: 1
+            Deprecated to move into specific asset types. Set to true if transfers are permitted between two parties, otherwise set to false to prevent peer-to-peer transfers.
+            
         </td>
     </tr>
 
     <tr>
-        <td>TradeRestrictions</td>
+        <td>(Deprecated)TradeRestrictionsDeprecated</td>
+        <td>deprecated</td>
         <td>
-            <a href="#alias-fixedchar">Polity[small]</a>
-        </td>
-        <td>
-            If specified, the asset can only be traded within the specified trade restriction zone. For example, AUS would restrict to Australian residents only.
+            Deprecated to remove fixed size. If specified, the asset can only be traded within the specified trade restriction zone. For example, AUS would restrict to Australian residents only.
             
         </td>
     </tr>
@@ -1372,12 +1699,12 @@ This action is used by the administration to define the properties/characteristi
     </tr>
 
     <tr>
-        <td>TokenQty</td>
+        <td>AuthorizedTokenQty</td>
         <td>
             uint(8)
         </td>
         <td>
-            The number of tokens to issue with this asset. Set to greater than zero for fungible tokens. If the value is 1 then it becomes a non-fungible token, where the contract would have many assets. Set to 0 to represent a placeholder asset, where tokens are to be issued later, or to represent a decomissioned asset where all tokens have been revoked.
+            The number of tokens authorized to be issued for this asset. Set to greater than zero for fungible tokens. If the value is 1 then it becomes a non-fungible token, where the contract would have many assets. Set to 0 to represent a placeholder asset, where tokens are to be issued later, or to represent a decomissioned asset where all tokens have been revoked.
              Example: 1000000
         </td>
     </tr>
@@ -1401,6 +1728,17 @@ This action is used by the administration to define the properties/characteristi
         <td>
             A custom payload that contains meta data about this asset. Payload structure and length is dependent on the asset type chosen. See asset documentation for more details.
              This field is always required. 
+        </td>
+    </tr>
+
+    <tr>
+        <td>TradeRestrictions</td>
+        <td>
+            <a href="#alias-varchar">Polity[small]</a>
+        </td>
+        <td>
+            If specified, the asset can only be traded within the specified trade restriction zone. For example, AUS would restrict to Australian residents only.
+            
         </td>
     </tr>
 
@@ -1495,23 +1833,19 @@ This action creates an asset in response to the administration&#39;s instruction
     </tr>
 
     <tr>
-        <td>TransfersPermitted</td>
+        <td>(Deprecated)TransfersPermitted</td>
+        <td>deprecated</td>
         <td>
-            bool
-        </td>
-        <td>
-            Set to true if transfers are permitted between two parties, otherwise set to false to prevent peer-to-peer transfers.
-             Example: true
+            Deprecated to move into specific asset types. Set to true if transfers are permitted between two parties, otherwise set to false to prevent peer-to-peer transfers.
+            
         </td>
     </tr>
 
     <tr>
-        <td>TradeRestrictions</td>
+        <td>(Deprecated)TradeRestrictionsDeprecated</td>
+        <td>deprecated</td>
         <td>
-            <a href="#alias-fixedchar">Polity[small]</a>
-        </td>
-        <td>
-            If specified, the asset can only be traded within the specified trade restriction zone. For example, AUS would restrict to Australian residents only.
+            Deprecated to remove fixed size. If specified, the asset can only be traded within the specified trade restriction zone. For example, AUS would restrict to Australian residents only.
             
         </td>
     </tr>
@@ -1583,12 +1917,12 @@ This action creates an asset in response to the administration&#39;s instruction
     </tr>
 
     <tr>
-        <td>TokenQty</td>
+        <td>AuthorizedTokenQty</td>
         <td>
             uint(8)
         </td>
         <td>
-            The number of tokens to issue with this asset. Set to greater than zero for fungible tokens. If the value is 1 then it becomes a non-fungible token, where the contract would have many assets. Set to 0 to represent a placeholder asset, where tokens are to be issued later, or to represent a decomissioned asset where all tokens have been revoked.
+            The number of tokens authorized to be issued for this asset. Set to greater than zero for fungible tokens. If the value is 1 then it becomes a non-fungible token, where the contract would have many assets. Set to 0 to represent a placeholder asset, where tokens are to be issued later, or to represent a decomissioned asset where all tokens have been revoked.
              Example: 1000000
         </td>
     </tr>
@@ -1634,6 +1968,17 @@ This action creates an asset in response to the administration&#39;s instruction
         <td>
             Timestamp in nanoseconds of when the smart contract created the action.
             Can&#39;t be changed by the administration, operator. Smart contract controls.
+        </td>
+    </tr>
+
+    <tr>
+        <td>TradeRestrictions</td>
+        <td>
+            <a href="#alias-varchar">Polity[small]</a>
+        </td>
+        <td>
+            If specified, the asset can only be traded within the specified trade restriction zone. For example, AUS would restrict to Australian residents only.
+            
         </td>
     </tr>
 
@@ -3708,6 +4053,9 @@ Used to reject request actions that do not comply with the Contract. If money is
 - [AssetReceiver](#type-asset-receiver)
 - [Asset Settlement](#type-asset-settlement)
 - [Asset Transfer](#type-asset-transfer)
+- [Chapter](#type-chapter)
+- [Clause](#type-clause)
+- [Defined Term](#type-defined-term)
 - [Document](#type-document)
 - [Entity](#type-entity)
 - [Manager](#type-manager)
@@ -4081,6 +4429,143 @@ AssetTransfer is the data required to transfer an asset.
         </td>
         <td>
             Each element has the value of tokens to be received, the address, and an oracle signature if required.
+            
+        </td>
+    </tr>
+
+</table>
+
+
+
+<a name="type-chapter"></a>
+### Chapter
+
+A chapter is the top level structure of an agreement. It contains articles.
+
+
+<table>
+    <tr>
+        <th style="width:15%">Field</th>
+        <th style="width:15%">Type</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>Title</td>
+        <td>
+            varchar(tiny)
+        </td>
+        <td>
+            The title of the chapter.
+            
+        </td>
+    </tr>
+
+    <tr>
+        <td>Preamble</td>
+        <td>
+            varchar(small)
+        </td>
+        <td>
+            The introduction to the chapter.
+            
+        </td>
+    </tr>
+
+    <tr>
+        <td>Articles</td>
+        <td>
+            <a href="#type-clause">Clause[tiny]</a>
+        </td>
+        <td>
+            A list of articles for the chapter.
+            
+        </td>
+    </tr>
+
+</table>
+
+
+
+<a name="type-clause"></a>
+### Clause
+
+A clause is the standard piece of an agreement, contained in each of the sub-levels of the  agreement. Articles, Sections, Subsections, Paragraphs, and Subparagraphs.
+
+
+<table>
+    <tr>
+        <th style="width:15%">Field</th>
+        <th style="width:15%">Type</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>Title</td>
+        <td>
+            varchar(tiny)
+        </td>
+        <td>
+            The title of the clause.
+            
+        </td>
+    </tr>
+
+    <tr>
+        <td>Body</td>
+        <td>
+            varchar(small)
+        </td>
+        <td>
+            The body of the clause.
+            
+        </td>
+    </tr>
+
+    <tr>
+        <td>Children</td>
+        <td>
+            <a href="#type-clause">Clause[tiny]</a>
+        </td>
+        <td>
+            A list of clauses under this clause.
+            
+        </td>
+    </tr>
+
+</table>
+
+
+
+<a name="type-defined-term"></a>
+### Defined Term
+
+A definition define a term specified throughout an agreement.
+
+
+<table>
+    <tr>
+        <th style="width:15%">Field</th>
+        <th style="width:15%">Type</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>Term</td>
+        <td>
+            varchar(tiny)
+        </td>
+        <td>
+            The name of the term being defined. Linked to from within the agreement with curly braces {}  around the name.
+
+            
+        </td>
+    </tr>
+
+    <tr>
+        <td>Definition</td>
+        <td>
+            varchar(small)
+        </td>
+        <td>
+            The definition of the name.
             
         </td>
     </tr>
@@ -4632,7 +5117,7 @@ A VotingSystem defines all details of a Voting System.
             fixedchar(1)
         </td>
         <td>
-            R - Relative Threshold, A - Absolute Threshold, P - Plurality,  (Relative Threshold means the number of counted votes must exceed the threshold % of total ballots cast.  Abstentations/spoiled votes do not detract from the liklihood of a vote passing as they are not included in the denominator.  Absolute Threshold requires the number of ballots counted to exceed the threshold value when compared to the total outstanding tokens.  Abstentations/spoiled votes detract from the liklihood of the vote passing.  For example, in an absolute threshold vote, if the threshold was 50% and 51% of the total outstanding tokens did not vote, then the vote cannot pass.  50% of all tokens would have had to vote for one vote option for the vote to be successful. Plurality means the most favoured option is selected, regardless of the number of votes cast or the percentage relative to other choices.
+            R - Relative Threshold, A - Absolute Threshold, P - Plurality.  Relative Threshold means the number of counted votes must exceed the threshold % of total ballots cast.  Abstentations/spoiled votes do not detract from the likelihood of a vote passing as they are not included in the denominator.  Absolute Threshold requires the number of ballots counted to exceed the threshold value when compared to the total outstanding tokens.  Abstentations/spoiled votes detract from the likelihood of the vote passing.  For example, in an absolute threshold vote, if the threshold was 50% and 51% of the total outstanding tokens did not vote, then the vote cannot pass.  50% of all tokens would have had to vote for one vote option for the vote to be successful. Plurality means the most favoured option is selected, regardless of the number of votes cast or the percentage relative to other choices.
              Example: A
         </td>
     </tr>
@@ -4717,11 +5202,21 @@ A VotingSystem defines all details of a Voting System.
         <tr id="alias-polity">
             <td>Polity</td>
             <td>
-                fixedchar(3)
+                varchar(tiny)
             </td>
             <td>
                 Polities (eg. Countries/Nation-States (ISO-3166 Alpha-3)
                  Example: GBR
+            </td>
+        </tr>
+        <tr id="alias-legal-system">
+            <td>LegalSystem</td>
+            <td>
+                varchar(tiny)
+            </td>
+            <td>
+                LegalSystems (Legal Systems for Governing Law/Choice of Law
+                 Example: GBREW
             </td>
         </tr>
         <tr id="alias-rejection-code">
@@ -4771,17 +5266,17 @@ A VotingSystem defines all details of a Voting System.
             </td>
             <td>
                 A code representing the type of asset and the structure of the payload.
-                 Example: CUR
+                 Example: CCY
             </td>
         </tr>
         <tr id="alias-asset-code">
             <td>AssetCode</td>
             <td>
-                bin(32)
+                bin(20)
             </td>
             <td>
                 Represents a unique identifier for an asset/token.
-                 Example: 0e6996402ea456156838652e3bd82c6c0986ef7925021d31f3d397bdcdd985fe
+                 Example: 0e6996402ea456156838652e3bd82c6c0986ef79
             </td>
         </tr>
         <tr id="alias-timestamp">
