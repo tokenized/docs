@@ -14,7 +14,7 @@ Resources are used to define lists of values, like the definitions of the possib
 <div class="content-list collection-method-list" markdown="1">
 - [Currencies](#resource-currencies)
 - [Entities](#resource-entities)
-- [Legal Systems](#resource-legal -systems)
+- [LegalSystems](#resource-legal-systems)
 - [Polities](#resource-polities)
 - [Rejections](#resource-rejections)
 - [Roles](#resource-roles)
@@ -210,13 +210,13 @@ Legal Entities &amp; Ownership Structures. 1 character.
 </div>
 
 
-<a name="resource-legal -systems"></a>
-#### Legal Systems
+<a name="resource-legal-systems"></a>
+#### LegalSystems
 
 Legal Systems for Governing Law/Choice of Law
 
 
-[View Source File](https://github.com/tokenized/specification/blob/master/src/resources/develop/Legal Systems.yaml)
+[View Source File](https://github.com/tokenized/specification/blob/master/src/resources/develop/LegalSystems.yaml)
 
 <div class="content-list collection-method-list" markdown="1">
 - Law of England and Wales
@@ -255,7 +255,7 @@ Legal Systems for Governing Law/Choice of Law
 - Law of Bermuda
 - Law of Bhutan
 - Law of Bolivia
-- Law of Bonaire St Eustasuis and Saba
+- Law of Bonaire St Eustasuis and Saba
 - Law of Bosnia and Herzegovina
 - Law of Botswana
 - Law of Brazil
@@ -268,7 +268,7 @@ Legal Systems for Governing Law/Choice of Law
 - Law of Cameroon
 - Law of Canada
 - Law of Alberta
-- Law of British Columbia
+- Law of British Columbia
 - Law of Manitoba
 - Law of New Brunswick
 - Law of Newfoundland and Labrador
@@ -316,9 +316,9 @@ Legal Systems for Governing Law/Choice of Law
 - Law of Fiji
 - Law of Finland
 - Law of France
-- Law of French Guiana (France)
-- Law of French Polynesia (France)
-- Law of French Southern and Antarctic Lands (France)
+- Law of French Guiana (France)
+- Law of French Polynesia (France)
+- Law of French Southern and Antarctic Lands (France)
 - Law of Gabon
 - Law of The Gambia
 - Law of Georgia
@@ -336,7 +336,7 @@ Legal Systems for Governing Law/Choice of Law
 - Law of Guinea-Bissau
 - Law of Guyana
 - Law of Haiti
-- Law of Heard Island and McDonalds Islands (Australian Capital Territory)
+- Law of Heard Island and McDonalds Islands (Australian Capital Territory)
 - Law of Honduras
 - Law of Hong Kong
 - Law of Hungary
@@ -349,7 +349,7 @@ Legal Systems for Governing Law/Choice of Law
 - Law of Iran
 - Law of Iraq
 - Law of Ireland
-- Isle of Man
+- Isle of Man
 - Law of Israel
 - Law of Italy
 - Law of Cote d&#39;Ivoire
@@ -404,15 +404,14 @@ Legal Systems for Governing Law/Choice of Law
 - Law of Niger
 - Law of Nigeria
 - Law of Niue
-- Law of Norfolk Island (New South Wales)
-- Law of New Zealand
+- Law of Norfolk Island (New South Wales)
 - Law of North Korea
-- Law of Northern Mariana Islands (United States)
+- Law of Northern Mariana Islands (United States)
 - Law of Norway
 - Law of Oman
 - Law of Pakistan
 - Law of Palau
-- Law of Palestinian Territory
+- Law of Palestinian Territory
 - Law of Panama
 - Law of Papua New Guinea
 - Law of Paraguay
@@ -427,17 +426,16 @@ Legal Systems for Governing Law/Choice of Law
 - Law of  Romania
 - Law of Russia
 - Law of Rwanda
-- Law of Saint Helena Ascension and Tristan da Cunha (England and Wales)
+- Law of Saint Helena Ascension and Tristan da Cunha (England and Wales)
 - Law of Saint Kitts and Nevis
 - Law of Saint Lucia
-- Law of Saint Pierre and Miquelon (France)
+- Law of Saint Pierre and Miquelon (France)
 - Law of Saint Vincent and the Grenadines
 - Law of Saint-Barthelemy (France)
 - Law of Saint-Martin (France)
 - Law of Samoa
 - Law of San Marino
-- Law of São Tomé and Príncipe
-- Law of Saudi Arabia
+- Law of São Tomé and Príncipe
 - Law of Saudi Arabia
 - Law of Senegal
 - Law of Serbia
@@ -450,14 +448,14 @@ Legal Systems for Governing Law/Choice of Law
 - Law of Solomon Islands
 - Law of Somalia
 - Law of South Africa
-- Law of South Georgia and the South Sandwich Islands (England and Wales)
+- Law of South Georgia and the South Sandwich Islands (England and Wales)
 - Law of South Korea
 - Law of South Sudan
 - Law of Spain
 - Law of Sri Lanka
 - Law of Sudan
 - Law of Suriname
-- Law of Svalbard and Jan Mayen (Norway)
+- Law of Svalbard and Jan Mayen (Norway)
 - Law of Eswatini
 - Law of Sweden
 - Law of Switzerland
@@ -469,7 +467,6 @@ Legal Systems for Governing Law/Choice of Law
 - Law of Togo
 - Law of Tokelau
 - Law of Trinidad and Tobago
-- Law of Trinidad and Tobago
 - Law of Tunisia
 - Law of Turkey
 - Law of Turkmenistan
@@ -478,11 +475,9 @@ Legal Systems for Governing Law/Choice of Law
 - Law of Uganda
 - Law of Ukraine
 - Law of United Arab Emirates
-- Law of England and Wales
-- Law of Scotland
 - Law of Northern Ireland
 - Law of Uruguay
-- Law of US Virgin Islands (United States)
+- Law of US Virgin Islands (United States)
 - Law of United States
 - Law of Alaska
 - Law of Alabama
@@ -491,10 +486,10 @@ Legal Systems for Governing Law/Choice of Law
 - Law of California
 - Law of Colorado
 - Law of Connecticut
-- Law of Washington D.C.
+- Law of Washington D.C.
 - Law of Delaware
 - Law of Florida
-- Law of Georgia
+- Law of Georgia (USA)
 - Law of Hawaii
 - Law of Iowa
 - Law of Idaho
@@ -511,21 +506,21 @@ Legal Systems for Governing Law/Choice of Law
 - Law of Missouri
 - Law of Mississippi
 - Law of Montana
-- Law of North Carolina
-- Law of North Dakota
+- Law of North Carolina
+- Law of North Dakota
 - Law of Nebraska
-- Law of New Hampshire
-- Law of New Jersey
-- Law of New Mexico
+- Law of New Hampshire
+- Law of New Jersey
+- Law of New Mexico
 - Law of Nevada
-- Law of New York
+- Law of New York
 - Law of Ohio
 - Law of Oklahoma
 - Law of Oregon
 - Law of Pennsylvania
-- Law of Rhode Island
-- Law of South Carolina
-- Law of South Dakota
+- Law of Rhode Island
+- Law of South Carolina
+- Law of South Dakota
 - Law of Tennessee
 - Law of Texas
 - Law of Utah
@@ -533,7 +528,7 @@ Legal Systems for Governing Law/Choice of Law
 - Law of Vermont
 - Law of Washington
 - Law of Wisconsin
-- Law of West Virginia
+- Law of West Virginia
 - Law of Wyoming
 - Law of Uzbekistan
 - Law of Vanuatu
@@ -824,6 +819,7 @@ Code/Text combinations returned in rejection messages when a request is not acce
 - ContractMoved
 - DoubleSpend
 - ContractExists
+- ContractDoesNotExist
 - ContractAssetQtyReduction
 - ContractFixedQuantity
 - ContractPermissions
@@ -855,6 +851,9 @@ Code/Text combinations returned in rejection messages when a request is not acce
 - NotOperator
 - UnauthorizedAddress
 - InvalidSignature
+- AgreementExists
+- AgreementDoesNotExist
+- AgreementRevision
 </div>
 
 
