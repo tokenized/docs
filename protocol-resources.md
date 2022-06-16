@@ -820,7 +820,7 @@ Code/Text combinations returned in rejection messages when a request is not acce
 - DoubleSpend
 - ContractExists
 - ContractDoesNotExist
-- ContractAssetQtyReduction
+- ContractInstrumentQtyReduction
 - ContractFixedQuantity
 - ContractPermissions
 - ContractExpired
@@ -828,12 +828,12 @@ Code/Text combinations returned in rejection messages when a request is not acce
 - ContractRevision
 - ContractNotPermitted
 - ContractBothOperatorsRequired
-- AssetCodeExists
-- AssetNotFound
-- AssetPermissions
-- AssetFrozen
-- AssetRevision
-- AssetNotPermitted
+- InstrumentCodeExists
+- InstrumentNotFound
+- InstrumentPermissions
+- InstrumentFrozen
+- InstrumentRevision
+- InstrumentNotPermitted
 - TransferSelf
 - TransferExpired
 - HoldingsFrozen

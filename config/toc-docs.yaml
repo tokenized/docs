@@ -23,7 +23,7 @@ Specification:
   pages:
     protocol/intro: "Introduction"
     protocol/actions: "Actions"
-    protocol/assets: "Assets"
+    protocol/instruments: "Instruments"
     protocol/messages: "Messages"
     protocol/resources: "Resources"
 

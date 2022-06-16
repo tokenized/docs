@@ -1,17 +1,17 @@
-# Protocol Assets
+# Protocol Instruments
 
 - [Introduction](#introduction)
-- [Available Assets](#all-assets)
+- [Available Instruments](#all-instruments)
 - [Field Types](#field-types)
 - [Field Aliases](#field-aliases)
 
 <a name="introduction"></a>
 ## Introduction
 
-Asset Types are used with reference to the `AssetPayload` field found in the Asset Definition, Asset Creation and Asset Modification actions.
+Instrument Types are used with reference to the `InstrumentPayload` field found in the Instrument Definition, Instrument Creation and Instrument Modification actions.
 
-<a name="all-assets"></a>
-## Available Assets
+<a name="all-instruments"></a>
+## Available Instruments
 
 <div class="content-list collection-method-list" markdown="1">
 - [Membership](#membership)
@@ -22,6 +22,7 @@ Asset Types are used with reference to the `AssetPayload` field found in the Ass
 - [Loyalty Points](#loyalty-points)
 - [Ticket (Admission)](#ticket-admission)
 - [Casino Chip](#casino-chip)
+- [Information Service License](#information-service-license)
 </div>
 
 <a name="membership"></a>
@@ -41,7 +42,7 @@ A Membership
             <a href="#type-age-restriction">AgeRestriction</a>
         </td>
         <td>
-            Age restriction is used to specify required ages for asset ownership.
+            Age restriction is used to specify required ages for instrument ownership.
             
         </td>
     </tr>
@@ -141,7 +142,7 @@ A Membership
 <a name="currency"></a>
 #### Currency
 
-Currency, fiat money, cash.  Issued by a monetary authority (eg. Reserve Bank of Australia, ECB, Bank of England).  Currency is free of counterparty risk except for the risks associated with the management of the currency by the monetary authority and its recognition as acceptable legal tender by the market and associated government(s).  Custody of currency must be backed by a 1:1 ratio, or a full reserve. A currency asset type should be considered the digital equivalent of physical cash.
+Currency, fiat money, cash.  Issued by a monetary authority (eg. Reserve Bank of Australia, ECB, Bank of England).  Currency is free of counterparty risk except for the risks associated with the management of the currency by the monetary authority and its recognition as acceptable legal tender by the market and associated government(s).  Custody of currency must be backed by a 1:1 ratio, or a full reserve. A currency instrument type should be considered the digital equivalent of physical cash.
 
 <table>
     <tr>
@@ -175,7 +176,7 @@ Currency, fiat money, cash.  Issued by a monetary authority (eg. Reserve Bank of
         <td>(Deprecated)Description</td>
         <td>deprecated</td>
         <td>
-            Deprecated because the currency asset should be distinguished by its meta data and contract.
+            Deprecated because the currency instrument should be distinguished by its meta data and contract.
              Example: Australian dollar
         </td>
     </tr>
@@ -212,7 +213,7 @@ Common stock represents ownership interests in companies.
             fixedchar(5)
         </td>
         <td>
-            Ticker symbol assigned by exchanges to represent the asset.
+            Ticker symbol assigned by exchanges to represent the instrument.
              Example: AAPL
         </td>
     </tr>
@@ -310,7 +311,7 @@ A fixed rate bond is a bond that pays the same level of interest over its entire
             varchar(small)
         </td>
         <td>
-            An asset that secures securing the bond.  If null, then the bond is unsecured.
+            An instrument that secures securing the bond.  If null, then the bond is unsecured.
             
         </td>
     </tr>
@@ -417,7 +418,7 @@ A fixed rate bond is a bond that pays the same level of interest over its entire
             <a href="#type-age-restriction">AgeRestriction</a>
         </td>
         <td>
-            Age restriction is used to specify required ages for asset ownership.
+            Age restriction is used to specify required ages for instrument ownership.
             
         </td>
     </tr>
@@ -586,7 +587,7 @@ A Loyalty Point
             <a href="#type-age-restriction">AgeRestriction</a>
         </td>
         <td>
-            Age restriction is used to specify required ages for asset ownership.
+            Age restriction is used to specify required ages for instrument ownership.
             
         </td>
     </tr>
@@ -666,7 +667,7 @@ Admission ticket
             <a href="#type-age-restriction">AgeRestriction</a>
         </td>
         <td>
-            Age restriction is used to specify required ages for asset ownership.
+            Age restriction is used to specify required ages for instrument ownership.
             
         </td>
     </tr>
@@ -859,7 +860,7 @@ Casino Chip
             <a href="#type-age-restriction">AgeRestriction</a>
         </td>
         <td>
-            Age restriction is used to specify required ages for asset ownership.
+            Age restriction is used to specify required ages for instrument ownership.
             
         </td>
     </tr>
@@ -931,6 +932,77 @@ Casino Chip
 
 
 
+<a name="information-service-license"></a>
+#### Information Service License
+
+Information Service License
+
+<table>
+    <tr>
+        <th style="width:15%">Field</th>
+        <th style="width:15%">Type</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>AgeRestriction</td>
+        <td>
+            <a href="#type-age-restriction">AgeRestriction</a>
+        </td>
+        <td>
+            Age restriction is used to specify required ages for instrument ownership.
+            
+        </td>
+    </tr>
+
+    <tr>
+        <td>ExpirationTimestamp</td>
+        <td>
+            <a href="#alias-uint">Timestamp</a>
+        </td>
+        <td>
+            
+            
+        </td>
+    </tr>
+
+    <tr>
+        <td>ServiceName</td>
+        <td>
+            varchar(tiny)
+        </td>
+        <td>
+            
+             This field is always required. 
+        </td>
+    </tr>
+
+    <tr>
+        <td>TransfersPermitted</td>
+        <td>
+            bool
+        </td>
+        <td>
+            Set to true if transfers are permitted between two parties, otherwise set to false to prevent peer-to-peer transfers.
+
+            
+        </td>
+    </tr>
+
+    <tr>
+        <td>URL</td>
+        <td>
+            varchar(small)
+        </td>
+        <td>
+            URL linking to any related documents or media
+            
+        </td>
+    </tr>
+
+</table>
+
+
+
 <a name="field-types"></a>
 ## Field Types
 
@@ -945,7 +1017,7 @@ Casino Chip
 <a name="type-age-restriction"></a>
 ### Age Restriction
 
-Age restriction is used to specify required ages for asset ownership.
+Age restriction is used to specify required ages for instrument ownership.
 
 <table>
     <tr>
@@ -959,7 +1031,7 @@ Age restriction is used to specify required ages for asset ownership.
             uint(1)
         </td>
         <td>
-            The lowest age valid to own asset. Zero for no restriction.
+            The lowest age valid to own instrument. Zero for no restriction.
             
         </td>
     </tr>
@@ -970,7 +1042,7 @@ Age restriction is used to specify required ages for asset ownership.
             uint(1)
         </td>
         <td>
-            The highest age valid to own asset. Zero for no restriction.
+            The highest age valid to own instrument. Zero for no restriction.
             
         </td>
     </tr>
