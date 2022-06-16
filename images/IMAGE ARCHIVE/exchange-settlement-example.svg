@@ -23,7 +23,7 @@ N: Settlement Action" transform="translate(3750 -10604)" fill="#707070" font-siz
     <text id="Merchant_Exchange_1_:_0_tokens" data-name="Merchant/Exchange (1): 0 tokens" transform="translate(3718 -10346)" fill="#ef1818" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Merchant/Exchange (1)</tspan><tspan y="0" fill="#707070">: 0 tokens</tspan></text>
     <text id="Buyer_2_:_100_tokens_Merchant_Exchange_2_:_450_tokens_" data-name="Buyer (2): 100 tokens
 Merchant/Exchange (2): 450 tokens " transform="translate(3718 -10325)" fill="#7b1adb" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Buyer (2)</tspan><tspan y="0" fill="#707070">: 100 tokens</tspan><tspan fill="#ef1818"><tspan x="0" y="19">Merchant/Exchange (2):</tspan><tspan y="19" xml:space="preserve" fill="#707070"> 450 tokens </tspan></tspan></text>
-    <text id="ASSETID:_SHC1BvBMSEYstWetqTFn5Au4m4GFg7xJ..." data-name="ASSETID: SHC1BvBMSEYstWetqTFn5Au4m4GFg7xJ..." transform="translate(3707 -10400)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">ASSETID: SHC1BvBMSEYstWetqTFn5Au4m4GFg7xJ...</tspan></text>
+    <text id="INSTRUMENTID:_SHC1BvBMSEYstWetqTFn5Au4m4GFg7xJ..." data-name="INSTRUMENTID: SHC1BvBMSEYstWetqTFn5Au4m4GFg7xJ..." transform="translate(3707 -10400)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">INSTRUMENTID: SHC1BvBMSEYstWetqTFn5Au4m4GFg7xJ...</tspan></text>
     <line id="Line_135" data-name="Line 135" y2="84" transform="translate(3708.5 -10378.5)" fill="none" stroke="#707070" stroke-width="1"/>
     <text id="_2_BSV_Dust_Dust_N_A_Not_shown:_Contract_Fee" data-name="2 BSV
 Dust

@@ -26,7 +26,7 @@
     <text id="Receivers" transform="translate(3046 -10335)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">Receivers</tspan></text>
     <text id="Buyer_3_:_100_tokens_Merchant_Exchange_3_:_450_tokens_" data-name="Buyer (3): 100 tokens
 Merchant/Exchange (3): 450 tokens " transform="translate(3046 -10299)" fill="#7b1adb" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Buyer (3)</tspan><tspan y="0" fill="#707070">: 100 tokens</tspan><tspan fill="#ef1818"><tspan x="0" y="19">Merchant/Exchange (3):</tspan><tspan y="19" xml:space="preserve" fill="#707070"> 450 tokens </tspan></tspan></text>
-    <text id="ASSETID:_SHC1BvBMSEYstWetqTFn5Au4m4GFg7xJ..." data-name="ASSETID: SHC1BvBMSEYstWetqTFn5Au4m4GFg7xJ..." transform="translate(3035 -10400)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">ASSETID: SHC1BvBMSEYstWetqTFn5Au4m4GFg7xJ...</tspan></text>
+    <text id="INSTRUMENTID:_SHC1BvBMSEYstWetqTFn5Au4m4GFg7xJ..." data-name="INSTRUMENTID: SHC1BvBMSEYstWetqTFn5Au4m4GFg7xJ..." transform="translate(3035 -10400)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">INSTRUMENTID: SHC1BvBMSEYstWetqTFn5Au4m4GFg7xJ...</tspan></text>
     <line id="Line_130" data-name="Line 130" y2="125" transform="translate(3036.5 -10378.5)" fill="none" stroke="#707070" stroke-width="1"/>
     <text id="_2_BSV_Response_Costs_Contract_Fee_Bitcoin_Change_Bitcoin_Change_N_A" data-name="2 BSV + Response Costs + Contract Fee
 Bitcoin Change
@@ -37,7 +37,7 @@ N/A" transform="translate(3271 -10604)" fill="#707070" font-size="14" font-famil
       <rect x="0.5" y="0.5" width="97" height="16" fill="none"/>
     </g>
     <line id="Line_131" data-name="Line 131" y2="74" transform="translate(3140.5 -10526.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
-    <text id="ASSET:_Bitcoin_BSV_" data-name="ASSET: Bitcoin (BSV)" transform="translate(3034 -10244)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">ASSET: Bitcoin (BSV)</tspan></text>
+    <text id="INSTRUMENT:_Bitcoin_BSV_" data-name="INSTRUMENT: Bitcoin (BSV)" transform="translate(3034 -10244)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">INSTRUMENT: Bitcoin (BSV)</tspan></text>
     <text id="Senders-2" data-name="Senders" transform="translate(3046 -10225)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">Senders</tspan></text>
     <text id="Buyer_1_:_2_BSV" data-name="Buyer (1): 2 BSV" transform="translate(3046 -10190)" fill="#7b1adb" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Buyer (1)</tspan><tspan y="0" fill="#707070">: 2 BSV</tspan></text>
     <text id="Receivers-2" data-name="Receivers" transform="translate(3046 -10175)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">Receivers</tspan></text>

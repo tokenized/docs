@@ -30,9 +30,9 @@
     <text id="Smart_Contract" data-name="Smart Contract" transform="translate(2451 -5621)" fill="#7030a0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Smart Contract</tspan></text>
     <text id="DETAILS" transform="translate(2394 -5491)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">DETAILS</tspan></text>
     <path id="Path_159" data-name="Path 159" d="M0,0V57.5" transform="translate(2396.5 -5474.5)" fill="none" stroke="#707070" stroke-width="1"/>
-    <text id="AssetID_Tx-ID_of_Vote_Vote_Choices" data-name="AssetID
+    <text id="InstrumentID_Tx-ID_of_Vote_Vote_Choices" data-name="InstrumentID
 Tx-ID of Vote
-Vote Choices" transform="translate(2403 -5459)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">AssetID</tspan><tspan x="0" y="19">Tx-ID of Vote</tspan><tspan x="0" y="38">Vote Choices</tspan></text>
+Vote Choices" transform="translate(2403 -5459)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">InstrumentID</tspan><tspan x="0" y="19">Tx-ID of Vote</tspan><tspan x="0" y="38">Vote Choices</tspan></text>
     <text id="_1:_" data-name="1: " transform="translate(2430 -5602)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1: </tspan></text>
     <text id="Token_Holder-2" data-name="Token Holder" transform="translate(2451 -5602)" fill="#007deb" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Token Holder</tspan></text>
   </g>

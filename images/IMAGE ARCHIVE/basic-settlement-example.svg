@@ -84,7 +84,7 @@
 			<text x="4" y="120.9" class="st6" v:langID="3081"><v:paragraph/><v:tabList/>Transfer Action<v:newlineChar/><v:newlineChar/><tspan
 						x="4" dy="2.43em" class="st7">Contract:<v:tabChar/><v:tabChar/></tspan><tspan dx="4.447em" class="st9">Smart Contract<v:newlineChar/><v:newlineChar/></tspan><tspan
 						x="4" dy="2.4em" class="st10">Contract Settlement details:<v:newlineChar/></tspan><tspan x="4" dy="1.2em"
-						class="st7">Asset:<v:tabChar/><v:tabChar/></tspan><tspan dx="5.725em" class="st7">Tokens<v:tabChar/><v:newlineChar/><v:paragraph/></tspan><tspan
+						class="st7">Instrument:<v:tabChar/><v:tabChar/></tspan><tspan dx="5.725em" class="st7">Tokens<v:tabChar/><v:newlineChar/><v:paragraph/></tspan><tspan
 						x="4" dy="1.2em" class="st8">Receiver<v:tabChar/><v:tabChar/></tspan><tspan dx="4.558em" class="st7">balance 100<v:newlineChar/></tspan><tspan
 						x="4" dy="1.2em" class="st11">Issuer<v:tabChar/><v:tabChar/></tspan><tspan dx="5.781em" class="st7">balance 9900</tspan></text>		</g>
 	</g>

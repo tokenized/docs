@@ -3,10 +3,10 @@
 - [Introduction](#introduction)
 - [Creating the Contract](#creating-the-contract)
 - [Creating the Free Slice Coupons](#creating-the-coupons)
-  - [Coupon Asset Definition](#coupon-asset-definition)
-  - [Coupon Asset Creation](#coupon-asset-creation)
+  - [Coupon Instrument Definition](#coupon-instrument-definition)
+  - [Coupon Instrument Creation](#coupon-instrument-creation)
 - [Creating the Loyalty Points](#creating-the-points)
-  - [Points Asset Definition](#points-asset-definition)
+  - [Points Instrument Definition](#points-instrument-definition)
 - [First Customer](#first-customer)
   - [First Customer Transfer](#first-customer-transfer)
   - [First Customer Settlement](#first-customer-settlement)
@@ -44,38 +44,38 @@ The Agent receives the Contract Offer and unpacks it, validating its contents be
 <a name="creating-the-coupons"></a>
 ## Creating the Free Slice Coupons
 
-Now that Dominic's contract is live, he is able to use it to create the assets that he will use in his loyalty program.
-Firstly, he has decided to create a 'Free Slice' coupon which he will give to the first 100 people who buy a whole pizza. He wants people to also have the option to send these coupons to other people so that they can come and try his food. Using the Asset Creation tool, Dominic sets up an asset definition which creates a set of 100 coupons using the following details:
+Now that Dominic's contract is live, he is able to use it to create the instruments that he will use in his loyalty program.
+Firstly, he has decided to create a 'Free Slice' coupon which he will give to the first 100 people who buy a whole pizza. He wants people to also have the option to send these coupons to other people so that they can come and try his food. Using the Instrument Creation tool, Dominic sets up an instrument definition which creates a set of 100 coupons using the following details:
 
-<a name="coupon-asset-definition"></a>
-### Coupon Asset Definition
+<a name="coupon-instrument-definition"></a>
+### Coupon Instrument Definition
 
-![Dominic's Pizza Slice Coupon Asset Definition](https://raw.githubusercontent.com/tokenized/docs/master/images/dominics-pizza-slice-coupons-asset-definition.svg?sanitize=true "Dominic's Pizza slice coupons Asset Definition") {.frame .centered .padded}
+![Dominic's Pizza Slice Coupon Instrument Definition](https://raw.githubusercontent.com/tokenized/docs/master/images/dominics-pizza-slice-coupons-instrument-definition.svg?sanitize=true "Dominic's Pizza slice coupons Instrument Definition") {.frame .centered .padded}
 
-Once Dominic has finished entering the details he instructs his wallet to send the Asset Definition to the smart contract.
+Once Dominic has finished entering the details he instructs his wallet to send the Instrument Definition to the smart contract.
 
-<a name="coupon-asset-creation"></a>
-### Coupon Asset Creation
+<a name="coupon-instrument-creation"></a>
+### Coupon Instrument Creation
 
-The smart contract receives the transaction and unpacks the details. After making sure that the details are valid, the smart contract responds with an Asset Creation action which generates the 100 coupons and gives them to Dominic's wallet. He now has 100 Free Slice coupons which he can hand out to customers as he sees fit.
+The smart contract receives the transaction and unpacks the details. After making sure that the details are valid, the smart contract responds with an Instrument Creation action which generates the 100 coupons and gives them to Dominic's wallet. He now has 100 Free Slice coupons which he can hand out to customers as he sees fit.
 
-![Dominic's Pizza Slice Coupon Asset Creation](https://raw.githubusercontent.com/tokenized/docs/master/images/dominics-pizza-slice-coupons-asset-creation.svg?sanitize=true "Dominic's Pizza slice coupons Asset Creation") {.frame .centered .padded}
+![Dominic's Pizza Slice Coupon Instrument Creation](https://raw.githubusercontent.com/tokenized/docs/master/images/dominics-pizza-slice-coupons-instrument-creation.svg?sanitize=true "Dominic's Pizza slice coupons Instrument Creation") {.frame .centered .padded}
 
 <a name="creating-the-points"></a>
 ## Creating the Loyalty Points
 
 Next Dominic establishes a loyalty coupon which he will hand out with each slice. His plan is to give away a free slice of pizza to any customer who has bought 7 slices, making the 8th slice free.
 
-<a name="points-asset-definition"></a>
-### Points Asset Definition
+<a name="points-instrument-definition"></a>
+### Points Instrument Definition
 
 He uses the following details:
 
-![Dominic's Pizza loyalty points Asset Definition](https://raw.githubusercontent.com/tokenized/docs/master/images/dominics-pizza-loyalty-points-asset-definition.svg?sanitize=true "Dominic's Pizza loyalty points Asset Definition") {.frame .centered .padded}
+![Dominic's Pizza loyalty points Instrument Definition](https://raw.githubusercontent.com/tokenized/docs/master/images/dominics-pizza-loyalty-points-instrument-definition.svg?sanitize=true "Dominic's Pizza loyalty points Instrument Definition") {.frame .centered .padded}
 
-Once Dominic has finished entering the details he instructs his wallet to send the Asset Definition to the smart contract.
+Once Dominic has finished entering the details he instructs his wallet to send the Instrument Definition to the smart contract.
 
-The smart contract receives the transaction and unpacks the details. After making sure that the details are valid, the smart contract responds with an Asset Creation action which generates the points and gives them to Dominic's wallet. He now has 10,000 loyalty points which he can hand out to customers. Because customers will give them back to him to redeem pizza, he only needs as many as might be outstanding at any time. The loyalty program is set to expire with the lease on his restaurant but Dominic plans to modify the asset when he extends so that the program is always in place.
+The smart contract receives the transaction and unpacks the details. After making sure that the details are valid, the smart contract responds with an Instrument Creation action which generates the points and gives them to Dominic's wallet. He now has 10,000 loyalty points which he can hand out to customers. Because customers will give them back to him to redeem pizza, he only needs as many as might be outstanding at any time. The loyalty program is set to expire with the lease on his restaurant but Dominic plans to modify the instrument when he extends so that the program is always in place.
 
 <a name="first-customer"></a>
 ## First Customer

@@ -90,7 +90,7 @@
 			<rect x="0" y="107.002" width="330.429" height="170.854" class="st5"/>
 			<text x="4" y="120.9" class="st6" v:langID="3081"><v:paragraph/><v:tabList/>Transfer Action<v:newlineChar/><v:newlineChar/><tspan
 						x="4" dy="2.43em" class="st7">Smart Contract:<v:tabChar/></tspan><tspan dx="1.502em" class="st9">TBACT Smart Contract<v:newlineChar/><v:newlineChar/></tspan><tspan
-						x="4" dy="2.4em" class="st13">Transfer details<v:newlineChar/></tspan><tspan x="4" dy="1.2em" class="st7">Asset ID:<v:tabChar/></tspan><tspan
+						x="4" dy="2.4em" class="st13">Transfer details<v:newlineChar/></tspan><tspan x="4" dy="1.2em" class="st7">Instrument ID:<v:tabChar/></tspan><tspan
 						dx="0.195em" class="st7">SHC C79A6D468E81B57B301240E3AA3A37A3FF961B2E<v:newlineChar/></tspan><tspan x="4"
 						dy="1.2em" class="st7">Sender:<v:tabChar/><v:tabChar/></tspan><tspan dx="5.001em" class="st8">TBACT<v:newlineChar/></tspan><tspan
 						x="4" dy="1.2em" class="st7">Receiver 1:<v:tabChar/></tspan><tspan dx="3.446em" class="st10">Bill<v:newlineChar/></tspan><tspan

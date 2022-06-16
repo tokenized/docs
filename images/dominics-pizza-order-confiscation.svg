@@ -29,10 +29,10 @@
     <text id="Dominic_s_Pizza_Contract" data-name="Dominic&apos;s Pizza Contract" transform="translate(22370 -8152)" fill="#7030a0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dominic&apos;s Pizza Contract</tspan></text>
     <text id="DETAILS" transform="translate(22186 -8022)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">DETAILS</tspan></text>
     <path id="Path_161" data-name="Path 161" d="M0,0V76.5" transform="translate(22188.5 -8005.5)" fill="none" stroke="#707070" stroke-width="1"/>
-    <text id="AssetID:_ASSETID:_LOYef5fd20FF3Dka2..._Loyalty_Points_Target_Address_es_:_Jo-Anne_3_20_points_Deposit_Address:_Dominic_s_Pizza_Message:_Incorrect_number_of_points_given_sorry_" data-name="AssetID: 			ASSETID: LOYef5fd20FF3Dka2... Loyalty Points
+    <text id="InstrumentID:_INSTRUMENTID:_LOYef5fd20FF3Dka2..._Loyalty_Points_Target_Address_es_:_Jo-Anne_3_20_points_Deposit_Address:_Dominic_s_Pizza_Message:_Incorrect_number_of_points_given_sorry_" data-name="InstrumentID: 			INSTRUMENTID: LOYef5fd20FF3Dka2... Loyalty Points
 Target Address(es):	Jo-Anne (3) (20 points)
 Deposit Address:		Dominic&apos;s Pizza
-Message:		Incorrect number of points given sorry!!!" transform="translate(22195 -7990)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0" xml:space="preserve">AssetID: 			ASSETID: LOYef5fd20FF3Dka2... Loyalty Points</tspan><tspan x="0" y="19">Target Address(es):	</tspan><tspan y="19" fill="#ffc000">Jo-Anne (3) </tspan><tspan y="19">(20 points)</tspan><tspan x="0" y="38" xml:space="preserve">Deposit Address:		Dominic&apos;s Pizza</tspan><tspan x="0" y="57" xml:space="preserve">Message:		Incorrect number of points given sorry!!!</tspan></text>
+Message:		Incorrect number of points given sorry!!!" transform="translate(22195 -7990)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0" xml:space="preserve">InstrumentID: 			INSTRUMENTID: LOYef5fd20FF3Dka2... Loyalty Points</tspan><tspan x="0" y="19">Target Address(es):	</tspan><tspan y="19" fill="#ffc000">Jo-Anne (3) </tspan><tspan y="19">(20 points)</tspan><tspan x="0" y="38" xml:space="preserve">Deposit Address:		Dominic&apos;s Pizza</tspan><tspan x="0" y="57" xml:space="preserve">Message:		Incorrect number of points given sorry!!!</tspan></text>
     <text id="_0:_2" data-name="0: " transform="translate(22142 -8152)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: </tspan></text>
   </g>
 </svg>

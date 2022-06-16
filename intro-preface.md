@@ -30,7 +30,7 @@ The smart contract and wallet both operate with the Tokenized Protocol and inter
 
 The Tokenized Protocol defines action messages that provide various methods for common use cases, such as governance and compliance. A unique aspect of the Tokenized Protocol is its precise alignment with real-world scenarios and coverage of the various requirements when conducting business.
 
-An example of an action message is the creation of an asset token, prepared as an [Asset Definition](../protocol/actions#action-asset-definition) request and sent by the wallet to the smart contract. The Asset Definition contains all the information about the asset, including the asset class, the number of issued tokens, a unique code, metadata and other details.
+An example of an action message is the creation of an instrument token, prepared as an [Instrument Definition](../protocol/actions#action-instrument-definition) request and sent by the wallet to the smart contract. The Instrument Definition contains all the information about the instrument, including the instrument class, the number of issued tokens, a unique code, metadata and other details.
 
 Each action message contains many data fields that are populated to form the final protocol message, sent across the Bitcoin network. The message contents include the value of each data field concatenated together. This method provides maximum efficiency for storing the data on the blockchain.
 
@@ -38,7 +38,7 @@ It is crucial when converting these messages that every implementation uses the 
 
 - [Tokenized Protocol Specification](https://github.com/tokenized/specification)
 
-This repository is a reference for the Tokenized Protocol structure. All definitions for message types and asset types are stored in YAML to be parsed and compiled into various programming languages.
+This repository is a reference for the Tokenized Protocol structure. All definitions for message types and instrument types are stored in YAML to be parsed and compiled into various programming languages.
 
 <a name="support"></a>
 ## Support

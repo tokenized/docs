@@ -92,7 +92,7 @@
 						x="4" dy="2.4em" class="st11">Transfer details:<v:newlineChar/></tspan><tspan x="4" dy="1.2em" class="st7">Sender:<v:tabChar/><v:tabChar/></tspan><tspan
 						dx="5.001em" class="st8">Seller</tspan><tspan class="st8">’</tspan><tspan class="st8">s address<v:newlineChar/></tspan><tspan
 						x="4" dy="1.2em" class="st7">Receiver 1:<v:tabChar/></tspan><tspan dx="3.446em" class="st7">Empty (for </tspan><tspan
-						class="st9">Buyer</tspan><tspan class="st7">)<v:newlineChar/></tspan><tspan x="4" dy="1.2em" class="st7">Qty x Asset:<v:tabChar/></tspan><tspan
+						class="st9">Buyer</tspan><tspan class="st7">)<v:newlineChar/></tspan><tspan x="4" dy="1.2em" class="st7">Qty x Instrument:<v:tabChar/></tspan><tspan
 						dx="3.114em" class="st7">100 x Tokens</tspan></text>		</g>
 	</g>
 </svg>

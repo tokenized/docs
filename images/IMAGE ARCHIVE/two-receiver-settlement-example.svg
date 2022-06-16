@@ -89,7 +89,7 @@
 			<text x="4" y="120.9" class="st6" v:langID="3081"><v:paragraph/><v:tabList/>Settlement Action<v:newlineChar/><v:newlineChar/><tspan
 						x="4" dy="2.43em" class="st7">Contract:<v:tabChar/><v:tabChar/></tspan><tspan dx="4.447em" class="st8">Smart Contract<v:newlineChar/><v:newlineChar/></tspan><tspan
 						x="4" dy="2.4em" class="st11">Settlement details:<v:newlineChar/></tspan><tspan x="4" dy="1.2em"
-						class="st7">Asset:<v:tabChar/><v:tabChar/></tspan><tspan dx="5.725em" class="st7">Tokens<v:tabChar/><v:tabChar/><v:newlineChar/><v:paragraph/></tspan><tspan
+						class="st7">Instrument:<v:tabChar/><v:tabChar/></tspan><tspan dx="5.725em" class="st7">Tokens<v:tabChar/><v:tabChar/><v:newlineChar/><v:paragraph/></tspan><tspan
 						x="4" dy="1.2em" class="st12">Issuer:<v:tabChar/><v:tabChar/></tspan><tspan dx="5.503em" class="st7">Balance 9500<v:newlineChar/><v:paragraph/></tspan><tspan
 						x="4" dy="1.2em" class="st9">Receiver:<v:tabChar/><v:tabChar/></tspan><tspan dx="4.28em" class="st7">Balance 200<v:tabChar/><v:newlineChar/></tspan><tspan
 						x="4" dy="1.2em" class="st10">Receiver 2:<v:tabChar/></tspan><tspan dx="3.446em" class="st7">Balance 300</tspan></text>		</g>

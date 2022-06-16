@@ -31,7 +31,7 @@
     <text id="Not_Shown:_Change" data-name="Not Shown: Change" transform="translate(14831 -684)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Not Shown: Change</tspan></text>
     <line id="Line_320" data-name="Line 320" y2="175" transform="translate(14580.5 -575.5)" fill="none" stroke="#707070" stroke-width="1"/>
     <text id="DETAILS" transform="translate(14578 -594)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">DETAILS</tspan></text>
-    <text id="_-AssetID_-Target_Address_es_-Qty_of_tokens_being_frozen_for_each_address_-Name_of_the_Authority_who_issued_the_order_optional_-Public_Key_of_Authority_Optional_-Authority_Signature_Optional_-Supporting_Evidence_-Freeze_Period_optional_-Message" data-name="-AssetID
+    <text id="_-InstrumentID_-Target_Address_es_-Qty_of_tokens_being_frozen_for_each_address_-Name_of_the_Authority_who_issued_the_order_optional_-Public_Key_of_Authority_Optional_-Authority_Signature_Optional_-Supporting_Evidence_-Freeze_Period_optional_-Message" data-name="-InstrumentID
 -Target Address(es)
 -Qty of tokens being frozen for each address
 -Name of the Authority who issued the order (optional)
@@ -39,6 +39,6 @@
 -Authority Signature (Optional)
 -Supporting Evidence
 -Freeze Period (optional)
--Message" transform="translate(14588 -560)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">-AssetID</tspan><tspan x="0" y="19">-Target Address(es)</tspan><tspan x="0" y="38">-Qty of tokens being frozen for each address</tspan><tspan x="0" y="57">-Name of the Authority who issued the order (optional)</tspan><tspan x="0" y="76">-Public Key of Authority (Optional)</tspan><tspan x="0" y="95">-Authority Signature (Optional)</tspan><tspan x="0" y="114">-Supporting Evidence</tspan><tspan x="0" y="133">-Freeze Period (optional)</tspan><tspan x="0" y="152">-Message</tspan></text>
+-Message" transform="translate(14588 -560)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">-InstrumentID</tspan><tspan x="0" y="19">-Target Address(es)</tspan><tspan x="0" y="38">-Qty of tokens being frozen for each address</tspan><tspan x="0" y="57">-Name of the Authority who issued the order (optional)</tspan><tspan x="0" y="76">-Public Key of Authority (Optional)</tspan><tspan x="0" y="95">-Authority Signature (Optional)</tspan><tspan x="0" y="114">-Supporting Evidence</tspan><tspan x="0" y="133">-Freeze Period (optional)</tspan><tspan x="0" y="152">-Message</tspan></text>
   </g>
 </svg>

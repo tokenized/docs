@@ -90,11 +90,11 @@
 						x="4" dy="2.43em" class="st7">Contract 1:<v:tabChar/></tspan><tspan dx="3.613em" class="st8">Token 1 Contract<v:newlineChar/></tspan><tspan
 						x="4" dy="1.2em" class="st7">Contract 2:<v:tabChar/></tspan><tspan dx="3.613em" class="st9">Token 2 Contract<v:newlineChar/><v:newlineChar/></tspan><tspan
 						x="4" dy="2.4em" class="st12">Token 1 Contract</tspan><tspan class="st13"> </tspan><tspan class="st13">Settlement:<v:newlineChar/></tspan><tspan
-						x="4" dy="1.2em" class="st7">Asset:<v:tabChar/><v:tabChar/></tspan><tspan dx="5.725em" class="st7">Token 1<v:newlineChar/></tspan><tspan
+						x="4" dy="1.2em" class="st7">Instrument:<v:tabChar/><v:tabChar/></tspan><tspan dx="5.725em" class="st7">Token 1<v:newlineChar/></tspan><tspan
 						x="4" dy="1.2em" class="st10">Participant 1<v:tabChar/></tspan><tspan dx="2.945em" class="st7">Balance 50 (previously 150)<v:newlineChar/></tspan><tspan
 						x="4" dy="1.2em" class="st11">Participant 2<v:tabChar/></tspan><tspan dx="2.945em" class="st7">Balance 100<v:newlineChar/><v:newlineChar/><v:paragraph/></tspan><tspan
 						x="4" dy="2.4em" class="st14">Token 2 Contract</tspan><tspan class="st13"> </tspan><tspan class="st13">Settlement:<v:newlineChar/><v:paragraph/></tspan><tspan
-						x="4" dy="1.2em" class="st7">Asset:<v:tabChar/><v:tabChar/></tspan><tspan dx="5.725em" class="st7">Token 2<v:newlineChar/></tspan><tspan
+						x="4" dy="1.2em" class="st7">Instrument:<v:tabChar/><v:tabChar/></tspan><tspan dx="5.725em" class="st7">Token 2<v:newlineChar/></tspan><tspan
 						x="4" dy="1.2em" class="st11">Participant 2<v:tabChar/></tspan><tspan dx="2.945em" class="st7">Balance 0 (Previously 20)<v:newlineChar/></tspan><tspan
 						x="4" dy="1.2em" class="st10">Participant 1<v:tabChar/></tspan><tspan dx="2.945em" class="st7">Balance 30 (Previously 10)</tspan><v:newlineChar/></text>		</g>
 	</g>

@@ -31,12 +31,12 @@
     <text id="Smart_Contract" data-name="Smart Contract" transform="translate(15936 -726)" fill="#7030a0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Smart Contract</tspan></text>
     <text id="DETAILS" transform="translate(15879 -596)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">DETAILS</tspan></text>
     <path id="Path_159" data-name="Path 159" d="M0,0V133.5" transform="translate(15881.5 -579.5)" fill="none" stroke="#707070" stroke-width="1"/>
-    <text id="_-AssetID_-Target_Address_es_-Name_of_the_Authority_who_issued_the_order_optional_-Public_Key_of_Authority_Optional_-Authority_Signature_Optional_-Supporting_Evidence_-Message" data-name="-AssetID
+    <text id="_-InstrumentID_-Target_Address_es_-Name_of_the_Authority_who_issued_the_order_optional_-Public_Key_of_Authority_Optional_-Authority_Signature_Optional_-Supporting_Evidence_-Message" data-name="-InstrumentID
 -Target Address(es)
 -Name of the Authority who issued the order (optional)
 -Public Key of Authority (Optional)
 -Authority Signature (Optional)
 -Supporting Evidence
--Message" transform="translate(15888 -564)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">-AssetID</tspan><tspan x="0" y="19">-Target Address(es)</tspan><tspan x="0" y="38">-Name of the Authority who issued the order (optional)</tspan><tspan x="0" y="57">-Public Key of Authority (Optional)</tspan><tspan x="0" y="76">-Authority Signature (Optional)</tspan><tspan x="0" y="95">-Supporting Evidence</tspan><tspan x="0" y="114">-Message</tspan></text>
+-Message" transform="translate(15888 -564)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">-InstrumentID</tspan><tspan x="0" y="19">-Target Address(es)</tspan><tspan x="0" y="38">-Name of the Authority who issued the order (optional)</tspan><tspan x="0" y="57">-Public Key of Authority (Optional)</tspan><tspan x="0" y="76">-Authority Signature (Optional)</tspan><tspan x="0" y="95">-Supporting Evidence</tspan><tspan x="0" y="114">-Message</tspan></text>
   </g>
 </svg>

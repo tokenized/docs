@@ -45,7 +45,7 @@ The contract operator has permission to act on behalf of the issuer for the init
 <a name="contract-create"></a>
 ### Creating a Contract
 
-A Tokenized contract is formed when the administration of a token issuer presents a valid [Contract Offer](../protocol/actions#action-contract-offer) action to a smart contract. The smart contract checks only that the rules proposed in the offer are compliant with its logic, but the legal and regulatory aspects of dealing with the assets being created must be pre-determined and managed by the administration to ensure the contract operates within all applicable laws and regulations.
+A Tokenized contract is formed when the administration of a token issuer presents a valid [Contract Offer](../protocol/actions#action-contract-offer) action to a smart contract. The smart contract checks only that the rules proposed in the offer are compliant with its logic, but the legal and regulatory aspects of dealing with the instruments being created must be pre-determined and managed by the administration to ensure the contract operates within all applicable laws and regulations.
 
 #### Contract Offer
 
@@ -121,7 +121,7 @@ In the worst case scenario, in which the private key of the contract is compromi
 <a name="static-contracts"></a>
 ## Static Contracts
 
-A static contract is a legal contract similar to that which one would enter into today for the undertaking of a scope of work, to enter into a non-disclosure agreement, or to manage the sale of an off-chain asset that has not been tokenized. A static contract uses the [Static Contract Formation](../protocol/actions#action-static-contract-formation) action.
+A static contract is a legal contract similar to that which one would enter into today for the undertaking of a scope of work, to enter into a non-disclosure agreement, or to manage the sale of an off-chain instrument that has not been tokenized. A static contract uses the [Static Contract Formation](../protocol/actions#action-static-contract-formation) action.
 
 The static contract framework simply provides an easy and low-cost way for inscribing the details of these contracts onto the public ledger so the contracting parties benefit from the value of the Bitcoin network. Static contracts require only a single action to be established and do not require a Tokenized smart contract to operate.  Each of the contracting parties adds a signed input to the same transaction that has the static contract formation action in it, to allow for their signatures (intention) to be recorded to the contract.
 
@@ -146,7 +146,7 @@ Reference: J W Carter, LexisNexis, Carter on Contract (at July 2013) [Chapter 1]
 
 <a name="agreement"></a>
 #### Agreement
-The agreement criteria of contract law is satisfied in the Tokenized Protocol by way of the information specified by the Contract Formation action, the Asset Creation action, the written agreement, and the Transfer and Settlement actions.  The existence of an agreement is analyzed through the rules of ‘offer and acceptance’.  In the case of a token contract, the issuer (the offerer) produces an offer (Contract Formation, Asset Creation) and the investor (the offeree) accepts the offer by way of an exchange (bitcoin for token(s)) or swap (token(s) for token(s)) type Transfer action.  A send type Transfer action is like a standard Bitcoin transaction in that it only requires sign-off by the token sender, and no on-chain consideration is required, therefore the offeree does not sign-off on the transaction and may not agree to accept the tokens being sent.  Typically a send type action is accompanied by on-chain or off-chain receipt, invoice or some other document that records the transfer of real world goods or services in consideration for the payment of tokens or bitcoin.
+The agreement criteria of contract law is satisfied in the Tokenized Protocol by way of the information specified by the Contract Formation action, the Instrument Creation action, the written agreement, and the Transfer and Settlement actions.  The existence of an agreement is analyzed through the rules of ‘offer and acceptance’.  In the case of a token contract, the issuer (the offerer) produces an offer (Contract Formation, Instrument Creation) and the investor (the offeree) accepts the offer by way of an exchange (bitcoin for token(s)) or swap (token(s) for token(s)) type Transfer action.  A send type Transfer action is like a standard Bitcoin transaction in that it only requires sign-off by the token sender, and no on-chain consideration is required, therefore the offeree does not sign-off on the transaction and may not agree to accept the tokens being sent.  Typically a send type action is accompanied by on-chain or off-chain receipt, invoice or some other document that records the transfer of real world goods or services in consideration for the payment of tokens or bitcoin.
 
 <a name="consideration"></a>
 #### Consideration

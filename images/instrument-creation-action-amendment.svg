@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="628" height="693" viewBox="0 0 628 693">
+  <g id="instrument-creation-action-amendment" transform="translate(-6676 889)">
+    <g id="Rectangle_321" data-name="Rectangle 321" transform="translate(6676 -889)" fill="#fcfcfc" stroke="#707070" stroke-width="1">
+      <rect width="628" height="164" stroke="none"/>
+      <rect x="0.5" y="0.5" width="627" height="163" fill="none"/>
+    </g>
+    <text id="Smart_Contract" data-name="Smart Contract" transform="translate(6712 -789)" fill="#7030a0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Smart Contract</tspan></text>
+    <text id="Response_Transaction_Instrument_Creation_" data-name="Response Transaction (Instrument Creation)" transform="translate(6693 -856)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Response Transaction (Instrument Creation)</tspan></text>
+    <line id="Line_382" data-name="Line 382" y2="86" transform="translate(6881.5 -828.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <text id="INPUTS" transform="translate(6693 -824)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">INPUTS</tspan></text>
+    <text id="OUTPUTS_" data-name="OUTPUTS " transform="translate(6897 -827)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">OUTPUTS </tspan></text>
+    <text id="_0:_" data-name="0: " transform="translate(6693 -789)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: </tspan></text>
+    <text id="VALUE" transform="translate(7090 -827)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">VALUE</tspan></text>
+    <text id="_0:_2" data-name="0: " transform="translate(6897 -789)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: </tspan></text>
+    <text id="Smart_Contract-2" data-name="Smart Contract" transform="translate(6916 -789)" fill="#7030a0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Smart Contract</tspan></text>
+    <text id="Dust" transform="translate(7090 -789)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust</tspan></text>
+    <g id="Rectangle_322" data-name="Rectangle 322" transform="translate(6913 -765)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+      <rect width="140" height="18" stroke="none"/>
+      <rect x="0.5" y="0.5" width="139" height="17" fill="none"/>
+    </g>
+    <text id="_2:_" data-name="2: " transform="translate(6897 -751)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">2: </tspan></text>
+    <text id="Instrument_Creation_Action" data-name="Instrument Creation Action" transform="translate(6915 -751)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Instrument Creation Action</tspan></text>
+    <text id="Contract_Fees" data-name="Contract Fees" transform="translate(7090 -770)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Contract Fees</tspan></text>
+    <g id="Rectangle_323" data-name="Rectangle 323" transform="translate(6826 -705)" fill="#fcfcfc" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+      <rect width="387.499" height="324" stroke="none"/>
+      <rect x="0.5" y="0.5" width="386.499" height="323" fill="none"/>
+    </g>
+    <text id="Instrument_Creation_Action_Payload" data-name="Instrument Creation Action Payload" transform="translate(6837 -672)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Instrument Creation Action Payload</tspan></text>
+    <line id="Line_383" data-name="Line 383" y2="42" transform="translate(6957.5 -746.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
+    <text id="N_A" data-name="N/A" transform="translate(7090 -751)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N/A</tspan></text>
+    <line id="Line_384" data-name="Line 384" y2="248" transform="translate(6839.5 -641.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <text id="DETAILS" transform="translate(6837 -660)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">DETAILS</tspan></text>
+    <text id="_-_Instrument_Type_-_Instrument_Code_-_Contract_Type_-_Instrument_Authorization_Flags_-_Transfer_Permissions_-_Trade_Restrictions_-_Enforcement_Permissions_-_Instrument_Voting_Rights_and_Multiplier_-_Modification_Processes_and_Governance_-_Quantity_of_Tokens_to_Create_-_Instrument_" data-name="- Instrument Type
+- Instrument Code
+- Contract Type
+- Instrument Authorization Flags
+- Transfer Permissions
+- Trade Restrictions
+- Enforcement Permissions
+- Instrument Voting Rights and Multiplier
+- Modification Processes and Governance
+- Quantity of Tokens to Create
+- Instrument " transform="translate(6847 -626)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">- Instrument Type</tspan><tspan x="0" y="19">- Instrument Code</tspan><tspan x="0" y="38">- Contract Type</tspan><tspan x="0" y="57">- Instrument Authorization Flags</tspan><tspan x="0" y="76">- Transfer Permissions</tspan><tspan x="0" y="95">- Trade Restrictions</tspan><tspan x="0" y="114">- Enforcement Permissions</tspan><tspan x="0" y="133">- Instrument Voting Rights and Multiplier</tspan><tspan x="0" y="152">- Modification Processes and Governance</tspan><tspan x="0" y="171">- Quantity of Tokens to Create</tspan><tspan x="0" y="190">- Instrument Specific Payload Data</tspan><tspan font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="209">- Revision = N</tspan><tspan x="0" y="228">- Timestamp</tspan></tspan></text>
+    <g id="Rectangle_324" data-name="Rectangle 324" transform="translate(6825 -350)" fill="#fff" stroke="#cf730b" stroke-width="4">
+      <rect width="388" height="153" stroke="none"/>
+      <rect x="2" y="2" width="384" height="149" fill="none"/>
+    </g>
+    <text id="Note:" transform="translate(6841 -336)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="17">Note:</tspan></text>
+    <text id="The_smart_contract_responds_to_Instrument_Modifications_by_publishing_a_new_Instrument_Creation_action_with_all_of_the_amendments_accounted_for._The_Revision_will_increment_by_1_for_each_Instrument_Creation_action_that_is_published._The_smart_contract_controls_the_revi" data-name="The smart contract responds to Instrument Modifications by publishing a new Instrument Creation action with all of the amendments accounted for.  The Revision will increment by 1 for each Instrument Creation action that is published.  The smart contract controls the revi" transform="translate(6841 -310)" fill="#707070" font-size="14" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="15">The smart contract responds to Instrument Modifications by </tspan><tspan x="0" y="34">publishing a new Instrument Creation action with all of the </tspan><tspan x="0" y="53" xml:space="preserve">amendments accounted for.  The Revision will increment </tspan><tspan x="0" y="72" xml:space="preserve">by 1 for each Instrument Creation action that is published.  </tspan><tspan x="0" y="91">The smart contract controls the revisioning.</tspan></text>
+    <g id="Rectangle_325" data-name="Rectangle 325" transform="translate(6844 -433)" fill="none" stroke="#cf730b" stroke-width="1" stroke-dasharray="3">
+      <rect width="102" height="42" stroke="none"/>
+      <rect x="0.5" y="0.5" width="101" height="41" fill="none"/>
+    </g>
+    <line id="Line_385" data-name="Line 385" y2="41" transform="translate(6883.5 -390.5)" fill="none" stroke="#cf730b" stroke-width="1" stroke-dasharray="3"/>
+    <text id="_1:_" data-name="1: " transform="translate(6897 -770)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1: </tspan></text>
+    <text id="Contract_Operator" data-name="Contract Operator" transform="translate(6915 -770)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Contract Operator</tspan></text>
+  </g>
+</svg>

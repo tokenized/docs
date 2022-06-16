@@ -33,7 +33,7 @@ N/A" transform="translate(-63 -10607)" fill="#707070" font-size="14" font-family
       <rect x="0.5" y="0.5" width="116" height="17" fill="none"/>
     </g>
     <line id="Line_105" data-name="Line 105" y2="61" transform="translate(-168.5 -10529.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
-    <text id="ASSETID:_SHC1BvBMSJ..._Common_Shares" data-name="ASSETID: SHC1BvBMSJ... Common Shares" transform="translate(-228 -10416)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">ASSETID: SHC1BvBMSJ... Common Shares</tspan></text>
+    <text id="INSTRUMENTID:_SHC1BvBMSJ..._Common_Shares" data-name="INSTRUMENTID: SHC1BvBMSJ... Common Shares" transform="translate(-228 -10416)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">INSTRUMENTID: SHC1BvBMSJ... Common Shares</tspan></text>
     <g id="Rectangle_422" data-name="Rectangle 422" transform="translate(-452 -10491)" fill="#fff" stroke="#cf730b" stroke-width="4">
       <rect width="198" height="166" stroke="none"/>
       <rect x="2" y="2" width="194" height="162" fill="none"/>

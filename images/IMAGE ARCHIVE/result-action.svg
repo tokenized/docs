@@ -31,10 +31,10 @@
     <text id="Smart_Contract-2" data-name="Smart Contract" transform="translate(3731 -5621)" fill="#7030a0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Smart Contract</tspan></text>
     <text id="DETAILS" transform="translate(3621 -5491)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">DETAILS</tspan></text>
     <path id="Path_161" data-name="Path 161" d="M0,0V99.179" transform="translate(3623.5 -5474.5)" fill="none" stroke="#707070" stroke-width="1"/>
-    <text id="_-Asset_being_voted_on_if_Asset_Specific_-List_of_changes_from_Proposal_-Tx-ID_of_Vote_Action_-Tallied_results_for_all_changes_being_voted_on_-Pass_or_Fail_result_as_applicable_to_the_type_of_vote" data-name="-Asset being voted on (if Asset Specific)
+    <text id="_-Instrument_being_voted_on_if_Instrument_Specific_-List_of_changes_from_Proposal_-Tx-ID_of_Vote_Action_-Tallied_results_for_all_changes_being_voted_on_-Pass_or_Fail_result_as_applicable_to_the_type_of_vote" data-name="-Instrument being voted on (if Instrument Specific)
 -List of changes from Proposal
 -Tx-ID of Vote Action
 -Tallied results for all changes being voted on
--Pass or Fail result as applicable to the type of vote" transform="translate(3630 -5459)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">-Asset being voted on (if Asset Specific)</tspan><tspan x="0" y="19">-List of changes from Proposal</tspan><tspan x="0" y="38">-Tx-ID of Vote Action</tspan><tspan x="0" y="57">-Tallied results for all changes being voted on</tspan><tspan x="0" y="76">-Pass or Fail result as applicable to the type of vote</tspan></text>
+-Pass or Fail result as applicable to the type of vote" transform="translate(3630 -5459)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">-Instrument being voted on (if Instrument Specific)</tspan><tspan x="0" y="19">-List of changes from Proposal</tspan><tspan x="0" y="38">-Tx-ID of Vote Action</tspan><tspan x="0" y="57">-Tallied results for all changes being voted on</tspan><tspan x="0" y="76">-Pass or Fail result as applicable to the type of vote</tspan></text>
   </g>
 </svg>

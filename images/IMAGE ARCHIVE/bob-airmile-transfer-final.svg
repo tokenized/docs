@@ -93,7 +93,7 @@
 						class="st8">’</tspan><tspan class="st8">s Air Mile Account<v:newlineChar/></tspan><tspan x="4" dy="1.2em"
 						class="st7">Receiver 1:<v:tabChar/></tspan><tspan dx="3.446em" class="st10">Dianne</tspan><tspan
 						class="st10">’</tspan><tspan class="st10">s Air Mile Account<v:newlineChar/></tspan><tspan x="4" dy="1.2em"
-						class="st7">Qty x Asset:<v:tabChar/></tspan><tspan dx="3.114em" class="st7">2,000,000 x TokenAir Air Miles</tspan></text>		</g>
+						class="st7">Qty x Instrument:<v:tabChar/></tspan><tspan dx="3.114em" class="st7">2,000,000 x TokenAir Air Miles</tspan></text>		</g>
 		<g id="shape21-52" v:mID="21" v:groupContext="shape" transform="translate(333.868,-23.3766)">
 			<title>Sheet.21</title>
 			<desc>Message Action TokenAir AMTAS authorisation message Time and ...</desc>

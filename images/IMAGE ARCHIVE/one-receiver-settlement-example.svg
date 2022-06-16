@@ -32,7 +32,7 @@ Not shown: Operator Fee" transform="translate(-63 -10609)" fill="#707070" font-s
       <rect x="0.5" y="0.5" width="116" height="17" fill="none"/>
     </g>
     <line id="Line_105" data-name="Line 105" y2="74" transform="translate(-162.5 -10552.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
-    <text id="ASSETID:_SHC1BvBMSEYstWetqTFn5Au4m4GFg7xJ..." data-name="ASSETID: SHC1BvBMSEYstWetqTFn5Au4m4GFg7xJ..." transform="translate(-317 -10427)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">ASSETID: SHC1BvBMSEYstWetqTFn5Au4m4GFg7xJ...</tspan></text>
+    <text id="INSTRUMENTID:_SHC1BvBMSEYstWetqTFn5Au4m4GFg7xJ..." data-name="INSTRUMENTID: SHC1BvBMSEYstWetqTFn5Au4m4GFg7xJ..." transform="translate(-317 -10427)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">INSTRUMENTID: SHC1BvBMSEYstWetqTFn5Au4m4GFg7xJ...</tspan></text>
     <text id="One_Receiver_Settlement_Example" data-name="One Receiver Settlement Example" transform="translate(-306 -10732)" fill="#707070" font-size="18" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">One Receiver Settlement Example</tspan></text>
   </g>
 </svg>

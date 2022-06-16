@@ -21,7 +21,7 @@
     </g>
     <text id="Settlement_Action_Payload" data-name="Settlement Action Payload" transform="translate(7015 -7367)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Settlement Action Payload</tspan></text>
     <text id="Settlements" transform="translate(7030 -7315)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">Settlements</tspan></text>
-    <text id="ASSETID:_COUSSmedCombotqTD_Self_Service_Medium_Combo" data-name="ASSETID: COUSSmedCombotqTD… Self Service Medium Combo" transform="translate(7019 -7349)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">ASSETID: COUSSmedCombotqTD… Self Service Medium Combo</tspan></text>
+    <text id="INSTRUMENTID:_COUSSmedCombotqTD_Self_Service_Medium_Combo" data-name="INSTRUMENTID: COUSSmedCombotqTD… Self Service Medium Combo" transform="translate(7019 -7349)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">INSTRUMENTID: COUSSmedCombotqTD… Self Service Medium Combo</tspan></text>
     <line id="Line_287" data-name="Line 287" y2="55" transform="translate(7020.5 -7327.5)" fill="none" stroke="#707070" stroke-width="1"/>
     <line id="Line_288" data-name="Line 288" y2="66" transform="translate(7138.5 -7467.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
     <g id="Rectangle_221" data-name="Rectangle 221" transform="translate(7092 -7486)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">

@@ -34,9 +34,9 @@
     <text id="Target_Address_1" data-name="Target Address 1" transform="translate(15296 -726)" fill="#e1b219" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Target Address 1</tspan></text>
     <text id="DETAILS" transform="translate(15284 -572)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">DETAILS</tspan></text>
     <path id="Path_158" data-name="Path 158" d="M0,0V76.5" transform="translate(15286.5 -553.5)" fill="none" stroke="#707070" stroke-width="1"/>
-    <text id="AssetID_Quantity_Freeze_Period_Timestamp" data-name="AssetIDQuantity
+    <text id="InstrumentID_Quantity_Freeze_Period_Timestamp" data-name="InstrumentIDQuantity
 Freeze Period
-Timestamp" transform="translate(15293 -540)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">AssetID</tspan><tspan x="0" y="19">Quantity</tspan><tspan x="0" y="38">Freeze Period</tspan><tspan x="0" y="57">Timestamp</tspan></text>
+Timestamp" transform="translate(15293 -540)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">InstrumentID</tspan><tspan x="0" y="19">Quantity</tspan><tspan x="0" y="38">Freeze Period</tspan><tspan x="0" y="57">Timestamp</tspan></text>
     <g id="Rectangle_277" data-name="Rectangle 277" transform="translate(15082 -740)" fill="none" stroke="#cf730b" stroke-width="1" stroke-dasharray="3">
       <rect width="111" height="18" stroke="none"/>
       <rect x="0.5" y="0.5" width="110" height="17" fill="none"/>

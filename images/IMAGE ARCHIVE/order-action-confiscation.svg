@@ -31,7 +31,7 @@
     <text id="Smart_Contract" data-name="Smart Contract" transform="translate(17216 -726)" fill="#7030a0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Smart Contract</tspan></text>
     <text id="DETAILS" transform="translate(17145 -596)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">DETAILS</tspan></text>
     <path id="Path_161" data-name="Path 161" d="M0,0V155.361" transform="translate(17147.5 -579.5)" fill="none" stroke="#707070" stroke-width="1"/>
-    <text id="_-AssetID_-Target_Address_es_-Deposit_Address_-Authority_Name_Optional_-Authority_Public_Key_-Signature_Algorithm_-Order_Signature_-Supporting_Evidence_" data-name="-AssetID
+    <text id="_-InstrumentID_-Target_Address_es_-Deposit_Address_-Authority_Name_Optional_-Authority_Public_Key_-Signature_Algorithm_-Order_Signature_-Supporting_Evidence_" data-name="-InstrumentID
 -Target Address(es)
 -Deposit Address
 -Authority Name (Optional)
@@ -39,6 +39,6 @@
 -Signature Algorithm
 -Order Signature
 -Supporting Evidence
-" transform="translate(17154 -564)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">-AssetID</tspan><tspan x="0" y="19">-Target Address(es)</tspan><tspan x="0" y="38">-Deposit Address</tspan><tspan x="0" y="57">-Authority Name (Optional)</tspan><tspan x="0" y="76">-Authority Public Key</tspan><tspan x="0" y="95">-Signature Algorithm</tspan><tspan x="0" y="114">-Order Signature</tspan><tspan x="0" y="133">-Supporting Evidence</tspan><tspan x="0" y="152"></tspan></text>
+" transform="translate(17154 -564)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">-InstrumentID</tspan><tspan x="0" y="19">-Target Address(es)</tspan><tspan x="0" y="38">-Deposit Address</tspan><tspan x="0" y="57">-Authority Name (Optional)</tspan><tspan x="0" y="76">-Authority Public Key</tspan><tspan x="0" y="95">-Signature Algorithm</tspan><tspan x="0" y="114">-Order Signature</tspan><tspan x="0" y="133">-Supporting Evidence</tspan><tspan x="0" y="152"></tspan></text>
   </g>
 </svg>

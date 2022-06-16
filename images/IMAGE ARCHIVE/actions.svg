@@ -77,11 +77,11 @@
 		</g>
 		<g id="shape59-17" v:mID="59" v:groupContext="shape" transform="translate(41.0851,-470.551)">
 			<title>Sheet.59</title>
-			<desc>Asset Operations</desc>
+			<desc>Instrument Operations</desc>
 			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
 			<v:textRect cx="41.811" cy="698.38" width="83.63" height="51.0236"/>
 			<rect x="0" y="672.868" width="83.622" height="51.0236" class="st4"/>
-			<text x="28.29" y="694.78" class="st5" v:langID="3081"><v:paragraph v:horizAlign="1"/><v:tabList/>Asset <tspan
+			<text x="28.29" y="694.78" class="st5" v:langID="3081"><v:paragraph v:horizAlign="1"/><v:tabList/>Instrument <tspan
 						x="14.03" dy="1.2em" class="st6">Operations</tspan></text>		</g>
 		<g id="shape55-21" v:mID="55" v:groupContext="shape" transform="translate(28.7194,-546.602)">
 			<title>Sheet.55</title>
@@ -191,18 +191,18 @@
 			<title>Sheet.81</title>
 			<g id="shape10-74" v:mID="10" v:groupContext="shape">
 				<title>Sheet.10</title>
-				<desc>Asset Modification</desc>
+				<desc>Instrument Modification</desc>
 				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
 				<v:textRect cx="53.8583" cy="714.38" width="107.72" height="19.0248"/>
 				<rect x="0" y="704.867" width="107.717" height="19.0248" class="st11"/>
-				<text x="15.81" y="717.38" class="st12" v:langID="3081"><v:paragraph v:horizAlign="1"/><v:tabList/>Asset Modification</text>			</g>
+				<text x="15.81" y="717.38" class="st12" v:langID="3081"><v:paragraph v:horizAlign="1"/><v:tabList/>Instrument Modification</text>			</g>
 			<g id="shape29-77" v:mID="29" v:groupContext="shape" transform="translate(173.24,0)">
 				<title>Sheet.29</title>
-				<desc>Asset Creation</desc>
+				<desc>Instrument Creation</desc>
 				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
 				<v:textRect cx="53.8583" cy="714.38" width="107.72" height="19.0248"/>
 				<rect x="0" y="704.867" width="107.717" height="19.0248" class="st11"/>
-				<text x="24.38" y="717.38" class="st12" v:langID="3081"><v:paragraph v:horizAlign="1"/><v:tabList/>Asset Creation</text>			</g>
+				<text x="24.38" y="717.38" class="st12" v:langID="3081"><v:paragraph v:horizAlign="1"/><v:tabList/>Instrument Creation</text>			</g>
 			<g id="shape30-80" v:mID="30" v:groupContext="shape" transform="translate(303.536,0)">
 				<title>Sheet.30</title>
 				<desc>Rejection</desc>
@@ -219,18 +219,18 @@
 			<title>Sheet.82</title>
 			<g id="shape9-89" v:mID="9" v:groupContext="shape">
 				<title>Sheet.9</title>
-				<desc>Asset Definition</desc>
+				<desc>Instrument Definition</desc>
 				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
 				<v:textRect cx="53.8583" cy="714.38" width="107.72" height="19.0248"/>
 				<rect x="0" y="704.867" width="107.717" height="19.0248" class="st11"/>
-				<text x="21.66" y="717.38" class="st12" v:langID="3081"><v:paragraph v:horizAlign="1"/><v:tabList/>Asset Definition</text>			</g>
+				<text x="21.66" y="717.38" class="st12" v:langID="3081"><v:paragraph v:horizAlign="1"/><v:tabList/>Instrument Definition</text>			</g>
 			<g id="shape27-92" v:mID="27" v:groupContext="shape" transform="translate(173.24,0)">
 				<title>Sheet.27</title>
-				<desc>Asset Creation</desc>
+				<desc>Instrument Creation</desc>
 				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
 				<v:textRect cx="53.8583" cy="714.38" width="107.72" height="19.0248"/>
 				<rect x="0" y="704.867" width="107.717" height="19.0248" class="st11"/>
-				<text x="24.38" y="717.38" class="st12" v:langID="3081"><v:paragraph v:horizAlign="1"/><v:tabList/>Asset Creation</text>			</g>
+				<text x="24.38" y="717.38" class="st12" v:langID="3081"><v:paragraph v:horizAlign="1"/><v:tabList/>Instrument Creation</text>			</g>
 			<g id="shape28-95" v:mID="28" v:groupContext="shape" transform="translate(303.536,0)">
 				<title>Sheet.28</title>
 				<desc>Rejection</desc>
