@@ -55,13 +55,13 @@ This encoded binary data is then hashed with SHA256, then the hash is signed by 
 <a name="transfer"></a>
 #### Transfer Approval
 
-A transfer approval signature is needed in a transfer action for assets with identity oracles defined in their contract. They are needed to approve the receiving address as belonging to an identity that meets the ownership requirements of the asset.
+A transfer approval signature is needed in a transfer action for instruments with identity oracles defined in their contract. They are needed to approve the receiving address as belonging to an identity that meets the ownership requirements of the instrument.
 
 The signature hash contains the following data in this order.
 
 - Receiver Address
 - Contract Address
-- Asset Code
+- Instrument Code
 - Quantity (64 bit unsigned integer, number of tokens)
 - Recent Block Hash
 - Approved Flag (8 bit unsigned integer, 1 = approved, 0 = denied)

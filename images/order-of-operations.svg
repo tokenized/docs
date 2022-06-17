@@ -38,17 +38,17 @@
       <rect x="0.5" y="0.5" width="173" height="25" fill="none"/>
     </g>
     <text id="Contract_Change_Address" data-name="Contract Change Address" transform="translate(12701 -15572)" fill="#707070" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Contract Change Address</tspan></text>
-    <text id="Asset_Operations" data-name="Asset Operations" transform="translate(12579 -15529)" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="25.012" y="15">Asset </tspan><tspan x="7.351" y="34">Operations</tspan></text>
+    <text id="Instrument_Operations" data-name="Instrument Operations" transform="translate(12579 -15529)" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="25.012" y="15">Instrument </tspan><tspan x="7.351" y="34">Operations</tspan></text>
     <g id="Rectangle_549" data-name="Rectangle 549" transform="translate(12681 -15537)" fill="#fff" stroke="#707070" stroke-width="1">
       <rect width="174" height="26" stroke="none"/>
       <rect x="0.5" y="0.5" width="173" height="25" fill="none"/>
     </g>
-    <text id="Asset_Definition" data-name="Asset Definition" transform="translate(12727 -15519)" fill="#707070" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Asset Definition</tspan></text>
+    <text id="Instrument_Definition" data-name="Instrument Definition" transform="translate(12727 -15519)" fill="#707070" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Instrument Definition</tspan></text>
     <g id="Rectangle_550" data-name="Rectangle 550" transform="translate(12681 -15506)" fill="#fff" stroke="#707070" stroke-width="1">
       <rect width="174" height="26" stroke="none"/>
       <rect x="0.5" y="0.5" width="173" height="25" fill="none"/>
     </g>
-    <text id="Asset_Modification" data-name="Asset Modification" transform="translate(12719 -15488)" fill="#707070" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Asset Modification</tspan></text>
+    <text id="Instrument_Modification" data-name="Instrument Modification" transform="translate(12719 -15488)" fill="#707070" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Instrument Modification</tspan></text>
     <g id="Rectangle_551" data-name="Rectangle 551" transform="translate(12560 -15464)" fill="#a8d08d" stroke="#707070" stroke-width="1" stroke-dasharray="3">
       <rect width="793" height="60" stroke="none"/>
       <rect x="0.5" y="0.5" width="792" height="59" fill="none"/>
@@ -156,7 +156,7 @@
       <rect width="174" height="26" stroke="none"/>
       <rect x="0.5" y="0.5" width="173" height="25" fill="none"/>
     </g>
-    <text id="Asset_Creation" data-name="Asset Creation" transform="translate(12970 -15519)" fill="#707070" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Asset Creation</tspan></text>
+    <text id="Instrument_Creation" data-name="Instrument Creation" transform="translate(12970 -15519)" fill="#707070" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Instrument Creation</tspan></text>
     <g id="Rectangle_569" data-name="Rectangle 569" transform="translate(13164 -15537)" fill="#fff" stroke="#707070" stroke-width="1">
       <rect width="174" height="26" stroke="none"/>
       <rect x="0.5" y="0.5" width="173" height="25" fill="none"/>
@@ -177,7 +177,7 @@
       <rect width="174" height="26" stroke="none"/>
       <rect x="0.5" y="0.5" width="173" height="25" fill="none"/>
     </g>
-    <text id="Asset_Creation-2" data-name="Asset Creation" transform="translate(12970 -15488)" fill="#707070" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Asset Creation</tspan></text>
+    <text id="Instrument_Creation-2" data-name="Instrument Creation" transform="translate(12970 -15488)" fill="#707070" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Instrument Creation</tspan></text>
     <g id="Rectangle_571" data-name="Rectangle 571" transform="translate(13164 -15506)" fill="#fff" stroke="#707070" stroke-width="1">
       <rect width="174" height="26" stroke="none"/>
       <rect x="0.5" y="0.5" width="173" height="25" fill="none"/>

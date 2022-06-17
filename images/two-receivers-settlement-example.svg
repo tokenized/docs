@@ -40,7 +40,7 @@ N/A" transform="translate(1180 -10608)" fill="#707070" font-size="14" font-famil
       <rect x="0.5" y="0.5" width="116" height="17" fill="none"/>
     </g>
     <line id="Line_111" data-name="Line 111" y2="37" transform="translate(1080.5 -10474.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
-    <text id="ASSETID:_SHC1BvBMSJ..._Common_Shares" data-name="ASSETID: SHC1BvBMSJ... Common Shares" transform="translate(926 -10386)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">ASSETID: SHC1BvBMSJ... Common Shares</tspan></text>
+    <text id="INSTRUMENTID:_SHC1BvBMSJ..._Common_Shares" data-name="INSTRUMENTID: SHC1BvBMSJ... Common Shares" transform="translate(926 -10386)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">INSTRUMENTID: SHC1BvBMSJ... Common Shares</tspan></text>
     <text id="John_2_:_0_shares" data-name="John (2): 0 shares" transform="translate(939 -10311)" fill="#ef1818" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">John (2)</tspan><tspan y="0" fill="#707070">: 0 shares</tspan></text>
   </g>
 </svg>

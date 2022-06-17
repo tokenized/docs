@@ -24,9 +24,9 @@ See the [Transactions article](../concepts/transactions) for details on how to c
 - [Body Of Agreement Offer](#action-body-of-agreement-offer)
 - [Body Of Agreement Formation](#action-body-of-agreement-formation)
 - [Body Of Agreement Amendment](#action-body-of-agreement-amendment)
-- [Asset Definition](#action-asset-definition)
-- [Asset Creation](#action-asset-creation)
-- [Asset Modification](#action-asset-modification)
+- [Instrument Definition](#action-instrument-definition)
+- [Instrument Creation](#action-instrument-creation)
+- [Instrument Modification](#action-instrument-modification)
 - [Transfer](#action-transfer)
 - [Settlement](#action-settlement)
 - [Proposal](#action-proposal)
@@ -95,7 +95,7 @@ Allows the administration to tell the smart contract what they want the details 
             varbin(medium)
         </td>
         <td>
-            SHA-256 hash of the body of the agreement (full contract in pdf format or the like) or the full agreement. If BodyOfAgreementType is 2 then this field is empty and the agreement is specified in a C6/C7 action. This is specific to the smart contract and relevant Assets. Legal and technical information.
+            SHA-256 hash of the body of the agreement (full contract in pdf format or the like) or the full agreement. If BodyOfAgreementType is 2 then this field is empty and the agreement is specified in a C6/C7 action. This is specific to the smart contract and relevant Instruments. Legal and technical information.
 
             
             This field is only valid when the field BodyOfAgreementType equals 1.
@@ -157,7 +157,7 @@ Allows the administration to tell the smart contract what they want the details 
             varchar(tiny)
         </td>
         <td>
-            Points to an information page that also has a copy of the Contract.  Anyone can go to the website to have a look at the price/token, information about the issuer (company), information about the asset, legal information, etc.  There will also be a way for token owners to vote on this page and contact details with the issuer/tokenized companies. Could be a IPv6/IPv4, or txn-id for on-chain information or even a public address (DNS).
+            Points to an information page that also has a copy of the Contract.  Anyone can go to the website to have a look at the price/token, information about the issuer (company), information about the instrument, legal information, etc.  There will also be a way for token owners to vote on this page and contact details with the issuer/tokenized companies. Could be a IPv6/IPv4, or txn-id for on-chain information or even a public address (DNS).
              Example: https://tokenized.com/Contract/3qeoSCg7JmfSnJesJFojj
         </td>
     </tr>
@@ -236,7 +236,7 @@ Allows the administration to tell the smart contract what they want the details 
             uint(8)
         </td>
         <td>
-            Satoshis required to be paid to the contract for each asset action.
+            Satoshis required to be paid to the contract for each instrument action.
             
         </td>
     </tr>
@@ -264,13 +264,13 @@ Allows the administration to tell the smart contract what they want the details 
     </tr>
 
     <tr>
-        <td>RestrictedQtyAssets</td>
+        <td>RestrictedQtyInstruments</td>
         <td>
             uint(8)
         </td>
         <td>
-            Number of Assets (non-fungible) permitted on this contract. 0 if unlimited which will display an infinity symbol in UI
-            Qty of Assets - Amendments can be restricted to a vote. Example: 1
+            Number of Instruments (non-fungible) permitted on this contract. 0 if unlimited which will display an infinity symbol in UI
+            Qty of Instruments - Amendments can be restricted to a vote. Example: 1
         </td>
     </tr>
 
@@ -302,7 +302,7 @@ Allows the administration to tell the smart contract what they want the details 
             <a href="#type-oracle">Oracle[tiny]</a>
         </td>
         <td>
-            A list of oracles that provide approval for all token transfers for all assets under the contract.
+            A list of oracles that provide approval for all token transfers for all instruments under the contract.
             
         </td>
     </tr>
@@ -324,7 +324,8 @@ Allows the administration to tell the smart contract what they want the details 
             <a href="#alias-address">Address</a>
         </td>
         <td>
-            The address of the contract&#39;s parent entity. This is optional for entity contracts, but required for asset and service contracts to identify the entity parent contract.
+            The address of the contract&#39;s parent entity. This is not valid for entity contracts, but required for instrument and service contracts to identify the entity parent contract.
+
             
             This field is required when the field ContractType equals 1.
             This field is only valid when the field ContractType equals 1.
@@ -349,7 +350,7 @@ Allows the administration to tell the smart contract what they want the details 
             uint(1)
         </td>
         <td>
-            Describes the purpose of the contract. 0 - Entity, 1 - Asset
+            Describes the purpose of the contract. 0 - Entity, 1 - Instrument
              Example: 0
         </td>
     </tr>
@@ -491,7 +492,7 @@ This txn is created by the contract (smart contract/off-chain agent/token contra
             varbin(medium)
         </td>
         <td>
-            SHA-256 hash of the body of the agreement (full contract in pdf format or the like) or the full agreement. If BodyOfAgreementType is 2 then this field is empty and the agreement is specified in a C6/C7 action. This is specific to the smart contract and relevant Assets. Legal and technical information.
+            SHA-256 hash of the body of the agreement (full contract in pdf format or the like) or the full agreement. If BodyOfAgreementType is 2 then this field is empty and the agreement is specified in a C6/C7 action. This is specific to the smart contract and relevant Instruments. Legal and technical information.
 
             
             This field is only valid when the field BodyOfAgreementType equals 1.
@@ -553,7 +554,7 @@ This txn is created by the contract (smart contract/off-chain agent/token contra
             varchar(tiny)
         </td>
         <td>
-            Length 0-255 bytes.  0 is valid. Points to an information page that also has a copy of the Contract.  Anyone can go to the website to have a look at the price/token, information about the Issuer (company), information about the Asset, legal information, etc.  There will also be a way for Token Owners to vote on this page and contact details with the Issuer/tokenized companies. Could be a IPv6/IPv4, an IPFS address (hash) or txn-id for on chain information or even a public address (DNS).
+            Length 0-255 bytes.  0 is valid. Points to an information page that also has a copy of the Contract.  Anyone can go to the website to have a look at the price/token, information about the Issuer (company), information about the Instrument, legal information, etc.  There will also be a way for Token Owners to vote on this page and contact details with the Issuer/tokenized companies. Could be a IPv6/IPv4, an IPFS address (hash) or txn-id for on chain information or even a public address (DNS).
              Example: https://tokenized.com/Contract/3qeoSCg7JmfSnJesJFojj
         </td>
     </tr>
@@ -621,7 +622,7 @@ This txn is created by the contract (smart contract/off-chain agent/token contra
             uint(8)
         </td>
         <td>
-            Satoshis required to be paid to the contract for each asset action.
+            Satoshis required to be paid to the contract for each instrument action.
             
         </td>
     </tr>
@@ -649,13 +650,13 @@ This txn is created by the contract (smart contract/off-chain agent/token contra
     </tr>
 
     <tr>
-        <td>RestrictedQtyAssets</td>
+        <td>RestrictedQtyInstruments</td>
         <td>
             uint(8)
         </td>
         <td>
-            Number of Assets (non-fungible) permitted on this contract. 0 if unlimited which will display an infinity symbol in UI
-            Qty of Assets - Amendments can be restricted to a vote. Example: 1
+            Number of Instruments (non-fungible) permitted on this contract. 0 if unlimited which will display an infinity symbol in UI
+            Qty of Instruments - Amendments can be restricted to a vote. Example: 1
         </td>
     </tr>
 
@@ -687,7 +688,7 @@ This txn is created by the contract (smart contract/off-chain agent/token contra
             <a href="#type-oracle">Oracle[tiny]</a>
         </td>
         <td>
-            A list of oracles that provide approval for all token transfers for all assets under the contract.
+            A list of oracles that provide approval for all token transfers for all instruments under the contract.
             
         </td>
     </tr>
@@ -731,7 +732,7 @@ This txn is created by the contract (smart contract/off-chain agent/token contra
             <a href="#alias-address">Address</a>
         </td>
         <td>
-            The address of the contract&#39;s parent entity. This is optional for entity contracts, but required for asset and service contracts to identify the entity parent contract.
+            The address of the contract&#39;s parent entity. This is optional for entity contracts, but required for instrument and service contracts to identify the entity parent contract.
             
             This field is required when the field ContractType equals 1.
             This field is only valid when the field ContractType equals 1.
@@ -755,7 +756,7 @@ This txn is created by the contract (smart contract/off-chain agent/token contra
             uint(1)
         </td>
         <td>
-            Describes the purpose of the contract. 0 - Entity, 1 - Asset
+            Describes the purpose of the contract. 0 - Entity, 1 - Instrument
              Example: 0
         </td>
     </tr>
@@ -858,7 +859,7 @@ This txn is created by the contract (smart contract/off-chain agent/token contra
    <tr>
         <td class="text-center">0</td>
         <td>Contract Public Address</td>
-        <td>Required so that users can monitor transactions to the contract for updates to contract/assets.</td>
+        <td>Required so that users can monitor transactions to the contract for updates to contract/instruments.</td>
     </tr>
 </table>
 
@@ -1009,7 +1010,7 @@ Static Contract Formation Action
             varchar(tiny)
         </td>
         <td>
-            Can be any unique identifying string, including human readable names for branding/vanity purposes. Contract identifier (instance) is the bitcoin public address. If the public address is lost, then the administration will have to reissue the entire contract, Asset Definition and tokens with the new public address. Smart contracts can be branded and specialized to suit any terms and conditions.
+            Can be any unique identifying string, including human readable names for branding/vanity purposes. Contract identifier (instance) is the bitcoin public address. If the public address is lost, then the administration will have to reissue the entire contract, Instrument Definition and tokens with the new public address. Smart contracts can be branded and specialized to suit any terms and conditions.
 
              Example: Tesla - Shareholder Agreement
         </td>
@@ -1043,7 +1044,7 @@ Static Contract Formation Action
             varbin(medium)
         </td>
         <td>
-            SHA-256 hash of the body of the agreement (full contract in pdf format or the like) or the full terms and conditions of an agreement in the Tokenized Body of Agreement format.  This is specific to the smart contract and relevant Assets.  Legal and technical information.
+            SHA-256 hash of the body of the agreement (full contract in pdf format or the like) or the full terms and conditions of an agreement in the Tokenized Body of Agreement format.  This is specific to the smart contract and relevant Instruments.  Legal and technical information.
             
         </td>
     </tr>
@@ -1127,7 +1128,7 @@ Static Contract Formation Action
             varchar(tiny)
         </td>
         <td>
-            Length 0-255 bytes. Points to an information page that also has a copy of the Contract.  Anyone can go to the website to have a look at the price/token, information about the issuer (company), information about the Asset, legal information, etc.  There will also be a way for token owners to vote on this page and contact details with the issuer/tokenized companies. Could be a IPv6/IPv4, or txn-id for on chain information or even a public address (DNS).
+            Length 0-255 bytes. Points to an information page that also has a copy of the Contract.  Anyone can go to the website to have a look at the price/token, information about the issuer (company), information about the Instrument, legal information, etc.  There will also be a way for token owners to vote on this page and contact details with the issuer/tokenized companies. Could be a IPv6/IPv4, or txn-id for on chain information or even a public address (DNS).
              Example: https://tokenized.com/Contract/3qeoSCg7JmfSnJesJFojj
         </td>
     </tr>
@@ -1529,7 +1530,7 @@ Allows the administration to modify the agreement for the contract.
             <a href="#type-amendment">Amendment[tiny]</a>
         </td>
         <td>
-            A collection of modifications to perform on this asset.
+            A collection of modifications to perform on this instrument.
             
         </td>
     </tr>
@@ -1583,16 +1584,16 @@ Allows the administration to modify the agreement for the contract.
 
 
 
-<a name="action-asset-definition"></a>
-#### Asset Definition
+<a name="action-instrument-definition"></a>
+#### Instrument Definition
 
-This action is used by the administration to define the properties/characteristics of the asset (token) that it wants to create. An asset has a unique identifier called AssetID = AssetType &#43; base58(AssetCode &#43; checksum). An asset is always linked to a contract that is identified by the public address of the Contract wallet.
+This action is used by the administration to define the properties/characteristics of the instrument (token) that it wants to create. An instrument has a unique identifier called InstrumentID = InstrumentType &#43; base58(InstrumentCode &#43; checksum). An instrument is always linked to a contract that is identified by the public address of the Contract wallet.
 
 
 <table>
     <tr>
         <th style="width:15%">Action Code</th>
-        <td>A1</td>
+        <td>I1</td>
     </tr>
 </table>
 
@@ -1604,12 +1605,12 @@ This action is used by the administration to define the properties/characteristi
         <th>Description</th>
     </tr>
     <tr>
-        <td>AssetPermissions</td>
+        <td>InstrumentPermissions</td>
         <td>
             varbin(small)
         </td>
         <td>
-            A set of permission objects containing switches and field references that define the permissions for modifying this asset. See the Permission documentation for more detail.
+            A set of permission objects containing switches and field references that define the permissions for modifying this instrument. See the Permission documentation for more detail.
             
         </td>
     </tr>
@@ -1618,7 +1619,7 @@ This action is used by the administration to define the properties/characteristi
         <td>(Deprecated)TransfersPermitted</td>
         <td>deprecated</td>
         <td>
-            Deprecated to move into specific asset types. Set to true if transfers are permitted between two parties, otherwise set to false to prevent peer-to-peer transfers.
+            Deprecated to move into specific instrument types. Set to true if transfers are permitted between two parties, otherwise set to false to prevent peer-to-peer transfers.
             
         </td>
     </tr>
@@ -1627,7 +1628,7 @@ This action is used by the administration to define the properties/characteristi
         <td>(Deprecated)TradeRestrictionsDeprecated</td>
         <td>deprecated</td>
         <td>
-            Deprecated to remove fixed size. If specified, the asset can only be traded within the specified trade restriction zone. For example, AUS would restrict to Australian residents only.
+            Deprecated to remove fixed size. If specified, the instrument can only be traded within the specified trade restriction zone. For example, AUS would restrict to Australian residents only.
             
         </td>
     </tr>
@@ -1649,7 +1650,7 @@ This action is used by the administration to define the properties/characteristi
             bool
         </td>
         <td>
-            When false holders of this asset will not be able to vote for tokens of this asset even on voting systems in which vote multiplers are not permitted.
+            When false holders of this instrument will not be able to vote for tokens of this instrument even on voting systems in which vote multiplers are not permitted.
              Example: true
         </td>
     </tr>
@@ -1660,7 +1661,7 @@ This action is used by the administration to define the properties/characteristi
             uint(1)
         </td>
         <td>
-            Multiplies a vote by the specified integer. Where 1 token is equal to 1 vote with a 1 for vote multipler (normal), 1 token = 3 votes with a multiplier of 3, for example. If zero, then holders of this asset don&#39;t get any votes for their tokens.
+            Multiplies a vote by the specified integer. Where 1 token is equal to 1 vote with a 1 for vote multipler (normal), 1 token = 3 votes with a multiplier of 3, for example. If zero, then holders of this instrument don&#39;t get any votes for their tokens.
              Example: 3
         </td>
     </tr>
@@ -1688,12 +1689,12 @@ This action is used by the administration to define the properties/characteristi
     </tr>
 
     <tr>
-        <td>AssetModificationGovernance</td>
+        <td>InstrumentModificationGovernance</td>
         <td>
             uint(1)
         </td>
         <td>
-            Supported values: 1 - Contract-wide Asset Governance. 0 - Asset-wide Asset Governance.  If a referendum or initiative is used to propose a modification to a subfield controlled by the asset permissions, then the vote will either be a contract-wide vote (all assets vote on the referendum/initiative) or an asset-wide vote (only this asset votes on the referendum/initiative) depending on the value in this subfield.  The voting system specifies the voting rules.
+            Supported values: 1 - Contract-wide Instrument Governance. 0 - Instrument-wide Instrument Governance.  If a referendum or initiative is used to propose a modification to a subfield controlled by the instrument permissions, then the vote will either be a contract-wide vote (all instruments vote on the referendum/initiative) or an instrument-wide vote (only this instrument votes on the referendum/initiative) depending on the value in this subfield.  The voting system specifies the voting rules.
              Example: 1
         </td>
     </tr>
@@ -1704,29 +1705,29 @@ This action is used by the administration to define the properties/characteristi
             uint(8)
         </td>
         <td>
-            The number of tokens authorized to be issued for this asset. Set to greater than zero for fungible tokens. If the value is 1 then it becomes a non-fungible token, where the contract would have many assets. Set to 0 to represent a placeholder asset, where tokens are to be issued later, or to represent a decomissioned asset where all tokens have been revoked.
+            The number of tokens authorized to be issued for this instrument. Set to greater than zero for fungible tokens. If the value is 1 then it becomes a non-fungible token, where the contract would have many instruments. Set to 0 to represent a placeholder instrument, where tokens are to be issued later, or to represent a decomissioned instrument where all tokens have been revoked.
              Example: 1000000
         </td>
     </tr>
 
     <tr>
-        <td>AssetType</td>
+        <td>InstrumentType</td>
         <td>
-            <a href="#alias-asset-type">AssetType</a>
+            <a href="#alias-instrument-type">InstrumentType</a>
         </td>
         <td>
-            A code representing the type of asset and the structure of the payload.
+            A code representing the type of instrument and the structure of the payload.
              This field is always required. 
         </td>
     </tr>
 
     <tr>
-        <td>AssetPayload</td>
+        <td>InstrumentPayload</td>
         <td>
             varbin(small)
         </td>
         <td>
-            A custom payload that contains meta data about this asset. Payload structure and length is dependent on the asset type chosen. See asset documentation for more details.
+            A custom payload that contains meta data about this instrument. Payload structure and length is dependent on the instrument type chosen. See instrument documentation for more details.
              This field is always required. 
         </td>
     </tr>
@@ -1737,7 +1738,7 @@ This action is used by the administration to define the properties/characteristi
             <a href="#alias-varchar">Polity[small]</a>
         </td>
         <td>
-            If specified, the asset can only be traded within the specified trade restriction zone. For example, AUS would restrict to Australian residents only.
+            If specified, the instrument can only be traded within the specified trade restriction zone. For example, AUS would restrict to Australian residents only.
             
         </td>
     </tr>
@@ -1771,7 +1772,7 @@ This action is used by the administration to define the properties/characteristi
    <tr>
         <td class="text-center">0</td>
         <td>Contract Public Address</td>
-        <td>The contract that this asset should be assigned to. Must include enough for the responding action.</td>
+        <td>The contract that this instrument should be assigned to. Must include enough for the responding action.</td>
     </tr>
 </table>
 
@@ -1780,15 +1781,15 @@ This action is used by the administration to define the properties/characteristi
 
 
 
-<a name="action-asset-creation"></a>
-#### Asset Creation
+<a name="action-instrument-creation"></a>
+#### Instrument Creation
 
-This action creates an asset in response to the administration&#39;s instructions in the Definition Action.
+This action creates an instrument in response to the administration&#39;s instructions in the Definition Action.
 
 <table>
     <tr>
         <th style="width:15%">Action Code</th>
-        <td>A2</td>
+        <td>I2</td>
     </tr>
 </table>
 
@@ -1800,34 +1801,34 @@ This action creates an asset in response to the administration&#39;s instruction
         <th>Description</th>
     </tr>
     <tr>
-        <td>AssetCode</td>
+        <td>InstrumentCode</td>
         <td>
-            <a href="#alias-asset-code">AssetCode</a>
+            <a href="#alias-instrument-code">InstrumentCode</a>
         </td>
         <td>
-            A unique code that is used to identify the asset. It is generated by hashing the contract public key hash and the asset index. SHA256(contract PKH &#43; asset index)
+            A unique code that is used to identify the instrument. It is generated by hashing the contract public key hash and the instrument index. SHA256(contract PKH &#43; instrument index)
             Cannot be changed by the administration, operator or smart contract.
         </td>
     </tr>
 
     <tr>
-        <td>AssetIndex</td>
+        <td>InstrumentIndex</td>
         <td>
             uint(8)
         </td>
         <td>
-            The index of the asset within the contract. First asset is zero, second is one. Used to derive the asset code.
+            The index of the instrument within the contract. First instrument is zero, second is one. Used to derive the instrument code.
              Example: 0
         </td>
     </tr>
 
     <tr>
-        <td>AssetPermissions</td>
+        <td>InstrumentPermissions</td>
         <td>
             varbin(small)
         </td>
         <td>
-            A set of permission objects containing switches and field references that define the permissions for modifying this asset. See the Permission documentation for more detail.
+            A set of permission objects containing switches and field references that define the permissions for modifying this instrument. See the Permission documentation for more detail.
             
         </td>
     </tr>
@@ -1836,7 +1837,7 @@ This action creates an asset in response to the administration&#39;s instruction
         <td>(Deprecated)TransfersPermitted</td>
         <td>deprecated</td>
         <td>
-            Deprecated to move into specific asset types. Set to true if transfers are permitted between two parties, otherwise set to false to prevent peer-to-peer transfers.
+            Deprecated to move into specific instrument types. Set to true if transfers are permitted between two parties, otherwise set to false to prevent peer-to-peer transfers.
             
         </td>
     </tr>
@@ -1845,7 +1846,7 @@ This action creates an asset in response to the administration&#39;s instruction
         <td>(Deprecated)TradeRestrictionsDeprecated</td>
         <td>deprecated</td>
         <td>
-            Deprecated to remove fixed size. If specified, the asset can only be traded within the specified trade restriction zone. For example, AUS would restrict to Australian residents only.
+            Deprecated to remove fixed size. If specified, the instrument can only be traded within the specified trade restriction zone. For example, AUS would restrict to Australian residents only.
             
         </td>
     </tr>
@@ -1867,7 +1868,7 @@ This action creates an asset in response to the administration&#39;s instruction
             bool
         </td>
         <td>
-            When false holders of this asset will not be able to vote for tokens of this asset even on voting systems in which vote multiplers are not permitted.
+            When false holders of this instrument will not be able to vote for tokens of this instrument even on voting systems in which vote multiplers are not permitted.
              Example: true
         </td>
     </tr>
@@ -1878,7 +1879,7 @@ This action creates an asset in response to the administration&#39;s instruction
             uint(1)
         </td>
         <td>
-            Multiplies a vote by the specified integer. Where 1 token is equal to 1 vote with a 1 for vote multipler (normal), 1 token = 3 votes with a multiplier of 3, for example. If zero, then holders of this asset don&#39;t get any votes for their tokens.
+            Multiplies a vote by the specified integer. Where 1 token is equal to 1 vote with a 1 for vote multipler (normal), 1 token = 3 votes with a multiplier of 3, for example. If zero, then holders of this instrument don&#39;t get any votes for their tokens.
              Example: 3
         </td>
     </tr>
@@ -1906,12 +1907,12 @@ This action creates an asset in response to the administration&#39;s instruction
     </tr>
 
     <tr>
-        <td>AssetModificationGovernance</td>
+        <td>InstrumentModificationGovernance</td>
         <td>
             uint(1)
         </td>
         <td>
-            Supported values: 1 - Contract-wide Asset Governance.  0 - Asset-wide Asset Governance.  If a referendum or initiative is used to propose a modification to a subfield controlled by the asset permissions, then the vote will either be a contract-wide vote (all assets vote on the referendum/initiative) or an asset-wide vote (only this asset votes on the referendum/initiative) depending on the value in this subfield.  The voting system specifies the voting rules.
+            Supported values: 1 - Contract-wide Instrument Governance.  0 - Instrument-wide Instrument Governance.  If a referendum or initiative is used to propose a modification to a subfield controlled by the instrument permissions, then the vote will either be a contract-wide vote (all instruments vote on the referendum/initiative) or an instrument-wide vote (only this instrument votes on the referendum/initiative) depending on the value in this subfield.  The voting system specifies the voting rules.
              Example: 1
         </td>
     </tr>
@@ -1922,40 +1923,40 @@ This action creates an asset in response to the administration&#39;s instruction
             uint(8)
         </td>
         <td>
-            The number of tokens authorized to be issued for this asset. Set to greater than zero for fungible tokens. If the value is 1 then it becomes a non-fungible token, where the contract would have many assets. Set to 0 to represent a placeholder asset, where tokens are to be issued later, or to represent a decomissioned asset where all tokens have been revoked.
+            The number of tokens authorized to be issued for this instrument. Set to greater than zero for fungible tokens. If the value is 1 then it becomes a non-fungible token, where the contract would have many instruments. Set to 0 to represent a placeholder instrument, where tokens are to be issued later, or to represent a decomissioned instrument where all tokens have been revoked.
              Example: 1000000
         </td>
     </tr>
 
     <tr>
-        <td>AssetType</td>
+        <td>InstrumentType</td>
         <td>
-            <a href="#alias-asset-type">AssetType</a>
+            <a href="#alias-instrument-type">InstrumentType</a>
         </td>
         <td>
-            A code representing the type of asset and the structure of the payload.
+            A code representing the type of instrument and the structure of the payload.
             
         </td>
     </tr>
 
     <tr>
-        <td>AssetPayload</td>
+        <td>InstrumentPayload</td>
         <td>
             varbin(small)
         </td>
         <td>
-            A custom payload that contains meta data about this asset. Payload structure and length is dependent on the asset type chosen. See asset documentation for more details.
+            A custom payload that contains meta data about this instrument. Payload structure and length is dependent on the instrument type chosen. See instrument documentation for more details.
             
         </td>
     </tr>
 
     <tr>
-        <td>AssetRevision</td>
+        <td>InstrumentRevision</td>
         <td>
             uint(4)
         </td>
         <td>
-            A counter for the number of times this asset has been revised using a modification action.
+            A counter for the number of times this instrument has been revised using a modification action.
             Can&#39;t be changed by the administration, operator. Smart contract controls. Example: 456789
         </td>
     </tr>
@@ -1977,7 +1978,7 @@ This action creates an asset in response to the administration&#39;s instruction
             <a href="#alias-varchar">Polity[small]</a>
         </td>
         <td>
-            If specified, the asset can only be traded within the specified trade restriction zone. For example, AUS would restrict to Australian residents only.
+            If specified, the instrument can only be traded within the specified trade restriction zone. For example, AUS would restrict to Australian residents only.
             
         </td>
     </tr>
@@ -1996,7 +1997,7 @@ This action creates an asset in response to the administration&#39;s instruction
    <tr>
         <td class="text-center">0</td>
         <td>Contract Public Address</td>
-        <td>The contract that this asset was assigned to.</td>
+        <td>The contract that this instrument was assigned to.</td>
     </tr>
 </table>
 
@@ -2011,7 +2012,7 @@ This action creates an asset in response to the administration&#39;s instruction
    <tr>
         <td class="text-center">0</td>
         <td>Contract Public Address</td>
-        <td>Required so that users can monitor transactions to the contract for updates to contract/assets.</td>
+        <td>Required so that users can monitor transactions to the contract for updates to contract/instruments.</td>
     </tr>
 </table>
 
@@ -2020,15 +2021,15 @@ This action creates an asset in response to the administration&#39;s instruction
 
 
 
-<a name="action-asset-modification"></a>
-#### Asset Modification
+<a name="action-instrument-modification"></a>
+#### Instrument Modification
 
 Token Dilutions, Call Backs/Revocations, burning etc.
 
 <table>
     <tr>
         <th style="width:15%">Action Code</th>
-        <td>A3</td>
+        <td>I3</td>
     </tr>
 </table>
 
@@ -2040,29 +2041,29 @@ Token Dilutions, Call Backs/Revocations, burning etc.
         <th>Description</th>
     </tr>
     <tr>
-        <td>AssetType</td>
+        <td>InstrumentType</td>
         <td>
             fixedchar(3)
         </td>
         <td>
-            Three letter character that specifies the asset type.
+            Three letter character that specifies the instrument type.
              Example: SHC
         </td>
     </tr>
 
     <tr>
-        <td>AssetCode</td>
+        <td>InstrumentCode</td>
         <td>
-            <a href="#alias-asset-code">AssetCode</a>
+            <a href="#alias-instrument-code">InstrumentCode</a>
         </td>
         <td>
-            A unique code that is used to identify the asset. It is generated by hashing the contract public key hash and the asset index. SHA256(contract PKH &#43; asset index)
+            A unique code that is used to identify the instrument. It is generated by hashing the contract public key hash and the instrument index. SHA256(contract PKH &#43; instrument index)
             Cannot be changed by the administration, operator or smart contract.
         </td>
     </tr>
 
     <tr>
-        <td>AssetRevision</td>
+        <td>InstrumentRevision</td>
         <td>
             uint(4)
         </td>
@@ -2078,7 +2079,7 @@ Token Dilutions, Call Backs/Revocations, burning etc.
             <a href="#type-amendment">Amendment[tiny]</a>
         </td>
         <td>
-            A collection of modifications to perform on this asset.
+            A collection of modifications to perform on this instrument.
             
         </td>
     </tr>
@@ -2123,7 +2124,7 @@ Token Dilutions, Call Backs/Revocations, burning etc.
    <tr>
         <td class="text-center">0</td>
         <td>Contract Public Address</td>
-        <td>The contract that this asset currently belongs to. Must include enough for the responding action.</td>
+        <td>The contract that this instrument currently belongs to. Must include enough for the responding action.</td>
     </tr>
 </table>
 
@@ -2135,7 +2136,7 @@ Token Dilutions, Call Backs/Revocations, burning etc.
 <a name="action-transfer"></a>
 #### Transfer
 
-A Token Owner(s) Sends, Exchanges or Swaps a token(s) or Bitcoin for a token(s) or Bitcoin.  Can be as simple as sending a single token to a receiver.  Or can be as complex as many senders sending many different assets - controlled by many different smart contracts - to a number of receivers.  This action also supports atomic swaps (tokens for tokens).  Since many parties and contracts can be involved in a transfer and the corresponding settlement action, the partially signed T1 and T2 actions will need to be passed around on-chain with an M1 action, or off-chain.
+A Token Owner(s) Sends, Exchanges or Swaps a token(s) or Bitcoin for a token(s) or Bitcoin.  Can be as simple as sending a single token to a receiver.  Or can be as complex as many senders sending many different instruments - controlled by many different smart contracts - to a number of receivers.  This action also supports atomic swaps (tokens for tokens).  Since many parties and contracts can be involved in a transfer and the corresponding settlement action, the partially signed T1 and T2 actions will need to be passed around on-chain with an M1 action, or off-chain.
 
 <table>
     <tr>
@@ -2152,12 +2153,12 @@ A Token Owner(s) Sends, Exchanges or Swaps a token(s) or Bitcoin for a token(s) 
         <th>Description</th>
     </tr>
     <tr>
-        <td>Assets</td>
+        <td>Instruments</td>
         <td>
-            <a href="#type-asset-transfer">AssetTransfer[tiny]</a>
+            <a href="#type-instrument-transfer">InstrumentTransfer[tiny]</a>
         </td>
         <td>
-            The Assets involved in the Transfer Action.
+            The Instruments involved in the Transfer Action.
             
         </td>
     </tr>
@@ -2208,8 +2209,8 @@ A Token Owner(s) Sends, Exchanges or Swaps a token(s) or Bitcoin for a token(s) 
    </tr>
    <tr>
         <td class="text-center">0</td>
-        <td>Asset Senders</td>
-        <td>Asset (token) Sending Public Address. Assets[i].AssetSenders[j].Index references these inputs.</td>
+        <td>Instrument Senders</td>
+        <td>Instrument (token) Sending Public Address. Instruments[i].InstrumentSenders[j].Index references these inputs.</td>
     </tr>
 </table>
 
@@ -2223,7 +2224,7 @@ A Token Owner(s) Sends, Exchanges or Swaps a token(s) or Bitcoin for a token(s) 
    </tr>
    <tr>
         <td class="text-center">0</td>
-        <td>Contract Public Address for Asset X</td>
+        <td>Contract Public Address for Instrument X</td>
         <td>Enough for the costs of the responding action, including any bitcoins being transfered, and the Contract Fee.</td>
     </tr>
 </table>
@@ -2253,12 +2254,12 @@ Settles the transfer request of bitcoins and tokens from transfer (T1) actions.
         <th>Description</th>
     </tr>
     <tr>
-        <td>Assets</td>
+        <td>Instruments</td>
         <td>
-            <a href="#type-asset-settlement">AssetSettlement[tiny]</a>
+            <a href="#type-instrument-settlement">InstrumentSettlement[tiny]</a>
         </td>
         <td>
-            The Assets settled by the transfer action.
+            The Instruments settled by the transfer action.
             
         </td>
     </tr>
@@ -2287,8 +2288,8 @@ Settles the transfer request of bitcoins and tokens from transfer (T1) actions.
    </tr>
    <tr>
         <td class="text-center">0</td>
-        <td>Contract Public Address (Asset X)</td>
-        <td>Contract (Asset X) in response to a transfer action with Asset X being sent to another address(es).</td>
+        <td>Contract Public Address (Instrument X)</td>
+        <td>Contract (Instrument X) in response to a transfer action with Instrument X being sent to another address(es).</td>
     </tr>
 </table>
 
@@ -2302,8 +2303,8 @@ Settles the transfer request of bitcoins and tokens from transfer (T1) actions.
    </tr>
    <tr>
         <td class="text-center">0</td>
-        <td>Asset 1 Settlement Address X</td>
-        <td>Address X that is being settled for Asset 1.</td>
+        <td>Instrument 1 Settlement Address X</td>
+        <td>Address X that is being settled for Instrument 1.</td>
     </tr>
 </table>
 
@@ -2347,23 +2348,23 @@ Allows the Administration/Token Holders to propose a change (aka Initiative/Shar
     </tr>
 
     <tr>
-        <td>AssetType</td>
+        <td>InstrumentType</td>
         <td>
             fixedchar(3)
         </td>
         <td>
-            Three letter character that specifies the asset type.
+            Three letter character that specifies the instrument type.
              Example: SHC
         </td>
     </tr>
 
     <tr>
-        <td>AssetCode</td>
+        <td>InstrumentCode</td>
         <td>
-            <a href="#alias-asset-code">AssetCode</a>
+            <a href="#alias-instrument-code">InstrumentCode</a>
         </td>
         <td>
-            A unique code that is used to identify the asset. It is generated by hashing the contract public key hash and the asset index. SHA256(contract PKH &#43; asset index)
+            A unique code that is used to identify the instrument. It is generated by hashing the contract public key hash and the instrument index. SHA256(contract PKH &#43; instrument index)
             Cannot be changed by the administration, operator or smart contract.
         </td>
     </tr>
@@ -2385,7 +2386,7 @@ Allows the Administration/Token Holders to propose a change (aka Initiative/Shar
             <a href="#type-amendment">Amendment[tiny]</a>
         </td>
         <td>
-            Each element contains details of which fields to modify, or delete. Because the number of fields in a Contract and Asset is dynamic due to some fields being able to be repeated, the index value of the field needs to be calculated against the Contract or Asset the changes are to apply to. In the event of a Vote being created from this Initiative, the changes will be applied to the version of the Contract or Asset at that time.
+            Each element contains details of which fields to modify, or delete. Because the number of fields in a Contract and Instrument is dynamic due to some fields being able to be repeated, the index value of the field needs to be calculated against the Contract or Instrument the changes are to apply to. In the event of a Vote being created from this Initiative, the changes will be applied to the version of the Contract or Instrument at that time.
             
         </td>
     </tr>
@@ -2559,7 +2560,7 @@ A vote is created by the Contract in response to a valid Proposal Action.
 <a name="action-ballot-cast"></a>
 #### Ballot Cast
 
-Used by Token Owners to cast their ballot (vote) on proposals. 1 Vote per token unless a vote multiplier is specified in the relevant Asset Definition action.
+Used by Token Owners to cast their ballot (vote) on proposals. 1 Vote per token unless a vote multiplier is specified in the relevant Instrument Definition action.
 
 <table>
     <tr>
@@ -2739,7 +2740,7 @@ The smart contract will respond to a Ballot Cast action with a Ballot Counted ac
 <a name="action-result"></a>
 #### Result
 
-Once a vote has been completed the results are published. After the result is posted, it is up to the administration to send a contract/asset amendement if appropriate.
+Once a vote has been completed the results are published. After the result is posted, it is up to the administration to send a contract/instrument amendement if appropriate.
 
 <table>
     <tr>
@@ -2756,23 +2757,23 @@ Once a vote has been completed the results are published. After the result is po
         <th>Description</th>
     </tr>
     <tr>
-        <td>AssetType</td>
+        <td>InstrumentType</td>
         <td>
             fixedchar(3)
         </td>
         <td>
-            Three letter character that specifies the asset type.
+            Three letter character that specifies the instrument type.
              Example: SHC
         </td>
     </tr>
 
     <tr>
-        <td>AssetCode</td>
+        <td>InstrumentCode</td>
         <td>
-            <a href="#alias-asset-code">AssetCode</a>
+            <a href="#alias-instrument-code">InstrumentCode</a>
         </td>
         <td>
-            A unique code that is used to identify the asset. It is generated by hashing the contract public key hash and the asset index. SHA256(contract PKH &#43; asset index)
+            A unique code that is used to identify the instrument. It is generated by hashing the contract public key hash and the instrument index. SHA256(contract PKH &#43; instrument index)
             Cannot be changed by the administration, operator or smart contract.
         </td>
     </tr>
@@ -2783,7 +2784,7 @@ Once a vote has been completed the results are published. After the result is po
             <a href="#type-amendment">Amendment[tiny]</a>
         </td>
         <td>
-            Each element contains details of which fields to modify, or delete. Because the number of fields in a Contract and Asset is dynamic due to some fields being able to be repeated, the index value of the field needs to be calculated against the Contract or Asset the changes are to apply to. In the event of a Vote being created from this Initiative, the changes will be applied to the version of the Contract or Asset at that time.
+            Each element contains details of which fields to modify, or delete. Because the number of fields in a Contract and Instrument is dynamic due to some fields being able to be repeated, the index value of the field needs to be calculated against the Contract or Instrument the changes are to apply to. In the event of a Vote being created from this Initiative, the changes will be applied to the version of the Contract or Instrument at that time.
             
         </td>
     </tr>
@@ -2901,23 +2902,23 @@ Used by the administration to signal to the smart contract that the tokens that 
     </tr>
 
     <tr>
-        <td>AssetType</td>
+        <td>InstrumentType</td>
         <td>
             fixedchar(3)
         </td>
         <td>
-            Three letter character that specifies the asset type.
+            Three letter character that specifies the instrument type.
              Example: SHC
         </td>
     </tr>
 
     <tr>
-        <td>AssetCode</td>
+        <td>InstrumentCode</td>
         <td>
-            <a href="#alias-asset-code">AssetCode</a>
+            <a href="#alias-instrument-code">InstrumentCode</a>
         </td>
         <td>
-            A unique code that is used to identify the asset. It is generated by hashing the contract public key hash and the asset index. SHA256(contract PKH &#43; asset index)
+            A unique code that is used to identify the instrument. It is generated by hashing the contract public key hash and the instrument index. SHA256(contract PKH &#43; instrument index)
             Cannot be changed by the administration, operator or smart contract.
         </td>
     </tr>
@@ -2928,7 +2929,7 @@ Used by the administration to signal to the smart contract that the tokens that 
             <a href="#type-target-address">TargetAddress[medium]</a>
         </td>
         <td>
-            The holders and quantities that are effected by the order. For a contract or asset wide freeze only the contract address is specified. Zero quantities are invalid unless it is for the contract address in an asset wide or contract wide freeze. In a thaw order this field is not serialized, because the entire freeze from the FreezeTxId freeze action will be thawed.
+            The holders and quantities that are effected by the order. For a contract or instrument wide freeze only the contract address is specified. Zero quantities are invalid unless it is for the contract address in an instrument wide or contract wide freeze. In a thaw order this field is not serialized, because the entire freeze from the FreezeTxId freeze action will be thawed.
             
         </td>
     </tr>
@@ -3005,7 +3006,7 @@ Used by the administration to signal to the smart contract that the tokens that 
             varbin(tiny)
         </td>
         <td>
-            Length 0-255 bytes. Signature for a message that lists out the target addresses and deposit address. Signature of (Contract PKH, Compliance Action, Authority Name, Asset Code, Supporting Evidence Hash, FreezePeriod, TargetAddresses, and DepositAddress)
+            Length 0-255 bytes. Signature for a message that lists out the target addresses and deposit address. Signature of (Contract PKH, Compliance Action, Authority Name, Instrument Code, Supporting Evidence Hash, FreezePeriod, TargetAddresses, and DepositAddress)
             
         </td>
     </tr>
@@ -3124,7 +3125,7 @@ Used by the administration to signal to the smart contract that the tokens that 
 <a name="action-freeze"></a>
 #### Freeze
 
-The contract responding to an Order action to freeze assets. To be used to comply with contractual/legal/issuer requirements. The target public address(es) will be marked as frozen. However the Freeze action publishes this fact to the public blockchain for transparency. The contract will not respond to any actions requested by the frozen address.
+The contract responding to an Order action to freeze instruments. To be used to comply with contractual/legal/issuer requirements. The target public address(es) will be marked as frozen. However the Freeze action publishes this fact to the public blockchain for transparency. The contract will not respond to any actions requested by the frozen address.
 
 
 <table>
@@ -3142,23 +3143,23 @@ The contract responding to an Order action to freeze assets. To be used to compl
         <th>Description</th>
     </tr>
     <tr>
-        <td>AssetType</td>
+        <td>InstrumentType</td>
         <td>
             fixedchar(3)
         </td>
         <td>
-            Three letter character that specifies the asset type.
+            Three letter character that specifies the instrument type.
              Example: SHC
         </td>
     </tr>
 
     <tr>
-        <td>AssetCode</td>
+        <td>InstrumentCode</td>
         <td>
-            <a href="#alias-asset-code">AssetCode</a>
+            <a href="#alias-instrument-code">InstrumentCode</a>
         </td>
         <td>
-            A unique code that is used to identify the asset. It is generated by hashing the contract public key hash and the asset index. SHA256(contract PKH &#43; asset index)
+            A unique code that is used to identify the instrument. It is generated by hashing the contract public key hash and the instrument index. SHA256(contract PKH &#43; instrument index)
             Cannot be changed by the administration, operator or smart contract.
         </td>
     </tr>
@@ -3169,7 +3170,7 @@ The contract responding to an Order action to freeze assets. To be used to compl
             <a href="#type-quantity-index">QuantityIndex[small]</a>
         </td>
         <td>
-            Indices to addresses in outputs and the quantities being frozen. If the only address is the contract address and the asset code is zeros, then it is a contract wide freeze. If the only address is the contract address and the asset code is specified, then it is an asset wide freeze.
+            Indices to addresses in outputs and the quantities being frozen. If the only address is the contract address and the instrument code is zeros, then it is a contract wide freeze. If the only address is the contract address and the instrument code is specified, then it is an instrument wide freeze.
             
         </td>
     </tr>
@@ -3237,7 +3238,7 @@ The contract responding to an Order action to freeze assets. To be used to compl
 <a name="action-thaw"></a>
 #### Thaw
 
-The contract responding to an Order action to thaw assets. To be used to comply with contractual obligations or legal requirements. The Alleged Offender&#39;s tokens will be unfrozen to allow them to resume normal exchange and governance activities.
+The contract responding to an Order action to thaw instruments. To be used to comply with contractual obligations or legal requirements. The Alleged Offender&#39;s tokens will be unfrozen to allow them to resume normal exchange and governance activities.
 
 
 <table>
@@ -3317,7 +3318,7 @@ The contract responding to an Order action to thaw assets. To be used to comply 
 <a name="action-confiscation"></a>
 #### Confiscation
 
-The contract responding to an Order action to confiscate assets. To be used to comply with contractual obligations, legal and/or issuer requirements.
+The contract responding to an Order action to confiscate instruments. To be used to comply with contractual obligations, legal and/or issuer requirements.
 
 
 <table>
@@ -3335,23 +3336,23 @@ The contract responding to an Order action to confiscate assets. To be used to c
         <th>Description</th>
     </tr>
     <tr>
-        <td>AssetType</td>
+        <td>InstrumentType</td>
         <td>
             fixedchar(3)
         </td>
         <td>
-            Three letter character that specifies the asset type.
+            Three letter character that specifies the instrument type.
              Example: SHC
         </td>
     </tr>
 
     <tr>
-        <td>AssetCode</td>
+        <td>InstrumentCode</td>
         <td>
-            <a href="#alias-asset-code">AssetCode</a>
+            <a href="#alias-instrument-code">InstrumentCode</a>
         </td>
         <td>
-            A unique code that is used to identify the asset. It is generated by hashing the contract public key hash and the asset index. SHA256(contract PKH &#43; asset index)
+            A unique code that is used to identify the instrument. It is generated by hashing the contract public key hash and the instrument index. SHA256(contract PKH &#43; instrument index)
             Cannot be changed by the administration, operator or smart contract.
         </td>
     </tr>
@@ -3435,7 +3436,7 @@ The contract responding to an Order action to confiscate assets. To be used to c
 <a name="action-reconciliation"></a>
 #### Reconciliation
 
-The contract responding to an Order action to reconcile assets. To be used at the direction of the administration to fix record keeping errors with bitcoin and token balances.
+The contract responding to an Order action to reconcile instruments. To be used at the direction of the administration to fix record keeping errors with bitcoin and token balances.
 
 
 <table>
@@ -3453,23 +3454,23 @@ The contract responding to an Order action to reconcile assets. To be used at th
         <th>Description</th>
     </tr>
     <tr>
-        <td>AssetType</td>
+        <td>InstrumentType</td>
         <td>
             fixedchar(3)
         </td>
         <td>
-            Three letter character that specifies the asset type.
+            Three letter character that specifies the instrument type.
              Example: SHC
         </td>
     </tr>
 
     <tr>
-        <td>AssetCode</td>
+        <td>InstrumentCode</td>
         <td>
-            <a href="#alias-asset-code">AssetCode</a>
+            <a href="#alias-instrument-code">InstrumentCode</a>
         </td>
         <td>
-            A unique code that is used to identify the asset. It is generated by hashing the contract public key hash and the asset index. SHA256(contract PKH &#43; asset index)
+            A unique code that is used to identify the instrument. It is generated by hashing the contract public key hash and the instrument index. SHA256(contract PKH &#43; instrument index)
             Cannot be changed by the administration, operator or smart contract.
         </td>
     </tr>
@@ -4050,9 +4051,9 @@ Used to reject request actions that do not comply with the Contract. If money is
 - [Administrator](#type-administrator)
 - [Administrator Identity Certificate](#type-admin-identity-certificate)
 - [Amendment](#type-amendment)
-- [AssetReceiver](#type-asset-receiver)
-- [Asset Settlement](#type-asset-settlement)
-- [Asset Transfer](#type-asset-transfer)
+- [InstrumentReceiver](#type-instrument-receiver)
+- [Instrument Settlement](#type-instrument-settlement)
+- [Instrument Transfer](#type-instrument-transfer)
 - [Chapter](#type-chapter)
 - [Clause](#type-clause)
 - [Defined Term](#type-defined-term)
@@ -4171,7 +4172,7 @@ A certificate provided by an identity oracle to verify the administrator address
 <a name="type-amendment"></a>
 ### Amendment
 
-An Amendment is used to describe the modification of a single field in a Contract or Asset, as defined in the ContractFormation and AssetCreation messages.
+An Amendment is used to describe the modification of a single field in a Contract or Instrument, as defined in the ContractFormation and InstrumentCreation messages.
 
 <table>
     <tr>
@@ -4186,7 +4187,7 @@ An Amendment is used to describe the modification of a single field in a Contrac
         </td>
         <td>
             List of indices that identify the field/sub-field to be amended.
-            The index path of the field being modified. Encoded as a list of base 128 var ints. Each index is an index into the current object, top level being the ContractFormation or AssetCreation. Indexes are defined by protobuf messages. If the current level is a list, then the index is a zero based offset to the element in the list.
+            The index path of the field being modified. Encoded as a list of base 128 var ints. Each index is an index into the current object, top level being the ContractFormation or InstrumentCreation. Indexes are defined by protobuf messages. If the current level is a list, then the index is a zero based offset to the element in the list.
         </td>
     </tr>
 
@@ -4216,10 +4217,10 @@ An Amendment is used to describe the modification of a single field in a Contrac
 
 
 
-<a name="type-asset-receiver"></a>
-### AssetReceiver
+<a name="type-instrument-receiver"></a>
+### InstrumentReceiver
 
-An AssetReceiver is a quantity, address, and oracle signature. The quantity could be used to describe a number of tokens, or a value. The address is where the asset will be sent.
+An InstrumentReceiver is a quantity, address, and oracle signature. The quantity could be used to describe a number of tokens, or a value. The address is where the instrument will be sent.
 
 <table>
     <tr>
@@ -4255,7 +4256,7 @@ An AssetReceiver is a quantity, address, and oracle signature. The quantity coul
             uint(1)
         </td>
         <td>
-            0 = No Oracle-signed Message (OracleConfirmationSig skipped in serialization), 1 = ECDSA&#43;secp256k1. If the contract for the asset being received has oracles, then a signature is required from one of them.
+            0 = No Oracle-signed Message (OracleConfirmationSig skipped in serialization), 1 = ECDSA&#43;secp256k1. If the contract for the instrument being received has oracles, then a signature is required from one of them.
              Example: 1
         </td>
     </tr>
@@ -4277,7 +4278,7 @@ An AssetReceiver is a quantity, address, and oracle signature. The quantity coul
             <a href="#alias-signature">Signature</a>
         </td>
         <td>
-            Length 0-255 bytes. If restricted to a oracle (whitelist) or has transfer restrictions (age, location, investor status): ECDSA&#43;secp256k1 (or the like) signed message provided by an approved/trusted oracle through an API signature of the defined message. If no transfer restrictions(trade restriction/age restriction fields in the Asset Type payload. or restricted to a whitelist by the Contract Auth Flags, it is a NULL field.
+            Length 0-255 bytes. If restricted to a oracle (whitelist) or has transfer restrictions (age, location, investor status): ECDSA&#43;secp256k1 (or the like) signed message provided by an approved/trusted oracle through an API signature of the defined message. If no transfer restrictions(trade restriction/age restriction fields in the Instrument Type payload. or restricted to a whitelist by the Contract Auth Flags, it is a NULL field.
             
         </td>
     </tr>
@@ -4308,10 +4309,10 @@ An AssetReceiver is a quantity, address, and oracle signature. The quantity coul
 
 
 
-<a name="type-asset-settlement"></a>
-### Asset Settlement
+<a name="type-instrument-settlement"></a>
+### Instrument Settlement
 
-AssetSettlement is the data required to settle an asset transfer.
+InstrumentSettlement is the data required to settle an instrument transfer.
 
 <table>
     <tr>
@@ -4331,23 +4332,23 @@ AssetSettlement is the data required to settle an asset transfer.
     </tr>
 
     <tr>
-        <td>AssetType</td>
+        <td>InstrumentType</td>
         <td>
             fixedchar(3)
         </td>
         <td>
-            Three letter character that specifies the asset type. Example: COU
+            Three letter character that specifies the instrument type. Example: COU
              Example: SHC
         </td>
     </tr>
 
     <tr>
-        <td>AssetCode</td>
+        <td>InstrumentCode</td>
         <td>
-            <a href="#alias-asset-code">AssetCode</a>
+            <a href="#alias-instrument-code">InstrumentCode</a>
         </td>
         <td>
-            A unique code that is used to identify the asset. It is generated by hashing the contract public key hash and the asset index. SHA256(contract PKH &#43; asset index)
+            A unique code that is used to identify the instrument. It is generated by hashing the contract public key hash and the instrument index. SHA256(contract PKH &#43; instrument index)
             Cannot be changed by the administration, operator or smart contract.
         </td>
     </tr>
@@ -4358,7 +4359,7 @@ AssetSettlement is the data required to settle an asset transfer.
             <a href="#type-quantity-index">QuantityIndex[tiny]</a>
         </td>
         <td>
-            Each element contains the resulting token balance of Asset X for the output Address, which is referred to by the index.
+            Each element contains the resulting token balance of Instrument X for the output Address, which is referred to by the index.
             
         </td>
     </tr>
@@ -4367,10 +4368,10 @@ AssetSettlement is the data required to settle an asset transfer.
 
 
 
-<a name="type-asset-transfer"></a>
-### Asset Transfer
+<a name="type-instrument-transfer"></a>
+### Instrument Transfer
 
-AssetTransfer is the data required to transfer an asset.
+InstrumentTransfer is the data required to transfer an instrument.
 
 <table>
     <tr>
@@ -4390,29 +4391,29 @@ AssetTransfer is the data required to transfer an asset.
     </tr>
 
     <tr>
-        <td>AssetType</td>
+        <td>InstrumentType</td>
         <td>
             fixedchar(3)
         </td>
         <td>
-            Three letter character that specifies the asset type. Example: COU
+            Three letter character that specifies the instrument type. Example: COU
              Example: SHC
         </td>
     </tr>
 
     <tr>
-        <td>AssetCode</td>
+        <td>InstrumentCode</td>
         <td>
-            <a href="#alias-asset-code">AssetCode</a>
+            <a href="#alias-instrument-code">InstrumentCode</a>
         </td>
         <td>
-            A unique code that is used to identify the asset. It is generated by hashing the contract public key hash and the asset index. SHA256(contract PKH &#43; asset index)
+            A unique code that is used to identify the instrument. It is generated by hashing the contract public key hash and the instrument index. SHA256(contract PKH &#43; instrument index)
             Cannot be changed by the administration, operator or smart contract.
         </td>
     </tr>
 
     <tr>
-        <td>AssetSenders</td>
+        <td>InstrumentSenders</td>
         <td>
             <a href="#type-quantity-index">QuantityIndex[tiny]</a>
         </td>
@@ -4423,9 +4424,9 @@ AssetTransfer is the data required to transfer an asset.
     </tr>
 
     <tr>
-        <td>AssetReceivers</td>
+        <td>InstrumentReceivers</td>
         <td>
-            <a href="#type-asset-receiver">AssetReceiver[tiny]</a>
+            <a href="#type-instrument-receiver">InstrumentReceiver[tiny]</a>
         </td>
         <td>
             Each element has the value of tokens to be received, the address, and an oracle signature if required.
@@ -4802,7 +4803,7 @@ Entity represents the details of a legal Entity, such as a public or private com
         <td>(Deprecated)EntityContractAddress</td>
         <td>deprecated</td>
         <td>
-            Deprecated for separate field in contract. Address of entity contract. When the contract type is asset contract, or a child type, this field refers to the entity specified in the contract at the address specified. When this field is present, no other fields should be included in the entity.
+            Deprecated for separate field in contract. Address of entity contract. When the contract type is instrument contract, or a child type, this field refers to the entity specified in the contract at the address specified. When this field is present, no other fields should be included in the entity.
             
         </td>
     </tr>
@@ -5150,7 +5151,7 @@ A VotingSystem defines all details of a Voting System.
             bool
         </td>
         <td>
-            Where an asset has a vote multiplier, true must be set here for the vote multiplier to count, otherwise votes are simply treated as 1x per token.
+            Where an instrument has a vote multiplier, true must be set here for the vote multiplier to count, otherwise votes are simply treated as 1x per token.
             
         </td>
     </tr>
@@ -5259,23 +5260,23 @@ A VotingSystem defines all details of a Voting System.
                  Example: 260840c0b3d4dadb870cd34ffbfc47fed903fe7d94a7a5bab491fb728aebcc74
             </td>
         </tr>
-        <tr id="alias-asset-type">
-            <td>AssetType</td>
+        <tr id="alias-instrument-type">
+            <td>InstrumentType</td>
             <td>
                 fixedchar(3)
             </td>
             <td>
-                A code representing the type of asset and the structure of the payload.
+                A code representing the type of instrument and the structure of the payload.
                  Example: CCY
             </td>
         </tr>
-        <tr id="alias-asset-code">
-            <td>AssetCode</td>
+        <tr id="alias-instrument-code">
+            <td>InstrumentCode</td>
             <td>
                 bin(20)
             </td>
             <td>
-                Represents a unique identifier for an asset/token.
+                Represents a unique identifier for an instrument/token.
                  Example: 0e6996402ea456156838652e3bd82c6c0986ef79
             </td>
         </tr>

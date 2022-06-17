@@ -31,8 +31,8 @@
     <text id="Smart_Contract-2" data-name="Smart Contract" transform="translate(3091 -5621)" fill="#7030a0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Smart Contract</tspan></text>
     <text id="DETAILS" transform="translate(3034 -5491)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">DETAILS</tspan></text>
     <path id="Path_160" data-name="Path 160" d="M0,0V57.5" transform="translate(3036.5 -5474.5)" fill="none" stroke="#707070" stroke-width="1"/>
-    <text id="AssetID_Tx-ID_of_Vote_Vote_Choices" data-name="AssetID
+    <text id="InstrumentID_Tx-ID_of_Vote_Vote_Choices" data-name="InstrumentID
 Tx-ID of Vote
-Vote Choices" transform="translate(3043 -5459)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">AssetID</tspan><tspan x="0" y="19">Tx-ID of Vote</tspan><tspan x="0" y="38">Vote Choices</tspan></text>
+Vote Choices" transform="translate(3043 -5459)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">InstrumentID</tspan><tspan x="0" y="19">Tx-ID of Vote</tspan><tspan x="0" y="38">Vote Choices</tspan></text>
   </g>
 </svg>

@@ -101,7 +101,7 @@
 						class="st7">Issuer can change<v:newlineChar/><v:tabChar/></tspan><tspan x="46.52" dy="1.2em" class="st7">Voting system </tspan><tspan
 						class="st7">–</tspan><tspan class="st7"> </tspan><tspan class="st7">Absolute threshold<v:newlineChar/></tspan><tspan
 						x="4" dy="1.2em" class="st7">Issuer Proposal:<v:newlineChar/><v:tabChar/></tspan><tspan x="46.52"
-						dy="1.2em" class="st7">No asset holders who are not listed as beneficiaries<v:newlineChar/><v:newlineChar/></tspan><tspan
+						dy="1.2em" class="st7">No instrument holders who are not listed as beneficiaries<v:newlineChar/><v:newlineChar/></tspan><tspan
 						x="4" dy="2.4em" class="st7">Version 0<v:newlineChar/></tspan><tspan x="4" dy="1.2em" class="st7">Timestamp</tspan></text>		</g>
 	</g>
 </svg>

@@ -23,7 +23,7 @@
     </g>
     <text id="Settlement_Action_Payload" data-name="Settlement Action Payload" transform="translate(7030 -8567)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Settlement Action Payload</tspan></text>
     <text id="Settlements" transform="translate(7045 -8515)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">Settlements</tspan></text>
-    <text id="ASSETID:_CURae3d1FmkuNCarFsRE..._Australian_one_cent" data-name="ASSETID: CURae3d1FmkuNCarFsRE... Australian one cent" transform="translate(7034 -8549)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">ASSETID: CURae3d1FmkuNCarFsRE... Australian one cent</tspan></text>
+    <text id="INSTRUMENTID:_CURae3d1FmkuNCarFsRE..._Australian_one_cent" data-name="INSTRUMENTID: CURae3d1FmkuNCarFsRE... Australian one cent" transform="translate(7034 -8549)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">INSTRUMENTID: CURae3d1FmkuNCarFsRE... Australian one cent</tspan></text>
     <line id="Line_278" data-name="Line 278" y2="77" transform="translate(7035.5 -8527.5)" fill="none" stroke="#707070" stroke-width="1"/>
     <line id="Line_279" data-name="Line 279" y2="47" transform="translate(7153.5 -8648.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
     <text id="_3:_" data-name="3: " transform="translate(7091 -8727)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">3: </tspan></text>
@@ -56,7 +56,7 @@
     <text id="_6:_" data-name="6: " transform="translate(7091 -8671)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">6: </tspan></text>
     <text id="Private_Line_Contract_Operator" data-name="Private Line Contract Operator" transform="translate(7109 -8671)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Private Line Contract Operator</tspan></text>
     <text id="Contract_Fee-3" data-name="Contract Fee" transform="translate(7336 -8671)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Contract Fee</tspan></text>
-    <text id="ASSETID:_TICdJK4f0LNar3..._Four_zone_ticket" data-name="ASSETID: TICdJK4f0LNar3... Four zone ticket" transform="translate(7034 -8437)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">ASSETID: TICdJK4f0LNar3... Four zone ticket</tspan></text>
+    <text id="INSTRUMENTID:_TICdJK4f0LNar3..._Four_zone_ticket" data-name="INSTRUMENTID: TICdJK4f0LNar3... Four zone ticket" transform="translate(7034 -8437)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">INSTRUMENTID: TICdJK4f0LNar3... Four zone ticket</tspan></text>
     <text id="The_Private_Line_1_2" data-name="The Private Line (1)" transform="translate(7045 -8382)" fill="#002060" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">The Private Line (1)</tspan></text>
     <text id="Caitlyn_3_2" data-name="Caitlyn (3)" transform="translate(7045 -8363)" fill="#00b050" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Caitlyn (3)</tspan></text>
     <text id="_10_tickets" data-name="10 tickets" transform="translate(7215 -8363)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">10 tickets</tspan></text>

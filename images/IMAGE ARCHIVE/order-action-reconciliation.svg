@@ -31,10 +31,10 @@
     <text id="Smart_Contract" data-name="Smart Contract" transform="translate(18496 -726)" fill="#7030a0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Smart Contract</tspan></text>
     <text id="DETAILS" transform="translate(18386 -596)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">DETAILS</tspan></text>
     <path id="Path_163" data-name="Path 163" d="M0,0V99.179" transform="translate(18388.5 -579.5)" fill="none" stroke="#707070" stroke-width="1"/>
-    <text id="_-AssetID_-Target_Address_es_-Reference_TX_-Bitcoin_Dispersion_-Message" data-name="-AssetID
+    <text id="_-InstrumentID_-Target_Address_es_-Reference_TX_-Bitcoin_Dispersion_-Message" data-name="-InstrumentID
 -Target Address(es)
 -Reference TX
 -Bitcoin Dispersion
--Message" transform="translate(18395 -564)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">-AssetID</tspan><tspan x="0" y="19">-Target Address(es)</tspan><tspan x="0" y="38">-Reference TX</tspan><tspan x="0" y="57">-Bitcoin Dispersion</tspan><tspan x="0" y="76">-Message</tspan></text>
+-Message" transform="translate(18395 -564)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">-InstrumentID</tspan><tspan x="0" y="19">-Target Address(es)</tspan><tspan x="0" y="38">-Reference TX</tspan><tspan x="0" y="57">-Bitcoin Dispersion</tspan><tspan x="0" y="76">-Message</tspan></text>
   </g>
 </svg>

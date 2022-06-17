@@ -5,7 +5,7 @@
 - [Rejection action](#rejection-action)
   - [Basic Rejection Codes](#rejection-codes)
   - [Contract Rejection Codes](#rejection-contract-codes)
-  - [Asset Rejection Codes](#rejection-asset-codes)
+  - [Instrument Rejection Codes](#rejection-instrument-codes)
   - [Transfer Rejection Codes](#rejection-transfer-codes)
   - [Governance Rejection Codes](#rejection-governance-codes)
   - [Enforcement Rejection Codes](#rejection-enforcement-codes)
@@ -89,27 +89,27 @@ The following rejection messages have been defined:
     </tr>
     <tr><td>Code 10</td><td>Contract Already Exists - The contract already exists and can't be recreated.</td></tr>
     <tr><td>Code 11</td><td>Contract Is Not Dynamic - 'Sent when a CO is received, but the contract type is not "D" (Dynamic)'</td></tr>
-    <tr><td>Code 12</td><td>Contract Asset Quantity Reduction - Sent when a CA tries to reduce the number of assets below the number of assets the contract has.</td></tr>
-    <tr><td>Code 13</td><td>Contract Fixed Quantity - Sent when the issuer attempted to increase the quantity of assets in a contract beyond the fixed quantity permitted.</td></tr>
+    <tr><td>Code 12</td><td>Contract Instrument Quantity Reduction - Sent when a CA tries to reduce the number of instruments below the number of instruments the contract has.</td></tr>
+    <tr><td>Code 13</td><td>Contract Fixed Quantity - Sent when the issuer attempted to increase the quantity of instruments in a contract beyond the fixed quantity permitted.</td></tr>
     <tr><td>Code 14</td><td>Contract Auth Flags Prohibit - The contract auth flags don't permit the action requested.</td></tr>
     <tr><td>Code 15</td><td>Contract Expired - The contract is expired so can no longer accept requests.</td></tr>
     <tr><td>Code 16</td><td>Contract Frozen - The contract is frozen and the request is not permitted while frozen.</td></tr>
     <tr><td>Code 17</td><td>Contract Revision Incorrect - The revision in a contract amendment is incorrect.</td></tr>
 </table>
 
-<a name="rejection-asset-codes"></a>
-### Asset Rejection Codes
+<a name="rejection-instrument-codes"></a>
+### Instrument Rejection Codes
 
 <table>
     <tr>
         <th style="width:15%">Code</th>
         <th>Description</th>
     </tr>
-    <tr><td>Code 20</td><td>Asset Code Already Exists - The asset code specified already exists and can't be reused.</td></tr>
-    <tr><td>Code 21</td><td>Asset Not Found - The asset code is not found.</td></tr>
-    <tr><td>Code 22</td><td>Asset Auth Flags Prohibit - The asset auth flags don't permit the action requested.</td></tr>
-    <tr><td>Code 23</td><td>Asset Frozen - The asset is frozen and the request is not permitted while frozen.</td></tr>
-    <tr><td>Code 24</td><td>Asset Revision Incorrect - The revision in an asset amendment is incorrect.</td></tr>
+    <tr><td>Code 20</td><td>Instrument Code Already Exists - The instrument code specified already exists and can't be reused.</td></tr>
+    <tr><td>Code 21</td><td>Instrument Not Found - The instrument code is not found.</td></tr>
+    <tr><td>Code 22</td><td>Instrument Auth Flags Prohibit - The instrument auth flags don't permit the action requested.</td></tr>
+    <tr><td>Code 23</td><td>Instrument Frozen - The instrument is frozen and the request is not permitted while frozen.</td></tr>
+    <tr><td>Code 24</td><td>Instrument Revision Incorrect - The revision in an instrument amendment is incorrect.</td></tr>
 </table>
 
 <a name="rejection-transfer-codes"></a>

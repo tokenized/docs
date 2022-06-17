@@ -23,7 +23,7 @@ N: Transfer Action" transform="translate(-878 -10601)" fill="#707070" font-size=
     <text id="Administration_1_:_100_shares" data-name="Administration (1): 100 shares" transform="translate(-890 -10370)" fill="#ef1818" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Administration (1)</tspan><tspan y="0" fill="#707070">: 100 shares</tspan></text>
     <text id="Receivers" transform="translate(-890 -10359)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">Receivers</tspan></text>
     <text id="Bill:_100_shares" data-name="Bill: 100 shares" transform="translate(-890 -10323)" fill="#19e134" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Bill</tspan><tspan y="0" fill="#707070">: 100 shares</tspan></text>
-    <text id="ASSETID:_SHC1BvBMSJ..._Common_Shares" data-name="ASSETID: SHC1BvBMSJ... Common Shares" transform="translate(-901 -10424)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">ASSETID: SHC1BvBMSJ... Common Shares</tspan></text>
+    <text id="INSTRUMENTID:_SHC1BvBMSJ..._Common_Shares" data-name="INSTRUMENTID: SHC1BvBMSJ... Common Shares" transform="translate(-901 -10424)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">INSTRUMENTID: SHC1BvBMSJ... Common Shares</tspan></text>
     <line id="Line_82" data-name="Line 82" y2="82" transform="translate(-900.5 -10400.5)" fill="none" stroke="#707070" stroke-width="1"/>
     <text id="Response_Costs_Contract_Fees_Bitcoin_Change_N_A" data-name="Response Costs + Contract Fees
 Bitcoin Change

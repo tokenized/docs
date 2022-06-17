@@ -23,7 +23,7 @@
     </g>
     <text id="Settlement_Action_Payload" data-name="Settlement Action Payload" transform="translate(7030 -8623)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Settlement Action Payload</tspan></text>
     <text id="Settlements" transform="translate(7045 -8571)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">Settlements</tspan></text>
-    <text id="ASSETID:_CURAUDx100c2020..._Australian_one_cent" data-name="ASSETID: CURAUDx100c2020... Australian one cent" transform="translate(7034 -8605)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">ASSETID: CURAUDx100c2020... Australian one cent</tspan></text>
+    <text id="INSTRUMENTID:_CURAUDx100c2020..._Australian_one_cent" data-name="INSTRUMENTID: CURAUDx100c2020... Australian one cent" transform="translate(7034 -8605)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">INSTRUMENTID: CURAUDx100c2020... Australian one cent</tspan></text>
     <line id="Line_278" data-name="Line 278" y2="77" transform="translate(7035.5 -8583.5)" fill="none" stroke="#707070" stroke-width="1"/>
     <line id="Line_279" data-name="Line 279" y2="66" transform="translate(7153.5 -8723.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
     <g id="Rectangle_212" data-name="Rectangle 212" transform="translate(7107 -8742)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">

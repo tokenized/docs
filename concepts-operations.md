@@ -3,7 +3,7 @@
 - [Introduction](#introduction)
 - [All Operations](#all-operations)
   - [Contract Operations](#contract-operations)
-  - [Asset Operations](#asset-operations)
+  - [Instrument Operations](#instrument-operations)
   - [Transfer Operations](#transfer-operations)
   - [Governance Operations](#governance-operations)
   - [Enforcement Operations](#enforcement-operations)
@@ -22,7 +22,7 @@ The request and response actions are always initiated by two different classes o
 
 - **Responder**: the smart contract instance
 
-The smart contract is an autonomous agent that listens to the Bitcoin (BSV) network for commands (request actions) addressed to it from users and issuers. It does not publish any actions to the blockchain without first being prompted by a request action from the requesting party. Each request action that is sent to the blockchain by a user or issuer, must be subsequently confirmed as valid, or invalid (rejected) by the smart contract. The smart contract is the only entity with the ability to directly modify the contract or the assets it controls.
+The smart contract is an autonomous agent that listens to the Bitcoin (BSV) network for commands (request actions) addressed to it from users and issuers. It does not publish any actions to the blockchain without first being prompted by a request action from the requesting party. Each request action that is sent to the blockchain by a user or issuer, must be subsequently confirmed as valid, or invalid (rejected) by the smart contract. The smart contract is the only entity with the ability to directly modify the contract or the instruments it controls.
 
 A response action is a 3-step process which is as follows:
 
@@ -39,7 +39,7 @@ When the contract finds that a request is in breach of the rules/T&C's that gove
 <a name="all-operations"></a>
 ## All Operations
 
-The protocol is comprised of 25 separate action messages which are broken up into 7 groups as defined below. With these actions, Tokenized provides all of the tools required for the issuance, management and exchange of any type of digital asset that can be created.
+The protocol is comprised of 25 separate action messages which are broken up into 7 groups as defined below. With these actions, Tokenized provides all of the tools required for the issuance, management and exchange of any type of digital instrument that can be created.
 
 <a name="contract-operations"></a>
 ### Contract Operations
@@ -52,19 +52,19 @@ Contract operations are used to establish and modify smart contracts that are op
 * [Static Contract Formation](../protocol/actions#action-static-contract-formation) (Action Code: C4)
 * [Contract Address Change](../protocol/actions#action-contract-address-change) (Action Code: C5)
 
-<a name="asset-operations"></a>
-### Asset Operations
+<a name="instrument-operations"></a>
+### Instrument Operations
 
-Asset operations are used to create and manage the assets that the smart contract controls. The asset actions are as follows:
+Instrument operations are used to create and manage the instruments that the smart contract controls. The instrument actions are as follows:
 
-* [Asset Definition](../protocol/actions#action-asset-definition) (Action Code: A1)
-* [Asset Creation](../protocol/actions#action-asset-creation) (Action Code: A2)
-* [Asset Modification](../protocol/actions#action-asset-modification) (Action Code: A3)
+* [Instrument Definition](../protocol/actions#action-instrument-definition) (Action Code: A1)
+* [Instrument Creation](../protocol/actions#action-instrument-creation) (Action Code: A2)
+* [Instrument Modification](../protocol/actions#action-instrument-modification) (Action Code: A3)
 
 <a name="transfer-operations"></a>
 ### Transfer Operations
 
-Transfer operations are used to move assets from the control of one address to another. A transfer instruction is sent to the smart contract which responds with either a Settlement action, or a Rejection message.
+Transfer operations are used to move instruments from the control of one address to another. A transfer instruction is sent to the smart contract which responds with either a Settlement action, or a Rejection message.
 
 * [Transfer](../protocol/actions#action-transfer) (Action Code: T1)
 * [Settlement](../protocol/actions#action-settlement) (Action Code: T2)
@@ -72,7 +72,7 @@ Transfer operations are used to move assets from the control of one address to a
 <a name="governance-operations"></a>
 ### Governance Operations
 
-Governance operations allow the issuer and asset owners to manifest changes in the smart contract rules, terms or state through binding votes created by Proposal actions.
+Governance operations allow the issuer and instrument owners to manifest changes in the smart contract rules, terms or state through binding votes created by Proposal actions.
 
 * [Proposal](../protocol/actions#action-proposal) (Action Code: G1)
 * [Vote](../protocol/actions#action-vote) (Action Code: G2)
@@ -104,7 +104,7 @@ Register operations allow a user or issuer to set up and manage on-chain registe
 <a name="message-operations"></a>
 ### Message Operations
 
-Message operations allow entities to communicate with each other on-chain. No response is required and the smart contract does not need to be involved.  Messages are used to communicate all types of information, but do not alter the state, rules or terms of the contract and do not require a contract at all.  Messages are categorized into different Message Types which are distinct in the structure of payload fields. The "Rejection" action is used by the smart contract to reject any actions that do not comply with the rule set in place for the asset the request relates to.
+Message operations allow entities to communicate with each other on-chain. No response is required and the smart contract does not need to be involved.  Messages are used to communicate all types of information, but do not alter the state, rules or terms of the contract and do not require a contract at all.  Messages are categorized into different Message Types which are distinct in the structure of payload fields. The "Rejection" action is used by the smart contract to reject any actions that do not comply with the rule set in place for the instrument the request relates to.
 
 * [Message](../protocol/actions#action-message) (Action Code: M1)
 * [Rejection](../protocol/actions#action-rejection) (Action Code: M2)

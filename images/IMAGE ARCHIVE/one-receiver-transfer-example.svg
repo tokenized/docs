@@ -23,7 +23,7 @@ N: Transfer Action" transform="translate(-878 -10603)" fill="#707070" font-size=
     <text id="Issuer:_100_tokens" data-name="Issuer: 100 tokens" transform="translate(-924 -10355)" fill="#ef1818" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Issuer</tspan><tspan y="0" fill="#707070">: 100 tokens</tspan></text>
     <text id="Receivers" transform="translate(-924 -10344)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">Receivers</tspan></text>
     <text id="Bill:_100_tokens" data-name="Bill: 100 tokens" transform="translate(-924 -10308)" fill="#19e134" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Bill</tspan><tspan y="0" fill="#707070">: 100 tokens</tspan></text>
-    <text id="ASSETID:_SHC1BvBMSEYstWetqTFn5Au4m4GFg7xJ..." data-name="ASSETID: SHC1BvBMSEYstWetqTFn5Au4m4GFg7xJ..." transform="translate(-935 -10409)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">ASSETID: SHC1BvBMSEYstWetqTFn5Au4m4GFg7xJ...</tspan></text>
+    <text id="INSTRUMENTID:_SHC1BvBMSEYstWetqTFn5Au4m4GFg7xJ..." data-name="INSTRUMENTID: SHC1BvBMSEYstWetqTFn5Au4m4GFg7xJ..." transform="translate(-935 -10409)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">INSTRUMENTID: SHC1BvBMSEYstWetqTFn5Au4m4GFg7xJ...</tspan></text>
     <line id="Line_82" data-name="Line 82" y2="84" transform="translate(-933.5 -10387.5)" fill="none" stroke="#707070" stroke-width="1"/>
     <text id="Response_Costs_Contract_Fees_Dust_Change_Minimum:_Dust_value_N_A" data-name="Response Costs + Contract Fees
 Dust

@@ -301,7 +301,7 @@
 						x="4" dy="2.4em" class="st20">Transfer details:<v:newlineChar/></tspan><tspan x="4" dy="1.2em" class="st18">Sender:<v:tabChar/><v:tabChar/></tspan><tspan
 						dx="5.001em" class="st21">Sender<v:newlineChar/></tspan><tspan x="4" dy="1.2em" class="st18">Receiver 1:<v:tabChar/></tspan><tspan
 						dx="3.446em" class="st22">Receiver</tspan><tspan class="st22">’</tspan><tspan class="st22">s address<v:newlineChar/></tspan><tspan
-						x="4" dy="1.2em" class="st18">Qty x Asset:<v:tabChar/></tspan><tspan dx="3.114em" class="st18">100 x Tokens<v:newlineChar/></tspan><tspan
+						x="4" dy="1.2em" class="st18">Qty x Instrument:<v:tabChar/></tspan><tspan dx="3.114em" class="st18">100 x Tokens<v:newlineChar/></tspan><tspan
 						x="4" dy="1.2em" class="st18">Oracle Signature: <v:tabChar/></tspan><tspan dx="0.444em" class="st23">OracleSignature(Message(OSR)+1)<v:newlineChar/></tspan><tspan
 						x="4" dy="1.2em" class="st18">Receive Message: </tspan><tspan class="st24">Message(OSR)</tspan><v:newlineChar/><v:newlineChar/></text>		</g>
 		<g id="shape218-123" v:mID="218" v:groupContext="shape" transform="translate(146.903,-1092.19)">
@@ -508,7 +508,7 @@
 			<rect x="0" y="2136.22" width="189.921" height="76.2199" class="st1"/>
 			<text x="49.42" y="2163.53" class="st2" v:langID="3081"><v:paragraph v:horizAlign="1"/><v:tabList/>Payment Request:<v:newlineChar/><tspan
 						x="10.67" dy="1.2em" class="st32">Message(PR) = ReceivingAddress +<v:newlineChar/></tspan><tspan x="28.83"
-						dy="1.2em" class="st32">Contract ID + AssetID + Qty</tspan></text>		</g>
+						dy="1.2em" class="st32">Contract ID + InstrumentID + Qty</tspan></text>		</g>
 		<g id="shape213-201" v:mID="213" v:groupContext="shape" transform="translate(331.606,-1462.76)">
 			<title>Sheet.213</title>
 			<desc>Transfer Permitted: OracleSignature(Message(OSR)+1) Or Transf...</desc>
@@ -751,7 +751,7 @@
 						x="4" dy="2.4em" class="st20">Transfer details:<v:newlineChar/></tspan><tspan x="4" dy="1.2em" class="st18">Sender:<v:tabChar/><v:tabChar/></tspan><tspan
 						dx="5.001em" class="st21">Sender<v:newlineChar/></tspan><tspan x="4" dy="1.2em" class="st18">Receiver 1:<v:tabChar/></tspan><tspan
 						dx="3.446em" class="st22">Receiver</tspan><tspan class="st22">’</tspan><tspan class="st22">s address<v:newlineChar/></tspan><tspan
-						x="4" dy="1.2em" class="st18">Qty x Asset:<v:tabChar/></tspan><tspan dx="3.114em" class="st18">100 x Tokens<v:newlineChar/></tspan><tspan
+						x="4" dy="1.2em" class="st18">Qty x Instrument:<v:tabChar/></tspan><tspan dx="3.114em" class="st18">100 x Tokens<v:newlineChar/></tspan><tspan
 						x="4" dy="1.2em" class="st18">Oracle Signature: <v:tabChar/></tspan><tspan dx="0.444em" class="st23">OracleSignature(Message(OSR)+1)<v:newlineChar/></tspan><tspan
 						x="4" dy="1.2em" class="st18">Receive Message: </tspan><tspan class="st24">Message(OSR)</tspan><v:newlineChar/><v:newlineChar/></text>		</g>
 		<g id="shape316-279" v:mID="316" v:groupContext="shape" transform="translate(146.431,-688.468)">

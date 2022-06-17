@@ -48,7 +48,7 @@ N: Transfer Action" transform="translate(2892 -8887)" fill="#707070" font-size="
     <text id="Settlements" transform="translate(2850 -8664)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">Settlements</tspan></text>
     <text id="Participant_1_1_:_0_tokens_Participant_2_2_:_300_tokens" data-name="Participant 1 (1): 0 tokens
 Participant 2 (2): 300 tokens" transform="translate(2850 -8629)" fill="#ef1818" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Participant 1 (1)</tspan><tspan y="0" fill="#707070">: 0 tokens</tspan><tspan fill="#7b1adb"><tspan x="0" y="19">Participant 2 (2)</tspan><tspan y="19" fill="#707070">: 300 tokens</tspan></tspan></text>
-    <text id="ASSETID_1_:_SHC1BvBMSEYstWetqTFn5Au4m47xJ..." data-name="ASSETID(1): SHC1BvBMSEYstWetqTFn5Au4m47xJ..." transform="translate(2839 -8683)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">ASSETID(1): SHC1BvBMSEYstWetqTFn5Au4m47xJ...</tspan></text>
+    <text id="INSTRUMENTID_1_:_SHC1BvBMSEYstWetqTFn5Au4m47xJ..." data-name="INSTRUMENTID(1): SHC1BvBMSEYstWetqTFn5Au4m47xJ..." transform="translate(2839 -8683)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">INSTRUMENTID(1): SHC1BvBMSEYstWetqTFn5Au4m47xJ...</tspan></text>
     <line id="Line_234" data-name="Line 234" y2="57" transform="translate(2840.5 -8661.5)" fill="none" stroke="#707070" stroke-width="1"/>
     <text id="Dust_Dust_Dust_Dust_0" data-name="Dust
 Dust
@@ -70,7 +70,7 @@ Dust
     </g>
     <text id="MESSAGE_PAYLOAD" data-name="MESSAGE PAYLOAD" transform="translate(2652 -9028)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">MESSAGE PAYLOAD</tspan></text>
     <line id="Line_237" data-name="Line 237" y2="40" transform="translate(2762.5 -9008.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
-    <text id="ASSETID_2_:_SHP3Bv3nmMkjknqTFn5Au4mFg7xJ..." data-name="ASSETID(2): SHP3Bv3nmMkjknqTFn5Au4mFg7xJ..." transform="translate(2838 -8587)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">ASSETID(2): SHP3Bv3nmMkjknqTFn5Au4mFg7xJ...</tspan></text>
+    <text id="INSTRUMENTID_2_:_SHP3Bv3nmMkjknqTFn5Au4mFg7xJ..." data-name="INSTRUMENTID(2): SHP3Bv3nmMkjknqTFn5Au4mFg7xJ..." transform="translate(2838 -8587)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">INSTRUMENTID(2): SHP3Bv3nmMkjknqTFn5Au4mFg7xJ...</tspan></text>
     <text id="Settlements-2" data-name="Settlements" transform="translate(2850 -8568)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">Settlements</tspan></text>
     <text id="Participant_2_1_:_0_tokens_Participant_1_2_:_100_tokens" data-name="Participant 2 (1): 0 tokens
 Participant 1 (2): 100 tokens" transform="translate(2850 -8533)" fill="#7b1adb" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Participant 2 (1): </tspan><tspan y="0" fill="#707070">0 tokens</tspan><tspan fill="#ef1818"><tspan x="0" y="19">Participant 1 (2): </tspan><tspan y="19" fill="#707070">100 tokens</tspan></tspan></text>

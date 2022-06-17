@@ -2,7 +2,7 @@
 
 - [General](#general)
 - [Contract Operations](#contract-operations)
-- [Asset Operations](#asset-operations)
+- [Instrument Operations](#instrument-operations)
 - [Transfer Operations](#transfer-operations)
 - [Governance Operations](#governance-operations)
 - [Enforcement Operations](#enforcement-operations)
@@ -39,26 +39,26 @@ The following lays out a set of rules applicable to different aspects of the tok
 4. Additional Contract Formation actions (revisions) are only valid if there is a preceding Contract Amendment action from the contract administration or the contract operator, if there is one.
 5. The first Contract Offer action determines the issuer’s public address and only one issuer per contract address is valid.
 
-<a name="asset-operations"></a>
-## Asset Operations
+<a name="instrument-operations"></a>
+## Instrument Operations
 
-1. Every token must have an Asset Creation action to be considered a valid token by the protocol. Asset Creation actions define the properties of the token.
-2. Every Asset Creation action must be preceded by a Contract Formation action.
-3. All Asset Creation actions must be preceded by a Asset Definition action.
-4. The Asset Definition action must come from the administration's address, which is set by the input address on the valid Contract Offer action.
-5. Only one Asset Creation (Rev.0) action can exist per AssetID, per Contract address.
-6. All additional revisions of an Asset Creation action must be preceded by an Asset Modification action initiated by the administration's public address.
-7. A contract’s public address can have an unlimited number of Asset Creation actions but each one must have a unique Asset ID. This property allows for a practically unlimited amount of non-fungible assets to be associated and controlled by each smart contract.
-8. The first Asset Creation action assigns the ownership of all tokens created to the issuer.
-9. Any changes to the qty of tokens for a given asset is account for by the issuer's balance.  If tokens are burned (Asset Modification), they can only be burned up to the quantity held by the issuer at the time of Asset Modification action.  If new tokens are created, then the new tokens are automatically assigned to the issuer's address.
-10. Asset ID's (Asset ID = Asset Type + base58(Asset Code + checksum)) cannot be modified.
+1. Every token must have an Instrument Creation action to be considered a valid token by the protocol. Instrument Creation actions define the properties of the token.
+2. Every Instrument Creation action must be preceded by a Contract Formation action.
+3. All Instrument Creation actions must be preceded by a Instrument Definition action.
+4. The Instrument Definition action must come from the administration's address, which is set by the input address on the valid Contract Offer action.
+5. Only one Instrument Creation (Rev.0) action can exist per InstrumentID, per Contract address.
+6. All additional revisions of an Instrument Creation action must be preceded by an Instrument Modification action initiated by the administration's public address.
+7. A contract’s public address can have an unlimited number of Instrument Creation actions but each one must have a unique Instrument ID. This property allows for a practically unlimited amount of non-fungible instruments to be associated and controlled by each smart contract.
+8. The first Instrument Creation action assigns the ownership of all tokens created to the issuer.
+9. Any changes to the qty of tokens for a given instrument is account for by the issuer's balance.  If tokens are burned (Instrument Modification), they can only be burned up to the quantity held by the issuer at the time of Instrument Modification action.  If new tokens are created, then the new tokens are automatically assigned to the issuer's address.
+10. Instrument ID's (Instrument ID = Instrument Type + base58(Instrument Code + checksum)) cannot be modified.
 
 <a name="transfer-operations"></a>
 ## Transfer Operations
 
-1. All Transfer operations must be in reference to an Asset ID specified by a valid Asset Creation action.
+1. All Transfer operations must be in reference to an Instrument ID specified by a valid Instrument Creation action.
 2. All Transfer actions must be responded to by a succeeding Settlement action or a Rejection message.
-3. If transfer restrictions have been placed upon an asset after a token holder legitimately took possession of it, then the token holder will still be able to transfer the tokens away.  The smart contract assumes that if an address holds a token, then it was approved by the smart contract with the rules that were relevent at the time of the transfer.
+3. If transfer restrictions have been placed upon an instrument after a token holder legitimately took possession of it, then the token holder will still be able to transfer the tokens away.  The smart contract assumes that if an address holds a token, then it was approved by the smart contract with the rules that were relevent at the time of the transfer.
 
 <a name="governance-operations"></a>
 ## Governance Operations

@@ -21,7 +21,7 @@
     </g>
     <text id="Settlement_Action_Payload" data-name="Settlement Action Payload" transform="translate(7015 -7367)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Settlement Action Payload</tspan></text>
     <text id="Settlements" transform="translate(7030 -7315)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">Settlements</tspan></text>
-    <text id="ASSETID:_COUdWmW30d_Med_Popcorn_Combo_Self_Serve" data-name="ASSETID: COUdWmW30d… Med Popcorn Combo, Self Serve" transform="translate(7019 -7349)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">ASSETID: COUdWmW30d… Med Popcorn Combo, Self Serve</tspan></text>
+    <text id="INSTRUMENTID:_COUdWmW30d_Med_Popcorn_Combo_Self_Serve" data-name="INSTRUMENTID: COUdWmW30d… Med Popcorn Combo, Self Serve" transform="translate(7019 -7349)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">INSTRUMENTID: COUdWmW30d… Med Popcorn Combo, Self Serve</tspan></text>
     <line id="Line_287" data-name="Line 287" y2="55" transform="translate(7020.5 -7327.5)" fill="none" stroke="#707070" stroke-width="1"/>
     <line id="Line_288" data-name="Line 288" y2="48" transform="translate(7138.5 -7449.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
     <text id="_2:_" data-name="2: " transform="translate(7076 -7471)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">2: </tspan></text>

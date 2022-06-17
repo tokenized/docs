@@ -983,7 +983,7 @@
       <text id="ContractAuthFlags" transform="translate(719 733)" fill="#707070" font-size="18" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">ContractAuthFlags</tspan></text>
       <text id="ContractFee" transform="translate(746 774)" fill="#707070" font-size="18" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">ContractFee</tspan></text>
       <text id="VotingSystem" transform="translate(739 815)" fill="#707070" font-size="18" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">VotingSystem</tspan></text>
-      <text id="RestrictedQtyAssets" transform="translate(714 855)" fill="#707070" font-size="18" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">RestrictedQtyAssets</tspan></text>
+      <text id="RestrictedQtyInstruments" transform="translate(714 855)" fill="#707070" font-size="18" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">RestrictedQtyInstruments</tspan></text>
       <text id="AdministrationProposal" transform="translate(698 896)" fill="#707070" font-size="18" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">AdministrationProposal</tspan></text>
       <text id="HolderProposal" transform="translate(731 937)" fill="#707070" font-size="18" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">HolderProposal</tspan></text>
       <text id="Oracles" transform="translate(765 978)" fill="#707070" font-size="18" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Oracles</tspan></text>

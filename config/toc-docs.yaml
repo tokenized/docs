@@ -10,8 +10,8 @@ Concepts:
     concepts/operations: "Operations"
     concepts/rules: "Rules"
     concepts/tokens: "Tokens"
-    concepts/asset-management: "Asset Management"
-    concepts/asset-transfers: "Asset Transfers"
+    concepts/instrument-management: "Instrument Management"
+    concepts/instrument-transfers: "Instrument Transfers"
     concepts/governance: "Governance"
     concepts/enforcement: "Enforcement"
     concepts/permissions: "Permissions"
@@ -23,7 +23,7 @@ Specification:
   pages:
     protocol/intro: "Introduction"
     protocol/actions: "Actions"
-    protocol/assets: "Assets"
+    protocol/instruments: "Instruments"
     protocol/messages: "Messages"
     protocol/resources: "Resources"
 

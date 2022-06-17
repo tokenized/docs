@@ -30,9 +30,9 @@
     <text id="Target_Address_1" data-name="Target Address 1" transform="translate(17856 -726)" fill="#e1b219" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Target Address 1</tspan></text>
     <text id="DETAILS" transform="translate(17799 -556)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">DETAILS</tspan></text>
     <path id="Path_162" data-name="Path 162" d="M0,0V59.179" transform="translate(17801.5 -539.5)" fill="none" stroke="#707070" stroke-width="1"/>
-    <text id="_-_AssetID_-_Quantities_-_Deposit_Quantity" data-name="- AssetID
+    <text id="_-_InstrumentID_-_Quantities_-_Deposit_Quantity" data-name="- InstrumentID
 - Quantities
-- Deposit Quantity" transform="translate(17808 -524)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">- AssetID</tspan><tspan x="0" y="19">- Quantities</tspan><tspan x="0" y="38">- Deposit Quantity</tspan></text>
+- Deposit Quantity" transform="translate(17808 -524)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">- InstrumentID</tspan><tspan x="0" y="19">- Quantities</tspan><tspan x="0" y="38">- Deposit Quantity</tspan></text>
     <text id="_1:_" data-name="1: " transform="translate(17838 -707)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1: </tspan></text>
     <text id="Dust-2" data-name="Dust" transform="translate(18033 -707)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust</tspan></text>
     <text id="Target_Address_2" data-name="Target Address 2" transform="translate(17856 -707)" fill="#e1b219" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Target Address 2</tspan></text>

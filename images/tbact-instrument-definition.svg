@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="628" height="557" viewBox="0 0 628 557">
+  <g id="tbact-instrument-definition" transform="translate(-11182 10710)">
+    <g id="Rectangle_301" data-name="Rectangle 301" transform="translate(11182 -10710)" fill="#fcfcfc" stroke="#707070" stroke-width="1">
+      <rect width="628" height="154" stroke="none"/>
+      <rect x="0.5" y="0.5" width="627" height="153" fill="none"/>
+    </g>
+    <line id="Line_360" data-name="Line 360" x2="1" y2="60" transform="translate(11386.5 -10644.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <text id="INPUTS" transform="translate(11199 -10644)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">INPUTS</tspan></text>
+    <text id="OUTPUTS_" data-name="OUTPUTS " transform="translate(11398 -10648)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">OUTPUTS </tspan></text>
+    <text id="_0:_" data-name="0: " transform="translate(11199 -10609)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: </tspan></text>
+    <text id="VALUE" transform="translate(11591 -10648)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">VALUE</tspan></text>
+    <g id="Rectangle_302" data-name="Rectangle 302" transform="translate(11326 -10524)" fill="#fcfcfc" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+      <rect width="421.499" height="371" stroke="none"/>
+      <rect x="0.5" y="0.5" width="420.499" height="370" fill="none"/>
+    </g>
+    <text id="Instrument_Definition_Action_Payload" data-name="Instrument Definition Action Payload" transform="translate(11337 -10489)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Instrument Definition Action Payload</tspan></text>
+    <line id="Line_361" data-name="Line 361" y2="66" transform="translate(11460.5 -10589.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
+    <text id="_0:_2" data-name="0: " transform="translate(11397 -10612)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: </tspan></text>
+    <text id="TBACT_Smart_Contract" data-name="TBACT Smart Contract" transform="translate(11416 -10613)" fill="#7030a0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">TBACT Smart Contract</tspan></text>
+    <text id="Contract_Fees_Response_Cost_" data-name="Contract Fees + Response Cost " transform="translate(11592 -10613)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Contract Fees + Response Cost </tspan></text>
+    <g id="Rectangle_303" data-name="Rectangle 303" transform="translate(11414 -10608)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+      <rect width="170" height="18" stroke="none"/>
+      <rect x="0.5" y="0.5" width="169" height="17" fill="none"/>
+    </g>
+    <text id="N:_" data-name="N: " transform="translate(11395 -10593)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N: </tspan></text>
+    <text id="Instrument_Definition_Action" data-name="Instrument Definition Action" transform="translate(11416 -10594)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Instrument Definition Action</tspan></text>
+    <text id="N_A" data-name="N/A" transform="translate(11592 -10594)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N/A</tspan></text>
+    <text id="TBACT" transform="translate(11217 -10609)" fill="#19e134" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">TBACT</tspan></text>
+    <text id="Not_Shown:_Change" data-name="Not Shown: Change" transform="translate(11592 -10575)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Not Shown: Change</tspan></text>
+    <text id="Request_Transaction_Instrument_Definition_" data-name="Request Transaction (Instrument Definition)" transform="translate(11194 -10677)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Request Transaction (Instrument Definition)</tspan></text>
+    <text id="Instrument_details:" data-name="Instrument details:" transform="translate(11337 -10480)" fill="#707070" font-size="14" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="15">Instrument details:</tspan></text>
+    <text id="Instrument_Type:_SHC_Instrument_Code:_C79A6D468E81B57B301240E3AA3A37A3FF961B2E_Instrument_Rules_:_Auth_flags_Administration_can_change_transfer_rules_Transfer_between_beneficiaries_only_trade_restrictions_No_trade_enforcement_Not_supported_voting_Absolute_majority_Quantit" data-name="Instrument Type:	SHC  Instrument Code:	C79A6D468E81B57B301240E3AA3A37A3FF961B2E Instrument Rules : 	Auth flags	Administration can change 	transfer rules	Transfer between beneficiaries only 	trade restrictions	No trade 	enforcement	Not supported 	voting		Absolute majority Quantit" transform="translate(11354 -10461)" fill="#707070" font-size="14" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="15">Instrument Type:	SHC </tspan><tspan x="0" y="34">Instrument Code:	</tspan><tspan x="0" y="53">C79A6D468E81B57B301240E3AA3A37A3FF961B2E</tspan><tspan x="0" y="72">Instrument Rules :</tspan><tspan x="0" y="91" xml:space="preserve">	Auth flags	Administration can change</tspan><tspan x="0" y="110" xml:space="preserve">	transfer rules	Transfer between beneficiaries only</tspan><tspan x="0" y="129" xml:space="preserve">	trade restrictions	No trade</tspan><tspan x="0" y="148" xml:space="preserve">	enforcement	Not supported</tspan><tspan x="0" y="167" xml:space="preserve">	voting		Absolute majority</tspan><tspan x="0" y="186">Quantity of tokens:	300 Tokens</tspan><tspan x="0" y="205">Contract fee currency:	AUD</tspan><tspan x="0" y="224">Governance:	Contract wide</tspan><tspan x="0" y="243">Instrument specific payload information:</tspan><tspan x="0" y="262" xml:space="preserve">	Ticker:		TBACT</tspan><tspan x="0" y="281" xml:space="preserve">	Description:	The Bob Angela Chris Trust</tspan></text>
+    <line id="Line_362" data-name="Line 362" y2="291" transform="translate(11343.5 -10460.5)" fill="none" stroke="#707070" stroke-width="1"/>
+  </g>
+</svg>
