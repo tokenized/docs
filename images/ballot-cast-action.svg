@@ -1,39 +1,46 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="632" height="313" viewBox="0 0 632 313">
-  <g id="ballot-cast-action" transform="translate(-2208 5718)">
-    <g id="Rectangle_270" data-name="Rectangle 270" transform="translate(2382 -5528)" fill="#fcfcfc" stroke="#707070" stroke-width="1" stroke-dasharray="3">
-      <rect width="230.499" height="123" stroke="none"/>
-      <rect x="0.5" y="0.5" width="229.499" height="122" fill="none"/>
-    </g>
-    <g id="Rectangle_271" data-name="Rectangle 271" transform="translate(2208 -5718)" fill="#fcfcfc" stroke="#707070" stroke-width="1">
-      <rect width="632" height="161" stroke="none"/>
-      <rect x="0.5" y="0.5" width="631" height="160" fill="none"/>
-    </g>
-    <text id="Response_Transaction_Ballot_Cast_" data-name="Response Transaction (Ballot Cast)" transform="translate(2223 -5685)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Response Transaction (Ballot Cast)</tspan></text>
-    <line id="Line_327" data-name="Line 327" y2="84" transform="translate(2417.5 -5657.5)" fill="none" stroke="#707070" stroke-width="1"/>
-    <text id="INPUTS" transform="translate(2223 -5656)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">INPUTS</tspan></text>
-    <text id="OUTPUTS_" data-name="OUTPUTS " transform="translate(2433 -5656)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">OUTPUTS </tspan></text>
-    <text id="_0:_" data-name="0: " transform="translate(2223 -5621)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: </tspan></text>
-    <text id="VALUE" transform="translate(2626 -5656)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">VALUE</tspan></text>
-    <text id="Ballot_Cast_Action_Payload" data-name="Ballot Cast Action Payload" transform="translate(2393 -5502)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Ballot Cast Action Payload</tspan></text>
-    <line id="Line_328" data-name="Line 328" y2="68" transform="translate(2495.5 -5595.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
-    <text id="_0:_2" data-name="0: " transform="translate(2433 -5621)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: </tspan></text>
-    <text id="Response_Costs" data-name="Response Costs" transform="translate(2627 -5621)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Response Costs</tspan></text>
-    <text id="Token_Holder" data-name="Token Holder" transform="translate(2241 -5621)" fill="#007deb" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Token Holder</tspan></text>
-    <g id="Rectangle_272" data-name="Rectangle 272" transform="translate(2449 -5597)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
-      <rect width="78" height="18" stroke="none"/>
-      <rect x="0.5" y="0.5" width="77" height="17" fill="none"/>
-    </g>
-    <text id="_2:_" data-name="2: " transform="translate(2430 -5583)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">2: </tspan></text>
-    <text id="Vote_Action" data-name="Vote Action" transform="translate(2451 -5583)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Vote Action</tspan></text>
-    <text id="Bitcoin_Change" data-name="Bitcoin Change" transform="translate(2627 -5602)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Bitcoin Change</tspan></text>
-    <text id="N_A" data-name="N/A" transform="translate(2627 -5583)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N/A</tspan></text>
-    <text id="Smart_Contract" data-name="Smart Contract" transform="translate(2451 -5621)" fill="#7030a0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Smart Contract</tspan></text>
-    <text id="DETAILS" transform="translate(2394 -5491)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">DETAILS</tspan></text>
-    <path id="Path_159" data-name="Path 159" d="M0,0V57.5" transform="translate(2396.5 -5474.5)" fill="none" stroke="#707070" stroke-width="1"/>
-    <text id="InstrumentID_Tx-ID_of_Vote_Vote_Choices" data-name="InstrumentID
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="632" height="314" viewBox="0 0 632 314">
+  <defs>
+    <clipPath id="clip-ballot-cast-action">
+      <rect width="632" height="314"/>
+    </clipPath>
+  </defs>
+  <g id="ballot-cast-action" clip-path="url(#clip-ballot-cast-action)">
+    <g id="ballot-cast-action-2" data-name="ballot-cast-action" transform="translate(-2208 5718)">
+      <g id="Rectangle_270" data-name="Rectangle 270" transform="translate(2382 -5528)" fill="#fcfcfc" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+        <rect width="230.499" height="123" stroke="none"/>
+        <rect x="0.5" y="0.5" width="229.499" height="122" fill="none"/>
+      </g>
+      <g id="Rectangle_271" data-name="Rectangle 271" transform="translate(2208 -5718)" fill="#fcfcfc" stroke="#707070" stroke-width="1">
+        <rect width="632" height="161" stroke="none"/>
+        <rect x="0.5" y="0.5" width="631" height="160" fill="none"/>
+      </g>
+      <text id="Response_Transaction_Ballot_Cast_" data-name="Response Transaction (Ballot Cast)" transform="translate(2223 -5685)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Response Transaction (Ballot Cast)</tspan></text>
+      <line id="Line_327" data-name="Line 327" y2="84" transform="translate(2417.5 -5657.5)" fill="none" stroke="#707070" stroke-width="1"/>
+      <text id="INPUTS" transform="translate(2223 -5656)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">INPUTS</tspan></text>
+      <text id="OUTPUTS_" data-name="OUTPUTS " transform="translate(2433 -5656)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">OUTPUTS </tspan></text>
+      <text id="_0:_" data-name="0: " transform="translate(2223 -5621)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: </tspan></text>
+      <text id="VALUE" transform="translate(2626 -5656)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">VALUE</tspan></text>
+      <text id="Ballot_Cast_Action_Payload" data-name="Ballot Cast Action Payload" transform="translate(2393 -5502)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Ballot Cast Action Payload</tspan></text>
+      <line id="Line_328" data-name="Line 328" y2="68" transform="translate(2495.5 -5595.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
+      <text id="_0:_2" data-name="0: " transform="translate(2433 -5621)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: </tspan></text>
+      <text id="Response_Costs" data-name="Response Costs" transform="translate(2627 -5621)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Response Costs</tspan></text>
+      <text id="Token_Holder" data-name="Token Holder" transform="translate(2241 -5621)" fill="#007deb" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Token Holder</tspan></text>
+      <g id="Rectangle_272" data-name="Rectangle 272" transform="translate(2449 -5597)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+        <rect width="78" height="18" stroke="none"/>
+        <rect x="0.5" y="0.5" width="77" height="17" fill="none"/>
+      </g>
+      <text id="_2:_" data-name="2: " transform="translate(2430 -5583)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">2: </tspan></text>
+      <text id="Vote_Action" data-name="Vote Action" transform="translate(2451 -5583)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Vote Action</tspan></text>
+      <text id="Bitcoin_Change" data-name="Bitcoin Change" transform="translate(2627 -5602)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Bitcoin Change</tspan></text>
+      <text id="N_A" data-name="N/A" transform="translate(2627 -5583)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N/A</tspan></text>
+      <text id="Smart_Contract" data-name="Smart Contract" transform="translate(2451 -5621)" fill="#7030a0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Smart Contract</tspan></text>
+      <text id="DETAILS" transform="translate(2394 -5491)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">DETAILS</tspan></text>
+      <path id="Path_159" data-name="Path 159" d="M0,0V57.5" transform="translate(2396.5 -5474.5)" fill="none" stroke="#707070" stroke-width="1"/>
+      <text id="InstrumentID_Tx-ID_of_Vote_Vote_Choices" data-name="InstrumentID
 Tx-ID of Vote
 Vote Choices" transform="translate(2403 -5459)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">InstrumentID</tspan><tspan x="0" y="19">Tx-ID of Vote</tspan><tspan x="0" y="38">Vote Choices</tspan></text>
-    <text id="_1:_" data-name="1: " transform="translate(2430 -5602)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1: </tspan></text>
-    <text id="Token_Holder-2" data-name="Token Holder" transform="translate(2451 -5602)" fill="#007deb" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Token Holder</tspan></text>
+      <text id="_1:_" data-name="1: " transform="translate(2430 -5602)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1: </tspan></text>
+      <text id="Token_Holder-2" data-name="Token Holder" transform="translate(2451 -5602)" fill="#007deb" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Token Holder</tspan></text>
+    </g>
   </g>
 </svg>

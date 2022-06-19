@@ -1,58 +1,65 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="628" height="825" viewBox="0 0 628 825">
-  <g id="contract-formation-action-amendment" transform="translate(-12722 901)">
-    <g id="Rectangle_326" data-name="Rectangle 326" transform="translate(12722 -901)" fill="#fcfcfc" stroke="#707070" stroke-width="1">
-      <rect width="628" height="164" stroke="none"/>
-      <rect x="0.5" y="0.5" width="627" height="163" fill="none"/>
-    </g>
-    <text id="Smart_Contract" data-name="Smart Contract" transform="translate(12758 -801)" fill="#7030a0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Smart Contract</tspan></text>
-    <text id="Response_Transaction_Contract_Formation_" data-name="Response Transaction (Contract Formation)" transform="translate(12739 -868)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Response Transaction (Contract Formation)</tspan></text>
-    <line id="Line_386" data-name="Line 386" y2="86" transform="translate(12927.5 -840.5)" fill="none" stroke="#707070" stroke-width="1"/>
-    <text id="INPUTS" transform="translate(12739 -836)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">INPUTS</tspan></text>
-    <text id="OUTPUTS_" data-name="OUTPUTS " transform="translate(12943 -839)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">OUTPUTS </tspan></text>
-    <text id="_0:_" data-name="0: " transform="translate(12739 -801)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: </tspan></text>
-    <text id="VALUE" transform="translate(13136 -839)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">VALUE</tspan></text>
-    <text id="_0:_2" data-name="0: " transform="translate(12943 -801)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: </tspan></text>
-    <text id="Smart_Contract-2" data-name="Smart Contract" transform="translate(12962 -801)" fill="#7030a0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Smart Contract</tspan></text>
-    <text id="Dust" transform="translate(13136 -801)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust</tspan></text>
-    <g id="Rectangle_327" data-name="Rectangle 327" transform="translate(12959 -777)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
-      <rect width="168" height="18" stroke="none"/>
-      <rect x="0.5" y="0.5" width="167" height="17" fill="none"/>
-    </g>
-    <text id="_2:_" data-name="2: " transform="translate(12943 -763)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">2: </tspan></text>
-    <text id="Contract_Formation_Action" data-name="Contract Formation Action" transform="translate(12961 -763)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Contract Formation Action</tspan></text>
-    <text id="Bitcoin_Change" data-name="Bitcoin Change" transform="translate(13136 -782)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Bitcoin Change</tspan></text>
-    <g id="Rectangle_328" data-name="Rectangle 328" transform="translate(12872 -717)" fill="#fcfcfc" stroke="#707070" stroke-width="1" stroke-dasharray="3">
-      <rect width="387.499" height="445" stroke="none"/>
-      <rect x="0.5" y="0.5" width="386.499" height="444" fill="none"/>
-    </g>
-    <text id="Contract_Formation_Action_Payload" data-name="Contract Formation Action Payload" transform="translate(12883 -684)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Contract Formation Action Payload</tspan></text>
-    <line id="Line_387" data-name="Line 387" y2="42" transform="translate(13003.5 -758.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
-    <text id="N_A" data-name="N/A" transform="translate(13136 -763)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N/A</tspan></text>
-    <line id="Line_388" data-name="Line 388" y2="362" transform="translate(12885.5 -653.5)" fill="none" stroke="#707070" stroke-width="1"/>
-    <text id="DETAILS" transform="translate(12883 -672)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">DETAILS</tspan></text>
-    <text id="_-_Contract_Name_-_Body_of_Agreement_hash_or_full_text_-_Contract_Type_-_Supporting_Docs_7z_compressed_volume_-_Governing_Law_-_Jurisdiction_-_Contract_Expiration_-_Contract_URI_-_Issuer_Identifying_Details_Name_LEI_address_etc._-_Issuer_Logo_-_Con" data-name="- Contract Name
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="628" height="825" viewBox="0 0 628 825">
+  <defs>
+    <clipPath id="clip-contract-formation-action-amendment">
+      <rect width="628" height="825"/>
+    </clipPath>
+  </defs>
+  <g id="contract-formation-action-amendment" clip-path="url(#clip-contract-formation-action-amendment)">
+    <g id="contract-formation-action-amendment-2" data-name="contract-formation-action-amendment" transform="translate(-12722 901)">
+      <g id="Rectangle_326" data-name="Rectangle 326" transform="translate(12722 -901)" fill="#fcfcfc" stroke="#707070" stroke-width="1">
+        <rect width="628" height="164" stroke="none"/>
+        <rect x="0.5" y="0.5" width="627" height="163" fill="none"/>
+      </g>
+      <text id="Smart_Contract" data-name="Smart Contract" transform="translate(12758 -801)" fill="#7030a0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Smart Contract</tspan></text>
+      <text id="Response_Transaction_Contract_Formation_" data-name="Response Transaction (Contract Formation)" transform="translate(12739 -868)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Response Transaction (Contract Formation)</tspan></text>
+      <line id="Line_386" data-name="Line 386" y2="86" transform="translate(12927.5 -840.5)" fill="none" stroke="#707070" stroke-width="1"/>
+      <text id="INPUTS" transform="translate(12739 -836)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">INPUTS</tspan></text>
+      <text id="OUTPUTS_" data-name="OUTPUTS " transform="translate(12943 -839)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">OUTPUTS </tspan></text>
+      <text id="_0:_" data-name="0: " transform="translate(12739 -801)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: </tspan></text>
+      <text id="VALUE" transform="translate(13136 -839)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">VALUE</tspan></text>
+      <text id="_0:_2" data-name="0: " transform="translate(12943 -801)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: </tspan></text>
+      <text id="Smart_Contract-2" data-name="Smart Contract" transform="translate(12962 -801)" fill="#7030a0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Smart Contract</tspan></text>
+      <text id="Dust" transform="translate(13136 -801)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust</tspan></text>
+      <g id="Rectangle_327" data-name="Rectangle 327" transform="translate(12959 -777)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+        <rect width="168" height="18" stroke="none"/>
+        <rect x="0.5" y="0.5" width="167" height="17" fill="none"/>
+      </g>
+      <text id="_2:_" data-name="2: " transform="translate(12943 -763)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">2: </tspan></text>
+      <text id="Contract_Formation_Action" data-name="Contract Formation Action" transform="translate(12961 -763)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Contract Formation Action</tspan></text>
+      <text id="Bitcoin_Change" data-name="Bitcoin Change" transform="translate(13136 -782)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Bitcoin Change</tspan></text>
+      <g id="Rectangle_328" data-name="Rectangle 328" transform="translate(12872 -717)" fill="#fcfcfc" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+        <rect width="387.499" height="445" stroke="none"/>
+        <rect x="0.5" y="0.5" width="386.499" height="444" fill="none"/>
+      </g>
+      <text id="Contract_Formation_Action_Payload" data-name="Contract Formation Action Payload" transform="translate(12883 -684)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Contract Formation Action Payload</tspan></text>
+      <line id="Line_387" data-name="Line 387" y2="42" transform="translate(13003.5 -758.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
+      <text id="N_A" data-name="N/A" transform="translate(13136 -763)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N/A</tspan></text>
+      <line id="Line_388" data-name="Line 388" y2="362" transform="translate(12885.5 -653.5)" fill="none" stroke="#707070" stroke-width="1"/>
+      <text id="DETAILS" transform="translate(12883 -672)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">DETAILS</tspan></text>
+      <text id="_-_Contract_Name_-_Body_of_Agreement_hash_or_full_text_-_Contract_Type_-_Supporting_Docs_7z_compressed_volume_-_Governing_Law_-_Jurisdiction_-_Contract_Expiration_-_URI_-_Issuer_Identifying_Details_Name_LEI_address_etc._-_Issuer_Logo_-_Contract_Ope" data-name="- Contract Name
 - Body of Agreement (hash or full text)
 - Contract Type
 - Supporting Docs (7z compressed volume)
 - Governing Law
 - Jurisdiction
 - Contract Expiration
-- Contract URI
+- URI
 - Issuer Identifying Details (Name, LEI, address, etc.)
 - Issuer Logo
-- Con" transform="translate(12893 -638)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">- Contract Name</tspan><tspan x="0" y="19">- Body of Agreement (hash or full text)</tspan><tspan x="0" y="38">- Contract Type</tspan><tspan x="0" y="57">- Supporting Docs (7z compressed volume)</tspan><tspan x="0" y="76">- Governing Law</tspan><tspan x="0" y="95">- Jurisdiction</tspan><tspan x="0" y="114">- Contract Expiration</tspan><tspan x="0" y="133">- Contract URI</tspan><tspan x="0" y="152">- Issuer Identifying Details (Name, LEI, address, etc.)</tspan><tspan x="0" y="171">- Issuer Logo</tspan><tspan x="0" y="190">- Contract Operator Identifying Details (Name, LEI, etc.)</tspan><tspan x="0" y="209">- Contract Authorization Flags</tspan><tspan x="0" y="228">- Contract Fee</tspan><tspan x="0" y="247">- Voting Systems</tspan><tspan x="0" y="266">- Instrument Qty Restrictions</tspan><tspan x="0" y="285">- Proposal Rights</tspan><tspan x="0" y="304">- Identity Oracles (Name, hostname:port, public key)</tspan><tspan font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="323">- Revision = N</tspan><tspan x="0" y="342">- Timestamp</tspan></tspan></text>
-    <g id="Rectangle_329" data-name="Rectangle 329" transform="translate(12871 -247)" fill="#fff" stroke="#cf730b" stroke-width="4">
-      <rect width="388" height="171" stroke="none"/>
-      <rect x="2" y="2" width="384" height="167" fill="none"/>
+- Contract Ope" transform="translate(12893 -638)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">- Contract Name</tspan><tspan x="0" y="19">- Body of Agreement (hash or full text)</tspan><tspan x="0" y="38">- Contract Type</tspan><tspan x="0" y="57">- Supporting Docs (7z compressed volume)</tspan><tspan x="0" y="76">- Governing Law</tspan><tspan x="0" y="95">- Jurisdiction</tspan><tspan x="0" y="114">- Contract Expiration</tspan><tspan x="0" y="133">- URI</tspan><tspan x="0" y="152">- Issuer Identifying Details (Name, LEI, address, etc.)</tspan><tspan x="0" y="171">- Issuer Logo</tspan><tspan x="0" y="190">- Contract Operator Identifying Details (Name, LEI, etc.)</tspan><tspan x="0" y="209">- Contract Authorization Flags</tspan><tspan x="0" y="228">- Contract Fee</tspan><tspan x="0" y="247">- Voting Systems</tspan><tspan x="0" y="266">- Instrument Qty Restrictions</tspan><tspan x="0" y="285">- Proposal Rights</tspan><tspan x="0" y="304">- Identity Oracles (Name, hostname:port, public key)</tspan><tspan font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="323">- Revision = N</tspan><tspan x="0" y="342">- Timestamp</tspan></tspan></text>
+      <g id="Rectangle_329" data-name="Rectangle 329" transform="translate(12871 -247)" fill="#fff" stroke="#cf730b" stroke-width="4">
+        <rect width="388" height="171" stroke="none"/>
+        <rect x="2" y="2" width="384" height="167" fill="none"/>
+      </g>
+      <text id="Note:" transform="translate(12887 -234)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="17">Note:</tspan></text>
+      <text id="The_smart_contract_responds_to_Contract_Amendments_by_publishing_a_new_Contract_Formation_action_with_all_of_the_amendments_accounted_for._The_Revision_will_increment_by_1_for_each_Contract_Formation_action_that_is_published._The_smart_contract_controls_" data-name="The smart contract responds to Contract Amendments by publishing a new Contract Formation action with all of the amendments accounted for.  The Revision will increment by 1 for each Contract Formation action that is published.  The smart contract controls " transform="translate(12887 -208)" fill="#707070" font-size="14" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="15">The smart contract responds to Contract Amendments </tspan><tspan x="0" y="34">by publishing a new Contract Formation action with all </tspan><tspan x="0" y="53" xml:space="preserve">of the amendments accounted for.  The Revision will </tspan><tspan x="0" y="72">increment by 1 for each Contract Formation action that </tspan><tspan x="0" y="91" xml:space="preserve">is published.  The smart contract controls the </tspan><tspan x="0" y="110">revisioning.</tspan></text>
+      <line id="Line_389" data-name="Line 389" y2="41" transform="translate(12929.5 -287.5)" fill="none" stroke="#cf730b" stroke-width="1" stroke-dasharray="3"/>
+      <g id="Rectangle_391" data-name="Rectangle 391" transform="translate(12891 -331)" fill="none" stroke="#cf730b" stroke-width="1" stroke-dasharray="3">
+        <rect width="101" height="42" stroke="none"/>
+        <rect x="0.5" y="0.5" width="100" height="41" fill="none"/>
+      </g>
+      <text id="_1:_" data-name="1: " transform="translate(12943 -782)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1: </tspan></text>
+      <text id="Contract_Operator" data-name="Contract Operator" transform="translate(12961 -782)" fill="#ef1818" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Contract Operator</tspan></text>
     </g>
-    <text id="Note:" transform="translate(12887 -234)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="17">Note:</tspan></text>
-    <text id="The_smart_contract_responds_to_Contract_Amendments_by_publishing_a_new_Contract_Formation_action_with_all_of_the_amendments_accounted_for._The_Revision_will_increment_by_1_for_each_Contract_Formation_action_that_is_published._The_smart_contract_controls_" data-name="The smart contract responds to Contract Amendments by publishing a new Contract Formation action with all of the amendments accounted for.  The Revision will increment by 1 for each Contract Formation action that is published.  The smart contract controls " transform="translate(12887 -208)" fill="#707070" font-size="14" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="15">The smart contract responds to Contract Amendments </tspan><tspan x="0" y="34">by publishing a new Contract Formation action with all </tspan><tspan x="0" y="53" xml:space="preserve">of the amendments accounted for.  The Revision will </tspan><tspan x="0" y="72">increment by 1 for each Contract Formation action that </tspan><tspan x="0" y="91" xml:space="preserve">is published.  The smart contract controls the </tspan><tspan x="0" y="110">revisioning.</tspan></text>
-    <line id="Line_389" data-name="Line 389" y2="41" transform="translate(12929.5 -287.5)" fill="none" stroke="#cf730b" stroke-width="1" stroke-dasharray="3"/>
-    <g id="Rectangle_391" data-name="Rectangle 391" transform="translate(12891 -331)" fill="none" stroke="#cf730b" stroke-width="1" stroke-dasharray="3">
-      <rect width="101" height="42" stroke="none"/>
-      <rect x="0.5" y="0.5" width="100" height="41" fill="none"/>
-    </g>
-    <text id="_1:_" data-name="1: " transform="translate(12943 -782)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1: </tspan></text>
-    <text id="Contract_Operator" data-name="Contract Operator" transform="translate(12961 -782)" fill="#ef1818" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Contract Operator</tspan></text>
   </g>
 </svg>

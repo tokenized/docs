@@ -1,40 +1,47 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="628" height="343" viewBox="0 0 628 343">
-  <g id="instrument-modification-action" transform="translate(-5917 889)">
-    <g id="Rectangle_331" data-name="Rectangle 331" transform="translate(5917 -889)" fill="#fcfcfc" stroke="#707070" stroke-width="1">
-      <rect width="628" height="164" stroke="none"/>
-      <rect x="0.5" y="0.5" width="627" height="163" fill="none"/>
-    </g>
-    <text id="Administration" transform="translate(5953 -789)" fill="#19e134" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Administration</tspan></text>
-    <text id="Request_Transaction_Instrument_Modification_" data-name="Request Transaction (Instrument Modification)" transform="translate(5934 -856)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Request Transaction (Instrument Modification)</tspan></text>
-    <line id="Line_390" data-name="Line 390" y2="86" transform="translate(6122.5 -828.5)" fill="none" stroke="#707070" stroke-width="1"/>
-    <text id="INPUTS" transform="translate(5934 -824)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">INPUTS</tspan></text>
-    <text id="OUTPUTS_" data-name="OUTPUTS " transform="translate(6138 -827)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">OUTPUTS </tspan></text>
-    <text id="_0:_" data-name="0: " transform="translate(5934 -789)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: </tspan></text>
-    <text id="VALUE" transform="translate(6338 -827)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">VALUE</tspan></text>
-    <text id="_0:_2" data-name="0: " transform="translate(6138 -789)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: </tspan></text>
-    <text id="Smart_Contract" data-name="Smart Contract" transform="translate(6157 -789)" fill="#7030a0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Smart Contract</tspan></text>
-    <text id="Contract_Fees_Response_Cost_" data-name="Contract Fees + Response Cost " transform="translate(6338 -789)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Contract Fees + Response Cost </tspan></text>
-    <g id="Rectangle_332" data-name="Rectangle 332" transform="translate(6154 -765)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
-      <rect width="167" height="18" stroke="none"/>
-      <rect x="0.5" y="0.5" width="166" height="17" fill="none"/>
-    </g>
-    <text id="_2:_" data-name="2: " transform="translate(6138 -751)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">2: </tspan></text>
-    <text id="Instrument_Modification_Action" data-name="Instrument Modification Action" transform="translate(6156 -751)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Instrument Modification Action</tspan></text>
-    <text id="N_A" data-name="N/A" transform="translate(6338 -751)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N/A</tspan></text>
-    <g id="Rectangle_333" data-name="Rectangle 333" transform="translate(6067 -705)" fill="#fcfcfc" stroke="#707070" stroke-width="1" stroke-dasharray="3">
-      <rect width="456.499" height="159" stroke="none"/>
-      <rect x="0.5" y="0.5" width="455.499" height="158" fill="none"/>
-    </g>
-    <text id="Instrument_Modification_Action_Payload" data-name="Instrument Modification Action Payload" transform="translate(6078 -672)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Instrument Modification Action Payload</tspan></text>
-    <line id="Line_391" data-name="Line 391" y2="42" transform="translate(6198.5 -746.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
-    <line id="Line_392" data-name="Line 392" y2="77" transform="translate(6080.5 -641.5)" fill="none" stroke="#707070" stroke-width="1"/>
-    <text id="DETAILS" transform="translate(6078 -660)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">DETAILS</tspan></text>
-    <text id="_-_Instrument_Type_and_Instrument_Code_-_Updated_Instrument_Revision_Must_be_sequential_from_last_valid_revision_-_Amendments_-_Ref_Tx-ID_only_for_governance_related_amendments_" data-name="- Instrument Type and Instrument Code
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="660" height="343" viewBox="0 0 660 343">
+  <defs>
+    <clipPath id="clip-instrument-modification-action">
+      <rect width="660" height="343"/>
+    </clipPath>
+  </defs>
+  <g id="instrument-modification-action" clip-path="url(#clip-instrument-modification-action)">
+    <g id="asset-modification-action" transform="translate(-5917 889)">
+      <g id="Rectangle_331" data-name="Rectangle 331" transform="translate(5917 -889)" fill="#fcfcfc" stroke="#707070" stroke-width="1">
+        <rect width="660" height="164" stroke="none"/>
+        <rect x="0.5" y="0.5" width="659" height="163" fill="none"/>
+      </g>
+      <text id="Administration" transform="translate(5953 -790)" fill="#19e134" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Administration</tspan></text>
+      <text id="Request_Transaction_Instrument_Modification_" data-name="Request Transaction (Instrument Modification)" transform="translate(5934 -856)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Request Transaction (Instrument Modification)</tspan></text>
+      <line id="Line_390" data-name="Line 390" y2="86" transform="translate(6122.5 -829.755)" fill="none" stroke="#707070" stroke-width="1"/>
+      <text id="INPUTS" transform="translate(5934 -825)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">INPUTS</tspan></text>
+      <text id="OUTPUTS_" data-name="OUTPUTS " transform="translate(6138 -828)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">OUTPUTS </tspan></text>
+      <text id="_0:_" data-name="0: " transform="translate(5934 -790)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: </tspan></text>
+      <text id="VALUE" transform="translate(6368 -828)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">VALUE</tspan></text>
+      <text id="_0:_2" data-name="0: " transform="translate(6138 -790)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: </tspan></text>
+      <text id="Smart_Contract" data-name="Smart Contract" transform="translate(6157 -790)" fill="#7030a0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Smart Contract</tspan></text>
+      <text id="Contract_Fees_Response_Cost_" data-name="Contract Fees + Response Cost " transform="translate(6368 -790)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Contract Fees + Response Cost </tspan></text>
+      <g id="Rectangle_332" data-name="Rectangle 332" transform="translate(6154 -767)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+        <rect width="198" height="18" stroke="none"/>
+        <rect x="0.5" y="0.5" width="197" height="17" fill="none"/>
+      </g>
+      <text id="_2:_" data-name="2: " transform="translate(6138 -753)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">2: </tspan></text>
+      <text id="Instrument_Modification_Action" data-name="Instrument Modification Action" transform="translate(6156 -753)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Instrument Modification Action</tspan></text>
+      <text id="N_A" data-name="N/A" transform="translate(6368 -753)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N/A</tspan></text>
+      <g id="Rectangle_333" data-name="Rectangle 333" transform="translate(6067 -710.331)" fill="#fcfcfc" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+        <rect width="492.499" height="159" stroke="none"/>
+        <rect x="0.5" y="0.5" width="491.499" height="158" fill="none"/>
+      </g>
+      <text id="Instrument_Modification_Action_Payload" data-name="Instrument Modification Action Payload" transform="translate(6078 -675)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Instrument Modification Action Payload</tspan></text>
+      <line id="Line_391" data-name="Line 391" y2="42" transform="translate(6198.5 -749.024)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
+      <line id="Line_392" data-name="Line 392" y2="77" transform="translate(6080.5 -646.831)" fill="none" stroke="#707070" stroke-width="1"/>
+      <text id="DETAILS" transform="translate(6078 -664)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">DETAILS</tspan></text>
+      <text id="_-_Instrument_Type_and_Instrument_Code_-_Updated_Instrument_Revision_Must_be_sequential_from_last_valid_revision_-_Amendments_-_Ref_Tx-ID_only_for_governance_related_amendments_" data-name="- Instrument Type and Instrument Code
 - Updated Instrument Revision (Must be sequential from last valid revision)
 - Amendments
-- Ref Tx-ID (only for governance related amendments)" transform="translate(6088 -626)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">- Instrument Type and Instrument Code</tspan><tspan x="0" y="19">- Updated Instrument Revision (Must be sequential from last valid revision)</tspan><tspan x="0" y="38">- Amendments</tspan><tspan x="0" y="57">- Ref Tx-ID (only for governance related amendments)</tspan></text>
-    <text id="_1:_" data-name="1: " transform="translate(6138 -770)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1: </tspan></text>
-    <text id="Administration-2" data-name="Administration" transform="translate(6156 -770)" fill="#19e134" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Administration</tspan></text>
-    <text id="Bitcoin_Change" data-name="Bitcoin Change" transform="translate(6338 -770)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Bitcoin Change</tspan></text>
+- Ref Tx-ID (only for governance related amendments)" transform="translate(6088 -631)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">- Instrument Type and Instrument Code</tspan><tspan x="0" y="19">- Updated Instrument Revision (Must be sequential from last valid revision)</tspan><tspan x="0" y="38">- Amendments</tspan><tspan x="0" y="57">- Ref Tx-ID (only for governance related amendments)</tspan></text>
+      <text id="_1:_" data-name="1: " transform="translate(6138 -772)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1: </tspan></text>
+      <text id="Administration-2" data-name="Administration" transform="translate(6156 -772)" fill="#19e134" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Administration</tspan></text>
+      <text id="Bitcoin_Change" data-name="Bitcoin Change" transform="translate(6368 -772)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Bitcoin Change</tspan></text>
+    </g>
   </g>
 </svg>

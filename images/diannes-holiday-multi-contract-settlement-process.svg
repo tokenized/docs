@@ -1,186 +1,193 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="721" height="1609.866" viewBox="0 0 721 1609.866">
-  <g id="diannes-holiday-multi-contract-settlement-process" transform="translate(-20070 10686)">
-    <g id="Rectangle_251" data-name="Rectangle 251" transform="translate(20070 -10686)" fill="#fcfcfc" stroke="#707070" stroke-width="1">
-      <rect width="395" height="206" stroke="none"/>
-      <rect x="0.5" y="0.5" width="394" height="205" fill="none"/>
-    </g>
-    <text id="Transfer_Two_Contracts_" data-name="Transfer (Two Contracts)" transform="translate(20086 -10654)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Transfer (Two Contracts)</tspan></text>
-    <text id="INPUTS" transform="translate(20086 -10631)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">INPUTS</tspan></text>
-    <text id="OUTPUTS_" data-name="OUTPUTS " transform="translate(20240 -10631)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">OUTPUTS </tspan></text>
-    <path id="Path_165" data-name="Path 165" d="M2.467,0V77.893" transform="translate(20212.033 -10629.5)" fill="none" stroke="#707070" stroke-width="1"/>
-    <text id="_0-1:_Contract_Addresses_" data-name="0-1: Contract Addresses " transform="translate(20240 -10599)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0-1: Contract Addresses </tspan></text>
-    <g id="Group_66" data-name="Group 66" transform="translate(-373 66)">
-      <line id="Line_307" data-name="Line 307" x2="20" transform="translate(20634.09 -10527.808) rotate(90)" fill="none" stroke="#707070" stroke-width="3"/>
-      <g id="chevron-pointing-to-the-left" transform="translate(20625.809 -10504.952) rotate(-91)">
-        <path id="Path_60" data-name="Path 60" d="M6.15,8.276l6.607-5.2a1.205,1.205,0,0,0,.509-.965,1.168,1.168,0,0,0-.489-.961l-1-.795a1.887,1.887,0,0,0-1.216-.389,1.934,1.934,0,0,0-1.225.4L.469,7.327a1.206,1.206,0,0,0-.509.965,1.169,1.169,0,0,0,.489.961l8.721,6.9a1.888,1.888,0,0,0,1.217.389,1.931,1.931,0,0,0,1.224-.4l1.019-.8a1.179,1.179,0,0,0,.02-1.926Z" transform="translate(0 0)" fill="#707070"/>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="721" height="1610" viewBox="0 0 721 1610">
+  <defs>
+    <clipPath id="clip-diannes-holiday-multi-contract-settlement-process">
+      <rect width="721" height="1610"/>
+    </clipPath>
+  </defs>
+  <g id="diannes-holiday-multi-contract-settlement-process" clip-path="url(#clip-diannes-holiday-multi-contract-settlement-process)">
+    <g id="diannes-holiday-multi-contract-settlement-process-2" data-name="diannes-holiday-multi-contract-settlement-process" transform="translate(-20070 10686)">
+      <g id="Rectangle_251" data-name="Rectangle 251" transform="translate(20070 -10686)" fill="#fcfcfc" stroke="#707070" stroke-width="1">
+        <rect width="395" height="206" stroke="none"/>
+        <rect x="0.5" y="0.5" width="394" height="205" fill="none"/>
       </g>
-    </g>
-    <g id="Group_65" data-name="Group 65" transform="translate(485 -381)">
-      <g id="Rectangle_258" data-name="Rectangle 258" transform="translate(19998 -10305)" fill="#fff" stroke="#cf730b" stroke-width="4">
-        <rect width="308" height="205.917" stroke="none"/>
-        <rect x="2" y="2" width="304" height="201.917" fill="none"/>
+      <text id="Transfer_Two_Contracts_" data-name="Transfer (Two Contracts)" transform="translate(20086 -10654)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Transfer (Two Contracts)</tspan></text>
+      <text id="INPUTS" transform="translate(20086 -10631)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">INPUTS</tspan></text>
+      <text id="OUTPUTS_" data-name="OUTPUTS " transform="translate(20240 -10631)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">OUTPUTS </tspan></text>
+      <path id="Path_165" data-name="Path 165" d="M2.467,0V77.893" transform="translate(20212.033 -10629.5)" fill="none" stroke="#707070" stroke-width="1"/>
+      <text id="_0-1:_Contract_Addresses_" data-name="0-1: Contract Addresses " transform="translate(20240 -10599)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0-1: Contract Addresses </tspan></text>
+      <g id="Group_66" data-name="Group 66" transform="translate(-373 66)">
+        <line id="Line_307" data-name="Line 307" x2="20" transform="translate(20634.09 -10527.808) rotate(90)" fill="none" stroke="#707070" stroke-width="3"/>
+        <g id="chevron-pointing-to-the-left" transform="translate(20625.809 -10504.952) rotate(-91)">
+          <path id="Path_60" data-name="Path 60" d="M6.15,8.276l6.607-5.2a1.205,1.205,0,0,0,.509-.965,1.168,1.168,0,0,0-.489-.961l-1-.795a1.887,1.887,0,0,0-1.216-.389,1.934,1.934,0,0,0-1.225.4L.469,7.327a1.206,1.206,0,0,0-.509.965,1.169,1.169,0,0,0,.489.961l8.721,6.9a1.888,1.888,0,0,0,1.217.389,1.931,1.931,0,0,0,1.224-.4l1.019-.8a1.179,1.179,0,0,0,.02-1.926Z" transform="translate(0 0)" fill="#707070"/>
+        </g>
       </g>
-      <text id="Note:" transform="translate(20014 -10299)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="17">Note:</tspan></text>
-      <text id="The_Transfer_action_is_pushed_to_both._The_first_contract_looks_for_a_second_output_in_the_transaction_that_is_sent_to_its_address._This_is_the_Inter_Contract_Messaging_Coin_and_is_used_to_cover_the_cost_of_passing_messages_between_contracts_to_build_the" data-name="The Transfer action is pushed to both. The first contract looks for a second output in the transaction that is sent to its address. This is the &apos;Inter Contract Messaging Coin&apos; and is used to cover the cost of passing messages between contracts to build the" transform="translate(20014 -10268)" fill="#707070" font-size="14" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="15">The Transfer action is pushed to both. The </tspan><tspan x="0" y="34">first contract looks for a second output in </tspan><tspan x="0" y="53">the transaction that is sent to its address. </tspan><tspan x="0" y="72">This is the &apos;Inter Contract Messaging Coin&apos; </tspan><tspan x="0" y="91">and is used to cover the cost of passing </tspan><tspan x="0" y="110">messages between contracts to build the </tspan><tspan x="0" y="129">settlement action.</tspan></text>
-    </g>
-    <text id="_0-10:_" data-name="0-10: " transform="translate(20086 -10599)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0-10: </tspan></text>
-    <text id="_11_-_21:_" data-name="11 - 21: " transform="translate(20086 -10580)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">11 - 21: </tspan></text>
-    <text id="Token_Air" data-name="Token Air" transform="translate(20121 -10599)" fill="#002060" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Token Air</tspan></text>
-    <text id="Dianne" transform="translate(20136 -10580)" fill="#cd18ef" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dianne</tspan></text>
-    <text id="_2-5:_Send_Receive_Addresses" data-name="2-5: Send &amp; Receive Addresses" transform="translate(20240 -10580)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">2-5: Send &amp; Receive Addresses</tspan></text>
-    <text id="_6:_Inter-Contract_Messaging_Coin_sent_to_TokenAir_Frequent_Flyer_Contract_" data-name="6: Inter-Contract Messaging Coin
+      <g id="Group_65" data-name="Group 65" transform="translate(485 -381)">
+        <g id="Rectangle_258" data-name="Rectangle 258" transform="translate(19998 -10305)" fill="#fff" stroke="#cf730b" stroke-width="4">
+          <rect width="308" height="205.917" stroke="none"/>
+          <rect x="2" y="2" width="304" height="201.917" fill="none"/>
+        </g>
+        <text id="Note:" transform="translate(20014 -10299)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="17">Note:</tspan></text>
+        <text id="The_Transfer_action_is_pushed_to_both._The_first_contract_looks_for_a_second_output_in_the_transaction_that_is_sent_to_its_address._This_is_the_Inter_Contract_Messaging_Coin_and_is_used_to_cover_the_cost_of_passing_messages_between_contracts_to_build_the" data-name="The Transfer action is pushed to both. The first contract looks for a second output in the transaction that is sent to its address. This is the &apos;Inter Contract Messaging Coin&apos; and is used to cover the cost of passing messages between contracts to build the" transform="translate(20014 -10268)" fill="#707070" font-size="14" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="15">The Transfer action is pushed to both. The </tspan><tspan x="0" y="34">first contract looks for a second output in </tspan><tspan x="0" y="53">the transaction that is sent to its address. </tspan><tspan x="0" y="72">This is the &apos;Inter Contract Messaging Coin&apos; </tspan><tspan x="0" y="91">and is used to cover the cost of passing </tspan><tspan x="0" y="110">messages between contracts to build the </tspan><tspan x="0" y="129">settlement action.</tspan></text>
+      </g>
+      <text id="_0-10:_" data-name="0-10: " transform="translate(20086 -10599)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0-10: </tspan></text>
+      <text id="_11_-_21:_" data-name="11 - 21: " transform="translate(20086 -10580)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">11 - 21: </tspan></text>
+      <text id="Token_Air" data-name="Token Air" transform="translate(20121 -10599)" fill="#002060" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Token Air</tspan></text>
+      <text id="Dianne" transform="translate(20136 -10580)" fill="#cd18ef" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dianne</tspan></text>
+      <text id="_2-5:_Send_Receive_Addresses" data-name="2-5: Send &amp; Receive Addresses" transform="translate(20240 -10580)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">2-5: Send &amp; Receive Addresses</tspan></text>
+      <text id="_6:_Inter-Contract_Messaging_Coin_sent_to_TokenAir_Frequent_Flyer_Contract_" data-name="6: Inter-Contract Messaging Coin
 (sent to TokenAir Frequent Flyer
  Contract)" transform="translate(20240 -10561)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">6: Inter-Contract Messaging Coin</tspan><tspan x="0" y="19">(sent to </tspan><tspan y="19" fill="#ef1818">TokenAir Frequent Flyer</tspan><tspan fill="#ef1818"><tspan x="0" y="38" xml:space="preserve"> Contract</tspan><tspan y="38" fill="#707070">)</tspan></tspan></text>
-    <g id="Rectangle_364" data-name="Rectangle 364" transform="translate(20070 -10410)" fill="#fcfcfc" stroke="#707070" stroke-width="1">
-      <rect width="721" height="165" stroke="none"/>
-      <rect x="0.5" y="0.5" width="720" height="164" fill="none"/>
-    </g>
-    <text id="Message_Transaction_Settlement_Request_" data-name="Message Transaction (Settlement Request)" transform="translate(20085 -10375)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Message Transaction (Settlement Request)</tspan></text>
-    <line id="Line_455" data-name="Line 455" y2="70" transform="translate(20310.5 -10349.5)" fill="none" stroke="#707070" stroke-width="1"/>
-    <text id="INPUTS-2" data-name="INPUTS" transform="translate(20085 -10348)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">INPUTS</tspan></text>
-    <text id="OUTPUTS_2" data-name="OUTPUTS " transform="translate(20319 -10348)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">OUTPUTS </tspan></text>
-    <text id="_0:_TokenAir_Frequent_Flyer_Contract_Inter-Contract_Messaging_Coin_" data-name="0: TokenAir Frequent Flyer Contract
+      <g id="Rectangle_364" data-name="Rectangle 364" transform="translate(20070 -10410)" fill="#fcfcfc" stroke="#707070" stroke-width="1">
+        <rect width="721" height="165" stroke="none"/>
+        <rect x="0.5" y="0.5" width="720" height="164" fill="none"/>
+      </g>
+      <text id="Message_Transaction_Settlement_Request_" data-name="Message Transaction (Settlement Request)" transform="translate(20085 -10375)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Message Transaction (Settlement Request)</tspan></text>
+      <line id="Line_455" data-name="Line 455" y2="70" transform="translate(20310.5 -10349.5)" fill="none" stroke="#707070" stroke-width="1"/>
+      <text id="INPUTS-2" data-name="INPUTS" transform="translate(20085 -10348)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">INPUTS</tspan></text>
+      <text id="OUTPUTS_2" data-name="OUTPUTS " transform="translate(20319 -10348)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">OUTPUTS </tspan></text>
+      <text id="_0:_TokenAir_Frequent_Flyer_Contract_Inter-Contract_Messaging_Coin_" data-name="0: TokenAir Frequent Flyer Contract
 (Inter-Contract Messaging Coin)" transform="translate(20085 -10328)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="15">0: </tspan><tspan y="15" fill="#ef1818">TokenAir Frequent Flyer Contract</tspan><tspan x="0" y="34">(Inter-Contract Messaging Coin)</tspan></text>
-    <text id="_0:_TokenAir_Booking_Contract_1:_Message_Action" data-name="0: TokenAir Booking Contract
+      <text id="_0:_TokenAir_Booking_Contract_1:_Message_Action" data-name="0: TokenAir Booking Contract
 1: Message Action" transform="translate(20319 -10328)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="15">0: </tspan><tspan y="15" fill="#7b1adb">TokenAir Booking Contract</tspan><tspan x="0" y="34">1: Message Action</tspan></text>
-    <text id="VALUE" transform="translate(20512 -10348)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">VALUE</tspan></text>
-    <text id="Change_Inter-Contract_Messaging_Coin_N_A" data-name="Change (Inter-Contract Messaging Coin)
+      <text id="VALUE" transform="translate(20512 -10348)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">VALUE</tspan></text>
+      <text id="Change_Inter-Contract_Messaging_Coin_N_A" data-name="Change (Inter-Contract Messaging Coin)
 N/A" transform="translate(20512 -10327)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="15">Change (Inter-Contract Messaging Coin)</tspan><tspan x="0" y="34">N/A</tspan></text>
-    <g id="Rectangle_365" data-name="Rectangle 365" transform="translate(20331 -10307)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
-      <rect width="103" height="18" stroke="none"/>
-      <rect x="0.5" y="0.5" width="102" height="17" fill="none"/>
-    </g>
-    <g id="Rectangle_366" data-name="Rectangle 366" transform="translate(20070 -10228)" fill="#fcfcfc" stroke="#707070" stroke-width="1" stroke-dasharray="3">
-      <rect width="721" height="317.866" stroke="none"/>
-      <rect x="0.5" y="0.5" width="720" height="316.866" fill="none"/>
-    </g>
-    <text id="Message_Action_Payload" data-name="Message Action Payload" transform="translate(20085 -10180)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Message Action Payload</tspan></text>
-    <line id="Line_456" data-name="Line 456" y2="63" transform="translate(20365.5 -10289.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
-    <text id="MESSAGE_TYPE:_1002_-_Settlement_Request" data-name="MESSAGE TYPE: 1002 - Settlement Request" transform="translate(20085 -10159)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">MESSAGE TYPE: 1002 - Settlement Request</tspan></text>
-    <text id="Message_Receivers" data-name="Message Receivers" transform="translate(20102 -10135)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">Message Receivers</tspan></text>
-    <text id="TokenAir_Booking_Contract_" data-name="TokenAir Booking Contract
+      <g id="Rectangle_365" data-name="Rectangle 365" transform="translate(20331 -10307)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+        <rect width="103" height="18" stroke="none"/>
+        <rect x="0.5" y="0.5" width="102" height="17" fill="none"/>
+      </g>
+      <g id="Rectangle_366" data-name="Rectangle 366" transform="translate(20070 -10228)" fill="#fcfcfc" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+        <rect width="721" height="317.866" stroke="none"/>
+        <rect x="0.5" y="0.5" width="720" height="316.866" fill="none"/>
+      </g>
+      <text id="Message_Action_Payload" data-name="Message Action Payload" transform="translate(20085 -10180)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Message Action Payload</tspan></text>
+      <line id="Line_456" data-name="Line 456" y2="63" transform="translate(20365.5 -10289.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
+      <text id="MESSAGE_TYPE:_1002_-_Settlement_Request" data-name="MESSAGE TYPE: 1002 - Settlement Request" transform="translate(20085 -10159)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">MESSAGE TYPE: 1002 - Settlement Request</tspan></text>
+      <text id="Message_Receivers" data-name="Message Receivers" transform="translate(20102 -10135)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">Message Receivers</tspan></text>
+      <text id="TokenAir_Booking_Contract_" data-name="TokenAir Booking Contract
 " transform="translate(20102 -10100)" fill="#7b1adb" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">TokenAir Booking Contract</tspan><tspan x="0" y="19"></tspan></text>
-    <line id="Line_457" data-name="Line 457" y2="37" transform="translate(20090.5 -10134.5)" fill="none" stroke="#707070" stroke-width="1"/>
-    <g id="Rectangle_367" data-name="Rectangle 367" transform="translate(20081 -10090)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
-      <rect width="127" height="21" stroke="none"/>
-      <rect x="0.5" y="0.5" width="126" height="20" fill="none"/>
-    </g>
-    <text id="MESSAGE_PAYLOAD" data-name="MESSAGE PAYLOAD" transform="translate(20085 -10089)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">MESSAGE PAYLOAD</tspan></text>
-    <line id="Line_458" data-name="Line 458" y2="40" transform="translate(20195.5 -10069.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
-    <g id="Rectangle_368" data-name="Rectangle 368" transform="translate(20189 -10029)" fill="#fcfcfc" stroke="#707070" stroke-width="1" stroke-dasharray="3">
-      <rect width="455.499" height="96" stroke="none"/>
-      <rect x="0.5" y="0.5" width="454.499" height="95" fill="none"/>
-    </g>
-    <text id="Settlement_Action_Payload" data-name="Settlement Action Payload" transform="translate(20200 -9994)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Settlement Action Payload</tspan></text>
-    <text id="TokenAir_Frequent_Flyer_Contract_Settlement_Data" data-name="TokenAir Frequent Flyer Contract Settlement Data" transform="translate(20200 -9957)" fill="#ef1818" font-size="18" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">TokenAir Frequent Flyer Contract Settlement Data</tspan></text>
-    <g id="Rectangle_379" data-name="Rectangle 379" transform="translate(20070 -9842)" fill="#fcfcfc" stroke="#707070" stroke-width="1">
-      <rect width="721" height="165" stroke="none"/>
-      <rect x="0.5" y="0.5" width="720" height="164" fill="none"/>
-    </g>
-    <text id="Message_Transaction_Signature_Request_" data-name="Message Transaction (Signature Request)" transform="translate(20085 -9807)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Message Transaction (Signature Request)</tspan></text>
-    <line id="Line_470" data-name="Line 470" y2="70" transform="translate(20288.5 -9781.5)" fill="none" stroke="#707070" stroke-width="1"/>
-    <text id="INPUTS-3" data-name="INPUTS" transform="translate(20085 -9780)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">INPUTS</tspan></text>
-    <text id="OUTPUTS_3" data-name="OUTPUTS " transform="translate(20296 -9780)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">OUTPUTS </tspan></text>
-    <text id="_0:_TokenAir_Booking_Contract_Inter-Contract_Messaging_Coin_" data-name="0: TokenAir Booking Contract
+      <line id="Line_457" data-name="Line 457" y2="37" transform="translate(20090.5 -10134.5)" fill="none" stroke="#707070" stroke-width="1"/>
+      <g id="Rectangle_367" data-name="Rectangle 367" transform="translate(20081 -10090)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+        <rect width="127" height="21" stroke="none"/>
+        <rect x="0.5" y="0.5" width="126" height="20" fill="none"/>
+      </g>
+      <text id="MESSAGE_PAYLOAD" data-name="MESSAGE PAYLOAD" transform="translate(20085 -10089)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">MESSAGE PAYLOAD</tspan></text>
+      <line id="Line_458" data-name="Line 458" y2="40" transform="translate(20195.5 -10069.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
+      <g id="Rectangle_368" data-name="Rectangle 368" transform="translate(20189 -10029)" fill="#fcfcfc" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+        <rect width="455.499" height="96" stroke="none"/>
+        <rect x="0.5" y="0.5" width="454.499" height="95" fill="none"/>
+      </g>
+      <text id="Settlement_Action_Payload" data-name="Settlement Action Payload" transform="translate(20200 -9994)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Settlement Action Payload</tspan></text>
+      <text id="TokenAir_Frequent_Flyer_Contract_Settlement_Data" data-name="TokenAir Frequent Flyer Contract Settlement Data" transform="translate(20200 -9957)" fill="#ef1818" font-size="18" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">TokenAir Frequent Flyer Contract Settlement Data</tspan></text>
+      <g id="Rectangle_379" data-name="Rectangle 379" transform="translate(20070 -9842)" fill="#fcfcfc" stroke="#707070" stroke-width="1">
+        <rect width="721" height="165" stroke="none"/>
+        <rect x="0.5" y="0.5" width="720" height="164" fill="none"/>
+      </g>
+      <text id="Message_Transaction_Signature_Request_" data-name="Message Transaction (Signature Request)" transform="translate(20085 -9807)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Message Transaction (Signature Request)</tspan></text>
+      <line id="Line_470" data-name="Line 470" y2="70" transform="translate(20288.5 -9781.5)" fill="none" stroke="#707070" stroke-width="1"/>
+      <text id="INPUTS-3" data-name="INPUTS" transform="translate(20085 -9780)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">INPUTS</tspan></text>
+      <text id="OUTPUTS_3" data-name="OUTPUTS " transform="translate(20296 -9780)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">OUTPUTS </tspan></text>
+      <text id="_0:_TokenAir_Booking_Contract_Inter-Contract_Messaging_Coin_" data-name="0: TokenAir Booking Contract
 (Inter-Contract Messaging Coin)" transform="translate(20085 -9760)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="15">0: </tspan><tspan y="15" fill="#7b1adb">TokenAir Booking Contract</tspan><tspan x="0" y="34">(Inter-Contract Messaging Coin)</tspan></text>
-    <text id="_0:_TokenAir_Frequent_Flyer_Contract_1:_Message_Action" data-name="0: TokenAir Frequent Flyer Contract
+      <text id="_0:_TokenAir_Frequent_Flyer_Contract_1:_Message_Action" data-name="0: TokenAir Frequent Flyer Contract
 1: Message Action" transform="translate(20296 -9760)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="15">0:</tspan><tspan y="15" fill="#7b1adb"> </tspan><tspan y="15" fill="#ef1818">TokenAir Frequent Flyer Contract</tspan><tspan x="0" y="34">1: Message Action</tspan></text>
-    <text id="VALUE-2" data-name="VALUE" transform="translate(20527 -9780)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">VALUE</tspan></text>
-    <text id="Change_Inter-Contract_Messaging_Coin_N_A-2" data-name="Change (Inter-Contract Messaging Coin)
+      <text id="VALUE-2" data-name="VALUE" transform="translate(20527 -9780)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">VALUE</tspan></text>
+      <text id="Change_Inter-Contract_Messaging_Coin_N_A-2" data-name="Change (Inter-Contract Messaging Coin)
 N/A" transform="translate(20527 -9760)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="15">Change (Inter-Contract Messaging Coin)</tspan><tspan x="0" y="34">N/A</tspan></text>
-    <g id="Rectangle_380" data-name="Rectangle 380" transform="translate(20308 -9739)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
-      <rect width="103" height="18" stroke="none"/>
-      <rect x="0.5" y="0.5" width="102" height="17" fill="none"/>
-    </g>
-    <g id="Rectangle_381" data-name="Rectangle 381" transform="translate(20070 -9660)" fill="#fcfcfc" stroke="#707070" stroke-width="1" stroke-dasharray="3">
-      <rect width="721" height="583.866" stroke="none"/>
-      <rect x="0.5" y="0.5" width="720" height="582.866" fill="none"/>
-    </g>
-    <text id="Message_Action_Payload-2" data-name="Message Action Payload" transform="translate(20085 -9612)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Message Action Payload</tspan></text>
-    <line id="Line_471" data-name="Line 471" y2="63" transform="translate(20342.5 -9721.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
-    <text id="MESSAGE_TYPE:_1002_-_Signature_Request" data-name="MESSAGE TYPE: 1002 - Signature Request" transform="translate(20085 -9591)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">MESSAGE TYPE: 1002 - Signature Request</tspan></text>
-    <text id="Message_Receivers-2" data-name="Message Receivers" transform="translate(20102 -9567)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">Message Receivers</tspan></text>
-    <text id="TokenAir_Frequent_Flyer_Contract" data-name="TokenAir Frequent Flyer Contract" transform="translate(20102 -9532)" fill="#ef1818" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">TokenAir Frequent Flyer Contract</tspan></text>
-    <line id="Line_472" data-name="Line 472" y2="37" transform="translate(20090.5 -9566.5)" fill="none" stroke="#707070" stroke-width="1"/>
-    <g id="Rectangle_382" data-name="Rectangle 382" transform="translate(20081 -9522)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
-      <rect width="127" height="21" stroke="none"/>
-      <rect x="0.5" y="0.5" width="126" height="20" fill="none"/>
-    </g>
-    <text id="MESSAGE_PAYLOAD-2" data-name="MESSAGE PAYLOAD" transform="translate(20085 -9521)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">MESSAGE PAYLOAD</tspan></text>
-    <line id="Line_473" data-name="Line 473" y2="40" transform="translate(20195.5 -9501.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
-    <g id="Group_71" data-name="Group 71" transform="translate(1001.5 243)">
-      <g id="Group_94" data-name="Group 94" transform="translate(5 -2)">
-        <g id="Rectangle_362" data-name="Rectangle 362" transform="translate(19093 -9704)" fill="#fcfcfc" stroke="#707070" stroke-width="1">
-          <rect width="657.688" height="226" stroke="none"/>
-          <rect x="0.5" y="0.5" width="656.688" height="225" fill="none"/>
+      <g id="Rectangle_380" data-name="Rectangle 380" transform="translate(20308 -9739)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+        <rect width="103" height="18" stroke="none"/>
+        <rect x="0.5" y="0.5" width="102" height="17" fill="none"/>
+      </g>
+      <g id="Rectangle_381" data-name="Rectangle 381" transform="translate(20070 -9660)" fill="#fcfcfc" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+        <rect width="721" height="583.866" stroke="none"/>
+        <rect x="0.5" y="0.5" width="720" height="582.866" fill="none"/>
+      </g>
+      <text id="Message_Action_Payload-2" data-name="Message Action Payload" transform="translate(20085 -9612)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Message Action Payload</tspan></text>
+      <line id="Line_471" data-name="Line 471" y2="63" transform="translate(20342.5 -9721.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
+      <text id="MESSAGE_TYPE:_1002_-_Signature_Request" data-name="MESSAGE TYPE: 1002 - Signature Request" transform="translate(20085 -9591)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">MESSAGE TYPE: 1002 - Signature Request</tspan></text>
+      <text id="Message_Receivers-2" data-name="Message Receivers" transform="translate(20102 -9567)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">Message Receivers</tspan></text>
+      <text id="TokenAir_Frequent_Flyer_Contract" data-name="TokenAir Frequent Flyer Contract" transform="translate(20102 -9532)" fill="#ef1818" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">TokenAir Frequent Flyer Contract</tspan></text>
+      <line id="Line_472" data-name="Line 472" y2="37" transform="translate(20090.5 -9566.5)" fill="none" stroke="#707070" stroke-width="1"/>
+      <g id="Rectangle_382" data-name="Rectangle 382" transform="translate(20081 -9522)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+        <rect width="127" height="21" stroke="none"/>
+        <rect x="0.5" y="0.5" width="126" height="20" fill="none"/>
+      </g>
+      <text id="MESSAGE_PAYLOAD-2" data-name="MESSAGE PAYLOAD" transform="translate(20085 -9521)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">MESSAGE PAYLOAD</tspan></text>
+      <line id="Line_473" data-name="Line 473" y2="40" transform="translate(20195.5 -9501.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
+      <g id="Group_71" data-name="Group 71" transform="translate(1001.5 243)">
+        <g id="Group_94" data-name="Group 94" transform="translate(5 -2)">
+          <g id="Rectangle_362" data-name="Rectangle 362" transform="translate(19093 -9704)" fill="#fcfcfc" stroke="#707070" stroke-width="1">
+            <rect width="657.688" height="226" stroke="none"/>
+            <rect x="0.5" y="0.5" width="656.688" height="225" fill="none"/>
+          </g>
+          <text id="Response_Transaction_Settlement_" data-name="Response Transaction (Settlement)" transform="translate(19105 -9671)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Response Transaction (Settlement)</tspan></text>
+          <line id="Line_454" data-name="Line 454" y2="117" transform="translate(19399.529 -9643.5)" fill="none" stroke="#707070" stroke-width="1"/>
+          <text id="INPUTS-4" data-name="INPUTS" transform="translate(19106 -9642)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">INPUTS</tspan></text>
+          <text id="OUTPUTS_4" data-name="OUTPUTS " transform="translate(19409.406 -9642)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">OUTPUTS </tspan></text>
+          <text id="_0:_" data-name="0: " transform="translate(19106 -9607)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: </tspan></text>
+          <text id="VALUE-3" data-name="VALUE" transform="translate(19649.432 -9642)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">VALUE</tspan></text>
+          <text id="_1:_" data-name="1: " transform="translate(19106 -9588)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1: </tspan></text>
+          <text id="_0:_2" data-name="0: " transform="translate(19407.766 -9607)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: </tspan></text>
+          <text id="_1:_2" data-name="1: " transform="translate(19407.766 -9588)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1: </tspan></text>
+          <text id="_2:_" data-name="2: " transform="translate(19407.766 -9569)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">2: </tspan></text>
+          <text id="_3-12:_" data-name="3-12: " transform="translate(19407.766 -9550)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">3-12: </tspan></text>
+          <text id="Dianne-2" data-name="Dianne" transform="translate(19427.311 -9607)" fill="#cd18ef" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dianne</tspan></text>
+          <text id="Edward" transform="translate(19427.385 -9588)" fill="#b15f02" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Edward</tspan></text>
+          <text id="Token_Air_4-13_" data-name="Token Air (4-13)" transform="translate(19444.662 -9550)" fill="#002060" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Token Air (4-13)</tspan></text>
+          <g id="Rectangle_363" data-name="Rectangle 363" transform="translate(19427.178 -9507)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+            <rect width="116" height="18" stroke="none"/>
+            <rect x="0.5" y="0.5" width="115" height="17" fill="none"/>
+          </g>
+          <text id="Settlement_Action" data-name="Settlement Action" transform="translate(19429.135 -9493)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Settlement Action</tspan></text>
+          <text id="Dust" transform="translate(19649.662 -9607)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust</tspan></text>
+          <text id="Dust_" data-name="Dust " transform="translate(19649.813 -9588)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust </tspan></text>
+          <text id="Dust-2" data-name="Dust" transform="translate(19649.662 -9550)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust</tspan></text>
+          <text id="N_A" data-name="N/A" transform="translate(19649.5 -9493)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N/A</tspan></text>
+          <text id="TokenAir_Frequent_Flyer_Contract_unsigned_" data-name="TokenAir Frequent Flyer Contract (unsigned)" transform="translate(19124 -9607)" fill="#ef1818" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">TokenAir Frequent Flyer Contract (unsigned)</tspan></text>
+          <text id="TokenAir_Booking_Contract_signed_" data-name="TokenAir Booking Contract (signed)" transform="translate(19124 -9588)" fill="#7b1adb" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">TokenAir Booking Contract (signed)</tspan></text>
+          <text id="Contract_Fees" data-name="Contract Fees" transform="translate(19649.688 -9512)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Contract Fees</tspan></text>
+          <text id="_15:_" data-name="15: " transform="translate(19407.826 -9493)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">15: </tspan></text>
+          <text id="Fran" transform="translate(19426.977 -9569)" fill="#00b050" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Fran</tspan></text>
+          <text id="Dust-3" data-name="Dust" transform="translate(19649.662 -9569)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust</tspan></text>
+          <text id="Booking_Contract_Operator" data-name="Booking Contract Operator" transform="translate(19429.135 -9512)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Booking Contract Operator</tspan></text>
+          <text id="_14:_" data-name="14: " transform="translate(19407.826 -9512)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">14: </tspan></text>
+          <text id="Frequent_Flyer_Contract_Operator" data-name="Frequent Flyer Contract Operator" transform="translate(19429.135 -9531)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Frequent Flyer Contract Operator</tspan></text>
+          <text id="_13:_" data-name="13: " transform="translate(19407.826 -9531)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">13: </tspan></text>
+          <text id="Contract_Fees-2" data-name="Contract Fees" transform="translate(19649.5 -9531)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Contract Fees</tspan></text>
         </g>
-        <text id="Response_Transaction_Settlement_" data-name="Response Transaction (Settlement)" transform="translate(19105 -9671)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Response Transaction (Settlement)</tspan></text>
-        <line id="Line_454" data-name="Line 454" y2="117" transform="translate(19399.529 -9643.5)" fill="none" stroke="#707070" stroke-width="1"/>
-        <text id="INPUTS-4" data-name="INPUTS" transform="translate(19106 -9642)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">INPUTS</tspan></text>
-        <text id="OUTPUTS_4" data-name="OUTPUTS " transform="translate(19409.406 -9642)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">OUTPUTS </tspan></text>
-        <text id="_0:_" data-name="0: " transform="translate(19106 -9607)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: </tspan></text>
-        <text id="VALUE-3" data-name="VALUE" transform="translate(19649.432 -9642)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">VALUE</tspan></text>
-        <text id="_1:_" data-name="1: " transform="translate(19106 -9588)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1: </tspan></text>
-        <text id="_0:_2" data-name="0: " transform="translate(19407.766 -9607)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: </tspan></text>
-        <text id="_1:_2" data-name="1: " transform="translate(19407.766 -9588)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1: </tspan></text>
-        <text id="_2:_" data-name="2: " transform="translate(19407.766 -9569)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">2: </tspan></text>
-        <text id="_3-12:_" data-name="3-12: " transform="translate(19407.766 -9550)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">3-12: </tspan></text>
-        <text id="Dianne-2" data-name="Dianne" transform="translate(19427.311 -9607)" fill="#cd18ef" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dianne</tspan></text>
-        <text id="Edward" transform="translate(19427.385 -9588)" fill="#b15f02" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Edward</tspan></text>
-        <text id="Token_Air_4-13_" data-name="Token Air (4-13)" transform="translate(19444.662 -9550)" fill="#002060" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Token Air (4-13)</tspan></text>
-        <g id="Rectangle_363" data-name="Rectangle 363" transform="translate(19427.178 -9507)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
-          <rect width="116" height="18" stroke="none"/>
-          <rect x="0.5" y="0.5" width="115" height="17" fill="none"/>
+      </g>
+      <g id="Rectangle_383" data-name="Rectangle 383" transform="translate(20234 -9214)" fill="#fcfcfc" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+        <rect width="418.499" height="114" stroke="none"/>
+        <rect x="0.5" y="0.5" width="417.499" height="113" fill="none"/>
+      </g>
+      <text id="Settlement_Action_Payload-2" data-name="Settlement Action Payload" transform="translate(20245 -9187)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Settlement Action Payload</tspan></text>
+      <line id="Line_474" data-name="Line 474" y2="35" transform="translate(20489.5 -9248.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
+      <text id="TokenAir_Frequent_Flyer_Contract_Settlement_Data-2" data-name="TokenAir Frequent Flyer Contract Settlement Data" transform="translate(20245 -9150)" fill="#ef1818" font-size="18" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">TokenAir Frequent Flyer Contract Settlement Data</tspan></text>
+      <g id="Group_72" data-name="Group 72" transform="translate(-203 637)">
+        <line id="Line_307-2" data-name="Line 307" x2="20" transform="translate(20634.09 -10527.808) rotate(90)" fill="none" stroke="#707070" stroke-width="3"/>
+        <g id="chevron-pointing-to-the-left-2" data-name="chevron-pointing-to-the-left" transform="translate(20625.809 -10504.952) rotate(-91)">
+          <path id="Path_60-2" data-name="Path 60" d="M6.15,8.276l6.607-5.2a1.205,1.205,0,0,0,.509-.965,1.168,1.168,0,0,0-.489-.961l-1-.795a1.887,1.887,0,0,0-1.216-.389,1.934,1.934,0,0,0-1.225.4L.469,7.327a1.206,1.206,0,0,0-.509.965,1.169,1.169,0,0,0,.489.961l8.721,6.9a1.888,1.888,0,0,0,1.217.389,1.931,1.931,0,0,0,1.224-.4l1.019-.8a1.179,1.179,0,0,0,.02-1.926Z" transform="translate(0 0)" fill="#707070"/>
         </g>
-        <text id="Settlement_Action" data-name="Settlement Action" transform="translate(19429.135 -9493)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Settlement Action</tspan></text>
-        <text id="Dust" transform="translate(19649.662 -9607)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust</tspan></text>
-        <text id="Dust_" data-name="Dust " transform="translate(19649.813 -9588)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust </tspan></text>
-        <text id="Dust-2" data-name="Dust" transform="translate(19649.662 -9550)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust</tspan></text>
-        <text id="N_A" data-name="N/A" transform="translate(19649.5 -9493)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N/A</tspan></text>
-        <text id="TokenAir_Frequent_Flyer_Contract_unsigned_" data-name="TokenAir Frequent Flyer Contract (unsigned)" transform="translate(19124 -9607)" fill="#ef1818" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">TokenAir Frequent Flyer Contract (unsigned)</tspan></text>
-        <text id="TokenAir_Booking_Contract_signed_" data-name="TokenAir Booking Contract (signed)" transform="translate(19124 -9588)" fill="#7b1adb" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">TokenAir Booking Contract (signed)</tspan></text>
-        <text id="Contract_Fees" data-name="Contract Fees" transform="translate(19649.688 -9512)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Contract Fees</tspan></text>
-        <text id="_15:_" data-name="15: " transform="translate(19407.826 -9493)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">15: </tspan></text>
-        <text id="Fran" transform="translate(19426.977 -9569)" fill="#00b050" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Fran</tspan></text>
-        <text id="Dust-3" data-name="Dust" transform="translate(19649.662 -9569)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dust</tspan></text>
-        <text id="Booking_Contract_Operator" data-name="Booking Contract Operator" transform="translate(19429.135 -9512)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Booking Contract Operator</tspan></text>
-        <text id="_14:_" data-name="14: " transform="translate(19407.826 -9512)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">14: </tspan></text>
-        <text id="Frequent_Flyer_Contract_Operator" data-name="Frequent Flyer Contract Operator" transform="translate(19429.135 -9531)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Frequent Flyer Contract Operator</tspan></text>
-        <text id="_13:_" data-name="13: " transform="translate(19407.826 -9531)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">13: </tspan></text>
-        <text id="Contract_Fees-2" data-name="Contract Fees" transform="translate(19649.5 -9531)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Contract Fees</tspan></text>
       </g>
-    </g>
-    <g id="Rectangle_383" data-name="Rectangle 383" transform="translate(20234 -9214)" fill="#fcfcfc" stroke="#707070" stroke-width="1" stroke-dasharray="3">
-      <rect width="418.499" height="114" stroke="none"/>
-      <rect x="0.5" y="0.5" width="417.499" height="113" fill="none"/>
-    </g>
-    <text id="Settlement_Action_Payload-2" data-name="Settlement Action Payload" transform="translate(20245 -9187)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Settlement Action Payload</tspan></text>
-    <line id="Line_474" data-name="Line 474" y2="35" transform="translate(20489.5 -9248.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
-    <text id="TokenAir_Frequent_Flyer_Contract_Settlement_Data-2" data-name="TokenAir Frequent Flyer Contract Settlement Data" transform="translate(20245 -9150)" fill="#ef1818" font-size="18" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">TokenAir Frequent Flyer Contract Settlement Data</tspan></text>
-    <g id="Group_72" data-name="Group 72" transform="translate(-203 637)">
-      <line id="Line_307-2" data-name="Line 307" x2="20" transform="translate(20634.09 -10527.808) rotate(90)" fill="none" stroke="#707070" stroke-width="3"/>
-      <g id="chevron-pointing-to-the-left-2" data-name="chevron-pointing-to-the-left" transform="translate(20625.809 -10504.952) rotate(-91)">
-        <path id="Path_60-2" data-name="Path 60" d="M6.15,8.276l6.607-5.2a1.205,1.205,0,0,0,.509-.965,1.168,1.168,0,0,0-.489-.961l-1-.795a1.887,1.887,0,0,0-1.216-.389,1.934,1.934,0,0,0-1.225.4L.469,7.327a1.206,1.206,0,0,0-.509.965,1.169,1.169,0,0,0,.489.961l8.721,6.9a1.888,1.888,0,0,0,1.217.389,1.931,1.931,0,0,0,1.224-.4l1.019-.8a1.179,1.179,0,0,0,.02-1.926Z" transform="translate(0 0)" fill="#707070"/>
+      <text id="TokenAir_Booking_Contract_Settlement_Data" data-name="TokenAir Booking Contract Settlement Data" transform="translate(20245 -9120)" fill="#7b1adb" font-size="18" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">TokenAir Booking Contract Settlement Data</tspan></text>
+      <g id="Group_74" data-name="Group 74" transform="translate(440 95)">
+        <g id="Rectangle_258-2" data-name="Rectangle 258" transform="translate(19998 -10305)" fill="#fff" stroke="#cf730b" stroke-width="4">
+          <rect width="308" height="155.5" stroke="none"/>
+          <rect x="2" y="2" width="304" height="151.5" fill="none"/>
+        </g>
+        <text id="Note:-2" data-name="Note:" transform="translate(20014 -10299)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="17">Note:</tspan></text>
+        <text id="The_TokenAir_Frequent_Flyer_Contract_builds_a_the_settlement_actions_that_it_will_be_contributing_to_this_transaction_and_passes_the_action_to_the_TokenAir_Booking_contract_using_a_Settlement_Request_message." data-name="The TokenAir Frequent Flyer Contract builds a the  settlement actions that it will be contributing to this transaction and passes the action to the TokenAir Booking contract using a &apos;Settlement Request&apos; message." transform="translate(20014 -10268)" fill="#707070" font-size="14" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="15">The TokenAir Frequent Flyer Contract </tspan><tspan x="0" y="34" xml:space="preserve">builds a the  settlement actions that it will </tspan><tspan x="0" y="53">be contributing to this transaction and </tspan><tspan x="0" y="72">passes the action to the TokenAir Booking </tspan><tspan x="0" y="91">contract using a &apos;Settlement Request&apos; </tspan><tspan x="0" y="110">message.</tspan></text>
       </g>
-    </g>
-    <text id="TokenAir_Booking_Contract_Settlement_Data" data-name="TokenAir Booking Contract Settlement Data" transform="translate(20245 -9120)" fill="#7b1adb" font-size="18" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">TokenAir Booking Contract Settlement Data</tspan></text>
-    <g id="Group_74" data-name="Group 74" transform="translate(440 95)">
-      <g id="Rectangle_258-2" data-name="Rectangle 258" transform="translate(19998 -10305)" fill="#fff" stroke="#cf730b" stroke-width="4">
-        <rect width="308" height="155.5" stroke="none"/>
-        <rect x="2" y="2" width="304" height="151.5" fill="none"/>
+      <g id="Group_76" data-name="Group 76" transform="translate(446 661)">
+        <g id="Rectangle_258-3" data-name="Rectangle 258" transform="translate(19998 -10305)" fill="#fff" stroke="#cf730b" stroke-width="4">
+          <rect width="308" height="166.5" stroke="none"/>
+          <rect x="2" y="2" width="304" height="162.5" fill="none"/>
+        </g>
+        <text id="Note:-3" data-name="Note:" transform="translate(20014 -10299)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="17">Note:</tspan></text>
+        <text id="The_TokenAir_booking_contract_receives_the_settlement_request._Adding_it_s_own_signature_it_packages_it_into_a_new_Signature_Request_message_and_sends_it_to_the_TokenAir_Frequent_Flyer_Contract_for_the_final_signature._" data-name="The TokenAir booking contract receives the settlement request. Adding it&apos;s own signature it packages it into a new Signature Request message and sends it to the TokenAir Frequent Flyer Contract for the final signature. " transform="translate(20014 -10268)" fill="#707070" font-size="14" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="15">The TokenAir booking contract receives </tspan><tspan x="0" y="34">the settlement request. Adding it&apos;s own </tspan><tspan x="0" y="53">signature it packages it into a new </tspan><tspan x="0" y="72">Signature Request message and sends it to </tspan><tspan x="0" y="91">the TokenAir Frequent Flyer Contract for </tspan><tspan x="0" y="110">the final signature. </tspan></text>
       </g>
-      <text id="Note:-2" data-name="Note:" transform="translate(20014 -10299)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="17">Note:</tspan></text>
-      <text id="The_TokenAir_Frequent_Flyer_Contract_builds_a_the_settlement_actions_that_it_will_be_contributing_to_this_transaction_and_passes_the_action_to_the_TokenAir_Booking_contract_using_a_Settlement_Request_message." data-name="The TokenAir Frequent Flyer Contract builds a the  settlement actions that it will be contributing to this transaction and passes the action to the TokenAir Booking contract using a &apos;Settlement Request&apos; message." transform="translate(20014 -10268)" fill="#707070" font-size="14" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="15">The TokenAir Frequent Flyer Contract </tspan><tspan x="0" y="34" xml:space="preserve">builds a the  settlement actions that it will </tspan><tspan x="0" y="53">be contributing to this transaction and </tspan><tspan x="0" y="72">passes the action to the TokenAir Booking </tspan><tspan x="0" y="91">contract using a &apos;Settlement Request&apos; </tspan><tspan x="0" y="110">message.</tspan></text>
+      <text id="N:_" data-name="N: " transform="translate(20240 -10504)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N: </tspan></text>
+      <text id="Transfer_Action" data-name="Transfer Action" transform="translate(20258 -10504)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Transfer Action</tspan></text>
     </g>
-    <g id="Group_76" data-name="Group 76" transform="translate(446 661)">
-      <g id="Rectangle_258-3" data-name="Rectangle 258" transform="translate(19998 -10305)" fill="#fff" stroke="#cf730b" stroke-width="4">
-        <rect width="308" height="166.5" stroke="none"/>
-        <rect x="2" y="2" width="304" height="162.5" fill="none"/>
-      </g>
-      <text id="Note:-3" data-name="Note:" transform="translate(20014 -10299)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="17">Note:</tspan></text>
-      <text id="The_TokenAir_booking_contract_receives_the_settlement_request._Adding_it_s_own_signature_it_packages_it_into_a_new_Signature_Request_message_and_sends_it_to_the_TokenAir_Frequent_Flyer_Contract_for_the_final_signature._" data-name="The TokenAir booking contract receives the settlement request. Adding it&apos;s own signature it packages it into a new Signature Request message and sends it to the TokenAir Frequent Flyer Contract for the final signature. " transform="translate(20014 -10268)" fill="#707070" font-size="14" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="15">The TokenAir booking contract receives </tspan><tspan x="0" y="34">the settlement request. Adding it&apos;s own </tspan><tspan x="0" y="53">signature it packages it into a new </tspan><tspan x="0" y="72">Signature Request message and sends it to </tspan><tspan x="0" y="91">the TokenAir Frequent Flyer Contract for </tspan><tspan x="0" y="110">the final signature. </tspan></text>
-    </g>
-    <text id="N:_" data-name="N: " transform="translate(20240 -10504)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N: </tspan></text>
-    <text id="Transfer_Action" data-name="Transfer Action" transform="translate(20258 -10504)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Transfer Action</tspan></text>
   </g>
 </svg>

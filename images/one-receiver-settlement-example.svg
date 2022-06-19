@@ -1,52 +1,59 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="587" height="554" viewBox="0 0 587 554">
-  <g id="one-receiver-settlement-example" transform="translate(452 10684)">
-    <g id="Rectangle_49" data-name="Rectangle 49" transform="translate(-452 -10684)" fill="#fcfcfc" stroke="#707070" stroke-width="1">
-      <rect width="587" height="173" stroke="none"/>
-      <rect x="0.5" y="0.5" width="586" height="172" fill="none"/>
-    </g>
-    <line id="Line_100" data-name="Line 100" y2="99" transform="translate(-243.5 -10628.5)" fill="none" stroke="#707070" stroke-width="1"/>
-    <text id="INPUTS" transform="translate(-439 -10627)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">INPUTS</tspan></text>
-    <text id="OUTPUTS_" data-name="OUTPUTS " transform="translate(-236 -10627)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">OUTPUTS </tspan></text>
-    <text id="_0:_Smart_Contract_" data-name="0: Smart Contract
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="587" height="548" viewBox="0 0 587 548">
+  <defs>
+    <clipPath id="clip-one-receiver-settlement-example">
+      <rect width="587" height="548"/>
+    </clipPath>
+  </defs>
+  <g id="one-receiver-settlement-example" clip-path="url(#clip-one-receiver-settlement-example)">
+    <g id="one-receiver-settlement-example-2" data-name="one-receiver-settlement-example" transform="translate(452 10684)">
+      <g id="Rectangle_49" data-name="Rectangle 49" transform="translate(-452 -10684)" fill="#fcfcfc" stroke="#707070" stroke-width="1">
+        <rect width="587" height="173" stroke="none"/>
+        <rect x="0.5" y="0.5" width="586" height="172" fill="none"/>
+      </g>
+      <line id="Line_100" data-name="Line 100" y2="99" transform="translate(-243.5 -10628.5)" fill="none" stroke="#707070" stroke-width="1"/>
+      <text id="INPUTS" transform="translate(-439 -10627)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">INPUTS</tspan></text>
+      <text id="OUTPUTS_" data-name="OUTPUTS " transform="translate(-236 -10627)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">OUTPUTS </tspan></text>
+      <text id="_0:_Smart_Contract_" data-name="0: Smart Contract
 " transform="translate(-439 -10607)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="15">0: Smart Contract</tspan><tspan x="0" y="34"></tspan></text>
-    <text id="_0:_Administration_1_1:_Bill_2:_Contract_Operator_3:_Settlement_Action" data-name="0: Administration (1)
+      <text id="_0:_Administration_1_1:_Bill_2:_Contract_Operator_3:_Settlement_Action" data-name="0: Administration (1)
 1: Bill
 2: Contract Operator
-3: Settlement Action" transform="translate(-236 -10607)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="15">0: </tspan><tspan y="15" fill="#ef1818">Administration (1)</tspan><tspan x="0" y="34">1: </tspan><tspan y="34" fill="#19e134">Bill</tspan><tspan y="34"></tspan><tspan x="0" y="53">2:</tspan><tspan y="53" xml:space="preserve" fill="#ef1818"> Contract Operator</tspan><tspan x="0" y="72">3: Settlement Action</tspan></text>
-    <text id="VALUE" transform="translate(-63 -10627)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">VALUE</tspan></text>
-    <text id="Dust_Dust_Operator_Fee_optional_N_A" data-name="Dust
+3: Settlement Action" transform="translate(-236 -10607)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="15">0: </tspan><tspan y="15" fill="#ef1818">Administration (1)</tspan><tspan x="0" y="34">1: </tspan><tspan y="34" fill="#19e134">Bill</tspan><tspan y="34"></tspan><tspan x="0" y="53">2:</tspan><tspan y="53" fill="#ef1818"> </tspan><tspan y="53">Contract Operator</tspan><tspan x="0" y="72">3: Settlement Action</tspan></text>
+      <text id="VALUE" transform="translate(-63 -10627)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">VALUE</tspan></text>
+      <text id="Dust_Dust_Operator_Fee_optional_N_A" data-name="Dust
 Dust
 Operator Fee (optional)
 N/A" transform="translate(-63 -10607)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="15">Dust</tspan><tspan x="0" y="34">Dust</tspan><tspan x="0" y="53">Operator Fee (optional)</tspan><tspan x="0" y="72">N/A</tspan></text>
-    <g id="Rectangle_50" data-name="Rectangle 50" transform="translate(-240 -10468)" fill="#fcfcfc" stroke="#707070" stroke-width="1" stroke-dasharray="3">
-      <rect width="331.499" height="143" stroke="none"/>
-      <rect x="0.5" y="0.5" width="330.499" height="142" fill="none"/>
+      <g id="Rectangle_50" data-name="Rectangle 50" transform="translate(-240 -10468)" fill="#fcfcfc" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+        <rect width="331.499" height="143" stroke="none"/>
+        <rect x="0.5" y="0.5" width="330.499" height="142" fill="none"/>
+      </g>
+      <text id="Settlement_Action_Payload" data-name="Settlement Action Payload" transform="translate(-228 -10433)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Settlement Action Payload</tspan></text>
+      <text id="Response_Transaction_Settlement_" data-name="Response Transaction (Settlement)" transform="translate(-440 -10651)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Response Transaction (Settlement)</tspan></text>
+      <text id="Settlements" transform="translate(-215 -10395)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">Settlements</tspan></text>
+      <text id="Administration_1_:_0_shares" data-name="Administration (1): 0 shares" transform="translate(-215 -10360)" fill="#ef1818" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Administration (1)</tspan><tspan y="0" fill="#707070">: 0 shares</tspan></text>
+      <text id="Bill:_100_shares" data-name="Bill: 100 shares" transform="translate(-215 -10339)" fill="#19e134" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Bill</tspan><tspan y="0" fill="#707070">: 100 shares</tspan></text>
+      <line id="Line_103" data-name="Line 103" y2="58" transform="translate(-224.5 -10392.5)" fill="none" stroke="#707070" stroke-width="1"/>
+      <g id="Rectangle_52" data-name="Rectangle 52" transform="translate(-224 -10548)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+        <rect width="117" height="18" stroke="none"/>
+        <rect x="0.5" y="0.5" width="116" height="17" fill="none"/>
+      </g>
+      <line id="Line_105" data-name="Line 105" y2="61" transform="translate(-168.5 -10529.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
+      <text id="INSTRUMENTID:_SHC1BvBMSJ..._Common_Shares" data-name="INSTRUMENTID: SHC1BvBMSJ... Common Shares" transform="translate(-228 -10416)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">INSTRUMENTID: SHC1BvBMSJ... Common Shares</tspan></text>
+      <g id="Rectangle_422" data-name="Rectangle 422" transform="translate(-452 -10491)" fill="#fff" stroke="#cf730b" stroke-width="4">
+        <rect width="198" height="166" stroke="none"/>
+        <rect x="2" y="2" width="194" height="162" fill="none"/>
+      </g>
+      <text id="Note:" transform="translate(-438.015 -10485)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="17">Note:</tspan></text>
+      <text id="Operator_fees_are_set_by_the_Contract_Operator._If_the_operator_chooses_to_operate_the_contract_without_fees_this_output_is_omitted" data-name="Operator fees are set by the Contract Operator. If the operator chooses to operate the contract without fees, this output is omitted" transform="translate(-440.43 -10454)" fill="#707070" font-size="14" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="15">Operator fees are set by the </tspan><tspan x="0" y="34">Contract Operator. If the </tspan><tspan x="0" y="53">operator chooses to </tspan><tspan x="0" y="72">operate the contract </tspan><tspan x="0" y="91">without fees, this output is </tspan><tspan x="0" y="110">omitted</tspan></text>
+      <line id="Line_536" data-name="Line 536" x1="186" transform="translate(-429.5 -10558.5)" fill="none" stroke="#cf730b" stroke-width="1" stroke-dasharray="3"/>
+      <line id="Line_537" data-name="Line 537" y2="69" transform="translate(-425.422 -10558.5)" fill="none" stroke="#cf730b" stroke-width="1" stroke-dasharray="3"/>
+      <g id="Rectangle_423" data-name="Rectangle 423" transform="translate(-452 -10315)" fill="#fff" stroke="#cf730b" stroke-width="4">
+        <rect width="587" height="181.171" stroke="none"/>
+        <rect x="2" y="2" width="583" height="177.171" fill="none"/>
+      </g>
+      <text id="Note:-2" data-name="Note:" transform="translate(-438.015 -10309)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="17">Note:</tspan></text>
+      <text id="In_this_example_the_token_holding_address_Administration_1_held_110_tokens_prior_to_the_settlement._Post_settlement_it_holds_10_tokens_and_the_remaining_100_have_been_sent_to_Bill._While_best_practice_for_user_addresses_is_for_them_not_be_reused_and_to" data-name="In this example, the token holding address &apos;Administration (1) held 110 tokens prior to the settlement. Post settlement it holds 10 tokens and the remaining 100 have been sent to Bill. While best practice for user addresses is for them not be reused and to" transform="translate(-440.43 -10278)" fill="#707070" font-size="14" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="15">In this example, the token holding address &apos;Administration (1) held 110 tokens prior to </tspan><tspan x="0" y="34">the settlement. Post settlement it holds 10 tokens and the remaining 100 have been sent </tspan><tspan x="0" y="53">to Bill. While best practice for user addresses is for them not be reused and to send </tspan><tspan x="0" y="72" xml:space="preserve">change to a new address. Administration addresses  are a single address that is defined </tspan><tspan x="0" y="91">in the Contract Offer which has significance in that newly minted tokens always appear in </tspan><tspan x="0" y="110">that address and that a smart contract may restrict transfers only to and from that </tspan><tspan x="0" y="129">address</tspan></text>
     </g>
-    <text id="Settlement_Action_Payload" data-name="Settlement Action Payload" transform="translate(-228 -10433)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Settlement Action Payload</tspan></text>
-    <text id="Response_Transaction_Settlement_" data-name="Response Transaction (Settlement)" transform="translate(-440 -10651)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Response Transaction (Settlement)</tspan></text>
-    <text id="Settlements" transform="translate(-215 -10395)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">Settlements</tspan></text>
-    <text id="Administration_1_:_10_shares" data-name="Administration (1): 10 shares" transform="translate(-215 -10360)" fill="#ef1818" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Administration (1)</tspan><tspan y="0" fill="#707070">: 10 shares</tspan></text>
-    <text id="Bill:_100_shares" data-name="Bill: 100 shares" transform="translate(-215 -10339)" fill="#19e134" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Bill</tspan><tspan y="0" fill="#707070">: 100 shares</tspan></text>
-    <line id="Line_103" data-name="Line 103" y2="58" transform="translate(-224.5 -10392.5)" fill="none" stroke="#707070" stroke-width="1"/>
-    <g id="Rectangle_52" data-name="Rectangle 52" transform="translate(-224 -10548)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
-      <rect width="117" height="18" stroke="none"/>
-      <rect x="0.5" y="0.5" width="116" height="17" fill="none"/>
-    </g>
-    <line id="Line_105" data-name="Line 105" y2="61" transform="translate(-168.5 -10529.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
-    <text id="INSTRUMENTID:_SHC1BvBMSJ..._Common_Shares" data-name="INSTRUMENTID: SHC1BvBMSJ... Common Shares" transform="translate(-228 -10416)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">INSTRUMENTID: SHC1BvBMSJ... Common Shares</tspan></text>
-    <g id="Rectangle_422" data-name="Rectangle 422" transform="translate(-452 -10491)" fill="#fff" stroke="#cf730b" stroke-width="4">
-      <rect width="198" height="166" stroke="none"/>
-      <rect x="2" y="2" width="194" height="162" fill="none"/>
-    </g>
-    <text id="Note:" transform="translate(-438.015 -10485)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="17">Note:</tspan></text>
-    <text id="Operator_fees_are_set_by_the_Contract_Operator._If_the_operator_chooses_to_operate_the_contract_without_fees_this_output_is_omitted" data-name="Operator fees are set by the Contract Operator. If the operator chooses to operate the contract without fees, this output is omitted" transform="translate(-440.43 -10454)" fill="#707070" font-size="14" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="15">Operator fees are set by the </tspan><tspan x="0" y="34">Contract Operator. If the </tspan><tspan x="0" y="53">operator chooses to </tspan><tspan x="0" y="72">operate the contract </tspan><tspan x="0" y="91">without fees, this output is </tspan><tspan x="0" y="110">omitted</tspan></text>
-    <line id="Line_536" data-name="Line 536" x1="186" transform="translate(-429.5 -10558.5)" fill="none" stroke="#cf730b" stroke-width="1" stroke-dasharray="3"/>
-    <line id="Line_537" data-name="Line 537" y2="69" transform="translate(-425.422 -10558.5)" fill="none" stroke="#cf730b" stroke-width="1" stroke-dasharray="3"/>
-    <g id="Rectangle_423" data-name="Rectangle 423" transform="translate(-452 -10315)" fill="#fff" stroke="#cf730b" stroke-width="4">
-      <rect width="587" height="181.171" stroke="none"/>
-      <rect x="2" y="2" width="583" height="177.171" fill="none"/>
-    </g>
-    <text id="Note:-2" data-name="Note:" transform="translate(-438.015 -10309)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="17">Note:</tspan></text>
-    <text id="In_this_example_the_token_holding_address_Administration_1_held_110_tokens_prior_to_the_settlement._Post_settlement_it_holds_10_tokens_and_the_remaining_100_have_been_sent_to_Bill._While_best_practice_for_user_addresses_is_for_them_not_be_reused_and_to" data-name="In this example, the token holding address &apos;Administration (1) held 110 tokens prior to the settlement. Post settlement it holds 10 tokens and the remaining 100 have been sent to Bill. While best practice for user addresses is for them not be reused and to" transform="translate(-440.43 -10278)" fill="#707070" font-size="14" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="15">In this example, the token holding address &apos;Administration (1) held 110 tokens prior to </tspan><tspan x="0" y="34">the settlement. Post settlement it holds 10 tokens and the remaining 100 have been sent </tspan><tspan x="0" y="53">to Bill. While best practice for user addresses is for them not be reused and to send </tspan><tspan x="0" y="72" xml:space="preserve">change to a new address. Administration addresses  are a single address that is defined </tspan><tspan x="0" y="91">in the Contract Offer which has significance in that newly minted tokens always appear in </tspan><tspan x="0" y="110">that address and that a smart contract may restrict transfers only to and from that </tspan><tspan x="0" y="129">address</tspan></text>
   </g>
 </svg>

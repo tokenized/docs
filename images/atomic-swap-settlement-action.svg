@@ -1,49 +1,56 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="612" height="518" viewBox="0 0 612 518">
-  <g id="atomic-swap-settlement-action" transform="translate(-3370 9329)">
-    <g id="Rectangle_99" data-name="Rectangle 99" transform="translate(3370 -9329)" fill="#fcfcfc" stroke="#707070" stroke-width="1">
-      <rect width="612" height="227" stroke="none"/>
-      <rect x="0.5" y="0.5" width="611" height="226" fill="none"/>
-    </g>
-    <text id="Request_Transaction_Settlement_" data-name="Request Transaction (Settlement)" transform="translate(3382 -9296)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Request Transaction (Settlement)</tspan></text>
-    <line id="Line_161" data-name="Line 161" y2="144" transform="translate(3570.5 -9268.5)" fill="none" stroke="#707070" stroke-width="1"/>
-    <text id="INPUTS" transform="translate(3383 -9267)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">INPUTS</tspan></text>
-    <text id="OUTPUTS_" data-name="OUTPUTS " transform="translate(3586 -9267)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">OUTPUTS </tspan></text>
-    <text id="_0:_Smart_Contract_1_1:_Smart_Contract_2" data-name="0: Smart Contract 1
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="612" height="518" viewBox="0 0 612 518">
+  <defs>
+    <clipPath id="clip-atomic-swap-settlement-action">
+      <rect width="612" height="518"/>
+    </clipPath>
+  </defs>
+  <g id="atomic-swap-settlement-action" clip-path="url(#clip-atomic-swap-settlement-action)">
+    <g id="atomic-swap-settlement-action-2" data-name="atomic-swap-settlement-action" transform="translate(-3370 9329)">
+      <g id="Rectangle_99" data-name="Rectangle 99" transform="translate(3370 -9329)" fill="#fcfcfc" stroke="#707070" stroke-width="1">
+        <rect width="612" height="227" stroke="none"/>
+        <rect x="0.5" y="0.5" width="611" height="226" fill="none"/>
+      </g>
+      <text id="Request_Transaction_Settlement_" data-name="Request Transaction (Settlement)" transform="translate(3382 -9296)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Request Transaction (Settlement)</tspan></text>
+      <line id="Line_161" data-name="Line 161" y2="144" transform="translate(3570.5 -9268.5)" fill="none" stroke="#707070" stroke-width="1"/>
+      <text id="INPUTS" transform="translate(3383 -9267)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">INPUTS</tspan></text>
+      <text id="OUTPUTS_" data-name="OUTPUTS " transform="translate(3586 -9267)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">OUTPUTS </tspan></text>
+      <text id="_0:_Smart_Contract_1_1:_Smart_Contract_2" data-name="0: Smart Contract 1
 1: Smart Contract 2" transform="translate(3383 -9247)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="15">0: Smart Contract 1</tspan><tspan x="0" y="34">1: Smart Contract 2</tspan></text>
-    <text id="_0:_Participant_1_1_1:_Participant_2_3_2:_Participant_2_1_3:_Participant_1_3_4:_Smart_Contract_1_Operator_5:_Smart_Contract_2_Operator_6:_Transfer_Action" data-name="0: Participant 1 (1)
+      <text id="_0:_Participant_1_1_1:_Participant_2_3_2:_Participant_2_1_3:_Participant_1_3_4:_Smart_Contract_1_Operator_5:_Smart_Contract_2_Operator_6:_Settlement_Action" data-name="0: Participant 1 (1)
 1: Participant 2 (3)
 2: Participant 2 (1)
 3: Participant 1 (3)
 4: Smart Contract 1 Operator
 5: Smart Contract 2 Operator
-6: Transfer Action" transform="translate(3586 -9247)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="15">0: </tspan><tspan y="15" fill="#ef1818">Participant 1 (1)</tspan><tspan x="0" y="34">1: </tspan><tspan y="34" fill="#7b1adb">Participant 2 (3)</tspan><tspan x="0" y="53">2: </tspan><tspan y="53" fill="#7b1adb">Participant 2 (1)</tspan><tspan x="0" y="72">3: </tspan><tspan y="72" fill="#ef1818">Participant 1 (3)</tspan><tspan x="0" y="91">4: Smart Contract 1 Operator</tspan><tspan x="0" y="110">5: Smart Contract 2 Operator</tspan><tspan x="0" y="129">6: Transfer Action</tspan></text>
-    <text id="VALUE" transform="translate(3779 -9267)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">VALUE</tspan></text>
-    <text id="Dust_Dust_Dust_Dust_Contract_Fees_Optional_Contract_Fees_Optional_N_A" data-name="Dust
+6: Settlement Action" transform="translate(3586 -9247)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="15">0: </tspan><tspan y="15" fill="#ef1818">Participant 1 (1)</tspan><tspan x="0" y="34">1: </tspan><tspan y="34" fill="#7b1adb">Participant 2 (3)</tspan><tspan x="0" y="53">2: </tspan><tspan y="53" fill="#7b1adb">Participant 2 (1)</tspan><tspan x="0" y="72">3: </tspan><tspan y="72" fill="#ef1818">Participant 1 (3)</tspan><tspan x="0" y="91">4: Smart Contract 1 Operator</tspan><tspan x="0" y="110">5: Smart Contract 2 Operator</tspan><tspan x="0" y="129">6: Settlement Action</tspan></text>
+      <text id="VALUE" transform="translate(3779 -9267)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">VALUE</tspan></text>
+      <text id="Dust_Dust_Dust_Dust_Contract_Fees_Optional_Contract_Fees_Optional_N_A" data-name="Dust
 Dust
 Dust 
 Dust
 Contract Fees (Optional)
 Contract Fees (Optional)
 N/A" transform="translate(3779 -9247)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="15">Dust</tspan><tspan x="0" y="34">Dust</tspan><tspan x="0" y="53">Dust </tspan><tspan x="0" y="72">Dust</tspan><tspan x="0" y="91">Contract Fees (Optional)</tspan><tspan x="0" y="110">Contract Fees (Optional)</tspan><tspan x="0" y="129">N/A</tspan></text>
-    <g id="Rectangle_101" data-name="Rectangle 101" transform="translate(3598 -9131)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
-      <rect width="98" height="17" stroke="none"/>
-      <rect x="0.5" y="0.5" width="97" height="16" fill="none"/>
-    </g>
-    <g id="Rectangle_189" data-name="Rectangle 189" transform="translate(3478 -9064)" fill="#fcfcfc" stroke="#707070" stroke-width="1" stroke-dasharray="3">
-      <rect width="339.499" height="253" stroke="none"/>
-      <rect x="0.5" y="0.5" width="338.499" height="252" fill="none"/>
-    </g>
-    <text id="Settlement_Action_Payload" data-name="Settlement Action Payload" transform="translate(3489 -9029)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Settlement Action Payload</tspan></text>
-    <text id="Settlements" transform="translate(3504 -8992)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">Settlements</tspan></text>
-    <text id="Participant_1_1_:_0_shares_Participant_2_3_:_300_shares" data-name="Participant 1 (1): 0 shares
+      <g id="Rectangle_101" data-name="Rectangle 101" transform="translate(3598 -9131)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+        <rect width="119" height="17" stroke="none"/>
+        <rect x="0.5" y="0.5" width="118" height="16" fill="none"/>
+      </g>
+      <g id="Rectangle_189" data-name="Rectangle 189" transform="translate(3478 -9064)" fill="#fcfcfc" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+        <rect width="339.499" height="253" stroke="none"/>
+        <rect x="0.5" y="0.5" width="338.499" height="252" fill="none"/>
+      </g>
+      <text id="Settlement_Action_Payload" data-name="Settlement Action Payload" transform="translate(3489 -9029)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Settlement Action Payload</tspan></text>
+      <text id="Settlements" transform="translate(3504 -8992)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">Settlements</tspan></text>
+      <text id="Participant_1_1_:_0_shares_Participant_2_3_:_300_shares" data-name="Participant 1 (1): 0 shares
 Participant 2 (3): 300 shares" transform="translate(3504 -8957)" fill="#ef1818" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Participant 1 (1)</tspan><tspan y="0" fill="#707070">: 0 shares</tspan><tspan fill="#7b1adb"><tspan x="0" y="19">Participant 2 (3)</tspan><tspan y="19" fill="#707070">: 300 shares</tspan></tspan></text>
-    <text id="INSTRUMENTID:_SHC1BvBMSJ..._Common_Shares" data-name="INSTRUMENTID: SHC1BvBMSJ... Common Shares" transform="translate(3493 -9011)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">INSTRUMENTID: SHC1BvBMSJ... Common Shares</tspan></text>
-    <line id="Line_250" data-name="Line 250" y2="57" transform="translate(3494.5 -8989.5)" fill="none" stroke="#707070" stroke-width="1"/>
-    <text id="INSTRUMENTID_2_:_SHP3Bv3m..._Preferred_Shares" data-name="INSTRUMENTID(2): SHP3Bv3m... Preferred Shares" transform="translate(3492 -8915)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">INSTRUMENTID(2): SHP3Bv3m... Preferred Shares</tspan></text>
-    <text id="Settlements-2" data-name="Settlements" transform="translate(3504 -8896)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">Settlements</tspan></text>
-    <text id="Participant_2_1_:_0_shares_Participant_1_3_:_100_shares" data-name="Participant 2 (1): 0 shares
+      <text id="INSTRUMENTID:_SHC1BvBMSJ..._Common_Shares" data-name="INSTRUMENTID: SHC1BvBMSJ... Common Shares" transform="translate(3493 -9011)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">INSTRUMENTID: SHC1BvBMSJ... Common Shares</tspan></text>
+      <line id="Line_250" data-name="Line 250" y2="57" transform="translate(3494.5 -8989.5)" fill="none" stroke="#707070" stroke-width="1"/>
+      <text id="INSTRUMENTID_2_:_SHP3Bv3m..._Preferred_Shares" data-name="INSTRUMENTID(2): SHP3Bv3m... Preferred Shares" transform="translate(3492 -8915)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">INSTRUMENTID(2): SHP3Bv3m... Preferred Shares</tspan></text>
+      <text id="Settlements-2" data-name="Settlements" transform="translate(3504 -8896)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">Settlements</tspan></text>
+      <text id="Participant_2_1_:_0_shares_Participant_1_3_:_100_shares" data-name="Participant 2 (1): 0 shares
 Participant 1 (3): 100 shares" transform="translate(3504 -8861)" fill="#7b1adb" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Participant 2 (1): </tspan><tspan y="0" fill="#707070">0 shares</tspan><tspan fill="#ef1818"><tspan x="0" y="19">Participant 1 (3): </tspan><tspan y="19" fill="#707070">100 shares</tspan></tspan></text>
-    <line id="Line_251" data-name="Line 251" y2="65" transform="translate(3494.5 -8897.5)" fill="none" stroke="#707070" stroke-width="1"/>
-    <line id="Line_252" data-name="Line 252" y2="50" transform="translate(3647.5 -9113.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
+      <line id="Line_251" data-name="Line 251" y2="65" transform="translate(3494.5 -8897.5)" fill="none" stroke="#707070" stroke-width="1"/>
+      <line id="Line_252" data-name="Line 252" y2="50" transform="translate(3647.5 -9113.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
+    </g>
   </g>
 </svg>

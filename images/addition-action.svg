@@ -1,35 +1,42 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="632" height="295" viewBox="0 0 632 295">
-  <g id="addition-action" transform="translate(-14801 5702)">
-    <g id="Rectangle_278" data-name="Rectangle 278" transform="translate(14921 -5514)" fill="#fcfcfc" stroke="#707070" stroke-width="1" stroke-dasharray="3">
-      <rect width="364.499" height="107" stroke="none"/>
-      <rect x="0.5" y="0.5" width="363.499" height="106" fill="none"/>
-    </g>
-    <g id="Rectangle_279" data-name="Rectangle 279" transform="translate(14801 -5702)" fill="#fcfcfc" stroke="#707070" stroke-width="1">
-      <rect width="632" height="149" stroke="none"/>
-      <rect x="0.5" y="0.5" width="631" height="148" fill="none"/>
-    </g>
-    <text id="Addition_Transaction_Register_Action_" data-name="Addition Transaction (Register Action)" transform="translate(14815 -5671)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Addition Transaction (Register Action)</tspan></text>
-    <line id="Line_332" data-name="Line 332" y2="61" transform="translate(15009.5 -5643.5)" fill="none" stroke="#707070" stroke-width="1"/>
-    <text id="INPUTS" transform="translate(14815 -5642)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">INPUTS</tspan></text>
-    <text id="OUTPUTS_" data-name="OUTPUTS " transform="translate(15025 -5642)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">OUTPUTS </tspan></text>
-    <text id="_0:_" data-name="0: " transform="translate(14815 -5607)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: </tspan></text>
-    <text id="VALUE" transform="translate(15218 -5642)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">VALUE</tspan></text>
-    <text id="Addition_Action_Payload" data-name="Addition Action Payload" transform="translate(14932 -5488)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Addition Action Payload</tspan></text>
-    <line id="Line_333" data-name="Line 333" y2="68" transform="translate(15087.5 -5581.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
-    <text id="_0:_2" data-name="0: " transform="translate(15025 -5607)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: </tspan></text>
-    <text id="Change" transform="translate(15219 -5607)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Change</tspan></text>
-    <text id="Register" transform="translate(14833 -5607)" fill="#ef1818" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Register</tspan></text>
-    <g id="Rectangle_280" data-name="Rectangle 280" transform="translate(15040 -5600)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
-      <rect width="135" height="18" stroke="none"/>
-      <rect x="0.5" y="0.5" width="134" height="17" fill="none"/>
-    </g>
-    <text id="_1:_" data-name="1: " transform="translate(15025 -5586)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1: </tspan></text>
-    <text id="Addition_Action" data-name="Addition Action" transform="translate(15043 -5586)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Addition Action</tspan></text>
-    <text id="N_A" data-name="N/A" transform="translate(15219 -5586)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N/A</tspan></text>
-    <text id="Register-2" data-name="Register" transform="translate(15043 -5607)" fill="#ef1818" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Register</tspan></text>
-    <text id="DETAILS" transform="translate(14933 -5477)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">DETAILS</tspan></text>
-    <path id="Path_161" data-name="Path 161" d="M0,0V38.5" transform="translate(14935.5 -5460.5)" fill="none" stroke="#707070" stroke-width="1"/>
-    <text id="_-_Identity_Details_-_Addition_Message" data-name="- Identity Details
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="632" height="296" viewBox="0 0 632 296">
+  <defs>
+    <clipPath id="clip-addition-action">
+      <rect width="632" height="296"/>
+    </clipPath>
+  </defs>
+  <g id="addition-action" clip-path="url(#clip-addition-action)">
+    <g id="addition-action-2" data-name="addition-action" transform="translate(-14801 5702)">
+      <g id="Rectangle_278" data-name="Rectangle 278" transform="translate(14921 -5514)" fill="#fcfcfc" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+        <rect width="364.499" height="107" stroke="none"/>
+        <rect x="0.5" y="0.5" width="363.499" height="106" fill="none"/>
+      </g>
+      <g id="Rectangle_279" data-name="Rectangle 279" transform="translate(14801 -5702)" fill="#fcfcfc" stroke="#707070" stroke-width="1">
+        <rect width="632" height="149" stroke="none"/>
+        <rect x="0.5" y="0.5" width="631" height="148" fill="none"/>
+      </g>
+      <text id="Addition_Transaction_Register_Action_" data-name="Addition Transaction (Register Action)" transform="translate(14815 -5671)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Addition Transaction (Register Action)</tspan></text>
+      <line id="Line_332" data-name="Line 332" y2="61" transform="translate(15009.5 -5643.5)" fill="none" stroke="#707070" stroke-width="1"/>
+      <text id="INPUTS" transform="translate(14815 -5642)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">INPUTS</tspan></text>
+      <text id="OUTPUTS_" data-name="OUTPUTS " transform="translate(15025 -5642)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">OUTPUTS </tspan></text>
+      <text id="_0:_" data-name="0: " transform="translate(14815 -5607)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: </tspan></text>
+      <text id="VALUE" transform="translate(15218 -5642)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">VALUE</tspan></text>
+      <text id="Addition_Action_Payload" data-name="Addition Action Payload" transform="translate(14932 -5488)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Addition Action Payload</tspan></text>
+      <line id="Line_333" data-name="Line 333" y2="68" transform="translate(15087.5 -5581.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
+      <text id="_0:_2" data-name="0: " transform="translate(15025 -5607)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: </tspan></text>
+      <text id="Change" transform="translate(15219 -5607)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Change</tspan></text>
+      <text id="Register" transform="translate(14833 -5607)" fill="#ef1818" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Register</tspan></text>
+      <g id="Rectangle_280" data-name="Rectangle 280" transform="translate(15040 -5600)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+        <rect width="135" height="18" stroke="none"/>
+        <rect x="0.5" y="0.5" width="134" height="17" fill="none"/>
+      </g>
+      <text id="_1:_" data-name="1: " transform="translate(15025 -5586)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1: </tspan></text>
+      <text id="Addition_Action" data-name="Addition Action" transform="translate(15043 -5586)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Addition Action</tspan></text>
+      <text id="N_A" data-name="N/A" transform="translate(15219 -5586)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N/A</tspan></text>
+      <text id="Register-2" data-name="Register" transform="translate(15043 -5607)" fill="#ef1818" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Register</tspan></text>
+      <text id="DETAILS" transform="translate(14933 -5477)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">DETAILS</tspan></text>
+      <path id="Path_161" data-name="Path 161" d="M0,0V38.5" transform="translate(14935.5 -5460.5)" fill="none" stroke="#707070" stroke-width="1"/>
+      <text id="_-_Identity_Details_-_Addition_Message" data-name="- Identity Details
 - Addition Message" transform="translate(14942 -5445)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">- Identity Details</tspan><tspan x="0" y="19">- Addition Message</tspan></text>
+    </g>
   </g>
 </svg>

@@ -1,316 +1,324 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="815.499" height="645.337" viewBox="0 0 815.499 645.337">
-  <g id="Order_of_Operations" data-name="Order of Operations" transform="translate(-12549 15768)">
-    <g id="Rectangle_542" data-name="Rectangle 542" transform="translate(12549 -15768)" fill="#fcfcfc" stroke="#707070" stroke-width="1">
-      <rect width="344.499" height="645.337" stroke="none"/>
-      <rect x="0.5" y="0.5" width="343.499" height="644.337" fill="none"/>
-    </g>
-    <g id="Rectangle_543" data-name="Rectangle 543" transform="translate(12899 -15768)" fill="#fcfcfc" stroke="#707070" stroke-width="1">
-      <rect width="465.499" height="645.337" stroke="none"/>
-      <rect x="0.5" y="0.5" width="464.499" height="644.337" fill="none"/>
-    </g>
-    <text id="Response_Action_Contract_Initiated_" data-name="Response Action[Contract Initiated]" transform="translate(13064 -15754)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="8.809" y="17">Response Action</tspan><tspan x="0.234" y="38">[Contract Initiated]</tspan></text>
-    <text id="Request_Action_User_Issuer_Initiated_" data-name="Request Action[User/Issuer Initiated]" transform="translate(12656 -15754)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="23.645" y="17">Request Action</tspan><tspan x="0.125" y="38">[User/Issuer Initiated]</tspan></text>
-    <text id="Validation_Response" data-name="Validation Response" transform="translate(12944 -15677)" fill="#707070" font-size="14" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Validation Response</tspan></text>
-    <text id="Rejection_Response" data-name="Rejection Response" transform="translate(13189 -15677)" fill="#707070" font-size="14" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Rejection Response</tspan></text>
-    <g id="Rectangle_544" data-name="Rectangle 544" transform="translate(12560 -15661)" fill="#8ea9db" stroke="#707070" stroke-width="1" stroke-dasharray="3">
-      <rect width="793" height="106" stroke="none"/>
-      <rect x="0.5" y="0.5" width="792" height="105" fill="none"/>
-    </g>
-    <text id="or" transform="translate(13125 -15677)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">or</tspan></text>
-    <text id="or-2" data-name="or" transform="translate(13062 -15637)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">or</tspan></text>
-    <g id="Rectangle_545" data-name="Rectangle 545" transform="translate(12681 -15652)" fill="#fff" stroke="#707070" stroke-width="1">
-      <rect width="174" height="26" stroke="none"/>
-      <rect x="0.5" y="0.5" width="173" height="25" fill="none"/>
-    </g>
-    <text id="Contract_Offer" data-name="Contract Offer" transform="translate(12731 -15634)" fill="#707070" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Contract Offer</tspan></text>
-    <g id="Rectangle_546" data-name="Rectangle 546" transform="translate(12681 -15621)" fill="#fff" stroke="#707070" stroke-width="1">
-      <rect width="174" height="26" stroke="none"/>
-      <rect x="0.5" y="0.5" width="173" height="25" fill="none"/>
-    </g>
-    <text id="Contract_Amendment" data-name="Contract Amendment" transform="translate(12711 -15603)" fill="#707070" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Contract Amendment</tspan></text>
-    <text id="Contract_Operations" data-name="Contract Operations" transform="translate(12579 -15628)" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="15.13" y="15">Contract </tspan><tspan x="7.351" y="34">Operations</tspan></text>
-    <g id="Rectangle_547" data-name="Rectangle 547" transform="translate(12560 -15547)" fill="#b4a7d6" stroke="#707070" stroke-width="1" stroke-dasharray="3">
-      <rect width="793" height="76" stroke="none"/>
-      <rect x="0.5" y="0.5" width="792" height="75" fill="none"/>
-    </g>
-    <g id="Rectangle_548" data-name="Rectangle 548" transform="translate(12681 -15590)" fill="#fff" stroke="#707070" stroke-width="1">
-      <rect width="174" height="26" stroke="none"/>
-      <rect x="0.5" y="0.5" width="173" height="25" fill="none"/>
-    </g>
-    <text id="Contract_Change_Address" data-name="Contract Change Address" transform="translate(12701 -15572)" fill="#707070" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Contract Change Address</tspan></text>
-    <text id="Instrument_Operations" data-name="Instrument Operations" transform="translate(12579 -15529)" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="25.012" y="15">Instrument </tspan><tspan x="7.351" y="34">Operations</tspan></text>
-    <g id="Rectangle_549" data-name="Rectangle 549" transform="translate(12681 -15537)" fill="#fff" stroke="#707070" stroke-width="1">
-      <rect width="174" height="26" stroke="none"/>
-      <rect x="0.5" y="0.5" width="173" height="25" fill="none"/>
-    </g>
-    <text id="Instrument_Definition" data-name="Instrument Definition" transform="translate(12727 -15519)" fill="#707070" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Instrument Definition</tspan></text>
-    <g id="Rectangle_550" data-name="Rectangle 550" transform="translate(12681 -15506)" fill="#fff" stroke="#707070" stroke-width="1">
-      <rect width="174" height="26" stroke="none"/>
-      <rect x="0.5" y="0.5" width="173" height="25" fill="none"/>
-    </g>
-    <text id="Instrument_Modification" data-name="Instrument Modification" transform="translate(12719 -15488)" fill="#707070" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Instrument Modification</tspan></text>
-    <g id="Rectangle_551" data-name="Rectangle 551" transform="translate(12560 -15464)" fill="#a8d08d" stroke="#707070" stroke-width="1" stroke-dasharray="3">
-      <rect width="793" height="60" stroke="none"/>
-      <rect x="0.5" y="0.5" width="792" height="59" fill="none"/>
-    </g>
-    <text id="Transfer_Operations" data-name="Transfer Operations" transform="translate(12579 -15454)" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="17.229" y="15">Transfer </tspan><tspan x="7.351" y="34">Operations</tspan></text>
-    <g id="Rectangle_552" data-name="Rectangle 552" transform="translate(12681 -15446)" fill="#fff" stroke="#707070" stroke-width="1">
-      <rect width="174" height="26" stroke="none"/>
-      <rect x="0.5" y="0.5" width="173" height="25" fill="none"/>
-    </g>
-    <text id="Transfer" transform="translate(12747 -15428)" fill="#707070" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Transfer</tspan></text>
-    <g id="Rectangle_553" data-name="Rectangle 553" transform="translate(12560 -15397)" fill="#ffc000" stroke="#707070" stroke-width="1" stroke-dasharray="3">
-      <rect width="793" height="111" stroke="none"/>
-      <rect x="0.5" y="0.5" width="792" height="110" fill="none"/>
-    </g>
-    <g id="Rectangle_554" data-name="Rectangle 554" transform="translate(12681 -15385)" fill="#fff" stroke="#707070" stroke-width="1">
-      <rect width="174" height="26" stroke="none"/>
-      <rect x="0.5" y="0.5" width="173" height="25" fill="none"/>
-    </g>
-    <text id="Proposal" transform="translate(12745 -15367)" fill="#707070" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Proposal</tspan></text>
-    <g id="Rectangle_555" data-name="Rectangle 555" transform="translate(12681 -15354)" fill="#fff" stroke="#707070" stroke-width="1">
-      <rect width="174" height="26" stroke="none"/>
-      <rect x="0.5" y="0.5" width="173" height="25" fill="none"/>
-    </g>
-    <text id="Ballot_Cast" data-name="Ballot Cast" transform="translate(12740 -15336)" fill="#707070" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Ballot Cast</tspan></text>
-    <text id="Governance_Operations" data-name="Governance Operations" transform="translate(12579 -15362)" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="4.771" y="15">Governance </tspan><tspan x="7.351" y="34">Operations</tspan></text>
-    <g id="Rectangle_556" data-name="Rectangle 556" transform="translate(12681 -15323)" fill="#fff" stroke="#707070" stroke-width="1">
-      <rect width="174" height="26" stroke="none"/>
-      <rect x="0.5" y="0.5" width="173" height="25" fill="none"/>
-    </g>
-    <text id="Proposal-2" data-name="Proposal" transform="translate(12745 -15305)" fill="#707070" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Proposal</tspan></text>
-    <g id="Rectangle_557" data-name="Rectangle 557" transform="translate(12560 -15279)" fill="red" stroke="#707070" stroke-width="1" stroke-dasharray="3">
-      <rect width="793" height="143" stroke="none"/>
-      <rect x="0.5" y="0.5" width="792" height="142" fill="none"/>
-    </g>
-    <text id="Enforcement_Operations" data-name="Enforcement Operations" transform="translate(12579 -15228)" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="2.354" y="15">Enforcement </tspan><tspan x="7.351" y="34">Operations</tspan></text>
-    <g id="Rectangle_558" data-name="Rectangle 558" transform="translate(12681 -15266)" fill="#fff" stroke="#707070" stroke-width="1">
-      <rect width="174" height="26" stroke="none"/>
-      <rect x="0.5" y="0.5" width="173" height="25" fill="none"/>
-    </g>
-    <text id="Order_Freeze_" data-name="Order (Freeze)" transform="translate(12730 -15248)" fill="#707070" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Order (Freeze)</tspan></text>
-    <g id="Rectangle_559" data-name="Rectangle 559" transform="translate(12681 -15235)" fill="#fff" stroke="#707070" stroke-width="1">
-      <rect width="174" height="26" stroke="none"/>
-      <rect x="0.5" y="0.5" width="173" height="25" fill="none"/>
-    </g>
-    <text id="Order_Thaw_" data-name="Order (Thaw)" transform="translate(12734 -15217)" fill="#707070" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Order (Thaw)</tspan></text>
-    <g id="Rectangle_560" data-name="Rectangle 560" transform="translate(12681 -15205)" fill="#fff" stroke="#707070" stroke-width="1">
-      <rect width="174" height="26" stroke="none"/>
-      <rect x="0.5" y="0.5" width="173" height="25" fill="none"/>
-    </g>
-    <text id="Order_Confiscation_" data-name="Order (Confiscation)" transform="translate(12715 -15187)" fill="#707070" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Order (Confiscation)</tspan></text>
-    <g id="Rectangle_561" data-name="Rectangle 561" transform="translate(12681 -15175)" fill="#fff" stroke="#707070" stroke-width="1">
-      <rect width="174" height="26" stroke="none"/>
-      <rect x="0.5" y="0.5" width="173" height="25" fill="none"/>
-    </g>
-    <text id="Order_Reconciliation_" data-name="Order (Reconciliation)" transform="translate(12711 -15157)" fill="#707070" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Order (Reconciliation)</tspan></text>
-    <g id="Rectangle_562" data-name="Rectangle 562" transform="translate(12921 -15652)" fill="#fff" stroke="#707070" stroke-width="1">
-      <rect width="174" height="26" stroke="none"/>
-      <rect x="0.5" y="0.5" width="173" height="25" fill="none"/>
-    </g>
-    <text id="Contract_Formation" data-name="Contract Formation" transform="translate(12957 -15634)" fill="#707070" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Contract Formation</tspan></text>
-    <g id="Rectangle_563" data-name="Rectangle 563" transform="translate(12921 -15621)" fill="#fff" stroke="#707070" stroke-width="1">
-      <rect width="174" height="26" stroke="none"/>
-      <rect x="0.5" y="0.5" width="173" height="25" fill="none"/>
-    </g>
-    <text id="Contract_Formation-2" data-name="Contract Formation" transform="translate(12957 -15603)" fill="#707070" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Contract Formation</tspan></text>
-    <g id="Rectangle_564" data-name="Rectangle 564" transform="translate(12921 -15590)" fill="#fff" stroke="#707070" stroke-width="1">
-      <rect width="174" height="26" stroke="none"/>
-      <rect x="0.5" y="0.5" width="173" height="25" fill="none"/>
-    </g>
-    <text id="Contract_Formation-3" data-name="Contract Formation" transform="translate(12957 -15572)" fill="#707070" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Contract Formation</tspan></text>
-    <g id="Rectangle_565" data-name="Rectangle 565" transform="translate(13164 -15652)" fill="#fff" stroke="#707070" stroke-width="1">
-      <rect width="174" height="26" stroke="none"/>
-      <rect x="0.5" y="0.5" width="173" height="25" fill="none"/>
-    </g>
-    <text id="Rejection" transform="translate(13227 -15634)" fill="#707070" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Rejection</tspan></text>
-    <g id="Rectangle_566" data-name="Rectangle 566" transform="translate(13164 -15621)" fill="#fff" stroke="#707070" stroke-width="1">
-      <rect width="174" height="26" stroke="none"/>
-      <rect x="0.5" y="0.5" width="173" height="25" fill="none"/>
-    </g>
-    <text id="Rejection-2" data-name="Rejection" transform="translate(13227 -15603)" fill="#707070" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Rejection</tspan></text>
-    <g id="Rectangle_567" data-name="Rectangle 567" transform="translate(13164 -15590)" fill="#fff" stroke="#707070" stroke-width="1">
-      <rect width="174" height="26" stroke="none"/>
-      <rect x="0.5" y="0.5" width="173" height="25" fill="none"/>
-    </g>
-    <text id="Rejection-3" data-name="Rejection" transform="translate(13227 -15572)" fill="#707070" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Rejection</tspan></text>
-    <text id="or-3" data-name="or" transform="translate(13125 -15635)" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">or</tspan></text>
-    <text id="or-4" data-name="or" transform="translate(13125 -15604)" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">or</tspan></text>
-    <text id="or-5" data-name="or" transform="translate(13125 -15575)" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">or</tspan></text>
-    <line id="Line_578" data-name="Line 578" x2="30" transform="translate(12872.5 -15638.5)" fill="none" stroke="#707070" stroke-width="2"/>
-    <g id="Polygon_1" data-name="Polygon 1" transform="matrix(-0.017, 1, -1, -0.017, 12910.078, -15642.921)" fill="#707070">
-      <path d="M 8.190984725952148 8.5 L 0.8090149760246277 8.5 L 4.5 1.118029952049255 L 8.190984725952148 8.5 Z" stroke="none"/>
-      <path d="M 4.5 2.236070156097412 L 1.618034839630127 8 L 7.381965160369873 8 L 4.5 2.236070156097412 M 4.5 0 L 9 9 L 0 9 L 4.5 0 Z" stroke="none" fill="#707070"/>
-    </g>
-    <line id="Line_579" data-name="Line 579" x2="30" transform="translate(12872.5 -15608.5)" fill="none" stroke="#707070" stroke-width="2"/>
-    <g id="Polygon_2" data-name="Polygon 2" transform="matrix(-0.017, 1, -1, -0.017, 12910.078, -15612.921)" fill="#707070">
-      <path d="M 8.190984725952148 8.5 L 0.8090149760246277 8.5 L 4.5 1.118029952049255 L 8.190984725952148 8.5 Z" stroke="none"/>
-      <path d="M 4.5 2.236070156097412 L 1.618034839630127 8 L 7.381965160369873 8 L 4.5 2.236070156097412 M 4.5 0 L 9 9 L 0 9 L 4.5 0 Z" stroke="none" fill="#707070"/>
-    </g>
-    <line id="Line_580" data-name="Line 580" x2="30" transform="translate(12872.5 -15577.5)" fill="none" stroke="#707070" stroke-width="2"/>
-    <g id="Polygon_3" data-name="Polygon 3" transform="matrix(-0.017, 1, -1, -0.017, 12910.078, -15581.921)" fill="#707070">
-      <path d="M 8.190984725952148 8.5 L 0.8090149760246277 8.5 L 4.5 1.118029952049255 L 8.190984725952148 8.5 Z" stroke="none"/>
-      <path d="M 4.5 2.236070156097412 L 1.618034839630127 8 L 7.381965160369873 8 L 4.5 2.236070156097412 M 4.5 0 L 9 9 L 0 9 L 4.5 0 Z" stroke="none" fill="#707070"/>
-    </g>
-    <g id="Rectangle_568" data-name="Rectangle 568" transform="translate(12921 -15537)" fill="#fff" stroke="#707070" stroke-width="1">
-      <rect width="174" height="26" stroke="none"/>
-      <rect x="0.5" y="0.5" width="173" height="25" fill="none"/>
-    </g>
-    <text id="Instrument_Creation" data-name="Instrument Creation" transform="translate(12970 -15519)" fill="#707070" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Instrument Creation</tspan></text>
-    <g id="Rectangle_569" data-name="Rectangle 569" transform="translate(13164 -15537)" fill="#fff" stroke="#707070" stroke-width="1">
-      <rect width="174" height="26" stroke="none"/>
-      <rect x="0.5" y="0.5" width="173" height="25" fill="none"/>
-    </g>
-    <text id="Rejection-4" data-name="Rejection" transform="translate(13227 -15519)" fill="#707070" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Rejection</tspan></text>
-    <text id="or-6" data-name="or" transform="translate(13125 -15520)" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">or</tspan></text>
-    <line id="Line_581" data-name="Line 581" x2="30" transform="translate(12872.5 -15523.5)" fill="none" stroke="#707070" stroke-width="2"/>
-    <g id="Polygon_4" data-name="Polygon 4" transform="matrix(-0.017, 1, -1, -0.017, 12910.078, -15527.921)" fill="#707070">
-      <path d="M 8.190984725952148 8.5 L 0.8090149760246277 8.5 L 4.5 1.118029952049255 L 8.190984725952148 8.5 Z" stroke="none"/>
-      <path d="M 4.5 2.236070156097412 L 1.618034839630127 8 L 7.381965160369873 8 L 4.5 2.236070156097412 M 4.5 0 L 9 9 L 0 9 L 4.5 0 Z" stroke="none" fill="#707070"/>
-    </g>
-    <line id="Line_582" data-name="Line 582" x2="30" transform="translate(12872.5 -15492.5)" fill="none" stroke="#707070" stroke-width="2"/>
-    <g id="Polygon_5" data-name="Polygon 5" transform="matrix(-0.017, 1, -1, -0.017, 12910.078, -15496.921)" fill="#707070">
-      <path d="M 8.190984725952148 8.5 L 0.8090149760246277 8.5 L 4.5 1.118029952049255 L 8.190984725952148 8.5 Z" stroke="none"/>
-      <path d="M 4.5 2.236070156097412 L 1.618034839630127 8 L 7.381965160369873 8 L 4.5 2.236070156097412 M 4.5 0 L 9 9 L 0 9 L 4.5 0 Z" stroke="none" fill="#707070"/>
-    </g>
-    <g id="Rectangle_570" data-name="Rectangle 570" transform="translate(12921 -15506)" fill="#fff" stroke="#707070" stroke-width="1">
-      <rect width="174" height="26" stroke="none"/>
-      <rect x="0.5" y="0.5" width="173" height="25" fill="none"/>
-    </g>
-    <text id="Instrument_Creation-2" data-name="Instrument Creation" transform="translate(12970 -15488)" fill="#707070" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Instrument Creation</tspan></text>
-    <g id="Rectangle_571" data-name="Rectangle 571" transform="translate(13164 -15506)" fill="#fff" stroke="#707070" stroke-width="1">
-      <rect width="174" height="26" stroke="none"/>
-      <rect x="0.5" y="0.5" width="173" height="25" fill="none"/>
-    </g>
-    <text id="Rejection-5" data-name="Rejection" transform="translate(13227 -15488)" fill="#707070" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Rejection</tspan></text>
-    <text id="or-7" data-name="or" transform="translate(13125 -15489)" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">or</tspan></text>
-    <g id="Rectangle_572" data-name="Rectangle 572" transform="translate(12921 -15446)" fill="#fff" stroke="#707070" stroke-width="1">
-      <rect width="174" height="26" stroke="none"/>
-      <rect x="0.5" y="0.5" width="173" height="25" fill="none"/>
-    </g>
-    <text id="Settlement" transform="translate(12980 -15428)" fill="#707070" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Settlement</tspan></text>
-    <g id="Rectangle_573" data-name="Rectangle 573" transform="translate(13164 -15446)" fill="#fff" stroke="#707070" stroke-width="1">
-      <rect width="174" height="26" stroke="none"/>
-      <rect x="0.5" y="0.5" width="173" height="25" fill="none"/>
-    </g>
-    <text id="Rejection-6" data-name="Rejection" transform="translate(13227 -15428)" fill="#707070" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Rejection</tspan></text>
-    <text id="or-8" data-name="or" transform="translate(13125 -15429)" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">or</tspan></text>
-    <line id="Line_583" data-name="Line 583" x2="30" transform="translate(12872.5 -15432.5)" fill="none" stroke="#707070" stroke-width="2"/>
-    <g id="Polygon_6" data-name="Polygon 6" transform="matrix(-0.017, 1, -1, -0.017, 12910.078, -15436.921)" fill="#707070">
-      <path d="M 8.190984725952148 8.5 L 0.8090149760246277 8.5 L 4.5 1.118029952049255 L 8.190984725952148 8.5 Z" stroke="none"/>
-      <path d="M 4.5 2.236070156097412 L 1.618034839630127 8 L 7.381965160369873 8 L 4.5 2.236070156097412 M 4.5 0 L 9 9 L 0 9 L 4.5 0 Z" stroke="none" fill="#707070"/>
-    </g>
-    <g id="Rectangle_574" data-name="Rectangle 574" transform="translate(12921 -15385)" fill="#fff" stroke="#707070" stroke-width="1">
-      <rect width="174" height="26" stroke="none"/>
-      <rect x="0.5" y="0.5" width="173" height="25" fill="none"/>
-    </g>
-    <text id="Vote" transform="translate(12997 -15367)" fill="#707070" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Vote</tspan></text>
-    <g id="Rectangle_575" data-name="Rectangle 575" transform="translate(13164 -15385)" fill="#fff" stroke="#707070" stroke-width="1">
-      <rect width="174" height="26" stroke="none"/>
-      <rect x="0.5" y="0.5" width="173" height="25" fill="none"/>
-    </g>
-    <text id="Rejection-7" data-name="Rejection" transform="translate(13227 -15367)" fill="#707070" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Rejection</tspan></text>
-    <text id="or-9" data-name="or" transform="translate(13125 -15368)" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">or</tspan></text>
-    <g id="Rectangle_576" data-name="Rectangle 576" transform="translate(12921 -15354)" fill="#fff" stroke="#707070" stroke-width="1">
-      <rect width="174" height="26" stroke="none"/>
-      <rect x="0.5" y="0.5" width="173" height="25" fill="none"/>
-    </g>
-    <text id="Ballot_Counted" data-name="Ballot Counted" transform="translate(12969 -15336)" fill="#707070" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Ballot Counted</tspan></text>
-    <g id="Rectangle_577" data-name="Rectangle 577" transform="translate(13164 -15354)" fill="#fff" stroke="#707070" stroke-width="1">
-      <rect width="174" height="26" stroke="none"/>
-      <rect x="0.5" y="0.5" width="173" height="25" fill="none"/>
-    </g>
-    <text id="Rejection-8" data-name="Rejection" transform="translate(13227 -15336)" fill="#707070" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Rejection</tspan></text>
-    <text id="or-10" data-name="or" transform="translate(13125 -15337)" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">or</tspan></text>
-    <g id="Rectangle_578" data-name="Rectangle 578" transform="translate(12921 -15323)" fill="#fff" stroke="#707070" stroke-width="1">
-      <rect width="174" height="26" stroke="none"/>
-      <rect x="0.5" y="0.5" width="173" height="25" fill="none"/>
-    </g>
-    <text id="Result" transform="translate(12992 -15305)" fill="#707070" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Result</tspan></text>
-    <g id="Rectangle_579" data-name="Rectangle 579" transform="translate(13164 -15323)" fill="#fff" stroke="#707070" stroke-width="1">
-      <rect width="174" height="26" stroke="none"/>
-      <rect x="0.5" y="0.5" width="173" height="25" fill="none"/>
-    </g>
-    <text id="Rejection-9" data-name="Rejection" transform="translate(13227 -15305)" fill="#707070" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Rejection</tspan></text>
-    <text id="or-11" data-name="or" transform="translate(13125 -15306)" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">or</tspan></text>
-    <g id="Rectangle_580" data-name="Rectangle 580" transform="translate(12921 -15266)" fill="#fff" stroke="#707070" stroke-width="1">
-      <rect width="174" height="26" stroke="none"/>
-      <rect x="0.5" y="0.5" width="173" height="25" fill="none"/>
-    </g>
-    <text id="Freeze" transform="translate(12992 -15248)" fill="#707070" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Freeze</tspan></text>
-    <g id="Rectangle_581" data-name="Rectangle 581" transform="translate(13164 -15266)" fill="#fff" stroke="#707070" stroke-width="1">
-      <rect width="174" height="26" stroke="none"/>
-      <rect x="0.5" y="0.5" width="173" height="25" fill="none"/>
-    </g>
-    <text id="Rejection-10" data-name="Rejection" transform="translate(13227 -15248)" fill="#707070" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Rejection</tspan></text>
-    <text id="or-12" data-name="or" transform="translate(13125 -15249)" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">or</tspan></text>
-    <g id="Rectangle_582" data-name="Rectangle 582" transform="translate(12921 -15235)" fill="#fff" stroke="#707070" stroke-width="1">
-      <rect width="174" height="26" stroke="none"/>
-      <rect x="0.5" y="0.5" width="173" height="25" fill="none"/>
-    </g>
-    <text id="Thaw" transform="translate(12995 -15217)" fill="#707070" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Thaw</tspan></text>
-    <g id="Rectangle_583" data-name="Rectangle 583" transform="translate(13164 -15235)" fill="#fff" stroke="#707070" stroke-width="1">
-      <rect width="174" height="26" stroke="none"/>
-      <rect x="0.5" y="0.5" width="173" height="25" fill="none"/>
-    </g>
-    <text id="Rejection-11" data-name="Rejection" transform="translate(13227 -15217)" fill="#707070" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Rejection</tspan></text>
-    <text id="or-13" data-name="or" transform="translate(13125 -15218)" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">or</tspan></text>
-    <g id="Rectangle_584" data-name="Rectangle 584" transform="translate(12921 -15205)" fill="#fff" stroke="#707070" stroke-width="1">
-      <rect width="174" height="26" stroke="none"/>
-      <rect x="0.5" y="0.5" width="173" height="25" fill="none"/>
-    </g>
-    <text id="Confiscation" transform="translate(12977 -15187)" fill="#707070" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Confiscation</tspan></text>
-    <g id="Rectangle_585" data-name="Rectangle 585" transform="translate(13164 -15205)" fill="#fff" stroke="#707070" stroke-width="1">
-      <rect width="174" height="26" stroke="none"/>
-      <rect x="0.5" y="0.5" width="173" height="25" fill="none"/>
-    </g>
-    <text id="Rejection-12" data-name="Rejection" transform="translate(13227 -15187)" fill="#707070" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Rejection</tspan></text>
-    <text id="or-14" data-name="or" transform="translate(13125 -15188)" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">or</tspan></text>
-    <g id="Rectangle_586" data-name="Rectangle 586" transform="translate(12921 -15175)" fill="#fff" stroke="#707070" stroke-width="1">
-      <rect width="174" height="26" stroke="none"/>
-      <rect x="0.5" y="0.5" width="173" height="25" fill="none"/>
-    </g>
-    <text id="Reconciliation" transform="translate(12972 -15157)" fill="#707070" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Reconciliation</tspan></text>
-    <g id="Rectangle_587" data-name="Rectangle 587" transform="translate(13164 -15175)" fill="#fff" stroke="#707070" stroke-width="1">
-      <rect width="174" height="26" stroke="none"/>
-      <rect x="0.5" y="0.5" width="173" height="25" fill="none"/>
-    </g>
-    <text id="Rejection-13" data-name="Rejection" transform="translate(13227 -15157)" fill="#707070" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Rejection</tspan></text>
-    <text id="or-15" data-name="or" transform="translate(13125 -15158)" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">or</tspan></text>
-    <line id="Line_584" data-name="Line 584" x2="30" transform="translate(12872.5 -15371.5)" fill="none" stroke="#707070" stroke-width="2"/>
-    <g id="Polygon_7" data-name="Polygon 7" transform="matrix(-0.017, 1, -1, -0.017, 12910.078, -15375.921)" fill="#707070">
-      <path d="M 8.190984725952148 8.5 L 0.8090149760246277 8.5 L 4.5 1.118029952049255 L 8.190984725952148 8.5 Z" stroke="none"/>
-      <path d="M 4.5 2.236070156097412 L 1.618034839630127 8 L 7.381965160369873 8 L 4.5 2.236070156097412 M 4.5 0 L 9 9 L 0 9 L 4.5 0 Z" stroke="none" fill="#707070"/>
-    </g>
-    <line id="Line_585" data-name="Line 585" x2="30" transform="translate(12872.5 -15340.5)" fill="none" stroke="#707070" stroke-width="2"/>
-    <g id="Polygon_8" data-name="Polygon 8" transform="matrix(-0.017, 1, -1, -0.017, 12910.078, -15344.921)" fill="#707070">
-      <path d="M 8.190984725952148 8.5 L 0.8090149760246277 8.5 L 4.5 1.118029952049255 L 8.190984725952148 8.5 Z" stroke="none"/>
-      <path d="M 4.5 2.236070156097412 L 1.618034839630127 8 L 7.381965160369873 8 L 4.5 2.236070156097412 M 4.5 0 L 9 9 L 0 9 L 4.5 0 Z" stroke="none" fill="#707070"/>
-    </g>
-    <line id="Line_586" data-name="Line 586" x2="30" transform="translate(12872.5 -15309.5)" fill="none" stroke="#707070" stroke-width="2"/>
-    <g id="Polygon_9" data-name="Polygon 9" transform="matrix(-0.017, 1, -1, -0.017, 12910.078, -15313.921)" fill="#707070">
-      <path d="M 8.190984725952148 8.5 L 0.8090149760246277 8.5 L 4.5 1.118029952049255 L 8.190984725952148 8.5 Z" stroke="none"/>
-      <path d="M 4.5 2.236070156097412 L 1.618034839630127 8 L 7.381965160369873 8 L 4.5 2.236070156097412 M 4.5 0 L 9 9 L 0 9 L 4.5 0 Z" stroke="none" fill="#707070"/>
-    </g>
-    <line id="Line_587" data-name="Line 587" x2="30" transform="translate(12872.5 -15252.5)" fill="none" stroke="#707070" stroke-width="2"/>
-    <g id="Polygon_10" data-name="Polygon 10" transform="matrix(-0.017, 1, -1, -0.017, 12910.078, -15256.921)" fill="#707070">
-      <path d="M 8.190984725952148 8.5 L 0.8090149760246277 8.5 L 4.5 1.118029952049255 L 8.190984725952148 8.5 Z" stroke="none"/>
-      <path d="M 4.5 2.236070156097412 L 1.618034839630127 8 L 7.381965160369873 8 L 4.5 2.236070156097412 M 4.5 0 L 9 9 L 0 9 L 4.5 0 Z" stroke="none" fill="#707070"/>
-    </g>
-    <line id="Line_588" data-name="Line 588" x2="30" transform="translate(12872.5 -15221.5)" fill="none" stroke="#707070" stroke-width="2"/>
-    <g id="Polygon_11" data-name="Polygon 11" transform="matrix(-0.017, 1, -1, -0.017, 12910.078, -15225.921)" fill="#707070">
-      <path d="M 8.190984725952148 8.5 L 0.8090149760246277 8.5 L 4.5 1.118029952049255 L 8.190984725952148 8.5 Z" stroke="none"/>
-      <path d="M 4.5 2.236070156097412 L 1.618034839630127 8 L 7.381965160369873 8 L 4.5 2.236070156097412 M 4.5 0 L 9 9 L 0 9 L 4.5 0 Z" stroke="none" fill="#707070"/>
-    </g>
-    <line id="Line_589" data-name="Line 589" x2="30" transform="translate(12872.5 -15191.5)" fill="none" stroke="#707070" stroke-width="2"/>
-    <g id="Polygon_12" data-name="Polygon 12" transform="matrix(-0.017, 1, -1, -0.017, 12910.078, -15195.921)" fill="#707070">
-      <path d="M 8.190984725952148 8.5 L 0.8090149760246277 8.5 L 4.5 1.118029952049255 L 8.190984725952148 8.5 Z" stroke="none"/>
-      <path d="M 4.5 2.236070156097412 L 1.618034839630127 8 L 7.381965160369873 8 L 4.5 2.236070156097412 M 4.5 0 L 9 9 L 0 9 L 4.5 0 Z" stroke="none" fill="#707070"/>
-    </g>
-    <line id="Line_590" data-name="Line 590" x2="30" transform="translate(12872.5 -15163.5)" fill="none" stroke="#707070" stroke-width="2"/>
-    <g id="Polygon_13" data-name="Polygon 13" transform="matrix(-0.017, 1, -1, -0.017, 12910.078, -15167.921)" fill="#707070">
-      <path d="M 8.190984725952148 8.5 L 0.8090149760246277 8.5 L 4.5 1.118029952049255 L 8.190984725952148 8.5 Z" stroke="none"/>
-      <path d="M 4.5 2.236070156097412 L 1.618034839630127 8 L 7.381965160369873 8 L 4.5 2.236070156097412 M 4.5 0 L 9 9 L 0 9 L 4.5 0 Z" stroke="none" fill="#707070"/>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="815" height="645" viewBox="0 0 815 645">
+  <defs>
+    <clipPath id="clip-order-of-operations">
+      <rect width="815" height="645"/>
+    </clipPath>
+  </defs>
+  <g id="order-of-operations" clip-path="url(#clip-order-of-operations)">
+    <rect width="815" height="645" fill="#fff"/>
+    <g id="Order_of_Operations" data-name="Order of Operations" transform="translate(-12549 15768)">
+      <g id="Rectangle_542" data-name="Rectangle 542" transform="translate(12549 -15768)" fill="#fcfcfc" stroke="#707070" stroke-width="1">
+        <rect width="344.499" height="645.337" stroke="none"/>
+        <rect x="0.5" y="0.5" width="343.499" height="644.337" fill="none"/>
+      </g>
+      <g id="Rectangle_543" data-name="Rectangle 543" transform="translate(12899 -15768)" fill="#fcfcfc" stroke="#707070" stroke-width="1">
+        <rect width="465.499" height="645.337" stroke="none"/>
+        <rect x="0.5" y="0.5" width="464.499" height="644.337" fill="none"/>
+      </g>
+      <text id="Response_Action_Contract_Initiated_" data-name="Response Action[Contract Initiated]" transform="translate(13064 -15754)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="8.809" y="17">Response Action</tspan><tspan x="0.234" y="38">[Contract Initiated]</tspan></text>
+      <text id="Request_Action_User_Issuer_Initiated_" data-name="Request Action[User/Issuer Initiated]" transform="translate(12656 -15754)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="23.645" y="17">Request Action</tspan><tspan x="0.125" y="38">[User/Issuer Initiated]</tspan></text>
+      <text id="Validation_Response" data-name="Validation Response" transform="translate(12944 -15677)" fill="#707070" font-size="14" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Validation Response</tspan></text>
+      <text id="Rejection_Response" data-name="Rejection Response" transform="translate(13189 -15677)" fill="#707070" font-size="14" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Rejection Response</tspan></text>
+      <g id="Rectangle_544" data-name="Rectangle 544" transform="translate(12560 -15661)" fill="#8ea9db" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+        <rect width="793" height="106" stroke="none"/>
+        <rect x="0.5" y="0.5" width="792" height="105" fill="none"/>
+      </g>
+      <text id="or" transform="translate(13125 -15677)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">or</tspan></text>
+      <text id="or-2" data-name="or" transform="translate(13062 -15637)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">or</tspan></text>
+      <g id="Rectangle_545" data-name="Rectangle 545" transform="translate(12681 -15652)" fill="#fff" stroke="#707070" stroke-width="1">
+        <rect width="174" height="26" stroke="none"/>
+        <rect x="0.5" y="0.5" width="173" height="25" fill="none"/>
+      </g>
+      <text id="Contract_Offer" data-name="Contract Offer" transform="translate(12731 -15634)" fill="#707070" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Contract Offer</tspan></text>
+      <g id="Rectangle_546" data-name="Rectangle 546" transform="translate(12681 -15621)" fill="#fff" stroke="#707070" stroke-width="1">
+        <rect width="174" height="26" stroke="none"/>
+        <rect x="0.5" y="0.5" width="173" height="25" fill="none"/>
+      </g>
+      <text id="Contract_Amendment" data-name="Contract Amendment" transform="translate(12711 -15603)" fill="#707070" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Contract Amendment</tspan></text>
+      <text id="Contract_Operations" data-name="Contract Operations" transform="translate(12579 -15628)" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="15.13" y="15">Contract </tspan><tspan x="7.351" y="34">Operations</tspan></text>
+      <g id="Rectangle_547" data-name="Rectangle 547" transform="translate(12560 -15547)" fill="#b4a7d6" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+        <rect width="793" height="76" stroke="none"/>
+        <rect x="0.5" y="0.5" width="792" height="75" fill="none"/>
+      </g>
+      <g id="Rectangle_548" data-name="Rectangle 548" transform="translate(12681 -15590)" fill="#fff" stroke="#707070" stroke-width="1">
+        <rect width="174" height="26" stroke="none"/>
+        <rect x="0.5" y="0.5" width="173" height="25" fill="none"/>
+      </g>
+      <text id="Contract_Change_Address" data-name="Contract Change Address" transform="translate(12701 -15572)" fill="#707070" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Contract Change Address</tspan></text>
+      <text id="Instrument_Operations" data-name="Instrument Operations" transform="translate(12579 -15529)" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="7.915" y="15">Instrument </tspan><tspan x="7.351" y="34">Operations</tspan></text>
+      <g id="Rectangle_549" data-name="Rectangle 549" transform="translate(12681 -15537)" fill="#fff" stroke="#707070" stroke-width="1">
+        <rect width="174" height="26" stroke="none"/>
+        <rect x="0.5" y="0.5" width="173" height="25" fill="none"/>
+      </g>
+      <text id="Instrument_Definition" data-name="Instrument Definition" transform="translate(12712 -15519)" fill="#707070" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Instrument Definition</tspan></text>
+      <g id="Rectangle_550" data-name="Rectangle 550" transform="translate(12681 -15506)" fill="#fff" stroke="#707070" stroke-width="1">
+        <rect width="174" height="26" stroke="none"/>
+        <rect x="0.5" y="0.5" width="173" height="25" fill="none"/>
+      </g>
+      <text id="Instrument_Modification" data-name="Instrument Modification" transform="translate(12704 -15488)" fill="#707070" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Instrument Modification</tspan></text>
+      <g id="Rectangle_551" data-name="Rectangle 551" transform="translate(12560 -15464)" fill="#a8d08d" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+        <rect width="793" height="60" stroke="none"/>
+        <rect x="0.5" y="0.5" width="792" height="59" fill="none"/>
+      </g>
+      <text id="Transfer_Operations" data-name="Transfer Operations" transform="translate(12579 -15454)" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="17.229" y="15">Transfer </tspan><tspan x="7.351" y="34">Operations</tspan></text>
+      <g id="Rectangle_552" data-name="Rectangle 552" transform="translate(12681 -15446)" fill="#fff" stroke="#707070" stroke-width="1">
+        <rect width="174" height="26" stroke="none"/>
+        <rect x="0.5" y="0.5" width="173" height="25" fill="none"/>
+      </g>
+      <text id="Transfer" transform="translate(12747 -15428)" fill="#707070" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Transfer</tspan></text>
+      <g id="Rectangle_553" data-name="Rectangle 553" transform="translate(12560 -15397)" fill="#ffc000" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+        <rect width="793" height="111" stroke="none"/>
+        <rect x="0.5" y="0.5" width="792" height="110" fill="none"/>
+      </g>
+      <g id="Rectangle_554" data-name="Rectangle 554" transform="translate(12681 -15385)" fill="#fff" stroke="#707070" stroke-width="1">
+        <rect width="174" height="26" stroke="none"/>
+        <rect x="0.5" y="0.5" width="173" height="25" fill="none"/>
+      </g>
+      <text id="Proposal" transform="translate(12745 -15367)" fill="#707070" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Proposal</tspan></text>
+      <g id="Rectangle_555" data-name="Rectangle 555" transform="translate(12681 -15354)" fill="#fff" stroke="#707070" stroke-width="1">
+        <rect width="174" height="26" stroke="none"/>
+        <rect x="0.5" y="0.5" width="173" height="25" fill="none"/>
+      </g>
+      <text id="Ballot_Cast" data-name="Ballot Cast" transform="translate(12740 -15336)" fill="#707070" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Ballot Cast</tspan></text>
+      <text id="Governance_Operations" data-name="Governance Operations" transform="translate(12579 -15362)" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="4.771" y="15">Governance </tspan><tspan x="7.351" y="34">Operations</tspan></text>
+      <g id="Rectangle_556" data-name="Rectangle 556" transform="translate(12681 -15323)" fill="#fff" stroke="#707070" stroke-width="1">
+        <rect width="174" height="26" stroke="none"/>
+        <rect x="0.5" y="0.5" width="173" height="25" fill="none"/>
+      </g>
+      <text id="Proposal-2" data-name="Proposal" transform="translate(12745 -15305)" fill="#707070" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Proposal</tspan></text>
+      <g id="Rectangle_557" data-name="Rectangle 557" transform="translate(12560 -15279)" fill="red" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+        <rect width="793" height="143" stroke="none"/>
+        <rect x="0.5" y="0.5" width="792" height="142" fill="none"/>
+      </g>
+      <text id="Enforcement_Operations" data-name="Enforcement Operations" transform="translate(12579 -15228)" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="2.354" y="15">Enforcement </tspan><tspan x="7.351" y="34">Operations</tspan></text>
+      <g id="Rectangle_558" data-name="Rectangle 558" transform="translate(12681 -15266)" fill="#fff" stroke="#707070" stroke-width="1">
+        <rect width="174" height="26" stroke="none"/>
+        <rect x="0.5" y="0.5" width="173" height="25" fill="none"/>
+      </g>
+      <text id="Order_Freeze_" data-name="Order (Freeze)" transform="translate(12730 -15248)" fill="#707070" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Order (Freeze)</tspan></text>
+      <g id="Rectangle_559" data-name="Rectangle 559" transform="translate(12681 -15235)" fill="#fff" stroke="#707070" stroke-width="1">
+        <rect width="174" height="26" stroke="none"/>
+        <rect x="0.5" y="0.5" width="173" height="25" fill="none"/>
+      </g>
+      <text id="Order_Thaw_" data-name="Order (Thaw)" transform="translate(12734 -15217)" fill="#707070" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Order (Thaw)</tspan></text>
+      <g id="Rectangle_560" data-name="Rectangle 560" transform="translate(12681 -15205)" fill="#fff" stroke="#707070" stroke-width="1">
+        <rect width="174" height="26" stroke="none"/>
+        <rect x="0.5" y="0.5" width="173" height="25" fill="none"/>
+      </g>
+      <text id="Order_Confiscation_" data-name="Order (Confiscation)" transform="translate(12715 -15187)" fill="#707070" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Order (Confiscation)</tspan></text>
+      <g id="Rectangle_561" data-name="Rectangle 561" transform="translate(12681 -15175)" fill="#fff" stroke="#707070" stroke-width="1">
+        <rect width="174" height="26" stroke="none"/>
+        <rect x="0.5" y="0.5" width="173" height="25" fill="none"/>
+      </g>
+      <text id="Order_Reconciliation_" data-name="Order (Reconciliation)" transform="translate(12711 -15157)" fill="#707070" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Order (Reconciliation)</tspan></text>
+      <g id="Rectangle_562" data-name="Rectangle 562" transform="translate(12921 -15652)" fill="#fff" stroke="#707070" stroke-width="1">
+        <rect width="174" height="26" stroke="none"/>
+        <rect x="0.5" y="0.5" width="173" height="25" fill="none"/>
+      </g>
+      <text id="Contract_Formation" data-name="Contract Formation" transform="translate(12957 -15634)" fill="#707070" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Contract Formation</tspan></text>
+      <g id="Rectangle_563" data-name="Rectangle 563" transform="translate(12921 -15621)" fill="#fff" stroke="#707070" stroke-width="1">
+        <rect width="174" height="26" stroke="none"/>
+        <rect x="0.5" y="0.5" width="173" height="25" fill="none"/>
+      </g>
+      <text id="Contract_Formation-2" data-name="Contract Formation" transform="translate(12957 -15603)" fill="#707070" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Contract Formation</tspan></text>
+      <g id="Rectangle_564" data-name="Rectangle 564" transform="translate(12921 -15590)" fill="#fff" stroke="#707070" stroke-width="1">
+        <rect width="174" height="26" stroke="none"/>
+        <rect x="0.5" y="0.5" width="173" height="25" fill="none"/>
+      </g>
+      <text id="Contract_Formation-3" data-name="Contract Formation" transform="translate(12957 -15572)" fill="#707070" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Contract Formation</tspan></text>
+      <g id="Rectangle_565" data-name="Rectangle 565" transform="translate(13164 -15652)" fill="#fff" stroke="#707070" stroke-width="1">
+        <rect width="174" height="26" stroke="none"/>
+        <rect x="0.5" y="0.5" width="173" height="25" fill="none"/>
+      </g>
+      <text id="Rejection" transform="translate(13227 -15634)" fill="#707070" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Rejection</tspan></text>
+      <g id="Rectangle_566" data-name="Rectangle 566" transform="translate(13164 -15621)" fill="#fff" stroke="#707070" stroke-width="1">
+        <rect width="174" height="26" stroke="none"/>
+        <rect x="0.5" y="0.5" width="173" height="25" fill="none"/>
+      </g>
+      <text id="Rejection-2" data-name="Rejection" transform="translate(13227 -15603)" fill="#707070" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Rejection</tspan></text>
+      <g id="Rectangle_567" data-name="Rectangle 567" transform="translate(13164 -15590)" fill="#fff" stroke="#707070" stroke-width="1">
+        <rect width="174" height="26" stroke="none"/>
+        <rect x="0.5" y="0.5" width="173" height="25" fill="none"/>
+      </g>
+      <text id="Rejection-3" data-name="Rejection" transform="translate(13227 -15572)" fill="#707070" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Rejection</tspan></text>
+      <text id="or-3" data-name="or" transform="translate(13125 -15635)" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">or</tspan></text>
+      <text id="or-4" data-name="or" transform="translate(13125 -15604)" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">or</tspan></text>
+      <text id="or-5" data-name="or" transform="translate(13125 -15575)" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">or</tspan></text>
+      <line id="Line_578" data-name="Line 578" x2="30" transform="translate(12872.5 -15638.5)" fill="none" stroke="#707070" stroke-width="2"/>
+      <g id="Polygon_1" data-name="Polygon 1" transform="matrix(-0.017, 1, -1, -0.017, 12910.078, -15642.921)" fill="#707070">
+        <path d="M 8.190984725952148 8.5 L 0.8090149760246277 8.5 L 4.5 1.118029952049255 L 8.190984725952148 8.5 Z" stroke="none"/>
+        <path d="M 4.5 2.236070156097412 L 1.618034839630127 8 L 7.381965160369873 8 L 4.5 2.236070156097412 M 4.5 0 L 9 9 L 0 9 L 4.5 0 Z" stroke="none" fill="#707070"/>
+      </g>
+      <line id="Line_579" data-name="Line 579" x2="30" transform="translate(12872.5 -15608.5)" fill="none" stroke="#707070" stroke-width="2"/>
+      <g id="Polygon_2" data-name="Polygon 2" transform="matrix(-0.017, 1, -1, -0.017, 12910.078, -15612.921)" fill="#707070">
+        <path d="M 8.190984725952148 8.5 L 0.8090149760246277 8.5 L 4.5 1.118029952049255 L 8.190984725952148 8.5 Z" stroke="none"/>
+        <path d="M 4.5 2.236070156097412 L 1.618034839630127 8 L 7.381965160369873 8 L 4.5 2.236070156097412 M 4.5 0 L 9 9 L 0 9 L 4.5 0 Z" stroke="none" fill="#707070"/>
+      </g>
+      <line id="Line_580" data-name="Line 580" x2="30" transform="translate(12872.5 -15577.5)" fill="none" stroke="#707070" stroke-width="2"/>
+      <g id="Polygon_3" data-name="Polygon 3" transform="matrix(-0.017, 1, -1, -0.017, 12910.078, -15581.921)" fill="#707070">
+        <path d="M 8.190984725952148 8.5 L 0.8090149760246277 8.5 L 4.5 1.118029952049255 L 8.190984725952148 8.5 Z" stroke="none"/>
+        <path d="M 4.5 2.236070156097412 L 1.618034839630127 8 L 7.381965160369873 8 L 4.5 2.236070156097412 M 4.5 0 L 9 9 L 0 9 L 4.5 0 Z" stroke="none" fill="#707070"/>
+      </g>
+      <g id="Rectangle_568" data-name="Rectangle 568" transform="translate(12921 -15537)" fill="#fff" stroke="#707070" stroke-width="1">
+        <rect width="174" height="26" stroke="none"/>
+        <rect x="0.5" y="0.5" width="173" height="25" fill="none"/>
+      </g>
+      <text id="Instrument_Creation" data-name="Instrument Creation" transform="translate(12955 -15519)" fill="#707070" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Instrument Creation</tspan></text>
+      <g id="Rectangle_569" data-name="Rectangle 569" transform="translate(13164 -15537)" fill="#fff" stroke="#707070" stroke-width="1">
+        <rect width="174" height="26" stroke="none"/>
+        <rect x="0.5" y="0.5" width="173" height="25" fill="none"/>
+      </g>
+      <text id="Rejection-4" data-name="Rejection" transform="translate(13227 -15519)" fill="#707070" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Rejection</tspan></text>
+      <text id="or-6" data-name="or" transform="translate(13125 -15520)" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">or</tspan></text>
+      <line id="Line_581" data-name="Line 581" x2="30" transform="translate(12872.5 -15523.5)" fill="none" stroke="#707070" stroke-width="2"/>
+      <g id="Polygon_4" data-name="Polygon 4" transform="matrix(-0.017, 1, -1, -0.017, 12910.078, -15527.921)" fill="#707070">
+        <path d="M 8.190984725952148 8.5 L 0.8090149760246277 8.5 L 4.5 1.118029952049255 L 8.190984725952148 8.5 Z" stroke="none"/>
+        <path d="M 4.5 2.236070156097412 L 1.618034839630127 8 L 7.381965160369873 8 L 4.5 2.236070156097412 M 4.5 0 L 9 9 L 0 9 L 4.5 0 Z" stroke="none" fill="#707070"/>
+      </g>
+      <line id="Line_582" data-name="Line 582" x2="30" transform="translate(12872.5 -15492.5)" fill="none" stroke="#707070" stroke-width="2"/>
+      <g id="Polygon_5" data-name="Polygon 5" transform="matrix(-0.017, 1, -1, -0.017, 12910.078, -15496.921)" fill="#707070">
+        <path d="M 8.190984725952148 8.5 L 0.8090149760246277 8.5 L 4.5 1.118029952049255 L 8.190984725952148 8.5 Z" stroke="none"/>
+        <path d="M 4.5 2.236070156097412 L 1.618034839630127 8 L 7.381965160369873 8 L 4.5 2.236070156097412 M 4.5 0 L 9 9 L 0 9 L 4.5 0 Z" stroke="none" fill="#707070"/>
+      </g>
+      <g id="Rectangle_570" data-name="Rectangle 570" transform="translate(12921 -15506)" fill="#fff" stroke="#707070" stroke-width="1">
+        <rect width="174" height="26" stroke="none"/>
+        <rect x="0.5" y="0.5" width="173" height="25" fill="none"/>
+      </g>
+      <text id="Instrument_Creation-2" data-name="Instrument Creation" transform="translate(12955 -15488)" fill="#707070" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Instrument Creation</tspan></text>
+      <g id="Rectangle_571" data-name="Rectangle 571" transform="translate(13164 -15506)" fill="#fff" stroke="#707070" stroke-width="1">
+        <rect width="174" height="26" stroke="none"/>
+        <rect x="0.5" y="0.5" width="173" height="25" fill="none"/>
+      </g>
+      <text id="Rejection-5" data-name="Rejection" transform="translate(13227 -15488)" fill="#707070" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Rejection</tspan></text>
+      <text id="or-7" data-name="or" transform="translate(13125 -15489)" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">or</tspan></text>
+      <g id="Rectangle_572" data-name="Rectangle 572" transform="translate(12921 -15446)" fill="#fff" stroke="#707070" stroke-width="1">
+        <rect width="174" height="26" stroke="none"/>
+        <rect x="0.5" y="0.5" width="173" height="25" fill="none"/>
+      </g>
+      <text id="Settlement" transform="translate(12980 -15428)" fill="#707070" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Settlement</tspan></text>
+      <g id="Rectangle_573" data-name="Rectangle 573" transform="translate(13164 -15446)" fill="#fff" stroke="#707070" stroke-width="1">
+        <rect width="174" height="26" stroke="none"/>
+        <rect x="0.5" y="0.5" width="173" height="25" fill="none"/>
+      </g>
+      <text id="Rejection-6" data-name="Rejection" transform="translate(13227 -15428)" fill="#707070" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Rejection</tspan></text>
+      <text id="or-8" data-name="or" transform="translate(13125 -15429)" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">or</tspan></text>
+      <line id="Line_583" data-name="Line 583" x2="30" transform="translate(12872.5 -15432.5)" fill="none" stroke="#707070" stroke-width="2"/>
+      <g id="Polygon_6" data-name="Polygon 6" transform="matrix(-0.017, 1, -1, -0.017, 12910.078, -15436.921)" fill="#707070">
+        <path d="M 8.190984725952148 8.5 L 0.8090149760246277 8.5 L 4.5 1.118029952049255 L 8.190984725952148 8.5 Z" stroke="none"/>
+        <path d="M 4.5 2.236070156097412 L 1.618034839630127 8 L 7.381965160369873 8 L 4.5 2.236070156097412 M 4.5 0 L 9 9 L 0 9 L 4.5 0 Z" stroke="none" fill="#707070"/>
+      </g>
+      <g id="Rectangle_574" data-name="Rectangle 574" transform="translate(12921 -15385)" fill="#fff" stroke="#707070" stroke-width="1">
+        <rect width="174" height="26" stroke="none"/>
+        <rect x="0.5" y="0.5" width="173" height="25" fill="none"/>
+      </g>
+      <text id="Vote" transform="translate(12996 -15367)" fill="#707070" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Vote</tspan></text>
+      <g id="Rectangle_575" data-name="Rectangle 575" transform="translate(13164 -15385)" fill="#fff" stroke="#707070" stroke-width="1">
+        <rect width="174" height="26" stroke="none"/>
+        <rect x="0.5" y="0.5" width="173" height="25" fill="none"/>
+      </g>
+      <text id="Rejection-7" data-name="Rejection" transform="translate(13227 -15367)" fill="#707070" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Rejection</tspan></text>
+      <text id="or-9" data-name="or" transform="translate(13125 -15368)" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">or</tspan></text>
+      <g id="Rectangle_576" data-name="Rectangle 576" transform="translate(12921 -15354)" fill="#fff" stroke="#707070" stroke-width="1">
+        <rect width="174" height="26" stroke="none"/>
+        <rect x="0.5" y="0.5" width="173" height="25" fill="none"/>
+      </g>
+      <text id="Ballot_Counted" data-name="Ballot Counted" transform="translate(12969 -15336)" fill="#707070" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Ballot Counted</tspan></text>
+      <g id="Rectangle_577" data-name="Rectangle 577" transform="translate(13164 -15354)" fill="#fff" stroke="#707070" stroke-width="1">
+        <rect width="174" height="26" stroke="none"/>
+        <rect x="0.5" y="0.5" width="173" height="25" fill="none"/>
+      </g>
+      <text id="Rejection-8" data-name="Rejection" transform="translate(13227 -15336)" fill="#707070" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Rejection</tspan></text>
+      <text id="or-10" data-name="or" transform="translate(13125 -15337)" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">or</tspan></text>
+      <g id="Rectangle_578" data-name="Rectangle 578" transform="translate(12921 -15323)" fill="#fff" stroke="#707070" stroke-width="1">
+        <rect width="174" height="26" stroke="none"/>
+        <rect x="0.5" y="0.5" width="173" height="25" fill="none"/>
+      </g>
+      <text id="Result" transform="translate(12992 -15305)" fill="#707070" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Result</tspan></text>
+      <g id="Rectangle_579" data-name="Rectangle 579" transform="translate(13164 -15323)" fill="#fff" stroke="#707070" stroke-width="1">
+        <rect width="174" height="26" stroke="none"/>
+        <rect x="0.5" y="0.5" width="173" height="25" fill="none"/>
+      </g>
+      <text id="Rejection-9" data-name="Rejection" transform="translate(13227 -15305)" fill="#707070" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Rejection</tspan></text>
+      <text id="or-11" data-name="or" transform="translate(13125 -15306)" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">or</tspan></text>
+      <g id="Rectangle_580" data-name="Rectangle 580" transform="translate(12921 -15266)" fill="#fff" stroke="#707070" stroke-width="1">
+        <rect width="174" height="26" stroke="none"/>
+        <rect x="0.5" y="0.5" width="173" height="25" fill="none"/>
+      </g>
+      <text id="Freeze" transform="translate(12991 -15248)" fill="#707070" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Freeze</tspan></text>
+      <g id="Rectangle_581" data-name="Rectangle 581" transform="translate(13164 -15266)" fill="#fff" stroke="#707070" stroke-width="1">
+        <rect width="174" height="26" stroke="none"/>
+        <rect x="0.5" y="0.5" width="173" height="25" fill="none"/>
+      </g>
+      <text id="Rejection-10" data-name="Rejection" transform="translate(13227 -15248)" fill="#707070" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Rejection</tspan></text>
+      <text id="or-12" data-name="or" transform="translate(13125 -15249)" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">or</tspan></text>
+      <g id="Rectangle_582" data-name="Rectangle 582" transform="translate(12921 -15235)" fill="#fff" stroke="#707070" stroke-width="1">
+        <rect width="174" height="26" stroke="none"/>
+        <rect x="0.5" y="0.5" width="173" height="25" fill="none"/>
+      </g>
+      <text id="Thaw" transform="translate(12994 -15217)" fill="#707070" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Thaw</tspan></text>
+      <g id="Rectangle_583" data-name="Rectangle 583" transform="translate(13164 -15235)" fill="#fff" stroke="#707070" stroke-width="1">
+        <rect width="174" height="26" stroke="none"/>
+        <rect x="0.5" y="0.5" width="173" height="25" fill="none"/>
+      </g>
+      <text id="Rejection-11" data-name="Rejection" transform="translate(13227 -15217)" fill="#707070" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Rejection</tspan></text>
+      <text id="or-13" data-name="or" transform="translate(13125 -15218)" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">or</tspan></text>
+      <g id="Rectangle_584" data-name="Rectangle 584" transform="translate(12921 -15205)" fill="#fff" stroke="#707070" stroke-width="1">
+        <rect width="174" height="26" stroke="none"/>
+        <rect x="0.5" y="0.5" width="173" height="25" fill="none"/>
+      </g>
+      <text id="Confiscation" transform="translate(12976 -15187)" fill="#707070" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Confiscation</tspan></text>
+      <g id="Rectangle_585" data-name="Rectangle 585" transform="translate(13164 -15205)" fill="#fff" stroke="#707070" stroke-width="1">
+        <rect width="174" height="26" stroke="none"/>
+        <rect x="0.5" y="0.5" width="173" height="25" fill="none"/>
+      </g>
+      <text id="Rejection-12" data-name="Rejection" transform="translate(13227 -15187)" fill="#707070" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Rejection</tspan></text>
+      <text id="or-14" data-name="or" transform="translate(13125 -15188)" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">or</tspan></text>
+      <g id="Rectangle_586" data-name="Rectangle 586" transform="translate(12921 -15175)" fill="#fff" stroke="#707070" stroke-width="1">
+        <rect width="174" height="26" stroke="none"/>
+        <rect x="0.5" y="0.5" width="173" height="25" fill="none"/>
+      </g>
+      <text id="Reconciliation" transform="translate(12971 -15157)" fill="#707070" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Reconciliation</tspan></text>
+      <g id="Rectangle_587" data-name="Rectangle 587" transform="translate(13164 -15175)" fill="#fff" stroke="#707070" stroke-width="1">
+        <rect width="174" height="26" stroke="none"/>
+        <rect x="0.5" y="0.5" width="173" height="25" fill="none"/>
+      </g>
+      <text id="Rejection-13" data-name="Rejection" transform="translate(13227 -15157)" fill="#707070" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Rejection</tspan></text>
+      <text id="or-15" data-name="or" transform="translate(13125 -15158)" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">or</tspan></text>
+      <line id="Line_584" data-name="Line 584" x2="30" transform="translate(12872.5 -15371.5)" fill="none" stroke="#707070" stroke-width="2"/>
+      <g id="Polygon_7" data-name="Polygon 7" transform="matrix(-0.017, 1, -1, -0.017, 12910.078, -15375.921)" fill="#707070">
+        <path d="M 8.190984725952148 8.5 L 0.8090149760246277 8.5 L 4.5 1.118029952049255 L 8.190984725952148 8.5 Z" stroke="none"/>
+        <path d="M 4.5 2.236070156097412 L 1.618034839630127 8 L 7.381965160369873 8 L 4.5 2.236070156097412 M 4.5 0 L 9 9 L 0 9 L 4.5 0 Z" stroke="none" fill="#707070"/>
+      </g>
+      <line id="Line_585" data-name="Line 585" x2="30" transform="translate(12872.5 -15340.5)" fill="none" stroke="#707070" stroke-width="2"/>
+      <g id="Polygon_8" data-name="Polygon 8" transform="matrix(-0.017, 1, -1, -0.017, 12910.078, -15344.921)" fill="#707070">
+        <path d="M 8.190984725952148 8.5 L 0.8090149760246277 8.5 L 4.5 1.118029952049255 L 8.190984725952148 8.5 Z" stroke="none"/>
+        <path d="M 4.5 2.236070156097412 L 1.618034839630127 8 L 7.381965160369873 8 L 4.5 2.236070156097412 M 4.5 0 L 9 9 L 0 9 L 4.5 0 Z" stroke="none" fill="#707070"/>
+      </g>
+      <line id="Line_586" data-name="Line 586" x2="30" transform="translate(12872.5 -15309.5)" fill="none" stroke="#707070" stroke-width="2"/>
+      <g id="Polygon_9" data-name="Polygon 9" transform="matrix(-0.017, 1, -1, -0.017, 12910.078, -15313.921)" fill="#707070">
+        <path d="M 8.190984725952148 8.5 L 0.8090149760246277 8.5 L 4.5 1.118029952049255 L 8.190984725952148 8.5 Z" stroke="none"/>
+        <path d="M 4.5 2.236070156097412 L 1.618034839630127 8 L 7.381965160369873 8 L 4.5 2.236070156097412 M 4.5 0 L 9 9 L 0 9 L 4.5 0 Z" stroke="none" fill="#707070"/>
+      </g>
+      <line id="Line_587" data-name="Line 587" x2="30" transform="translate(12872.5 -15252.5)" fill="none" stroke="#707070" stroke-width="2"/>
+      <g id="Polygon_10" data-name="Polygon 10" transform="matrix(-0.017, 1, -1, -0.017, 12910.078, -15256.921)" fill="#707070">
+        <path d="M 8.190984725952148 8.5 L 0.8090149760246277 8.5 L 4.5 1.118029952049255 L 8.190984725952148 8.5 Z" stroke="none"/>
+        <path d="M 4.5 2.236070156097412 L 1.618034839630127 8 L 7.381965160369873 8 L 4.5 2.236070156097412 M 4.5 0 L 9 9 L 0 9 L 4.5 0 Z" stroke="none" fill="#707070"/>
+      </g>
+      <line id="Line_588" data-name="Line 588" x2="30" transform="translate(12872.5 -15221.5)" fill="none" stroke="#707070" stroke-width="2"/>
+      <g id="Polygon_11" data-name="Polygon 11" transform="matrix(-0.017, 1, -1, -0.017, 12910.078, -15225.921)" fill="#707070">
+        <path d="M 8.190984725952148 8.5 L 0.8090149760246277 8.5 L 4.5 1.118029952049255 L 8.190984725952148 8.5 Z" stroke="none"/>
+        <path d="M 4.5 2.236070156097412 L 1.618034839630127 8 L 7.381965160369873 8 L 4.5 2.236070156097412 M 4.5 0 L 9 9 L 0 9 L 4.5 0 Z" stroke="none" fill="#707070"/>
+      </g>
+      <line id="Line_589" data-name="Line 589" x2="30" transform="translate(12872.5 -15191.5)" fill="none" stroke="#707070" stroke-width="2"/>
+      <g id="Polygon_12" data-name="Polygon 12" transform="matrix(-0.017, 1, -1, -0.017, 12910.078, -15195.921)" fill="#707070">
+        <path d="M 8.190984725952148 8.5 L 0.8090149760246277 8.5 L 4.5 1.118029952049255 L 8.190984725952148 8.5 Z" stroke="none"/>
+        <path d="M 4.5 2.236070156097412 L 1.618034839630127 8 L 7.381965160369873 8 L 4.5 2.236070156097412 M 4.5 0 L 9 9 L 0 9 L 4.5 0 Z" stroke="none" fill="#707070"/>
+      </g>
+      <line id="Line_590" data-name="Line 590" x2="30" transform="translate(12872.5 -15163.5)" fill="none" stroke="#707070" stroke-width="2"/>
+      <g id="Polygon_13" data-name="Polygon 13" transform="matrix(-0.017, 1, -1, -0.017, 12910.078, -15167.921)" fill="#707070">
+        <path d="M 8.190984725952148 8.5 L 0.8090149760246277 8.5 L 4.5 1.118029952049255 L 8.190984725952148 8.5 Z" stroke="none"/>
+        <path d="M 4.5 2.236070156097412 L 1.618034839630127 8 L 7.381965160369873 8 L 4.5 2.236070156097412 M 4.5 0 L 9 9 L 0 9 L 4.5 0 Z" stroke="none" fill="#707070"/>
+      </g>
     </g>
   </g>
 </svg>

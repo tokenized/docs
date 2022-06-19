@@ -1,63 +1,68 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="628" height="816" viewBox="0 0 628 816">
-  <g id="contract-offer-action" transform="translate(-10799 901)">
-    <g id="Rectangle_316" data-name="Rectangle 316" transform="translate(10799 -901)" fill="#fcfcfc" stroke="#707070" stroke-width="1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="641" height="828" viewBox="0 0 641 828">
+  <defs>
+    <clipPath id="clip-contract-offer-action">
+      <rect width="641" height="828"/>
+    </clipPath>
+  </defs>
+  <g id="contract-offer-action" clip-path="url(#clip-contract-offer-action)">
+    <g id="Rectangle_316" data-name="Rectangle 316" transform="translate(6 6)" fill="#fcfcfc" stroke="#707070" stroke-width="1">
       <rect width="628" height="174" stroke="none"/>
       <rect x="0.5" y="0.5" width="627" height="173" fill="none"/>
     </g>
-    <text id="Administration_unsigned_" data-name="Administration (unsigned)" transform="translate(10835 -801)" fill="#19e134" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Administration (unsigned)</tspan></text>
-    <text id="Request_Transaction_Contract_Offer_-_Partially_Signed_" data-name="Request Transaction (Contract Offer - Partially Signed)" transform="translate(10816 -868)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Request Transaction (Contract Offer - Partially Signed)</tspan></text>
-    <line id="Line_378" data-name="Line 378" y2="86" transform="translate(11004.5 -840.5)" fill="none" stroke="#707070" stroke-width="1"/>
-    <text id="INPUTS" transform="translate(10816 -836)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">INPUTS</tspan></text>
-    <text id="OUTPUTS_" data-name="OUTPUTS " transform="translate(11020 -839)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">OUTPUTS </tspan></text>
-    <text id="_0:_" data-name="0: " transform="translate(10816 -801)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: </tspan></text>
-    <text id="VALUE" transform="translate(11213 -839)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">VALUE</tspan></text>
-    <text id="_0:_2" data-name="0: " transform="translate(11020 -801)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: </tspan></text>
-    <text id="Smart_Contract" data-name="Smart Contract" transform="translate(11038 -801)" fill="#7030a0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Smart Contract</tspan></text>
-    <text id="Contract_Fees_Response_Cost_" data-name="Contract Fees + Response Cost " transform="translate(11213 -801)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Contract Fees + Response Cost </tspan></text>
-    <g id="Rectangle_317" data-name="Rectangle 317" transform="translate(11035 -757)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+    <text id="Administration_unsigned_" data-name="Administration (unsigned)" transform="translate(42 106)" fill="#19e134" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Administration (unsigned)</tspan></text>
+    <text id="Request_Transaction_Contract_Offer_-_Partially_Signed_" data-name="Request Transaction (Contract Offer - Partially Signed)" transform="translate(23 39)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Request Transaction (Contract Offer - Partially Signed)</tspan></text>
+    <line id="Line_378" data-name="Line 378" y2="86" transform="translate(211.5 66.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <text id="INPUTS" transform="translate(23 71)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">INPUTS</tspan></text>
+    <text id="OUTPUTS_" data-name="OUTPUTS " transform="translate(227 68)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">OUTPUTS </tspan></text>
+    <text id="_0:_" data-name="0: " transform="translate(23 106)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: </tspan></text>
+    <text id="VALUE" transform="translate(420 68)" fill="#707070" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="15">VALUE</tspan></text>
+    <text id="_0:_2" data-name="0: " transform="translate(227 106)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0: </tspan></text>
+    <text id="Smart_Contract" data-name="Smart Contract" transform="translate(245 106)" fill="#7030a0" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Smart Contract</tspan></text>
+    <text id="Contract_Fees_Response_Cost_" data-name="Contract Fees + Response Cost " transform="translate(420 106)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Contract Fees + Response Cost </tspan></text>
+    <g id="Rectangle_317" data-name="Rectangle 317" transform="translate(242 150)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3">
       <rect width="138" height="18" stroke="none"/>
       <rect x="0.5" y="0.5" width="137" height="17" fill="none"/>
     </g>
-    <text id="_3:_" data-name="3: " transform="translate(11020 -744)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">3: </tspan></text>
-    <text id="Contract_Offer_Action" data-name="Contract Offer Action" transform="translate(11038 -744)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Contract Offer Action</tspan></text>
-    <text id="Bitcoin_Change" data-name="Bitcoin Change" transform="translate(11213 -782)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Bitcoin Change</tspan></text>
-    <g id="Rectangle_318" data-name="Rectangle 318" transform="translate(10949 -717)" fill="#fcfcfc" stroke="#707070" stroke-width="1" stroke-dasharray="3">
+    <text id="_3:_" data-name="3: " transform="translate(227 163)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">3: </tspan></text>
+    <text id="Contract_Offer_Action" data-name="Contract Offer Action" transform="translate(245 163)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Contract Offer Action</tspan></text>
+    <text id="Bitcoin_Change" data-name="Bitcoin Change" transform="translate(420 125)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Bitcoin Change</tspan></text>
+    <g id="Rectangle_318" data-name="Rectangle 318" transform="translate(156 190)" fill="#fcfcfc" stroke="#707070" stroke-width="1" stroke-dasharray="3">
       <rect width="387.499" height="404" stroke="none"/>
       <rect x="0.5" y="0.5" width="386.499" height="403" fill="none"/>
     </g>
-    <text id="Contract_Offer_Action_Payload" data-name="Contract Offer Action Payload" transform="translate(10960 -684)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Contract Offer Action Payload</tspan></text>
-    <line id="Line_379" data-name="Line 379" x2="1" y2="22" transform="translate(11079.5 -738.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
-    <text id="N_A" data-name="N/A" transform="translate(11213 -744)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N/A</tspan></text>
-    <line id="Line_380" data-name="Line 380" y2="324" transform="translate(10962.5 -653.5)" fill="none" stroke="#707070" stroke-width="1"/>
-    <text id="DETAILS" transform="translate(10960 -672)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">DETAILS</tspan></text>
-    <text id="_-_Contract_Name_-_Body_of_Agreement_hash_or_full_text_-_Contract_Type_-_Supporting_Docs_7z_compressed_volume_-_Governing_Law_-_Jurisdiction_-_Contract_Expiration_-_Contract_URI_-_Issuer_Identifying_Details_Name_LEI_address_etc._-_Issuer_Logo_-_Con" data-name="- Contract Name
+    <text id="Contract_Offer_Action_Payload" data-name="Contract Offer Action Payload" transform="translate(167 223)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Contract Offer Action Payload</tspan></text>
+    <line id="Line_379" data-name="Line 379" x2="1" y2="22" transform="translate(286.5 168.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
+    <text id="N_A" data-name="N/A" transform="translate(420 163)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N/A</tspan></text>
+    <line id="Line_380" data-name="Line 380" y2="324" transform="translate(169.5 253.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <text id="DETAILS" transform="translate(167 235)" fill="#707070" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="13">DETAILS</tspan></text>
+    <text id="_-_Contract_Name_-_Body_of_Agreement_hash_or_full_text_-_Contract_Type_-_Supporting_Docs_7z_compressed_volume_-_Governing_Law_-_Jurisdiction_-_Contract_Expiration_-_URI_-_Issuer_Identifying_Details_Name_LEI_address_etc._-_Issuer_Logo_-_Contract_Ope" data-name="- Contract Name
 - Body of Agreement (hash or full text)
 - Contract Type
 - Supporting Docs (7z compressed volume)
 - Governing Law
 - Jurisdiction
 - Contract Expiration
-- Contract URI
+- URI
 - Issuer Identifying Details (Name, LEI, address, etc.)
 - Issuer Logo
-- Con" transform="translate(10970 -638)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">- Contract Name</tspan><tspan x="0" y="19">- Body of Agreement (hash or full text)</tspan><tspan x="0" y="38">- Contract Type</tspan><tspan x="0" y="57">- Supporting Docs (7z compressed volume)</tspan><tspan x="0" y="76">- Governing Law</tspan><tspan x="0" y="95">- Jurisdiction</tspan><tspan x="0" y="114">- Contract Expiration</tspan><tspan x="0" y="133">- Contract URI</tspan><tspan x="0" y="152">- Issuer Identifying Details (Name, LEI, address, etc.)</tspan><tspan x="0" y="171">- Issuer Logo</tspan><tspan x="0" y="190">- Contract Operator Identifying Details (Name, LEI, etc.)</tspan><tspan x="0" y="209">- Contract Authorization Flags</tspan><tspan x="0" y="228">- Contract Fee</tspan><tspan x="0" y="247">- Voting Systems</tspan><tspan x="0" y="266">- Instrument Qty Restrictions</tspan><tspan x="0" y="285">- Proposal Rights</tspan><tspan x="0" y="304">- Identity Oracles (Name, hostname:port, public key)</tspan></text>
-    <text id="Contract_Operator_signed_" data-name="Contract Operator (signed)" transform="translate(10835 -782)" fill="#e12719" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Contract Operator (signed)</tspan></text>
-    <text id="_1:_" data-name="1: " transform="translate(10816 -782)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1: </tspan></text>
-    <g id="Rectangle_319" data-name="Rectangle 319" transform="translate(10812 -295)" fill="#fff" stroke="#cf730b" stroke-width="4">
+- Contract Ope" transform="translate(177 269)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">- Contract Name</tspan><tspan x="0" y="19">- Body of Agreement (hash or full text)</tspan><tspan x="0" y="38">- Contract Type</tspan><tspan x="0" y="57">- Supporting Docs (7z compressed volume)</tspan><tspan x="0" y="76">- Governing Law</tspan><tspan x="0" y="95">- Jurisdiction</tspan><tspan x="0" y="114">- Contract Expiration</tspan><tspan x="0" y="133">- URI</tspan><tspan x="0" y="152">- Issuer Identifying Details (Name, LEI, address, etc.)</tspan><tspan x="0" y="171">- Issuer Logo</tspan><tspan x="0" y="190">- Contract Operator Identifying Details (Name, LEI, etc.)</tspan><tspan x="0" y="209">- Contract Authorization Flags</tspan><tspan x="0" y="228">- Contract Fee</tspan><tspan x="0" y="247">- Voting Systems</tspan><tspan x="0" y="266">- Instrument Qty Restrictions</tspan><tspan x="0" y="285">- Proposal Rights</tspan><tspan x="0" y="304">- Identity Oracles (Name, hostname:port, public key)</tspan></text>
+    <text id="Contract_Operator_signed_" data-name="Contract Operator (signed)" transform="translate(42 125)" fill="#e12719" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Contract Operator (signed)</tspan></text>
+    <text id="_1:_" data-name="1: " transform="translate(23 125)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1: </tspan></text>
+    <g id="Rectangle_319" data-name="Rectangle 319" transform="translate(19 612)" fill="#fff" stroke="#cf730b" stroke-width="4">
       <rect width="388" height="209" stroke="none"/>
       <rect x="2" y="2" width="384" height="205" fill="none"/>
     </g>
-    <text id="Note:" transform="translate(10828 -282)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="17">Note:</tspan></text>
-    <text id="The_contract_operator_address_is_always_derived_from_the_public_key_in_Index_1_of_the_Contract_Offer_action_if_the_action_has_indicated_that_there_is_a_contract_operator_on_the_contract._Administration_is_always_Index_0_of_the_inputs._If_no_Contract_Ope" data-name="The contract operator address is always derived from the public key in Index 1 of the Contract Offer action, if the action has indicated that there is a contract operator on the contract.  Administration is always Index 0 of the inputs.  If no Contract Ope" transform="translate(10828 -256)" fill="#707070" font-size="14" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="15">The contract operator address is always derived from </tspan><tspan x="0" y="34">the public key in Index 1 of the Contract Offer action, if </tspan><tspan x="0" y="53">the action has indicated that there is a contract operator </tspan><tspan x="0" y="72" xml:space="preserve">on the contract.  Administration is always Index 0 of the </tspan><tspan x="0" y="91" xml:space="preserve">inputs.  If no Contract Operator has been indicated, then </tspan><tspan x="0" y="110">all other inputs will be assumed to be funding inputs </tspan><tspan x="0" y="129" xml:space="preserve">only.  As this is a template Contract Offer, input[1] is null </tspan><tspan x="0" y="148">waiting for the contract operator to add their public key.</tspan></text>
-    <line id="Line_381" data-name="Line 381" y2="480" transform="translate(10877.5 -774.5)" fill="none" stroke="#cf730b" stroke-width="1" stroke-dasharray="3"/>
-    <g id="Rectangle_320" data-name="Rectangle 320" transform="translate(10813 -797)" fill="none" stroke="#cf730b" stroke-width="1" stroke-dasharray="3">
+    <text id="Note:" transform="translate(35 625)" fill="#707070" font-size="16" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="17">Note:</tspan></text>
+    <text id="The_contract_operator_address_is_always_derived_from_the_public_key_in_Index_1_of_the_Contract_Offer_action_if_the_action_has_indicated_that_there_is_a_contract_operator_on_the_contract._Issuer_is_always_Index_0_of_the_inputs._If_no_Contract_Operator_ha" data-name="The contract operator address is always derived from the public key in Index 1 of the Contract Offer action, if the action has indicated that there is a contract operator on the contract.  Issuer is always Index 0 of the inputs.  If no Contract Operator ha" transform="translate(35 651)" fill="#707070" font-size="14" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="15">The contract operator address is always derived from </tspan><tspan x="0" y="34">the public key in Index 1 of the Contract Offer action, if </tspan><tspan x="0" y="53">the action has indicated that there is a contract operator </tspan><tspan x="0" y="72" xml:space="preserve">on the contract.  Issuer is always Index 0 of the inputs.  </tspan><tspan x="0" y="91">If no Contract Operator has been indicated, then all </tspan><tspan x="0" y="110" xml:space="preserve">other inputs will be assumed to be funding inputs only.  </tspan><tspan x="0" y="129">As this is a template Contract Offer, input[1] is null </tspan><tspan x="0" y="148">waiting for the contract operator to add their public key.</tspan></text>
+    <line id="Line_381" data-name="Line 381" y2="480" transform="translate(84.5 132.5)" fill="none" stroke="#cf730b" stroke-width="1" stroke-dasharray="3"/>
+    <g id="Rectangle_320" data-name="Rectangle 320" transform="translate(20 110)" fill="none" stroke="#cf730b" stroke-width="1" stroke-dasharray="3">
       <rect width="190" height="22" stroke="none"/>
       <rect x="0.5" y="0.5" width="189" height="21" fill="none"/>
     </g>
-    <text id="_1:_2" data-name="1: " transform="translate(11020 -782)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1: </tspan></text>
-    <text id="Administration_" data-name="Administration " transform="translate(11038 -782)" fill="#19e134" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Administration </tspan></text>
-    <text id="_2:_" data-name="2: " transform="translate(11020 -763)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">2: </tspan></text>
-    <text id="Contract_Operator_" data-name="Contract Operator " transform="translate(11038 -763)" fill="#ef1818" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Contract Operator </tspan></text>
-    <text id="Bitcoin_Change-2" data-name="Bitcoin Change" transform="translate(11213 -763)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Bitcoin Change</tspan></text>
+    <text id="_1:_2" data-name="1: " transform="translate(227 125)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1: </tspan></text>
+    <text id="Administration_" data-name="Administration " transform="translate(245 125)" fill="#19e134" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Administration </tspan></text>
+    <text id="_2:_" data-name="2: " transform="translate(227 144)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">2: </tspan></text>
+    <text id="Contract_Operator_" data-name="Contract Operator " transform="translate(245 144)" fill="#ef1818" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Contract Operator </tspan></text>
+    <text id="Bitcoin_Change-2" data-name="Bitcoin Change" transform="translate(420 144)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Bitcoin Change</tspan></text>
   </g>
 </svg>
