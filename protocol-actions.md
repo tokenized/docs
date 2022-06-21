@@ -6,6 +6,7 @@
 - [Field Aliases](#field-aliases)
 
 <a name="introduction"></a>
+
 ## Introduction
 
 The following actions break down the construction of a Tokenized protocol message. The action is constructed by building a single string from each of the elements in order. Each field within the action is given a specific type, including standard types and compound types.
@@ -13,9 +14,11 @@ The following actions break down the construction of a Tokenized protocol messag
 See the [Transactions article](../concepts/transactions) for details on how to construct a complete transaction.
 
 <a name="all-actions"></a>
+
 ## Available Actions
 
 <div class="content-list collection-method-list" markdown="1">
+
 - [Contract Offer](#action-contract-offer)
 - [Contract Formation](#action-contract-formation)
 - [Contract Amendment](#action-contract-amendment)
@@ -48,6 +51,7 @@ See the [Transactions article](../concepts/transactions) for details on how to c
 </div>
 
 <a name="action-contract-offer"></a>
+
 #### Contract Offer
 
 Allows the administration to tell the smart contract what they want the details (labels, data, T&amp;C&#39;s, etc.) of the Contract to be on-chain in a public and immutable way. The Contract Offer action &#39;initializes&#39; a generic smart contract that has been spun up by either the smart contract operator or the administration. This on-chain action allows for the positive response from the smart contract with either a Contract Formation Action or a Rejection Action.
@@ -58,7 +62,6 @@ Allows the administration to tell the smart contract what they want the details 
         <td>C1</td>
     </tr>
 </table>
-
 
 <table>
     <tr>
@@ -76,7 +79,6 @@ Allows the administration to tell the smart contract what they want the details 
              Example: Tesla - Shareholder Agreement
         </td>
     </tr>
-
     <tr>
         <td>BodyOfAgreementType</td>
         <td>
@@ -84,11 +86,10 @@ Allows the administration to tell the smart contract what they want the details 
         </td>
         <td>
             0 - No Body of agreement included 1 - SHA-256 Hash 2 - Tokenized Body of Agreement Format where the agreement is specified with a separate C6/C7 action
-
+<br />
             Body of Agreement - Amendments can be restricted to a vote. Example: 1
         </td>
     </tr>
-
     <tr>
         <td>BodyOfAgreement</td>
         <td>
@@ -96,12 +97,11 @@ Allows the administration to tell the smart contract what they want the details 
         </td>
         <td>
             SHA-256 hash of the body of the agreement (full contract in pdf format or the like) or the full agreement. If BodyOfAgreementType is 2 then this field is empty and the agreement is specified in a C6/C7 action. This is specific to the smart contract and relevant Instruments. Legal and technical information.
-
-            
+<br />
+<br />
             This field is only valid when the field BodyOfAgreementType equals 1.
         </td>
     </tr>
-
     <tr>
         <td>(Deprecated)ContractType</td>
         <td>deprecated</td>
@@ -110,7 +110,6 @@ Allows the administration to tell the smart contract what they want the details 
              Example: Shareholder Agreement
         </td>
     </tr>
-
     <tr>
         <td>SupportingDocs</td>
         <td>
@@ -118,10 +117,8 @@ Allows the administration to tell the smart contract what they want the details 
         </td>
         <td>
             Supporting documents that are important to the contract.
-            
-        </td>
+</td>
     </tr>
-
     <tr>
         <td>(Deprecated)GoverningLaw</td>
         <td>deprecated</td>
@@ -130,7 +127,6 @@ Allows the administration to tell the smart contract what they want the details 
             Governing Legal System - Amendments can be restricted to a vote. Example: USA
         </td>
     </tr>
-
     <tr>
         <td>(Deprecated)Jurisdiction</td>
         <td>deprecated</td>
@@ -139,7 +135,6 @@ Allows the administration to tell the smart contract what they want the details 
             Jurisdiction - Amendments can be restricted to a vote. Example: US-CA
         </td>
     </tr>
-
     <tr>
         <td>ContractExpiration</td>
         <td>
@@ -150,7 +145,6 @@ Allows the administration to tell the smart contract what they want the details 
             Contract Expiration - Amendments can be restricted to a vote.
         </td>
     </tr>
-
     <tr>
         <td>ContractURI</td>
         <td>
@@ -161,19 +155,15 @@ Allows the administration to tell the smart contract what they want the details 
              Example: https://tokenized.com/Contract/3qeoSCg7JmfSnJesJFojj
         </td>
     </tr>
-
     <tr>
         <td>Issuer</td>
         <td>
             <a href="#type-entity">Entity</a>
         </td>
         <td>
-            The issuer of this contract.
-            
-            This field is only valid when the field ContractType equals 0.
+            The issuer of this contract.<br />            This field is only valid when the field ContractType equals 0.
         </td>
     </tr>
-
     <tr>
         <td>(Deprecated)IssuerLogoURL</td>
         <td>deprecated</td>
@@ -182,7 +172,6 @@ Allows the administration to tell the smart contract what they want the details 
              Example: https://example.com/images/logo.png
         </td>
     </tr>
-
     <tr>
         <td>ContractOperatorIncluded</td>
         <td>
@@ -190,46 +179,36 @@ Allows the administration to tell the smart contract what they want the details 
         </td>
         <td>
             If true, then the second input is a contract operator. If false, then all additional inputs are just funding and &#34;includes&#34; fields are skipped in serialization.
-            
-        </td>
+  </td>
     </tr>
-
     <tr>
         <td>(Deprecated)ContractOperator</td>
         <td>deprecated</td>
         <td>
             Deprecated for operator entity contract address. An additional entity with operator access to the contract.
-            
-        </td>
+  </td>
     </tr>
-
     <tr>
         <td>(Deprecated)AdminOracle</td>
         <td>deprecated</td>
         <td>
             The oracle that provided the signature used to verify the administration&#39;s identity and association with a parent contract if one is specified.
-            
-        </td>
+  </td>
     </tr>
-
     <tr>
         <td>(Deprecated)AdminOracleSignature</td>
         <td>deprecated</td>
         <td>
             The ECDSA signature provided by the oracle specified. The first input must correspond to the administration entity and, if a contract operator is included, the second input must correspond to the contract operator entity.
-            
-        </td>
+  </td>
     </tr>
-
     <tr>
         <td>(Deprecated)AdminOracleSigBlockHeight</td>
         <td>deprecated</td>
         <td>
             The block height of the block hash used in the oracle signature.
-            
-        </td>
+  </td>
     </tr>
-
     <tr>
         <td>ContractFee</td>
         <td>
@@ -237,10 +216,8 @@ Allows the administration to tell the smart contract what they want the details 
         </td>
         <td>
             Satoshis required to be paid to the contract for each instrument action.
-            
-        </td>
+  </td>
     </tr>
-
     <tr>
         <td>VotingSystems</td>
         <td>
@@ -248,10 +225,8 @@ Allows the administration to tell the smart contract what they want the details 
         </td>
         <td>
             A list of voting systems.
-            
-        </td>
+  </td>
     </tr>
-
     <tr>
         <td>ContractPermissions</td>
         <td>
@@ -259,10 +234,8 @@ Allows the administration to tell the smart contract what they want the details 
         </td>
         <td>
             A set of permission objects containing switches and field references that define the permissions for modifying this contract. See the Permission documentation for more detail.
-            
-        </td>
+  </td>
     </tr>
-
     <tr>
         <td>RestrictedQtyInstruments</td>
         <td>
@@ -273,7 +246,6 @@ Allows the administration to tell the smart contract what they want the details 
             Qty of Instruments - Amendments can be restricted to a vote. Example: 1
         </td>
     </tr>
-
     <tr>
         <td>AdministrationProposal</td>
         <td>
@@ -284,7 +256,6 @@ Allows the administration to tell the smart contract what they want the details 
             General Governance Example: true
         </td>
     </tr>
-
     <tr>
         <td>HolderProposal</td>
         <td>
@@ -295,7 +266,6 @@ Allows the administration to tell the smart contract what they want the details 
              Example: true
         </td>
     </tr>
-
     <tr>
         <td>Oracles</td>
         <td>
@@ -303,10 +273,8 @@ Allows the administration to tell the smart contract what they want the details 
         </td>
         <td>
             A list of oracles that provide approval for all token transfers for all instruments under the contract.
-            
-        </td>
+  </td>
     </tr>
-
     <tr>
         <td>MasterAddress</td>
         <td>
@@ -314,36 +282,28 @@ Allows the administration to tell the smart contract what they want the details 
         </td>
         <td>
             The address of the contract&#39;s master key. This key has the ability to change the active contract address in case of a security failure with the active contract key.
-            
-        </td>
+  </td>
     </tr>
-
     <tr>
         <td>EntityContract</td>
         <td>
             <a href="#alias-address">Address</a>
         </td>
         <td>
-            The address of the contract&#39;s parent entity. This is not valid for entity contracts, but required for instrument and service contracts to identify the entity parent contract.
-
-            
+            The address of the contract&#39;s parent entity. This is not valid for entity contracts, but required for instrument and service contracts to identify the entity parent contract.<br />
             This field is required when the field ContractType equals 1.
             This field is only valid when the field ContractType equals 1.
         </td>
     </tr>
-
     <tr>
         <td>OperatorEntityContract</td>
         <td>
             <a href="#alias-address">Address</a>
         </td>
         <td>
-            The address for the operator&#39;s entity contract.
-            
-            This field is only valid when the field ContractOperatorIncluded equals true.
+            The address for the operator&#39;s entity contract.<br />            This field is only valid when the field ContractOperatorIncluded equals true.
         </td>
     </tr>
-
     <tr>
         <td>ContractType</td>
         <td>
@@ -354,19 +314,15 @@ Allows the administration to tell the smart contract what they want the details 
              Example: 0
         </td>
     </tr>
-
     <tr>
         <td>Services</td>
         <td>
             <a href="#type-service">Service[tiny]</a>
         </td>
         <td>
-            The services provided by the contract entity.
-            
-            This field is only valid when the field ContractType equals 0.
+            The services provided by the contract entity.<br />            This field is only valid when the field ContractType equals 0.
         </td>
     </tr>
-
     <tr>
         <td>AdminIdentityCertificates</td>
         <td>
@@ -374,10 +330,8 @@ Allows the administration to tell the smart contract what they want the details 
         </td>
         <td>
             Certificates providing proof of administrator/operator identities.
-            
-        </td>
+  </td>
     </tr>
-
     <tr>
         <td>GoverningLaw</td>
         <td>
@@ -388,7 +342,6 @@ Allows the administration to tell the smart contract what they want the details 
             Governing Legal System - Amendments can be restricted to a vote. Example: USA
         </td>
     </tr>
-
     <tr>
         <td>Jurisdiction</td>
         <td>
@@ -399,11 +352,9 @@ Allows the administration to tell the smart contract what they want the details 
             Jurisdiction - Amendments can be restricted to a vote. Example: US-CA
         </td>
     </tr>
-
 </table>
 
 ##### Transaction Summary
-
 
 <table>
    <tr>
@@ -424,8 +375,6 @@ Allows the administration to tell the smart contract what they want the details 
     </tr>
 </table>
 
-
-
 <table>
    <tr>
         <th style="width:5%" class="text-center">Index</th>
@@ -439,15 +388,13 @@ Allows the administration to tell the smart contract what they want the details 
     </tr>
 </table>
 
-
 <hr />
 
-
-
 <a name="action-contract-formation"></a>
+
 #### Contract Formation
 
-This txn is created by the contract (smart contract/off-chain agent/token contract) upon receipt of a valid Contract Offer Action from the administration.  The smart contract will execute on a server controlled by the administration, or a smart contract operator on their behalf.
+This txn is created by the contract (smart contract/off-chain agent/token contract) upon receipt of a valid Contract Offer Action from the administration. The smart contract will execute on a server controlled by the administration, or a smart contract operator on their behalf.
 
 <table>
     <tr>
@@ -455,7 +402,6 @@ This txn is created by the contract (smart contract/off-chain agent/token contra
         <td>C2</td>
     </tr>
 </table>
-
 
 <table>
     <tr>
@@ -473,32 +419,25 @@ This txn is created by the contract (smart contract/off-chain agent/token contra
              Example: Tesla - Shareholder Agreement
         </td>
     </tr>
-
     <tr>
         <td>BodyOfAgreementType</td>
         <td>
             uint(1)
         </td>
         <td>
-            0 - No Body of agreement included 1 - SHA-256 Hash 2 - Tokenized Body of Agreement Format where the agreement is specified with a separate C6/C7 action
-
+            0 - No Body of agreement included 1 - SHA-256 Hash 2 - Tokenized Body of Agreement Format where the agreement is specified with a separate C6/C7 action<br />
             Body of Agreement - Amendments can be restricted to a vote. Example: 1
         </td>
     </tr>
-
     <tr>
         <td>BodyOfAgreement</td>
         <td>
             varbin(medium)
         </td>
         <td>
-            SHA-256 hash of the body of the agreement (full contract in pdf format or the like) or the full agreement. If BodyOfAgreementType is 2 then this field is empty and the agreement is specified in a C6/C7 action. This is specific to the smart contract and relevant Instruments. Legal and technical information.
-
-            
-            This field is only valid when the field BodyOfAgreementType equals 1.
+            SHA-256 hash of the body of the agreement (full contract in pdf format or the like) or the full agreement. If BodyOfAgreementType is 2 then this field is empty and the agreement is specified in a C6/C7 action. This is specific to the smart contract and relevant Instruments. Legal and technical information.<br /><br />            This field is only valid when the field BodyOfAgreementType equals 1.
         </td>
     </tr>
-
     <tr>
         <td>(Deprecated)ContractType</td>
         <td>deprecated</td>
@@ -507,7 +446,6 @@ This txn is created by the contract (smart contract/off-chain agent/token contra
              Example: Shareholder Agreement
         </td>
     </tr>
-
     <tr>
         <td>SupportingDocs</td>
         <td>
@@ -515,10 +453,8 @@ This txn is created by the contract (smart contract/off-chain agent/token contra
         </td>
         <td>
             Supporting documents that are important to the contract.
-            
-        </td>
+</td>
     </tr>
-
     <tr>
         <td>(Deprecated)GoverningLaw</td>
         <td>deprecated</td>
@@ -527,7 +463,6 @@ This txn is created by the contract (smart contract/off-chain agent/token contra
             Governing Legal System - Amendments can be restricted to a vote. Example: USA
         </td>
     </tr>
-
     <tr>
         <td>(Deprecated)Jurisdiction</td>
         <td>deprecated</td>
@@ -536,7 +471,6 @@ This txn is created by the contract (smart contract/off-chain agent/token contra
             Jurisdiction - Amendments can be restricted to a vote. Example: US-CA
         </td>
     </tr>
-
     <tr>
         <td>ContractExpiration</td>
         <td>
@@ -547,7 +481,6 @@ This txn is created by the contract (smart contract/off-chain agent/token contra
             Contract Expiration - Amendments can be restricted to a vote.
         </td>
     </tr>
-
     <tr>
         <td>ContractURI</td>
         <td>
@@ -558,19 +491,15 @@ This txn is created by the contract (smart contract/off-chain agent/token contra
              Example: https://tokenized.com/Contract/3qeoSCg7JmfSnJesJFojj
         </td>
     </tr>
-
     <tr>
         <td>Issuer</td>
         <td>
             <a href="#type-entity">Entity</a>
         </td>
         <td>
-            The issuer of this contract.
-            
-            This field is only valid when the field ContractType equals 0.
+            The issuer of this contract.<br />            This field is only valid when the field ContractType equals 0.
         </td>
     </tr>
-
     <tr>
         <td>(Deprecated)IssuerLogoURL</td>
         <td>deprecated</td>
@@ -579,43 +508,34 @@ This txn is created by the contract (smart contract/off-chain agent/token contra
              Example: https://example.tld/images/logo.png
         </td>
     </tr>
-
     <tr>
         <td>(Deprecated)ContractOperator</td>
         <td>deprecated</td>
         <td>
             Deprecated for operator entity contract address. An additional entity with operator access to the contract.
-            
-        </td>
+  </td>
     </tr>
-
     <tr>
         <td>(Deprecated)AdminOracle</td>
         <td>deprecated</td>
         <td>
             The oracle that provided the signature used to verify the administration&#39;s identity.
-            
-        </td>
+  </td>
     </tr>
-
     <tr>
         <td>(Deprecated)AdminOracleSignature</td>
         <td>deprecated</td>
         <td>
             The ECDSA signature provided by the oracle specified. The first input must correspond to the administration entity and, if a contract operator is included, the second input must correspond to the contract operator entity.
-            
-        </td>
+  </td>
     </tr>
-
     <tr>
         <td>(Deprecated)AdminOracleSigBlockHeight</td>
         <td>deprecated</td>
         <td>
             The block height of the block hash used in the oracle signature.
-            
-        </td>
+  </td>
     </tr>
-
     <tr>
         <td>ContractFee</td>
         <td>
@@ -623,10 +543,8 @@ This txn is created by the contract (smart contract/off-chain agent/token contra
         </td>
         <td>
             Satoshis required to be paid to the contract for each instrument action.
-            
-        </td>
+  </td>
     </tr>
-
     <tr>
         <td>VotingSystems</td>
         <td>
@@ -634,10 +552,8 @@ This txn is created by the contract (smart contract/off-chain agent/token contra
         </td>
         <td>
             A list voting systems.
-            
-        </td>
+  </td>
     </tr>
-
     <tr>
         <td>ContractPermissions</td>
         <td>
@@ -645,10 +561,8 @@ This txn is created by the contract (smart contract/off-chain agent/token contra
         </td>
         <td>
             A set of permission objects containing switches and field references that define the permissions for modifying this contract. See the Permission documentation for more detail.
-            
-        </td>
+  </td>
     </tr>
-
     <tr>
         <td>RestrictedQtyInstruments</td>
         <td>
@@ -659,7 +573,6 @@ This txn is created by the contract (smart contract/off-chain agent/token contra
             Qty of Instruments - Amendments can be restricted to a vote. Example: 1
         </td>
     </tr>
-
     <tr>
         <td>AdministrationProposal</td>
         <td>
@@ -670,7 +583,6 @@ This txn is created by the contract (smart contract/off-chain agent/token contra
             General Governance Example: true
         </td>
     </tr>
-
     <tr>
         <td>HolderProposal</td>
         <td>
@@ -681,7 +593,6 @@ This txn is created by the contract (smart contract/off-chain agent/token contra
              Example: true
         </td>
     </tr>
-
     <tr>
         <td>Oracles</td>
         <td>
@@ -689,10 +600,8 @@ This txn is created by the contract (smart contract/off-chain agent/token contra
         </td>
         <td>
             A list of oracles that provide approval for all token transfers for all instruments under the contract.
-            
-        </td>
+  </td>
     </tr>
-
     <tr>
         <td>MasterAddress</td>
         <td>
@@ -700,10 +609,8 @@ This txn is created by the contract (smart contract/off-chain agent/token contra
         </td>
         <td>
             The address of the contract&#39;s master key. This key has the ability to change the active contract address in case of a security failure with the active contract key.
-            
-        </td>
+  </td>
     </tr>
-
     <tr>
         <td>ContractRevision</td>
         <td>
@@ -714,7 +621,6 @@ This txn is created by the contract (smart contract/off-chain agent/token contra
             Can&#39;t be changed by the administration, operator. Smart contract controls. Example: 0
         </td>
     </tr>
-
     <tr>
         <td>Timestamp</td>
         <td>
@@ -725,20 +631,16 @@ This txn is created by the contract (smart contract/off-chain agent/token contra
             Can&#39;t be changed by the administration, operator. Smart contract controls.
         </td>
     </tr>
-
     <tr>
         <td>EntityContract</td>
         <td>
             <a href="#alias-address">Address</a>
         </td>
         <td>
-            The address of the contract&#39;s parent entity. This is optional for entity contracts, but required for instrument and service contracts to identify the entity parent contract.
-            
-            This field is required when the field ContractType equals 1.
+            The address of the contract&#39;s parent entity. This is optional for entity contracts, but required for instrument and service contracts to identify the entity parent contract.<br />            This field is required when the field ContractType equals 1.
             This field is only valid when the field ContractType equals 1.
         </td>
     </tr>
-
     <tr>
         <td>OperatorEntityContract</td>
         <td>
@@ -746,10 +648,8 @@ This txn is created by the contract (smart contract/off-chain agent/token contra
         </td>
         <td>
             The address for the operator&#39;s entity contract.
-            
-        </td>
+  </td>
     </tr>
-
     <tr>
         <td>ContractType</td>
         <td>
@@ -760,19 +660,15 @@ This txn is created by the contract (smart contract/off-chain agent/token contra
              Example: 0
         </td>
     </tr>
-
     <tr>
         <td>Services</td>
         <td>
             <a href="#type-service">Service[tiny]</a>
         </td>
         <td>
-            The services provided by the contract entity.
-            
-            This field is only valid when the field ContractType equals 0.
+            The services provided by the contract entity.<br />            This field is only valid when the field ContractType equals 0.
         </td>
     </tr>
-
     <tr>
         <td>AdminIdentityCertificates</td>
         <td>
@@ -780,22 +676,16 @@ This txn is created by the contract (smart contract/off-chain agent/token contra
         </td>
         <td>
             Certificates providing proof of administrator/operator identities.
-            
-        </td>
+  </td>
     </tr>
-
     <tr>
         <td>AdminAddress</td>
         <td>
             <a href="#alias-address">Address</a>
         </td>
         <td>
-            The address of the contract&#39;s administrator. This is not contained in the contract offer payload, but determined by the inputs of the contract offer transaction and included here by the smart contract agent as a convenience.
-
-            
-        </td>
+            The address of the contract&#39;s administrator. This is not contained in the contract offer payload, but determined by the inputs of the contract offer transaction and included here by the smart contract agent as a convenience.<br />  </td>
     </tr>
-
     <tr>
         <td>OperatorAddress</td>
         <td>
@@ -804,10 +694,8 @@ This txn is created by the contract (smart contract/off-chain agent/token contra
         <td>
             The address of the contract&#39;s operator. This is not contained in the contract offer payload, but determined by the inputs of the contract offer transaction and included here by the smart contract agent as a convenience.&#34;
 
-            
-        </td>
+  </td>
     </tr>
-
     <tr>
         <td>GoverningLaw</td>
         <td>
@@ -818,7 +706,6 @@ This txn is created by the contract (smart contract/off-chain agent/token contra
             Governing Legal System - Amendments can be restricted to a vote. Example: USA
         </td>
     </tr>
-
     <tr>
         <td>Jurisdiction</td>
         <td>
@@ -829,11 +716,9 @@ This txn is created by the contract (smart contract/off-chain agent/token contra
             Jurisdiction - Amendments can be restricted to a vote. Example: US-CA
         </td>
     </tr>
-
 </table>
 
 ##### Transaction Summary
-
 
 <table>
    <tr>
@@ -848,8 +733,6 @@ This txn is created by the contract (smart contract/off-chain agent/token contra
     </tr>
 </table>
 
-
-
 <table>
    <tr>
         <th style="width:5%" class="text-center">Index</th>
@@ -863,12 +746,10 @@ This txn is created by the contract (smart contract/off-chain agent/token contra
     </tr>
 </table>
 
-
 <hr />
 
-
-
 <a name="action-contract-amendment"></a>
+
 #### Contract Amendment
 
 The administration can initiate an amendment to the contract establishment metadata. The ability to make an amendment to the contract is restricted by the Authorization Flag set on the current revision of Contract Formation action.
@@ -879,7 +760,6 @@ The administration can initiate an amendment to the contract establishment metad
         <td>C3</td>
     </tr>
 </table>
-
 
 <table>
     <tr>
@@ -897,7 +777,6 @@ The administration can initiate an amendment to the contract establishment metad
              Example: 1
         </td>
     </tr>
-
     <tr>
         <td>ChangeOperatorAddress</td>
         <td>
@@ -908,7 +787,6 @@ The administration can initiate an amendment to the contract establishment metad
              Example: 1
         </td>
     </tr>
-
     <tr>
         <td>ContractRevision</td>
         <td>
@@ -919,7 +797,6 @@ The administration can initiate an amendment to the contract establishment metad
              Example: 42
         </td>
     </tr>
-
     <tr>
         <td>Amendments</td>
         <td>
@@ -927,10 +804,8 @@ The administration can initiate an amendment to the contract establishment metad
         </td>
         <td>
             A collection of modifications to perform on this contract.
-            
-        </td>
+  </td>
     </tr>
-
     <tr>
         <td>RefTxID</td>
         <td>
@@ -938,14 +813,11 @@ The administration can initiate an amendment to the contract establishment metad
         </td>
         <td>
             The Bitcoin transaction ID of the associated result action that permitted the modifications. See Governance for more details.
-            
-        </td>
+  </td>
     </tr>
-
 </table>
 
 ##### Transaction Summary
-
 
 <table>
    <tr>
@@ -965,8 +837,6 @@ The administration can initiate an amendment to the contract establishment metad
     </tr>
 </table>
 
-
-
 <table>
    <tr>
         <th style="width:5%" class="text-center">Index</th>
@@ -980,12 +850,10 @@ The administration can initiate an amendment to the contract establishment metad
     </tr>
 </table>
 
-
 <hr />
 
-
-
 <a name="action-static-contract-formation"></a>
+
 #### Static Contract Formation
 
 Static Contract Formation Action
@@ -996,7 +864,6 @@ Static Contract Formation Action
         <td>C4</td>
     </tr>
 </table>
-
 
 <table>
     <tr>
@@ -1010,12 +877,9 @@ Static Contract Formation Action
             varchar(tiny)
         </td>
         <td>
-            Can be any unique identifying string, including human readable names for branding/vanity purposes. Contract identifier (instance) is the bitcoin public address. If the public address is lost, then the administration will have to reissue the entire contract, Instrument Definition and tokens with the new public address. Smart contracts can be branded and specialized to suit any terms and conditions.
-
-             Example: Tesla - Shareholder Agreement
+            Can be any unique identifying string, including human readable names for branding/vanity purposes. Contract identifier (instance) is the bitcoin public address. If the public address is lost, then the administration will have to reissue the entire contract, Instrument Definition and tokens with the new public address. Smart contracts can be branded and specialized to suit any terms and conditions.<br />             Example: Tesla - Shareholder Agreement
         </td>
     </tr>
-
     <tr>
         <td>ContractCode</td>
         <td>
@@ -1023,10 +887,8 @@ Static Contract Formation Action
         </td>
         <td>
             32 randomly generated bytes. Each Contract Code should be unique. The Contract ID will be human facing and will be the Contract Code, with a checksum, encoded in base58 and prefixed by &#39;CON&#39;. Contract ID = CON &#43; base58(ContractCode &#43; checksum).  Eg. Contract ID = &#39;CON18RDoKK7Ed5zid2FkKVy7q3rULr4tgfjr4&#39;
-            
-        </td>
+  </td>
     </tr>
-
     <tr>
         <td>BodyOfAgreementType</td>
         <td>
@@ -1037,7 +899,6 @@ Static Contract Formation Action
             Body of Agreement - Amendments can be restricted to a vote. Example: 1
         </td>
     </tr>
-
     <tr>
         <td>BodyOfAgreement</td>
         <td>
@@ -1045,10 +906,8 @@ Static Contract Formation Action
         </td>
         <td>
             SHA-256 hash of the body of the agreement (full contract in pdf format or the like) or the full terms and conditions of an agreement in the Tokenized Body of Agreement format.  This is specific to the smart contract and relevant Instruments.  Legal and technical information.
-            
-        </td>
+  </td>
     </tr>
-
     <tr>
         <td>ContractType</td>
         <td>
@@ -1059,7 +918,6 @@ Static Contract Formation Action
              Example: Non-Disclosure Agreement
         </td>
     </tr>
-
     <tr>
         <td>SupportingDocs</td>
         <td>
@@ -1067,10 +925,8 @@ Static Contract Formation Action
         </td>
         <td>
             Supporting documents that are important to the contract.
-            
-        </td>
+  </td>
     </tr>
-
     <tr>
         <td>ContractRevision</td>
         <td>
@@ -1081,7 +937,6 @@ Static Contract Formation Action
              Example: 0
         </td>
     </tr>
-
     <tr>
         <td>(Deprecated)GoverningLawDeprecated</td>
         <td>deprecated</td>
@@ -1090,7 +945,6 @@ Static Contract Formation Action
              Example: USA
         </td>
     </tr>
-
     <tr>
         <td>(Deprecated)JurisdictionDeprecated</td>
         <td>deprecated</td>
@@ -1099,7 +953,6 @@ Static Contract Formation Action
              Example: US-CA
         </td>
     </tr>
-
     <tr>
         <td>EffectiveDate</td>
         <td>
@@ -1107,10 +960,8 @@ Static Contract Formation Action
         </td>
         <td>
             Start date of the contract.
-            
-        </td>
+  </td>
     </tr>
-
     <tr>
         <td>ContractExpiration</td>
         <td>
@@ -1118,10 +969,8 @@ Static Contract Formation Action
         </td>
         <td>
             All actions related to the contract will cease to work after this timestamp. The smart contract will stop running.  This will allow many token use cases to be able to calculate smart contract running costs. Eg. an issuer is creating tickets for an event on the 5th of June 2018.  The smart contract will facilitate exchange and send transactions up until the 6th of June.  Wallets can use this to forget tokens that are no longer valid - or at least store them in an &#39;Expired&#39; folder.
-            
-        </td>
+  </td>
     </tr>
-
     <tr>
         <td>ContractURI</td>
         <td>
@@ -1132,7 +981,6 @@ Static Contract Formation Action
              Example: https://tokenized.com/Contract/3qeoSCg7JmfSnJesJFojj
         </td>
     </tr>
-
     <tr>
         <td>PrevRevTxID</td>
         <td>
@@ -1140,10 +988,8 @@ Static Contract Formation Action
         </td>
         <td>
             The Tx-ID of the previous contract revision.
-            
-        </td>
+  </td>
     </tr>
-
     <tr>
         <td>Entities</td>
         <td>
@@ -1151,10 +997,8 @@ Static Contract Formation Action
         </td>
         <td>
             A list of legal entities associated with this contract.
-            
-        </td>
+  </td>
     </tr>
-
     <tr>
         <td>EntityOracle</td>
         <td>
@@ -1162,10 +1006,8 @@ Static Contract Formation Action
         </td>
         <td>
             The oracle that provided the signature used to verify the entity&#39;s identity.
-            
-        </td>
+  </td>
     </tr>
-
     <tr>
         <td>EntityOracleSignature</td>
         <td>
@@ -1173,10 +1015,8 @@ Static Contract Formation Action
         </td>
         <td>
             The ECDSA signature provided by the oracle specified. For N entities, the first N inputs must correspond with those entities.
-            
-        </td>
+  </td>
     </tr>
-
     <tr>
         <td>EntityOracleSigBlockHeight</td>
         <td>
@@ -1184,10 +1024,8 @@ Static Contract Formation Action
         </td>
         <td>
             The block height of the block hash used in the oracle signature.
-            
-        </td>
+  </td>
     </tr>
-
     <tr>
         <td>GoverningLaw</td>
         <td>
@@ -1198,7 +1036,6 @@ Static Contract Formation Action
             Governing Legal System - Amendments can be restricted to a vote. Example: USA
         </td>
     </tr>
-
     <tr>
         <td>Jurisdiction</td>
         <td>
@@ -1209,11 +1046,9 @@ Static Contract Formation Action
             Jurisdiction - Amendments can be restricted to a vote. Example: US-CA
         </td>
     </tr>
-
 </table>
 
 ##### Transaction Summary
-
 
 <table>
    <tr>
@@ -1228,14 +1063,10 @@ Static Contract Formation Action
     </tr>
 </table>
 
-
-
-
 <hr />
 
-
-
 <a name="action-contract-address-change"></a>
+
 #### Contract Address Change
 
 This txn is signed by the master contract key defined in the contract formation and changes the active contract address which the contract uses to receive and respond to requests. This is a worst case scenario fallback to only be used when the contract private key is believed to be exposed.
@@ -1246,7 +1077,6 @@ This txn is signed by the master contract key defined in the contract formation 
         <td>C5</td>
     </tr>
 </table>
-
 
 <table>
     <tr>
@@ -1260,11 +1090,8 @@ This txn is signed by the master contract key defined in the contract formation 
             <a href="#alias-address">Address</a>
         </td>
         <td>
-            The address to be used by all future requests/responses for the contract.
-            
-        </td>
+            The address to be used by all future requests/responses for the contract.</td>
     </tr>
-
     <tr>
         <td>Timestamp</td>
         <td>
@@ -1272,14 +1099,11 @@ This txn is signed by the master contract key defined in the contract formation 
         </td>
         <td>
             Timestamp in nanoseconds of when the action was created.
-            
-        </td>
+  </td>
     </tr>
-
 </table>
 
 ##### Transaction Summary
-
 
 <table>
    <tr>
@@ -1294,8 +1118,6 @@ This txn is signed by the master contract key defined in the contract formation 
     </tr>
 </table>
 
-
-
 <table>
    <tr>
         <th style="width:5%" class="text-center">Index</th>
@@ -1309,12 +1131,10 @@ This txn is signed by the master contract key defined in the contract formation 
     </tr>
 </table>
 
-
 <hr />
 
-
-
 <a name="action-body-of-agreement-offer"></a>
+
 #### Body Of Agreement Offer
 
 Allows the administration to define the agreement for the contract.
@@ -1325,7 +1145,6 @@ Allows the administration to define the agreement for the contract.
         <td>C6</td>
     </tr>
 </table>
-
 
 <table>
     <tr>
@@ -1339,11 +1158,8 @@ Allows the administration to define the agreement for the contract.
             <a href="#type-chapter">Chapter[tiny]</a>
         </td>
         <td>
-            A list of chapters for the agreement.
-            
-        </td>
+            A list of chapters for the agreement.</td>
     </tr>
-
     <tr>
         <td>Definitions</td>
         <td>
@@ -1351,14 +1167,11 @@ Allows the administration to define the agreement for the contract.
         </td>
         <td>
             Definition of values within the agreement.
-            
-        </td>
+  </td>
     </tr>
-
 </table>
 
 ##### Transaction Summary
-
 
 <table>
    <tr>
@@ -1373,8 +1186,6 @@ Allows the administration to define the agreement for the contract.
     </tr>
 </table>
 
-
-
 <table>
    <tr>
         <th style="width:5%" class="text-center">Index</th>
@@ -1388,12 +1199,10 @@ Allows the administration to define the agreement for the contract.
     </tr>
 </table>
 
-
 <hr />
 
-
-
 <a name="action-body-of-agreement-formation"></a>
+
 #### Body Of Agreement Formation
 
 Provides the current version of the body of agreement for the contract.
@@ -1404,7 +1213,6 @@ Provides the current version of the body of agreement for the contract.
         <td>C7</td>
     </tr>
 </table>
-
 
 <table>
     <tr>
@@ -1418,11 +1226,8 @@ Provides the current version of the body of agreement for the contract.
             <a href="#type-chapter">Chapter[tiny]</a>
         </td>
         <td>
-            A list of chapters for the agreement.
-            
-        </td>
+            A list of chapters for the agreement.</td>
     </tr>
-
     <tr>
         <td>Definitions</td>
         <td>
@@ -1430,10 +1235,8 @@ Provides the current version of the body of agreement for the contract.
         </td>
         <td>
             Definition of terms within the agreement.
-            
-        </td>
+  </td>
     </tr>
-
     <tr>
         <td>Revision</td>
         <td>
@@ -1444,7 +1247,6 @@ Provides the current version of the body of agreement for the contract.
             Can&#39;t be changed by the administration, operator. Smart contract controls. Example: 0
         </td>
     </tr>
-
     <tr>
         <td>Timestamp</td>
         <td>
@@ -1455,11 +1257,9 @@ Provides the current version of the body of agreement for the contract.
             Can&#39;t be changed by the administration, operator. Smart contract controls.
         </td>
     </tr>
-
 </table>
 
 ##### Transaction Summary
-
 
 <table>
    <tr>
@@ -1474,8 +1274,6 @@ Provides the current version of the body of agreement for the contract.
     </tr>
 </table>
 
-
-
 <table>
    <tr>
         <th style="width:5%" class="text-center">Index</th>
@@ -1489,12 +1287,10 @@ Provides the current version of the body of agreement for the contract.
     </tr>
 </table>
 
-
 <hr />
 
-
-
 <a name="action-body-of-agreement-amendment"></a>
+
 #### Body Of Agreement Amendment
 
 Allows the administration to modify the agreement for the contract.
@@ -1505,7 +1301,6 @@ Allows the administration to modify the agreement for the contract.
         <td>C8</td>
     </tr>
 </table>
-
 
 <table>
     <tr>
@@ -1523,7 +1318,6 @@ Allows the administration to modify the agreement for the contract.
             Cannot be Amended Example: 0
         </td>
     </tr>
-
     <tr>
         <td>Amendments</td>
         <td>
@@ -1531,10 +1325,8 @@ Allows the administration to modify the agreement for the contract.
         </td>
         <td>
             A collection of modifications to perform on this instrument.
-            
-        </td>
+  </td>
     </tr>
-
     <tr>
         <td>RefTxID</td>
         <td>
@@ -1542,14 +1334,11 @@ Allows the administration to modify the agreement for the contract.
         </td>
         <td>
             The Bitcoin transaction ID of the associated result action that permitted the modifications. See Governance for more details.
-            
-        </td>
+  </td>
     </tr>
-
 </table>
 
 ##### Transaction Summary
-
 
 <table>
    <tr>
@@ -1564,8 +1353,6 @@ Allows the administration to modify the agreement for the contract.
     </tr>
 </table>
 
-
-
 <table>
    <tr>
         <th style="width:5%" class="text-center">Index</th>
@@ -1579,16 +1366,13 @@ Allows the administration to modify the agreement for the contract.
     </tr>
 </table>
 
-
 <hr />
 
-
-
 <a name="action-instrument-definition"></a>
+
 #### Instrument Definition
 
 This action is used by the administration to define the properties/characteristics of the instrument (token) that it wants to create. An instrument has a unique identifier called InstrumentID = InstrumentType &#43; base58(InstrumentCode &#43; checksum). An instrument is always linked to a contract that is identified by the public address of the Contract wallet.
-
 
 <table>
     <tr>
@@ -1596,8 +1380,6 @@ This action is used by the administration to define the properties/characteristi
         <td>I1</td>
     </tr>
 </table>
-
-
 <table>
     <tr>
         <th style="width:15%">Field</th>
@@ -1611,28 +1393,25 @@ This action is used by the administration to define the properties/characteristi
         </td>
         <td>
             A set of permission objects containing switches and field references that define the permissions for modifying this instrument. See the Permission documentation for more detail.
-            
+            <br />
         </td>
     </tr>
-
     <tr>
         <td>(Deprecated)TransfersPermitted</td>
         <td>deprecated</td>
         <td>
             Deprecated to move into specific instrument types. Set to true if transfers are permitted between two parties, otherwise set to false to prevent peer-to-peer transfers.
-            
+<br />
         </td>
     </tr>
-
     <tr>
         <td>(Deprecated)TradeRestrictionsDeprecated</td>
         <td>deprecated</td>
         <td>
             Deprecated to remove fixed size. If specified, the instrument can only be traded within the specified trade restriction zone. For example, AUS would restrict to Australian residents only.
-            
+<br />
         </td>
     </tr>
-
     <tr>
         <td>EnforcementOrdersPermitted</td>
         <td>
@@ -1643,7 +1422,6 @@ This action is used by the administration to define the properties/characteristi
              Example: 1
         </td>
     </tr>
-
     <tr>
         <td>VotingRights</td>
         <td>
@@ -1653,9 +1431,7 @@ This action is used by the administration to define the properties/characteristi
             When false holders of this instrument will not be able to vote for tokens of this instrument even on voting systems in which vote multiplers are not permitted.
              Example: true
         </td>
-    </tr>
-
-    <tr>
+        <tr>
         <td>VoteMultiplier</td>
         <td>
             uint(1)
@@ -1665,7 +1441,6 @@ This action is used by the administration to define the properties/characteristi
              Example: 3
         </td>
     </tr>
-
     <tr>
         <td>AdministrationProposal</td>
         <td>
@@ -1676,7 +1451,6 @@ This action is used by the administration to define the properties/characteristi
             General Governance Example: true
         </td>
     </tr>
-
     <tr>
         <td>HolderProposal</td>
         <td>
@@ -1687,7 +1461,6 @@ This action is used by the administration to define the properties/characteristi
              Example: true
         </td>
     </tr>
-
     <tr>
         <td>InstrumentModificationGovernance</td>
         <td>
@@ -1698,7 +1471,6 @@ This action is used by the administration to define the properties/characteristi
              Example: 1
         </td>
     </tr>
-
     <tr>
         <td>AuthorizedTokenQty</td>
         <td>
@@ -1709,7 +1481,6 @@ This action is used by the administration to define the properties/characteristi
              Example: 1000000
         </td>
     </tr>
-
     <tr>
         <td>InstrumentType</td>
         <td>
@@ -1717,10 +1488,9 @@ This action is used by the administration to define the properties/characteristi
         </td>
         <td>
             A code representing the type of instrument and the structure of the payload.
-             This field is always required. 
+             This field is always required.
         </td>
     </tr>
-
     <tr>
         <td>InstrumentPayload</td>
         <td>
@@ -1728,10 +1498,9 @@ This action is used by the administration to define the properties/characteristi
         </td>
         <td>
             A custom payload that contains meta data about this instrument. Payload structure and length is dependent on the instrument type chosen. See instrument documentation for more details.
-             This field is always required. 
+             This field is always required.
         </td>
     </tr>
-
     <tr>
         <td>TradeRestrictions</td>
         <td>
@@ -1739,14 +1508,11 @@ This action is used by the administration to define the properties/characteristi
         </td>
         <td>
             If specified, the instrument can only be traded within the specified trade restriction zone. For example, AUS would restrict to Australian residents only.
-            
-        </td>
+  </td>
     </tr>
-
 </table>
 
 ##### Transaction Summary
-
 
 <table>
    <tr>
@@ -1761,8 +1527,6 @@ This action is used by the administration to define the properties/characteristi
     </tr>
 </table>
 
-
-
 <table>
    <tr>
         <th style="width:5%" class="text-center">Index</th>
@@ -1776,12 +1540,10 @@ This action is used by the administration to define the properties/characteristi
     </tr>
 </table>
 
-
 <hr />
 
-
-
 <a name="action-instrument-creation"></a>
+
 #### Instrument Creation
 
 This action creates an instrument in response to the administration&#39;s instructions in the Definition Action.
@@ -1792,7 +1554,6 @@ This action creates an instrument in response to the administration&#39;s instru
         <td>I2</td>
     </tr>
 </table>
-
 
 <table>
     <tr>
@@ -1810,7 +1571,6 @@ This action creates an instrument in response to the administration&#39;s instru
             Cannot be changed by the administration, operator or smart contract.
         </td>
     </tr>
-
     <tr>
         <td>InstrumentIndex</td>
         <td>
@@ -1821,36 +1581,28 @@ This action creates an instrument in response to the administration&#39;s instru
              Example: 0
         </td>
     </tr>
-
     <tr>
         <td>InstrumentPermissions</td>
         <td>
             varbin(small)
         </td>
         <td>
-            A set of permission objects containing switches and field references that define the permissions for modifying this instrument. See the Permission documentation for more detail.
-            
+            A set of permission objects containing switches and field references that define the permissions for modifying this instrument. See the Permission documentation for more detail.<br />
         </td>
     </tr>
-
     <tr>
         <td>(Deprecated)TransfersPermitted</td>
         <td>deprecated</td>
         <td>
-            Deprecated to move into specific instrument types. Set to true if transfers are permitted between two parties, otherwise set to false to prevent peer-to-peer transfers.
-            
-        </td>
+            Deprecated to move into specific instrument types. Set to true if transfers are permitted between two parties, otherwise set to false to prevent peer-to-peer transfers.<br />        </td>
     </tr>
-
     <tr>
         <td>(Deprecated)TradeRestrictionsDeprecated</td>
         <td>deprecated</td>
         <td>
-            Deprecated to remove fixed size. If specified, the instrument can only be traded within the specified trade restriction zone. For example, AUS would restrict to Australian residents only.
-            
+            Deprecated to remove fixed size. If specified, the instrument can only be traded within the specified trade restriction zone. For example, AUS would restrict to Australian residents only.<br />
         </td>
     </tr>
-
     <tr>
         <td>EnforcementOrdersPermitted</td>
         <td>
@@ -1861,7 +1613,6 @@ This action creates an instrument in response to the administration&#39;s instru
              Example: true
         </td>
     </tr>
-
     <tr>
         <td>VotingRights</td>
         <td>
@@ -1872,7 +1623,6 @@ This action creates an instrument in response to the administration&#39;s instru
              Example: true
         </td>
     </tr>
-
     <tr>
         <td>VoteMultiplier</td>
         <td>
@@ -1883,7 +1633,6 @@ This action creates an instrument in response to the administration&#39;s instru
              Example: 3
         </td>
     </tr>
-
     <tr>
         <td>AdministrationProposal</td>
         <td>
@@ -1894,7 +1643,6 @@ This action creates an instrument in response to the administration&#39;s instru
             General Governance Example: true
         </td>
     </tr>
-
     <tr>
         <td>HolderProposal</td>
         <td>
@@ -1905,7 +1653,6 @@ This action creates an instrument in response to the administration&#39;s instru
              Example: true
         </td>
     </tr>
-
     <tr>
         <td>InstrumentModificationGovernance</td>
         <td>
@@ -1916,7 +1663,6 @@ This action creates an instrument in response to the administration&#39;s instru
              Example: 1
         </td>
     </tr>
-
     <tr>
         <td>AuthorizedTokenQty</td>
         <td>
@@ -1927,29 +1673,24 @@ This action creates an instrument in response to the administration&#39;s instru
              Example: 1000000
         </td>
     </tr>
-
     <tr>
         <td>InstrumentType</td>
         <td>
             <a href="#alias-instrument-type">InstrumentType</a>
         </td>
         <td>
-            A code representing the type of instrument and the structure of the payload.
-            
+            A code representing the type of instrument and the structure of the payload.<br />
         </td>
     </tr>
-
     <tr>
         <td>InstrumentPayload</td>
         <td>
             varbin(small)
         </td>
         <td>
-            A custom payload that contains meta data about this instrument. Payload structure and length is dependent on the instrument type chosen. See instrument documentation for more details.
-            
+            A custom payload that contains meta data about this instrument. Payload structure and length is dependent on the instrument type chosen. See instrument documentation for more details.<br />
         </td>
     </tr>
-
     <tr>
         <td>InstrumentRevision</td>
         <td>
@@ -1960,7 +1701,6 @@ This action creates an instrument in response to the administration&#39;s instru
             Can&#39;t be changed by the administration, operator. Smart contract controls. Example: 456789
         </td>
     </tr>
-
     <tr>
         <td>Timestamp</td>
         <td>
@@ -1971,22 +1711,18 @@ This action creates an instrument in response to the administration&#39;s instru
             Can&#39;t be changed by the administration, operator. Smart contract controls.
         </td>
     </tr>
-
     <tr>
         <td>TradeRestrictions</td>
         <td>
             <a href="#alias-varchar">Polity[small]</a>
         </td>
         <td>
-            If specified, the instrument can only be traded within the specified trade restriction zone. For example, AUS would restrict to Australian residents only.
-            
+            If specified, the instrument can only be traded within the specified trade restriction zone. For example, AUS would restrict to Australian residents only.<br />
         </td>
     </tr>
-
 </table>
 
 ##### Transaction Summary
-
 
 <table>
    <tr>
@@ -2001,8 +1737,6 @@ This action creates an instrument in response to the administration&#39;s instru
     </tr>
 </table>
 
-
-
 <table>
    <tr>
         <th style="width:5%" class="text-center">Index</th>
@@ -2016,12 +1750,10 @@ This action creates an instrument in response to the administration&#39;s instru
     </tr>
 </table>
 
-
 <hr />
 
-
-
 <a name="action-instrument-modification"></a>
+
 #### Instrument Modification
 
 Token Dilutions, Call Backs/Revocations, burning etc.
@@ -2032,7 +1764,6 @@ Token Dilutions, Call Backs/Revocations, burning etc.
         <td>I3</td>
     </tr>
 </table>
-
 
 <table>
     <tr>
@@ -2050,7 +1781,6 @@ Token Dilutions, Call Backs/Revocations, burning etc.
              Example: SHC
         </td>
     </tr>
-
     <tr>
         <td>InstrumentCode</td>
         <td>
@@ -2061,7 +1791,6 @@ Token Dilutions, Call Backs/Revocations, burning etc.
             Cannot be changed by the administration, operator or smart contract.
         </td>
     </tr>
-
     <tr>
         <td>InstrumentRevision</td>
         <td>
@@ -2072,33 +1801,27 @@ Token Dilutions, Call Backs/Revocations, burning etc.
             Cannot be Amended Example: 0
         </td>
     </tr>
-
     <tr>
         <td>Amendments</td>
         <td>
             <a href="#type-amendment">Amendment[tiny]</a>
         </td>
         <td>
-            A collection of modifications to perform on this instrument.
-            
+            A collection of modifications to perform on this instrument.<br />
         </td>
     </tr>
-
     <tr>
         <td>RefTxID</td>
         <td>
             <a href="#alias-tx-id">TxId</a>
         </td>
         <td>
-            The Bitcoin transaction ID of the associated result action that permitted the modifications. See Governance for more details.
-            
+            The Bitcoin transaction ID of the associated result action that permitted the modifications. See Governance for more details.<br />
         </td>
     </tr>
-
 </table>
 
 ##### Transaction Summary
-
 
 <table>
    <tr>
@@ -2113,8 +1836,6 @@ Token Dilutions, Call Backs/Revocations, burning etc.
     </tr>
 </table>
 
-
-
 <table>
    <tr>
         <th style="width:5%" class="text-center">Index</th>
@@ -2128,15 +1849,13 @@ Token Dilutions, Call Backs/Revocations, burning etc.
     </tr>
 </table>
 
-
 <hr />
 
-
-
 <a name="action-transfer"></a>
+
 #### Transfer
 
-A Token Owner(s) Sends, Exchanges or Swaps a token(s) or Bitcoin for a token(s) or Bitcoin.  Can be as simple as sending a single token to a receiver.  Or can be as complex as many senders sending many different instruments - controlled by many different smart contracts - to a number of receivers.  This action also supports atomic swaps (tokens for tokens).  Since many parties and contracts can be involved in a transfer and the corresponding settlement action, the partially signed T1 and T2 actions will need to be passed around on-chain with an M1 action, or off-chain.
+A Token Owner(s) Sends, Exchanges or Swaps a token(s) or Bitcoin for a token(s) or Bitcoin. Can be as simple as sending a single token to a receiver. Or can be as complex as many senders sending many different instruments - controlled by many different smart contracts - to a number of receivers. This action also supports atomic swaps (tokens for tokens). Since many parties and contracts can be involved in a transfer and the corresponding settlement action, the partially signed T1 and T2 actions will need to be passed around on-chain with an M1 action, or off-chain.
 
 <table>
     <tr>
@@ -2144,7 +1863,6 @@ A Token Owner(s) Sends, Exchanges or Swaps a token(s) or Bitcoin for a token(s) 
         <td>T1</td>
     </tr>
 </table>
-
 
 <table>
     <tr>
@@ -2158,22 +1876,18 @@ A Token Owner(s) Sends, Exchanges or Swaps a token(s) or Bitcoin for a token(s) 
             <a href="#type-instrument-transfer">InstrumentTransfer[tiny]</a>
         </td>
         <td>
-            The Instruments involved in the Transfer Action.
-            
+            The Instruments involved in the Transfer Action.<br />
         </td>
     </tr>
-
     <tr>
         <td>OfferExpiry</td>
         <td>
             <a href="#alias-timestamp">Timestamp</a>
         </td>
         <td>
-            This prevents any party from holding on to the partially signed message as a form of an option.  Eg. the exchange at this price is valid for 30 mins.
-            
+            This prevents any party from holding on to the partially signed message as a form of an option.  Eg. the exchange at this price is valid for 30 mins.<br />
         </td>
     </tr>
-
     <tr>
         <td>ExchangeFee</td>
         <td>
@@ -2184,7 +1898,6 @@ A Token Owner(s) Sends, Exchanges or Swaps a token(s) or Bitcoin for a token(s) 
              Example: 0.01
         </td>
     </tr>
-
     <tr>
         <td>ExchangeFeeAddress</td>
         <td>
@@ -2192,14 +1905,12 @@ A Token Owner(s) Sends, Exchanges or Swaps a token(s) or Bitcoin for a token(s) 
         </td>
         <td>
             Identifies the public address that the exchange fee should be paid to.
-            
+<br />
         </td>
     </tr>
-
 </table>
 
 ##### Transaction Summary
-
 
 <table>
    <tr>
@@ -2214,8 +1925,6 @@ A Token Owner(s) Sends, Exchanges or Swaps a token(s) or Bitcoin for a token(s) 
     </tr>
 </table>
 
-
-
 <table>
    <tr>
         <th style="width:5%" class="text-center">Index</th>
@@ -2229,12 +1938,10 @@ A Token Owner(s) Sends, Exchanges or Swaps a token(s) or Bitcoin for a token(s) 
     </tr>
 </table>
 
-
 <hr />
 
-
-
 <a name="action-settlement"></a>
+
 #### Settlement
 
 Settles the transfer request of bitcoins and tokens from transfer (T1) actions.
@@ -2245,7 +1952,6 @@ Settles the transfer request of bitcoins and tokens from transfer (T1) actions.
         <td>T2</td>
     </tr>
 </table>
-
 
 <table>
     <tr>
@@ -2260,10 +1966,9 @@ Settles the transfer request of bitcoins and tokens from transfer (T1) actions.
         </td>
         <td>
             The Instruments settled by the transfer action.
-            
+            <br />
         </td>
     </tr>
-
     <tr>
         <td>Timestamp</td>
         <td>
@@ -2274,11 +1979,9 @@ Settles the transfer request of bitcoins and tokens from transfer (T1) actions.
             Cannot be changed by the administration, operator. Smart contract controls.
         </td>
     </tr>
-
 </table>
 
 ##### Transaction Summary
-
 
 <table>
    <tr>
@@ -2293,8 +1996,6 @@ Settles the transfer request of bitcoins and tokens from transfer (T1) actions.
     </tr>
 </table>
 
-
-
 <table>
    <tr>
         <th style="width:5%" class="text-center">Index</th>
@@ -2308,15 +2009,13 @@ Settles the transfer request of bitcoins and tokens from transfer (T1) actions.
     </tr>
 </table>
 
-
 <hr />
 
-
-
 <a name="action-proposal"></a>
+
 #### Proposal
 
-Allows the Administration/Token Holders to propose a change (aka Initiative/Shareholder vote).  A significant cost - specified in the Contract Formation - can be attached to this action when sent from Token Holders to reduce spam, as the resulting vote will be put to all token owners.
+Allows the Administration/Token Holders to propose a change (aka Initiative/Shareholder vote). A significant cost - specified in the Contract Formation - can be attached to this action when sent from Token Holders to reduce spam, as the resulting vote will be put to all token owners.
 
 <table>
     <tr>
@@ -2324,7 +2023,6 @@ Allows the Administration/Token Holders to propose a change (aka Initiative/Shar
         <td>G1</td>
     </tr>
 </table>
-
 
 <table>
     <tr>
@@ -2342,11 +2040,9 @@ Allows the Administration/Token Holders to propose a change (aka Initiative/Shar
   0 Referendum / Administration Initiates / Members Vote
   1 Initiative / Members Initiate / Members Vote
   2 AdministrativeMatter / Administration Initiates / Administrators Vote
-
-            
+<br />
         </td>
     </tr>
-
     <tr>
         <td>InstrumentType</td>
         <td>
@@ -2357,7 +2053,6 @@ Allows the Administration/Token Holders to propose a change (aka Initiative/Shar
              Example: SHC
         </td>
     </tr>
-
     <tr>
         <td>InstrumentCode</td>
         <td>
@@ -2368,7 +2063,6 @@ Allows the Administration/Token Holders to propose a change (aka Initiative/Shar
             Cannot be changed by the administration, operator or smart contract.
         </td>
     </tr>
-
     <tr>
         <td>VoteSystem</td>
         <td>
@@ -2379,7 +2073,6 @@ Allows the Administration/Token Holders to propose a change (aka Initiative/Shar
              Example: 1
         </td>
     </tr>
-
     <tr>
         <td>ProposedAmendments</td>
         <td>
@@ -2387,10 +2080,8 @@ Allows the Administration/Token Holders to propose a change (aka Initiative/Shar
         </td>
         <td>
             Each element contains details of which fields to modify, or delete. Because the number of fields in a Contract and Instrument is dynamic due to some fields being able to be repeated, the index value of the field needs to be calculated against the Contract or Instrument the changes are to apply to. In the event of a Vote being created from this Initiative, the changes will be applied to the version of the Contract or Instrument at that time.
-            
         </td>
     </tr>
-
     <tr>
         <td>VoteOptions</td>
         <td>
@@ -2401,7 +2092,6 @@ Allows the Administration/Token Holders to propose a change (aka Initiative/Shar
              Example: ABCDEFGHIJKLMNO
         </td>
     </tr>
-
     <tr>
         <td>VoteMax</td>
         <td>
@@ -2412,7 +2102,6 @@ Allows the Administration/Token Holders to propose a change (aka Initiative/Shar
              Example: 15
         </td>
     </tr>
-
     <tr>
         <td>ProposalDescription</td>
         <td>
@@ -2423,7 +2112,6 @@ Allows the Administration/Token Holders to propose a change (aka Initiative/Shar
              Example: Change the name of the Contract.
         </td>
     </tr>
-
     <tr>
         <td>ProposalDocumentHash</td>
         <td>
@@ -2434,7 +2122,6 @@ Allows the Administration/Token Holders to propose a change (aka Initiative/Shar
              Example: 77201b0094f50df309f0343e4f44dae64d0de503c91038faf2c6b039f9f18aec
         </td>
     </tr>
-
     <tr>
         <td>VoteCutOffTimestamp</td>
         <td>
@@ -2442,14 +2129,11 @@ Allows the Administration/Token Holders to propose a change (aka Initiative/Shar
         </td>
         <td>
             Ballot casts after this timestamp will not be included. The vote has finished.
-            
-        </td>
+  </td>
     </tr>
-
 </table>
 
 ##### Transaction Summary
-
 
 <table>
    <tr>
@@ -2463,8 +2147,6 @@ Allows the Administration/Token Holders to propose a change (aka Initiative/Shar
         <td>The user making the proposal for this contract.</td>
     </tr>
 </table>
-
-
 
 <table>
    <tr>
@@ -2484,12 +2166,10 @@ Allows the Administration/Token Holders to propose a change (aka Initiative/Shar
     </tr>
 </table>
 
-
 <hr />
 
-
-
 <a name="action-vote"></a>
+
 #### Vote
 
 A vote is created by the Contract in response to a valid Proposal Action.
@@ -2500,7 +2180,6 @@ A vote is created by the Contract in response to a valid Proposal Action.
         <td>G2</td>
     </tr>
 </table>
-
 
 <table>
     <tr>
@@ -2518,11 +2197,9 @@ A vote is created by the Contract in response to a valid Proposal Action.
             Cannot be changed by the administration, operator. Smart contract controls.
         </td>
     </tr>
-
 </table>
 
 ##### Transaction Summary
-
 
 <table>
    <tr>
@@ -2537,8 +2214,6 @@ A vote is created by the Contract in response to a valid Proposal Action.
     </tr>
 </table>
 
-
-
 <table>
    <tr>
         <th style="width:5%" class="text-center">Index</th>
@@ -2552,12 +2227,10 @@ A vote is created by the Contract in response to a valid Proposal Action.
     </tr>
 </table>
 
-
 <hr />
 
-
-
 <a name="action-ballot-cast"></a>
+
 #### Ballot Cast
 
 Used by Token Owners to cast their ballot (vote) on proposals. 1 Vote per token unless a vote multiplier is specified in the relevant Instrument Definition action.
@@ -2568,7 +2241,6 @@ Used by Token Owners to cast their ballot (vote) on proposals. 1 Vote per token 
         <td>G3</td>
     </tr>
 </table>
-
 
 <table>
     <tr>
@@ -2583,10 +2255,8 @@ Used by Token Owners to cast their ballot (vote) on proposals. 1 Vote per token 
         </td>
         <td>
             Tx ID of the Vote the Ballot Cast is being made for.
-            
         </td>
     </tr>
-
     <tr>
         <td>Vote</td>
         <td>
@@ -2597,11 +2267,9 @@ Used by Token Owners to cast their ballot (vote) on proposals. 1 Vote per token 
              Example: A
         </td>
     </tr>
-
 </table>
 
 ##### Transaction Summary
-
 
 <table>
    <tr>
@@ -2616,8 +2284,6 @@ Used by Token Owners to cast their ballot (vote) on proposals. 1 Vote per token 
     </tr>
 </table>
 
-
-
 <table>
    <tr>
         <th style="width:5%" class="text-center">Index</th>
@@ -2631,12 +2297,10 @@ Used by Token Owners to cast their ballot (vote) on proposals. 1 Vote per token 
     </tr>
 </table>
 
-
 <hr />
 
-
-
 <a name="action-ballot-counted"></a>
+
 #### Ballot Counted
 
 The smart contract will respond to a Ballot Cast action with a Ballot Counted action if the Ballot Cast is valid. If the Ballot Cast is not valid, then the smart contract will respond with a Rejection Action.
@@ -2647,7 +2311,6 @@ The smart contract will respond to a Ballot Cast action with a Ballot Counted ac
         <td>G4</td>
     </tr>
 </table>
-
 
 <table>
     <tr>
@@ -2662,10 +2325,8 @@ The smart contract will respond to a Ballot Cast action with a Ballot Counted ac
         </td>
         <td>
             Tx ID of the Vote the Ballot Cast is being made for.
-            
         </td>
     </tr>
-
     <tr>
         <td>Vote</td>
         <td>
@@ -2676,7 +2337,6 @@ The smart contract will respond to a Ballot Cast action with a Ballot Counted ac
              Example: A
         </td>
     </tr>
-
     <tr>
         <td>Quantity</td>
         <td>
@@ -2684,10 +2344,8 @@ The smart contract will respond to a Ballot Cast action with a Ballot Counted ac
         </td>
         <td>
             Number of votes counted for this ballot. Factors in vote multipliers if there are any allowed, otherwise it is just quantity of tokens held.
-            
-        </td>
+  </td>
     </tr>
-
     <tr>
         <td>Timestamp</td>
         <td>
@@ -2698,11 +2356,9 @@ The smart contract will respond to a Ballot Cast action with a Ballot Counted ac
             Cannot be changed by the administration, operator. Smart contract controls.
         </td>
     </tr>
-
 </table>
 
 ##### Transaction Summary
-
 
 <table>
    <tr>
@@ -2717,8 +2373,6 @@ The smart contract will respond to a Ballot Cast action with a Ballot Counted ac
     </tr>
 </table>
 
-
-
 <table>
    <tr>
         <th style="width:5%" class="text-center">Index</th>
@@ -2732,12 +2386,10 @@ The smart contract will respond to a Ballot Cast action with a Ballot Counted ac
     </tr>
 </table>
 
-
 <hr />
 
-
-
 <a name="action-result"></a>
+
 #### Result
 
 Once a vote has been completed the results are published. After the result is posted, it is up to the administration to send a contract/instrument amendement if appropriate.
@@ -2748,7 +2400,6 @@ Once a vote has been completed the results are published. After the result is po
         <td>G5</td>
     </tr>
 </table>
-
 
 <table>
     <tr>
@@ -2766,7 +2417,6 @@ Once a vote has been completed the results are published. After the result is po
              Example: SHC
         </td>
     </tr>
-
     <tr>
         <td>InstrumentCode</td>
         <td>
@@ -2777,7 +2427,6 @@ Once a vote has been completed the results are published. After the result is po
             Cannot be changed by the administration, operator or smart contract.
         </td>
     </tr>
-
     <tr>
         <td>ProposedAmendments</td>
         <td>
@@ -2785,10 +2434,8 @@ Once a vote has been completed the results are published. After the result is po
         </td>
         <td>
             Each element contains details of which fields to modify, or delete. Because the number of fields in a Contract and Instrument is dynamic due to some fields being able to be repeated, the index value of the field needs to be calculated against the Contract or Instrument the changes are to apply to. In the event of a Vote being created from this Initiative, the changes will be applied to the version of the Contract or Instrument at that time.
-            
-        </td>
+  </td>
     </tr>
-
     <tr>
         <td>VoteTxId</td>
         <td>
@@ -2796,10 +2443,8 @@ Once a vote has been completed the results are published. After the result is po
         </td>
         <td>
             Link to the Vote Action txn.
-            
-        </td>
+  </td>
     </tr>
-
     <tr>
         <td>OptionTally</td>
         <td>
@@ -2807,10 +2452,8 @@ Once a vote has been completed the results are published. After the result is po
         </td>
         <td>
             List of number of valid votes counted for each vote option. Length is encoded like a regular list object, but must match the length of VoteOptions from the Proposal action.
-            
-        </td>
+  </td>
     </tr>
-
     <tr>
         <td>Result</td>
         <td>
@@ -2818,10 +2461,8 @@ Once a vote has been completed the results are published. After the result is po
         </td>
         <td>
             Length 1-255 bytes. 0 is not valid. The Option with the most votes. In the event of a draw for 1st place, all winning options are listed.
-            
-        </td>
+  </td>
     </tr>
-
     <tr>
         <td>Timestamp</td>
         <td>
@@ -2832,11 +2473,9 @@ Once a vote has been completed the results are published. After the result is po
             Cannot be changed by the administration, operator. Smart contract controls.
         </td>
     </tr>
-
 </table>
 
 ##### Transaction Summary
-
 
 <table>
    <tr>
@@ -2851,8 +2490,6 @@ Once a vote has been completed the results are published. After the result is po
     </tr>
 </table>
 
-
-
 <table>
    <tr>
         <th style="width:5%" class="text-center">Index</th>
@@ -2866,12 +2503,10 @@ Once a vote has been completed the results are published. After the result is po
     </tr>
 </table>
 
-
 <hr />
 
-
-
 <a name="action-order"></a>
+
 #### Order
 
 Used by the administration to signal to the smart contract that the tokens that a particular public address(es) owns are to be confiscated, frozen, thawed or reconciled.
@@ -2882,7 +2517,6 @@ Used by the administration to signal to the smart contract that the tokens that 
         <td>E1</td>
     </tr>
 </table>
-
 
 <table>
     <tr>
@@ -2900,7 +2534,6 @@ Used by the administration to signal to the smart contract that the tokens that 
              Example: F
         </td>
     </tr>
-
     <tr>
         <td>InstrumentType</td>
         <td>
@@ -2911,7 +2544,6 @@ Used by the administration to signal to the smart contract that the tokens that 
              Example: SHC
         </td>
     </tr>
-
     <tr>
         <td>InstrumentCode</td>
         <td>
@@ -2922,7 +2554,6 @@ Used by the administration to signal to the smart contract that the tokens that 
             Cannot be changed by the administration, operator or smart contract.
         </td>
     </tr>
-
     <tr>
         <td>TargetAddresses</td>
         <td>
@@ -2930,10 +2561,8 @@ Used by the administration to signal to the smart contract that the tokens that 
         </td>
         <td>
             The holders and quantities that are effected by the order. For a contract or instrument wide freeze only the contract address is specified. Zero quantities are invalid unless it is for the contract address in an instrument wide or contract wide freeze. In a thaw order this field is not serialized, because the entire freeze from the FreezeTxId freeze action will be thawed.
-            
-        </td>
+  </td>
     </tr>
-
     <tr>
         <td>FreezeTxId</td>
         <td>
@@ -2941,10 +2570,8 @@ Used by the administration to signal to the smart contract that the tokens that 
         </td>
         <td>
             The tx id of the freeze action that is being thawed. Only serialized for thaw orders.
-            
-        </td>
+  </td>
     </tr>
-
     <tr>
         <td>FreezePeriod</td>
         <td>
@@ -2955,7 +2582,6 @@ Used by the administration to signal to the smart contract that the tokens that 
              Example: Tue Oct 09 2018 05:00:00 GMT&#43;1000 (AEST)
         </td>
     </tr>
-
     <tr>
         <td>DepositAddress</td>
         <td>
@@ -2966,7 +2592,6 @@ Used by the administration to signal to the smart contract that the tokens that 
             Eventually the supporting evidence/explanation can be supported by a Subfield that has the public address (and a signed message) owned by a legal authority for ID verification/certification purposes.
         </td>
     </tr>
-
     <tr>
         <td>AuthorityName</td>
         <td>
@@ -2977,7 +2602,6 @@ Used by the administration to signal to the smart contract that the tokens that 
              Example: Supreme and District Courts Brisbane
         </td>
     </tr>
-
     <tr>
         <td>AuthorityPublicKey</td>
         <td>
@@ -2985,10 +2609,8 @@ Used by the administration to signal to the smart contract that the tokens that 
         </td>
         <td>
             Length 0-255 bytes. Public Key associated with the Enforcement Authority
-            
-        </td>
+  </td>
     </tr>
-
     <tr>
         <td>SignatureAlgorithm</td>
         <td>
@@ -2999,7 +2621,6 @@ Used by the administration to signal to the smart contract that the tokens that 
              Example: 1
         </td>
     </tr>
-
     <tr>
         <td>OrderSignature</td>
         <td>
@@ -3007,19 +2628,15 @@ Used by the administration to signal to the smart contract that the tokens that 
         </td>
         <td>
             Length 0-255 bytes. Signature for a message that lists out the target addresses and deposit address. Signature of (Contract PKH, Compliance Action, Authority Name, Instrument Code, Supporting Evidence Hash, FreezePeriod, TargetAddresses, and DepositAddress)
-            
-        </td>
+  </td>
     </tr>
-
     <tr>
         <td>(Deprecated)SupportingEvidenceHash</td>
         <td>deprecated</td>
         <td>
             Deprecated for new supporting evidence type and data fields (bin 32). SHA-256: warrant, court order, etc.
-            
-        </td>
+  </td>
     </tr>
-
     <tr>
         <td>(Deprecated)RefTxs</td>
         <td>deprecated</td>
@@ -3028,7 +2645,6 @@ Used by the administration to signal to the smart contract that the tokens that 
             Can be null.  Dropped actions that require a reconciliation action to fix the break in the chain are considered to be an extremely rare event.
         </td>
     </tr>
-
     <tr>
         <td>BitcoinDispersions</td>
         <td>
@@ -3036,10 +2652,8 @@ Used by the administration to signal to the smart contract that the tokens that 
         </td>
         <td>
             Index of address in TargetAddresses and amount of bitcoin (in satoshis) they are receiving in exchange for their tokens.
-            
-        </td>
+  </td>
     </tr>
-
     <tr>
         <td>Message</td>
         <td>
@@ -3050,7 +2664,6 @@ Used by the administration to signal to the smart contract that the tokens that 
              Example: Compelled by a court order.
         </td>
     </tr>
-
     <tr>
         <td>SupportingEvidenceFormat</td>
         <td>
@@ -3058,10 +2671,8 @@ Used by the administration to signal to the smart contract that the tokens that 
         </td>
         <td>
             The data format of the supporting evidence field. 0 = no evidence data provided, 1 = markdown containing warrant, court order, etc.
-            
-        </td>
+  </td>
     </tr>
-
     <tr>
         <td>SupportingEvidence</td>
         <td>
@@ -3069,10 +2680,8 @@ Used by the administration to signal to the smart contract that the tokens that 
         </td>
         <td>
             Supporting evidence related to the order being requested.
-            
-        </td>
+  </td>
     </tr>
-
     <tr>
         <td>ReferenceTransactions</td>
         <td>
@@ -3083,11 +2692,9 @@ Used by the administration to signal to the smart contract that the tokens that 
             Can be null.  Dropped actions that require a reconciliation action to fix the break in the chain are considered to be an extremely rare event.
         </td>
     </tr>
-
 </table>
 
 ##### Transaction Summary
-
 
 <table>
    <tr>
@@ -3102,8 +2709,6 @@ Used by the administration to signal to the smart contract that the tokens that 
     </tr>
 </table>
 
-
-
 <table>
    <tr>
         <th style="width:5%" class="text-center">Index</th>
@@ -3117,16 +2722,13 @@ Used by the administration to signal to the smart contract that the tokens that 
     </tr>
 </table>
 
-
 <hr />
 
-
-
 <a name="action-freeze"></a>
+
 #### Freeze
 
 The contract responding to an Order action to freeze instruments. To be used to comply with contractual/legal/issuer requirements. The target public address(es) will be marked as frozen. However the Freeze action publishes this fact to the public blockchain for transparency. The contract will not respond to any actions requested by the frozen address.
-
 
 <table>
     <tr>
@@ -3134,7 +2736,6 @@ The contract responding to an Order action to freeze instruments. To be used to 
         <td>E2</td>
     </tr>
 </table>
-
 
 <table>
     <tr>
@@ -3152,7 +2753,6 @@ The contract responding to an Order action to freeze instruments. To be used to 
              Example: SHC
         </td>
     </tr>
-
     <tr>
         <td>InstrumentCode</td>
         <td>
@@ -3163,7 +2763,6 @@ The contract responding to an Order action to freeze instruments. To be used to 
             Cannot be changed by the administration, operator or smart contract.
         </td>
     </tr>
-
     <tr>
         <td>Quantities</td>
         <td>
@@ -3171,10 +2770,8 @@ The contract responding to an Order action to freeze instruments. To be used to 
         </td>
         <td>
             Indices to addresses in outputs and the quantities being frozen. If the only address is the contract address and the instrument code is zeros, then it is a contract wide freeze. If the only address is the contract address and the instrument code is specified, then it is an instrument wide freeze.
-            
-        </td>
+  </td>
     </tr>
-
     <tr>
         <td>FreezePeriod</td>
         <td>
@@ -3182,10 +2779,8 @@ The contract responding to an Order action to freeze instruments. To be used to 
         </td>
         <td>
             Used for a &#39;time out&#39;.  Tokens are automatically unfrozen after the expiration timestamp without requiring a Thaw Action.
-            
-        </td>
+  </td>
     </tr>
-
     <tr>
         <td>Timestamp</td>
         <td>
@@ -3196,11 +2791,9 @@ The contract responding to an Order action to freeze instruments. To be used to 
             Cannot be changed by the administration, operator. Smart contract controls.
         </td>
     </tr>
-
 </table>
 
 ##### Transaction Summary
-
 
 <table>
    <tr>
@@ -3214,8 +2807,6 @@ The contract responding to an Order action to freeze instruments. To be used to 
         <td>The contract that is performing this action.</td>
     </tr>
 </table>
-
-
 
 <table>
    <tr>
@@ -3230,16 +2821,13 @@ The contract responding to an Order action to freeze instruments. To be used to 
     </tr>
 </table>
 
-
 <hr />
 
-
-
 <a name="action-thaw"></a>
+
 #### Thaw
 
 The contract responding to an Order action to thaw instruments. To be used to comply with contractual obligations or legal requirements. The Alleged Offender&#39;s tokens will be unfrozen to allow them to resume normal exchange and governance activities.
-
 
 <table>
     <tr>
@@ -3247,7 +2835,6 @@ The contract responding to an Order action to thaw instruments. To be used to co
         <td>E3</td>
     </tr>
 </table>
-
 
 <table>
     <tr>
@@ -3262,10 +2849,8 @@ The contract responding to an Order action to thaw instruments. To be used to co
         </td>
         <td>
             The tx id of the freeze action that is being reversed.
-            
         </td>
     </tr>
-
     <tr>
         <td>Timestamp</td>
         <td>
@@ -3276,11 +2861,9 @@ The contract responding to an Order action to thaw instruments. To be used to co
             Cannot be changed by the administration, operator. Smart contract controls.
         </td>
     </tr>
-
 </table>
 
 ##### Transaction Summary
-
 
 <table>
    <tr>
@@ -3295,8 +2878,6 @@ The contract responding to an Order action to thaw instruments. To be used to co
     </tr>
 </table>
 
-
-
 <table>
    <tr>
         <th style="width:5%" class="text-center">Index</th>
@@ -3310,16 +2891,13 @@ The contract responding to an Order action to thaw instruments. To be used to co
     </tr>
 </table>
 
-
 <hr />
 
-
-
 <a name="action-confiscation"></a>
+
 #### Confiscation
 
 The contract responding to an Order action to confiscate instruments. To be used to comply with contractual obligations, legal and/or issuer requirements.
-
 
 <table>
     <tr>
@@ -3327,7 +2905,6 @@ The contract responding to an Order action to confiscate instruments. To be used
         <td>E4</td>
     </tr>
 </table>
-
 
 <table>
     <tr>
@@ -3345,7 +2922,6 @@ The contract responding to an Order action to confiscate instruments. To be used
              Example: SHC
         </td>
     </tr>
-
     <tr>
         <td>InstrumentCode</td>
         <td>
@@ -3356,7 +2932,6 @@ The contract responding to an Order action to confiscate instruments. To be used
             Cannot be changed by the administration, operator or smart contract.
         </td>
     </tr>
-
     <tr>
         <td>Quantities</td>
         <td>
@@ -3364,10 +2939,8 @@ The contract responding to an Order action to confiscate instruments. To be used
         </td>
         <td>
             The holders effected by the confiscation and their balance remaining.
-            
-        </td>
+  </td>
     </tr>
-
     <tr>
         <td>DepositQty</td>
         <td>
@@ -3378,7 +2951,6 @@ The contract responding to an Order action to confiscate instruments. To be used
              Example: 10000
         </td>
     </tr>
-
     <tr>
         <td>Timestamp</td>
         <td>
@@ -3389,11 +2961,9 @@ The contract responding to an Order action to confiscate instruments. To be used
             Cannot be changed by the administration, operator. Smart contract controls.
         </td>
     </tr>
-
 </table>
 
 ##### Transaction Summary
-
 
 <table>
    <tr>
@@ -3407,8 +2977,6 @@ The contract responding to an Order action to confiscate instruments. To be used
         <td>The contract that is performing this action.</td>
     </tr>
 </table>
-
-
 
 <table>
    <tr>
@@ -3428,16 +2996,13 @@ The contract responding to an Order action to confiscate instruments. To be used
     </tr>
 </table>
 
-
 <hr />
 
-
-
 <a name="action-reconciliation"></a>
+
 #### Reconciliation
 
 The contract responding to an Order action to reconcile instruments. To be used at the direction of the administration to fix record keeping errors with bitcoin and token balances.
-
 
 <table>
     <tr>
@@ -3445,7 +3010,6 @@ The contract responding to an Order action to reconcile instruments. To be used 
         <td>E5</td>
     </tr>
 </table>
-
 
 <table>
     <tr>
@@ -3463,7 +3027,6 @@ The contract responding to an Order action to reconcile instruments. To be used 
              Example: SHC
         </td>
     </tr>
-
     <tr>
         <td>InstrumentCode</td>
         <td>
@@ -3474,7 +3037,6 @@ The contract responding to an Order action to reconcile instruments. To be used 
             Cannot be changed by the administration, operator or smart contract.
         </td>
     </tr>
-
     <tr>
         <td>Quantities</td>
         <td>
@@ -3482,10 +3044,8 @@ The contract responding to an Order action to reconcile instruments. To be used 
         </td>
         <td>
             The holders effected by the reconciliation and their balance remaining.
-            
-        </td>
+  </td>
     </tr>
-
     <tr>
         <td>Timestamp</td>
         <td>
@@ -3496,11 +3056,9 @@ The contract responding to an Order action to reconcile instruments. To be used 
             Cannot be changed by the administration, operator. Smart contract controls.
         </td>
     </tr>
-
 </table>
 
 ##### Transaction Summary
-
 
 <table>
    <tr>
@@ -3515,8 +3073,6 @@ The contract responding to an Order action to reconcile instruments. To be used 
     </tr>
 </table>
 
-
-
 <table>
    <tr>
         <th style="width:5%" class="text-center">Index</th>
@@ -3530,12 +3086,10 @@ The contract responding to an Order action to reconcile instruments. To be used 
     </tr>
 </table>
 
-
 <hr />
 
-
-
 <a name="action-establishment"></a>
+
 #### Establishment
 
 Establishes an on-chain register.
@@ -3546,7 +3100,6 @@ Establishes an on-chain register.
         <td>R1</td>
     </tr>
 </table>
-
 
 <table>
     <tr>
@@ -3564,11 +3117,9 @@ Establishes an on-chain register.
              Example: North America Whitelist
         </td>
     </tr>
-
 </table>
 
 ##### Transaction Summary
-
 
 <table>
    <tr>
@@ -3583,8 +3134,6 @@ Establishes an on-chain register.
     </tr>
 </table>
 
-
-
 <table>
    <tr>
         <th style="width:5%" class="text-center">Index</th>
@@ -3598,12 +3147,10 @@ Establishes an on-chain register.
     </tr>
 </table>
 
-
 <hr />
 
-
-
 <a name="action-addition"></a>
+
 #### Addition
 
 Adds an entry to the Register.
@@ -3614,7 +3161,6 @@ Adds an entry to the Register.
         <td>R2</td>
     </tr>
 </table>
-
 
 <table>
     <tr>
@@ -3632,11 +3178,9 @@ Adds an entry to the Register.
              Example: username
         </td>
     </tr>
-
 </table>
 
 ##### Transaction Summary
-
 
 <table>
    <tr>
@@ -3651,8 +3195,6 @@ Adds an entry to the Register.
     </tr>
 </table>
 
-
-
 <table>
    <tr>
         <th style="width:5%" class="text-center">Index</th>
@@ -3666,12 +3208,10 @@ Adds an entry to the Register.
     </tr>
 </table>
 
-
 <hr />
 
-
-
 <a name="action-alteration"></a>
+
 #### Alteration
 
 A register entry/record can be altered.
@@ -3683,7 +3223,6 @@ A register entry/record can be altered.
     </tr>
 </table>
 
-
 <table>
     <tr>
         <th style="width:15%">Field</th>
@@ -3697,10 +3236,8 @@ A register entry/record can be altered.
         </td>
         <td>
             Transaction ID of the register entry to be altered.
-            
         </td>
     </tr>
-
     <tr>
         <td>Message</td>
         <td>
@@ -3711,11 +3248,9 @@ A register entry/record can be altered.
              Example: Changed Country of Residence
         </td>
     </tr>
-
 </table>
 
 ##### Transaction Summary
-
 
 <table>
    <tr>
@@ -3730,8 +3265,6 @@ A register entry/record can be altered.
     </tr>
 </table>
 
-
-
 <table>
    <tr>
         <th style="width:5%" class="text-center">Index</th>
@@ -3745,12 +3278,10 @@ A register entry/record can be altered.
     </tr>
 </table>
 
-
 <hr />
 
-
-
 <a name="action-removal"></a>
+
 #### Removal
 
 Removes an entry/record from the Register.
@@ -3762,7 +3293,6 @@ Removes an entry/record from the Register.
     </tr>
 </table>
 
-
 <table>
     <tr>
         <th style="width:15%">Field</th>
@@ -3775,11 +3305,8 @@ Removes an entry/record from the Register.
             <a href="#alias-tx-id">TxId</a>
         </td>
         <td>
-            Transaction ID of the register entry to be altered.
-            
-        </td>
+            Transaction ID of the register entry to be altered.</td>
     </tr>
-
     <tr>
         <td>Message</td>
         <td>
@@ -3790,11 +3317,9 @@ Removes an entry/record from the Register.
              Example: Removed due to violation of company policy.
         </td>
     </tr>
-
 </table>
 
 ##### Transaction Summary
-
 
 <table>
    <tr>
@@ -3809,8 +3334,6 @@ Removes an entry/record from the Register.
     </tr>
 </table>
 
-
-
 <table>
    <tr>
         <th style="width:5%" class="text-center">Index</th>
@@ -3824,16 +3347,13 @@ Removes an entry/record from the Register.
     </tr>
 </table>
 
-
 <hr />
 
-
-
 <a name="action-message"></a>
+
 #### Message
 
 The message action is a general purpose communication action. &#39;Twitter/SMS&#39; for Issuers/Investors/Users. The message txn can also be used for passing partially signed txns on-chain, establishing private communication channels and EDI (receipting, invoices, PO, and private offers/bids). The messages are broken down by type for easy filtering in the a user&#39;s wallet. The Message Types are listed in the Message Types table.
-
 
 <table>
     <tr>
@@ -3841,7 +3361,6 @@ The message action is a general purpose communication action. &#39;Twitter/SMS&#
         <td>M1</td>
     </tr>
 </table>
-
 
 <table>
     <tr>
@@ -3855,11 +3374,8 @@ The message action is a general purpose communication action. &#39;Twitter/SMS&#
             uint(4)[tiny]
         </td>
         <td>
-            Associates the message to a particular input by the index. If none are specified then the first input is assumed.
-            
-        </td>
+            Associates the message to a particular input by the index. If none are specified then the first input is assumed.</td>
     </tr>
-
     <tr>
         <td>ReceiverIndexes</td>
         <td>
@@ -3867,21 +3383,17 @@ The message action is a general purpose communication action. &#39;Twitter/SMS&#
         </td>
         <td>
             Associates the message to a particular output by the index. If none are specified then the first output is assumed.
-            
-        </td>
+  </td>
     </tr>
-
     <tr>
         <td>MessageCode</td>
         <td>
             uint(2)
         </td>
         <td>
-            
-            
-        </td>
-    </tr>
 
+  </td>
+    </tr>
     <tr>
         <td>MessagePayload</td>
         <td>
@@ -3889,15 +3401,13 @@ The message action is a general purpose communication action. &#39;Twitter/SMS&#
         </td>
         <td>
             Public or private (RSA public key, Diffie-Hellman). Issuers/Contracts can send the signifying amount of satoshis to themselves for public announcements or private &#39;notes&#39; if encrypted. See Message Types for a full list of potential use cases.
-
+<br />
              Example: Hello world!
         </td>
     </tr>
-
 </table>
 
 ##### Transaction Summary
-
 
 <table>
    <tr>
@@ -3912,8 +3422,6 @@ The message action is a general purpose communication action. &#39;Twitter/SMS&#
     </tr>
 </table>
 
-
-
 <table>
    <tr>
         <th style="width:5%" class="text-center">Index</th>
@@ -3927,15 +3435,13 @@ The message action is a general purpose communication action. &#39;Twitter/SMS&#
     </tr>
 </table>
 
-
 <hr />
 
-
-
 <a name="action-rejection"></a>
+
 #### Rejection
 
-Used to reject request actions that do not comply with the Contract. If money is to be returned to a User then it is used in lieu of the Settlement Action to properly account for token balances. All Administration/User request Actions must be responded to by the Contract with an Action.  The only exception to this rule is when there is not enough fees in the first Action for the Contract response action to remain revenue neutral.  If not enough fees are attached to pay for the Contract response then the Contract will not respond.
+Used to reject request actions that do not comply with the Contract. If money is to be returned to a User then it is used in lieu of the Settlement Action to properly account for token balances. All Administration/User request Actions must be responded to by the Contract with an Action. The only exception to this rule is when there is not enough fees in the first Action for the Contract response action to remain revenue neutral. If not enough fees are attached to pay for the Contract response then the Contract will not respond.
 
 <table>
     <tr>
@@ -3943,7 +3449,6 @@ Used to reject request actions that do not comply with the Contract. If money is
         <td>M2</td>
     </tr>
 </table>
-
 
 <table>
     <tr>
@@ -3957,11 +3462,8 @@ Used to reject request actions that do not comply with the Contract. If money is
             uint(4)[tiny]
         </td>
         <td>
-            Associates the message to a particular output by the index. If none are specified then the first output is assumed.
-            
-        </td>
+            Associates the message to a particular output by the index. If none are specified then the first output is assumed.</td>
     </tr>
-
     <tr>
         <td>RejectAddressIndex</td>
         <td>
@@ -3969,10 +3471,8 @@ Used to reject request actions that do not comply with the Contract. If money is
         </td>
         <td>
             The address which is believed to have caused the rejection.
-            
-        </td>
+  </td>
     </tr>
-
     <tr>
         <td>RejectionCode</td>
         <td>
@@ -3983,7 +3483,6 @@ Used to reject request actions that do not comply with the Contract. If money is
              Example: 1
         </td>
     </tr>
-
     <tr>
         <td>Message</td>
         <td>
@@ -3994,7 +3493,6 @@ Used to reject request actions that do not comply with the Contract. If money is
              Example: Sorry, you don&#39;t have enough tokens.
         </td>
     </tr>
-
     <tr>
         <td>Timestamp</td>
         <td>
@@ -4005,11 +3503,9 @@ Used to reject request actions that do not comply with the Contract. If money is
             Cannot be changed by the administration, operator. Smart contract controls.
         </td>
     </tr>
-
 </table>
 
 ##### Transaction Summary
-
 
 <table>
    <tr>
@@ -4024,8 +3520,6 @@ Used to reject request actions that do not comply with the Contract. If money is
     </tr>
 </table>
 
-
-
 <table>
    <tr>
         <th style="width:5%" class="text-center">Index</th>
@@ -4039,12 +3533,10 @@ Used to reject request actions that do not comply with the Contract. If money is
     </tr>
 </table>
 
-
 <hr />
 
-
-
 <a name="field-types"></a>
+
 ## Field Types
 
 <div class="content-list collection-method-list" markdown="1">
@@ -4068,9 +3560,8 @@ Used to reject request actions that do not comply with the Contract. If money is
 - [Voting System](#type-voting-system)
 </div>
 
-
-
 <a name="type-administrator"></a>
+
 ### Administrator
 
 Administrator is used to refer to a Administration role in an Entity.
@@ -4091,7 +3582,6 @@ Administrator is used to refer to a Administration role in an Entity.
              Example: 7
         </td>
     </tr>
-
     <tr>
         <td>Name</td>
         <td>
@@ -4102,16 +3592,13 @@ Administrator is used to refer to a Administration role in an Entity.
              Example: Satoshi Nakamoto
         </td>
     </tr>
-
 </table>
 
-
-
 <a name="type-admin-identity-certificate"></a>
+
 ### Administrator Identity Certificate
 
-A certificate provided by an identity oracle to verify the administrator address is associated  with the issuer entity identification information. Also if a contract operator is provided then it verifies that the contract operator address is associated with the specified contract  operator identity information. For a child contract that references a parent entity contract the certificate verifies that the administrator address is associated with that entity contract.
-
+A certificate provided by an identity oracle to verify the administrator address is associated with the issuer entity identification information. Also if a contract operator is provided then it verifies that the contract operator address is associated with the specified contract operator identity information. For a child contract that references a parent entity contract the certificate verifies that the administrator address is associated with that entity contract.
 
 <table>
     <tr>
@@ -4126,22 +3613,16 @@ A certificate provided by an identity oracle to verify the administrator address
         </td>
         <td>
             The entity contract address of the service on chain that defines the identity oracle.
-            
         </td>
     </tr>
-
     <tr>
         <td>Signature</td>
         <td>
             <a href="#alias-signature">Signature</a>
         </td>
         <td>
-            The signature provided by the oracle specified. The first input must correspond to the  administration entity and, if a contract operator is included, the second input must  correspond to the contract operator entity.&#34;
-
-            
-        </td>
+            The signature provided by the oracle specified. The first input must correspond to the  administration entity and, if a contract operator is included, the second input must  correspond to the contract operator entity.&#34;<br />  </td>
     </tr>
-
     <tr>
         <td>BlockHeight</td>
         <td>
@@ -4149,10 +3630,8 @@ A certificate provided by an identity oracle to verify the administrator address
         </td>
         <td>
             The block height of the block hash used in the oracle signature.
-            
-        </td>
+  </td>
     </tr>
-
     <tr>
         <td>Expiration</td>
         <td>
@@ -4160,16 +3639,12 @@ A certificate provided by an identity oracle to verify the administrator address
         </td>
         <td>
             Oracles have the option to specify an expiration after which a new certificate should be  provided.
-
-            
-        </td>
+  </td>
     </tr>
-
 </table>
 
-
-
 <a name="type-amendment"></a>
+
 ### Amendment
 
 An Amendment is used to describe the modification of a single field in a Contract or Instrument, as defined in the ContractFormation and InstrumentCreation messages.
@@ -4190,7 +3665,6 @@ An Amendment is used to describe the modification of a single field in a Contrac
             The index path of the field being modified. Encoded as a list of base 128 var ints. Each index is an index into the current object, top level being the ContractFormation or InstrumentCreation. Indexes are defined by protobuf messages. If the current level is a list, then the index is a zero based offset to the element in the list.
         </td>
     </tr>
-
     <tr>
         <td>Operation</td>
         <td>
@@ -4201,7 +3675,6 @@ An Amendment is used to describe the modification of a single field in a Contrac
              Example: 0
         </td>
     </tr>
-
     <tr>
         <td>Data</td>
         <td>
@@ -4212,12 +3685,10 @@ An Amendment is used to describe the modification of a single field in a Contrac
             The bytes must be encoded in the format of the field being modified.
         </td>
     </tr>
-
 </table>
 
-
-
 <a name="type-instrument-receiver"></a>
+
 ### InstrumentReceiver
 
 An InstrumentReceiver is a quantity, address, and oracle signature. The quantity could be used to describe a number of tokens, or a value. The address is where the instrument will be sent.
@@ -4234,11 +3705,8 @@ An InstrumentReceiver is a quantity, address, and oracle signature. The quantity
             <a href="#alias-address">Address</a>
         </td>
         <td>
-            The address receiving the tokens
-            
-        </td>
+            The address receiving the tokens</td>
     </tr>
-
     <tr>
         <td>Quantity</td>
         <td>
@@ -4249,7 +3717,6 @@ An InstrumentReceiver is a quantity, address, and oracle signature. The quantity
              Example: 100
         </td>
     </tr>
-
     <tr>
         <td>OracleSigAlgorithm</td>
         <td>
@@ -4260,7 +3727,6 @@ An InstrumentReceiver is a quantity, address, and oracle signature. The quantity
              Example: 1
         </td>
     </tr>
-
     <tr>
         <td>OracleIndex</td>
         <td>
@@ -4268,10 +3734,8 @@ An InstrumentReceiver is a quantity, address, and oracle signature. The quantity
         </td>
         <td>
             Specifies the index into the list of oracles in the contract offer that was used to authorize this transfer.
-            
-        </td>
+  </td>
     </tr>
-
     <tr>
         <td>OracleConfirmationSig</td>
         <td>
@@ -4279,10 +3743,8 @@ An InstrumentReceiver is a quantity, address, and oracle signature. The quantity
         </td>
         <td>
             Length 0-255 bytes. If restricted to a oracle (whitelist) or has transfer restrictions (age, location, investor status): ECDSA&#43;secp256k1 (or the like) signed message provided by an approved/trusted oracle through an API signature of the defined message. If no transfer restrictions(trade restriction/age restriction fields in the Instrument Type payload. or restricted to a whitelist by the Contract Auth Flags, it is a NULL field.
-            
-        </td>
+  </td>
     </tr>
-
     <tr>
         <td>OracleSigBlockHeight</td>
         <td>
@@ -4290,10 +3752,8 @@ An InstrumentReceiver is a quantity, address, and oracle signature. The quantity
         </td>
         <td>
             The block height of the block hash used in the oracle signature.
-            
-        </td>
+  </td>
     </tr>
-
     <tr>
         <td>OracleSigExpiry</td>
         <td>
@@ -4301,15 +3761,12 @@ An InstrumentReceiver is a quantity, address, and oracle signature. The quantity
         </td>
         <td>
             This specifies the time at which the Oracle signature expires.
-            
-        </td>
+  </td>
     </tr>
-
 </table>
 
-
-
 <a name="type-instrument-settlement"></a>
+
 ### Instrument Settlement
 
 InstrumentSettlement is the data required to settle an instrument transfer.
@@ -4327,10 +3784,8 @@ InstrumentSettlement is the data required to settle an instrument transfer.
         </td>
         <td>
             Index of input containing the contract&#39;s address for this offset
-            
         </td>
     </tr>
-
     <tr>
         <td>InstrumentType</td>
         <td>
@@ -4341,7 +3796,6 @@ InstrumentSettlement is the data required to settle an instrument transfer.
              Example: SHC
         </td>
     </tr>
-
     <tr>
         <td>InstrumentCode</td>
         <td>
@@ -4352,7 +3806,6 @@ InstrumentSettlement is the data required to settle an instrument transfer.
             Cannot be changed by the administration, operator or smart contract.
         </td>
     </tr>
-
     <tr>
         <td>Settlements</td>
         <td>
@@ -4360,15 +3813,12 @@ InstrumentSettlement is the data required to settle an instrument transfer.
         </td>
         <td>
             Each element contains the resulting token balance of Instrument X for the output Address, which is referred to by the index.
-            
-        </td>
+  </td>
     </tr>
-
 </table>
 
-
-
 <a name="type-instrument-transfer"></a>
+
 ### Instrument Transfer
 
 InstrumentTransfer is the data required to transfer an instrument.
@@ -4386,10 +3836,8 @@ InstrumentTransfer is the data required to transfer an instrument.
         </td>
         <td>
             Index of output containing the contract&#39;s address for this offset
-            
         </td>
     </tr>
-
     <tr>
         <td>InstrumentType</td>
         <td>
@@ -4400,7 +3848,6 @@ InstrumentTransfer is the data required to transfer an instrument.
              Example: SHC
         </td>
     </tr>
-
     <tr>
         <td>InstrumentCode</td>
         <td>
@@ -4411,7 +3858,6 @@ InstrumentTransfer is the data required to transfer an instrument.
             Cannot be changed by the administration, operator or smart contract.
         </td>
     </tr>
-
     <tr>
         <td>InstrumentSenders</td>
         <td>
@@ -4419,10 +3865,8 @@ InstrumentTransfer is the data required to transfer an instrument.
         </td>
         <td>
             Each element has the value of tokens to be spent from the input address, which is referred to by the index.
-            
-        </td>
+  </td>
     </tr>
-
     <tr>
         <td>InstrumentReceivers</td>
         <td>
@@ -4430,19 +3874,15 @@ InstrumentTransfer is the data required to transfer an instrument.
         </td>
         <td>
             Each element has the value of tokens to be received, the address, and an oracle signature if required.
-            
-        </td>
+  </td>
     </tr>
-
 </table>
 
-
-
 <a name="type-chapter"></a>
+
 ### Chapter
 
 A chapter is the top level structure of an agreement. It contains articles.
-
 
 <table>
     <tr>
@@ -4457,10 +3897,8 @@ A chapter is the top level structure of an agreement. It contains articles.
         </td>
         <td>
             The title of the chapter.
-            
         </td>
     </tr>
-
     <tr>
         <td>Preamble</td>
         <td>
@@ -4468,10 +3906,8 @@ A chapter is the top level structure of an agreement. It contains articles.
         </td>
         <td>
             The introduction to the chapter.
-            
-        </td>
+  </td>
     </tr>
-
     <tr>
         <td>Articles</td>
         <td>
@@ -4479,19 +3915,15 @@ A chapter is the top level structure of an agreement. It contains articles.
         </td>
         <td>
             A list of articles for the chapter.
-            
-        </td>
+  </td>
     </tr>
-
 </table>
 
-
-
 <a name="type-clause"></a>
+
 ### Clause
 
-A clause is the standard piece of an agreement, contained in each of the sub-levels of the  agreement. Articles, Sections, Subsections, Paragraphs, and Subparagraphs.
-
+A clause is the standard piece of an agreement, contained in each of the sub-levels of the agreement. Articles, Sections, Subsections, Paragraphs, and Subparagraphs.
 
 <table>
     <tr>
@@ -4505,11 +3937,8 @@ A clause is the standard piece of an agreement, contained in each of the sub-lev
             varchar(tiny)
         </td>
         <td>
-            The title of the clause.
-            
-        </td>
+            The title of the clause.</td>
     </tr>
-
     <tr>
         <td>Body</td>
         <td>
@@ -4517,10 +3946,8 @@ A clause is the standard piece of an agreement, contained in each of the sub-lev
         </td>
         <td>
             The body of the clause.
-            
-        </td>
+  </td>
     </tr>
-
     <tr>
         <td>Children</td>
         <td>
@@ -4528,19 +3955,15 @@ A clause is the standard piece of an agreement, contained in each of the sub-lev
         </td>
         <td>
             A list of clauses under this clause.
-            
-        </td>
+  </td>
     </tr>
-
 </table>
 
-
-
 <a name="type-defined-term"></a>
+
 ### Defined Term
 
 A definition define a term specified throughout an agreement.
-
 
 <table>
     <tr>
@@ -4555,11 +3978,8 @@ A definition define a term specified throughout an agreement.
         </td>
         <td>
             The name of the term being defined. Linked to from within the agreement with curly braces {}  around the name.
-
-            
-        </td>
+  </td>
     </tr>
-
     <tr>
         <td>Definition</td>
         <td>
@@ -4567,15 +3987,12 @@ A definition define a term specified throughout an agreement.
         </td>
         <td>
             The definition of the name.
-            
-        </td>
+  </td>
     </tr>
-
 </table>
 
-
-
 <a name="type-document"></a>
+
 ### Document
 
 A file containing data.
@@ -4596,18 +4013,16 @@ A file containing data.
              Example: Agreement.pdf
         </td>
     </tr>
-
     <tr>
         <td>Type</td>
         <td>
             varchar(tiny)
         </td>
         <td>
-            MIME type of the file. Length 0-255 bytes. 0 is valid. 
+            MIME type of the file. Length 0-255 bytes. 0 is valid.
              Example: application/pdf
         </td>
     </tr>
-
     <tr>
         <td>Contents</td>
         <td>
@@ -4615,15 +4030,12 @@ A file containing data.
         </td>
         <td>
             The contents of the file.
-            
-        </td>
+  </td>
     </tr>
-
 </table>
 
-
-
 <a name="type-entity"></a>
+
 ### Entity
 
 Entity represents the details of a legal Entity, such as a public or private company, government agency, or and individual.
@@ -4644,7 +4056,6 @@ Entity represents the details of a legal Entity, such as a public or private com
              Example: Tesla Inc.
         </td>
     </tr>
-
     <tr>
         <td>Type</td>
         <td>
@@ -4655,7 +4066,6 @@ Entity represents the details of a legal Entity, such as a public or private com
              Example: P
         </td>
     </tr>
-
     <tr>
         <td>LEI</td>
         <td>
@@ -4666,7 +4076,6 @@ Entity represents the details of a legal Entity, such as a public or private com
             ISO 17442 - https://en.wikipedia.org/wiki/Legal_Entity_Identifier Example: 54930084UKLVMY22DS16
         </td>
     </tr>
-
     <tr>
         <td>UnitNumber</td>
         <td>
@@ -4677,73 +4086,60 @@ Entity represents the details of a legal Entity, such as a public or private com
              Example: 2
         </td>
     </tr>
-
     <tr>
         <td>BuildingNumber</td>
         <td>
             varchar(tiny)
         </td>
         <td>
-            
              Example: 13577
         </td>
     </tr>
-
     <tr>
         <td>Street</td>
         <td>
             varchar(tiny)
         </td>
         <td>
-            
              Example: Fairmont Ave
         </td>
     </tr>
-
     <tr>
         <td>SuburbCity</td>
         <td>
             varchar(tiny)
         </td>
         <td>
-            
              Example: Robinoh
         </td>
     </tr>
-
     <tr>
         <td>TerritoryStateProvinceCode</td>
         <td>
             fixedchar(5)
         </td>
         <td>
-            
              Example: BC
         </td>
     </tr>
-
     <tr>
         <td>CountryCode</td>
         <td>
             fixedchar(3)
         </td>
         <td>
-            
              Example: USA
         </td>
     </tr>
-
     <tr>
         <td>PostalZIPCode</td>
         <td>
             fixedchar(12)
         </td>
         <td>
-            
              Example: 50210
         </td>
     </tr>
-
     <tr>
         <td>EmailAddress</td>
         <td>
@@ -4754,7 +4150,6 @@ Entity represents the details of a legal Entity, such as a public or private com
              Example: satoshi@tokenized.com
         </td>
     </tr>
-
     <tr>
         <td>PhoneNumber</td>
         <td>
@@ -4765,7 +4160,6 @@ Entity represents the details of a legal Entity, such as a public or private com
              Example: 0448484848
         </td>
     </tr>
-
     <tr>
         <td>Administration</td>
         <td>
@@ -4773,10 +4167,9 @@ Entity represents the details of a legal Entity, such as a public or private com
         </td>
         <td>
             A list of people that are in Administrative Roles for the Entity.  eg. Chair, Director, Managing Partner, etc.
-            
-        </td>
-    </tr>
 
+  </td>
+    </tr>
     <tr>
         <td>Management</td>
         <td>
@@ -4784,10 +4177,8 @@ Entity represents the details of a legal Entity, such as a public or private com
         </td>
         <td>
             A list of people in Management Roles for the Entity. e.g CEO, COO, CTO, CFO, Secretary, Executive, etc.
-            
-        </td>
+  </td>
     </tr>
-
     <tr>
         <td>DomainName</td>
         <td>
@@ -4798,16 +4189,13 @@ Entity represents the details of a legal Entity, such as a public or private com
              Example: tokenized.com
         </td>
     </tr>
-
     <tr>
         <td>(Deprecated)EntityContractAddress</td>
         <td>deprecated</td>
         <td>
             Deprecated for separate field in contract. Address of entity contract. When the contract type is instrument contract, or a child type, this field refers to the entity specified in the contract at the address specified. When this field is present, no other fields should be included in the entity.
-            
-        </td>
+  </td>
     </tr>
-
     <tr>
         <td>PaymailHandle</td>
         <td>
@@ -4818,12 +4206,10 @@ Entity represents the details of a legal Entity, such as a public or private com
              Example: satoshi@tokenized.id
         </td>
     </tr>
-
 </table>
 
-
-
 <a name="type-manager"></a>
+
 ### Manager
 
 Manager is used to refer to a role that is responsible for the Management of an Entity.
@@ -4844,7 +4230,6 @@ Manager is used to refer to a role that is responsible for the Management of an 
              Example: 5
         </td>
     </tr>
-
     <tr>
         <td>Name</td>
         <td>
@@ -4855,12 +4240,10 @@ Manager is used to refer to a role that is responsible for the Management of an 
              Example: Satoshi Nakamoto
         </td>
     </tr>
-
 </table>
 
-
-
 <a name="type-oracle"></a>
+
 ### Oracle
 
 A Oracle defines the details of a public Oracle.
@@ -4875,11 +4258,8 @@ A Oracle defines the details of a public Oracle.
         <td>(Deprecated)Entity</td>
         <td>deprecated</td>
         <td>
-            Deprecated for service contract address. Identifying information about the oracle.
-            
-        </td>
+            Deprecated for service contract address. Identifying information about the oracle.</td>
     </tr>
-
     <tr>
         <td>(Deprecated)URL</td>
         <td>deprecated</td>
@@ -4888,16 +4268,13 @@ A Oracle defines the details of a public Oracle.
              Example: http://oracle.tokenized.com/api/3650d9/version2010
         </td>
     </tr>
-
     <tr>
         <td>(Deprecated)PublicKey</td>
         <td>deprecated</td>
         <td>
             Deprecated for service contract address. Length 0-255 bytes. 0 is not valid. Oracle Public Key (eg. Bitcoin Public key), used to confirm digital signed proofs for transfers.  Can also be the same public address that controls a Tokenized Oracle.
-            
-        </td>
+  </td>
     </tr>
-
     <tr>
         <td>OracleTypes</td>
         <td>
@@ -4905,10 +4282,8 @@ A Oracle defines the details of a public Oracle.
         </td>
         <td>
             The type of the oracle. 0 = Identity, 1 = Authority, 2 = Event. More than one value can be included to specify the oracle has more than one type.
-            
-        </td>
+  </td>
     </tr>
-
     <tr>
         <td>EntityContract</td>
         <td>
@@ -4916,15 +4291,12 @@ A Oracle defines the details of a public Oracle.
         </td>
         <td>
             The entity contract address of the service on chain that defines the oracle.
-            
-        </td>
+  </td>
     </tr>
-
 </table>
 
-
-
 <a name="type-quantity-index"></a>
+
 ### Quantity Index
 
 A QuantityIndex contains a quantity, and an index. The quantity could be used to describe a number of tokens, or a value. The index is used to refer to an input or output index position.
@@ -4945,7 +4317,6 @@ A QuantityIndex contains a quantity, and an index. The quantity could be used to
              Example: 0
         </td>
     </tr>
-
     <tr>
         <td>Quantity</td>
         <td>
@@ -4956,12 +4327,10 @@ A QuantityIndex contains a quantity, and an index. The quantity could be used to
              Example: 100
         </td>
     </tr>
-
 </table>
 
-
-
 <a name="type-reference-transaction"></a>
+
 ### Reference Transaction
 
 A bitcoin transaction and the outputs that it spends.
@@ -4982,7 +4351,6 @@ A bitcoin transaction and the outputs that it spends.
              Example: 0
         </td>
     </tr>
-
     <tr>
         <td>Outputs</td>
         <td>
@@ -4990,19 +4358,15 @@ A bitcoin transaction and the outputs that it spends.
         </td>
         <td>
             The bitcoin outputs corresponding to the inputs for the transaction. Serialized in bitcoin P2P format. There must be the same count as there are inputs in the contained transaction and they must be in the same order.
-            
-        </td>
+  </td>
     </tr>
-
 </table>
 
-
-
 <a name="type-service"></a>
+
 ### Service
 
-A definition of a service provided by an identity oracle to verify the administrator address is associated  with the issuer entity identification information. Also if a contract operator is provided then it verifies that the contract operator address is associated with the specified contract  operator identity information. For a child contract that references a parent entity contract the certificate verifies that the administrator address is associated with that entity contract.
-
+A definition of a service provided by an identity oracle to verify the administrator address is associated with the issuer entity identification information. Also if a contract operator is provided then it verifies that the contract operator address is associated with the specified contract operator identity information. For a child contract that references a parent entity contract the certificate verifies that the administrator address is associated with that entity contract.
 
 <table>
     <tr>
@@ -5021,11 +4385,10 @@ A definition of a service provided by an identity oracle to verify the administr
   1 - Authority Oracle
   2 - Event Oracle
   3 - Contract Operator
-
+<br />
              Example: 0
         </td>
     </tr>
-
     <tr>
         <td>URL</td>
         <td>
@@ -5033,11 +4396,8 @@ A definition of a service provided by an identity oracle to verify the administr
         </td>
         <td>
             The base URL of the service. For each service type there are predefined methods for  determining the specific endpoints.
-
-            
-        </td>
+  </td>
     </tr>
-
     <tr>
         <td>PublicKey</td>
         <td>
@@ -5045,15 +4405,12 @@ A definition of a service provided by an identity oracle to verify the administr
         </td>
         <td>
             The public key used to verify and authorize the service.
-            
-        </td>
+  </td>
     </tr>
-
 </table>
 
-
-
 <a name="type-target-address"></a>
+
 ### Target Address
 
 A TargetAddress defines a public address and quantity.
@@ -5070,11 +4427,8 @@ A TargetAddress defines a public address and quantity.
             <a href="#alias-address">Address</a>
         </td>
         <td>
-            Public address where the token balance will be changed.
-            
-        </td>
+            Public address where the token balance will be changed.</td>
     </tr>
-
     <tr>
         <td>Quantity</td>
         <td>
@@ -5085,12 +4439,10 @@ A TargetAddress defines a public address and quantity.
              Example: 10000
         </td>
     </tr>
-
 </table>
 
-
-
 <a name="type-voting-system"></a>
+
 ### Voting System
 
 A VotingSystem defines all details of a Voting System.
@@ -5111,7 +4463,6 @@ A VotingSystem defines all details of a Voting System.
              Example: Special Resolutions
         </td>
     </tr>
-
     <tr>
         <td>VoteType</td>
         <td>
@@ -5122,18 +4473,16 @@ A VotingSystem defines all details of a Voting System.
              Example: A
         </td>
     </tr>
-
     <tr>
         <td>TallyLogic</td>
         <td>
             uint(1)
         </td>
         <td>
-            0 - Standard Scoring (&#43;1 * # of tokens owned), 1 - Weighted Scoring (1st choice * Vote Max * # of tokens held, 2nd choice * Vote Max-1 * # of tokens held,..etc.) 
+            0 - Standard Scoring (&#43;1 * # of tokens owned), 1 - Weighted Scoring (1st choice * Vote Max * # of tokens held, 2nd choice * Vote Max-1 * # of tokens held,..etc.)
              Example: 0
         </td>
     </tr>
-
     <tr>
         <td>ThresholdPercentage</td>
         <td>
@@ -5144,7 +4493,6 @@ A VotingSystem defines all details of a Voting System.
              Example: 75
         </td>
     </tr>
-
     <tr>
         <td>VoteMultiplierPermitted</td>
         <td>
@@ -5152,10 +4500,8 @@ A VotingSystem defines all details of a Voting System.
         </td>
         <td>
             Where an instrument has a vote multiplier, true must be set here for the vote multiplier to count, otherwise votes are simply treated as 1x per token.
-            
-        </td>
+  </td>
     </tr>
-
     <tr>
         <td>HolderProposalFee</td>
         <td>
@@ -5166,12 +4512,10 @@ A VotingSystem defines all details of a Voting System.
              Example: 100
         </td>
     </tr>
-
 </table>
 
-
-
 <a name="field-aliases"></a>
+
 ## Field Aliases
 
 <table>
@@ -5321,4 +4665,3 @@ A VotingSystem defines all details of a Voting System.
             </td>
         </tr>
 </table>
-

@@ -2,47 +2,51 @@
 
 - [Introduction](#introduction)
 - [Smart Contracts](#smart-contracts)
-    - [Contract Operator](#contract-operator)
-    - [Creating a Contract](#contract-create)
-    - [Updating a Contract](#contract-update)
-    - [Contract Address Change](#contract-address-change)
+  - [Contract Operator](#contract-operator)
+  - [Creating a Contract](#contract-create)
+  - [Updating a Contract](#contract-update)
+  - [Contract Address Change](#contract-address-change)
 - [Static Contracts](#static-contracts)
 - [Contract Law](#contract-law)
-    - [Contract Formation](#contract-formation)
-    - [Agreement](#agreement)
-    - [Consideration](#consideration)
-    - [Capacity](#capacity)
-    - [Intention](#intention)
-    - [Certainty](#certainty)
+  - [Contract Formation](#contract-formation)
+  - [Agreement](#agreement)
+  - [Consideration](#consideration)
+  - [Capacity](#capacity)
+  - [Intention](#intention)
+  - [Certainty](#certainty)
 
 <a name="introduction"></a>
+
 ## Introduction
 
-Tokenized contracts allow for entities to form, store and manage contracts on the Bitcoin (BSV) network in a standardized way that allows for interoperability with other contracting parties and the use of Bitcoin's digital signature algorithms to create a more robust way of creating and managing agreements.  The Bitcoin network allows for a global, public, immutable, and reliable ledger which is extremely valuable for storing, managing and timestamping contracts.
+Tokenized contracts allow for entities to form, store and manage contracts on the Bitcoin (BSV) network in a standardized way that allows for interoperability with other contracting parties and the use of Bitcoin's digital signature algorithms to create a more robust way of creating and managing agreements. The Bitcoin network allows for a global, public, immutable, and reliable ledger which is extremely valuable for storing, managing and timestamping contracts.
 
-A Tokenized contract references (hash) or stores all of the terms and conditions, in prose, associated with a binding legal contract. Depending on the jurisdiction, additional clauses may have to be added to the contract to recognise the Tokenized Protocol and on-chain actions as meaningful and binding to the contracting parties of the contract.  For this reason, building contracts using Tokenized requires the same level of foresight, preparation and expertise as that required for the creation of any other traditional contract.
+A Tokenized contract references (hash) or stores all of the terms and conditions, in prose, associated with a binding legal contract. Depending on the jurisdiction, additional clauses may have to be added to the contract to recognise the Tokenized Protocol and on-chain actions as meaningful and binding to the contracting parties of the contract. For this reason, building contracts using Tokenized requires the same level of foresight, preparation and expertise as that required for the creation of any other traditional contract.
 
 There are two types of contracts supported by the Tokenized system. [Smart contracts](#smart-contracts) that are hosted by the issuer or third party provider (called a contract operator), and [static contracts](#static-contracts) which are recorded to the blockchain and require no further on-going maintenance.
 
 ![Decision Tree - Static vs Dynamic Contracts](https://raw.githubusercontent.com/tokenized/docs/master/images/contract-formation-decision-tree.svg?sanitize=true "Contract Formation: Decision Tree") {.frame .centered .padded}
 
 <a name="smart-contracts"></a>
+
 ## Smart Contracts
 
-A smart contract is a dynamic contract that is managed by an autonomous agent (off-chain daemon) using the Tokenized Protocol. The smart contract operates on behalf of the issuer for all administrative tasks associated with maintaining and updating the contract's on-chain records.  The smart contract service is responsible for monitoring data that effect the state of the smart contract and for incorporating those changes into the contract.  The smart contract can also work with other autonomous agents working on behalf of the issuer or other contracting parties to fully automate all the various processes and tasks associated with the formation and performance of a contract.
+A smart contract is a dynamic contract that is managed by an autonomous agent (off-chain daemon) using the Tokenized Protocol. The smart contract operates on behalf of the issuer for all administrative tasks associated with maintaining and updating the contract's on-chain records. The smart contract service is responsible for monitoring data that effect the state of the smart contract and for incorporating those changes into the contract. The smart contract can also work with other autonomous agents working on behalf of the issuer or other contracting parties to fully automate all the various processes and tasks associated with the formation and performance of a contract.
 
 The smart contract can only respond to instructions it receives as Tokenized transactions into its own wallet. All responses from the smart contract are sent onto the blockchain as per the order of operations needed for the action taking place.
 
 The Tokenized Smart Contract is written in Go and is fully open source. Details of the smart contract can be found in the [Tokenized Smart Contract Github repository](https://github.com/tokenized).
 
 <a name="contract-operator"></a>
+
 ### Contract Operator
 
-An issuer can operate their own smart contract, or they can have a technical specialist operate the smart contract on their behalf. This technical specialist is called a 'contract operator'.  The contract operator is identified by their public address which is specified in the Contract Offer action.
+An issuer can operate their own smart contract, or they can have a technical specialist operate the smart contract on their behalf. This technical specialist is called a 'contract operator'. The contract operator is identified by their public address which is specified in the Contract Offer action.
 
-The contract operator has permission to act on behalf of the issuer for the inititation of different actions.  Issuers will likely prefer to outsource this work for various reasons and it is likely they will get a much better price and higher reliability/performance/security than they would if they tried to operate it themselves.  An analogy would be outsourcing the operation of an email agent to Gmail or Hotmail.
+The contract operator has permission to act on behalf of the issuer for the inititation of different actions. Issuers will likely prefer to outsource this work for various reasons and it is likely they will get a much better price and higher reliability/performance/security than they would if they tried to operate it themselves. An analogy would be outsourcing the operation of an email agent to Gmail or Hotmail.
 
 <a name="contract-create"></a>
+
 ### Creating a Contract
 
 A Tokenized contract is formed when the administration of a token issuer presents a valid [Contract Offer](../protocol/actions#action-contract-offer) action to a smart contract. The smart contract checks only that the rules proposed in the offer are compliant with its logic, but the legal and regulatory aspects of dealing with the instruments being created must be pre-determined and managed by the administration to ensure the contract operates within all applicable laws and regulations.
@@ -77,6 +81,7 @@ The contract also adds two additional fields
 ![Contract Formation action](https://raw.githubusercontent.com/tokenized/docs/master/images/contract-formation-action.svg?sanitize=true "Contract Formation Action Transaction") {.frame .centered .padded}
 
 <a name="contract-update"></a>
+
 ### Updating a Contract
 
 The amendment of a Tokenized contract can be simple when the rules or conditions being changed are able to be amended without needing a vote. This is called a unilateral amendment and is comprised of the [Contract Amendment](../protocol/actions#action-contract-amendment) and [Contract Formation](../protocol/actions#action-contract-formation) actions.
@@ -110,6 +115,7 @@ From this moment, all transaction requests to the contract must abide by the ame
 ![Updated Contract Formation action](https://raw.githubusercontent.com/tokenized/docs/master/images/contract-formation-action-amendment.svg?sanitize=true "Contract Formation Action Transaction") {.frame .centered .padded}
 
 <a name="contract-address-change"></a>
+
 ### Contract Address Change
 
 When hosting a smart contract, it is very important that the private key is never compromised. If it is, then someone could break the rules of the contract, steal tokens, and just generally wreak havoc on all participants.
@@ -119,23 +125,27 @@ In the worst case scenario, in which the private key of the contract is compromi
 ![A contract address change action template](https://raw.githubusercontent.com/tokenized/docs/master/images/contract-address-change-action.svg?sanitize=true "Contract Address Change Action Template") {.frame .centered .padded}
 
 <a name="static-contracts"></a>
+
 ## Static Contracts
 
 A static contract is a legal contract similar to that which one would enter into today for the undertaking of a scope of work, to enter into a non-disclosure agreement, or to manage the sale of an off-chain instrument that has not been tokenized. A static contract uses the [Static Contract Formation](../protocol/actions#action-static-contract-formation) action.
 
-The static contract framework simply provides an easy and low-cost way for inscribing the details of these contracts onto the public ledger so the contracting parties benefit from the value of the Bitcoin network. Static contracts require only a single action to be established and do not require a Tokenized smart contract to operate.  Each of the contracting parties adds a signed input to the same transaction that has the static contract formation action in it, to allow for their signatures (intention) to be recorded to the contract.
+The static contract framework simply provides an easy and low-cost way for inscribing the details of these contracts onto the public ledger so the contracting parties benefit from the value of the Bitcoin network. Static contracts require only a single action to be established and do not require a Tokenized smart contract to operate. Each of the contracting parties adds a signed input to the same transaction that has the static contract formation action in it, to allow for their signatures (intention) to be recorded to the contract.
 
 ![Updated Static Contract Formation action](https://raw.githubusercontent.com/tokenized/docs/master/images/static-contract-formation-action.svg?sanitize=true) {.frame .centered .padded}
 
 <a name="contract-law"></a>
+
 ## Contract Law
 
-The Tokenized Protocol ensures that all valid contracts follow the principles and conventions of contract law.  While there is some variation worldwide the basic core concepts of a contract are fairly universal.  For the purposes of the analysis in this document, the Tokenized Protocol has been examined using Australian contract law as the model, which is based on English common law. Contract administrations should always seek proper legal advice to ensure that they comply with the laws in their jurisdiction.
+The Tokenized Protocol ensures that all valid contracts follow the principles and conventions of contract law. While there is some variation worldwide the basic core concepts of a contract are fairly universal. For the purposes of the analysis in this document, the Tokenized Protocol has been examined using Australian contract law as the model, which is based on English common law. Contract administrations should always seek proper legal advice to ensure that they comply with the laws in their jurisdiction.
 
 <a name="contract-formation"></a>
+
 ### Contract Formation
 
 There are five essential elements necessary for legally binding Contract Formation:
+
 - Agreement between the parties
 - Consideration (a bargain requirement: generally, the supply of money, property or services or a promise to undertake, or not undertake a particular act in exchange for something of value)
 - Capacity to enter legal relations (e.g. of sound mind and legal age)
@@ -145,21 +155,31 @@ There are five essential elements necessary for legally binding Contract Formati
 Reference: J W Carter, LexisNexis, Carter on Contract (at July 2013) [Chapter 1]
 
 <a name="agreement"></a>
+
 #### Agreement
-The agreement criteria of contract law is satisfied in the Tokenized Protocol by way of the information specified by the Contract Formation action, the Instrument Creation action, the written agreement, and the Transfer and Settlement actions.  The existence of an agreement is analyzed through the rules of ‘offer and acceptance’.  In the case of a token contract, the issuer (the offerer) produces an offer (Contract Formation, Instrument Creation) and the investor (the offeree) accepts the offer by way of an exchange (bitcoin for token(s)) or swap (token(s) for token(s)) type Transfer action.  A send type Transfer action is like a standard Bitcoin transaction in that it only requires sign-off by the token sender, and no on-chain consideration is required, therefore the offeree does not sign-off on the transaction and may not agree to accept the tokens being sent.  Typically a send type action is accompanied by on-chain or off-chain receipt, invoice or some other document that records the transfer of real world goods or services in consideration for the payment of tokens or bitcoin.
+
+The agreement criteria of contract law is satisfied in the Tokenized Protocol by way of the information specified by the Contract Formation action, the Instrument Creation action, the written agreement, and the Transfer and Settlement actions. The existence of an agreement is analyzed through the rules of ‘offer and acceptance’. In the case of a token contract, the issuer (the offerer) produces an offer (Contract Formation, Instrument Creation) and the investor (the offeree) accepts the offer by way of an exchange (bitcoin for token(s)) or swap (token(s) for token(s)) type Transfer action. A send type Transfer action is like a standard Bitcoin transaction in that it only requires sign-off by the token sender, and no on-chain consideration is required, therefore the offeree does not sign-off on the transaction and may not agree to accept the tokens being sent. Typically a send type action is accompanied by on-chain or off-chain receipt, invoice or some other document that records the transfer of real world goods or services in consideration for the payment of tokens or bitcoin.
 
 <a name="consideration"></a>
+
 #### Consideration
-Consideration will always be present in an exchange or swap type of Transfer action in the form of either a token or bitcoin.  Exchanges require a contracting party to provide bitcoin in return for their token(s).  Swaps have contracting parties swap tokens for other tokens directly without any bitcoin except for what is needed to pay any transaction fees.  The consideration criteria of a legally-binding contract will also be published on-chain in a Settlement transaction where the contract actually dispenses the bitcoin and token(s) to the contracting parties involved in the transfer.  
+
+Consideration will always be present in an exchange or swap type of Transfer action in the form of either a token or bitcoin. Exchanges require a contracting party to provide bitcoin in return for their token(s). Swaps have contracting parties swap tokens for other tokens directly without any bitcoin except for what is needed to pay any transaction fees. The consideration criteria of a legally-binding contract will also be published on-chain in a Settlement transaction where the contract actually dispenses the bitcoin and token(s) to the contracting parties involved in the transfer.
 
 <a name="capacity"></a>
+
 #### Capacity
-Capacity will be handled by the smart contracts and the use of Identity Oracles that contain whitelisted public addresses.  These whitelisted addresses get added to the whitelist only when KYC/AML compliance checks have been completed.  The smart contract will not allow any transactions to go through that break the terms and conditions of the contract which are created in accordance with the choice of law selected for the contract.  Other capacity issues relating to being ‘of sound mind’ (e.g. intoxication) cannot be effectively managed by the Tokenized Protocol, but that is true of any online commercial interaction.
+
+Capacity will be handled by the smart contracts and the use of Identity Oracles that contain whitelisted public addresses. These whitelisted addresses get added to the whitelist only when KYC/AML compliance checks have been completed. The smart contract will not allow any transactions to go through that break the terms and conditions of the contract which are created in accordance with the choice of law selected for the contract. Other capacity issues relating to being ‘of sound mind’ (e.g. intoxication) cannot be effectively managed by the Tokenized Protocol, but that is true of any online commercial interaction.
 
 <a name="intention"></a>
+
 #### Intention
-Intention is traditionally handled by context, language and a signature by all relevant contracting parties.  For most token use cases the context will be supplied by the actual written agreement, and the descriptions and labels of the token.  Generally, a contracting party who is looking to buy a share in a company recognizes that the share is part of a commercial-agreement.  The Tokenized Protocol also uses carefully chosen terminology for the various actions and metadata fields to make the intention of the actions extremely clear to all that use it.  The language is precise and adheres to the concept of terms having their ordinary meaning to remove the potential for misunderstanding.  Most tokens will be accompanied by a written agreement and/or supporting documentation that will have handwritten signatures of the administration of the contract issuer and any relevant contracting parties.  However, most token owners will signal their intent to be bound to a legally-binding contract using a digital signature generated by their private key that is associated with the public key that holds the tokens.  The Tokenized Protocol recognizes the digital signatures of the contracting parties - in the input addresses of the Bitcoin transaction that contains the Tokenized action - as intent by the contracting parties.
+
+Intention is traditionally handled by context, language and a signature by all relevant contracting parties. For most token use cases the context will be supplied by the actual written agreement, and the descriptions and labels of the token. Generally, a contracting party who is looking to buy a share in a company recognizes that the share is part of a commercial-agreement. The Tokenized Protocol also uses carefully chosen terminology for the various actions and metadata fields to make the intention of the actions extremely clear to all that use it. The language is precise and adheres to the concept of terms having their ordinary meaning to remove the potential for misunderstanding. Most tokens will be accompanied by a written agreement and/or supporting documentation that will have handwritten signatures of the administration of the contract issuer and any relevant contracting parties. However, most token owners will signal their intent to be bound to a legally-binding contract using a digital signature generated by their private key that is associated with the public key that holds the tokens. The Tokenized Protocol recognizes the digital signatures of the contracting parties - in the input addresses of the Bitcoin transaction that contains the Tokenized action - as intent by the contracting parties.
 
 <a name="certainty"></a>
+
 #### Certainty
-Certainty is captured in the formalized and standardized metadata of the Tokenized actions.  All of the important aspects of the contract are detailed and must be included for it to be considered a valid Tokenized action.  The Tokenized Protocol does not have control over the actual written agreement and there can be some uncertainty as to whether the written agreement is legally binding in this capacity, but this may be true of all contracts.  Users will have to be vigilant with the contracts they enter into and should always seek professional legal advice if they are uncertain of a contract’s effect.
+
+Certainty is captured in the formalized and standardized metadata of the Tokenized actions. All of the important aspects of the contract are detailed and must be included for it to be considered a valid Tokenized action. The Tokenized Protocol does not have control over the actual written agreement and there can be some uncertainty as to whether the written agreement is legally binding in this capacity, but this may be true of all contracts. Users will have to be vigilant with the contracts they enter into and should always seek professional legal advice if they are uncertain of a contract’s effect.
