@@ -25,8 +25,9 @@ A Tokenized contract references (hash) or stores all of the terms and conditions
 
 There are two types of contracts supported by the Tokenized system. [Smart contracts](#smart-contracts) that are hosted by the issuer or third party provider (called a contract operator), and [static contracts](#static-contracts) which are recorded to the blockchain and require no further on-going maintenance.
 
-![Decision Tree - Static vs Dynamic Contracts](https://raw.githubusercontent.com/tokenized/docs/master/images/contract-formation-decision-tree.svg?sanitize=true "Contract Formation: Decision Tree") {.frame .centered .padded}
+![Decision Tree - Static vs Dynamic Contracts](https://raw.githubusercontent.com/tokenized/docs/master/images/contract-formation-decision-tree.svg?sanitize=true)
 
+<span name="image-label">Contract Formation: Decision Tree</span>
 <a name="smart-contracts"></a>
 
 ## Smart Contracts
@@ -63,11 +64,14 @@ To create a [Contract Offer](../protocol/actions#action-contract-offer), the Con
 
 The Contract Offer action must be signed by both the administration and the smart contract operator, so the administration first builds a template transaction which it sends to the smart contract operator:
 
-![A contract offer action template](https://raw.githubusercontent.com/tokenized/docs/master/images/contract-offer-action-template.svg?sanitize=true "Contract Offer Action Template") {.frame .centered .padded}
+![A contract offer action template](https://raw.githubusercontent.com/tokenized/docs/master/images/contract-offer-action-template.svg?sanitize=true)
 
+<span name="image-label">Contract Offer Action Template</span>
 If the contract meets the smart contract operator's requirements, they will add an input from their own wallet, add the change outputs they need and sign the Contract Offer using `SIGHASH_ALL` before sending it back to the administration. Once the administration has reviewed the smart contract operator's changes, they can sign their own input (or inputs) using `SIGHASH_ALL` and send the transaction onto the network.
 
-![Final contract offer action](https://raw.githubusercontent.com/tokenized/docs/master/images/contract-offer-action.svg?sanitize=true "Contract Offer Action Transaction") {.frame .centered .padded}
+![Final contract offer action](https://raw.githubusercontent.com/tokenized/docs/master/images/contract-offer-action.svg?sanitize=true)
+
+<span name="image-label">Contract Offer Action Transaction</span>
 
 #### Contract Formation
 
@@ -78,8 +82,9 @@ The contract also adds two additional fields
 - **Timestamp** - The time at which the smart contract built the Contract Formation action
 - **ContractRevision** - Set to zero for a new contract. Increments by 1 each time the contract is updated
 
-![Contract Formation action](https://raw.githubusercontent.com/tokenized/docs/master/images/contract-formation-action.svg?sanitize=true "Contract Formation Action Transaction") {.frame .centered .padded}
+![Contract Formation action](https://raw.githubusercontent.com/tokenized/docs/master/images/contract-formation-action.svg?sanitize=true)
 
+<span name="image-label">Contract Formation Action Transaction</span>
 <a name="contract-update"></a>
 
 ### Updating a Contract
@@ -103,7 +108,9 @@ Subsequent to these fields, amendments to the contract are contained in an array
 
 For amendments that require a vote to be passed, the TXID of a Result action showing a positive vote outcome for the change must be added as the final data item in the Contract Amendment action.
 
-![Contract Amendment action](https://raw.githubusercontent.com/tokenized/docs/master/images/contract-amendment-action.svg?sanitize=true "Contract Amendment Action Transaction") {.frame .centered .padded}
+![Contract Amendment action](https://raw.githubusercontent.com/tokenized/docs/master/images/contract-amendment-action.svg?sanitize=true)
+
+<span name="image-label">Contract Amendment Action Transaction</span>
 
 #### Contract Formation
 
@@ -112,8 +119,9 @@ If the contract determines that the amendment is valid, it issues a full [Contra
 
 From this moment, all transaction requests to the contract must abide by the amended rules.
 
-![Updated Contract Formation action](https://raw.githubusercontent.com/tokenized/docs/master/images/contract-formation-action-amendment.svg?sanitize=true "Contract Formation Action Transaction") {.frame .centered .padded}
+![Updated Contract Formation action](https://raw.githubusercontent.com/tokenized/docs/master/images/contract-formation-action-amendment.svg?sanitize=true)
 
+<span name="image-label">Contract Formation Action Transaction</span>
 <a name="contract-address-change"></a>
 
 ### Contract Address Change
@@ -122,8 +130,9 @@ When hosting a smart contract, it is very important that the private key is neve
 
 In the worst case scenario, in which the private key of the contract is compromised, there is a recovery option that is relatively painless. This requires changing the contract private key and thereby changing the address. This requires that the contract was created with a "master" address specified. The private key for the "master" address should be kept in cold storage because if it is compromised, then there is no recovery. A [Contract Address Change](../protocol/actions#action-contract-address-change) message signed by the "master" key can be sent to the current contract address. This message specifies a new contract address that will be required for all future request messages.
 
-![A contract address change action template](https://raw.githubusercontent.com/tokenized/docs/master/images/contract-address-change-action.svg?sanitize=true "Contract Address Change Action Template") {.frame .centered .padded}
+![A contract address change action template](https://raw.githubusercontent.com/tokenized/docs/master/images/contract-address-change-action.svg?sanitize=true)
 
+<span name="image-label">Contract Address Change Action Template</span>
 <a name="static-contracts"></a>
 
 ## Static Contracts
@@ -132,7 +141,7 @@ A static contract is a legal contract similar to that which one would enter into
 
 The static contract framework simply provides an easy and low-cost way for inscribing the details of these contracts onto the public ledger so the contracting parties benefit from the value of the Bitcoin network. Static contracts require only a single action to be established and do not require a Tokenized smart contract to operate. Each of the contracting parties adds a signed input to the same transaction that has the static contract formation action in it, to allow for their signatures (intention) to be recorded to the contract.
 
-![Updated Static Contract Formation action](https://raw.githubusercontent.com/tokenized/docs/master/images/static-contract-formation-action.svg?sanitize=true) {.frame .centered .padded}
+![Updated Static Contract Formation action](https://raw.githubusercontent.com/tokenized/docs/master/images/static-contract-formation-action.svg?sanitize=true)
 
 <a name="contract-law"></a>
 

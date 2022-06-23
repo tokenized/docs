@@ -12,25 +12,27 @@
 The following lays out a set of rules applicable to different aspects of the tokenized protocol.
 
 <a name="general"></a>
+
 ## General
 
-* All contract actions must be cash flow neutral. The request action must include enough bitcoin to pay for all costs (dust, contract fees, exchange fees, mining fees, etc.) required to generate a response action. In cases where not enough bitcoin has been included, no response action will take place. 
+- All contract actions must be cash flow neutral. The request action must include enough bitcoin to pay for all costs (dust, contract fees, exchange fees, mining fees, etc.) required to generate a response action. In cases where not enough bitcoin has been included, no response action will take place.
 
-* Smart contracts maintain a small resevoir of satoshis (small multiple of the dust value) at the contract address to use to send back to itself on contract-wide actions.  This resevoir will not deplete over time, as all fees will be paid for by the requester.
+- Smart contracts maintain a small resevoir of satoshis (small multiple of the dust value) at the contract address to use to send back to itself on contract-wide actions. This resevoir will not deplete over time, as all fees will be paid for by the requester.
 
-* Every contract-initiated action must be in response to a user/administration-initiated action. No contract-initiated action will be valid without a preceding ‘request’ action initiated by a user or contract administration.
+- Every contract-initiated action must be in response to a user/administration-initiated action. No contract-initiated action will be valid without a preceding ‘request’ action initiated by a user or contract administration.
 
-* All Tokenized actions must be sent to or from a contract’s public address. The contract’s public address is what connects all associated token actions. The only exceptions to this rule are the Messaging action (M1), the Registry actions (R1 - R4) and the Static Contract Formation action (C4).  All of which operate independently of any smart contract. Therefore, for a wallet to track a token, all it has to do is add the token contract’s public address as a watch-only address and monitor for relevant actions.
+- All Tokenized actions must be sent to or from a contract’s public address. The contract’s public address is what connects all associated token actions. The only exceptions to this rule are the Messaging action (M1), the Registry actions (R1 - R4) and the Static Contract Formation action (C4). All of which operate independently of any smart contract. Therefore, for a wallet to track a token, all it has to do is add the token contract’s public address as a watch-only address and monitor for relevant actions.
 
-* Where a contract operator has been nominated in the Contract Formation action, the contract operator's address will be treated by the smart contract as identical to the administration's address for the initiation of all request actions.  However, the contract operator cannot transfer tokens that are not held by the contract operator's address.
+- Where a contract operator has been nominated in the Contract Formation action, the contract operator's address will be treated by the smart contract as identical to the administration's address for the initiation of all request actions. However, the contract operator cannot transfer tokens that are not held by the contract operator's address.
 
-* Only one Tokenized action per Bitcoin transaction, with the exception of the Message action (M1) which can be included in transactions with other Tokenized actions and in an unlimited quantity.
+- Only one Tokenized action per Bitcoin transaction, with the exception of the Message action (M1) which can be included in transactions with other Tokenized actions and in an unlimited quantity.
 
-* The Tokenized action should always be the last output.
+- The Tokenized action should always be the last output.
 
-* If a request action is sent to the smart contract, but is invalid and the RETURN payload is malformed in such a way as it is impossible to determine which inputs to refund in the Rejection message, then the refunded bitcoin will be sent to the administration's address. 
+- If a request action is sent to the smart contract, but is invalid and the RETURN payload is malformed in such a way as it is impossible to determine which inputs to refund in the Rejection message, then the refunded bitcoin will be sent to the administration's address.
 
 <a name="contract-operations"></a>
+
 ## Contract Operations
 
 1. Every token must have a valid Contract Formation action to be considered a valid token by the protocol.
@@ -40,6 +42,7 @@ The following lays out a set of rules applicable to different aspects of the tok
 5. The first Contract Offer action determines the issuer’s public address and only one issuer per contract address is valid.
 
 <a name="instrument-operations"></a>
+
 ## Instrument Operations
 
 1. Every token must have an Instrument Creation action to be considered a valid token by the protocol. Instrument Creation actions define the properties of the token.
@@ -50,26 +53,29 @@ The following lays out a set of rules applicable to different aspects of the tok
 6. All additional revisions of an Instrument Creation action must be preceded by an Instrument Modification action initiated by the administration's public address.
 7. A contract’s public address can have an unlimited number of Instrument Creation actions but each one must have a unique Instrument ID. This property allows for a practically unlimited amount of non-fungible instruments to be associated and controlled by each smart contract.
 8. The first Instrument Creation action assigns the ownership of all tokens created to the issuer.
-9. Any changes to the qty of tokens for a given instrument is account for by the issuer's balance.  If tokens are burned (Instrument Modification), they can only be burned up to the quantity held by the issuer at the time of Instrument Modification action.  If new tokens are created, then the new tokens are automatically assigned to the issuer's address.
+9. Any changes to the qty of tokens for a given instrument is account for by the issuer's balance. If tokens are burned (Instrument Modification), they can only be burned up to the quantity held by the issuer at the time of Instrument Modification action. If new tokens are created, then the new tokens are automatically assigned to the issuer's address.
 10. Instrument ID's (Instrument ID = Instrument Type + base58(Instrument Code + checksum)) cannot be modified.
 
 <a name="transfer-operations"></a>
+
 ## Transfer Operations
 
 1. All Transfer operations must be in reference to an Instrument ID specified by a valid Instrument Creation action.
 2. All Transfer actions must be responded to by a succeeding Settlement action or a Rejection message.
-3. If transfer restrictions have been placed upon an instrument after a token holder legitimately took possession of it, then the token holder will still be able to transfer the tokens away.  The smart contract assumes that if an address holds a token, then it was approved by the smart contract with the rules that were relevent at the time of the transfer.
+3. If transfer restrictions have been placed upon an instrument after a token holder legitimately took possession of it, then the token holder will still be able to transfer the tokens away. The smart contract assumes that if an address holds a token, then it was approved by the smart contract with the rules that were relevent at the time of the transfer.
 
 <a name="governance-operations"></a>
+
 ## Governance Operations
 
 1. All Vote actions must be preceded by a Proposal action.
 2. A Ballot Cast action is only valid if it is cast during a vote period. The vote period is defined by the Vote action timestamp, and the Vote Cut-Off Timestamp specified in the Order action.
 3. Ballot Cast actions must be responded to by a Ballot Counted action if valid, or a Rejection action if invalid.
 4. Result actions must have a preceding Vote action.
-5. Votes cannot be traded away after a Vote has started.  If a token is traded after a vote has started, then that token will lose the ability to vote for that vote, regardless of whether a ballot was cast with that token before it was transferred.
+5. Votes cannot be traded away after a Vote has started. If a token is traded after a vote has started, then that token will lose the ability to vote for that vote, regardless of whether a ballot was cast with that token before it was transferred.
 
 <a name="enforcement-operations"></a>
+
 ## Enforcement Operations
 
 1. All Enforcement actions must be preceded by an Order action.
@@ -81,15 +87,17 @@ The following lays out a set of rules applicable to different aspects of the tok
 7. Reconciliation actions will decrement the tokens of the specified type at the targeted address to ensure that the number of outstanding tokens issued by the issuer is maintained across the state of the blockchain. Chained token transfer actions that are broken can result in additional tokens in the system that need reconciling.
 8. A Thaw action always references a specific Freeze action and removes its effect from the address(es).
 9. Multiple Freeze actions can be placed on an address.
-10. Freeze actions can only be undone through a Thaw or a Confiscation action. 
+10. Freeze actions can only be undone through a Thaw or a Confiscation action.
 
 <a name="message-operations"></a>
+
 ## Message Operations
 
 1. Message actions can be from any address to any other address(es).
 2. Rejection actions are the negative response from a smart contract to indicate that another action is not valid. Actions that have a Rejection action as a response are ignored by the protocol.
 
 <a name="register-operations"></a>
+
 ## Register Operations
 
 1. All Register operations that come before an Establishment action are ignored.

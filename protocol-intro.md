@@ -3,16 +3,18 @@
 - [Introduction](#introduction)
 - [Envelope](#envelope)
 - [Data Types](#data-types)
-    - [Primitive Types](#primitive-types)
-    - [List Types](#list-types)
-    - [Variable Sizes](#variable-sizes)
+  - [Primitive Types](#primitive-types)
+  - [List Types](#list-types)
+  - [Variable Sizes](#variable-sizes)
 
 <a name="introduction"></a>
+
 ## Introduction
 
 The Tokenized Protocol provides a fairly simple system for defining message types, contents, and encoding. Using the methods described below everything is defined. Then code is generated to read and write those messages. Then smart agents and wallets can use that code to operate on the protocol.
 
 <a name="envelope"></a>
+
 ## Envelope
 
 The Tokenized Protocol uses the [envelope](https://github.com/tokenized/envelope) protocol to wrap and encode its messages. The envelope protocol provides a common method for Tokenized and other protocols to identify which protocol is being used, its version, and other meta data about a payload. It also enables a common method of encryption and providing MetaNet information. The envelope protocol is responsible for encoding the "header" data and the payload within an OP_RETURN payload.
@@ -46,6 +48,7 @@ The Tokenized Protocol uses the following fields of the envelope protocol to spe
 </table>
 
 <a name="data-types"></a>
+
 ## Data Types
 
 Each field in a protocol message is defined with a data type. Standard scalar types have a single value, these include primitive, alias types, and field types. Fields can also be defined as a list of one of those types.
@@ -68,6 +71,7 @@ Each field in a protocol message is defined with a data type. Standard scalar ty
 </table>
 
 <a name="primitive-types"></a>
+
 ### Primitive Types
 
 <table>
@@ -106,6 +110,7 @@ Each field in a protocol message is defined with a data type. Standard scalar ty
 </table>
 
 <a name="list-types"></a>
+
 ### List Types
 
 Fields within the Tokenized protocol can be defined as a list of a specified data type.
@@ -113,6 +118,7 @@ This is done by adding a `[]` to the end of the `type` value.
 The maximum number of elements in a list are defined by `listSize` as defined in <a href="#variable-sizes">Variable Sizes</a>.
 
 <a name="variable-sizes"></a>
+
 ### Variable Sizes
 
 Fields within the Tokenized protocol can be lists of objects or variable length objects.

@@ -4,11 +4,13 @@
 - [Available Resources](#all-resources)
 
 <a name="introduction"></a>
+
 ## Introduction
 
 Resources are used to define lists of values, like the definitions of the possible values for a type field.
 
 <a name="all-resources"></a>
+
 ## Available Resources
 
 <div class="content-list collection-method-list" markdown="1">
@@ -22,6 +24,7 @@ Resources are used to define lists of values, like the definitions of the possib
 </div>
 
 <a name="resource-currencies"></a>
+
 #### Currencies
 
 International Organization for Standardization code for Currency. 3 character code.
@@ -185,8 +188,8 @@ International Organization for Standardization code for Currency. 3 character co
 - ZambianKwacha
 </div>
 
-
 <a name="resource-entities"></a>
+
 #### Entities
 
 Legal Entities &amp; Ownership Structures. 1 character.
@@ -209,12 +212,11 @@ Legal Entities &amp; Ownership Structures. 1 character.
 - DiscretionaryTrust
 </div>
 
-
 <a name="resource-legal-systems"></a>
+
 #### LegalSystems
 
 Legal Systems for Governing Law/Choice of Law
-
 
 [View Source File](https://github.com/tokenized/specification/blob/master/src/resources/develop/LegalSystems.yaml)
 
@@ -541,8 +543,8 @@ Legal Systems for Governing Law/Choice of Law
 - Law of Zimbabwe
 </div>
 
-
 <a name="resource-polities"></a>
+
 #### Polities
 
 Polities (eg. Countries/Nation-States (ISO-3166 Alpha-3), Political Unions, International Organizations, etc.). Based on a 3 character code.
@@ -803,8 +805,8 @@ Polities (eg. Countries/Nation-States (ISO-3166 Alpha-3), Political Unions, Inte
 - Zimbabwe
 </div>
 
-
 <a name="resource-rejections"></a>
+
 #### Rejections
 
 Code/Text combinations returned in rejection messages when a request is not accepted.
@@ -856,12 +858,11 @@ Code/Text combinations returned in rejection messages when a request is not acce
 - AgreementRevision
 </div>
 
-
 <a name="resource-roles"></a>
+
 #### Roles
 
 Roles that entities play in relation to their interactions with other entities. These roles have widely-accepted tasks, rights and duties.
-
 
 [View Source File](https://github.com/tokenized/specification/blob/master/src/resources/develop/Roles.yaml)
 
@@ -897,12 +898,11 @@ Roles that entities play in relation to their interactions with other entities. 
 - Unit Holder
 </div>
 
-
 <a name="resource-tags"></a>
+
 #### Tags
 
 Predefined tags for output metadata. Multiple values can be assigned to an output to describe a tx output.
-
 
 [View Source File](https://github.com/tokenized/specification/blob/master/src/resources/develop/Tags.yaml)
 
@@ -937,4 +937,3 @@ Predefined tags for output metadata. Multiple values can be assigned to an outpu
 - Discounted
 - Promotional
 </div>
-

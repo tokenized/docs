@@ -6,11 +6,13 @@
 - [Field Aliases](#field-aliases)
 
 <a name="introduction"></a>
+
 ## Introduction
 
 Instrument Types are used with reference to the `InstrumentPayload` field found in the Instrument Definition, Instrument Creation and Instrument Modification actions.
 
 <a name="all-instruments"></a>
+
 ## Available Instruments
 
 <div class="content-list collection-method-list" markdown="1">
@@ -26,6 +28,7 @@ Instrument Types are used with reference to the `InstrumentPayload` field found 
 </div>
 
 <a name="membership"></a>
+
 #### Membership
 
 A Membership
@@ -53,7 +56,7 @@ A Membership
             <a href="#alias-uint">Timestamp</a>
         </td>
         <td>
-            
+
              Example: Fri Nov 09 2018 09:00:00 GMT&#43;1000 (AEST)
         </td>
     </tr>
@@ -64,7 +67,7 @@ A Membership
             <a href="#alias-uint">Timestamp</a>
         </td>
         <td>
-            
+
              Example: Fri Nov 09 2018 09:00:00 GMT&#43;1000 (AEST)
         </td>
     </tr>
@@ -75,7 +78,7 @@ A Membership
             varchar(tiny)
         </td>
         <td>
-            
+
              Example: 34536457575486868
         </td>
     </tr>
@@ -86,7 +89,7 @@ A Membership
             varchar(tiny)
         </td>
         <td>
-            
+
              Example: Owner, Administrator, Manager, General, can be NULL.
         </td>
     </tr>
@@ -97,7 +100,7 @@ A Membership
             varchar(tiny)
         </td>
         <td>
-            
+
              Example: Director, Partner, CEO, COO, etc., can be NULL from Roles in Resources/Roles
         </td>
     </tr>
@@ -108,7 +111,7 @@ A Membership
             varchar(tiny)
         </td>
         <td>
-            
+
              Example: Silver, Platinum, can be NULL.
         </td>
     </tr>
@@ -119,7 +122,7 @@ A Membership
             varchar(small)
         </td>
         <td>
-            
+
              This field is always required.  Example: Rights and duties listed.
         </td>
     </tr>
@@ -131,18 +134,17 @@ A Membership
         </td>
         <td>
             Set to true if transfers are permitted between two parties, otherwise set to false to prevent peer-to-peer transfers.
-            
+
         </td>
     </tr>
 
 </table>
 
-
-
 <a name="currency"></a>
+
 #### Currency
 
-Currency, fiat money, cash.  Issued by a monetary authority (eg. Reserve Bank of Australia, ECB, Bank of England).  Currency is free of counterparty risk except for the risks associated with the management of the currency by the monetary authority and its recognition as acceptable legal tender by the market and associated government(s).  Custody of currency must be backed by a 1:1 ratio, or a full reserve. A currency instrument type should be considered the digital equivalent of physical cash.
+Currency, fiat money, cash. Issued by a monetary authority (eg. Reserve Bank of Australia, ECB, Bank of England). Currency is free of counterparty risk except for the risks associated with the management of the currency by the monetary authority and its recognition as acceptable legal tender by the market and associated government(s). Custody of currency must be backed by a 1:1 ratio, or a full reserve. A currency instrument type should be considered the digital equivalent of physical cash.
 
 <table>
     <tr>
@@ -167,7 +169,7 @@ Currency, fiat money, cash.  Issued by a monetary authority (eg. Reserve Bank of
             varchar(tiny)
         </td>
         <td>
-            
+
              Example: Reserve Bank of Australia
         </td>
     </tr>
@@ -194,9 +196,8 @@ Currency, fiat money, cash.  Issued by a monetary authority (eg. Reserve Bank of
 
 </table>
 
-
-
 <a name="share-common"></a>
+
 #### Share - Common
 
 Common stock represents ownership interests in companies.
@@ -235,7 +236,7 @@ Common stock represents ownership interests in companies.
             varchar(small)
         </td>
         <td>
-            
+
              This field is always required.  Example: Class C
         </td>
     </tr>
@@ -247,19 +248,17 @@ Common stock represents ownership interests in companies.
         </td>
         <td>
             Set to true if transfers are permitted between two parties, otherwise set to false to prevent peer-to-peer transfers.
-            
+
         </td>
     </tr>
 
 </table>
 
-
-
 <a name="bond-fixed-rate"></a>
+
 #### Bond - Fixed Rate
 
 A fixed rate bond is a bond that pays the same level of interest over its entire term. An investor who wants to earn a guaranteed interest rate for a specified term could purchase a fixed rate bond in the form of a Treasury, corporate bond, municipal bond, or certificate of deposit (CD).
-
 
 <table>
     <tr>
@@ -285,9 +284,10 @@ A fixed rate bond is a bond that pays the same level of interest over its entire
         </td>
         <td>
             Type of bond.
-  C - Corporate
-  M - Municipal
-  G - Government / Sovereign
+
+C - Corporate
+M - Municipal
+G - Government / Sovereign
 
              This field is always required.  Example: C
         </td>
@@ -312,7 +312,7 @@ A fixed rate bond is a bond that pays the same level of interest over its entire
         </td>
         <td>
             An instrument that secures securing the bond.  If null, then the bond is unsecured.
-            
+
         </td>
     </tr>
 
@@ -323,7 +323,7 @@ A fixed rate bond is a bond that pays the same level of interest over its entire
         </td>
         <td>
             Par value of the bond. The value that will be paid at maturity.
-             This field is always required. 
+             This field is always required.
         </td>
     </tr>
 
@@ -334,7 +334,7 @@ A fixed rate bond is a bond that pays the same level of interest over its entire
         </td>
         <td>
             The fixed interest rate of the bond.
-            
+
         </td>
     </tr>
 
@@ -345,7 +345,7 @@ A fixed rate bond is a bond that pays the same level of interest over its entire
         </td>
         <td>
             Unix epoch date time (in seconds) for the first interest payment.
-            
+
             This field is required when the field InterestRate is specified.
             This field is only valid when the field InterestRate is specified.
         </td>
@@ -359,7 +359,7 @@ A fixed rate bond is a bond that pays the same level of interest over its entire
         <td>
             Number of seconds from the previous interest payment until the next payment. A delta in seconds from the previous payment.
 
-            
+
             This field is required when the field InterestRate is specified.
             This field is only valid when the field InterestRate is specified.
         </td>
@@ -372,7 +372,7 @@ A fixed rate bond is a bond that pays the same level of interest over its entire
         </td>
         <td>
             The rate of the penalty per the penalty period.
-            
+
         </td>
     </tr>
 
@@ -384,7 +384,7 @@ A fixed rate bond is a bond that pays the same level of interest over its entire
         <td>
             The amount of time after a payment is due before the late payment penalty is applied.
 
-            
+
             This field is only valid when the field LatePaymentPenaltyRate is specified.
         </td>
     </tr>
@@ -396,7 +396,7 @@ A fixed rate bond is a bond that pays the same level of interest over its entire
         </td>
         <td>
             The period at which the late payment penalty accrues.
-            
+
             This field is only valid when the field LatePaymentPenaltyRate is specified.
         </td>
     </tr>
@@ -408,7 +408,7 @@ A fixed rate bond is a bond that pays the same level of interest over its entire
         </td>
         <td>
             The date of the maturity of the bond. When the par value is paid.
-             This field is always required. 
+             This field is always required.
         </td>
     </tr>
 
@@ -419,7 +419,7 @@ A fixed rate bond is a bond that pays the same level of interest over its entire
         </td>
         <td>
             Age restriction is used to specify required ages for instrument ownership.
-            
+
         </td>
     </tr>
 
@@ -431,15 +431,14 @@ A fixed rate bond is a bond that pays the same level of interest over its entire
         <td>
             Set to true if transfers are permitted between two parties, otherwise set to false to prevent peer-to-peer transfers.
 
-            
+
         </td>
     </tr>
 
 </table>
 
-
-
 <a name="coupon"></a>
+
 #### Coupon
 
 A voucher entitling the holder to a discount on a particular product or service.
@@ -467,8 +466,8 @@ A voucher entitling the holder to a discount on a particular product or service.
             <a href="#alias-uint">Timestamp</a>
         </td>
         <td>
-            
-            
+
+
         </td>
     </tr>
 
@@ -478,8 +477,8 @@ A voucher entitling the holder to a discount on a particular product or service.
             <a href="#alias-uint">Timestamp</a>
         </td>
         <td>
-            
-            
+
+
         </td>
     </tr>
 
@@ -488,7 +487,7 @@ A voucher entitling the holder to a discount on a particular product or service.
         <td>deprecated</td>
         <td>
             Deprecated for FaceValue.
-            
+
         </td>
     </tr>
 
@@ -497,7 +496,7 @@ A voucher entitling the holder to a discount on a particular product or service.
         <td>deprecated</td>
         <td>
             Deprecated for FaceValue.
-            
+
         </td>
     </tr>
 
@@ -507,7 +506,7 @@ A voucher entitling the holder to a discount on a particular product or service.
             varchar(tiny)
         </td>
         <td>
-            
+
              This field is always required.  Example: Gift Card
         </td>
     </tr>
@@ -517,7 +516,7 @@ A voucher entitling the holder to a discount on a particular product or service.
         <td>deprecated</td>
         <td>
             Deprecated for FaceValue.
-            
+
         </td>
     </tr>
 
@@ -529,7 +528,7 @@ A voucher entitling the holder to a discount on a particular product or service.
         <td>
             Set to true if transfers are permitted between two parties, otherwise set to false to prevent peer-to-peer transfers.
 
-            
+
         </td>
     </tr>
 
@@ -540,7 +539,7 @@ A voucher entitling the holder to a discount on a particular product or service.
         </td>
         <td>
             Face value of each coupon specified in a currency.
-            
+
         </td>
     </tr>
 
@@ -550,8 +549,8 @@ A voucher entitling the holder to a discount on a particular product or service.
             varchar(tiny)
         </td>
         <td>
-            
-            
+
+
         </td>
     </tr>
 
@@ -561,16 +560,15 @@ A voucher entitling the holder to a discount on a particular product or service.
             varchar(small)
         </td>
         <td>
-            
-            
+
+
         </td>
     </tr>
 
 </table>
 
-
-
 <a name="loyalty-points"></a>
+
 #### Loyalty Points
 
 A Loyalty Point
@@ -598,7 +596,7 @@ A Loyalty Point
             varchar(tiny)
         </td>
         <td>
-            
+
              This field is always required.  Example: Qantas Frequent Flyer Points
         </td>
     </tr>
@@ -607,8 +605,8 @@ A Loyalty Point
         <td>(Deprecated)ValidFrom</td>
         <td>deprecated</td>
         <td>
-            
-            
+
+
         </td>
     </tr>
 
@@ -618,8 +616,8 @@ A Loyalty Point
             <a href="#alias-uint">Timestamp</a>
         </td>
         <td>
-            
-            
+
+
         </td>
     </tr>
 
@@ -629,8 +627,8 @@ A Loyalty Point
             varchar(small)
         </td>
         <td>
-            
-            
+
+
         </td>
     </tr>
 
@@ -642,15 +640,14 @@ A Loyalty Point
         <td>
             Set to true if transfers are permitted between two parties, otherwise set to false to prevent peer-to-peer transfers.
 
-            
+
         </td>
     </tr>
 
 </table>
 
-
-
 <a name="ticket-admission"></a>
+
 #### Ticket (Admission)
 
 Admission ticket
@@ -676,8 +673,8 @@ Admission ticket
         <td>(Deprecated)AdmissionType</td>
         <td>deprecated</td>
         <td>
-            
-            
+
+
         </td>
     </tr>
 
@@ -687,7 +684,7 @@ Admission ticket
             varchar(tiny)
         </td>
         <td>
-            
+
              Example: Orion Cinemas - 293 Stehpens St, Vancouver, BC V4A 9V1
         </td>
     </tr>
@@ -696,7 +693,7 @@ Admission ticket
         <td>(Deprecated)Class</td>
         <td>deprecated</td>
         <td>
-            
+
              Example: Gold Class, Platinum, VIP, Section A, etc.
         </td>
     </tr>
@@ -707,7 +704,7 @@ Admission ticket
             varchar(tiny)
         </td>
         <td>
-            
+
              Example: Upper Bowl
         </td>
     </tr>
@@ -718,7 +715,7 @@ Admission ticket
             varchar(tiny)
         </td>
         <td>
-            
+
              Example: Seat 5, or A122
         </td>
     </tr>
@@ -729,8 +726,8 @@ Admission ticket
             <a href="#alias-uint">Timestamp</a>
         </td>
         <td>
-            
-            
+
+
         </td>
     </tr>
 
@@ -738,8 +735,8 @@ Admission ticket
         <td>(Deprecated)ValidFrom</td>
         <td>deprecated</td>
         <td>
-            
-            
+
+
         </td>
     </tr>
 
@@ -747,8 +744,8 @@ Admission ticket
         <td>(Deprecated)ExpirationTimestamp</td>
         <td>deprecated</td>
         <td>
-            
-            
+
+
         </td>
     </tr>
 
@@ -758,7 +755,7 @@ Admission ticket
             varchar(tiny)
         </td>
         <td>
-            
+
              This field is always required.  Example: Coingeek Conference - London (November 2018).
         </td>
     </tr>
@@ -771,7 +768,7 @@ Admission ticket
         <td>
             Set to true if transfers are permitted between two parties, otherwise set to false to prevent peer-to-peer transfers.
 
-            
+
         </td>
     </tr>
 
@@ -781,8 +778,8 @@ Admission ticket
             varchar(small)
         </td>
         <td>
-            
-            
+
+
         </td>
     </tr>
 
@@ -792,7 +789,7 @@ Admission ticket
             varchar(tiny)
         </td>
         <td>
-            
+
              Example: Sec 1
         </td>
     </tr>
@@ -803,7 +800,7 @@ Admission ticket
             varchar(tiny)
         </td>
         <td>
-            
+
              Example: Sec 1
         </td>
     </tr>
@@ -814,16 +811,15 @@ Admission ticket
             <a href="#alias-uint">Timestamp</a>
         </td>
         <td>
-            
-            
+
+
         </td>
     </tr>
 
 </table>
 
-
-
 <a name="casino-chip"></a>
+
 #### Casino Chip
 
 Casino Chip
@@ -861,7 +857,7 @@ Casino Chip
         </td>
         <td>
             Age restriction is used to specify required ages for instrument ownership.
-            
+
         </td>
     </tr>
 
@@ -869,8 +865,8 @@ Casino Chip
         <td>(Deprecated)ValidFrom</td>
         <td>deprecated</td>
         <td>
-            
-            
+
+
         </td>
     </tr>
 
@@ -880,8 +876,8 @@ Casino Chip
             <a href="#alias-uint">Timestamp</a>
         </td>
         <td>
-            
-            
+
+
         </td>
     </tr>
 
@@ -890,7 +886,7 @@ Casino Chip
         <td>deprecated</td>
         <td>
             Deprecated for FaceValue
-            
+
         </td>
     </tr>
 
@@ -902,7 +898,7 @@ Casino Chip
         <td>
             Set to true if transfers are permitted between two parties, otherwise set to false to prevent peer-to-peer transfers.
 
-            
+
         </td>
     </tr>
 
@@ -913,7 +909,7 @@ Casino Chip
         </td>
         <td>
             The name of the casino, or host, of the chip.
-             This field is always required. 
+             This field is always required.
         </td>
     </tr>
 
@@ -924,15 +920,14 @@ Casino Chip
         </td>
         <td>
             Face value of each coupon specified in a currency.
-             This field is always required. 
+             This field is always required.
         </td>
     </tr>
 
 </table>
 
-
-
 <a name="information-service-license"></a>
+
 #### Information Service License
 
 Information Service License
@@ -960,8 +955,8 @@ Information Service License
             <a href="#alias-uint">Timestamp</a>
         </td>
         <td>
-            
-            
+
+
         </td>
     </tr>
 
@@ -971,8 +966,8 @@ Information Service License
             varchar(tiny)
         </td>
         <td>
-            
-             This field is always required. 
+
+             This field is always required.
         </td>
     </tr>
 
@@ -984,7 +979,7 @@ Information Service License
         <td>
             Set to true if transfers are permitted between two parties, otherwise set to false to prevent peer-to-peer transfers.
 
-            
+
         </td>
     </tr>
 
@@ -995,15 +990,14 @@ Information Service License
         </td>
         <td>
             URL linking to any related documents or media
-            
+
         </td>
     </tr>
 
 </table>
 
-
-
 <a name="field-types"></a>
+
 ## Field Types
 
 <div class="content-list collection-method-list" markdown="1">
@@ -1012,9 +1006,8 @@ Information Service License
 - [Rate](#type-rate)
 </div>
 
-
-
 <a name="type-age-restriction"></a>
+
 ### Age Restriction
 
 Age restriction is used to specify required ages for instrument ownership.
@@ -1043,15 +1036,14 @@ Age restriction is used to specify required ages for instrument ownership.
         </td>
         <td>
             The highest age valid to own instrument. Zero for no restriction.
-            
+
         </td>
     </tr>
 
 </table>
 
-
-
 <a name="type-currency-value"></a>
+
 ### Currency Value
 
 A value specified in terms of a currency.
@@ -1099,9 +1091,8 @@ A value specified in terms of a currency.
 
 </table>
 
-
-
 <a name="type-rate"></a>
+
 ### Rate
 
 A rate value specified in terms of a precision.
@@ -1130,16 +1121,15 @@ A rate value specified in terms of a precision.
             uint(8)
         </td>
         <td>
-            
+
              Example: Denominated in precision specified in Precision field.
         </td>
     </tr>
 
 </table>
 
-
-
 <a name="field-aliases"></a>
+
 ## Field Aliases
 
 <table>
@@ -1192,4 +1182,5 @@ A rate value specified in terms of a precision.
                  Example: 1500
             </td>
         </tr>
+
 </table>
