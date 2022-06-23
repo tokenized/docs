@@ -1,16 +1,16 @@
-
-
 # Protocol Messages
 
 - [Introduction](#introduction)
 - [Available Messages](#all-messages)
 
 <a name="introduction"></a>
+
 ## Introduction
 
 The Tokenized protocol features a complete messaging suite for all types of messaging including general purpose private and public messaging, as well as commercial, financial and legal messaging in accordance with a variety of established Electronic Data Interchange (EDI) standards. They are also used to allow smart contracts to share information and orchestrate multiple signature transactions, such as atomic swaps.
 
 <a name="all-messages"></a>
+
 ## Available Messages
 
 <div class="content-list collection-method-list" markdown="1">
@@ -30,9 +30,10 @@ The Tokenized protocol features a complete messaging suite for all types of mess
 </div>
 
 <a name="public-message"></a>
+
 #### Public Message
 
-Generic public message or public announcement. Sent to an address(es).  Can be used for an official issuer announcement.
+Generic public message or public announcement. Sent to an address(es). Can be used for an official issuer announcement.
 
 <table>
     <tr>
@@ -99,9 +100,8 @@ Generic public message or public announcement. Sent to an address(es).  Can be u
         </tr>
 </table>
 
-
-
 <a name="private-message"></a>
+
 #### Private Message
 
 Generic private message. Sent to another address(es). Encryption is to be used.
@@ -171,9 +171,8 @@ Generic private message. Sent to another address(es). Encryption is to be used.
         </tr>
 </table>
 
-
-
 <a name="reverted-tx"></a>
+
 #### Reverted Tx
 
 A message that contains a bitcoin transaction that was accepted by the network or an agent and then invalidated by a reorg, or zero conf double spend. This serves as on chain evidence of the sending party&#39;s signatures and approval for the given transaction.
@@ -213,12 +212,11 @@ A message that contains a bitcoin transaction that was accepted by the network o
         </tr>
 </table>
 
-
-
 <a name="offer"></a>
+
 #### Offer
 
-A message that contains all of the details required for an agreement to be formed. Sent to an address(es). The Offer should have all, or nearly all, of the details required for the receiving party to accept the offer.  The Offer shall be in the form of a partially formed Bitcoin transaction with all of the relevent details (offer, consideration, offeror&#39;s payment/receipt details, etc.).  The Offer message is different to a Signature Request message in that it is missing the offeree&#39;s payment/receipt details (eg. UTXOs). If the Offer message is well received by the offeree, then the offeree can add their relevent details (eg. inputs/outputs) and sign the transaction.  If an additional signature is required from the offeror at this point, then the partially-signed transaction can be sent to the offeror by way of a Signature Request message.
+A message that contains all of the details required for an agreement to be formed. Sent to an address(es). The Offer should have all, or nearly all, of the details required for the receiving party to accept the offer. The Offer shall be in the form of a partially formed Bitcoin transaction with all of the relevent details (offer, consideration, offeror&#39;s payment/receipt details, etc.). The Offer message is different to a Signature Request message in that it is missing the offeree&#39;s payment/receipt details (eg. UTXOs). If the Offer message is well received by the offeree, then the offeree can add their relevent details (eg. inputs/outputs) and sign the transaction. If an additional signature is required from the offeror at this point, then the partially-signed transaction can be sent to the offeror by way of a Signature Request message.
 
 <table>
     <tr>
@@ -255,9 +253,8 @@ A message that contains all of the details required for an agreement to be forme
         </tr>
 </table>
 
-
-
 <a name="signature-request"></a>
+
 #### Signature Request
 
 Partially-signed transactions (Tokenized actions, Bitcoin, Multisig, Threshold Signatures, etc.) can be passed around on-chain to the parties (including Smart Contracts) that still have to sign the transaction.
@@ -297,9 +294,8 @@ Partially-signed transactions (Tokenized actions, Bitcoin, Multisig, Threshold S
         </tr>
 </table>
 
-
-
 <a name="settlement-request"></a>
+
 #### Settlement Request
 
 A message that contains a multi-contract settlement that needs settlement data added by another contract. Sent to another contract to request data be added.
@@ -359,12 +355,11 @@ A message that contains a multi-contract settlement that needs settlement data a
         </tr>
 </table>
 
-
-
 <a name="output-metadata"></a>
+
 #### Output Metadata
 
-Metadata associated with the output. Aka Transaction details. It is used to describe the purpose of the transaction and add other relevant information. Often encrypted (DH, RSA) to make it private for one or more parties.  DH for b2b where multiple parties can see the description.  RSA or the like for descriptions only visible to one of the transacting parties. Optional
+Metadata associated with the output. Aka Transaction details. It is used to describe the purpose of the transaction and add other relevant information. Often encrypted (DH, RSA) to make it private for one or more parties. DH for b2b where multiple parties can see the description. RSA or the like for descriptions only visible to one of the transacting parties. Optional
 
 <table>
     <tr>
@@ -411,13 +406,11 @@ Metadata associated with the output. Aka Transaction details. It is used to desc
         </tr>
 </table>
 
-
-
 <a name="distribution"></a>
+
 #### Distribution
 
 An administrator is making a distribution/payout. Used to publicly declare these payments and allow holders to be notified of them via the smart contract agent.
-
 
 <table>
     <tr>
@@ -440,7 +433,7 @@ An administrator is making a distribution/payout. Used to publicly declare these
             <td>
                 A unique code that is used to identify the instrument. It is generated by hashing the contract public key hash and the instrument index. SHA256(contract PKH &#43; instrument index)
 
-                Cannot be changed by the administration, operator or smart contract. This field is always required. 
+                Cannot be changed by the administration, operator or smart contract. This field is always required.
             </td>
         </tr>
         <tr>
@@ -450,14 +443,14 @@ An administrator is making a distribution/payout. Used to publicly declare these
             </td>
             <td>
                 Timestamp in nanoseconds of when the administrator initiated the distribution.
-                
+
             </td>
         </tr>
+
 </table>
 
-
-
 <a name="initiate-relationship"></a>
+
 #### Initiate Relationship
 
 A message used to initiate a new relationship between 2 or more parties. The M1 container specifies the sender tx input and requested participant tx outputs. If there are more than 2 parties the encryption secret provided in the envelope protocol is used as the base encryption secret. If there are only 2 parties, then the ECDH secret of each key pair is used to encrypt each message.
@@ -547,9 +540,8 @@ A message used to initiate a new relationship between 2 or more parties. The M1 
         </tr>
 </table>
 
-
-
 <a name="pending-accept-relationship"></a>
+
 #### Pending Accept Relationship
 
 A pending accept to a relationship that provides information about a requested participant.
@@ -589,9 +581,8 @@ A pending accept to a relationship that provides information about a requested p
         </tr>
 </table>
 
-
-
 <a name="accept-relationship"></a>
+
 #### Accept Relationship
 
 Accept a relationship.
@@ -631,9 +622,8 @@ Accept a relationship.
         </tr>
 </table>
 
-
-
 <a name="relationship-amendment"></a>
+
 #### Relationship Amendment
 
 Amend a relationship. Add/Remove members. Modify permissions. This is encrypted with the current base encryption secret, but can provide a new base encryption secret that starts after this message.
@@ -693,9 +683,8 @@ Amend a relationship. Add/Remove members. Modify permissions. This is encrypted 
         </tr>
 </table>
 
-
-
 <a name="initiate-thread"></a>
+
 #### Initiate Thread
 
 Start a thread from within a conversation or channel.
@@ -734,5 +723,3 @@ Start a thread from within a conversation or channel.
             </td>
         </tr>
 </table>
-
-

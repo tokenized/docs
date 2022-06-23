@@ -5,6 +5,7 @@
 - [Reference](#reference)
 
 <a name="introduction"></a>
+
 ## Introduction
 
 Permissions are contract terms and conditions that are controlled by the smart contract. Most fields in the Contract Formation and Instrument Creation actions are subject to changes by way of a Contract Amendment action or an Instrument Modification action. The permissions that are listed in the Contract Formation and Instrument Creation actions are capable of specifying whether those fields may be changed, and if so, under which conditions they may be changed.
@@ -14,6 +15,7 @@ There are two different permission sets that are functionally equivalent, they j
 There are a number of fields that are likely to be subject to an amendment/modification at some point during the life of the contract. Common examples include the fields that specify the issuer's identifying details (registered address, issuer name, communication details, etc.), the quantity of tokens (eg. share dilution or buy back) or even the terms and conditions of the contract itself. The fields within an action are ordered and can be referenced by their sequential position called the index value (represented by N below).
 
 <a name="representation"></a>
+
 ## Representation
 
 The permissions are represented by 4 bits (WXYZ) plus an array of bits (M). The array of bits represent all of the Voting Systems specified in the Contract Formation action of the contract.
@@ -43,9 +45,10 @@ where W = Permitted, X = Administration Proposal, Y = Token Holder Proposal, Z =
 When you parse the permissions, you get an array of permission objects containing (XYZMF[])[]. The Contract Formation and Instrument Creation is used to determine the indexes of the fields. Index 1 is the field after the header.
 
 <a name="reference"></a>
+
 ## Reference
 
-Helper functions for serializing, field indexes, and templates are provided as part of the reference implementation. 
+Helper functions for serializing, field indexes, and templates are provided as part of the reference implementation.
 
 - [Serializing functions](https://github.com/tokenized/specification/blob/master/dist/golang/actions/permission.go)
 - [Field indexes](https://github.com/tokenized/specification/blob/master/dist/golang/actions/amendments.go) - the same values are used for specifying fields in amendments.
