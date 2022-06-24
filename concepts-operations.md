@@ -15,7 +15,7 @@
 
 ## Introduction
 
-The Tokenized Protocol operates on a _request and response_ mechanism whereby operations are carried out in 2 steps called [actions](../protocol/actions#action-actions). The only exceptions to this rule are the [Message](../protocol/actions#action-actions#action-message) action and the [Register](../protocol/actions#action-actions#action-addition) actions where each action does not work on the request and response model. They are 1 step actions where no response is required.
+The Tokenized Protocol operates on a _request and response_ mechanism whereby operations are carried out in 2 steps called [actions](../protocol/actions#action-actions). The only exceptions to this rule are the [Message](../protocol/actions#action-message) action and the [Register](../protocol/actions#action-addition) actions where each action does not work on the request and response model. They are 1 step actions where no response is required.
 
 The request and response actions are always initiated by two different classes of actors, the requester and the responder, and the definitions are as follows:
 

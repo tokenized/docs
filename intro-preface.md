@@ -47,4 +47,4 @@ This repository is a reference for the Tokenized Protocol structure. All definit
 
 ## Support
 
-The Tokenized team are available to give support for protocol-specific queries and requests. If the protocol does not satisfy your needs, use case, or you have constructive feedback, then please feel free to reach out via one of our [community resources](/community) or using the contact details found on this website.
+The Tokenized team are available to give support for protocol-specific queries and requests. If the protocol does not satisfy your needs, use case, or you have constructive feedback, then please feel free to contact us or reach out through our community resources ([Telegram](https://t.me/joinchat/TWC9JGKemPMwZjc1) or [Twitter](https://twitter.com/Tokenized_com)).
