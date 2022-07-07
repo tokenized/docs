@@ -16,6 +16,7 @@ Instrument Types are used with reference to the `InstrumentPayload` field found 
 ## Available Instruments
 
 <div class="content-list collection-method-list" markdown="1">
+
 - [Membership](#membership)
 - [Currency](#currency)
 - [Share - Common](#share-common)
@@ -46,87 +47,71 @@ A Membership
         </td>
         <td>
             Age restriction is used to specify required ages for instrument ownership.
-            
         </td>
     </tr>
-
     <tr>
         <td>ValidFrom</td>
         <td>
             <a href="#alias-uint">Timestamp</a>
         </td>
         <td>
-
              Example: Fri Nov 09 2018 09:00:00 GMT&#43;1000 (AEST)
         </td>
     </tr>
-
     <tr>
         <td>ExpirationTimestamp</td>
         <td>
             <a href="#alias-uint">Timestamp</a>
         </td>
         <td>
-
              Example: Fri Nov 09 2018 09:00:00 GMT&#43;1000 (AEST)
         </td>
     </tr>
-
     <tr>
         <td>ID</td>
         <td>
             varchar(tiny)
         </td>
         <td>
-
              Example: 34536457575486868
         </td>
     </tr>
-
     <tr>
         <td>MembershipClass</td>
         <td>
             varchar(tiny)
         </td>
         <td>
-
              Example: Owner, Administrator, Manager, General, can be NULL.
         </td>
     </tr>
-
     <tr>
         <td>RoleType</td>
         <td>
             varchar(tiny)
         </td>
         <td>
-
              Example: Director, Partner, CEO, COO, etc., can be NULL from Roles in Resources/Roles
         </td>
     </tr>
-
     <tr>
         <td>MembershipType</td>
         <td>
             varchar(tiny)
         </td>
         <td>
-
              Example: Silver, Platinum, can be NULL.
         </td>
     </tr>
-
     <tr>
         <td>Description</td>
         <td>
             varchar(small)
         </td>
         <td>
-
              This field is always required.  Example: Rights and duties listed.
         </td>
     </tr>
-
     <tr>
         <td>TransfersPermitted</td>
         <td>
@@ -134,10 +119,8 @@ A Membership
         </td>
         <td>
             Set to true if transfers are permitted between two parties, otherwise set to false to prevent peer-to-peer transfers.
-
         </td>
     </tr>
-
 </table>
 
 <a name="currency"></a>
@@ -162,18 +145,15 @@ Currency, fiat money, cash. Issued by a monetary authority (eg. Reserve Bank of 
              This field is always required.  Example: AUD
         </td>
     </tr>
-
     <tr>
         <td>MonetaryAuthority</td>
         <td>
             varchar(tiny)
         </td>
         <td>
-
              Example: Reserve Bank of Australia
         </td>
     </tr>
-
     <tr>
         <td>(Deprecated)Description</td>
         <td>deprecated</td>
@@ -182,7 +162,6 @@ Currency, fiat money, cash. Issued by a monetary authority (eg. Reserve Bank of 
              Example: Australian dollar
         </td>
     </tr>
-
     <tr>
         <td>Precision</td>
         <td>
@@ -218,7 +197,6 @@ Common stock represents ownership interests in companies.
              Example: AAPL
         </td>
     </tr>
-
     <tr>
         <td>ISIN</td>
         <td>
@@ -229,18 +207,15 @@ Common stock represents ownership interests in companies.
              Example: US0004026250
         </td>
     </tr>
-
     <tr>
         <td>Description</td>
         <td>
             varchar(small)
         </td>
         <td>
-
              This field is always required.  Example: Class C
         </td>
     </tr>
-
     <tr>
         <td>TransfersPermitted</td>
         <td>
@@ -248,7 +223,6 @@ Common stock represents ownership interests in companies.
         </td>
         <td>
             Set to true if transfers are permitted between two parties, otherwise set to false to prevent peer-to-peer transfers.
-
         </td>
     </tr>
 
@@ -276,7 +250,6 @@ A fixed rate bond is a bond that pays the same level of interest over its entire
              Example: City of Chicago, Midway Airport, Series 2001A
         </td>
     </tr>
-
     <tr>
         <td>BondType</td>
         <td>
@@ -284,15 +257,13 @@ A fixed rate bond is a bond that pays the same level of interest over its entire
         </td>
         <td>
             Type of bond.
-
-C - Corporate
-M - Municipal
-G - Government / Sovereign
-
-             This field is always required.  Example: C
+                <br>C - Corporate
+                <br>M - Municipal
+                <br>G - Government / Sovereign
+             <br>This field is always required.
+             <br>Example: C
         </td>
     </tr>
-
     <tr>
         <td>ISIN</td>
         <td>
@@ -300,11 +271,9 @@ G - Government / Sovereign
         </td>
         <td>
             International Securities Identification Number or Committee on Uniform Securities Identification Procedures.
-
-             Example: US0004026250
+            Example: US0004026250
         </td>
     </tr>
-
     <tr>
         <td>Collateral</td>
         <td>
@@ -312,10 +281,8 @@ G - Government / Sovereign
         </td>
         <td>
             An instrument that secures securing the bond.  If null, then the bond is unsecured.
-
         </td>
     </tr>
-
     <tr>
         <td>ParValue</td>
         <td>
@@ -326,7 +293,6 @@ G - Government / Sovereign
              This field is always required.
         </td>
     </tr>
-
     <tr>
         <td>InterestRate</td>
         <td>
@@ -334,10 +300,8 @@ G - Government / Sovereign
         </td>
         <td>
             The fixed interest rate of the bond.
-
         </td>
     </tr>
-
     <tr>
         <td>InterestPaymentInitialDate</td>
         <td>
@@ -345,12 +309,10 @@ G - Government / Sovereign
         </td>
         <td>
             Unix epoch date time (in seconds) for the first interest payment.
-
             This field is required when the field InterestRate is specified.
             This field is only valid when the field InterestRate is specified.
         </td>
     </tr>
-
     <tr>
         <td>InterestPaymentDateDeltas</td>
         <td>
@@ -358,13 +320,10 @@ G - Government / Sovereign
         </td>
         <td>
             Number of seconds from the previous interest payment until the next payment. A delta in seconds from the previous payment.
-
-
             This field is required when the field InterestRate is specified.
             This field is only valid when the field InterestRate is specified.
         </td>
     </tr>
-
     <tr>
         <td>LatePaymentPenaltyRate</td>
         <td>
@@ -372,10 +331,8 @@ G - Government / Sovereign
         </td>
         <td>
             The rate of the penalty per the penalty period.
-
         </td>
     </tr>
-
     <tr>
         <td>LatePaymentWindow</td>
         <td>
@@ -383,12 +340,9 @@ G - Government / Sovereign
         </td>
         <td>
             The amount of time after a payment is due before the late payment penalty is applied.
-
-
             This field is only valid when the field LatePaymentPenaltyRate is specified.
         </td>
     </tr>
-
     <tr>
         <td>LatePaymentPenaltyPeriod</td>
         <td>
@@ -396,11 +350,9 @@ G - Government / Sovereign
         </td>
         <td>
             The period at which the late payment penalty accrues.
-
             This field is only valid when the field LatePaymentPenaltyRate is specified.
         </td>
     </tr>
-
     <tr>
         <td>MaturityDate</td>
         <td>
@@ -408,10 +360,9 @@ G - Government / Sovereign
         </td>
         <td>
             The date of the maturity of the bond. When the par value is paid.
-             This field is always required.
+            This field is always required.
         </td>
     </tr>
-
     <tr>
         <td>AgeRestriction</td>
         <td>
@@ -419,10 +370,8 @@ G - Government / Sovereign
         </td>
         <td>
             Age restriction is used to specify required ages for instrument ownership.
-
         </td>
     </tr>
-
     <tr>
         <td>TransfersPermitted</td>
         <td>
@@ -430,8 +379,6 @@ G - Government / Sovereign
         </td>
         <td>
             Set to true if transfers are permitted between two parties, otherwise set to false to prevent peer-to-peer transfers.
-
-
         </td>
     </tr>
 
@@ -459,67 +406,52 @@ A voucher entitling the holder to a discount on a particular product or service.
              Example: Woolworths - Robina Town Centre
         </td>
     </tr>
-
     <tr>
         <td>ValidFromTimestamp</td>
         <td>
             <a href="#alias-uint">Timestamp</a>
         </td>
         <td>
-
-
         </td>
     </tr>
-
     <tr>
         <td>ExpirationTimestamp</td>
         <td>
             <a href="#alias-uint">Timestamp</a>
         </td>
         <td>
-
-
         </td>
     </tr>
-
     <tr>
         <td>(Deprecated)Value</td>
         <td>deprecated</td>
         <td>
             Deprecated for FaceValue.
-
         </td>
     </tr>
-
     <tr>
         <td>(Deprecated)Currency</td>
         <td>deprecated</td>
         <td>
             Deprecated for FaceValue.
-
         </td>
     </tr>
-
     <tr>
         <td>CouponName</td>
         <td>
             varchar(tiny)
         </td>
         <td>
-
              This field is always required.  Example: Gift Card
         </td>
     </tr>
-
     <tr>
         <td>(Deprecated)Precision</td>
         <td>deprecated</td>
         <td>
             Deprecated for FaceValue.
-
         </td>
     </tr>
-
     <tr>
         <td>TransfersPermitted</td>
         <td>
@@ -527,11 +459,8 @@ A voucher entitling the holder to a discount on a particular product or service.
         </td>
         <td>
             Set to true if transfers are permitted between two parties, otherwise set to false to prevent peer-to-peer transfers.
-
-
         </td>
     </tr>
-
     <tr>
         <td>FaceValue</td>
         <td>
@@ -539,29 +468,22 @@ A voucher entitling the holder to a discount on a particular product or service.
         </td>
         <td>
             Face value of each coupon specified in a currency.
-
         </td>
     </tr>
-
     <tr>
         <td>RedemptionVenue</td>
         <td>
             varchar(tiny)
         </td>
         <td>
-
-
         </td>
     </tr>
-
     <tr>
         <td>Details</td>
         <td>
             varchar(small)
         </td>
         <td>
-
-
         </td>
     </tr>
 
@@ -586,52 +508,39 @@ A Loyalty Point
         </td>
         <td>
             Age restriction is used to specify required ages for instrument ownership.
-            
         </td>
     </tr>
-
     <tr>
         <td>ProgramName</td>
         <td>
             varchar(tiny)
         </td>
         <td>
-
              This field is always required.  Example: Qantas Frequent Flyer Points
         </td>
     </tr>
-
     <tr>
         <td>(Deprecated)ValidFrom</td>
         <td>deprecated</td>
         <td>
-
-
         </td>
     </tr>
-
     <tr>
         <td>ExpirationTimestamp</td>
         <td>
             <a href="#alias-uint">Timestamp</a>
         </td>
         <td>
-
-
         </td>
     </tr>
-
     <tr>
         <td>Details</td>
         <td>
             varchar(small)
         </td>
         <td>
-
-
         </td>
     </tr>
-
     <tr>
         <td>TransfersPermitted</td>
         <td>
@@ -639,8 +548,6 @@ A Loyalty Point
         </td>
         <td>
             Set to true if transfers are permitted between two parties, otherwise set to false to prevent peer-to-peer transfers.
-
-
         </td>
     </tr>
 
@@ -665,101 +572,77 @@ Admission ticket
         </td>
         <td>
             Age restriction is used to specify required ages for instrument ownership.
-            
         </td>
     </tr>
-
     <tr>
         <td>(Deprecated)AdmissionType</td>
         <td>deprecated</td>
         <td>
-
-
         </td>
     </tr>
-
     <tr>
         <td>Venue</td>
         <td>
             varchar(tiny)
         </td>
         <td>
-
              Example: Orion Cinemas - 293 Stehpens St, Vancouver, BC V4A 9V1
         </td>
     </tr>
-
     <tr>
         <td>(Deprecated)Class</td>
         <td>deprecated</td>
         <td>
-
              Example: Gold Class, Platinum, VIP, Section A, etc.
         </td>
     </tr>
-
     <tr>
         <td>Area</td>
         <td>
             varchar(tiny)
         </td>
         <td>
-
              Example: Upper Bowl
         </td>
     </tr>
-
     <tr>
         <td>Seat</td>
         <td>
             varchar(tiny)
         </td>
         <td>
-
              Example: Seat 5, or A122
         </td>
     </tr>
-
     <tr>
         <td>EventStartTimestamp</td>
         <td>
             <a href="#alias-uint">Timestamp</a>
         </td>
         <td>
-
-
         </td>
     </tr>
-
     <tr>
         <td>(Deprecated)ValidFrom</td>
         <td>deprecated</td>
         <td>
-
-
         </td>
     </tr>
-
     <tr>
         <td>(Deprecated)ExpirationTimestamp</td>
         <td>deprecated</td>
         <td>
-
-
         </td>
     </tr>
-
     <tr>
         <td>EventName</td>
         <td>
             varchar(tiny)
         </td>
         <td>
-
              This field is always required.  Example: Coingeek Conference - London (November 2018).
         </td>
     </tr>
-
     <tr>
         <td>TransfersPermitted</td>
         <td>
@@ -767,52 +650,40 @@ Admission ticket
         </td>
         <td>
             Set to true if transfers are permitted between two parties, otherwise set to false to prevent peer-to-peer transfers.
-
-
         </td>
     </tr>
-
     <tr>
         <td>Details</td>
         <td>
             varchar(small)
         </td>
         <td>
-
-
         </td>
     </tr>
-
     <tr>
         <td>Section</td>
         <td>
             varchar(tiny)
         </td>
         <td>
-
              Example: Sec 1
         </td>
     </tr>
-
     <tr>
         <td>Row</td>
         <td>
             varchar(tiny)
         </td>
         <td>
-
              Example: Sec 1
         </td>
     </tr>
-
     <tr>
         <td>EventEndTimestamp</td>
         <td>
             <a href="#alias-uint">Timestamp</a>
         </td>
         <td>
-
-
         </td>
     </tr>
 
@@ -835,10 +706,8 @@ Casino Chip
         <td>deprecated</td>
         <td>
             Deprecated for FaceValue
-            
         </td>
     </tr>
-
     <tr>
         <td>UseType</td>
         <td>
@@ -849,7 +718,6 @@ Casino Chip
              This field is always required.  Example: R
         </td>
     </tr>
-
     <tr>
         <td>AgeRestriction</td>
         <td>
@@ -857,39 +725,29 @@ Casino Chip
         </td>
         <td>
             Age restriction is used to specify required ages for instrument ownership.
-
         </td>
     </tr>
-
     <tr>
         <td>(Deprecated)ValidFrom</td>
         <td>deprecated</td>
         <td>
-
-
         </td>
     </tr>
-
     <tr>
         <td>ExpirationTimestamp</td>
         <td>
             <a href="#alias-uint">Timestamp</a>
         </td>
         <td>
-
-
         </td>
     </tr>
-
     <tr>
         <td>(Deprecated)Precision</td>
         <td>deprecated</td>
         <td>
             Deprecated for FaceValue
-
         </td>
     </tr>
-
     <tr>
         <td>TransfersPermitted</td>
         <td>
@@ -897,11 +755,8 @@ Casino Chip
         </td>
         <td>
             Set to true if transfers are permitted between two parties, otherwise set to false to prevent peer-to-peer transfers.
-
-
         </td>
     </tr>
-
     <tr>
         <td>CasinoName</td>
         <td>
@@ -912,7 +767,6 @@ Casino Chip
              This field is always required.
         </td>
     </tr>
-
     <tr>
         <td>FaceValue</td>
         <td>
@@ -945,32 +799,25 @@ Information Service License
         </td>
         <td>
             Age restriction is used to specify required ages for instrument ownership.
-            
         </td>
     </tr>
-
     <tr>
         <td>ExpirationTimestamp</td>
         <td>
             <a href="#alias-uint">Timestamp</a>
         </td>
         <td>
-
-
         </td>
     </tr>
-
     <tr>
         <td>ServiceName</td>
         <td>
             varchar(tiny)
         </td>
         <td>
-
              This field is always required.
         </td>
     </tr>
-
     <tr>
         <td>TransfersPermitted</td>
         <td>
@@ -978,11 +825,8 @@ Information Service License
         </td>
         <td>
             Set to true if transfers are permitted between two parties, otherwise set to false to prevent peer-to-peer transfers.
-
-
         </td>
     </tr>
-
     <tr>
         <td>URL</td>
         <td>
@@ -990,7 +834,6 @@ Information Service License
         </td>
         <td>
             URL linking to any related documents or media
-
         </td>
     </tr>
 
@@ -1025,10 +868,8 @@ Age restriction is used to specify required ages for instrument ownership.
         </td>
         <td>
             The lowest age valid to own instrument. Zero for no restriction.
-            
         </td>
     </tr>
-
     <tr>
         <td>Upper</td>
         <td>
@@ -1036,7 +877,6 @@ Age restriction is used to specify required ages for instrument ownership.
         </td>
         <td>
             The highest age valid to own instrument. Zero for no restriction.
-
         </td>
     </tr>
 
@@ -1064,7 +904,6 @@ A value specified in terms of a currency.
              This field is always required.  Example: 100
         </td>
     </tr>
-
     <tr>
         <td>CurrencyCode</td>
         <td>
@@ -1072,11 +911,9 @@ A value specified in terms of a currency.
         </td>
         <td>
             International Organization for Standardization code for Currency. Currency for coupon. From  resources/currency.
-
-             This field is always required.  Example: AUD
+            This field is always required.  Example: AUD
         </td>
     </tr>
-
     <tr>
         <td>Precision</td>
         <td>
@@ -1084,8 +921,7 @@ A value specified in terms of a currency.
         </td>
         <td>
             Required field to specify the decimal precision of the value. It will normally be the  &#34;precision&#34; value associated with the Currency. It is the number of decimal places between  the number of tokens and the common unit of measure. For example, in AUD, the common unit is  the dollar, but a token would only be worth a penny. So the precision should be 2 for the  two decimal places in a dollar amount &#34;$1.00&#34;. In this scenario 100 tokens are worth $1.
-
-             This field is always required.  Example: 2
+            This field is always required.  Example: 2
         </td>
     </tr>
 
@@ -1110,18 +946,15 @@ A rate value specified in terms of a precision.
         </td>
         <td>
             Required field to specify the decimal precision of the value. It will normally be the  &#34;precision&#34; value associated with the Currency. It is the number of decimal places between  the number of tokens and the common unit of measure. For example, in AUD, the common unit is  the dollar, but a token would only be worth a penny. So the precision should be 2 for the  two decimal places in a dollar amount &#34;$1.00&#34;. In this scenario 100 tokens are worth $1.
-
-             Example: 2
+            Example: 2
         </td>
     </tr>
-
     <tr>
         <td>Value</td>
         <td>
             uint(8)
         </td>
         <td>
-
              Example: Denominated in precision specified in Precision field.
         </td>
     </tr>
@@ -1145,8 +978,7 @@ A rate value specified in terms of a precision.
             </td>
             <td>
                 International Organization for Standardization code for Currency. 3 character code.
-
-                 Example: AUD
+                Example: AUD
             </td>
         </tr>
         <tr id="alias-timestamp">
@@ -1156,8 +988,7 @@ A rate value specified in terms of a precision.
             </td>
             <td>
                 Represents a time, encoded as a 64 bit unsigned integer representing the number of nanoseconds since the Unix epoch.
-
-                 Example: 1594668650000000000
+                Example: 1594668650000000000
             </td>
         </tr>
         <tr id="alias-timestamp-seconds">
@@ -1167,8 +998,7 @@ A rate value specified in terms of a precision.
             </td>
             <td>
                 Represents a time encoded as a 64 bit unsigned integer representing the number of seconds since the Unix epoch.
-
-                 Example: 1594668654
+                Example: 1594668654
             </td>
         </tr>
         <tr id="alias-seconds">
@@ -1178,8 +1008,7 @@ A rate value specified in terms of a precision.
             </td>
             <td>
                 Represents a time delta encoded as a 64 bit unsigned integer representing the number of seconds since a previous timestamp.
-
-                 Example: 1500
+                Example: 1500
             </td>
         </tr>
 
