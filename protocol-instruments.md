@@ -271,7 +271,7 @@ A fixed rate bond is a bond that pays the same level of interest over its entire
         </td>
         <td>
             International Securities Identification Number or Committee on Uniform Securities Identification Procedures.
-            <br>Example: US0004026250
+            Example: US0004026250
         </td>
     </tr>
     <tr>
