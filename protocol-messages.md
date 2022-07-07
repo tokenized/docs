@@ -14,6 +14,7 @@ The Tokenized protocol features a complete messaging suite for all types of mess
 ## Available Messages
 
 <div class="content-list collection-method-list" markdown="1">
+
 - [Public Message](#public-message)
 - [Private Message](#private-message)
 - [Reverted Tx](#reverted-tx)
@@ -55,7 +56,6 @@ Generic public message or public announcement. Sent to an address(es). Can be us
             </td>
             <td>
                 Timestamp in nanoseconds for when the message sender creates the transaction.
-                
             </td>
         </tr>
         <tr>
@@ -65,7 +65,6 @@ Generic public message or public announcement. Sent to an address(es). Can be us
             </td>
             <td>
                 The subject / topic of the message.
-                
             </td>
         </tr>
         <tr>
@@ -75,7 +74,6 @@ Generic public message or public announcement. Sent to an address(es). Can be us
             </td>
             <td>
                 The output of the message that this message is regarding (responding to).
-                
             </td>
         </tr>
         <tr>
@@ -85,7 +83,6 @@ Generic public message or public announcement. Sent to an address(es). Can be us
             </td>
             <td>
                 Tokenized Ltd. announces product launch.
-                
             </td>
         </tr>
         <tr>
@@ -95,7 +92,6 @@ Generic public message or public announcement. Sent to an address(es). Can be us
             </td>
             <td>
                 Documents attached to the message.
-                
             </td>
         </tr>
 </table>
@@ -126,7 +122,6 @@ Generic private message. Sent to another address(es). Encryption is to be used.
             </td>
             <td>
                 Timestamp in nanoseconds for when the message sender creates the transaction.
-                
             </td>
         </tr>
         <tr>
@@ -136,7 +131,6 @@ Generic private message. Sent to another address(es). Encryption is to be used.
             </td>
             <td>
                 The subject / topic of the message.
-                
             </td>
         </tr>
         <tr>
@@ -146,7 +140,6 @@ Generic private message. Sent to another address(es). Encryption is to be used.
             </td>
             <td>
                 The output of the message that this message is regarding (responding to).
-                
             </td>
         </tr>
         <tr>
@@ -156,7 +149,6 @@ Generic private message. Sent to another address(es). Encryption is to be used.
             </td>
             <td>
                 Tokenized Ltd announces product launch.
-                
             </td>
         </tr>
         <tr>
@@ -166,7 +158,6 @@ Generic private message. Sent to another address(es). Encryption is to be used.
             </td>
             <td>
                 Documents attached to the message.
-                
             </td>
         </tr>
 </table>
@@ -197,7 +188,6 @@ A message that contains a bitcoin transaction that was accepted by the network o
             </td>
             <td>
                 Timestamp in nanoseconds for when the message sender creates the transaction.
-                
             </td>
         </tr>
         <tr>
@@ -207,7 +197,6 @@ A message that contains a bitcoin transaction that was accepted by the network o
             </td>
             <td>
                 Serialized bitcoin transaction that was reverted/invalidated after being accepted.
-                
             </td>
         </tr>
 </table>
@@ -238,7 +227,6 @@ A message that contains all of the details required for an agreement to be forme
             </td>
             <td>
                 Timestamp in nanoseconds for when the message sender created the offer.
-                
             </td>
         </tr>
         <tr>
@@ -248,7 +236,6 @@ A message that contains all of the details required for an agreement to be forme
             </td>
             <td>
                 Serialized Bitcoin transaction. The transaction needs data added by another party upon acceptance of offer.
-                
             </td>
         </tr>
 </table>
@@ -279,7 +266,6 @@ Partially-signed transactions (Tokenized actions, Bitcoin, Multisig, Threshold S
             </td>
             <td>
                 Timestamp in nanoseconds for when the message sender creates the transaction.
-                
             </td>
         </tr>
         <tr>
@@ -289,7 +275,6 @@ Partially-signed transactions (Tokenized actions, Bitcoin, Multisig, Threshold S
             </td>
             <td>
                 Full serialized bitcoin tx with multiple inputs from different wallets/users.
-                
             </td>
         </tr>
 </table>
@@ -320,7 +305,6 @@ A message that contains a multi-contract settlement that needs settlement data a
             </td>
             <td>
                 Timestamp in nanoseconds for when the message sender creates the transaction.
-                
             </td>
         </tr>
         <tr>
@@ -330,7 +314,6 @@ A message that contains a multi-contract settlement that needs settlement data a
             </td>
             <td>
                 Tx Id of the transfer request transaction that triggered this message.
-                
             </td>
         </tr>
         <tr>
@@ -340,7 +323,6 @@ A message that contains a multi-contract settlement that needs settlement data a
             </td>
             <td>
                 Contract fees (in bitcoin) and addresses(PKHs) where fees should be paid. Added by each contract as settlement data is added.
-                
             </td>
         </tr>
         <tr>
@@ -350,7 +332,6 @@ A message that contains a multi-contract settlement that needs settlement data a
             </td>
             <td>
                 Serialized settlement OP_RETURN that needs data added by another contract.
-                
             </td>
         </tr>
 </table>
@@ -391,7 +372,6 @@ Metadata associated with the output. Aka Transaction details. It is used to desc
             </td>
             <td>
                 Predefined values for describing the output.
-                
             </td>
         </tr>
         <tr>
@@ -401,7 +381,6 @@ Metadata associated with the output. Aka Transaction details. It is used to desc
             </td>
             <td>
                 Free form text fields for describing the output. Groceries, Moomba Gas Compressor Project, Cash Register 3, Fitness, Entertainment, Special, VIP Section, North Carolina Store, Waitress: Cindy Smith, etc.
-                
             </td>
         </tr>
 </table>
@@ -475,7 +454,6 @@ A message used to initiate a new relationship between 2 or more parties. The M1 
             </td>
             <td>
                 The type or purposed of the relationship. 0 - Conversation (direct messages), 1 - Channel (entity/business to entity/business)
-                
             </td>
         </tr>
         <tr>
@@ -485,7 +463,6 @@ A message used to initiate a new relationship between 2 or more parties. The M1 
             </td>
             <td>
                 The seed used to derive keys for the relationship.
-                
             </td>
         </tr>
         <tr>
@@ -495,7 +472,6 @@ A message used to initiate a new relationship between 2 or more parties. The M1 
             </td>
             <td>
                 The flag can optionally be used to identify messages in the relationship so that all members don&#39;t have to be tagged in each message. It isn&#39;t needed for two party relationships, but is recommended for relationships with more members. It will be included in it&#39;s own op return for all message transactions. It is recommended to be a random 20 byte value similar to public key hashes. The flag will be the Payload of an Envelope protocol message with a Payload Protocol ID of &#34;F&#34;. If this value is not specified then there must be an output to the next key in the relationship chain for every member in the group.
-                
             </td>
         </tr>
         <tr>
@@ -505,7 +481,6 @@ A message used to initiate a new relationship between 2 or more parties. The M1 
             </td>
             <td>
                 Type of encryption used for messages within the relationship. 0 - Encryption keys embedded in envelope protocol. 1 - Encryption key embedded in this message is used as base key for future messages. Used for relationships with more than 2 members so the encryption key doesn&#39;t have to be encrypted to each member in every message.
-                
             </td>
         </tr>
         <tr>
@@ -515,7 +490,6 @@ A message used to initiate a new relationship between 2 or more parties. The M1 
             </td>
             <td>
                 The type/format of the sender&#39;s proof of identity.
-                
             </td>
         </tr>
         <tr>
@@ -525,7 +499,6 @@ A message used to initiate a new relationship between 2 or more parties. The M1 
             </td>
             <td>
                 Sender&#39;s proof of identity.
-                
             </td>
         </tr>
         <tr>
@@ -535,7 +508,6 @@ A message used to initiate a new relationship between 2 or more parties. The M1 
             </td>
             <td>
                 Information about the entities in the channel. Not included if this is not a channel initiation. These represent the companies in a channel. A channel is recommended to have 2 entities and several individual members per party. The individual members can discuss terms while the parties are used for official actions.
-                
             </td>
         </tr>
 </table>
@@ -566,7 +538,6 @@ A pending accept to a relationship that provides information about a requested p
             </td>
             <td>
                 The type/format of the sender&#39;s proof of identity.
-                
             </td>
         </tr>
         <tr>
@@ -576,7 +547,6 @@ A pending accept to a relationship that provides information about a requested p
             </td>
             <td>
                 Sender&#39;s proof of identity.
-                
             </td>
         </tr>
 </table>
@@ -607,7 +577,6 @@ Accept a relationship.
             </td>
             <td>
                 The type/format of the sender&#39;s proof of identity.
-                
             </td>
         </tr>
         <tr>
@@ -617,7 +586,6 @@ Accept a relationship.
             </td>
             <td>
                 Sender&#39;s proof of identity.
-                
             </td>
         </tr>
 </table>
@@ -648,7 +616,6 @@ Amend a relationship. Add/Remove members. Modify permissions. This is encrypted 
             </td>
             <td>
                 The new seed used to derive keys for the relationship after this message.
-                
             </td>
         </tr>
         <tr>
@@ -658,7 +625,6 @@ Amend a relationship. Add/Remove members. Modify permissions. This is encrypted 
             </td>
             <td>
                 The new base encryption secret used to derive encryption secrets for the relationship after this message. Each time a message is sent, the current seed hash is added to the base encryption secret and that value is used to encrypt the message.
-                
             </td>
         </tr>
         <tr>
@@ -668,7 +634,6 @@ Amend a relationship. Add/Remove members. Modify permissions. This is encrypted 
             </td>
             <td>
                 Indexes to the outputs of the members that are being added to the group.
-                
             </td>
         </tr>
         <tr>
@@ -678,7 +643,6 @@ Amend a relationship. Add/Remove members. Modify permissions. This is encrypted 
             </td>
             <td>
                 Indexes to the outputs of the members that are being removed from the group.
-                
             </td>
         </tr>
 </table>
@@ -709,7 +673,6 @@ Start a thread from within a conversation or channel.
             </td>
             <td>
                 The flag is required to identify messages in the thread so that all members don&#39;t have to be tagged in each message. It is recommended to be a random 20 byte value similar to public key hashes. The flag will be the Payload of an Envelope protocol message with a Payload Protocol ID of &#34;F&#34;
-                
             </td>
         </tr>
         <tr>
@@ -719,7 +682,6 @@ Start a thread from within a conversation or channel.
             </td>
             <td>
                 The seed used to derive keys for the thread. If this value is not specified, then the original seed value from the parent conversation or channel is used.
-                
             </td>
         </tr>
 </table>

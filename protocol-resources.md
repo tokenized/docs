@@ -14,6 +14,7 @@ Resources are used to define lists of values, like the definitions of the possib
 ## Available Resources
 
 <div class="content-list collection-method-list" markdown="1">
+
 - [Currencies](#resource-currencies)
 - [Entities](#resource-entities)
 - [LegalSystems](#resource-legal-systems)
@@ -32,6 +33,7 @@ International Organization for Standardization code for Currency. 3 character co
 [View Source File](https://github.com/tokenized/specification/blob/master/src/resources/develop/Currencies.yaml)
 
 <div class="content-list collection-method-list" markdown="1">
+
 - UnitedArabEmiratesDirham
 - AfghanAfghani
 - AlbanianLek
@@ -197,6 +199,7 @@ Legal Entities &amp; Ownership Structures. 1 character.
 [View Source File](https://github.com/tokenized/specification/blob/master/src/resources/develop/Entities.yaml)
 
 <div class="content-list collection-method-list" markdown="1">
+
 - Unspecified
 - Individual
 - PublicCompany
@@ -221,6 +224,7 @@ Legal Systems for Governing Law/Choice of Law
 [View Source File](https://github.com/tokenized/specification/blob/master/src/resources/develop/LegalSystems.yaml)
 
 <div class="content-list collection-method-list" markdown="1">
+
 - Law of England and Wales
 - Law of Scotland
 - Law of Afghanistan
@@ -425,7 +429,7 @@ Legal Systems for Governing Law/Choice of Law
 - Law of Puerto Rico
 - Law of Qatar
 - Law of Réunion (France)
-- Law of  Romania
+- Law of Romania
 - Law of Russia
 - Law of Rwanda
 - Law of Saint Helena Ascension and Tristan da Cunha (England and Wales)
@@ -552,6 +556,7 @@ Polities (eg. Countries/Nation-States (ISO-3166 Alpha-3), Political Unions, Inte
 [View Source File](https://github.com/tokenized/specification/blob/master/src/resources/develop/Polities.yaml)
 
 <div class="content-list collection-method-list" markdown="1">
+
 - Aaland Islands
 - Afghanistan
 - Albania
@@ -814,6 +819,7 @@ Code/Text combinations returned in rejection messages when a request is not acce
 [View Source File](https://github.com/tokenized/specification/blob/master/src/resources/develop/Rejections.yaml)
 
 <div class="content-list collection-method-list" markdown="1">
+
 - Success
 - MsgMalformed
 - TxMalformed
@@ -867,6 +873,7 @@ Roles that entities play in relation to their interactions with other entities. 
 [View Source File](https://github.com/tokenized/specification/blob/master/src/resources/develop/Roles.yaml)
 
 <div class="content-list collection-method-list" markdown="1">
+
 - Accountant
 - Advisor
 - Agent
@@ -907,6 +914,7 @@ Predefined tags for output metadata. Multiple values can be assigned to an outpu
 [View Source File](https://github.com/tokenized/specification/blob/master/src/resources/develop/Tags.yaml)
 
 <div class="content-list collection-method-list" markdown="1">
+
 - Housing
 - Utilities
 - Food
