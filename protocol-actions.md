@@ -693,7 +693,6 @@ This txn is created by the contract (smart contract/off-chain agent/token contra
         </td>
         <td>
             The address of the contract&#39;s operator. This is not contained in the contract offer payload, but determined by the inputs of the contract offer transaction and included here by the smart contract agent as a convenience.&#34;
-  
         </td>
     </tr>
     <tr>
@@ -3391,7 +3390,6 @@ The message action is a general purpose communication action. &#39;Twitter/SMS&#
             uint(2)
         </td>
         <td>
-  
         </td>
     </tr>
     <tr>
@@ -3540,6 +3538,7 @@ Used to reject request actions that do not comply with the Contract. If money is
 ## Field Types
 
 <div class="content-list collection-method-list" markdown="1">
+
 - [Administrator](#type-administrator)
 - [Administrator Identity Certificate](#type-admin-identity-certificate)
 - [Amendment](#type-amendment)
@@ -4167,7 +4166,6 @@ Entity represents the details of a legal Entity, such as a public or private com
         </td>
         <td>
             A list of people that are in Administrative Roles for the Entity.  eg. Chair, Director, Managing Partner, etc.
-  
         </td>
     </tr>
     <tr>

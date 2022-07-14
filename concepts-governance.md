@@ -68,7 +68,7 @@ There are two ways for a vote action to be created, both using the Proposal Acti
 The following image defines the order of operations in which a vote takes place:
 
 ![The order of operations for a Voting process](https://raw.githubusercontent.com/tokenized/docs/master/images/vote-order-of-operations.svg?sanitize=true)
-<span name="image-label">The order of operations for a Voting process</span>)
+<span name="image-label">The order of operations for a Voting process</span>
 
 <a name="vote-proposal"></a>
 
