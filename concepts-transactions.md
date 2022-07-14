@@ -166,4 +166,4 @@ This BitDB query is for all responses from a specific contract.
 The following example shows a high-level overview of a transfer of tokens to highlight key components of the structure of Tokenized transactions. The example shows one person, Mary, sending 15,000 tokens to Bill using the most basic form of a Transfer action. The smart contract, upon validation of the Transfer action, responds with a Settlement action to complete the transfer of tokens.
 
 ![Transaction Overview](https://raw.githubusercontent.com/tokenized/docs/master/images/transactions-overview.svg?sanitize=true)
-<span name="image-label">Transaction Overview</span>)
+<span name="image-label">Transaction Overview</span>
