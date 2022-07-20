@@ -10,9 +10,9 @@
 - [Confiscating Tokens](#confiscating-tokens)
   - [Order (Confiscation)](#order-confiscation)
   - [Confiscation](#confiscation)
-- [Reconciliation](#reconciliation)
+- [Reconciling Tokens](#reconciling-tokens)
   - [Order (Reconciliation)](#order-reconciliation)
-  - [Reconciliation Action](#reconciliation-action)
+  - [Reconciliation](#reconciliation)
 
 <a name="introduction"></a>
 
@@ -114,9 +114,9 @@ After the smart contract has determined that the Confiscation Order is valid, it
 ![Confiscation action](https://raw.githubusercontent.com/tokenized/docs/master/images/confiscation-action.svg?sanitize=true)
 <span name="image-label">Confiscation action</span>
 
-<a name="reconciliation"></a>
+<a name="Reconciling Tokens"></a>
 
-## Reconciliation
+## Reconciling Tokens
 
 A Reconciliation action is needed when there has been a break in a chain of token transfers that were not linked by dependent UTXOs. Tokens are owned by an address, not a UTXO. It is possible for child tokens transactions to not share the same Bitcoin parents as the token parent transactions. Therefore, if a token parent transaction is dropped from the network after the child transaction has been settled by the smart contract, then there will be a break in the token transfer chain, and the total outstanding tokens for that instrument will increase to an invalid quantity.
 
@@ -135,9 +135,9 @@ A Reconciliation Order can be used to decrement the extraneous token balance of 
 ![Order action (Thaw)](https://raw.githubusercontent.com/tokenized/docs/master/images/order-action-reconciliation.svg?sanitize=true)
 <span name="image-label">Order action (Thaw)</span>
 
-<a name="reconciliation-action"></a>
+<a name="reconciliation"></a>
 
-### Reconciliation Action
+### Reconciliation
 
 After the smart contract has determined that the Reconciliation Order is valid, it responds by issuing a Reconciliation action. The action is sent to all addresses that the Reconciliation Order applies to. The Reconciliation order sets a new balance for each address in the same way as a Settlement action would.
 
