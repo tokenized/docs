@@ -2,9 +2,9 @@
 
 - [Introduction](#introduction)
 - [Single Receiver](#single-receiver)
-- [Multiple Receivers](#multiple-receiver)
-- [Swap Tokens for Bitcoin](#exchange-bitcoins)
-- [Cross Contract Atomic Swaps](#atomic-swaps)
+- [Multiple Receivers](#multiple-receivers)
+- [Swap Tokens for Bitcoin](#swap-tokens-for-bitcoin)
+- [Cross Contract Atomic Swaps](#cross-contract-atomic-swaps)
 
 <a name="introduction"></a>
 
@@ -35,7 +35,7 @@ The smart contract receives the request into its wallet and validates that it me
 ![A basic transfer action](https://raw.githubusercontent.com/tokenized/docs/master/images/one-receiver-settlement-example.svg?sanitize=true)
 <span name="image-label">A basic transfer action</span>
 
-<a name="multiple-receiver"></a>
+<a name="multiple-receivers"></a>
 
 ## Multiple Receivers
 
@@ -54,7 +54,7 @@ Next, once the smart contract has checked everything is ok, it sends a settlemen
 ![A two receiver settlement action](https://raw.githubusercontent.com/tokenized/docs/master/images/two-receivers-settlement-example.svg?sanitize=true)
 <span name="image-label">A two receiver settlement action</span>
 
-<a name="exchange-bitcoins"></a>
+<a name="swap-tokens-for-bitcoin"></a>
 
 ## Swap Tokens for Bitcoin
 
@@ -83,7 +83,7 @@ Because only one smart contract is involved, the exchange settlement can be buil
 ![Exchange settlement](https://raw.githubusercontent.com/tokenized/docs/master/images/exchange-settlement-example.svg?sanitize=true)
 <span name="image-label">Exchange settlement</span>
 
-<a name="atomic-swaps"></a>
+<a name="cross-contract-atomic-swaps"></a>
 
 ## Cross Contract Atomic Swaps
 

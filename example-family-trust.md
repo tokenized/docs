@@ -4,7 +4,7 @@
 - [Creating the Contract](#creating-the-contract)
   - [Contract Offer](#contract-offer)
   - [Contract Formation](#contract-formation)
-- [Creating the instruments](#creating-instruments)
+- [Creating the instruments](#creating-the-instruments)
   - [Instrument Definition](#instrument-definition)
   - [Instrument Creation](#instrument-creation)
 - [Instrument Distribution](#instrument-distribution)
@@ -65,7 +65,7 @@ The platform receives the Contract Offer and and unpacks the transaction. Once t
 ![The BobAngelaChris Trust Contract Formation](https://raw.githubusercontent.com/tokenized/docs/master/images/tbact-contract-formation.svg?sanitize=true)
 <span name="image-label">The BobAngelaChris Trust Contract Formation</span>
 
-<a name="creating-instruments"></a>
+<a name="creating-the-instruments"></a>
 
 ## Creating the instruments
 

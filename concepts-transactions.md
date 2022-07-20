@@ -2,7 +2,7 @@
 
 - [Introduction](#introduction)
 - [Building a Transaction](#building-transaction)
-  - [Assembling OP_RETURN Packet](#assemble-opreturn)
+  - [Assembling OP_RETURN Packet](#assembling-op_return-packet)
   - [Using PUSHDATA](#using-pushdata)
 - [Payload Breakdown](#payload-breakdown)
   - [Protocol Identifier](#protocol-identifier)
@@ -29,7 +29,7 @@ Transactions that [impact balances](../concepts/tokens#token-balances) or the co
 
 Tokenized transaction messages are built by serializing the data (converting to binary) according to the protocol specification. There are many [different data formats](../protocol/actions#field-types) used by each protocol action.
 
-<a name="assemble-opreturn"></a>
+<a name="assembling-op_return-packet"></a>
 
 ### Assembling OP_RETURN Packet
 

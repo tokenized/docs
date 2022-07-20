@@ -1,14 +1,14 @@
 # Governance
 
 - [Introduction](#introduction)
-- [Authorisation flags](#auth-flags)
+- [Authorisation flags](#authorisation-flags)
 - [Voting Systems](#voting-systems)
-- [Creating and Running a Vote](#vote-create)
-  - [Proposal](#vote-proposal)
-  - [Vote](#vote-vote)
-  - [Ballot Cast](#vote-ballot-cast)
-  - [Ballot Count](#vote-ballot-count)
-  - [Result](#vote-result)
+- [Creating and Running a Vote](#creating-and-running-a-vote)
+  - [Proposal](#proposal)
+  - [Vote](#vote)
+  - [Ballot Cast](#ballot-cast)
+  - [Ballot Count](#ballot-count)
+  - [Result](#result)
 
 <a name="introduction"></a>
 
@@ -20,7 +20,7 @@ Where a field in a Contract Formation or Instrument Creation has been set to all
 
 Where a field in a Contract Formation or Instrument Creation has been set to require a positive outcome from a Referendum, the Contract Amendment or Instrument Modification action that contains the change will need to contain a TXID that references a Result action that counts the votes in a link to the modification of that parameter.
 
-<a name="auth-flags"></a>
+<a name="authorisation-flags"></a>
 
 ## Authorisation flags
 
@@ -59,7 +59,7 @@ In a Plurality vote, the option with the most votes is the winner. No threshold 
 
 > **Note**: Vote multipliers are optional and can be restricted.
 
-<a name="vote-create"></a>
+<a name="creating-and-running-a-vote"></a>
 
 ## Creating and Running a Vote
 
@@ -70,7 +70,7 @@ The following image defines the order of operations in which a vote takes place:
 ![The order of operations for a Voting process](https://raw.githubusercontent.com/tokenized/docs/master/images/vote-order-of-operations.svg?sanitize=true)
 <span name="image-label">The order of operations for a Voting process</span>
 
-<a name="vote-proposal"></a>
+<a name="proposal"></a>
 
 ### Proposal
 
@@ -86,7 +86,7 @@ An Initiative is a vote initiated by a token holder of a token that has initiati
 
 ![A Proposal action](https://raw.githubusercontent.com/tokenized/docs/master/images/proposal-action.svg?sanitize=true)
 <span name="image-label">A Proposal action</span>
-<a name="vote-vote"></a>
+<a name="vote"></a>
 
 ### Vote
 
@@ -98,7 +98,7 @@ There is no restriction on the number of Vote actions that can be active at once
 
 ![A Vote action](https://raw.githubusercontent.com/tokenized/docs/master/images/vote-action.svg?sanitize=true)
 <span name="image-label">A Vote action</span>
-<a name="vote-ballot-cast"></a>
+<a name="ballot-cast"></a>
 
 ### Ballot Cast
 
@@ -106,7 +106,7 @@ Once the user's wallet sees the Vote action, it can build the ballot for the use
 
 ![A Ballot Cast action](https://raw.githubusercontent.com/tokenized/docs/master/images/ballot-cast-action.svg?sanitize=true)
 <span name="image-label">A Ballot Cast action</span>
-<a name="vote-ballot-count"></a>
+<a name="ballot-count"></a>
 
 ### Ballot Count
 
@@ -114,7 +114,7 @@ When the smart contract sees that the user has cast their vote using a valid Bal
 
 ![A Ballot Cast action](https://raw.githubusercontent.com/tokenized/docs/master/images/ballot-counted-action.svg?sanitize=true)
 <span name="image-label">A Ballot Cast action</span>
-<a name="vote-result"></a>
+<a name="result"></a>
 
 ### Result
 

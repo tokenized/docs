@@ -4,8 +4,8 @@
 - [Ticket Purchase Transfer](#ticket-purchase-transfer)
 - [Ticket Purchase Settlement](#ticket-purchase-settlement)
 - [4 Months Later](#4-months-later)
-- [Entry Pass Redemption Transfer](#entry-redemption-transfer)
-- [Entry Pass Redemption Settlement](#entry-redemption-settlement)
+- [Entry Pass Redemption Transfer](#entry-pass-redemption-transfer)
+- [Entry Pass Redemption Settlement](#entry-pass-redemption-settlement)
 
 <a name="introduction"></a>
 
@@ -40,7 +40,7 @@ The venue's smart contract responds with a settlement, sending the token to Edis
 The big night has arrived, and Edison has arrived at the venue where the concert is taking place. He joins the queue for entry into the backstage area and opens his wallet ready to exchange his token for a pass.
 When he reaches the front of the queue, he is presented with an address to use to redeem his backstage pass.
 
-<a name="entry-redemption-transfer"></a>
+<a name="entry-pass-redemption-transfer"></a>
 
 ## Entry Pass Redemption Transfer
 
@@ -49,7 +49,7 @@ His wallet prepares a transfer action that requests the token be sent to the giv
 ![Edison's Ticket Transfer](https://raw.githubusercontent.com/tokenized/docs/master/images/edison-ticket-transfer.svg?sanitize=true)
 <span name="image-label">Edison's Ticket Transfer</span>
 
-<a name="entry-redemption-settlement"></a>
+<a name="entry-pass-redemption-settlement"></a>
 
 ## Entry Pass Redemption Settlement
 

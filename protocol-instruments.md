@@ -1,7 +1,7 @@
 # Protocol Instruments
 
 - [Introduction](#introduction)
-- [Available Instruments](#all-instruments)
+- [Available Instruments](#available-instruments)
 - [Field Types](#field-types)
 - [Field Aliases](#field-aliases)
 
@@ -11,7 +11,7 @@
 
 Instrument Types are used with reference to the `InstrumentPayload` field found in the Instrument Definition, Instrument Creation and Instrument Modification actions.
 
-<a name="all-instruments"></a>
+<a name="available-instruments"></a>
 
 ## Available Instruments
 
@@ -19,8 +19,8 @@ Instrument Types are used with reference to the `InstrumentPayload` field found 
 
 - [Membership](#membership)
 - [Currency](#currency)
-- [Share - Common](#share-common)
-- [Bond - Fixed Rate](#bond-fixed-rate)
+- [Share - Common](#share---common)
+- [Bond - Fixed Rate](#bond---fixed-rate)
 - [Coupon](#coupon)
 - [Loyalty Points](#loyalty-points)
 - [Ticket (Admission)](#ticket-admission)

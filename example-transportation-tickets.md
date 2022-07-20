@@ -3,7 +3,7 @@
 - [Introduction](#introduction)
 - [Private Line](#private-line)
   - [Buying Private Line Tickets](#buying-private-line-tickets)
-  - [Boarding The Private Line Train](#boarding-private-line-train)
+  - [Boarding The Private Line Train](#boarding-the-private-line-train)
   - [Ticket Inspection](#ticket-inspection)
 - [The Metro](#the-metro)
 
@@ -33,7 +33,7 @@ The ticketing smart contract receives her order and builds a settlement transact
 ![Private Line Settlement](https://raw.githubusercontent.com/tokenized/docs/master/images/private-line-settlement.svg?sanitize=true)
 <span name="image-label">Private Line Settlement</span>
 
-<a name="boarding-private-line-train"></a>
+<a name="boarding-the-private-line-train"></a>
 
 ### Boarding the Private Line Train
 
