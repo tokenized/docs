@@ -3,8 +3,8 @@
 - [Introduction](#introduction)
 - [Smart Contracts](#smart-contracts)
   - [Contract Operator](#contract-operator)
-  - [Creating a Contract](#contract-create)
-  - [Updating a Contract](#contract-update)
+  - [Creating a Contract](#creating-a-contract)
+  - [Updating a Contract](#updating-a-contract)
   - [Contract Address Change](#contract-address-change)
 - [Static Contracts](#static-contracts)
 - [Contract Law](#contract-law)
@@ -15,9 +15,7 @@
   - [Intention](#intention)
   - [Certainty](#certainty)
 
-<a name="introduction"></a>
-
-## Introduction
+## Introduction <a name="introduction"></a>
 
 Tokenized contracts allow for entities to form, store and manage contracts on the Bitcoin (BSV) network in a standardized way that allows for interoperability with other contracting parties and the use of Bitcoin's digital signature algorithms to create a more robust way of creating and managing agreements. The Bitcoin network allows for a global, public, immutable, and reliable ledger which is extremely valuable for storing, managing and timestamping contracts.
 
@@ -46,7 +44,7 @@ An issuer can operate their own smart contract, or they can have a technical spe
 
 The contract operator has permission to act on behalf of the issuer for the inititation of different actions. Issuers will likely prefer to outsource this work for various reasons and it is likely they will get a much better price and higher reliability/performance/security than they would if they tried to operate it themselves. An analogy would be outsourcing the operation of an email agent to Gmail or Hotmail.
 
-<a name="contract-create"></a>
+<a name="creating-a-contract"></a>
 
 ### Creating a Contract
 
@@ -85,7 +83,7 @@ The contract also adds two additional fields
 ![Contract Formation action](https://raw.githubusercontent.com/tokenized/docs/master/images/contract-formation-action.svg?sanitize=true)
 
 <span name="image-label">Contract Formation Action Transaction</span>
-<a name="contract-update"></a>
+<a name="updating-a-contract"></a>
 
 ### Updating a Contract
 

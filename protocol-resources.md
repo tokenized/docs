@@ -1,7 +1,7 @@
 # Protocol Resources
 
 - [Introduction](#introduction)
-- [Available Resources](#all-resources)
+- [Available Resources](#available-resources)
 
 <a name="introduction"></a>
 
@@ -9,22 +9,22 @@
 
 Resources are used to define lists of values, like the definitions of the possible values for a type field.
 
-<a name="all-resources"></a>
+<a name="available-resources"></a>
 
 ## Available Resources
 
 <div class="content-list collection-method-list" markdown="1">
 
-- [Currencies](#resource-currencies)
-- [Entities](#resource-entities)
-- [LegalSystems](#resource-legal-systems)
-- [Polities](#resource-polities)
-- [Rejections](#resource-rejections)
-- [Roles](#resource-roles)
-- [Tags](#resource-tags)
+- [Currencies](#currencies)
+- [Entities](#entities)
+- [LegalSystems](#legalsystems)
+- [Polities](#polities)
+- [Rejections](#rejections)
+- [Roles](#roles)
+- [Tags](#tags)
 </div>
 
-<a name="resource-currencies"></a>
+<a name="currencies"></a>
 
 #### Currencies
 
@@ -190,7 +190,7 @@ International Organization for Standardization code for Currency. 3 character co
 - ZambianKwacha
 </div>
 
-<a name="resource-entities"></a>
+<a name="entities"></a>
 
 #### Entities
 
@@ -215,7 +215,7 @@ Legal Entities &amp; Ownership Structures. 1 character.
 - DiscretionaryTrust
 </div>
 
-<a name="resource-legal-systems"></a>
+<a name="legalsystems"></a>
 
 #### LegalSystems
 
@@ -547,7 +547,7 @@ Legal Systems for Governing Law/Choice of Law
 - Law of Zimbabwe
 </div>
 
-<a name="resource-polities"></a>
+<a name="polities"></a>
 
 #### Polities
 
@@ -810,7 +810,7 @@ Polities (eg. Countries/Nation-States (ISO-3166 Alpha-3), Political Unions, Inte
 - Zimbabwe
 </div>
 
-<a name="resource-rejections"></a>
+<a name="rejections"></a>
 
 #### Rejections
 
@@ -864,7 +864,7 @@ Code/Text combinations returned in rejection messages when a request is not acce
 - AgreementRevision
 </div>
 
-<a name="resource-roles"></a>
+<a name="roles"></a>
 
 #### Roles
 
@@ -905,7 +905,7 @@ Roles that entities play in relation to their interactions with other entities. 
 - Unit Holder
 </div>
 
-<a name="resource-tags"></a>
+<a name="tags"></a>
 
 #### Tags
 

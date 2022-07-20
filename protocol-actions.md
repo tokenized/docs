@@ -1,7 +1,7 @@
 # Protocol Actions
 
 - [Introduction](#introduction)
-- [Available Actions](#all-actions)
+- [Available Actions](#available-actions)
 - [Field Types](#field-types)
 - [Field Aliases](#field-aliases)
 
@@ -13,7 +13,7 @@ The following actions break down the construction of a Tokenized protocol messag
 
 See the [Transactions article](../concepts/transactions) for details on how to construct a complete transaction.
 
-<a name="all-actions"></a>
+<a name="available-actions"></a>
 
 ## Available Actions
 

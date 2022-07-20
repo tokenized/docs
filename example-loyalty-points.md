@@ -2,20 +2,20 @@
 
 - [Introduction](#introduction)
 - [Creating the Contract](#creating-the-contract)
-- [Creating the Free Slice Coupons](#creating-the-coupons)
+- [Creating the Free Slice Coupons](#creating-the-free-slice-coupons)
   - [Coupon Instrument Definition](#coupon-instrument-definition)
   - [Coupon Instrument Creation](#coupon-instrument-creation)
-- [Creating the Loyalty Points](#creating-the-points)
+- [Creating the Loyalty Points](#creating-the-loyalty-points)
   - [Points Instrument Definition](#points-instrument-definition)
 - [First Customer](#first-customer)
   - [First Customer Transfer](#first-customer-transfer)
   - [First Customer Settlement](#first-customer-settlement)
 - [Later in the evening](#later-in-the-evening)
-  - [The Incorrect Transfer](#incorrect-transfer)
-  - [The Mistake Settles](#incorrect-settlement)
-- [The Mistake is Found](#mistake-found)
+  - [The Incorrect Transfer](#the-incorrect-transfer)
+  - [The Mistake Settles](#the-mistake-settles)
+- [The Mistake is Found](#the-mistake-is-found)
   - [Confiscation Order](#confiscation-order)
-  - [The Confiscation](#confiscation)
+  - [The Confiscation](#the-confiscation)
 
 <a name="introduction"></a>
 
@@ -45,7 +45,7 @@ The Agent receives the Contract Offer and unpacks it, validating its contents be
 ![Dominic's Pizza Contract Formation action](https://raw.githubusercontent.com/tokenized/docs/master/images/dominics-pizza-contract-formation.svg?sanitize=true)
 <span name="image-label">Dominic's Pizza Contract Formation</span>
 
-<a name="creating-the-coupons"></a>
+<a name="creating-the-free-slice-coupons"></a>
 
 ## Creating the Free Slice Coupons
 
@@ -70,7 +70,7 @@ The smart contract receives the transaction and unpacks the details. After makin
 ![Dominic's Pizza Slice Coupon Instrument Creation](https://raw.githubusercontent.com/tokenized/docs/master/images/dominics-pizza-slice-coupons-instrument-creation.svg?sanitize=true)
 <span name="image-label">Dominic's Pizza slice coupons Instrument Creation</span>
 
-<a name="creating-the-points"></a>
+<a name="creating-the-loyalty-points"></a>
 
 ## Creating the Loyalty Points
 
@@ -128,14 +128,14 @@ Dominic has had a great evening. He has sold out of almost every pizza and done 
 Jo-Anne enters and approaches the counter. Dominic quickly walks to the sales point and takes her order.
 Jo-Anne is after 2 slices, one Hawaiian and one Margarita, and a bottle of sparkling water. Dominic enters her order in the till but inadvertently types in a quantity of 22 for loyalty points instead of 2.
 
-<a name="incorrect-transfer"></a>
+<a name="the-incorrect-transfer"></a>
 
 ### The Incorrect Transfer
 
 ![Dominic's Pizza - Jo-Anne's transfer](https://raw.githubusercontent.com/tokenized/docs/master/images/dominics-pizza-jo-anne-transfer.svg?sanitize=true)
 <span name="image-label">Dominic's Pizza - Jo-Anne's transfer</span>
 
-<a name="incorrect-settlement"></a>
+<a name="the-mistake-settles"></a>
 
 ### The Mistake Settles
 
@@ -144,7 +144,7 @@ He asks Jo-Anne to tap her mobile wallet on the cashpoint and without paying too
 ![Dominic's Pizza - Jo-Anne's settlement](https://raw.githubusercontent.com/tokenized/docs/master/images/dominics-pizza-jo-anne-settlement.svg?sanitize=true)
 <span name="image-label">Dominic's Pizza - Jo-Anne's settlement</span>
 
-<a name="mistake-found"></a>
+<a name="the-mistake-is-found"></a>
 
 ## The Mistake is Found
 
@@ -162,7 +162,7 @@ Using his desktop wallet, he goes into the 'Enforcement' menu and selects confis
 ![Dominic's Pizza Order action (Confiscation)](https://raw.githubusercontent.com/tokenized/docs/master/images/dominics-pizza-order-confiscation.svg?sanitize=true)
 <span name="image-label">Dominic's Pizza Order action (confiscation)</span>
 
-<a name="confiscation"></a>
+<a name="the-confiscation"></a>
 
 ### The Confiscation
 

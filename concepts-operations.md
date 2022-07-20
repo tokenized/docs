@@ -9,7 +9,7 @@
   - [Enforcement Operations](#enforcement-operations)
   - [Register Operations](#register-operations)
   - [Message Operations](#message-operations)
-- [Order of Operations](#operation-order)
+- [Order of Operations](#order-of-operations)
 
 <a name="introduction"></a>
 
@@ -118,7 +118,7 @@ Message operations allow entities to communicate with each other on-chain. No re
 - [Message](../protocol/actions#action-message) (Action Code: M1)
 - [Rejection](../protocol/actions#action-rejection) (Action Code: M2)
 
-<a name="operation-order"></a>
+<a name="order-of-operations"></a>
 
 ## Order of Operations
 
