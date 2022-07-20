@@ -3,15 +3,15 @@
 - [Introduction](#introduction)
 - [Message action](#message-action)
 - [Rejection action](#rejection-action)
-  - [Basic Rejection Codes](#rejection-codes)
-  - [Contract Rejection Codes](#rejection-contract-codes)
-  - [Instrument Rejection Codes](#rejection-instrument-codes)
-  - [Transfer Rejection Codes](#rejection-transfer-codes)
-  - [Governance Rejection Codes](#rejection-governance-codes)
-  - [Enforcement Rejection Codes](#rejection-enforcement-codes)
-  - [Funding Rejection Codes](#rejection-funding-codes)
-  - [Address Rejection Codes](#rejection-address-codes)
-  - [Signature Rejection Codes](#rejection-signature-codes)
+  - [Basic Rejection Codes](#basic-rejection-codes)
+  - [Contract Rejection Codes](#contract-rejection-codes)
+  - [Instrument Rejection Codes](#instrument-rejection-codes)
+  - [Transfer Rejection Codes](#transfer-rejection-codes)
+  - [Governance Rejection Codes](#governance-rejection-codes)
+  - [Enforcement Rejection Codes](#enforcement-rejection-codes)
+  - [Funding Rejection Codes](#funding-rejection-codes)
+  - [Address Rejection Codes](#address-rejection-codes)
+  - [Signature Rejection Codes](#signature-rejection-codes)
 
 <a name="introduction"></a>
 
@@ -71,7 +71,7 @@ The rejection action is the only message type sent by the smart contract. The Re
 
 The following rejection messages have been defined:
 
-<a name="rejection-codes"></a>
+<a name="basic-rejection-codes"></a>
 
 ### Basic Rejection Codes
 
@@ -85,7 +85,7 @@ The following rejection messages have been defined:
     <tr><td>Code 2</td><td>Transaction Malformed - The Bitcoin tx is malformed. Incorrect inputs/outputs or something similar.</td></tr>
 </table>
 
-<a name="rejection-contract-codes"></a>
+<a name="contract-rejection-codes"></a>
 
 ### Contract Rejection Codes
 
@@ -104,7 +104,7 @@ The following rejection messages have been defined:
     <tr><td>Code 17</td><td>Contract Revision Incorrect - The revision in a contract amendment is incorrect.</td></tr>
 </table>
 
-<a name="rejection-instrument-codes"></a>
+<a name="instrument-rejection-codes"></a>
 
 ### Instrument Rejection Codes
 
@@ -120,7 +120,7 @@ The following rejection messages have been defined:
     <tr><td>Code 24</td><td>Instrument Revision Incorrect - The revision in an instrument amendment is incorrect.</td></tr>
 </table>
 
-<a name="rejection-transfer-codes"></a>
+<a name="transfer-rejection-codes"></a>
 
 ### Transfer Rejection Codes
 
@@ -134,7 +134,7 @@ The following rejection messages have been defined:
     <tr><td>Code 32</td><td>Holdings Frozen - Holdings are frozen, so the request can't be completed.</td></tr>
 </table>
 
-<a name="rejection-governance-codes"></a>
+<a name="governance-rejection-codes"></a>
 
 ### Governance Rejection Codes
 
@@ -150,7 +150,7 @@ The following rejection messages have been defined:
     <tr><td>Code 44</td><td>Ballot Already Counted - The ballot has already been counted for this address.</td></tr>
 </table>
 
-<a name="rejection-enforcement-codes"></a>
+<a name="enforcement-rejection-codes"></a>
 
 ### Enforcement Rejection Codes
 
@@ -161,7 +161,7 @@ The following rejection messages have been defined:
     </tr>
 </table>
 
-<a name="rejection-funding-codes"></a>
+<a name="funding-rejection-codes"></a>
 
 ### Funding Rejection Codes
 
@@ -175,7 +175,7 @@ The following rejection messages have been defined:
     <tr><td>Code 62</td><td>InsuInsufficient Quantity - Insufficient token holdings to for request.</td></tr>
 </table>
 
-<a name="rejection-address-codes"></a>
+<a name="address-rejection-codes"></a>
 
 ### Address Rejection Codes
 
@@ -189,7 +189,7 @@ The following rejection messages have been defined:
     <tr><td>Code 72</td><td>Unauthorized Address - The address specified is not permitted for this request.</td></tr>
 </table>
 
-<a name="rejection-signature-codes"></a>
+<a name="signature-rejection-codes"></a>
 
 ### Signature Rejection Codes
 

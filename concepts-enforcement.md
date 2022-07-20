@@ -2,17 +2,17 @@
 
 - [Introduction](#introduction)
 - [Freezing Tokens](#freeze-tokens)
-  - [Order (Freeze)](#freeze-order)
-  - [Freeze](#freeze-freeze)
-- [Thawing Tokens](#thaw-tokens)
-  - [Order (Thaw)](#thaw-order)
-  - [Thaw](#thaw-thaw)
+  - [Order (Freeze)](#order-freeze)
+  - [Freeze](#freeze)
+- [Thawing Tokens](#thawing-tokens)
+  - [Order (Thaw)](#order-thaw)
+  - [Thaw](#thaw)
 - [Confiscating Tokens](#confiscating-tokens)
-  - [Order (Confiscation)](#confiscation-order)
-  - [Confiscation](#confiscation-confiscation)
+  - [Order (Confiscation)](#order-confiscation)
+  - [Confiscation](#confiscation)
 - [Reconciliation](#reconciliation)
-  - [Order (Reconciliation)](#reconciliation-order)
-  - [Reconciliation](#reconciliation-reconciliation)
+  - [Order (Reconciliation)](#order-reconciliation)
+  - [Reconciliation Action](#reconciliation-action)
 
 <a name="introduction"></a>
 
@@ -41,7 +41,7 @@ An address may be subject to multiple freeze orders. The number of tokens which 
 
 Freezing tokens is a two step process.
 
-<a name="freeze-order"></a>
+<a name="order-freeze"></a>
 
 ### Order (Freeze)
 
@@ -52,7 +52,8 @@ If the Freeze order is applied to an instrument but the contract's address is th
 ![Order action (Freeze)](https://raw.githubusercontent.com/tokenized/docs/master/images/order-action-freeze.svg?sanitize=true)
 
 <span name="image-label">Order action (Freeze)</span>
-<a name="freeze-freeze"></a>
+
+<a name="freeze"></a>
 
 ### Freeze
 
@@ -62,14 +63,15 @@ An issuer can place multiple freeze orders on a single address. In this case, th
 ![Freeze action](https://raw.githubusercontent.com/tokenized/docs/master/images/freeze-action.svg?sanitize=true)
 
 <span name="image-label">Freeze action</span>
-<a name="thaw-tokens"></a>
+
+<a name="thawing-tokens"></a>
 
 ## Thawing Tokens
 
 Thawing tokens with a Thaw action, reverses a Freeze order that has been put in place. One Thaw action can only reverse one Freeze action. If an instrument is frozen by two separate Freeze orders, there must be two separate Thaw Orders applied to it before it can be traded, one per Freeze.
 Thawing tokens is a two step process.
 
-<a name="thaw-order"></a>
+<a name="order-thaw"></a>
 
 ### Order (Thaw)
 
@@ -77,7 +79,8 @@ A Thaw Order reverses a single Freeze action.
 
 ![Order action (Thaw)](https://raw.githubusercontent.com/tokenized/docs/master/images/order-action-thaw.svg?sanitize=true)
 <span name="image-label">Order action (Thaw)</span>
-<a name="thaw-thaw"></a>
+
+<a name="thaw"></a>
 
 ### Thaw
 
@@ -85,6 +88,7 @@ After the smart contract has determined that the thaw order is valid, it respond
 
 ![Thaw action](https://raw.githubusercontent.com/tokenized/docs/master/images/thaw-action.svg?sanitize=true)
 <span name="image-label">Thaw action</span>
+
 <a name="confiscating-tokens"></a>
 
 ## Confiscating Tokens
@@ -92,7 +96,7 @@ After the smart contract has determined that the thaw order is valid, it respond
 Token confiscation actions are used to move tokens from an address without the need for a signed message from the token owner. A confiscation action can be applied to tokens from multiple addresses at once, however all confiscated tokens must be sent to a single 'deposit' address. A confiscation action can be performed on frozen tokens. Once moved into the new address, those tokens can be moved unless a pre-emptive Freeze order is placed on the receiving address to lock down the soon to be received tokens.
 Confiscating tokens is a two step process.
 
-<a name="confiscation-order"></a>
+<a name="order-confiscation"></a>
 
 ### Order (Confiscation)
 
@@ -100,7 +104,8 @@ A Confiscation order can be used to move tokens without the need for a signature
 
 ![Order action (Confiscation)](https://raw.githubusercontent.com/tokenized/docs/master/images/order-action-confiscation.svg?sanitize=true)
 <span name="image-label">Order action (Confiscation)</span>
-<a name="confiscation-confiscation"></a>
+
+<a name="confiscation"></a>
 
 ### Confiscation
 
@@ -108,6 +113,7 @@ After the smart contract has determined that the Confiscation Order is valid, it
 
 ![Confiscation action](https://raw.githubusercontent.com/tokenized/docs/master/images/confiscation-action.svg?sanitize=true)
 <span name="image-label">Confiscation action</span>
+
 <a name="reconciliation"></a>
 
 ## Reconciliation
@@ -120,7 +126,7 @@ The Reconciliation action decrements the balance of tokens at the target address
 
 Reconciliation is a two step process.
 
-<a name="reconciliation-order"></a>
+<a name="order-reconciliation"></a>
 
 #### Order (Reconciliation)
 
@@ -128,9 +134,10 @@ A Reconciliation Order can be used to decrement the extraneous token balance of 
 
 ![Order action (Thaw)](https://raw.githubusercontent.com/tokenized/docs/master/images/order-action-reconciliation.svg?sanitize=true)
 <span name="image-label">Order action (Thaw)</span>
-<a name="reconciliation-reconciliation"></a>
 
-### Reconciliation
+<a name="reconciliation-action"></a>
+
+### Reconciliation Action
 
 After the smart contract has determined that the Reconciliation Order is valid, it responds by issuing a Reconciliation action. The action is sent to all addresses that the Reconciliation Order applies to. The Reconciliation order sets a new balance for each address in the same way as a Settlement action would.
 
