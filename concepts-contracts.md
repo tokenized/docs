@@ -15,7 +15,9 @@
   - [Intention](#intention)
   - [Certainty](#certainty)
 
-## Introduction <a name="introduction"></a>
+<a name="introduction"></a>
+
+## Introduction
 
 Tokenized contracts allow for entities to form, store and manage contracts on the Bitcoin (BSV) network in a standardized way that allows for interoperability with other contracting parties and the use of Bitcoin's digital signature algorithms to create a more robust way of creating and managing agreements. The Bitcoin network allows for a global, public, immutable, and reliable ledger which is extremely valuable for storing, managing and timestamping contracts.
 
