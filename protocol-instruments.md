@@ -43,7 +43,7 @@ A Membership
     <tr>
         <td>AgeRestriction</td>
         <td>
-            <a href="#type-age-restriction">AgeRestriction</a>
+            <a href="#age-restriction">AgeRestriction</a>
         </td>
         <td>
             Age restriction is used to specify required ages for instrument ownership.
@@ -286,7 +286,7 @@ A fixed rate bond is a bond that pays the same level of interest over its entire
     <tr>
         <td>ParValue</td>
         <td>
-            <a href="#type-currency-value">CurrencyValue</a>
+            <a href="#currency-value">CurrencyValue</a>
         </td>
         <td>
             Par value of the bond. The value that will be paid at maturity.
@@ -296,7 +296,7 @@ A fixed rate bond is a bond that pays the same level of interest over its entire
     <tr>
         <td>InterestRate</td>
         <td>
-            <a href="#type-rate">Rate</a>
+            <a href="#rate">Rate</a>
         </td>
         <td>
             The fixed interest rate of the bond.
@@ -327,7 +327,7 @@ A fixed rate bond is a bond that pays the same level of interest over its entire
     <tr>
         <td>LatePaymentPenaltyRate</td>
         <td>
-            <a href="#type-rate">Rate</a>
+            <a href="#rate">Rate</a>
         </td>
         <td>
             The rate of the penalty per the penalty period.
@@ -366,7 +366,7 @@ A fixed rate bond is a bond that pays the same level of interest over its entire
     <tr>
         <td>AgeRestriction</td>
         <td>
-            <a href="#type-age-restriction">AgeRestriction</a>
+            <a href="#age-restriction">AgeRestriction</a>
         </td>
         <td>
             Age restriction is used to specify required ages for instrument ownership.
@@ -464,7 +464,7 @@ A voucher entitling the holder to a discount on a particular product or service.
     <tr>
         <td>FaceValue</td>
         <td>
-            <a href="#type-currency-value">CurrencyValue</a>
+            <a href="#currency-value">CurrencyValue</a>
         </td>
         <td>
             Face value of each coupon specified in a currency.
@@ -504,7 +504,7 @@ A Loyalty Point
     <tr>
         <td>AgeRestriction</td>
         <td>
-            <a href="#type-age-restriction">AgeRestriction</a>
+            <a href="#age-restriction">AgeRestriction</a>
         </td>
         <td>
             Age restriction is used to specify required ages for instrument ownership.
@@ -568,7 +568,7 @@ Admission ticket
     <tr>
         <td>AgeRestriction</td>
         <td>
-            <a href="#type-age-restriction">AgeRestriction</a>
+            <a href="#age-restriction">AgeRestriction</a>
         </td>
         <td>
             Age restriction is used to specify required ages for instrument ownership.
@@ -721,7 +721,7 @@ Casino Chip
     <tr>
         <td>AgeRestriction</td>
         <td>
-            <a href="#type-age-restriction">AgeRestriction</a>
+            <a href="#age-restriction">AgeRestriction</a>
         </td>
         <td>
             Age restriction is used to specify required ages for instrument ownership.
@@ -770,7 +770,7 @@ Casino Chip
     <tr>
         <td>FaceValue</td>
         <td>
-            <a href="#type-currency-value">CurrencyValue</a>
+            <a href="#currency-value">CurrencyValue</a>
         </td>
         <td>
             Face value of each coupon specified in a currency.
@@ -795,7 +795,7 @@ Information Service License
     <tr>
         <td>AgeRestriction</td>
         <td>
-            <a href="#type-age-restriction">AgeRestriction</a>
+            <a href="#age-restriction">AgeRestriction</a>
         </td>
         <td>
             Age restriction is used to specify required ages for instrument ownership.
@@ -844,12 +844,13 @@ Information Service License
 ## Field Types
 
 <div class="content-list collection-method-list" markdown="1">
-- [Age Restriction](#type-age-restriction)
-- [Currency Value](#type-currency-value)
-- [Rate](#type-rate)
+
+- [Age Restriction](#age-restriction)
+- [Currency Value](#currency-value)
+- [Rate](#rate)
 </div>
 
-<a name="type-age-restriction"></a>
+<a name="age-restriction"></a>
 
 ### Age Restriction
 
@@ -882,7 +883,7 @@ Age restriction is used to specify required ages for instrument ownership.
 
 </table>
 
-<a name="type-currency-value"></a>
+<a name="currency-value"></a>
 
 ### Currency Value
 
@@ -927,7 +928,7 @@ A value specified in terms of a currency.
 
 </table>
 
-<a name="type-rate"></a>
+<a name="rate"></a>
 
 ### Rate
 

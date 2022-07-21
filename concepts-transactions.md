@@ -1,7 +1,7 @@
 # Transactions
 
 - [Introduction](#introduction)
-- [Building a Transaction](#building-transaction)
+- [Building a Transaction](#building-a-transaction)
   - [Assembling OP_RETURN Packet](#assembling-op_return-packet)
   - [Using PUSHDATA](#using-pushdata)
 - [Payload Breakdown](#payload-breakdown)
@@ -23,7 +23,7 @@ Some transactions (eg. [Static Contract](../protocol/actions#static-contracts), 
 
 Transactions that [impact balances](../concepts/tokens#token-balances) or the contract state always include a timestamp to ensure that even in the event of a block re-organisation that the contract actions can be restored in the correct order.
 
-<a name="building-transaction"></a>
+<a name="building-a-transaction"></a>
 
 ## Building a Transaction
 

@@ -1,7 +1,7 @@
 # Enforcement
 
 - [Introduction](#introduction)
-- [Freezing Tokens](#freeze-tokens)
+- [Freezing Tokens](#freezing-tokens)
   - [Order (Freeze)](#order-freeze)
   - [Freeze](#freeze)
 - [Thawing Tokens](#thawing-tokens)
@@ -31,7 +31,7 @@ To enact an enforcement order, the administration of the contract issuer uses th
 
 There are also fields that allow for an legal/law enforcement authority to sign a message (ECDSA) of the addresses, instruments and quantities that are to be frozen, thawed, or confiscated. This allows for issuers to comply with legal authorities with signed on-chain proof, and for the pseudonymity of token holders to be preserved as administrations/contract opertors won't be able to link real world identities with addresses, if that is desired for some use cases.
 
-<a name="freeze-tokens"></a>
+<a name="freezing-tokens"></a>
 
 ## Freezing Tokens
 

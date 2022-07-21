@@ -8,8 +8,8 @@
   - [Candy Bar Transfer](#candy-bar-transfer)
   - [Candy Bar Settlement](#candy-bar-settlement)
 - [Pre-paid Item Redemption](#pre-paid-item-redemption)
-  - [Pre-paid Item Transfer](#pre-paid-transfer)
-  - [Pre-paid Item Settlement](#pre-paid-settlement)
+  - [Pre-paid Item Transfer](#pre-paid-item-transfer)
+  - [Pre-paid Item Settlement](#pre-paid-item-settlement)
 
 <a name="introduction"></a>
 
@@ -90,7 +90,7 @@ The eAUD Contract sees Carol's transfer action arrive in it's wallet and quickly
 
 When Alice goes to the candy bar, she grabs her combo and heads to the checkout. It scans her items and aks Alice how she would like to pay. She selects the 'Pre-Purchased' option to use the coupon she purchased earlier with the tickets.
 
-<a name="pre-paid-transfer"></a>
+<a name="pre-paid-item-transfer"></a>
 
 ### Pre-paid Item Transfer
 
@@ -104,7 +104,7 @@ Her wallet selects a cash input to pay for the transaction, creates the change o
 ![Final Candy Bar Pre-Paid Item Transfer](https://raw.githubusercontent.com/tokenized/docs/master/images/candy-bar-pre-paid-transfer-final.svg?sanitize=true)
 <span name="image-label">Final Candy Bar Pre-Paid Item Transfer</span>
 
-<a name="pre-paid-settlement"></a>
+<a name="pre-paid-item-settlement"></a>
 
 ### Pre-paid Item Settlement
 

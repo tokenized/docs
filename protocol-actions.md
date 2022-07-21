@@ -19,38 +19,38 @@ See the [Transactions article](../concepts/transactions) for details on how to c
 
 <div class="content-list collection-method-list" markdown="1">
 
-- [Contract Offer](#action-contract-offer)
-- [Contract Formation](#action-contract-formation)
-- [Contract Amendment](#action-contract-amendment)
-- [Static Contract Formation](#action-static-contract-formation)
-- [Contract Address Change](#action-contract-address-change)
-- [Body Of Agreement Offer](#action-body-of-agreement-offer)
-- [Body Of Agreement Formation](#action-body-of-agreement-formation)
-- [Body Of Agreement Amendment](#action-body-of-agreement-amendment)
-- [Instrument Definition](#action-instrument-definition)
-- [Instrument Creation](#action-instrument-creation)
-- [Instrument Modification](#action-instrument-modification)
-- [Transfer](#action-transfer)
-- [Settlement](#action-settlement)
-- [Proposal](#action-proposal)
-- [Vote](#action-vote)
-- [Ballot Cast](#action-ballot-cast)
-- [Ballot Counted](#action-ballot-counted)
-- [Result](#action-result)
-- [Order](#action-order)
-- [Freeze](#action-freeze)
-- [Thaw](#action-thaw)
-- [Confiscation](#action-confiscation)
-- [Reconciliation](#action-reconciliation)
-- [Establishment](#action-establishment)
-- [Addition](#action-addition)
-- [Alteration](#action-alteration)
-- [Removal](#action-removal)
-- [Message](#action-message)
-- [Rejection](#action-rejection)
+- [Contract Offer](#contract-offer)
+- [Contract Formation](#contract-formation)
+- [Contract Amendment](#contract-amendment)
+- [Static Contract Formation](#static-contract-formation)
+- [Contract Address Change](#contract-address-change)
+- [Body Of Agreement Offer](#body-of-agreement-offer)
+- [Body Of Agreement Formation](#body-of-agreement-formation)
+- [Body Of Agreement Amendment](#body-of-agreement-amendment)
+- [Instrument Definition](#instrument-definition)
+- [Instrument Creation](#instrument-creation)
+- [Instrument Modification](#instrument-modification)
+- [Transfer](#transfer)
+- [Settlement](#settlement)
+- [Proposal](#proposal)
+- [Vote](#vote)
+- [Ballot Cast](#ballot-cast)
+- [Ballot Counted](#ballot-counted)
+- [Result](#result)
+- [Order](#order)
+- [Freeze](#freeze)
+- [Thaw](#thaw)
+- [Confiscation](#confiscation)
+- [Reconciliation](#reconciliation)
+- [Establishment](#establishment)
+- [Addition](#addition)
+- [Alteration](#alteration)
+- [Removal](#removal)
+- [Message](#message)
+- [Rejection](#rejection)
 </div>
 
-<a name="action-contract-offer"></a>
+<a name="contract-offer"></a>
 
 #### Contract Offer
 
@@ -113,7 +113,7 @@ Allows the administration to tell the smart contract what they want the details 
     <tr>
         <td>SupportingDocs</td>
         <td>
-            <a href="#type-document">Document[tiny]</a>
+            <a href="#document">Document[tiny]</a>
         </td>
         <td>
             Supporting documents that are important to the contract.
@@ -158,7 +158,7 @@ Allows the administration to tell the smart contract what they want the details 
     <tr>
         <td>Issuer</td>
         <td>
-            <a href="#type-entity">Entity</a>
+            <a href="#entity">Entity</a>
         </td>
         <td>
             The issuer of this contract.<br />            This field is only valid when the field ContractType equals 0.
@@ -221,7 +221,7 @@ Allows the administration to tell the smart contract what they want the details 
     <tr>
         <td>VotingSystems</td>
         <td>
-            <a href="#type-voting-system">VotingSystem[tiny]</a>
+            <a href="#voting-system">VotingSystem[tiny]</a>
         </td>
         <td>
             A list of voting systems.  
@@ -269,7 +269,7 @@ Allows the administration to tell the smart contract what they want the details 
     <tr>
         <td>Oracles</td>
         <td>
-            <a href="#type-oracle">Oracle[tiny]</a>
+            <a href="#oracle">Oracle[tiny]</a>
         </td>
         <td>
             A list of oracles that provide approval for all token transfers for all instruments under the contract.  
@@ -317,7 +317,7 @@ Allows the administration to tell the smart contract what they want the details 
     <tr>
         <td>Services</td>
         <td>
-            <a href="#type-service">Service[tiny]</a>
+            <a href="#service">Service[tiny]</a>
         </td>
         <td>
             The services provided by the contract entity.<br />            This field is only valid when the field ContractType equals 0.
@@ -326,7 +326,7 @@ Allows the administration to tell the smart contract what they want the details 
     <tr>
         <td>AdminIdentityCertificates</td>
         <td>
-            <a href="#type-admin-identity-certificate">AdminIdentityCertificate[tiny]</a>
+            <a href="#administrator-identity-certificate">AdminIdentityCertificate[tiny]</a>
         </td>
         <td>
             Certificates providing proof of administrator/operator identities.  
@@ -390,7 +390,7 @@ Allows the administration to tell the smart contract what they want the details 
 
 <hr />
 
-<a name="action-contract-formation"></a>
+<a name="contract-formation"></a>
 
 #### Contract Formation
 
@@ -449,7 +449,7 @@ This txn is created by the contract (smart contract/off-chain agent/token contra
     <tr>
         <td>SupportingDocs</td>
         <td>
-            <a href="#type-document">Document[tiny]</a>
+            <a href="#document">Document[tiny]</a>
         </td>
         <td>
             Supporting documents that are important to the contract.
@@ -494,7 +494,7 @@ This txn is created by the contract (smart contract/off-chain agent/token contra
     <tr>
         <td>Issuer</td>
         <td>
-            <a href="#type-entity">Entity</a>
+            <a href="#entity">Entity</a>
         </td>
         <td>
             The issuer of this contract.<br />            This field is only valid when the field ContractType equals 0.
@@ -548,7 +548,7 @@ This txn is created by the contract (smart contract/off-chain agent/token contra
     <tr>
         <td>VotingSystems</td>
         <td>
-            <a href="#type-voting-system">VotingSystem[tiny]</a>
+            <a href="#voting-system">VotingSystem[tiny]</a>
         </td>
         <td>
             A list voting systems.  
@@ -596,7 +596,7 @@ This txn is created by the contract (smart contract/off-chain agent/token contra
     <tr>
         <td>Oracles</td>
         <td>
-            <a href="#type-oracle">Oracle[tiny]</a>
+            <a href="#oracle">Oracle[tiny]</a>
         </td>
         <td>
             A list of oracles that provide approval for all token transfers for all instruments under the contract.  
@@ -663,7 +663,7 @@ This txn is created by the contract (smart contract/off-chain agent/token contra
     <tr>
         <td>Services</td>
         <td>
-            <a href="#type-service">Service[tiny]</a>
+            <a href="#service">Service[tiny]</a>
         </td>
         <td>
             The services provided by the contract entity.<br />            This field is only valid when the field ContractType equals 0.
@@ -672,7 +672,7 @@ This txn is created by the contract (smart contract/off-chain agent/token contra
     <tr>
         <td>AdminIdentityCertificates</td>
         <td>
-            <a href="#type-admin-identity-certificate">AdminIdentityCertificate[tiny]</a>
+            <a href="#administrator-identity-certificate">AdminIdentityCertificate[tiny]</a>
         </td>
         <td>
             Certificates providing proof of administrator/operator identities.  
@@ -747,7 +747,7 @@ This txn is created by the contract (smart contract/off-chain agent/token contra
 
 <hr />
 
-<a name="action-contract-amendment"></a>
+<a name="contract-amendment"></a>
 
 #### Contract Amendment
 
@@ -799,7 +799,7 @@ The administration can initiate an amendment to the contract establishment metad
     <tr>
         <td>Amendments</td>
         <td>
-            <a href="#type-amendment">Amendment[tiny]</a>
+            <a href="#amendment">Amendment[tiny]</a>
         </td>
         <td>
             A collection of modifications to perform on this contract.  
@@ -851,7 +851,7 @@ The administration can initiate an amendment to the contract establishment metad
 
 <hr />
 
-<a name="action-static-contract-formation"></a>
+<a name="static-contract-formation"></a>
 
 #### Static Contract Formation
 
@@ -920,7 +920,7 @@ Static Contract Formation Action
     <tr>
         <td>SupportingDocs</td>
         <td>
-            <a href="#type-document">Document[tiny]</a>
+            <a href="#document">Document[tiny]</a>
         </td>
         <td>
             Supporting documents that are important to the contract.  
@@ -992,7 +992,7 @@ Static Contract Formation Action
     <tr>
         <td>Entities</td>
         <td>
-            <a href="#type-entity">Entity[tiny]</a>
+            <a href="#entity">Entity[tiny]</a>
         </td>
         <td>
             A list of legal entities associated with this contract.  
@@ -1001,7 +1001,7 @@ Static Contract Formation Action
     <tr>
         <td>EntityOracle</td>
         <td>
-            <a href="#type-oracle">Oracle</a>
+            <a href="#oracle">Oracle</a>
         </td>
         <td>
             The oracle that provided the signature used to verify the entity&#39;s identity.  
@@ -1064,7 +1064,7 @@ Static Contract Formation Action
 
 <hr />
 
-<a name="action-contract-address-change"></a>
+<a name="contract-address-change"></a>
 
 #### Contract Address Change
 
@@ -1132,7 +1132,7 @@ This txn is signed by the master contract key defined in the contract formation 
 
 <hr />
 
-<a name="action-body-of-agreement-offer"></a>
+<a name="body-of-agreement-offer"></a>
 
 #### Body Of Agreement Offer
 
@@ -1154,7 +1154,7 @@ Allows the administration to define the agreement for the contract.
     <tr>
         <td>Chapters</td>
         <td>
-            <a href="#type-chapter">Chapter[tiny]</a>
+            <a href="#chapter">Chapter[tiny]</a>
         </td>
         <td>
             A list of chapters for the agreement.</td>
@@ -1162,7 +1162,7 @@ Allows the administration to define the agreement for the contract.
     <tr>
         <td>Definitions</td>
         <td>
-            <a href="#type-defined-term">DefinedTerm[tiny]</a>
+            <a href="#defined-term">DefinedTerm[tiny]</a>
         </td>
         <td>
             Definition of values within the agreement.  
@@ -1200,7 +1200,7 @@ Allows the administration to define the agreement for the contract.
 
 <hr />
 
-<a name="action-body-of-agreement-formation"></a>
+<a name="body-of-agreement-formation"></a>
 
 #### Body Of Agreement Formation
 
@@ -1222,7 +1222,7 @@ Provides the current version of the body of agreement for the contract.
     <tr>
         <td>Chapters</td>
         <td>
-            <a href="#type-chapter">Chapter[tiny]</a>
+            <a href="#chapter">Chapter[tiny]</a>
         </td>
         <td>
             A list of chapters for the agreement.</td>
@@ -1230,7 +1230,7 @@ Provides the current version of the body of agreement for the contract.
     <tr>
         <td>Definitions</td>
         <td>
-            <a href="#type-defined-term">DefinedTerm[tiny]</a>
+            <a href="#defined-term">DefinedTerm[tiny]</a>
         </td>
         <td>
             Definition of terms within the agreement.  
@@ -1288,7 +1288,7 @@ Provides the current version of the body of agreement for the contract.
 
 <hr />
 
-<a name="action-body-of-agreement-amendment"></a>
+<a name="body-of-agreement-amendment"></a>
 
 #### Body Of Agreement Amendment
 
@@ -1320,7 +1320,7 @@ Allows the administration to modify the agreement for the contract.
     <tr>
         <td>Amendments</td>
         <td>
-            <a href="#type-amendment">Amendment[tiny]</a>
+            <a href="#amendment">Amendment[tiny]</a>
         </td>
         <td>
             A collection of modifications to perform on this instrument.  
@@ -1367,7 +1367,7 @@ Allows the administration to modify the agreement for the contract.
 
 <hr />
 
-<a name="action-instrument-definition"></a>
+<a name="instrument-definition"></a>
 
 #### Instrument Definition
 
@@ -1541,7 +1541,7 @@ This action is used by the administration to define the properties/characteristi
 
 <hr />
 
-<a name="action-instrument-creation"></a>
+<a name="instrument-creation"></a>
 
 #### Instrument Creation
 
@@ -1751,7 +1751,7 @@ This action creates an instrument in response to the administration&#39;s instru
 
 <hr />
 
-<a name="action-instrument-modification"></a>
+<a name="instrument-modification"></a>
 
 #### Instrument Modification
 
@@ -1803,7 +1803,7 @@ Token Dilutions, Call Backs/Revocations, burning etc.
     <tr>
         <td>Amendments</td>
         <td>
-            <a href="#type-amendment">Amendment[tiny]</a>
+            <a href="#amendment">Amendment[tiny]</a>
         </td>
         <td>
             A collection of modifications to perform on this instrument.<br />
@@ -1850,7 +1850,7 @@ Token Dilutions, Call Backs/Revocations, burning etc.
 
 <hr />
 
-<a name="action-transfer"></a>
+<a name="transfer"></a>
 
 #### Transfer
 
@@ -1872,7 +1872,7 @@ A Token Owner(s) Sends, Exchanges or Swaps a token(s) or Bitcoin for a token(s) 
     <tr>
         <td>Instruments</td>
         <td>
-            <a href="#type-instrument-transfer">InstrumentTransfer[tiny]</a>
+            <a href="#instrument-transfer">InstrumentTransfer[tiny]</a>
         </td>
         <td>
             The Instruments involved in the Transfer Action.<br />
@@ -1939,7 +1939,7 @@ A Token Owner(s) Sends, Exchanges or Swaps a token(s) or Bitcoin for a token(s) 
 
 <hr />
 
-<a name="action-settlement"></a>
+<a name="settlement"></a>
 
 #### Settlement
 
@@ -1961,7 +1961,7 @@ Settles the transfer request of bitcoins and tokens from transfer (T1) actions.
     <tr>
         <td>Instruments</td>
         <td>
-            <a href="#type-instrument-settlement">InstrumentSettlement[tiny]</a>
+            <a href="#instrument-settlement">InstrumentSettlement[tiny]</a>
         </td>
         <td>
             The Instruments settled by the transfer action.
@@ -2010,7 +2010,7 @@ Settles the transfer request of bitcoins and tokens from transfer (T1) actions.
 
 <hr />
 
-<a name="action-proposal"></a>
+<a name="proposal"></a>
 
 #### Proposal
 
@@ -2075,7 +2075,7 @@ Allows the Administration/Token Holders to propose a change (aka Initiative/Shar
     <tr>
         <td>ProposedAmendments</td>
         <td>
-            <a href="#type-amendment">Amendment[tiny]</a>
+            <a href="#amendment">Amendment[tiny]</a>
         </td>
         <td>
             Each element contains details of which fields to modify, or delete. Because the number of fields in a Contract and Instrument is dynamic due to some fields being able to be repeated, the index value of the field needs to be calculated against the Contract or Instrument the changes are to apply to. In the event of a Vote being created from this Initiative, the changes will be applied to the version of the Contract or Instrument at that time.
@@ -2167,7 +2167,7 @@ Allows the Administration/Token Holders to propose a change (aka Initiative/Shar
 
 <hr />
 
-<a name="action-vote"></a>
+<a name="vote"></a>
 
 #### Vote
 
@@ -2228,7 +2228,7 @@ A vote is created by the Contract in response to a valid Proposal Action.
 
 <hr />
 
-<a name="action-ballot-cast"></a>
+<a name="ballot-cast"></a>
 
 #### Ballot Cast
 
@@ -2298,7 +2298,7 @@ Used by Token Owners to cast their ballot (vote) on proposals. 1 Vote per token 
 
 <hr />
 
-<a name="action-ballot-counted"></a>
+<a name="ballot-counted"></a>
 
 #### Ballot Counted
 
@@ -2387,7 +2387,7 @@ The smart contract will respond to a Ballot Cast action with a Ballot Counted ac
 
 <hr />
 
-<a name="action-result"></a>
+<a name="result"></a>
 
 #### Result
 
@@ -2429,7 +2429,7 @@ Once a vote has been completed the results are published. After the result is po
     <tr>
         <td>ProposedAmendments</td>
         <td>
-            <a href="#type-amendment">Amendment[tiny]</a>
+            <a href="#amendment">Amendment[tiny]</a>
         </td>
         <td>
             Each element contains details of which fields to modify, or delete. Because the number of fields in a Contract and Instrument is dynamic due to some fields being able to be repeated, the index value of the field needs to be calculated against the Contract or Instrument the changes are to apply to. In the event of a Vote being created from this Initiative, the changes will be applied to the version of the Contract or Instrument at that time.  
@@ -2504,7 +2504,7 @@ Once a vote has been completed the results are published. After the result is po
 
 <hr />
 
-<a name="action-order"></a>
+<a name="order"></a>
 
 #### Order
 
@@ -2556,7 +2556,7 @@ Used by the administration to signal to the smart contract that the tokens that 
     <tr>
         <td>TargetAddresses</td>
         <td>
-            <a href="#type-target-address">TargetAddress[medium]</a>
+            <a href="#target-address">TargetAddress[medium]</a>
         </td>
         <td>
             The holders and quantities that are effected by the order. For a contract or instrument wide freeze only the contract address is specified. Zero quantities are invalid unless it is for the contract address in an instrument wide or contract wide freeze. In a thaw order this field is not serialized, because the entire freeze from the FreezeTxId freeze action will be thawed.  
@@ -2647,7 +2647,7 @@ Used by the administration to signal to the smart contract that the tokens that 
     <tr>
         <td>BitcoinDispersions</td>
         <td>
-            <a href="#type-quantity-index">QuantityIndex[small]</a>
+            <a href="#quantity-index">QuantityIndex[small]</a>
         </td>
         <td>
             Index of address in TargetAddresses and amount of bitcoin (in satoshis) they are receiving in exchange for their tokens.  
@@ -2684,7 +2684,7 @@ Used by the administration to signal to the smart contract that the tokens that 
     <tr>
         <td>ReferenceTransactions</td>
         <td>
-            <a href="#type-reference-transaction">ReferenceTransaction[medium]</a>
+            <a href="#reference-transaction">ReferenceTransaction[medium]</a>
         </td>
         <td>
             The request/response actions that were dropped.  The entire txn for both actions is included as evidence that the actions were accepted into the mempool at one point and that the senders (token/Bitcoin) signed their intent to transfer.  The management of this record keeping is off-chain and managed by the administration or operator to preserve the integrity of the state of the tokens. Only applicable for reconcilliation actions.  No subfield when F, T, R is selected as the Compliance Action subfield.
@@ -2723,7 +2723,7 @@ Used by the administration to signal to the smart contract that the tokens that 
 
 <hr />
 
-<a name="action-freeze"></a>
+<a name="freeze"></a>
 
 #### Freeze
 
@@ -2765,7 +2765,7 @@ The contract responding to an Order action to freeze instruments. To be used to 
     <tr>
         <td>Quantities</td>
         <td>
-            <a href="#type-quantity-index">QuantityIndex[small]</a>
+            <a href="#quantity-index">QuantityIndex[small]</a>
         </td>
         <td>
             Indices to addresses in outputs and the quantities being frozen. If the only address is the contract address and the instrument code is zeros, then it is a contract wide freeze. If the only address is the contract address and the instrument code is specified, then it is an instrument wide freeze.  
@@ -2822,7 +2822,7 @@ The contract responding to an Order action to freeze instruments. To be used to 
 
 <hr />
 
-<a name="action-thaw"></a>
+<a name="thaw"></a>
 
 #### Thaw
 
@@ -2892,7 +2892,7 @@ The contract responding to an Order action to thaw instruments. To be used to co
 
 <hr />
 
-<a name="action-confiscation"></a>
+<a name="confiscation"></a>
 
 #### Confiscation
 
@@ -2934,7 +2934,7 @@ The contract responding to an Order action to confiscate instruments. To be used
     <tr>
         <td>Quantities</td>
         <td>
-            <a href="#type-quantity-index">QuantityIndex[small]</a>
+            <a href="#quantity-index">QuantityIndex[small]</a>
         </td>
         <td>
             The holders effected by the confiscation and their balance remaining.  
@@ -2997,7 +2997,7 @@ The contract responding to an Order action to confiscate instruments. To be used
 
 <hr />
 
-<a name="action-reconciliation"></a>
+<a name="reconciliation"></a>
 
 #### Reconciliation
 
@@ -3039,7 +3039,7 @@ The contract responding to an Order action to reconcile instruments. To be used 
     <tr>
         <td>Quantities</td>
         <td>
-            <a href="#type-quantity-index">QuantityIndex[small]</a>
+            <a href="#quantity-index">QuantityIndex[small]</a>
         </td>
         <td>
             The holders effected by the reconciliation and their balance remaining.  
@@ -3087,7 +3087,7 @@ The contract responding to an Order action to reconcile instruments. To be used 
 
 <hr />
 
-<a name="action-establishment"></a>
+<a name="establishment"></a>
 
 #### Establishment
 
@@ -3148,7 +3148,7 @@ Establishes an on-chain register.
 
 <hr />
 
-<a name="action-addition"></a>
+<a name="addition"></a>
 
 #### Addition
 
@@ -3209,7 +3209,7 @@ Adds an entry to the Register.
 
 <hr />
 
-<a name="action-alteration"></a>
+<a name="alteration"></a>
 
 #### Alteration
 
@@ -3279,7 +3279,7 @@ A register entry/record can be altered.
 
 <hr />
 
-<a name="action-removal"></a>
+<a name="removal"></a>
 
 #### Removal
 
@@ -3348,7 +3348,7 @@ Removes an entry/record from the Register.
 
 <hr />
 
-<a name="action-message"></a>
+<a name="message"></a>
 
 #### Message
 
@@ -3435,7 +3435,7 @@ The message action is a general purpose communication action. &#39;Twitter/SMS&#
 
 <hr />
 
-<a name="action-rejection"></a>
+<a name="rejection"></a>
 
 #### Rejection
 
@@ -3539,27 +3539,27 @@ Used to reject request actions that do not comply with the Contract. If money is
 
 <div class="content-list collection-method-list" markdown="1">
 
-- [Administrator](#type-administrator)
-- [Administrator Identity Certificate](#type-admin-identity-certificate)
-- [Amendment](#type-amendment)
-- [InstrumentReceiver](#type-instrument-receiver)
-- [Instrument Settlement](#type-instrument-settlement)
-- [Instrument Transfer](#type-instrument-transfer)
-- [Chapter](#type-chapter)
-- [Clause](#type-clause)
-- [Defined Term](#type-defined-term)
-- [Document](#type-document)
-- [Entity](#type-entity)
-- [Manager](#type-manager)
-- [Oracle](#type-oracle)
-- [Quantity Index](#type-quantity-index)
-- [Reference Transaction](#type-reference-transaction)
-- [Service](#type-service)
-- [Target Address](#type-target-address)
-- [Voting System](#type-voting-system)
+- [Administrator](#administrator)
+- [Administrator Identity Certificate](#administrator-identity-certificate)
+- [Amendment](#amendment)
+- [InstrumentReceiver](#instrument-receiver)
+- [Instrument Settlement](#instrument-settlement)
+- [Instrument Transfer](#instrument-transfer)
+- [Chapter](#chapter)
+- [Clause](#clause)
+- [Defined Term](#defined-term)
+- [Document](#document)
+- [Entity](#entity)
+- [Manager](#manager)
+- [Oracle](#oracle)
+- [Quantity Index](#quantity-index)
+- [Reference Transaction](#reference-transaction)
+- [Service](#service)
+- [Target Address](#target-address)
+- [Voting System](#voting-system)
 </div>
 
-<a name="type-administrator"></a>
+<a name="administrator"></a>
 
 ### Administrator
 
@@ -3593,7 +3593,7 @@ Administrator is used to refer to a Administration role in an Entity.
     </tr>
 </table>
 
-<a name="type-admin-identity-certificate"></a>
+<a name="administrator-identity-certificate"></a>
 
 ### Administrator Identity Certificate
 
@@ -3642,7 +3642,7 @@ A certificate provided by an identity oracle to verify the administrator address
     </tr>
 </table>
 
-<a name="type-amendment"></a>
+<a name="amendment"></a>
 
 ### Amendment
 
@@ -3686,9 +3686,9 @@ An Amendment is used to describe the modification of a single field in a Contrac
     </tr>
 </table>
 
-<a name="type-instrument-receiver"></a>
+<a name="instrument-receiver"></a>
 
-### InstrumentReceiver
+### Instrument Receiver
 
 An InstrumentReceiver is a quantity, address, and oracle signature. The quantity could be used to describe a number of tokens, or a value. The address is where the instrument will be sent.
 
@@ -3764,7 +3764,7 @@ An InstrumentReceiver is a quantity, address, and oracle signature. The quantity
     </tr>
 </table>
 
-<a name="type-instrument-settlement"></a>
+<a name="instrument-settlement"></a>
 
 ### Instrument Settlement
 
@@ -3808,7 +3808,7 @@ InstrumentSettlement is the data required to settle an instrument transfer.
     <tr>
         <td>Settlements</td>
         <td>
-            <a href="#type-quantity-index">QuantityIndex[tiny]</a>
+            <a href="#quantity-index">QuantityIndex[tiny]</a>
         </td>
         <td>
             Each element contains the resulting token balance of Instrument X for the output Address, which is referred to by the index.  
@@ -3816,7 +3816,7 @@ InstrumentSettlement is the data required to settle an instrument transfer.
     </tr>
 </table>
 
-<a name="type-instrument-transfer"></a>
+<a name="instrument-transfer"></a>
 
 ### Instrument Transfer
 
@@ -3860,7 +3860,7 @@ InstrumentTransfer is the data required to transfer an instrument.
     <tr>
         <td>InstrumentSenders</td>
         <td>
-            <a href="#type-quantity-index">QuantityIndex[tiny]</a>
+            <a href="#quantity-index">QuantityIndex[tiny]</a>
         </td>
         <td>
             Each element has the value of tokens to be spent from the input address, which is referred to by the index.  
@@ -3869,7 +3869,7 @@ InstrumentTransfer is the data required to transfer an instrument.
     <tr>
         <td>InstrumentReceivers</td>
         <td>
-            <a href="#type-instrument-receiver">InstrumentReceiver[tiny]</a>
+            <a href="#instrument-receiver">InstrumentReceiver[tiny]</a>
         </td>
         <td>
             Each element has the value of tokens to be received, the address, and an oracle signature if required.  
@@ -3877,7 +3877,7 @@ InstrumentTransfer is the data required to transfer an instrument.
     </tr>
 </table>
 
-<a name="type-chapter"></a>
+<a name="chapter"></a>
 
 ### Chapter
 
@@ -3910,7 +3910,7 @@ A chapter is the top level structure of an agreement. It contains articles.
     <tr>
         <td>Articles</td>
         <td>
-            <a href="#type-clause">Clause[tiny]</a>
+            <a href="#clause">Clause[tiny]</a>
         </td>
         <td>
             A list of articles for the chapter.  
@@ -3918,7 +3918,7 @@ A chapter is the top level structure of an agreement. It contains articles.
     </tr>
 </table>
 
-<a name="type-clause"></a>
+<a name="clause"></a>
 
 ### Clause
 
@@ -3950,7 +3950,7 @@ A clause is the standard piece of an agreement, contained in each of the sub-lev
     <tr>
         <td>Children</td>
         <td>
-            <a href="#type-clause">Clause[tiny]</a>
+            <a href="#clause">Clause[tiny]</a>
         </td>
         <td>
             A list of clauses under this clause.  
@@ -3958,7 +3958,7 @@ A clause is the standard piece of an agreement, contained in each of the sub-lev
     </tr>
 </table>
 
-<a name="type-defined-term"></a>
+<a name="defined-term"></a>
 
 ### Defined Term
 
@@ -3990,7 +3990,7 @@ A definition define a term specified throughout an agreement.
     </tr>
 </table>
 
-<a name="type-document"></a>
+<a name="document"></a>
 
 ### Document
 
@@ -4033,7 +4033,7 @@ A file containing data.
     </tr>
 </table>
 
-<a name="type-entity"></a>
+<a name="entity"></a>
 
 ### Entity
 
@@ -4162,7 +4162,7 @@ Entity represents the details of a legal Entity, such as a public or private com
     <tr>
         <td>Administration</td>
         <td>
-            <a href="#type-administrator">Administrator[tiny]</a>
+            <a href="#administrator">Administrator[tiny]</a>
         </td>
         <td>
             A list of people that are in Administrative Roles for the Entity.  eg. Chair, Director, Managing Partner, etc.
@@ -4171,7 +4171,7 @@ Entity represents the details of a legal Entity, such as a public or private com
     <tr>
         <td>Management</td>
         <td>
-            <a href="#type-manager">Manager[tiny]</a>
+            <a href="#manager">Manager[tiny]</a>
         </td>
         <td>
             A list of people in Management Roles for the Entity. e.g CEO, COO, CTO, CFO, Secretary, Executive, etc.  
@@ -4206,7 +4206,7 @@ Entity represents the details of a legal Entity, such as a public or private com
     </tr>
 </table>
 
-<a name="type-manager"></a>
+<a name="manager"></a>
 
 ### Manager
 
@@ -4240,7 +4240,7 @@ Manager is used to refer to a role that is responsible for the Management of an 
     </tr>
 </table>
 
-<a name="type-oracle"></a>
+<a name="oracle"></a>
 
 ### Oracle
 
@@ -4293,7 +4293,7 @@ A Oracle defines the details of a public Oracle.
     </tr>
 </table>
 
-<a name="type-quantity-index"></a>
+<a name="quantity-index"></a>
 
 ### Quantity Index
 
@@ -4327,7 +4327,7 @@ A QuantityIndex contains a quantity, and an index. The quantity could be used to
     </tr>
 </table>
 
-<a name="type-reference-transaction"></a>
+<a name="reference-transaction"></a>
 
 ### Reference Transaction
 
@@ -4360,7 +4360,7 @@ A bitcoin transaction and the outputs that it spends.
     </tr>
 </table>
 
-<a name="type-service"></a>
+<a name="service"></a>
 
 ### Service
 
@@ -4407,7 +4407,7 @@ A definition of a service provided by an identity oracle to verify the administr
     </tr>
 </table>
 
-<a name="type-target-address"></a>
+<a name="target-address"></a>
 
 ### Target Address
 
@@ -4439,7 +4439,7 @@ A TargetAddress defines a public address and quantity.
     </tr>
 </table>
 
-<a name="type-voting-system"></a>
+<a name="voting-system"></a>
 
 ### Voting System
 
