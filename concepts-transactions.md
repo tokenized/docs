@@ -2,13 +2,10 @@
 
 - [Introduction](#introduction)
 - [Building a Transaction](#building-a-transaction)
-  - [Assembling OP_RETURN Packet](#assembling-op_return-packet)
-  - [Using PUSHDATA](#using-pushdata)
-- [Payload Breakdown](#payload-breakdown)
-  - [Protocol Identifier](#protocol-identifier)
-  - [Action Payload](#action-payload)
+  - [OP_RETURN Script](#op_return-script)
+    - [Envelope Header](#envelope-header)
+    - [Action Payload](#action-payload)
 - [Sample Code](#sample-code)
-  - [BitDB](#bitdb)
 - [Example](#example)
 
 <a name="introduction"></a>
@@ -29,19 +26,31 @@ Transactions that [impact balances](../concepts/tokens#token-balances) or the co
 
 Tokenized transaction messages are built by serializing the data (converting to binary) according to the protocol specification. There are many [different data formats](../protocol/actions#field-types) used by each protocol action.
 
-<a name="assembling-op_return-packet"></a>
+<a name="op_return-script"></a>
 
-### Assembling OP_RETURN Packet
+### OP_RETURN Script
 
-Tokenized assembles OP_RETURN scripts using the [envelope](https://github.com/tokenized/envelope) protocol. The [Data Structure](https://github.com/tokenized/envelope#data-structure) section describes the actual format of the OP_RETURN script.
+Tokenized assembles OP_RETURN scripts using the [Envelope](https://github.com/tokenized/envelope) protocol version 1 with a protocol identifier of `TKN`, or `test.TKN` for test mode. The [Data Structure](https://github.com/tokenized/envelope#data-structure) section further describes the format of the OP_RETURN script.
 
-Tokenized uses an envelope `PayloadProtocol` of "tokenized" or "test.tokenized" depending if test mode is activated. The envelop `PayloadIdentifier` is used to specify the action type of the message.
+<a name="envelope-header"></a>
+
+#### Envelope Header
+
+* `OP_FALSE OP_RETURN` to specify that it is unspendable and only contains data so that no satoshis need to be included in the output.
+* `0x02bd01` for the Envelope protocol identifier and version. `0x02` specifies it is a 2 byte push data, then the two bytes are `0xbd` for bitcoin data (Envelope protocol), and `0x01` for version 1.
+* The number of protocol IDs, represented by a bitcoin script number, which is normally 1 for Tokenized, represented as the op code OP_1.
+* `TKN` or `test.TKN` to specify the Tokenized protocol, depending if test mode is activated.
+* The number of push datas used to represent the Tokenized action payload, represented by a bitcoin script number. It will normally be 3, represented by the op code `OP_3`.
 
 <a name="action-payload"></a>
 
-### Action Payload
+#### Action Payload
 
-The payload of the envelope is the "action" payload. The action payload contains the [action contents](../protocol/actions#all-actions).
+The first push data of the Envelope payload is used to specify the version of the Tokenized protocol.
+
+The second push data of the Envelope payload is used to specify the Tokenized action type of the message (i.e. ASCII value 'C1' for Contract Offer).
+
+The third push data of the Envelope is the Tokenized "action" payload. The action payload contains the [action contents](../protocol/actions#all-actions).
 
 The action payload is dependent on the action type and may include token specific information as required. It is encoded using [protobuf](https://developers.google.com/protocol-buffers/) If the payload does not conform to the contract agent's expectation of the operation being requested, it will respond with a rejection message.
 
@@ -53,110 +62,51 @@ Here is some sample golang code that uses our reference golang protocol implemen
 
 ```
 import (
-	"github.com/tokenized/smart-contract/pkg/protocol"
-	"github.com/tokenized/smart-contract/pkg/wire"
+  "github.com/tokenized/smart-contract/pkg/protocol"
+  "github.com/tokenized/smart-contract/pkg/wire"
 )
 
 // Create Offer message
 offerData := actions.ContractOffer{
-	ContractName: "Test Name",
-	Issuer: actions.EntityField{Administration: []actions.AdministratorField{
-		actions.AdministratorField{Type: 1, Name: "John Smith"},
-	}},
-	VotingSystems: []*actions.VotingSystemField{&actions.VotingSystemField{Name: "Relative 50", VoteType: "R", ThresholdPercentage: 50, HolderProposalFee: 50000}},
+  ContractName: "Test Name",
+  Issuer: actions.EntityField{Administration: []actions.AdministratorField{
+    actions.AdministratorField{Type: 1, Name: "John Smith"},
+  }},
+  VotingSystems: []*actions.VotingSystemField{&actions.VotingSystemField{Name: "Relative 50", VoteType: "R", ThresholdPercentage: 50, HolderProposalFee: 50000}},
 }
 
 // Define permissions for contract fields
 permissions := make([]protocol.Permission, actions.ContractFieldCount)
 for i, _ := range permissions {
-	permissions[i].Permitted = false      // administration can't update field without proposal
-	permissions[i].AdministrationProposal = false // administration can update field with a proposal
-	permissions[i].HolderProposal = false // Holder's can initiate proposals to update field
+  permissions[i].Permitted = false      // administration can't update field without proposal
+  permissions[i].AdministrationProposal = false // administration can update field with a proposal
+  permissions[i].HolderProposal = false // Holder's can initiate proposals to update field
 
-	permissions[i].VotingSystemsAllowed = make([]bool, len(offerData.VotingSystems))
-	permissions[i].VotingSystemsAllowed[0] = true // Enable this voting system for proposals on this field.
+  permissions[i].VotingSystemsAllowed = make([]bool, len(offerData.VotingSystems))
+  permissions[i].VotingSystemsAllowed[0] = true // Enable this voting system for proposals on this field.
 }
 
 var err error
 offerData.ContractAuthFlags, err = protocol.WriteAuthFlags(permissions)
 if err != nil {
-	return errors.Wrap(err, "Failed to serialize contract auth flags")
+  return errors.Wrap(err, "Failed to serialize contract auth flags")
 }
 
 // Build offer transaction
-offerTx := wire.NewMsgTx(2)
+offerTx := wire.NewMsgTx(1)
 
-// Add input spending P2PKH output to administration's identifying public key hash
+// Add input spending P2PKH output containing administration's locking script.
 ...
 
-// Add P2PKH output to contract's public key hash
+// Add P2PKH output to contract agent's locking script.
 ...
 
 // Add Tokenized OP_RETURN message output.
 script, err := protocol.Serialize(&offerData, isTest)
 if err != nil {
-	return errors.Wrap(err, "Failed to serialize OP_RETURN")
+  return errors.Wrap(err, "Failed to serialize OP_RETURN")
 }
 offerTx.TxOut = append(offerTx.TxOut, wire.NewTxOut(0, script))
-```
-
-<a name="bitdb"></a>
-
-### BitDB
-
-This BitDB query can be used to query transactions containing Tokenized messages.
-
-`"out.b2": "vQA="`` represents the envelope protocol ID 0xbd00.
-
-```
-{
-  "v": 3,
-  "q": {
-    "find": {
-      "out.b0": { "op" : 0 },
-      "out.b1": { "op": 106 },
-      "out.b2": "vQA=",
-      "out.s3": "tokenized"
-    },
-    "limit": 10
-  }
-}
-```
-
-This BitDB query is for all requests to a specific contract.
-
-```
-{
-  "v": 3,
-  "q": {
-    "find": {
-      "out.b0": { "op" : 0 },
-      "out.b1": { "op": 106 },
-      "out.b2": "vQA=",
-      "out.s3": "tokenized"
-      "out.e.a": "<ContractAddress>"
-    },
-    "limit": 10
-  }
-}
-```
-
-This BitDB query is for all responses from a specific contract.
-
-```
-{
-  "v": 3,
-  "q": {
-    "find": {
-      "out.b0": { "op" : 0 },
-      "out.b1": { "op": 106 },
-      "out.b2": "vQA=",
-      "out.s3": "tokenized"
-      "in.e.a": "<ContractAddress>"
-    },
-    "limit": 10
-  }
-}
 ```
 
 <a name="example"></a>
